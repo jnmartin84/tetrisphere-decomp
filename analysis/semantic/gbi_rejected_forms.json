@@ -1,0 +1,162 @@
+[
+  {
+    "file": "src/game2.c",
+    "line": 7738,
+    "offset": 296180,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        ((D_8015F84E & 0xFF) << 24) | ((D_8015F84E * 10 & 0xFF) << 16) | (((D_8015F84E + 3) * 10 & 0xFF) << 8) | ((D_8015F84E + 1) * 10 & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E, D_8015F84E + 3, D_8015F84E + 1, D_8015F84E)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7806,
+    "offset": 298448,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        ((D_8015F84E & 0xFF) << 24) | ((D_8015F84E * 10 & 0xFF) << 16) | (((D_8015F84E + 3) * 10 & 0xFF) << 8) | ((D_8015F84E + 1) * 10 & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E, D_8015F84E + 3, D_8015F84E + 1, D_8015F84E)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8338,
+    "offset": 324120,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        ((D_8015F84E & 0xFF) << 24) | ((D_8015F84E * 10 & 0xFF) << 16) | (((D_8015F84E + 3) * 10 & 0xFF) << 8) | ((D_8015F84E + 1) * 10 & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E, D_8015F84E + 3, D_8015F84E + 1, D_8015F84E)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8414,
+    "offset": 326704,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        ((D_8015F84E & 0xFF) << 24) | (((D_8015F84E * 10) & 0xFF) << 16) | ((((D_8015F84E + 1) * 10) & 0xFF) << 8) | (((D_8015F84E + 3) * 10) & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E, D_8015F84E + 1, D_8015F84E + 3, D_8015F84E)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8489,
+    "offset": 329234,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        ((D_8015F84E & 0xFF) << 24) | (((D_8015F84E + 1) * 10 & 0xFF) << 16) | (((D_8015F84E + 3) * 10 & 0xFF) << 8) | (D_8015F84E * 10 & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E + 1, D_8015F84E + 3, D_8015F84E, D_8015F84E)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8561,
+    "offset": 331663,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        ((D_8015F84E & 0xFF) << 24) | (((D_8015F84E * 10) & 0xFF) << 16) | ((((D_8015F84E + 2) * 10) & 0xFF) << 8) | (((D_8015F84E + 1) * 10) & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E, D_8015F84E + 2, D_8015F84E + 1, D_8015F84E)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8633,
+    "offset": 334106,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        ((D_8015F84E & 0xFF) << 24) | (((D_8015F84E * 10) & 0xFF) << 16) | ((((D_8015F84E + 2) * 10) & 0xFF) << 8) | (((D_8015F84E + 1) * 10) & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E, D_8015F84E + 2, D_8015F84E + 1, D_8015F84E)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8705,
+    "offset": 336513,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        ((D_8015F84E & 0xFF) << 24) | (((D_8015F84E * 10) & 0xFF) << 16) | ((((D_8015F84E + 1) * 10) & 0xFF) << 8) | (((D_8015F84E + 2) * 10) & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E, D_8015F84E + 1, D_8015F84E + 2, D_8015F84E)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9620,
+    "offset": 371680,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n                            ((D_8015F84E & 0xFF) << 24) | ((D_8015F84E * 10 & 0xFF) << 16) | (((D_8015F84E + 3) * 10 & 0xFF) << 8) | ((D_8015F84E + 1) * 10 & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n                            D_8015F84E, D_8015F84E + 3, D_8015F84E + 1, D_8015F84E)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9812,
+    "offset": 382064,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n                ((D_8015F84E & 0xFF) << 24) | ((D_8015F84E * 10 & 0xFF) << 16) | (((D_8015F84E + 3) * 10 & 0xFF) << 8) | ((D_8015F84E + 1) * 10 & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n                D_8015F84E, D_8015F84E + 3, D_8015F84E + 1, D_8015F84E)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11841,
+    "offset": 470457,
+    "old": "gCmd(D_800F22B4++, 0x4000000 | ((p[6] << 4) & 0xFFFF) | ((((p[6] - 1) << 4) & 0xFF) << 16), (u32)(arg0 + D_800E44EC * 0x10))",
+    "new": "gSPVertex(D_800F22B4++, (u32)(arg0 + D_800E44EC * 0x10), p[6], 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/main.c",
+    "line": 9809,
+    "offset": 357729,
+    "old": "g->words.w0 = 0xB900031D;\n    g->words.w1 = 0x00504340;",
+    "new": "gDPSetRenderMode(\n        g, G_RM_CLD_SURF, G_RM_CLD_SURF2);",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11100,
+    "offset": 391507,
+    "old": "sp50->words.w0 = 0xBA000E02;\n        sp50->words.w1 = 0x8000;",
+    "new": "gDPSetTextureLUT(\n            sp50, G_TT_RGBA16);",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11103,
+    "offset": 391606,
+    "old": "sp4C->words.w0 = 0xFD100000;\n        sp4C->words.w1 = (u32)D_801026C8;",
+    "new": "gDPSetTextureImage(\n            sp4C, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_801026C8);",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11106,
+    "offset": 391714,
+    "old": "sp48->words.w0 = 0xE8000000;\n        sp48->words.w1 = 0;",
+    "new": "gDPTileSync(\n            sp48);",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11109,
+    "offset": 391808,
+    "old": "sp44->words.w0 = 0xF5000100;\n        sp44->words.w1 = 0x07000000;",
+    "new": "gDPSetTile(\n            sp44, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11112,
+    "offset": 391911,
+    "old": "sp40->words.w0 = 0xE6000000;\n        sp40->words.w1 = 0;",
+    "new": "gDPLoadSync(\n            sp40);",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11115,
+    "offset": 392005,
+    "old": "sp3C->words.w0 = 0xF0000000;\n        sp3C->words.w1 = 0x073FC000;",
+    "new": "gDPLoadTLUTCmd(\n            sp3C, G_TX_LOADTILE, 255);",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11118,
+    "offset": 392108,
+    "old": "sp38->words.w0 = 0xE7000000;\n        sp38->words.w1 = 0;",
+    "new": "gDPPipeSync(\n            sp38);",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11390,
+    "offset": 400347,
+    "old": "sp34->words.w0 = 0xB900031D;\n    sp34->words.w1 = 0x504340;",
+    "new": "gDPSetRenderMode(\n        sp34, G_RM_CLD_SURF, G_RM_CLD_SURF2);",
+    "macro": "gDPSetRenderMode"
+  }
+]

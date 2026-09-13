@@ -1,0 +1,65 @@
+[
+  {
+    "file": "src/main.c",
+    "macro": "gDPSetRenderMode line 9809",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7620918\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  },
+  {
+    "file": "src/main.c",
+    "macro": "gDPSetTextureLUT line 11100",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7605807\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  },
+  {
+    "file": "src/main.c",
+    "macro": "gDPSetTextureImage line 11103",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7605763\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  },
+  {
+    "file": "src/main.c",
+    "macro": "gDPTileSync line 11106",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7605724\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  },
+  {
+    "file": "src/main.c",
+    "macro": "gDPSetTile line 11109",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7605687\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  },
+  {
+    "file": "src/main.c",
+    "macro": "gDPLoadSync line 11112",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7605642\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  },
+  {
+    "file": "src/main.c",
+    "macro": "gDPLoadTLUTCmd line 11115",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7605606\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  },
+  {
+    "file": "src/main.c",
+    "macro": "gDPPipeSync line 11118",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7605566\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  },
+  {
+    "file": "src/main.c",
+    "macro": "gDPSetRenderMode line 11390",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7602203\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  }
+]

@@ -1,5 +1,9 @@
 # Semantic names branch
 
+Current graphics work: [GBI audit](GBI_AUDIT.md). The user authorized restoring
+SDK macros beyond identifier renames; accepted and unresolved sites are tracked
+there separately. The original rename-branch rules below remain historical.
+
 This directory preserves research from the original semantic branch. The
 source-only publication imports its final source at 490402d. Original VM
 paths, Git baseline and build-input checks below are historical; use the

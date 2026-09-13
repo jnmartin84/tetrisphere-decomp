@@ -3,8 +3,9 @@
 Byte-matching N64 decompilation with semantic function names. Game source is
 imported exactly from semantic commit `490402d76f15dc7d4774c15dde72e868b3f15fcf`:
 26 identified functions, with every other source byte initially preserved from
-the completed decompilation. Subsequent matching changes include the
-[GBI restoration in beginGraphicsFrame](analysis/semantic/GBI_BEGIN_GRAPHICS_FRAME.md).
+the completed decompilation. The subsequent
+[GBI audit](analysis/semantic/GBI_AUDIT.md) restores 1,137 raw graphics commands
+while retaining the full ROM match, with remaining sites explicitly recorded.
 See [semantic findings](analysis/semantic/README.md).
 
 ## Build

@@ -1,0 +1,454 @@
+[
+  {
+    "file": "src/game2.c",
+    "line": 7738,
+    "function": "func_800998E8",
+    "status": "attempted_mismatch",
+    "kind": "variable_triangle",
+    "original_arguments": [
+      "D_800F22B4++",
+      "0xBF000000",
+      "((D_8015F84E & 0xFF) << 24) | ((D_8015F84E * 10 & 0xFF) << 16) | (((D_8015F84E + 3) * 10 & 0xFF) << 8) | ((D_8015F84E + 1) * 10 & 0xFF)"
+    ]
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7806,
+    "function": "func_80099C54",
+    "status": "attempted_mismatch",
+    "kind": "variable_triangle",
+    "original_arguments": [
+      "D_800F22B4++",
+      "0xBF000000",
+      "((D_8015F84E & 0xFF) << 24) | ((D_8015F84E * 10 & 0xFF) << 16) | (((D_8015F84E + 3) * 10 & 0xFF) << 8) | ((D_8015F84E + 1) * 10 & 0xFF)"
+    ]
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8338,
+    "function": "func_8009C330",
+    "status": "attempted_mismatch",
+    "kind": "variable_triangle",
+    "original_arguments": [
+      "D_800F22B4++",
+      "0xBF000000",
+      "((D_8015F84E & 0xFF) << 24) | ((D_8015F84E * 10 & 0xFF) << 16) | (((D_8015F84E + 3) * 10 & 0xFF) << 8) | ((D_8015F84E + 1) * 10 & 0xFF)"
+    ]
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8414,
+    "function": "func_8009C6D4",
+    "status": "attempted_mismatch",
+    "kind": "variable_triangle",
+    "original_arguments": [
+      "D_800F22B4++",
+      "0xBF000000",
+      "((D_8015F84E & 0xFF) << 24) | (((D_8015F84E * 10) & 0xFF) << 16) | ((((D_8015F84E + 1) * 10) & 0xFF) << 8) | (((D_8015F84E + 3) * 10) & 0xFF)"
+    ]
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8489,
+    "function": "func_8009CA98",
+    "status": "attempted_mismatch",
+    "kind": "variable_triangle",
+    "original_arguments": [
+      "D_800F22B4++",
+      "0xBF000000",
+      "((D_8015F84E & 0xFF) << 24) | (((D_8015F84E + 1) * 10 & 0xFF) << 16) | (((D_8015F84E + 3) * 10 & 0xFF) << 8) | (D_8015F84E * 10 & 0xFF)"
+    ]
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8561,
+    "function": "func_8009CE38",
+    "status": "attempted_mismatch",
+    "kind": "variable_triangle",
+    "original_arguments": [
+      "D_800F22B4++",
+      "0xBF000000",
+      "((D_8015F84E & 0xFF) << 24) | (((D_8015F84E * 10) & 0xFF) << 16) | ((((D_8015F84E + 2) * 10) & 0xFF) << 8) | (((D_8015F84E + 1) * 10) & 0xFF)"
+    ]
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8633,
+    "function": "func_8009D1D4",
+    "status": "attempted_mismatch",
+    "kind": "variable_triangle",
+    "original_arguments": [
+      "D_800F22B4++",
+      "0xBF000000",
+      "((D_8015F84E & 0xFF) << 24) | (((D_8015F84E * 10) & 0xFF) << 16) | ((((D_8015F84E + 2) * 10) & 0xFF) << 8) | (((D_8015F84E + 1) * 10) & 0xFF)"
+    ]
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8705,
+    "function": "func_8009D570",
+    "status": "attempted_mismatch",
+    "kind": "variable_triangle",
+    "original_arguments": [
+      "D_800F22B4++",
+      "0xBF000000",
+      "((D_8015F84E & 0xFF) << 24) | (((D_8015F84E * 10) & 0xFF) << 16) | ((((D_8015F84E + 1) * 10) & 0xFF) << 8) | (((D_8015F84E + 2) * 10) & 0xFF)"
+    ]
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9620,
+    "function": "func_8009FA20",
+    "status": "attempted_mismatch",
+    "kind": "variable_triangle",
+    "original_arguments": [
+      "D_800F22B4++",
+      "0xBF000000",
+      "((D_8015F84E & 0xFF) << 24) | ((D_8015F84E * 10 & 0xFF) << 16) | (((D_8015F84E + 3) * 10 & 0xFF) << 8) | ((D_8015F84E + 1) * 10 & 0xFF)"
+    ]
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9812,
+    "function": "func_800A0ED8",
+    "status": "attempted_mismatch",
+    "kind": "variable_triangle",
+    "original_arguments": [
+      "D_800F22B4++",
+      "0xBF000000",
+      "((D_8015F84E & 0xFF) << 24) | ((D_8015F84E * 10 & 0xFF) << 16) | (((D_8015F84E + 3) * 10 & 0xFF) << 8) | ((D_8015F84E + 1) * 10 & 0xFF)"
+    ]
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11841,
+    "function": "func_800A742C",
+    "status": "attempted_mismatch",
+    "kind": "variable_vertex",
+    "original_arguments": [
+      "D_800F22B4++",
+      "0x4000000 | ((p[6] << 4) & 0xFFFF) | ((((p[6] - 1) << 4) & 0xFF) << 16)",
+      "(u32)(arg0 + D_800E44EC * 0x10)"
+    ]
+  },
+  {
+    "file": "src/main.c",
+    "line": 707,
+    "function": "func_8003A900",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((((i * 64 - i * 64) * 2 + 0x87) >> 3) & 0x1FF) << 9) | 0xF5100000; g->words.w1 = 0x07080200;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 709,
+    "function": "func_8003A900",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((i * 64 * 4) & 0xFFF) << 12) | 0xF4000000 | ((j * 30 * 4) & 0xFFF); g->words.w1 = ((((i * 64 + 0x3F) << 2) & 0xFFF) << 12) | 0x07000000 | ((((j * 30 + 0x1D) << 2) & 0xFFF));"
+  },
+  {
+    "file": "src/main.c",
+    "line": 711,
+    "function": "func_8003A900",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((((i * 64 - i * 64) * 2 + 0x87) >> 3) & 0x1FF) << 9) | 0xF5100000; g->words.w1 = 0x00080200;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 712,
+    "function": "func_8003A900",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((i * 64 * 4) & 0xFFF) << 12) | 0xF2000000 | ((j * 30 * 4) & 0xFFF); g->words.w1 = ((((i * 64 + 0x3F) << 2) & 0xFFF) << 12) | ((((j * 30 + 0x1D) << 2) & 0xFFF));"
+  },
+  {
+    "file": "src/main.c",
+    "line": 714,
+    "function": "func_8003A900",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((((i * 64 + 0x40) << 2) - 1) & 0xFFF) << 12) | 0xE4000000 | (((((j * 30 + 0x1E) << 2) - 1) & 0xFFF)); g->words.w1 = (((i * 64 * 4) & 0xFFF) << 12) | ((j * 30 * 4) & 0xFFF);"
+  },
+  {
+    "file": "src/main.c",
+    "line": 715,
+    "function": "func_8003A900",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = 0xB4000000; g->words.w1 = 0;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 716,
+    "function": "func_8003A900",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = 0xB3000000; g->words.w1 = 0x04000400;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 854,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = 0xFA000000; g->words.w1 = (SA->unk11 & 0xFF) | (((SA->unkE & 0xFF) << 24) | ((SA->unkF & 0xFF) << 16) | ((SA->unk10 & 0xFF) << 8));"
+  },
+  {
+    "file": "src/main.c",
+    "line": 861,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF4000000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x0707C000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 864,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF2000000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x0007C000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 873,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF4080000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x070FC000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 876,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF2080000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x000FC000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 886,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF4200000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x0723C000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 889,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF2200000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x0023C000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 897,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF4180000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x071FC000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 900,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF2180000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x001FC000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 909,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF4100000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x0717C000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 912,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF2100000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x0017C000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 924,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF4000000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x0707C000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 927,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF2000000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x0007C000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 936,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF4080000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x070FC000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 939,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF2080000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x000FC000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 949,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF4200000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x0723C000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 952,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF2200000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x0023C000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 960,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF4180000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x071FC000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 963,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF2180000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x001FC000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 972,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF4100000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x0717C000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 975,
+    "function": "func_8003B1A4",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++; g->words.w0 = (((-i * 0x10 + 0x60) << 2) & 0xFFF) | 0xF2100000; g->words.w1 = (((-i * 0x10 + 0x6F) << 2) & 0xFFF) | 0x0017C000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12658,
+    "function": "func_8006FA28",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xFA000000;\n          gp->words.w1 = (((u32)r & 0xFF) << 24) | (((u32)g & 0xFF) << 16) | (((u32)b & 0xFF) << 8) | ((u32)a & 0xFF);"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12663,
+    "function": "func_8006FA28",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *gp = D_800F22B4++;\n      gp->words.w0 = ((a2 & 0x3FF) << 14) | 0xF6000000 | ((a3 & 0x3FF) << 2);\n      gp->words.w1 = ((a0 & 0x3FF) << 14) | ((a1 & 0x3FF) << 2);"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12702,
+    "function": "func_8006FE64",
+    "status": "not_attempted",
+    "kind": "direct_variable_or_compound_command",
+    "original": "Gfx *g = D_800F22B4++;\n        g->words.w0 = (((arg2 & 0x3FF) << 14) | 0xF6000000) | ((arg3 & 0x3FF) << 2);\n        g->words.w1 = ((arg0 & 0x3FF) << 14) | ((arg1 & 0x3FF) << 2);"
+  },
+  {
+    "file": "src/main.c",
+    "line": 9809,
+    "function": "func_80062C3C",
+    "status": "attempted_mismatch",
+    "kind": "retained_pointer_word_stores",
+    "original": "g->words.w0 = 0xB900031D;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11100,
+    "function": "func_80067798",
+    "status": "attempted_mismatch",
+    "kind": "retained_pointer_word_stores",
+    "original": "sp50->words.w0 = 0xBA000E02;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11103,
+    "function": "func_80067798",
+    "status": "attempted_mismatch",
+    "kind": "retained_pointer_word_stores",
+    "original": "sp4C->words.w0 = 0xFD100000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11106,
+    "function": "func_80067798",
+    "status": "attempted_mismatch",
+    "kind": "retained_pointer_word_stores",
+    "original": "sp48->words.w0 = 0xE8000000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11109,
+    "function": "func_80067798",
+    "status": "attempted_mismatch",
+    "kind": "retained_pointer_word_stores",
+    "original": "sp44->words.w0 = 0xF5000100;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11112,
+    "function": "func_80067798",
+    "status": "attempted_mismatch",
+    "kind": "retained_pointer_word_stores",
+    "original": "sp40->words.w0 = 0xE6000000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11115,
+    "function": "func_80067798",
+    "status": "attempted_mismatch",
+    "kind": "retained_pointer_word_stores",
+    "original": "sp3C->words.w0 = 0xF0000000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11118,
+    "function": "func_80067798",
+    "status": "attempted_mismatch",
+    "kind": "retained_pointer_word_stores",
+    "original": "sp38->words.w0 = 0xE7000000;"
+  },
+  {
+    "file": "src/main.c",
+    "line": 11390,
+    "function": "func_800685FC",
+    "status": "attempted_mismatch",
+    "kind": "retained_pointer_word_stores",
+    "original": "sp34->words.w0 = 0xB900031D;"
+  }
+]

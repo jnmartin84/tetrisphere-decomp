@@ -1,0 +1,44 @@
+[
+  {
+    "commit": "4829e3f",
+    "batch": "002",
+    "replacements": 576,
+    "exact_patch_verified": true,
+    "line_counts_preserved": true
+  },
+  {
+    "commit": "1082a79",
+    "batch": "003",
+    "replacements": 407,
+    "exact_patch_verified": true,
+    "line_counts_preserved": true
+  },
+  {
+    "commit": "04c5ac0",
+    "batch": "004",
+    "replacements": 69,
+    "exact_patch_verified": true,
+    "line_counts_preserved": true
+  },
+  {
+    "commit": "9cca327",
+    "batch": "005",
+    "replacements": 11,
+    "exact_patch_verified": true,
+    "line_counts_preserved": true
+  },
+  {
+    "commit": "cf4277a",
+    "batch": "006",
+    "replacements": 10,
+    "exact_patch_verified": true,
+    "line_counts_preserved": true
+  },
+  {
+    "commit": "7434b2d",
+    "batch": "007",
+    "replacements": 46,
+    "exact_patch_verified": true,
+    "line_counts_preserved": true
+  }
+]

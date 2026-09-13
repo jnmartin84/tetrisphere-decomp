@@ -1,0 +1,51 @@
+[
+  {
+    "file": "src/code_8170.c",
+    "macro": "gDPSetCombineLERP",
+    "count": 3,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  },
+  {
+    "file": "src/code_8170.c",
+    "macro": "gDPSetPrimColor",
+    "count": 1,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle",
+    "count": 20,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7436594\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gDPSetTile",
+    "count": 4,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSPMatrix",
+    "count": 2,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSPVertex",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388608 ref= 8388608 delta=0 bytes; differing(excl hdr)=      57\nfirst diffs (pos_dec v1_oct v2_oct):\n537469 216 222\n537470  42   3\n537472   0   6\n537473 222 216\n537474   3  42\n537476   6   0\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gDPSetPrimColor",
+    "count": 1,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  }
+]

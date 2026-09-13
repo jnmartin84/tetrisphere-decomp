@@ -1,0 +1,142 @@
+[
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 7738",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388592 ref= 8388608 delta=-16 bytes; differing(excl hdr)= 7437915\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108  60 100\n  4152  70 110\n  8912  60 100\n  9196 260 300\n  9236 256 276\n  9324 260 300\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 7740",
+    "count": 1,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 7806",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388608 ref= 8388608 delta=0 bytes; differing(excl hdr)=  180477\nfirst diffs (pos_dec v1_oct v2_oct):\n 21400 240 237\n 22036 240 237\n 23272  50  47\n116004  47  46\n119700 271 270\n165240 271 270\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 7808",
+    "count": 1,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 8338",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388592 ref= 8388608 delta=-16 bytes; differing(excl hdr)= 7425759\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108  60 100\n  4152  70 110\n  8912  60 100\n  9196 260 300\n  9236 256 276\n  9324 260 300\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 8340",
+    "count": 1,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 8414",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388592 ref= 8388608 delta=-16 bytes; differing(excl hdr)= 7425037\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108  60 100\n  4152  70 110\n  8912  60 100\n  9196 260 300\n  9236 256 276\n  9324 260 300\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 8416",
+    "count": 1,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 8489",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7423407\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 8491",
+    "count": 1,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 8561",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7422678\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 8563",
+    "count": 1,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 8633",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7421955\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 8635",
+    "count": 1,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 8705",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388624 ref= 8388608 delta=16 bytes; differing(excl hdr)= 7421228\nfirst diffs (pos_dec v1_oct v2_oct):\n  4108 120 100\n  4152 130 110\n  8912 120 100\n  9196 320 300\n  9236 316 276\n  9324 320 300\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 8707",
+    "count": 1,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 9620",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388608 ref= 8388608 delta=0 bytes; differing(excl hdr)=     421\nfirst diffs (pos_dec v1_oct v2_oct):\n503634 151 150\n503642  56  16\n503650  67  27\n503654  43   3\n503658 151 150\n503666  57  17\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 9622",
+    "count": 1,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 9812",
+    "count": 1,
+    "accepted": false,
+    "output": "ROM MISMATCH (comparison includes all 64 header bytes).\nMISMATCH: built= 8388608 ref= 8388608 delta=0 bytes; differing(excl hdr)=  154745\nfirst diffs (pos_dec v1_oct v2_oct):\n 21400 236 237\n 22036 236 237\n 23272  46  47\n116004  45  46\n119700 267 270\n165240 267 270\n"
+  },
+  {
+    "file": "src/game2.c",
+    "macro": "gSP1Triangle line 9814",
+    "count": 1,
+    "accepted": true,
+    "output": "FULL MATCH\n"
+  }
+]
