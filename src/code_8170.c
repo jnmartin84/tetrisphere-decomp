@@ -1594,7 +1594,7 @@ s32 arg1;
     gDPSetTextureFilter(D_800F22B4++, G_TF_BILERP);
     gCmd(D_800F22B4++, 0xFC26A004, 0x1F0C93FF);
     gDPSetAlphaCompare(D_800F22B4++, G_AC_THRESHOLD);
-    gCmd(D_800F22B4++, 0xB900031D, *(s32 *)(arg0 + 0x68) | 0xC080000);
+    gDPSetRenderMode(D_800F22B4++, *(s32 *)(arg0 + 0x68), G_RM_PASS);
     arg0[0x38] = 1;
     for (i = 0; i < n; i++) {
         base = func_800310C4(arg0, i, &v);
@@ -1926,35 +1926,35 @@ s32 arg4;
             if (count != 0) {
                 if (arg0->unk38 != 5) {
                     gDPSetCycleType(D_800F22B4++, G_CYC_2CYCLE);
-                    gCmd(D_800F22B4++, 0xB900031D, arg0->unk60 | 0x0C080000);
+                    gDPSetRenderMode(D_800F22B4++, arg0->unk60, G_RM_PASS);
                     arg0->unk38 = 5;
                 }
             } else if (arg0->unk38 != 4) {
                 gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE);
-                gCmd(D_800F22B4++, 0xB900031D, arg0->unk5C | arg0->unk60);
+                gDPSetRenderMode(D_800F22B4++, arg0->unk5C, arg0->unk60);
                 arg0->unk38 = 4;
             }
         } else if (count != 0) {
             if (p[0] & 0x10) {
                 if (arg0->unk38 != 1) {
                     gDPSetCycleType(D_800F22B4++, G_CYC_2CYCLE);
-                    gCmd(D_800F22B4++, 0xB900031D, arg0->unk68 | 0x0C080000);
+                    gDPSetRenderMode(D_800F22B4++, arg0->unk68, G_RM_PASS);
                     arg0->unk38 = 1;
                 }
             } else if (arg0->unk38 != 3) {
                 gDPSetCycleType(D_800F22B4++, G_CYC_2CYCLE);
-                gCmd(D_800F22B4++, 0xB900031D, arg0->unk70 | 0x0C080000);
+                gDPSetRenderMode(D_800F22B4++, arg0->unk70, G_RM_PASS);
                 arg0->unk38 = 3;
             }
         } else if (p[0] & 0x10) {
             if (arg0->unk38 != 0) {
                 gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE);
-                gCmd(D_800F22B4++, 0xB900031D, arg0->unk64 | arg0->unk68);
+                gDPSetRenderMode(D_800F22B4++, arg0->unk64, arg0->unk68);
                 arg0->unk38 = 0;
             }
         } else if (arg0->unk38 != 2) {
             gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE);
-            gCmd(D_800F22B4++, 0xB900031D, arg0->unk6C | arg0->unk70);
+            gDPSetRenderMode(D_800F22B4++, arg0->unk6C, arg0->unk70);
             arg0->unk38 = 2;
         }
         pal2 = p[1];

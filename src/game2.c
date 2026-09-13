@@ -7952,8 +7952,8 @@ extern s16 D_8015F87A;
 void func_8009A348() {
     gDPPipeSync(D_800F22B4++);
     gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB900031D, 0x00504B50);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+    gDPSetRenderMode(D_800F22B4++, G_RM_ZB_CLD_SURF, G_RM_ZB_CLD_SURF2);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
     gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
@@ -8134,8 +8134,8 @@ void func_8009AB60(s32 arg0) {
         D_80160C5C += D_80160C64 * 0x300;
         gSPClearGeometryMode(D_800F22B4++, G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
         gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
-        gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-        gCmd(D_800F22B4++, 0xB900031D, 0x005049D8);
+        gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+        gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2);
         if (*(u8 *)(D_8013DD00 + 0x1267) != 0) {
             *(s16 *)(D_8013DD00 + 0x23AE) = 1;
             *(s16 *)(D_8013DD00 + 0x23B0) = 1;
@@ -9016,14 +9016,14 @@ void func_8009E314(u16 a0) {
         if (D_8015D97C == 1) {
             D_8015D97C = 0;
             gDPPipeSync(D_800F22B4++);
-            gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
+            gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
         }
     }
     if (a0 & 0x40) {
         if (D_8015D97C == 0) {
             D_8015D97C = 1;
             gDPPipeSync(D_800F22B4++);
-            gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFCF279);
+            gDPSetCombineMode(D_800F22B4++, G_CC_DECALRGBA, G_CC_DECALRGBA);
         }
     }
 }
@@ -9742,7 +9742,7 @@ void func_800A0ED8(void) {
 
     D_8015D97C = 1;
     gDPPipeSync(D_800F22B4++);
-    gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFCF279);
+    gDPSetCombineMode(D_800F22B4++, G_CC_DECALRGBA, G_CC_DECALRGBA);
     gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
     for (D_8015F836 = 0; D_8015F836 < 0xF; D_8015F836++) {
         for (D_8015F83A = 0; D_8015F83A < 0xF; D_8015F83A++) {
@@ -10369,8 +10369,8 @@ void func_800A348C(void) {
     gDPPipeSync(D_800F22B4++);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_LIGHTING);
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB900031D, 0x00552078);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+    gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2);
     gDPPipeSync(D_800F22B4++);
     gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
     gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
@@ -10645,9 +10645,9 @@ u8 a0;
 
     gDPPipeSync(D_800F22B4++);
     if (D_8015EDB6 >= 0xFF) {
-        gCmd(D_800F22B4++, 0xB900031D, 0x552078);
+        gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2);
     } else {
-        gCmd(D_800F22B4++, 0xB900031D, 0x5049D8);
+        gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2);
     }
 
     if (D_800E44A8 == 4) {
@@ -10898,9 +10898,9 @@ u8 a0;
     D_8015EDB6 = ((T_21D8 *)D_8013DD00)->e[a0].w;
     gDPPipeSync(D_800F22B4++);
     if (D_8015EDB6 == 0xFF) {
-        gCmd(D_800F22B4++, 0xB900031D, 0x552078);
+        gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2);
     } else {
-        gCmd(D_800F22B4++, 0xB900031D, 0x5049D8);
+        gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2);
     }
     func_800A3894(a0, h);
 }
@@ -10990,8 +10990,8 @@ void func_800A4D60(void) {
     gSPLight(D_800F22B4++, (u32) (D_8013DD00 + 0x21C0), LIGHT_2);
     gDPPipeSync(D_800F22B4++);
     gDPSetScissor(D_800F22B4++, G_SC_NON_INTERLACE, 0, 0, 320, 240);
-    gCmd(D_800F22B4++, 0xB900031D, 0x5049D8);
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
+    gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
     gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
     gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
     gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32) D_800E2AD0); gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
@@ -11559,9 +11559,9 @@ void func_800A6FD0(s16 a0) {
     *(s16 *)(p + 8) = 0;
     gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
     *(s16 *)(p + 0x88) = 0xD;
-    gCmd(p + 0x90, 0xFCFFFFFF, 0xFFFCF279);
+    gDPSetCombineMode(p + 0x90, G_CC_DECALRGBA, G_CC_DECALRGBA);
     *(s16 *)(p + 0x98) = 0x10;
-    gCmd(p + 0xA0, 0xB900031D, 0x552078);
+    gDPSetRenderMode(p + 0xA0, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2);
     *(s16 *)(p + 0xA8) = 1;
     *(s32 *)(p + 0x60) = 0;
     *(s32 *)(p + 0x64) = 0;
@@ -11889,9 +11889,9 @@ void func_800A8158(u16 a0) {
     u8 *p = &D_8013FAF8[a0 * 0xD0];
     gSPSetGeometryMode(p+0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
     *(s16*)(p+0x88) = 0xD;
-    gCmd(p+0x90, 0xFC121824, 0xFF33FFFF);
+    gDPSetCombineMode(p+0x90, G_CC_MODULATEIA, G_CC_MODULATEIA);
     *(s16*)(p+0x98) = 7;
-    gCmd(p+0xA0, 0xB900031D, 0x504A50);
+    gDPSetRenderMode(p+0xA0, G_RM_ZB_XLU_SURF, G_RM_ZB_XLU_SURF2);
     *(s16*)(p+0xA8) = 6;
 }
 
@@ -11916,9 +11916,9 @@ void func_800A81DC(u16 a0) {
     u8 *p = &D_8013FAF8[a0 * 0xD0];
     gSPSetGeometryMode(p+0x80, G_ZBUFFER);
     *(s16*)(p+0x88) = 8;
-    gCmd(p+0x90, 0xFCFFFFFF, 0xFFFCF279);
+    gDPSetCombineMode(p+0x90, G_CC_DECALRGBA, G_CC_DECALRGBA);
     *(s16*)(p+0x98) = 0x10;
-    gCmd(p+0xA0, 0xB900031D, 0x552078);
+    gDPSetRenderMode(p+0xA0, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2);
     *(s16*)(p+0xA8) = 1;
 }
 
@@ -12026,9 +12026,9 @@ s16 arg4;
     *(void **)(dst + 0xC8) = (void *)(((*((u8 *)arg1 + 8) & 0xFF) << 5) + D_800E3AD8);
     gSPSetGeometryMode(dst + 0x80, G_ZBUFFER);
     *(s16 *)(dst + 0x88) = 8;
-    gCmd(dst + 0x90, 0xFCFFFFFF, 0xFFFCF279);
+    gDPSetCombineMode(dst + 0x90, G_CC_DECALRGBA, G_CC_DECALRGBA);
     *(s16 *)(dst + 0x98) = 0x10;
-    gCmd(dst + 0xA0, 0xB900031D, 0x552078);
+    gDPSetRenderMode(dst + 0xA0, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2);
     *(s16 *)(dst + 0xA8) = 1;
 }
 
@@ -16978,8 +16978,8 @@ void func_800B3C3C(void) {
         *(u32 *)((u8 *)D_8013DD00 + 0x73C) -= D_80160C64;
     }
     gDPPipeSync(D_800F22B4++);
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB900031D, 0x504240);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+    gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_SHADE);
     i = 0;
@@ -17194,8 +17194,8 @@ void func_800B4394(void) {
     }
     i = 0;
     gDPPipeSync(D_800F22B4++);
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB900031D, 0x504240);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+    gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_SHADE);
     p = ((Ring_B3DEC *)D_8013DD00)->ring;
@@ -17573,9 +17573,9 @@ void func_800B53F0(s16 a0, s16 a1, s16 a2, s16 a3, s16 a4, s16 a5, s16 a6, s16 a
         gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
         *(s16 *)(p + 0x88) = 0xD;
     }
-    gCmd(p + 0x90, 0xFC121824, 0xFF33FFFF);
+    gDPSetCombineMode(p + 0x90, G_CC_MODULATEIA, G_CC_MODULATEIA);
     *(s16 *)(p + 0x98) = 7;
-    gCmd(p + 0xA0, 0xB900031D, 0x5049D8);
+    gDPSetRenderMode(p + 0xA0, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2);
     *(s16 *)(p + 0xA8) = 2;
     *(s32 *)(p + 0xAC) = 0xFFFF;
     *(s32 *)(p + 0xB0) = -(0xFFFF / D_80131728);
@@ -17814,9 +17814,9 @@ void func_800B667C(s16 a0, s16 a1, s16 a2, s16 a3, s16 a4, s16 a5, s16 a6, s16 a
     *(s8 *)(p + 0x73) = -1;
     gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
     *(s16 *)(p + 0x88) = 0xD;
-    gCmd(p + 0x90, 0xFC121824, 0xFF33FFFF);
+    gDPSetCombineMode(p + 0x90, G_CC_MODULATEIA, G_CC_MODULATEIA);
     *(s16 *)(p + 0x98) = 7;
-    gCmd(p + 0xA0, 0xB900031D, 0x5049D8);
+    gDPSetRenderMode(p + 0xA0, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2);
     *(s16 *)(p + 0xA8) = 2;
     *(s32 *)(p + 0xAC) = 0xFFFF;
     *(s32 *)(p + 0xB0) = -(0xFFFF / D_80131728);
@@ -18046,9 +18046,9 @@ void func_800B7190(s16 a0, s16 a1, s16 a2, s16 a3, s16 a4, s16 a5, s16 a6, s16 a
     *(s8 *)(p + 0x7B) = -1;
     gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_LIGHTING);
     *(s16 *)(p + 0x88) = 0xF;
-    gCmd(p + 0x90, 0xFC121824, 0xFF33FFFF);
+    gDPSetCombineMode(p + 0x90, G_CC_MODULATEIA, G_CC_MODULATEIA);
     *(s16 *)(p + 0x98) = 7;
-    gCmd(p + 0xA0, 0xB900031D, 0x5049D8);
+    gDPSetRenderMode(p + 0xA0, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2);
     *(s16 *)(p + 0xA8) = 2;
     *(s32 *)(p + 0xAC) = 0xFFFF;
     *(s32 *)(p + 0xB0) = -(0xFFFF / 0x10);
@@ -18701,8 +18701,8 @@ void func_800B9300(void) {
     g = D_800E9150[idx + 1];
     b = D_800E9150[idx + 2];
     gDPPipeSync(D_800F22B4++);
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB900031D, 0x00504240);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+    gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_SHADE);
 
@@ -19208,8 +19208,8 @@ void func_800BABB4(void) {
 
     D_800E44F0 = 0;
     gDPPipeSync(D_800F22B4++);
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB900031D, 0x00504240);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+    gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_SHADE);
     gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
@@ -19612,8 +19612,8 @@ void func_800BBCA4(void) {
     D_800E44F0 = 0;
     D_8015F84E = 0x10;
     gDPPipeSync(D_800F22B4++);
-    gCmd(D_800F22B4++, 0xB900031D, 0x552078);
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
+    gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK | G_LIGHTING);
     gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3AD8);
@@ -20000,8 +20000,8 @@ void func_800BD418(void) {
     gDPSetTextureFilter(D_800F22B4++, G_TF_BILERP);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK | G_LIGHTING);
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB900031D, 0x5049D8);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+    gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2);
     gDPPipeSync(D_800F22B4++);
     gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
     gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
@@ -20298,8 +20298,8 @@ void func_800BE974(void) {
         return;
     }
     gDPPipeSync(D_800F22B4++);
-    gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFE793C);
-    gCmd(D_800F22B4++, 0xB900031D, 0x005049D8);
+    gDPSetCombineMode(D_800F22B4++, G_CC_SHADE, G_CC_SHADE);
+    gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK);
     gDPSetColorDither(D_800F22B4++, G_CD_NOISE);
@@ -20652,8 +20652,8 @@ void func_800BF8B0(void) {
     u8 *p;
 
     gDPPipeSync(D_800F22B4++);
-    gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFE793C);
-    gCmd(D_800F22B4++, 0xB900031D, 0x005049D8);
+    gDPSetCombineMode(D_800F22B4++, G_CC_SHADE, G_CC_SHADE);
+    gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
     gDPSetColorDither(D_800F22B4++, G_CD_NOISE);
@@ -20804,8 +20804,8 @@ void func_800BFDA4(void) {
         gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15);
         gDPPipeSync(D_800F22B4++);
     }
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB900031D, 0x005049D8);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+    gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK | G_LIGHTING);
     D_8015F84E = 0x10;
@@ -21065,8 +21065,8 @@ void func_800C090C(void) {
 
     D_800E44F0 = 0;
     gDPPipeSync(D_800F22B4++);
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB900031D, 0x00504A50);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+    gDPSetRenderMode(D_800F22B4++, G_RM_ZB_XLU_SURF, G_RM_ZB_XLU_SURF2);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
     for (i = 0; i < ((PB_C090C *)D_8013DD00)->count; i++) {
@@ -21217,8 +21217,8 @@ void func_800C0EE8(void) {
 
     D_800E44F0 = 0;
     gDPPipeSync(D_800F22B4++);
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB900031D, 0x00504A50);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+    gDPSetRenderMode(D_800F22B4++, G_RM_ZB_XLU_SURF, G_RM_ZB_XLU_SURF2);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE);
     gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
@@ -21834,8 +21834,8 @@ void func_800C25FC(void) {
         gDPPipeSync(D_800F22B4++);
         gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
         gDPSetScissor(D_800F22B4++, G_SC_NON_INTERLACE, 0, 0, 320, 240);
-        gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-        gCmd(D_800F22B4++, 0xB900031D, 0x504240);
+        gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+        gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2);
         gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
         gSPSetGeometryMode(D_800F22B4++, G_SHADE);
         gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, D_80134BF4);
@@ -22142,11 +22142,11 @@ void func_800C3058(void) {
             gSPClearGeometryMode(D_800F22B4++, G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
             gSPTexture(D_800F22B4++, 0, 0, 0, G_TX_RENDERTILE, G_OFF);
             gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE);
-            gCmd(D_800F22B4++, 0xB900031D, 0x504340);
-            gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFDF6FB);
+            gDPSetRenderMode(D_800F22B4++, G_RM_CLD_SURF, G_RM_CLD_SURF2);
+            gDPSetCombineMode(D_800F22B4++, G_CC_PRIMITIVE, G_CC_PRIMITIVE);
             gDPSetFillColor(D_800F22B4++, 0x10001);
             gCmd(D_800F22B4++, 0xFA000000, a & 0xFF);
-            gCmd(D_800F22B4++, 0xF64FC3BC, 0);
+            gDPFillRectangle(D_800F22B4++, 0, 0, 319, 239);
             gDPPipeSync(D_800F22B4++);
             func_800AF294();
         }
@@ -22846,8 +22846,8 @@ void func_800C4C78(void) {
     u16 base;
 
     gDPPipeSync(D_800F22B4++);
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB900031D, 0x00504A50);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+    gDPSetRenderMode(D_800F22B4++, G_RM_ZB_XLU_SURF, G_RM_ZB_XLU_SURF2);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE);
     gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, D_80134BF4);
@@ -23769,8 +23769,8 @@ void func_800C7300(void) {
     s16 y;
 
     gDPPipeSync(D_800F22B4++);
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB900031D, 0x00504240);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+    gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_SHADE);
     gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_801317A0);
@@ -24977,8 +24977,8 @@ void func_800CA148(void) {
     s32 k;
     u8 *c;
 
-    gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB900031D, 0x00504240);
+    gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA);
+    gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2);
     gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
     gSPSetGeometryMode(D_800F22B4++, G_SHADE);
     for (i = 0, p = D_8015FA10; i < 0x10; i++, p++) {

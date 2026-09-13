@@ -1,0 +1,554 @@
+[
+  {
+    "file": "src/code_8170.c",
+    "line": 1597,
+    "offset": 48466,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, *(s32 *)(arg0 + 0x68) | 0xC080000)",
+    "new": "gDPSetRenderMode(D_800F22B4++, *(s32 *)(arg0 + 0x68), G_RM_PASS)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1929,
+    "offset": 58103,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, arg0->unk60 | 0x0C080000)",
+    "new": "gDPSetRenderMode(D_800F22B4++, arg0->unk60, G_RM_PASS)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1934,
+    "offset": 58336,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, arg0->unk5C | arg0->unk60)",
+    "new": "gDPSetRenderMode(D_800F22B4++, arg0->unk5C, arg0->unk60)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1941,
+    "offset": 58631,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, arg0->unk68 | 0x0C080000)",
+    "new": "gDPSetRenderMode(D_800F22B4++, arg0->unk68, G_RM_PASS)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1946,
+    "offset": 58864,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, arg0->unk70 | 0x0C080000)",
+    "new": "gDPSetRenderMode(D_800F22B4++, arg0->unk70, G_RM_PASS)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1952,
+    "offset": 59116,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, arg0->unk64 | arg0->unk68)",
+    "new": "gDPSetRenderMode(D_800F22B4++, arg0->unk64, arg0->unk68)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1957,
+    "offset": 59330,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, arg0->unk6C | arg0->unk70)",
+    "new": "gDPSetRenderMode(D_800F22B4++, arg0->unk6C, arg0->unk70)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7955,
+    "offset": 304654,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7956,
+    "offset": 304702,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x00504B50)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_ZB_CLD_SURF, G_RM_ZB_CLD_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8137,
+    "offset": 312390,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8138,
+    "offset": 312442,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x005049D8)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9019,
+    "offset": 346315,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9026,
+    "offset": 346506,
+    "old": "gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFCF279)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_DECALRGBA, G_CC_DECALRGBA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9745,
+    "offset": 377729,
+    "old": "gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFCF279)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_DECALRGBA, G_CC_DECALRGBA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10372,
+    "offset": 405258,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10373,
+    "offset": 405306,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x00552078)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10648,
+    "offset": 417236,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x552078)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10650,
+    "offset": 417299,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x5049D8)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10901,
+    "offset": 427326,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x552078)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10903,
+    "offset": 427389,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x5049D8)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10993,
+    "offset": 429952,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x5049D8)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10994,
+    "offset": 429998,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11562,
+    "offset": 455353,
+    "old": "gCmd(p + 0x90, 0xFCFFFFFF, 0xFFFCF279)",
+    "new": "gDPSetCombineMode(p + 0x90, G_CC_DECALRGBA, G_CC_DECALRGBA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11564,
+    "offset": 455428,
+    "old": "gCmd(p + 0xA0, 0xB900031D, 0x552078)",
+    "new": "gDPSetRenderMode(p + 0xA0, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11892,
+    "offset": 471840,
+    "old": "gCmd(p+0x90, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(p+0x90, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11894,
+    "offset": 471907,
+    "old": "gCmd(p+0xA0, 0xB900031D, 0x504A50)",
+    "new": "gDPSetRenderMode(p+0xA0, G_RM_ZB_XLU_SURF, G_RM_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11919,
+    "offset": 472862,
+    "old": "gCmd(p+0x90, 0xFCFFFFFF, 0xFFFCF279)",
+    "new": "gDPSetCombineMode(p+0x90, G_CC_DECALRGBA, G_CC_DECALRGBA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11921,
+    "offset": 472932,
+    "old": "gCmd(p+0xA0, 0xB900031D, 0x552078)",
+    "new": "gDPSetRenderMode(p+0xA0, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 12029,
+    "offset": 476297,
+    "old": "gCmd(dst + 0x90, 0xFCFFFFFF, 0xFFFCF279)",
+    "new": "gDPSetCombineMode(dst + 0x90, G_CC_DECALRGBA, G_CC_DECALRGBA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 12031,
+    "offset": 476376,
+    "old": "gCmd(dst + 0xA0, 0xB900031D, 0x552078)",
+    "new": "gDPSetRenderMode(dst + 0xA0, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16981,
+    "offset": 638452,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16982,
+    "offset": 638500,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x504240)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17197,
+    "offset": 648075,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17198,
+    "offset": 648123,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x504240)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17576,
+    "offset": 661951,
+    "old": "gCmd(p + 0x90, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(p + 0x90, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17578,
+    "offset": 662023,
+    "old": "gCmd(p + 0xA0, 0xB900031D, 0x5049D8)",
+    "new": "gDPSetRenderMode(p + 0xA0, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17817,
+    "offset": 670941,
+    "old": "gCmd(p + 0x90, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(p + 0x90, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17819,
+    "offset": 671013,
+    "old": "gCmd(p + 0xA0, 0xB900031D, 0x5049D8)",
+    "new": "gDPSetRenderMode(p + 0xA0, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18049,
+    "offset": 680802,
+    "old": "gCmd(p + 0x90, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(p + 0x90, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18051,
+    "offset": 680874,
+    "old": "gCmd(p + 0xA0, 0xB900031D, 0x5049D8)",
+    "new": "gDPSetRenderMode(p + 0xA0, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18704,
+    "offset": 706469,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18705,
+    "offset": 706517,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x00504240)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19211,
+    "offset": 723270,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19212,
+    "offset": 723318,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x00504240)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19615,
+    "offset": 738447,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x552078)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19616,
+    "offset": 738493,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20003,
+    "offset": 754581,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20004,
+    "offset": 754629,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x5049D8)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20301,
+    "offset": 767778,
+    "old": "gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFE793C)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_SHADE, G_CC_SHADE)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20302,
+    "offset": 767826,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x005049D8)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20655,
+    "offset": 781041,
+    "old": "gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFE793C)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_SHADE, G_CC_SHADE)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20656,
+    "offset": 781089,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x005049D8)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20807,
+    "offset": 788892,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20808,
+    "offset": 788940,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x005049D8)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_AA_ZB_XLU_SURF, G_RM_AA_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21068,
+    "offset": 797544,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21069,
+    "offset": 797592,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x00504A50)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_ZB_XLU_SURF, G_RM_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21220,
+    "offset": 802511,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21221,
+    "offset": 802559,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x00504A50)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_ZB_XLU_SURF, G_RM_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21837,
+    "offset": 826386,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21838,
+    "offset": 826438,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x504240)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22145,
+    "offset": 839097,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x504340)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_CLD_SURF, G_RM_CLD_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22146,
+    "offset": 839151,
+    "old": "gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFDF6FB)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_PRIMITIVE, G_CC_PRIMITIVE)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22149,
+    "offset": 839313,
+    "old": "gCmd(D_800F22B4++, 0xF64FC3BC, 0)",
+    "new": "gDPFillRectangle(D_800F22B4++, 0, 0, 319, 239)",
+    "macro": "gDPFillRectangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22849,
+    "offset": 863916,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22850,
+    "offset": 863964,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x00504A50)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_ZB_XLU_SURF, G_RM_ZB_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23772,
+    "offset": 894944,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23773,
+    "offset": 894992,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x00504240)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24980,
+    "offset": 936759,
+    "old": "gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF)",
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_MODULATEIA, G_CC_MODULATEIA)",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24981,
+    "offset": 936807,
+    "old": "gCmd(D_800F22B4++, 0xB900031D, 0x00504240)",
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2)",
+    "macro": "gDPSetRenderMode"
+  }
+]
