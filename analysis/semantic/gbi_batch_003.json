@@ -1,0 +1,3258 @@
+[
+  {
+    "file": "src/code_8170.c",
+    "line": 1582,
+    "offset": 47647,
+    "old": "gCmd(D_800F22B4++, 0x1030040, (u32)&((M1A98 *)arg0)->mtx[arg0[0x3D]] + 0x80000078)",
+    "new": "gSPMatrix(D_800F22B4++, (u32)&((M1A98 *)arg0)->mtx[arg0[0x3D]] + 0x80000078, G_MTX_PROJECTION | G_MTX_LOAD | G_MTX_NOPUSH)",
+    "macro": "gSPMatrix"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1588,
+    "offset": 47969,
+    "old": "gCmd(D_800F22B4++, 0xFA000000, 0xFFFFFFFF)",
+    "new": "gDPSetPrimColor(D_800F22B4++, 0, 0, 255, 255, 255, 255)",
+    "macro": "gDPSetPrimColor"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1589,
+    "offset": 48017,
+    "old": "gCmd(D_800F22B4++, 0xF9000000, 0)",
+    "new": "gDPSetBlendColor(D_800F22B4++, 0, 0, 0, 0)",
+    "macro": "gDPSetBlendColor"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1732,
+    "offset": 51939,
+    "old": "gCmd(D_800F22B4++, 0x03840010, (u32) &arg0->unk14[arg1].lookat)",
+    "new": "gSPLookAtX(D_800F22B4++, (u32) &arg0->unk14[arg1].lookat)",
+    "macro": "gSPLookAtX"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1733,
+    "offset": 52008,
+    "old": "gCmd(D_800F22B4++, 0x03820010, (u32) &arg0->unk14[arg1].lookat.l[1])",
+    "new": "gSPLookAtY(D_800F22B4++, (u32) &arg0->unk14[arg1].lookat.l[1])",
+    "macro": "gSPLookAtY"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1751,
+    "offset": 52582,
+    "old": "gCmd(D_800F22B4++, 0x01020040, (u32)&((Mtx *)arg0)[arg0->unk3D] + 0x800000F8)",
+    "new": "gSPMatrix(D_800F22B4++, (u32)&((Mtx *)arg0)[arg0->unk3D] + 0x800000F8, G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_NOPUSH)",
+    "macro": "gSPMatrix"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1752,
+    "offset": 52665,
+    "old": "gCmd(D_800F22B4++, 0x01000040, (u32)&arg0->unk14[arg3].mtx[arg0->unk3D] + 0x80000000)",
+    "new": "gSPMatrix(D_800F22B4++, (u32)&arg0->unk14[arg3].mtx[arg0->unk3D] + 0x80000000, G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH)",
+    "macro": "gSPMatrix"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1998,
+    "offset": 60365,
+    "old": "gCmd(D_800F22B4++, 0xF5100000, 0x02000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, 2, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 2002,
+    "offset": 60554,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x02000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, 2, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 2006,
+    "offset": 60741,
+    "old": "gCmd(D_800F22B4++, 0xF5880000, 0x02000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_I, G_IM_SIZ_8b, 0, 0, 2, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7735,
+    "offset": 296097,
+    "old": "gCmd(D_800F22B4++, 0x04F00100, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 16, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7803,
+    "offset": 298365,
+    "old": "gCmd(D_800F22B4++, 0x04F00100, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 16, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7912,
+    "offset": 302583,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7914,
+    "offset": 302647,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, 0x100000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 1, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7959,
+    "offset": 304856,
+    "old": "gCmd(D_800F22B4++, 0xF5400000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7962,
+    "offset": 305015,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x07080200)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_CLAMP, 0, 0, G_TX_CLAMP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7964,
+    "offset": 305102,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x071FF200)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 511, 512)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7966,
+    "offset": 305189,
+    "old": "gCmd(D_800F22B4++, 0xF5680800, 0x00080200)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 0, 0, G_TX_CLAMP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7967,
+    "offset": 305241,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7970,
+    "offset": 305395,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x07080200)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_CLAMP, 0, 0, G_TX_CLAMP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7972,
+    "offset": 305482,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x071FF200)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 511, 512)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7974,
+    "offset": 305569,
+    "old": "gCmd(D_800F22B4++, 0xF5680800, 0x00080200)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 0, 0, G_TX_CLAMP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7975,
+    "offset": 305621,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7993,
+    "offset": 306667,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7994,
+    "offset": 306720,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7995,
+    "offset": 306768,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8143,
+    "offset": 312173,
+    "old": "gCmd(D_800F22B4++, 0xF5100000, 0x07090240)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_CLAMP, 4, 0, G_TX_CLAMP, 4, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8145,
+    "offset": 312268,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF100)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 256)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8147,
+    "offset": 312363,
+    "old": "gCmd(D_800F22B4++, 0xF5101000, 0x00090240)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 4, 0, G_TX_CLAMP, 4, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8148,
+    "offset": 312419,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8164,
+    "offset": 313575,
+    "old": "gCmd(D_800F22B4++, 0xF5100000, 0x07054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8166,
+    "offset": 313678,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF100)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 256)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8168,
+    "offset": 313781,
+    "old": "gCmd(D_800F22B4++, 0xF5101000, 0x00054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8169,
+    "offset": 313841,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8226,
+    "offset": 316935,
+    "old": "gCmd(D_800F22B4++, 0xF5400000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8228,
+    "offset": 317083,
+    "old": "gCmd(D_800F22B4++, 0xF5500000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8230,
+    "offset": 317186,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF080)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 128)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8232,
+    "offset": 317289,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8233,
+    "offset": 317340,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x003FC03C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 1020, 60)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8236,
+    "offset": 317542,
+    "old": "gCmd(D_800F22B4++, 0xF5000100, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8238,
+    "offset": 317645,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8242,
+    "offset": 317890,
+    "old": "gCmd(D_800F22B4++, 0xF5000110, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 272, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8244,
+    "offset": 317993,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8248,
+    "offset": 318238,
+    "old": "gCmd(D_800F22B4++, 0xF5000120, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 288, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8250,
+    "offset": 318341,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8334,
+    "offset": 322493,
+    "old": "gCmd(D_800F22B4++, 0x04F00100, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 16, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8410,
+    "offset": 325081,
+    "old": "gCmd(D_800F22B4++, 0x04F00100, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 16, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8486,
+    "offset": 327642,
+    "old": "gCmd(D_800F22B4++, 0x04F00100, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 16, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8558,
+    "offset": 330071,
+    "old": "gCmd(D_800F22B4++, 0x04F00100, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 16, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8630,
+    "offset": 332514,
+    "old": "gCmd(D_800F22B4++, 0x04F00100, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 16, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8702,
+    "offset": 334921,
+    "old": "gCmd(D_800F22B4++, 0x04F00100, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 16, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8999,
+    "offset": 344175,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, 0x00900000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 9, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9002,
+    "offset": 344257,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, 0x00A00000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 10, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9006,
+    "offset": 344360,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, 0x00800000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 8, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9446,
+    "offset": 360777,
+    "old": "gCmd(D_800F22B4++, 0xF5000100, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9448,
+    "offset": 360856,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9452,
+    "offset": 361054,
+    "old": "gCmd(D_800F22B4++, 0xF5000110, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 272, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9454,
+    "offset": 361133,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9458,
+    "offset": 361331,
+    "old": "gCmd(D_800F22B4++, 0xF5000120, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 288, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9460,
+    "offset": 361410,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9464,
+    "offset": 361608,
+    "old": "gCmd(D_800F22B4++, 0xF5000130, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 304, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9466,
+    "offset": 361687,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9470,
+    "offset": 361885,
+    "old": "gCmd(D_800F22B4++, 0xF5000140, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 320, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9472,
+    "offset": 361964,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9476,
+    "offset": 362162,
+    "old": "gCmd(D_800F22B4++, 0xF5000150, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 336, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9478,
+    "offset": 362241,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9482,
+    "offset": 362439,
+    "old": "gCmd(D_800F22B4++, 0xF5000160, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 352, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9484,
+    "offset": 362518,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9488,
+    "offset": 362716,
+    "old": "gCmd(D_800F22B4++, 0xF5000170, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 368, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9490,
+    "offset": 362795,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9494,
+    "offset": 362993,
+    "old": "gCmd(D_800F22B4++, 0xF5000180, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 384, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9496,
+    "offset": 363072,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9500,
+    "offset": 363270,
+    "old": "gCmd(D_800F22B4++, 0xF5000190, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 400, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9502,
+    "offset": 363349,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9506,
+    "offset": 363547,
+    "old": "gCmd(D_800F22B4++, 0xF50001A0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 416, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9508,
+    "offset": 363626,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9512,
+    "offset": 363824,
+    "old": "gCmd(D_800F22B4++, 0xF50001B0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 432, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9514,
+    "offset": 363903,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9518,
+    "offset": 364101,
+    "old": "gCmd(D_800F22B4++, 0xF50001C0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 448, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9520,
+    "offset": 364180,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9524,
+    "offset": 364378,
+    "old": "gCmd(D_800F22B4++, 0xF50001D0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 464, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9526,
+    "offset": 364457,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9530,
+    "offset": 364655,
+    "old": "gCmd(D_800F22B4++, 0xF50001E0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 480, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9532,
+    "offset": 364734,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9536,
+    "offset": 364932,
+    "old": "gCmd(D_800F22B4++, 0xF50001F0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 496, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9538,
+    "offset": 365011,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9616,
+    "offset": 368520,
+    "old": "gCmd(D_800F22B4++, 0x04F00100, (u32) D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32) D_8015F848, 16, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9772,
+    "offset": 376277,
+    "old": "gCmd(D_800F22B4++, 0xF5480000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_8b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9776,
+    "offset": 376525,
+    "old": "gCmd(D_800F22B4++, 0xF5100000, 0x07054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9778,
+    "offset": 376628,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF100)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 256)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9780,
+    "offset": 376731,
+    "old": "gCmd(D_800F22B4++, 0xF5101000, 0x00054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9781,
+    "offset": 376791,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9795,
+    "offset": 377686,
+    "old": "gCmd(D_800F22B4++, 0xF5000100, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9797,
+    "offset": 377789,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x073FC000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 255)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9800,
+    "offset": 378050,
+    "old": "gCmd(D_800F22B4++, 0xF5500000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9802,
+    "offset": 378153,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x0707F400)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 127, 1024)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9804,
+    "offset": 378256,
+    "old": "gCmd(D_800F22B4++, 0xF5480400, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_8b, 2, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9805,
+    "offset": 378307,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0003C03C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 60, 60)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9808,
+    "offset": 378419,
+    "old": "gCmd(D_800F22B4++, 0x04F00100, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 16, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9888,
+    "offset": 381932,
+    "old": "gCmd(D_800F22B4++, 0xF5100000, 0x07054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9890,
+    "offset": 382011,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF100)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 256)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9892,
+    "offset": 382090,
+    "old": "gCmd(D_800F22B4++, 0xF5101000, 0x00054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9893,
+    "offset": 382138,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10010,
+    "offset": 387308,
+    "old": "gCmd(D_800F22B4++, 0xF5100000, 0x07054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10012,
+    "offset": 387387,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF100)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 256)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10014,
+    "offset": 387466,
+    "old": "gCmd(D_800F22B4++, 0xF5101000, 0x00054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10015,
+    "offset": 387514,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10376,
+    "offset": 401740,
+    "old": "gCmd(D_800F22B4++, 0xF5400000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10378,
+    "offset": 401893,
+    "old": "gCmd(D_800F22B4++, 0xF5000100, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10380,
+    "offset": 401972,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x073FC000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 255)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10383,
+    "offset": 402136,
+    "old": "gCmd(D_800F22B4++, 0xF5500000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10385,
+    "offset": 402215,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF080)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 128)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10387,
+    "offset": 402294,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10388,
+    "offset": 402333,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x003FC03C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 1020, 60)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10545,
+    "offset": 408474,
+    "old": "gCmd(D_800F22B4++, 0xBD000000, 0)",
+    "new": "gSPPopMatrix(D_800F22B4++, G_MTX_MODELVIEW)",
+    "macro": "gSPPopMatrix"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10988,
+    "offset": 425638,
+    "old": "gCmd(D_800F22B4++, 0xBC000002, 0x80000040)",
+    "new": "gSPNumLights(D_800F22B4++, NUMLIGHTS_1)",
+    "macro": "gSPNumLights"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10989,
+    "offset": 425686,
+    "old": "gCmd(D_800F22B4++, 0x03860010, (u32) (D_8013DD00 + 0x21C8))",
+    "new": "gSPLight(D_800F22B4++, (u32) (D_8013DD00 + 0x21C8), LIGHT_1)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10990,
+    "offset": 425751,
+    "old": "gCmd(D_800F22B4++, 0x03880010, (u32) (D_8013DD00 + 0x21C0))",
+    "new": "gSPLight(D_800F22B4++, (u32) (D_8013DD00 + 0x21C0), LIGHT_2)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10992,
+    "offset": 425847,
+    "old": "gCmd(D_800F22B4++, 0xED000000, 0x5003C0)",
+    "new": "gDPSetScissor(D_800F22B4++, G_SC_NON_INTERLACE, 0, 0, 320, 240)",
+    "macro": "gDPSetScissor"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10996,
+    "offset": 426036,
+    "old": "gCmd(D_800F22B4++, 0xF5400000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10997,
+    "offset": 426157,
+    "old": "gCmd(D_800F22B4++, 0xF5500000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10999,
+    "offset": 426236,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF080)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 128)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11001,
+    "offset": 426315,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11002,
+    "offset": 426354,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x3FC03C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 1020, 60)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11005,
+    "offset": 426519,
+    "old": "gCmd(D_800F22B4++, 0xF5000100, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11007,
+    "offset": 426598,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11011,
+    "offset": 426796,
+    "old": "gCmd(D_800F22B4++, 0xF5000110, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 272, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11013,
+    "offset": 426875,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11017,
+    "offset": 427073,
+    "old": "gCmd(D_800F22B4++, 0xF5000120, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 288, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11019,
+    "offset": 427152,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11023,
+    "offset": 427350,
+    "old": "gCmd(D_800F22B4++, 0xF5000130, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 304, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11025,
+    "offset": 427429,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11029,
+    "offset": 427627,
+    "old": "gCmd(D_800F22B4++, 0xF5000140, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 320, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11031,
+    "offset": 427706,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11035,
+    "offset": 427904,
+    "old": "gCmd(D_800F22B4++, 0xF5000150, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 336, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11037,
+    "offset": 427983,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11041,
+    "offset": 428181,
+    "old": "gCmd(D_800F22B4++, 0xF5000160, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 352, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11043,
+    "offset": 428260,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11047,
+    "offset": 428458,
+    "old": "gCmd(D_800F22B4++, 0xF5000170, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 368, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11049,
+    "offset": 428537,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11053,
+    "offset": 428735,
+    "old": "gCmd(D_800F22B4++, 0xF5000180, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 384, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11055,
+    "offset": 428814,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11059,
+    "offset": 429012,
+    "old": "gCmd(D_800F22B4++, 0xF5000190, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 400, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11061,
+    "offset": 429091,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11065,
+    "offset": 429289,
+    "old": "gCmd(D_800F22B4++, 0xF50001A0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 416, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11067,
+    "offset": 429368,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11071,
+    "offset": 429566,
+    "old": "gCmd(D_800F22B4++, 0xF50001B0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 432, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11073,
+    "offset": 429645,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11077,
+    "offset": 429843,
+    "old": "gCmd(D_800F22B4++, 0xF50001C0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 448, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11079,
+    "offset": 429922,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11083,
+    "offset": 430120,
+    "old": "gCmd(D_800F22B4++, 0xF50001D0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 464, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11085,
+    "offset": 430199,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11089,
+    "offset": 430397,
+    "old": "gCmd(D_800F22B4++, 0xF50001E0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 480, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11091,
+    "offset": 430476,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11095,
+    "offset": 430674,
+    "old": "gCmd(D_800F22B4++, 0xF50001F0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 496, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11097,
+    "offset": 430753,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11199,
+    "offset": 435913,
+    "old": "gCmd(D_800F22B4++, 0xBC000002, 0x800000A0)",
+    "new": "gSPNumLights(D_800F22B4++, NUMLIGHTS_4)",
+    "macro": "gSPNumLights"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11200,
+    "offset": 435961,
+    "old": "gCmd(D_800F22B4++, 0x03860010, (u32)(D_8013DD00 + 0x2CA0))",
+    "new": "gSPLight(D_800F22B4++, (u32)(D_8013DD00 + 0x2CA0), LIGHT_1)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11201,
+    "offset": 436025,
+    "old": "gCmd(D_800F22B4++, 0x03880010, (u32)(D_8013DD00 + 0x2CB0))",
+    "new": "gSPLight(D_800F22B4++, (u32)(D_8013DD00 + 0x2CB0), LIGHT_2)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11202,
+    "offset": 436089,
+    "old": "gCmd(D_800F22B4++, 0x038A0010, (u32)(D_8013DD00 + 0x2CC0))",
+    "new": "gSPLight(D_800F22B4++, (u32)(D_8013DD00 + 0x2CC0), LIGHT_3)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11203,
+    "offset": 436153,
+    "old": "gCmd(D_800F22B4++, 0x038C0010, (u32)(D_8013DD00 + 0x2CD0))",
+    "new": "gSPLight(D_800F22B4++, (u32)(D_8013DD00 + 0x2CD0), LIGHT_4)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11204,
+    "offset": 436217,
+    "old": "gCmd(D_800F22B4++, 0x038E0010, (u32)(D_8013DD00 + 0x2C98))",
+    "new": "gSPLight(D_800F22B4++, (u32)(D_8013DD00 + 0x2C98), LIGHT_5)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11711,
+    "offset": 455414,
+    "old": "gCmd(D_800F22B4++, 0xF5000100, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11713,
+    "offset": 455533,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11715,
+    "offset": 455652,
+    "old": "gCmd(D_800F22B4++, 0xF5400000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11717,
+    "offset": 455817,
+    "old": "gCmd(D_800F22B4++, 0xF5500000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11719,
+    "offset": 455936,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF080)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 128)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11721,
+    "offset": 456055,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11722,
+    "offset": 456114,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x3FC03C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 1020, 60)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11726,
+    "offset": 456370,
+    "old": "gCmd(D_800F22B4++, 0xF5000100, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11728,
+    "offset": 456489,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x073FC000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 255)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11730,
+    "offset": 456608,
+    "old": "gCmd(D_800F22B4++, 0xF5480000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_8b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11732,
+    "offset": 456775,
+    "old": "gCmd(D_800F22B4++, 0xF5500000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11734,
+    "offset": 456894,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x0707F400)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 127, 1024)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11736,
+    "offset": 457013,
+    "old": "gCmd(D_800F22B4++, 0xF5480400, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_8b, 2, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11737,
+    "offset": 457072,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x3C03C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 60, 60)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11742,
+    "offset": 457290,
+    "old": "gCmd(D_800F22B4++, 0xF5400000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11744,
+    "offset": 457451,
+    "old": "gCmd(D_800F22B4++, 0xF5100000, 0x07054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11746,
+    "offset": 457562,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF100)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 256)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11748,
+    "offset": 457673,
+    "old": "gCmd(D_800F22B4++, 0xF5101000, 0x54150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11749,
+    "offset": 457734,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x7C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11842,
+    "offset": 463683,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0xA14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11844,
+    "offset": 463775,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x141E)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 2, 3, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16891,
+    "offset": 628088,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16893,
+    "offset": 628183,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x071FF200)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 511, 512)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16895,
+    "offset": 628278,
+    "old": "gCmd(D_800F22B4++, 0xF5680800, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16896,
+    "offset": 628325,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16897,
+    "offset": 628381,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16898,
+    "offset": 628442,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16899,
+    "offset": 628498,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17111,
+    "offset": 637538,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17113,
+    "offset": 637617,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x071FF200)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 511, 512)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17115,
+    "offset": 637696,
+    "old": "gCmd(D_800F22B4++, 0xF5680800, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17116,
+    "offset": 637735,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17117,
+    "offset": 637783,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17118,
+    "offset": 637836,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17119,
+    "offset": 637884,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18710,
+    "offset": 700083,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18712,
+    "offset": 700162,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x071FF200)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 511, 512)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18714,
+    "offset": 700241,
+    "old": "gCmd(D_800F22B4++, 0xF5680800, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18715,
+    "offset": 700280,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18716,
+    "offset": 700328,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18717,
+    "offset": 700381,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18718,
+    "offset": 700429,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18759,
+    "offset": 701763,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18761,
+    "offset": 701842,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x071FF200)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 511, 512)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18763,
+    "offset": 701921,
+    "old": "gCmd(D_800F22B4++, 0xF5680800, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18764,
+    "offset": 701960,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18765,
+    "offset": 702008,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18766,
+    "offset": 702061,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18767,
+    "offset": 702109,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18808,
+    "offset": 703439,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18810,
+    "offset": 703518,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x071FF200)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 511, 512)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18812,
+    "offset": 703597,
+    "old": "gCmd(D_800F22B4++, 0xF5680800, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18813,
+    "offset": 703636,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18814,
+    "offset": 703684,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18815,
+    "offset": 703737,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18816,
+    "offset": 703785,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18857,
+    "offset": 705115,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18859,
+    "offset": 705194,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x071FF200)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 511, 512)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18861,
+    "offset": 705273,
+    "old": "gCmd(D_800F22B4++, 0xF5680800, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18862,
+    "offset": 705312,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18863,
+    "offset": 705360,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18864,
+    "offset": 705413,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18865,
+    "offset": 705461,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19192,
+    "offset": 715387,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19193,
+    "offset": 715444,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0xA14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19194,
+    "offset": 715491,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19217,
+    "offset": 716258,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x07054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19219,
+    "offset": 716337,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x071FF200)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 511, 512)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19221,
+    "offset": 716416,
+    "old": "gCmd(D_800F22B4++, 0xF5680800, 0x00054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, G_TX_RENDERTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19222,
+    "offset": 716464,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19570,
+    "offset": 728729,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, 0x800000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 8, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19621,
+    "offset": 731230,
+    "old": "gCmd(D_800F22B4++, 0xF5000100, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19623,
+    "offset": 731309,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19627,
+    "offset": 731507,
+    "old": "gCmd(D_800F22B4++, 0xF5000110, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 272, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19629,
+    "offset": 731586,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19633,
+    "offset": 731784,
+    "old": "gCmd(D_800F22B4++, 0xF5000120, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 288, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19635,
+    "offset": 731863,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19639,
+    "offset": 732061,
+    "old": "gCmd(D_800F22B4++, 0xF5000130, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 304, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19641,
+    "offset": 732140,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19645,
+    "offset": 732338,
+    "old": "gCmd(D_800F22B4++, 0xF5000140, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 320, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19647,
+    "offset": 732417,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19651,
+    "offset": 732615,
+    "old": "gCmd(D_800F22B4++, 0xF5000150, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 336, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19653,
+    "offset": 732694,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19657,
+    "offset": 732892,
+    "old": "gCmd(D_800F22B4++, 0xF5000160, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 352, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19659,
+    "offset": 732971,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19663,
+    "offset": 733169,
+    "old": "gCmd(D_800F22B4++, 0xF5000170, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 368, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19665,
+    "offset": 733248,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19669,
+    "offset": 733446,
+    "old": "gCmd(D_800F22B4++, 0xF5000180, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 384, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19671,
+    "offset": 733525,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19675,
+    "offset": 733723,
+    "old": "gCmd(D_800F22B4++, 0xF5000190, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 400, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19677,
+    "offset": 733802,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19681,
+    "offset": 734000,
+    "old": "gCmd(D_800F22B4++, 0xF50001A0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 416, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19683,
+    "offset": 734079,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19687,
+    "offset": 734277,
+    "old": "gCmd(D_800F22B4++, 0xF50001B0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 432, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19689,
+    "offset": 734356,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19693,
+    "offset": 734554,
+    "old": "gCmd(D_800F22B4++, 0xF50001C0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 448, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19695,
+    "offset": 734633,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19699,
+    "offset": 734831,
+    "old": "gCmd(D_800F22B4++, 0xF50001D0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 464, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19701,
+    "offset": 734910,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19705,
+    "offset": 735108,
+    "old": "gCmd(D_800F22B4++, 0xF50001E0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 480, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19707,
+    "offset": 735187,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19711,
+    "offset": 735385,
+    "old": "gCmd(D_800F22B4++, 0xF50001F0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 496, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19713,
+    "offset": 735464,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19717,
+    "offset": 735623,
+    "old": "gCmd(D_800F22B4++, 0xF5400000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19718,
+    "offset": 735744,
+    "old": "gCmd(D_800F22B4++, 0xF5500000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19720,
+    "offset": 735823,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF080)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 128)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19722,
+    "offset": 735902,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19723,
+    "offset": 735941,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x3FC03C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 1020, 60)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20007,
+    "offset": 745584,
+    "old": "gCmd(D_800F22B4++, 0xF5400000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20010,
+    "offset": 745742,
+    "old": "gCmd(D_800F22B4++, 0xF5000100, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20012,
+    "offset": 745821,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20016,
+    "offset": 746019,
+    "old": "gCmd(D_800F22B4++, 0xF5000110, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 272, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20018,
+    "offset": 746098,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20022,
+    "offset": 746296,
+    "old": "gCmd(D_800F22B4++, 0xF5000120, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 288, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20024,
+    "offset": 746375,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20028,
+    "offset": 746573,
+    "old": "gCmd(D_800F22B4++, 0xF5000130, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 304, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20030,
+    "offset": 746652,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20034,
+    "offset": 746850,
+    "old": "gCmd(D_800F22B4++, 0xF5000140, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 320, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20036,
+    "offset": 746929,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20040,
+    "offset": 747127,
+    "old": "gCmd(D_800F22B4++, 0xF5000150, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 336, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20042,
+    "offset": 747206,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20046,
+    "offset": 747404,
+    "old": "gCmd(D_800F22B4++, 0xF5000160, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 352, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20048,
+    "offset": 747483,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20052,
+    "offset": 747681,
+    "old": "gCmd(D_800F22B4++, 0xF5000170, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 368, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20054,
+    "offset": 747760,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20058,
+    "offset": 747958,
+    "old": "gCmd(D_800F22B4++, 0xF5000180, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 384, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20060,
+    "offset": 748037,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20064,
+    "offset": 748235,
+    "old": "gCmd(D_800F22B4++, 0xF5000190, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 400, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20066,
+    "offset": 748314,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20070,
+    "offset": 748512,
+    "old": "gCmd(D_800F22B4++, 0xF50001A0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 416, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20072,
+    "offset": 748591,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20076,
+    "offset": 748789,
+    "old": "gCmd(D_800F22B4++, 0xF50001B0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 432, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20078,
+    "offset": 748868,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20082,
+    "offset": 749066,
+    "old": "gCmd(D_800F22B4++, 0xF50001C0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 448, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20084,
+    "offset": 749145,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20088,
+    "offset": 749343,
+    "old": "gCmd(D_800F22B4++, 0xF50001D0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 464, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20090,
+    "offset": 749422,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20094,
+    "offset": 749620,
+    "old": "gCmd(D_800F22B4++, 0xF50001E0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 480, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20096,
+    "offset": 749699,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20100,
+    "offset": 749897,
+    "old": "gCmd(D_800F22B4++, 0xF50001F0, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 496, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20102,
+    "offset": 749976,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20104,
+    "offset": 750137,
+    "old": "gCmd(D_800F22B4++, 0xF5500000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20106,
+    "offset": 750216,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF080)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 128)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20108,
+    "offset": 750295,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20109,
+    "offset": 750334,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x3FC03C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 1020, 60)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20269,
+    "offset": 756323,
+    "old": "gCmd(D_800F22B4++, 0x04700080, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 8, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20270,
+    "offset": 756388,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A32)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 5, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20271,
+    "offset": 756448,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x05322800)",
+    "new": "gSP1Triangle(D_800F22B4++, 5, 4, 0, 5)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20272,
+    "offset": 756508,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E46)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 7, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20273,
+    "offset": 756568,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x07463C14)",
+    "new": "gSP1Triangle(D_800F22B4++, 7, 6, 2, 7)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20274,
+    "offset": 756628,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x010A143C)",
+    "new": "gSP1Triangle(D_800F22B4++, 1, 2, 6, 1)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20275,
+    "offset": 756688,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x063C320A)",
+    "new": "gSP1Triangle(D_800F22B4++, 6, 5, 1, 6)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20276,
+    "offset": 756748,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x0428461E)",
+    "new": "gSP1Triangle(D_800F22B4++, 4, 7, 3, 4)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20277,
+    "offset": 756808,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x031E0028)",
+    "new": "gSP1Triangle(D_800F22B4++, 3, 0, 4, 3)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20576,
+    "offset": 767255,
+    "old": "gCmd(D_800F22B4++, 0x04700080, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 8, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20577,
+    "offset": 767308,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A32)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 5, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20578,
+    "offset": 767356,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x05322800)",
+    "new": "gSP1Triangle(D_800F22B4++, 5, 4, 0, 5)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20579,
+    "offset": 767404,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E46)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 7, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20580,
+    "offset": 767452,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x07463C14)",
+    "new": "gSP1Triangle(D_800F22B4++, 7, 6, 2, 7)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20581,
+    "offset": 767500,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x010A143C)",
+    "new": "gSP1Triangle(D_800F22B4++, 1, 2, 6, 1)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20582,
+    "offset": 767548,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x063C320A)",
+    "new": "gSP1Triangle(D_800F22B4++, 6, 5, 1, 6)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20583,
+    "offset": 767596,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x0428461E)",
+    "new": "gSP1Triangle(D_800F22B4++, 4, 7, 3, 4)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20584,
+    "offset": 767644,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x031E0028)",
+    "new": "gSP1Triangle(D_800F22B4++, 3, 0, 4, 3)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20784,
+    "offset": 776827,
+    "old": "gCmd(D_800F22B4++, 0xF5400000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 0, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20786,
+    "offset": 776951,
+    "old": "gCmd(D_800F22B4++, 0xF5500000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20788,
+    "offset": 777030,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF080)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 128)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20790,
+    "offset": 777109,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20791,
+    "offset": 777148,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x003FC03C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 1020, 60)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20795,
+    "offset": 777370,
+    "old": "gCmd(D_800F22B4++, 0xF5000100, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20797,
+    "offset": 777457,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20802,
+    "offset": 777745,
+    "old": "gCmd(D_800F22B4++, 0xF5000100, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_4b, 0, 256, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20804,
+    "offset": 777832,
+    "old": "gCmd(D_800F22B4++, 0xF0000000, 0x0703C000)",
+    "new": "gDPLoadTLUTCmd(D_800F22B4++, G_TX_LOADTILE, 15)",
+    "macro": "gDPLoadTLUTCmd"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20960,
+    "offset": 782999,
+    "old": "gCmd(D_800F22B4++, 0xF5100000, 0x07054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20962,
+    "offset": 783086,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF100)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 256)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20964,
+    "offset": 783173,
+    "old": "gCmd(D_800F22B4++, 0xF5101000, 0x00054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20965,
+    "offset": 783225,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20966,
+    "offset": 783277,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20967,
+    "offset": 783334,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20968,
+    "offset": 783386,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21155,
+    "offset": 789672,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21156,
+    "offset": 789725,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21157,
+    "offset": 789773,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21226,
+    "offset": 791836,
+    "old": "gCmd(D_800F22B4++, 0xF5100000, 0x07054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21228,
+    "offset": 791915,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF100)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 256)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21230,
+    "offset": 791994,
+    "old": "gCmd(D_800F22B4++, 0xF5101000, 0x00054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21231,
+    "offset": 792042,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21721,
+    "offset": 810638,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21722,
+    "offset": 810699,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21723,
+    "offset": 810755,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21836,
+    "offset": 815003,
+    "old": "gCmd(D_800F22B4++, 0xED000000, 0x5003C0)",
+    "new": "gDPSetScissor(D_800F22B4++, G_SC_NON_INTERLACE, 0, 0, 320, 240)",
+    "macro": "gDPSetScissor"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21842,
+    "offset": 815471,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x07054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21844,
+    "offset": 815558,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x071FF200)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 511, 512)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21846,
+    "offset": 815645,
+    "old": "gCmd(D_800F22B4++, 0xF5680800, 0x54150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, G_TX_RENDERTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21847,
+    "offset": 815694,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x7C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22141,
+    "offset": 827224,
+    "old": "gCmd(D_800F22B4++, 0x03800010, (u32)D_800E0770)",
+    "new": "gSPViewport(D_800F22B4++, (u32)D_800E0770)",
+    "macro": "gSPViewport"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22143,
+    "offset": 827458,
+    "old": "gCmd(D_800F22B4++, 0xBB000000, 0)",
+    "new": "gSPTexture(D_800F22B4++, 0, 0, 0, G_TX_RENDERTILE, G_OFF)",
+    "macro": "gSPTexture"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22823,
+    "offset": 851161,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22824,
+    "offset": 851218,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22825,
+    "offset": 851270,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22854,
+    "offset": 852802,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x07054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22856,
+    "offset": 852881,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x071FF200)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 511, 512)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22858,
+    "offset": 852960,
+    "old": "gCmd(D_800F22B4++, 0xF5680800, 0x00054150)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, G_TX_RENDERTILE, 0, G_TX_MIRROR, 5, 0, G_TX_MIRROR, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22859,
+    "offset": 853008,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23777,
+    "offset": 883648,
+    "old": "gCmd(D_800F22B4++, 0xF5100000, 0x07000000)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23779,
+    "offset": 883727,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x073FF100)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 1023, 256)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23781,
+    "offset": 883806,
+    "old": "gCmd(D_800F22B4++, 0xF5101000, 0)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, G_TX_RENDERTILE, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23782,
+    "offset": 883845,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23783,
+    "offset": 883893,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23784,
+    "offset": 883946,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23785,
+    "offset": 883994,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24750,
+    "offset": 915431,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24751,
+    "offset": 915484,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24752,
+    "offset": 915532,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24816,
+    "offset": 918635,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x07094250)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_CLAMP, 5, 0, G_TX_CLAMP, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24818,
+    "offset": 918714,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x070BF200)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 191, 512)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24820,
+    "offset": 918793,
+    "old": "gCmd(D_800F22B4++, 0xF5680800, 0x00094250)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 5, 0, G_TX_CLAMP, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24821,
+    "offset": 918841,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C02C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 44)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24923,
+    "offset": 921932,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32)D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24924,
+    "offset": 921985,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24925,
+    "offset": 922033,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25003,
+    "offset": 925676,
+    "old": "gCmd(D_800F22B4++, 0xF5700000, 0x07094250)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, G_TX_LOADTILE, 0, G_TX_CLAMP, 5, 0, G_TX_CLAMP, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25005,
+    "offset": 925771,
+    "old": "gCmd(D_800F22B4++, 0xF3000000, 0x071FF200)",
+    "new": "gDPLoadBlock(D_800F22B4++, G_TX_LOADTILE, 0, 0, 511, 512)",
+    "macro": "gDPLoadBlock"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25007,
+    "offset": 925866,
+    "old": "gCmd(D_800F22B4++, 0xF5680800, 0x00094250)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 5, 0, G_TX_CLAMP, 5, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25008,
+    "offset": 925922,
+    "old": "gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C)",
+    "new": "gDPSetTileSize(D_800F22B4++, G_TX_RENDERTILE, 0, 0, 124, 124)",
+    "macro": "gDPSetTileSize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25347,
+    "offset": 936827,
+    "old": "gCmd(D_800F22B4++, 0x04300040, (u32) D_8015F848)",
+    "new": "gSPVertex(D_800F22B4++, (u32) D_8015F848, 4, 0)",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25348,
+    "offset": 936881,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x00000A14)",
+    "new": "gSP1Triangle(D_800F22B4++, 0, 1, 2, 0)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25349,
+    "offset": 936929,
+    "old": "gCmd(D_800F22B4++, 0xBF000000, 0x02141E00)",
+    "new": "gSP1Triangle(D_800F22B4++, 2, 3, 0, 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25410,
+    "offset": 939380,
+    "old": "gCmd(D_800F22B4++, 0x01030040, (u32)D_15F978)",
+    "new": "gSPMatrix(D_800F22B4++, (u32)D_15F978, G_MTX_PROJECTION | G_MTX_LOAD | G_MTX_NOPUSH)",
+    "macro": "gSPMatrix"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25411,
+    "offset": 939431,
+    "old": "gCmd(D_800F22B4++, 0x01020040, (u32)D_15F9B8)",
+    "new": "gSPMatrix(D_800F22B4++, (u32)D_15F9B8, G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_NOPUSH)",
+    "macro": "gSPMatrix"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25415,
+    "offset": 939609,
+    "old": "gCmd(D_800F22B4++, 0xED000000, 0x005003C0)",
+    "new": "gDPSetScissor(D_800F22B4++, G_SC_NON_INTERLACE, 0, 0, 320, 240)",
+    "macro": "gDPSetScissor"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26414,
+    "offset": 975591,
+    "old": "gCmd(D_800F22B4++, 0x03800010, (u32) &D_800E92C8)",
+    "new": "gSPViewport(D_800F22B4++, (u32) &D_800E92C8)",
+    "macro": "gSPViewport"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26833,
+    "offset": 1002372,
+    "old": "gCmd(D_800F22B4++, 0xBC000002, 0x800000A0)",
+    "new": "gSPNumLights(D_800F22B4++, NUMLIGHTS_4)",
+    "macro": "gSPNumLights"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26834,
+    "offset": 1002428,
+    "old": "gCmd(D_800F22B4++, 0x03860010, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x16))",
+    "new": "gSPLight(D_800F22B4++, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x16), LIGHT_1)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26835,
+    "offset": 1002514,
+    "old": "gCmd(D_800F22B4++, 0x03880010, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x26))",
+    "new": "gSPLight(D_800F22B4++, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x26), LIGHT_2)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26836,
+    "offset": 1002600,
+    "old": "gCmd(D_800F22B4++, 0x038A0010, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x36))",
+    "new": "gSPLight(D_800F22B4++, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x36), LIGHT_3)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26837,
+    "offset": 1002686,
+    "old": "gCmd(D_800F22B4++, 0x038C0010, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x46))",
+    "new": "gSPLight(D_800F22B4++, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x46), LIGHT_4)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26838,
+    "offset": 1002772,
+    "old": "gCmd(D_800F22B4++, 0x038E0010, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0xE))",
+    "new": "gSPLight(D_800F22B4++, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0xE), LIGHT_5)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27089,
+    "offset": 1015032,
+    "old": "gCmd(D_800F22B4++, 0xBC000002, 0x800000A0)",
+    "new": "gSPNumLights(D_800F22B4++, NUMLIGHTS_4)",
+    "macro": "gSPNumLights"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27090,
+    "offset": 1015080,
+    "old": "gCmd(D_800F22B4++, 0x03860010, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x16))",
+    "new": "gSPLight(D_800F22B4++, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x16), LIGHT_1)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27091,
+    "offset": 1015158,
+    "old": "gCmd(D_800F22B4++, 0x03880010, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x26))",
+    "new": "gSPLight(D_800F22B4++, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x26), LIGHT_2)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27092,
+    "offset": 1015236,
+    "old": "gCmd(D_800F22B4++, 0x038A0010, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x36))",
+    "new": "gSPLight(D_800F22B4++, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x36), LIGHT_3)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27093,
+    "offset": 1015314,
+    "old": "gCmd(D_800F22B4++, 0x038C0010, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x46))",
+    "new": "gSPLight(D_800F22B4++, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0x46), LIGHT_4)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27094,
+    "offset": 1015392,
+    "old": "gCmd(D_800F22B4++, 0x038E0010, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0xE))",
+    "new": "gSPLight(D_800F22B4++, (u32) ((u8 *)D_8013DD00 + 0x2C8A + 0xE), LIGHT_5)",
+    "macro": "gSPLight"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27149,
+    "offset": 1018153,
+    "old": "gCmd(D_800F22B4++, 0xED000000, 0x5003C0)",
+    "new": "gDPSetScissor(D_800F22B4++, G_SC_NON_INTERLACE, 0, 0, 320, 240)",
+    "macro": "gDPSetScissor"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27150,
+    "offset": 1018199,
+    "old": "gCmd(D_800F22B4++, 0x03800010, (u32) &D_10000A8)",
+    "new": "gSPViewport(D_800F22B4++, (u32) &D_10000A8)",
+    "macro": "gSPViewport"
+  }
+]

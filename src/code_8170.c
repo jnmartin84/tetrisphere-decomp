@@ -1579,14 +1579,14 @@ s32 arg1;
     guPerspective(&((P1A98 *)arg0)->proj[arg0[0x3D]], &pn, *(f32 *)(arg0 + 0x270),
                   1.3333334f, *(f32 *)(arg0 + 0x40), *(f32 *)(arg0 + 0x44), 1.0f);
     gSPPerspNormalize(D_800F22B4++, pn);
-    gCmd(D_800F22B4++, 0x1030040, (u32)&((M1A98 *)arg0)->mtx[arg0[0x3D]] + 0x80000078);
+    gSPMatrix(D_800F22B4++, (u32)&((M1A98 *)arg0)->mtx[arg0[0x3D]] + 0x80000078, G_MTX_PROJECTION | G_MTX_LOAD | G_MTX_NOPUSH);
     gDPPipeSync(D_800F22B4++);
     gDPSetCycleType(D_800F22B4++, G_CYC_2CYCLE);
     gDPPipelineMode(D_800F22B4++, G_PM_1PRIMITIVE);
     gDPSetColorDither(D_800F22B4++, G_CD_MAGICSQ);
     gDPSetAlphaDither(D_800F22B4++, G_AD_DISABLE);
-    gCmd(D_800F22B4++, 0xFA000000, 0xFFFFFFFF);
-    gCmd(D_800F22B4++, 0xF9000000, 0);
+    gDPSetPrimColor(D_800F22B4++, 0, 0, 255, 255, 255, 255);
+    gDPSetBlendColor(D_800F22B4++, 0, 0, 0, 0);
     gDPSetTexturePersp(D_800F22B4++, G_TP_PERSP);
     gDPSetTextureDetail(D_800F22B4++, G_TD_CLAMP);
     gDPSetTextureLOD(D_800F22B4++, G_TL_LOD);
@@ -1729,8 +1729,8 @@ s32 arg3;
     transformVector4InPlace(arg0->mf178, eye);
     guLookAtReflect(&mtx, &arg0->unk14[arg1].lookat, eye[0], eye[1], eye[2], at[0], at[1], at[2], up[0], up[1],
                     up[2]);
-    gCmd(D_800F22B4++, 0x03840010, (u32) &arg0->unk14[arg1].lookat);
-    gCmd(D_800F22B4++, 0x03820010, (u32) &arg0->unk14[arg1].lookat.l[1]);
+    gSPLookAtX(D_800F22B4++, (u32) &arg0->unk14[arg1].lookat);
+    gSPLookAtY(D_800F22B4++, (u32) &arg0->unk14[arg1].lookat.l[1]);
 }
 
 void func_800321D4(arg0, arg1, arg2, arg3, arg4, arg5)
@@ -1748,8 +1748,8 @@ s32 arg5;
      * OUTERMOST add, so `&arg0->mtx[i] + 0x80000000` emits addu+addiu 0xF8 and lets the
      * duplicated 0x80000000 be CSE'd into a temp. Folding 0xF8 into the literal keeps the
      * two constants distinct, so each stays an immediate (as1 $at) as the ROM has it. */
-    gCmd(D_800F22B4++, 0x01020040, (u32)&((Mtx *)arg0)[arg0->unk3D] + 0x800000F8);
-    gCmd(D_800F22B4++, 0x01000040, (u32)&arg0->unk14[arg3].mtx[arg0->unk3D] + 0x80000000);
+    gSPMatrix(D_800F22B4++, (u32)&((Mtx *)arg0)[arg0->unk3D] + 0x800000F8, G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_NOPUSH);
+    gSPMatrix(D_800F22B4++, (u32)&arg0->unk14[arg3].mtx[arg0->unk3D] + 0x80000000, G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH);
     if (*arg2 != 0) {
         func_80031FEC(arg0, arg3, arg2, arg5);
         arg2 += 0x10;
@@ -1995,15 +1995,15 @@ s32 arg4;
             switch (fmt) {
             case 0:
                 gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, timg);
-                gCmd(D_800F22B4++, 0xF5100000, 0x02000000);
+                gDPSetTile(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 0, 0, 2, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
                 break;
             case 1:
                 gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, timg);
-                gCmd(D_800F22B4++, 0xF5700000, 0x02000000);
+                gDPSetTile(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 0, 0, 2, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
                 break;
             case 4:
                 gDPSetTextureImage(D_800F22B4++, G_IM_FMT_I, G_IM_SIZ_8b, 1, timg);
-                gCmd(D_800F22B4++, 0xF5880000, 0x02000000);
+                gDPSetTile(D_800F22B4++, G_IM_FMT_I, G_IM_SIZ_8b, 0, 0, 2, 0, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
                 break;
             case 2:
             case 3:
