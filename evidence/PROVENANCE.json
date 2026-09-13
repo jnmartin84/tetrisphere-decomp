@@ -1,0 +1,16 @@
+{
+  "source": "/home/jnmartin84/claude_tetrisphere",
+  "source_host": "wr64vm",
+  "commit": "823ca10873a7eafde7d68951087cdaf9d3095dfd",
+  "commit_subject": "Retire asm-processor from the completed Tetrisphere build",
+  "tracked_files_identical_to_commit": 255,
+  "canonical_unrelated_tracked_changes_excluded": "D pending/session_8EEA4/.cm.txt\n M pending/session_97e3c/probe97.sh",
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "rom_bytes": 8388608,
+  "host": "Linux jnmartin84-QEMU-Virtual-Machine 7.0.0-28-generic #28~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jul  1 15:37:52 UTC 2 aarch64 aarch64 aarch64 GNU/Linux",
+  "os_release": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "host_packages": "binutils-mips-linux-gnu\t2.42-2ubuntu1cross5\ngcc\t4:13.2.0-7ubuntu1\nlibc6:arm64\t2.39-0ubuntu8.9\nlibc6:armhf\t2.39-0ubuntu8.9\nmake\t4.3-4.1build2\npython3\t3.12.3-0ubuntu2.1",
+  "compiler_runtime": "linux-vdso.so.1 (0x0000e4eb133cc000)\n\tlibm.so.6 => /lib/aarch64-linux-gnu/libm.so.6 (0x0000e4eb13270000)\n\tlibc.so.6 => /lib/aarch64-linux-gnu/libc.so.6 (0x0000e4eb130b0000)\n\t/lib/ld-linux-aarch64.so.1 (0x0000e4eb13380000)",
+  "extraction_packages_reference_only": "colorama==0.4.6\ncrunch64==0.6.2\ngit-filter-repo==2.47.0\nintervaltree==3.1.0\nLevenshtein==0.27.3\nn64img==0.3.3\npycparser==3.0\npygfxd==1.0.5\npylibyaml==0.1.0\npypng==0.20220715.0\nPyYAML==6.0.3\nrabbitizer==1.16.2\nRapidFuzz==3.14.5\nsortedcontainers==2.4.0\nspimdisasm==1.42.2\nsplat64==0.41.0\ntoml==0.10.2\ntqdm==4.67.1",
+  "notes": "Snapshot includes generated build inputs and stock Linux ARM64 compiler; no build objects, virtualenv, or Git worktree links. Older docs and research scripts are preserved as historical references."
+}

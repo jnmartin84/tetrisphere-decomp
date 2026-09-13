@@ -1,0 +1,2 @@
+# Physical line layout is load-bearing for IDO. Do not normalize source on checkout.
+* -text

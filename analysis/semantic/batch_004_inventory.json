@@ -1,0 +1,11 @@
+{
+  "scope": "All 997 manifested production inputs; includes comments and suffixed aliases. No proposed new name exists before application.",
+  "hits": {
+    "src/code_8170.c": {
+      "func_80031EB8": 6
+    }
+  },
+  "lexical_substitution_counts": {
+    "func_80031EB8": 6
+  }
+}

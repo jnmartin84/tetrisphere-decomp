@@ -1,0 +1,13 @@
+{
+  "scope": "All 997 manifested production inputs; includes comments and suffixed aliases. No proposed new name exists before application.",
+  "hits": {
+    "src/game2.c": {
+      "func_800ADD6C": 2,
+      "func_800A2374": 3
+    }
+  },
+  "lexical_substitution_counts": {
+    "func_800ADD6C": 2,
+    "func_800A2374": 2
+  }
+}

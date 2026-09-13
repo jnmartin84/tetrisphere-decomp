@@ -1,0 +1,254 @@
+{
+  "date": "2026-09-13",
+  "baseline_commit": "823ca10873a7eafde7d68951087cdaf9d3095dfd",
+  "source_root": "/Users/jnmartin/landed_tsphere",
+  "status": "read_only_research_no_substitutions_applied",
+  "inventory_scope": "All rg-listed portable snapshot files, including hidden files, that decode as UTF-8 and contain no NUL. Exact identifier occurrences include comments and strings for review, not automatic replacement. Canonical untracked historical experiments are outside this inventory.",
+  "constraints": [
+    "Only lexical identifier spellings may change in any future source batch. Preserve comments, strings, whitespace and all intervening bytes.",
+    "Inventory includes assembly dlabel definitions. Do not rewrite stale address comments or historical notes as part of a rename.",
+    "No direct linker/configuration/generated-symbol text references or suffixed aliases were found for these five identifiers in the snapshot; repeat inventory in the complete isolated build before edits.",
+    "D_800DF720 is declared unsigned in boot.c and signed in game2.c. Preserve those types exactly.",
+    "Any future changes must reverse byte-for-byte to baseline and pass clean baseline build, linked matchdiff.sh, and full ROM cmp."
+  ],
+  "candidates": [
+    {
+      "old_identifier": "func_80029938",
+      "proposed_identifier": "controllerEepromThreadMain",
+      "meaning": "Thread 5 entry services retrace-driven controller reads and queued EEPROM operations.",
+      "confidence": "high",
+      "evidence": [
+        "src/boot.c:152-242",
+        "src/boot.c:464",
+        "src/boot.c:291"
+      ],
+      "status": "proposed_unapplied",
+      "affected_files_in_snapshot": [
+        "src/boot.c"
+      ],
+      "occurrences": [
+        {
+          "file": "src/boot.c",
+          "sha256": "4a4f5b72997b55326b9f06d03b41899d5d10bf5f4587b0faa0effdf2d0641b71",
+          "occurrences": [
+            {
+              "line": 152,
+              "text": "void func_80029938(void *arg) {"
+            },
+            {
+              "line": 429,
+              "text": "extern void func_80029938(void *);"
+            },
+            {
+              "line": 464,
+              "text": "    osCreateThread(&schedThread, 5, func_80029938, NULL, schedThreadStack + 0x2000, 11);"
+            }
+          ]
+        }
+      ],
+      "related_suffix_tokens": [],
+      "proposed_name_collisions": []
+    },
+    {
+      "old_identifier": "func_8002AD20",
+      "proposed_identifier": "initControllers",
+      "meaning": "Initializes controller status and mask; returns -1 for any connected responsive controller, otherwise mask. Preserve return convention.",
+      "confidence": "high",
+      "evidence": [
+        "src/controller.c:15-32",
+        "src/boot.c:465"
+      ],
+      "status": "proposed_unapplied",
+      "affected_files_in_snapshot": [
+        "src/boot.c",
+        "src/controller.c"
+      ],
+      "occurrences": [
+        {
+          "file": "src/boot.c",
+          "sha256": "4a4f5b72997b55326b9f06d03b41899d5d10bf5f4587b0faa0effdf2d0641b71",
+          "occurrences": [
+            {
+              "line": 430,
+              "text": "extern s32 func_8002AD20(void);"
+            },
+            {
+              "line": 465,
+              "text": "    D_801023A0 = func_8002AD20();"
+            }
+          ]
+        },
+        {
+          "file": "src/controller.c",
+          "sha256": "2473cf0e6527ed284bc209d4487ca063dfca7da2c1b24f9834c59ec571e18e8e",
+          "occurrences": [
+            {
+              "line": 15,
+              "text": "s32 func_8002AD20(void) {"
+            }
+          ]
+        }
+      ],
+      "related_suffix_tokens": [],
+      "proposed_name_collisions": []
+    },
+    {
+      "old_identifier": "func_8002AE0C",
+      "proposed_identifier": "readAndDispatchControllerData",
+      "meaning": "Retrieves completed controller read data and conditionally forwards buttons or error substitutes for connected ports.",
+      "confidence": "high",
+      "evidence": [
+        "src/controller.c:34-55",
+        "src/boot.c:230-232"
+      ],
+      "status": "proposed_unapplied",
+      "affected_files_in_snapshot": [
+        "src/boot.c",
+        "src/controller.c"
+      ],
+      "occurrences": [
+        {
+          "file": "src/boot.c",
+          "sha256": "4a4f5b72997b55326b9f06d03b41899d5d10bf5f4587b0faa0effdf2d0641b71",
+          "occurrences": [
+            {
+              "line": 151,
+              "text": "extern void func_8002AE0C(void);"
+            },
+            {
+              "line": 231,
+              "text": "                func_8002AE0C();"
+            }
+          ]
+        },
+        {
+          "file": "src/controller.c",
+          "sha256": "2473cf0e6527ed284bc209d4487ca063dfca7da2c1b24f9834c59ec571e18e8e",
+          "occurrences": [
+            {
+              "line": 34,
+              "text": "void func_8002AE0C(void) {"
+            }
+          ]
+        }
+      ],
+      "related_suffix_tokens": [],
+      "proposed_name_collisions": []
+    },
+    {
+      "old_identifier": "func_8006E98C",
+      "proposed_identifier": "processBufferedControllerSamples",
+      "meaning": "Drains buffered current/previous button samples through func_8006E418 up to a captured producer index.",
+      "confidence": "high",
+      "evidence": [
+        "src/main.c:12292-12307",
+        "src/main.c:12761"
+      ],
+      "status": "proposed_unapplied",
+      "affected_files_in_snapshot": [
+        "src/main.c"
+      ],
+      "occurrences": [
+        {
+          "file": "src/main.c",
+          "sha256": "ad540d3f80c1ac47e59e22478400325b1bdee0b31bebca9bbecd27b28d844d64",
+          "occurrences": [
+            {
+              "line": 12292,
+              "text": "void func_8006E98C(void) {"
+            },
+            {
+              "line": 12761,
+              "text": "    func_8006E98C();"
+            }
+          ]
+        }
+      ],
+      "related_suffix_tokens": [],
+      "proposed_name_collisions": []
+    },
+    {
+      "old_identifier": "D_800DF720",
+      "proposed_identifier": "pendingGfxTaskCount",
+      "meaning": "Count of built graphics tasks whose completion has not been consumed; includes queued completion messages.",
+      "confidence": "high",
+      "evidence": [
+        "src/boot.c:295-305",
+        "src/game2.c:26261-26321",
+        "asm/data/BAAB0.data.s:31-33"
+      ],
+      "status": "proposed_unapplied",
+      "affected_files_in_snapshot": [
+        "asm/data/BAAB0.data.s",
+        "src/boot.c",
+        "src/game2.c"
+      ],
+      "occurrences": [
+        {
+          "file": "asm/data/BAAB0.data.s",
+          "sha256": "e4f1a0084e0959d77bb7b1407bfd278b174b881e34e390fd8f3021a144899a1d",
+          "occurrences": [
+            {
+              "line": 31,
+              "text": "dlabel D_800DF720"
+            }
+          ]
+        },
+        {
+          "file": "src/boot.c",
+          "sha256": "4a4f5b72997b55326b9f06d03b41899d5d10bf5f4587b0faa0effdf2d0641b71",
+          "occurrences": [
+            {
+              "line": 259,
+              "text": "extern u32 D_800DF720;"
+            },
+            {
+              "line": 297,
+              "text": "        if (D_800DF720 < 2) {"
+            },
+            {
+              "line": 305,
+              "text": "            D_800DF720--;"
+            },
+            {
+              "line": 341,
+              "text": "        D_800DF720--;"
+            },
+            {
+              "line": 361,
+              "text": "        if (D_800DF720 < 2) {"
+            },
+            {
+              "line": 369,
+              "text": "            D_800DF720--;"
+            }
+          ]
+        },
+        {
+          "file": "src/game2.c",
+          "sha256": "b02bca7b68e938e65a50e4b2c6ee000eccc4f4a2ad87b03a0514411064cbd212",
+          "occurrences": [
+            {
+              "line": 26228,
+              "text": "extern s32 D_800DF720;"
+            },
+            {
+              "line": 26261,
+              "text": "    j = D_800DF720;"
+            },
+            {
+              "line": 26262,
+              "text": "    i = D_800DF720;"
+            },
+            {
+              "line": 26310,
+              "text": "        D_800DF720++;"
+            }
+          ]
+        }
+      ],
+      "related_suffix_tokens": [],
+      "proposed_name_collisions": []
+    }
+  ]
+}

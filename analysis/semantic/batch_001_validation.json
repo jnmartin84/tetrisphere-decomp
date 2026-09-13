@@ -1,0 +1,94 @@
+{
+  "status": "IDENTIFIER_ONLY_VERIFIED",
+  "baseline_commit": "823ca10873a7eafde7d68951087cdaf9d3095dfd",
+  "ledger_sha256": "528a42f2b91508e5a00a9643504623db8dbf0a01cd593bdebb43e64a5bf5ce70",
+  "files": {
+    "src/boot.c": {
+      "before_sha256": "4a4f5b72997b55326b9f06d03b41899d5d10bf5f4587b0faa0effdf2d0641b71",
+      "after_sha256": "cbcf14b3935777dd672f5b009a6d6832b25682779b6be7cedcc1c57cc6896d72",
+      "substitutions": [
+        {
+          "old": "func_8002AE0C",
+          "new": "readAndDispatchControllerData",
+          "offset": 3999,
+          "line": 151
+        },
+        {
+          "old": "func_80029938",
+          "new": "controllerEepromThreadMain",
+          "offset": 4025,
+          "line": 152
+        },
+        {
+          "old": "func_8002AE0C",
+          "new": "readAndDispatchControllerData",
+          "offset": 7066,
+          "line": 231
+        },
+        {
+          "old": "func_80029938",
+          "new": "controllerEepromThreadMain",
+          "offset": 12012,
+          "line": 429
+        },
+        {
+          "old": "func_8002AD20",
+          "new": "initControllers",
+          "offset": 12046,
+          "line": 430
+        },
+        {
+          "old": "func_80029938",
+          "new": "controllerEepromThreadMain",
+          "offset": 13454,
+          "line": 464
+        },
+        {
+          "old": "func_8002AD20",
+          "new": "initControllers",
+          "offset": 13524,
+          "line": 465
+        }
+      ]
+    },
+    "src/controller.c": {
+      "before_sha256": "2473cf0e6527ed284bc209d4487ca063dfca7da2c1b24f9834c59ec571e18e8e",
+      "after_sha256": "d447647b52f141990b288bc5e21de6e7909c4edd42c9248fd8c03af653f98054",
+      "substitutions": [
+        {
+          "old": "func_8002AD20",
+          "new": "initControllers",
+          "offset": 468,
+          "line": 15
+        },
+        {
+          "old": "func_8002AE0C",
+          "new": "readAndDispatchControllerData",
+          "offset": 951,
+          "line": 34
+        }
+      ]
+    },
+    "src/main.c": {
+      "before_sha256": "ad540d3f80c1ac47e59e22478400325b1bdee0b31bebca9bbecd27b28d844d64",
+      "after_sha256": "0b92e71b6ebdb9310a5414437d3e495948e309933c68cf725a2ef867d8aa8e28",
+      "substitutions": [
+        {
+          "old": "func_8006E98C",
+          "new": "processBufferedControllerSamples",
+          "offset": 430868,
+          "line": 12292
+        },
+        {
+          "old": "func_8006E98C",
+          "new": "processBufferedControllerSamples",
+          "offset": 444782,
+          "line": 12761
+        }
+      ]
+    }
+  },
+  "inverse_restores_original_bytes": true,
+  "production_inputs_verified": true,
+  "rom_verified_by_this_tool": false
+}

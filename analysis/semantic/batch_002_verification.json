@@ -1,0 +1,51 @@
+{
+  "recorded_utc": "2026-09-13T13:54:11.002541+00:00",
+  "worktree": "/home/jnmartin84/wt/semantic_names",
+  "branch": "codex/semantic-names",
+  "original_baseline": "823ca10873a7eafde7d68951087cdaf9d3095dfd",
+  "previous_source_commit": "1a545e1e124956c7e5b8421a490d4d02092f46b6",
+  "incremental_tooling_commit": "416d2b563e8a2ce5a80df5603c46c5f0e7ff0dbc",
+  "batch": "002",
+  "new_function_names": 3,
+  "new_identifier_substitutions": 9,
+  "new_source_files": [
+    "src/game2.c"
+  ],
+  "cumulative_function_names": 7,
+  "cumulative_identifier_substitutions": 20,
+  "validation": {
+    "identifier_only": true,
+    "inverse_restores_original_bytes": true,
+    "production_inputs_checked": 997,
+    "matchdiff": "FULL MATCH",
+    "whole_rom_cmp": "equal including 64-byte header",
+    "rom_bytes": 8388608,
+    "reference_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+    "built_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+    "linked_symbol_addresses": {
+      "controllerEepromThreadMain": "80029938",
+      "initControllers": "8002ad20",
+      "readAndDispatchControllerData": "8002ae0c",
+      "processBufferedControllerSamples": "8006e98c",
+      "initPieceOperationSlot": "800920e4",
+      "allocatePieceOperationSlot": "800921a8",
+      "advancePieceOperation": "8009423c"
+    }
+  },
+  "validator_tests": {
+    "mac": 24,
+    "linux_vm": 24,
+    "failures": 0
+  },
+  "artifact_sha256": {
+    "tools/semantic/identifier_renames.py": "11b13da91697c2ac622c21ce092b22b6a429e16ce61bda026cfa998fac047d7b",
+    "tools/semantic/test_identifier_renames.py": "901ff02b9431b8c5ff0652fcabd674a1f91d8b7b4957e825badc0b0e7b36ca13",
+    "analysis/semantic/batch_002.json": "37d83034cdb11e29651018f36a416e4bad2cb94aaa304111948fe99a2045919a",
+    "analysis/semantic/batch_002_inventory.json": "a8be1f0495e10254174143b1e33b87d2fcc334810ab5c1d9d553c87236ed9aee",
+    "analysis/semantic/batch_002_validation.json": "b137e29049a983f0fb79850f72f9a9acf99eb88eb54da33720a3695b2722ff8f",
+    "analysis/semantic/ACTION_SAMPLE_TRACE.md": "050e7bb8af1a584384dd64a18f24b5ab412d1d3f734dcdcc60db72d943b74c03",
+    "work/semantic_batch002_matchdiff.log": "aa40e87c09ae738b390354f42514f3ec8f1bc4e5a8e72cd848be9259072d1b85"
+  },
+  "integration": "Semantic branch only; no canonical merge.",
+  "acceptance_scope": "Lexical source preservation and linked whole-ROM equality; no emulator or hardware session."
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "cases": 110,
+  "order_checks": 220,
+  "inverse_checks": 110,
+  "max_normalized_order_error": 1.2166966425211774e-07,
+  "scope": "Host extracted baseline C versus independent axis matrices; not target floating-point equivalence."
+}

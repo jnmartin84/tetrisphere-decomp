@@ -1,0 +1,20 @@
+{
+  "scope": "All 997 production inputs inventoried; comment substring hits are preserved. No proposed-name collisions or assembly/configuration aliases require edits.",
+  "hits": {
+    "src/main.c": {
+      "func_8005C978": 11,
+      "func_800658A8": 22,
+      "func_800651E4": 8,
+      "func_800654C8": 9
+    }
+  },
+  "lexical_substitution_counts": {
+    "src/main.c": {
+      "func_8005C978": 11,
+      "func_800658A8": 22,
+      "func_800651E4": 8,
+      "func_800654C8": 8
+    }
+  },
+  "new_tokens": 49
+}

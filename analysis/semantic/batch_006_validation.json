@@ -1,0 +1,316 @@
+{
+  "status": "IDENTIFIER_ONLY_VERIFIED",
+  "baseline_commit": "823ca10873a7eafde7d68951087cdaf9d3095dfd",
+  "ledger_sha256": "9f6f2fe7d40d39afb27cda8126b36bae8ef90afbfb2dd77e3201292259e65460",
+  "files": {
+    "src/boot.c": {
+      "before_sha256": "4a4f5b72997b55326b9f06d03b41899d5d10bf5f4587b0faa0effdf2d0641b71",
+      "after_sha256": "289a502ca2370eed2774b8fb85e607d1c20694e88b7f4fd1ee83e184a29ed59b",
+      "substitutions": [
+        {
+          "old": "func_8002AE0C",
+          "new": "readAndDispatchControllerData",
+          "offset": 3999,
+          "line": 151
+        },
+        {
+          "old": "func_80029938",
+          "new": "controllerEepromThreadMain",
+          "offset": 4025,
+          "line": 152
+        },
+        {
+          "old": "func_8002AE0C",
+          "new": "readAndDispatchControllerData",
+          "offset": 7066,
+          "line": 231
+        },
+        {
+          "old": "func_800CCE7C",
+          "new": "buildAndSubmitGraphicsTasks",
+          "offset": 7825,
+          "line": 264
+        },
+        {
+          "old": "func_800CCE7C",
+          "new": "buildAndSubmitGraphicsTasks",
+          "offset": 8880,
+          "line": 298
+        },
+        {
+          "old": "func_800CCE7C",
+          "new": "buildAndSubmitGraphicsTasks",
+          "offset": 10105,
+          "line": 353
+        },
+        {
+          "old": "func_800CCE7C",
+          "new": "buildAndSubmitGraphicsTasks",
+          "offset": 10363,
+          "line": 362
+        },
+        {
+          "old": "func_80029938",
+          "new": "controllerEepromThreadMain",
+          "offset": 12012,
+          "line": 429
+        },
+        {
+          "old": "func_8002AD20",
+          "new": "initControllers",
+          "offset": 12046,
+          "line": 430
+        },
+        {
+          "old": "func_80029938",
+          "new": "controllerEepromThreadMain",
+          "offset": 13454,
+          "line": 464
+        },
+        {
+          "old": "func_8002AD20",
+          "new": "initControllers",
+          "offset": 13524,
+          "line": 465
+        }
+      ]
+    },
+    "src/controller.c": {
+      "before_sha256": "2473cf0e6527ed284bc209d4487ca063dfca7da2c1b24f9834c59ec571e18e8e",
+      "after_sha256": "d447647b52f141990b288bc5e21de6e7909c4edd42c9248fd8c03af653f98054",
+      "substitutions": [
+        {
+          "old": "func_8002AD20",
+          "new": "initControllers",
+          "offset": 468,
+          "line": 15
+        },
+        {
+          "old": "func_8002AE0C",
+          "new": "readAndDispatchControllerData",
+          "offset": 951,
+          "line": 34
+        }
+      ]
+    },
+    "src/main.c": {
+      "before_sha256": "ad540d3f80c1ac47e59e22478400325b1bdee0b31bebca9bbecd27b28d844d64",
+      "after_sha256": "9b967bb550684597f918efcbfa7f05bef6c652b24a7bea138a4780039295b5fc",
+      "substitutions": [
+        {
+          "old": "func_8006E98C",
+          "new": "processBufferedControllerSamples",
+          "offset": 430868,
+          "line": 12292
+        },
+        {
+          "old": "func_800CCB78",
+          "new": "beginGraphicsFrame",
+          "offset": 431575,
+          "line": 12329
+        },
+        {
+          "old": "func_800CCB78",
+          "new": "beginGraphicsFrame",
+          "offset": 431910,
+          "line": 12336
+        },
+        {
+          "old": "func_80070118",
+          "new": "updateAndBuildFrame",
+          "offset": 444730,
+          "line": 12758
+        },
+        {
+          "old": "func_8006E98C",
+          "new": "processBufferedControllerSamples",
+          "offset": 444782,
+          "line": 12761
+        },
+        {
+          "old": "func_800CCB78",
+          "new": "beginGraphicsFrame",
+          "offset": 444903,
+          "line": 12766
+        }
+      ]
+    },
+    "src/game2.c": {
+      "before_sha256": "b02bca7b68e938e65a50e4b2c6ee000eccc4f4a2ad87b03a0514411064cbd212",
+      "after_sha256": "38c9959a9aa4e2e969b8e5ee71cf482220bc93fac12369273967e1380e29262c",
+      "substitutions": [
+        {
+          "old": "func_800920E4",
+          "new": "initPieceOperationSlot",
+          "offset": 210689,
+          "line": 5437
+        },
+        {
+          "old": "func_800921A8",
+          "new": "allocatePieceOperationSlot",
+          "offset": 211545,
+          "line": 5455
+        },
+        {
+          "old": "func_800920E4",
+          "new": "initPieceOperationSlot",
+          "offset": 211722,
+          "line": 5460
+        },
+        {
+          "old": "func_800921A8",
+          "new": "allocatePieceOperationSlot",
+          "offset": 232796,
+          "line": 6118
+        },
+        {
+          "old": "func_8009423C",
+          "new": "advancePieceOperation",
+          "offset": 237948,
+          "line": 6288
+        },
+        {
+          "old": "func_800A2374",
+          "new": "buildBoardNormalTables",
+          "offset": 392235,
+          "line": 10141
+        },
+        {
+          "old": "func_800A2374",
+          "new": "buildBoardNormalTables",
+          "offset": 401508,
+          "line": 10390
+        },
+        {
+          "old": "func_800ADD6C",
+          "new": "buildInterpolatedBoardGrid",
+          "offset": 530089,
+          "line": 13964
+        },
+        {
+          "old": "func_800921A8",
+          "new": "allocatePieceOperationSlot",
+          "offset": 554852,
+          "line": 14813
+        },
+        {
+          "old": "func_800921A8",
+          "new": "allocatePieceOperationSlot",
+          "offset": 557703,
+          "line": 14869
+        },
+        {
+          "old": "func_800CCB78",
+          "new": "beginGraphicsFrame",
+          "offset": 962139,
+          "line": 26171
+        },
+        {
+          "old": "func_80070118",
+          "new": "updateAndBuildFrame",
+          "offset": 964755,
+          "line": 26240
+        },
+        {
+          "old": "func_800CCE7C",
+          "new": "buildAndSubmitGraphicsTasks",
+          "offset": 965051,
+          "line": 26251
+        },
+        {
+          "old": "func_80070118",
+          "new": "updateAndBuildFrame",
+          "offset": 965562,
+          "line": 26275
+        },
+        {
+          "old": "func_800ADD6C",
+          "new": "buildInterpolatedBoardGrid",
+          "offset": 971665,
+          "line": 26428
+        },
+        {
+          "old": "func_800921A8",
+          "new": "allocatePieceOperationSlot",
+          "offset": 974790,
+          "line": 26480
+        },
+        {
+          "old": "func_8009423C",
+          "new": "advancePieceOperation",
+          "offset": 980477,
+          "line": 26563
+        }
+      ]
+    },
+    "src/code_8170.c": {
+      "before_sha256": "61d5641facdde54714add9b30dd9f52cb5948224a709c7418f599c5eabdc9a5f",
+      "after_sha256": "8c3aee9e43fe2683db3af22d34a5c6b1a7d83c4f4ee2abfce744d092f03decac",
+      "substitutions": [
+        {
+          "old": "func_8002FD9C",
+          "new": "rotateVectorZXYDegrees",
+          "offset": 32393,
+          "line": 1030
+        },
+        {
+          "old": "func_8002FF08",
+          "new": "rotateVectorYXZDegrees",
+          "offset": 33132,
+          "line": 1064
+        },
+        {
+          "old": "func_8002FD9C",
+          "new": "rotateVectorZXYDegrees",
+          "offset": 41607,
+          "line": 1378
+        },
+        {
+          "old": "func_8002FF08",
+          "new": "rotateVectorYXZDegrees",
+          "offset": 41803,
+          "line": 1381
+        },
+        {
+          "old": "func_80031EB8",
+          "new": "transformVector4InPlace",
+          "offset": 48849,
+          "line": 1618
+        },
+        {
+          "old": "func_80031EB8",
+          "new": "transformVector4InPlace",
+          "offset": 50556,
+          "line": 1689
+        },
+        {
+          "old": "func_80031EB8",
+          "new": "transformVector4InPlace",
+          "offset": 51338,
+          "line": 1725
+        },
+        {
+          "old": "func_80031EB8",
+          "new": "transformVector4InPlace",
+          "offset": 51386,
+          "line": 1727
+        },
+        {
+          "old": "func_80031EB8",
+          "new": "transformVector4InPlace",
+          "offset": 51413,
+          "line": 1728
+        },
+        {
+          "old": "func_80031EB8",
+          "new": "transformVector4InPlace",
+          "offset": 51449,
+          "line": 1729
+        }
+      ]
+    }
+  },
+  "inverse_restores_original_bytes": true,
+  "production_inputs_verified": true,
+  "rom_verified_by_this_tool": false
+}

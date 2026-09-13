@@ -1,0 +1,131 @@
+{
+  "release_url": "https://github.com/decompals/ido-static-recomp/releases/download/v1.2/ido-5.3-recomp-linux-arm.tar.gz",
+  "archive_sha256": "b6844c986fa65d7de4ce10b27583769a5ec7a88ae37a151f6dc66c929d3e1c92",
+  "results": [
+    {
+      "file": "acpp",
+      "sha256": "38b560ad6064800517baee0678848b9b3460d96156ecf635a92ca93933cba3b0",
+      "identical_to_production": true
+    },
+    {
+      "file": "as0",
+      "sha256": "843bd2328f5bd93472d3a662e06579b807c27869158985f9a15300810b9cd608",
+      "identical_to_production": true
+    },
+    {
+      "file": "as1",
+      "sha256": "b7c99c654cf694646fd4adf4fd945e4c5d7bd9879684fbbf3c0b0c8c9912e673",
+      "identical_to_production": true
+    },
+    {
+      "file": "c++filt",
+      "sha256": "ad30288582c0ffa261678cfafbef23274a2f745b6070a96d74c1d2ceda97d403",
+      "identical_to_production": true
+    },
+    {
+      "file": "cc",
+      "sha256": "45f53fc29d4d332cdc07ef2d7f5ee59a001639289093947a1b985256d173a553",
+      "identical_to_production": true
+    },
+    {
+      "file": "cfe",
+      "sha256": "2b0a8507e0fb858989cde255478afc6b44069c6b058676647c1862e8b8650cc4",
+      "identical_to_production": true
+    },
+    {
+      "file": "copt",
+      "sha256": "28cb5d08ae1c74cbb12944a3fb105d089fe8675219e3093b04a877a8fa9ecfab",
+      "identical_to_production": true
+    },
+    {
+      "file": "crt1.o",
+      "sha256": "95bd24880e95e102bbdf2a1cfa2e10d391cb57784a42db19afd609c0904aee28",
+      "identical_to_production": true
+    },
+    {
+      "file": "crtn.o",
+      "sha256": "62197e97a5e56e21c6a4e76ffe9f634cf90b47046ebe4841086108101ce496eb",
+      "identical_to_production": true
+    },
+    {
+      "file": "err.english.cc",
+      "sha256": "6f2d777730f0a70328bb932c116c1c195da765cb9bbdee8c6d3eaf7d6ad77e78",
+      "identical_to_production": true
+    },
+    {
+      "file": "ld",
+      "sha256": "bf5c76a3ddf2dd98ac13dbdf982c4ecdb4a9ef7e2828541e1517c341f6643a8b",
+      "identical_to_production": true
+    },
+    {
+      "file": "libc.so",
+      "sha256": "803f8b127194a79d92c5caea62fd39097be16d3fcd9870b4470123cebd5d27fe",
+      "identical_to_production": true
+    },
+    {
+      "file": "libc.so.1",
+      "sha256": "803f8b127194a79d92c5caea62fd39097be16d3fcd9870b4470123cebd5d27fe",
+      "identical_to_production": true
+    },
+    {
+      "file": "libexc.so",
+      "sha256": "b59bf75bcbff1526ad4e3b2b49b313788a6e4c97df5b69b4bc2ddbd6726c5864",
+      "identical_to_production": true
+    },
+    {
+      "file": "libgen.so",
+      "sha256": "bb66dea1242000f648e890252cbe47037310559cc0ecda8ed212c0e545bf8063",
+      "identical_to_production": true
+    },
+    {
+      "file": "libm.so",
+      "sha256": "8acc66c2d1315b90f38a280fe04a26d0e61b5ca377976ed5d7f88bb064bd2e35",
+      "identical_to_production": true
+    },
+    {
+      "file": "strip",
+      "sha256": "b18024f10f4a90d03d36d2ad8787dcbb64909a650276e748cd6efe648b3ef865",
+      "identical_to_production": true
+    },
+    {
+      "file": "ugen",
+      "sha256": "8782280d537f2bc52cc9107035be48ed67f42b965db385afcdc0b75d666d32d5",
+      "identical_to_production": true
+    },
+    {
+      "file": "ujoin",
+      "sha256": "29ee91fab97c930f627ff9874f32aa7499b7dab0c850933c40ebb701e4f4ebf9",
+      "identical_to_production": true
+    },
+    {
+      "file": "uld",
+      "sha256": "68fcf7619a4bc315bfc1dbe4a5d83b2e12a5b9405ecc3206a28e5f67ee815e39",
+      "identical_to_production": true
+    },
+    {
+      "file": "umerge",
+      "sha256": "7008d8bf7dbf44ad76e5f6a2c037e99a4c99e54e386ddfba66ee9853112b204a",
+      "identical_to_production": true
+    },
+    {
+      "file": "uopt",
+      "sha256": "38398b0365104a442887130589ecc361538b960ffc060d147311fc600b0ac146",
+      "identical_to_production": true
+    },
+    {
+      "file": "upas",
+      "sha256": "9ce07aa1311fe795f78cbd8bd6c454260f7cc412bd728ab875e95bda792b8135",
+      "identical_to_production": true
+    },
+    {
+      "file": "usplit",
+      "sha256": "95b6f153008568f5ea4e4929c0147ab09c45aabfc73b0470a811c3fab0b10976",
+      "identical_to_production": true
+    }
+  ],
+  "all_identical": true,
+  "not_in_release": [
+    "uopt_dbg_aarch64",
+    "uopt_patched"
+  ]
+}

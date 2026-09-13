@@ -1,0 +1,13 @@
+{
+  "commit": "823ca10873a7eafde7d68951087cdaf9d3095dfd",
+  "input": "Files staged on the Mac in /Users/jnmartin/landed_tsphere, archived on the Mac and returned to a fresh VM directory",
+  "host": "Linux-7.0.0-28-generic-aarch64-with-glibc2.39",
+  "initial_build_directory_absent": true,
+  "asm_processor_directory_absent": true,
+  "manifest_verified_before_and_after": true,
+  "full_rom_including_header": true,
+  "rom_bytes": 8388608,
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "build_log": "MAC_ROUNDTRIP_BUILD.txt",
+  "mac_archive_sha256": "1c89c3d6aa39b2087e9e88595fbd5e51430a004449ca2fbfdcd8666e03644047"
+}

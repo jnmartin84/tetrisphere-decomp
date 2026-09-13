@@ -1,0 +1,24 @@
+{
+  "scope": "All 997 production inputs; substring inventory includes comments and aliases. No proposed new name preexists. sched.c changes only the game-defined hook declaration and call.",
+  "hits": {
+    "src/main.c": {
+      "func_8003FE3C": 2,
+      "func_8006F894": 5,
+      "func_8006DC48": 1
+    },
+    "src/sched.c": {
+      "func_8006DC48": 2
+    }
+  },
+  "lexical_substitution_counts": {
+    "src/main.c": {
+      "func_8003FE3C": 2,
+      "func_8006F894": 5,
+      "func_8006DC48": 1
+    },
+    "src/sched.c": {
+      "func_8006DC48": 2
+    }
+  },
+  "new_tokens": 10
+}

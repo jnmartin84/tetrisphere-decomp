@@ -1,0 +1,52 @@
+{
+  "recorded_utc": "2026-09-13T13:32:49.208106+00:00",
+  "worktree": "/home/jnmartin84/wt/semantic_names",
+  "branch": "codex/semantic-names",
+  "original_baseline": "823ca10873a7eafde7d68951087cdaf9d3095dfd",
+  "tooling_commit": "2c25082a96e921bfebfa64cbfec818a9ada9c9b3",
+  "batch": "001",
+  "source_functions_renamed": 4,
+  "identifier_substitutions": 11,
+  "source_files_changed": [
+    "src/boot.c",
+    "src/controller.c",
+    "src/main.c"
+  ],
+  "baseline_validation": {
+    "clean_build": "make -j4 in initially absent build directory",
+    "matchdiff": "FULL MATCH",
+    "whole_rom_cmp": "equal including 64-byte header"
+  },
+  "renamed_validation": {
+    "matchdiff": "FULL MATCH",
+    "whole_rom_cmp": "equal including 64-byte header",
+    "rom_bytes": 8388608,
+    "reference_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+    "built_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+    "linked_symbol_addresses": {
+      "controllerEepromThreadMain": "80029938",
+      "initControllers": "8002ad20",
+      "readAndDispatchControllerData": "8002ae0c",
+      "processBufferedControllerSamples": "8006e98c"
+    }
+  },
+  "identifier_validator": {
+    "result": "IDENTIFIER_ONLY_VERIFIED",
+    "inverse_restores_baseline_bytes": true,
+    "all_997_production_inputs_checked": true,
+    "unit_and_integration_tests": {
+      "mac": 20,
+      "linux_vm": 20,
+      "failures": 0
+    },
+    "script_sha256": "9d269535b8b37a91a02bc69777c063abc1b4b42b29456be43d25752aad672554"
+  },
+  "log_sha256": {
+    "semantic_baseline_build.log": "d2dafaffadf0990ce7817c0ff73edf0b505747623d66a72e9f9c8a41409c9e6c",
+    "semantic_baseline_matchdiff.log": "aa40e87c09ae738b390354f42514f3ec8f1bc4e5a8e72cd848be9259072d1b85",
+    "semantic_batch001_matchdiff.log": "aa40e87c09ae738b390354f42514f3ec8f1bc4e5a8e72cd848be9259072d1b85",
+    "semantic_batch001_inventory.txt": "4b4a167f67c50bb95f86052122447bfab5b86e87182e18b1e2b2dfbf7be94533"
+  },
+  "integration": "Source batch committed on semantic branch only; canonical main is not merged.",
+  "acceptance_scope": "Source lexical/byte preservation and linked whole-ROM equivalence. No emulator or hardware session run."
+}

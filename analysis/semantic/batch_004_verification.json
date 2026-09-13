@@ -1,0 +1,52 @@
+{
+  "recorded_utc": "2026-09-13T14:25:35.090452+00:00",
+  "worktree": "/home/jnmartin84/wt/semantic_names",
+  "branch": "codex/semantic-names",
+  "original_baseline": "823ca10873a7eafde7d68951087cdaf9d3095dfd",
+  "previous_source_commit": "d408c8c9c56743662914b7cc2f58c87a623f6147",
+  "pre_batch_commit": "d408c8c9c56743662914b7cc2f58c87a623f6147",
+  "batch": "004",
+  "new_function_names": 1,
+  "new_identifier_substitutions": 6,
+  "new_source_files": [
+    "src/code_8170.c"
+  ],
+  "cumulative_function_names": 10,
+  "cumulative_identifier_substitutions": 30,
+  "validation": {
+    "identifier_only": true,
+    "inverse_restores_original_bytes": true,
+    "production_inputs_checked": 997,
+    "matchdiff": "FULL MATCH",
+    "whole_rom_cmp": "equal including 64-byte header",
+    "rom_bytes": 8388608,
+    "reference_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+    "built_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+    "linked_symbol_addresses": {
+      "controllerEepromThreadMain": "80029938",
+      "initControllers": "8002ad20",
+      "readAndDispatchControllerData": "8002ae0c",
+      "processBufferedControllerSamples": "8006e98c",
+      "initPieceOperationSlot": "800920e4",
+      "allocatePieceOperationSlot": "800921a8",
+      "advancePieceOperation": "8009423c",
+      "rotateVectorZXYDegrees": "8002fd9c",
+      "rotateVectorYXZDegrees": "8002ff08",
+      "transformVector4InPlace": "80031eb8"
+    }
+  },
+  "validator_tests": "Unchanged tooling; 24 Mac and 24 VM tests passed in prior tooling commit 416d2b5. Not rerun for this source-name-only batch.",
+  "semantic_evidence": "Direct four-component multiply and point/direction caller review; pause analysis corroborated against linked MIPS disassembly.",
+  "artifact_sha256": {
+    "tools/semantic/identifier_renames.py": "11b13da91697c2ac622c21ce092b22b6a429e16ce61bda026cfa998fac047d7b",
+    "tools/semantic/test_identifier_renames.py": "901ff02b9431b8c5ff0652fcabd674a1f91d8b7b4957e825badc0b0e7b36ca13",
+    "analysis/semantic/batch_004.json": "a61d2218d91d41240c278c45fede2ad5ee4444c90298b12130da91023f0ec074",
+    "analysis/semantic/batch_004_inventory.json": "210aca9b75694d13cc1daedd62f2e4ace2c847cfd4d9d2e4c2dc7dc9e9768153",
+    "analysis/semantic/batch_004_validation.json": "142062ff2b4f0a2284eac3357b2207e26410470910193badfe01e9b96942c386",
+    "analysis/semantic/MATRIX_TRANSFORM_PAUSE.md": "af278b448216e8e52883cc61ff492a95db87f7e43a8a5a64a9c280690975d1dd",
+    "analysis/semantic/batch_004_inverse_disassembly.txt": "831d09757488f998b6fb94347b73df86a61a7ac8f53f80097f7e4685dc619a68",
+    "work/semantic_batch004_matchdiff.log": "aa40e87c09ae738b390354f42514f3ec8f1bc4e5a8e72cd848be9259072d1b85"
+  },
+  "integration": "Semantic branch only; no canonical merge.",
+  "acceptance_scope": "Lexical source preservation and linked whole-ROM equality; no emulator or hardware session."
+}

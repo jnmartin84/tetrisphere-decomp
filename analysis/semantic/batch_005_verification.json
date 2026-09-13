@@ -1,0 +1,53 @@
+{
+  "recorded_utc": "2026-09-13T14:41:00.584171+00:00",
+  "worktree": "/home/jnmartin84/wt/semantic_names",
+  "branch": "codex/semantic-names",
+  "original_baseline": "823ca10873a7eafde7d68951087cdaf9d3095dfd",
+  "previous_source_commit": "21b41c8acb74ede9f895a1c5aa4826ea6ea5370d",
+  "pre_batch_commit": "21b41c8acb74ede9f895a1c5aa4826ea6ea5370d",
+  "batch": "005",
+  "new_function_names": 2,
+  "new_identifier_substitutions": 4,
+  "new_source_files": [
+    "src/game2.c"
+  ],
+  "cumulative_function_names": 12,
+  "cumulative_identifier_substitutions": 34,
+  "validation": {
+    "identifier_only": true,
+    "inverse_restores_original_bytes": true,
+    "production_inputs_checked": 997,
+    "matchdiff": "FULL MATCH",
+    "whole_rom_cmp": "equal including 64-byte header",
+    "rom_bytes": 8388608,
+    "reference_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+    "built_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+    "linked_symbol_addresses": {
+      "controllerEepromThreadMain": "80029938",
+      "initControllers": "8002ad20",
+      "readAndDispatchControllerData": "8002ae0c",
+      "processBufferedControllerSamples": "8006e98c",
+      "initPieceOperationSlot": "800920e4",
+      "allocatePieceOperationSlot": "800921a8",
+      "advancePieceOperation": "8009423c",
+      "rotateVectorZXYDegrees": "8002fd9c",
+      "rotateVectorYXZDegrees": "8002ff08",
+      "transformVector4InPlace": "80031eb8",
+      "buildInterpolatedBoardGrid": "800add6c",
+      "buildBoardNormalTables": "800a2374"
+    }
+  },
+  "validator_tests": "Unchanged tooling; 24 Mac and 24 VM tests passed in prior tooling commit 416d2b5. Not rerun for this source-name-only batch.",
+  "semantic_evidence": "Fixed-point grid interpolation, base-plus-layer-step rendering and normal-table producer/consumer audit.",
+  "artifact_sha256": {
+    "tools/semantic/identifier_renames.py": "11b13da91697c2ac622c21ce092b22b6a429e16ce61bda026cfa998fac047d7b",
+    "tools/semantic/test_identifier_renames.py": "901ff02b9431b8c5ff0652fcabd674a1f91d8b7b4957e825badc0b0e7b36ca13",
+    "analysis/semantic/batch_005.json": "0ff572ee6de0d98c9af2327def5d496e384cba70a026c430128304a4463a3a5f",
+    "analysis/semantic/batch_005_inventory.json": "1612ad53cce96ed3527d5df8acb88f92bca2789d6ab9fb42351ebcb2d9808a3b",
+    "analysis/semantic/batch_005_validation.json": "47d9b631ff70505b9025a599cbae8a7397f37939491024a097e6526b11c9be67",
+    "analysis/semantic/BOARD_GRID_MATH.md": "c332c24438f8ecd975793842d306fcb5498481d403f72c6056b2d6b23d3aa99a",
+    "work/semantic_batch005_matchdiff.log": "aa40e87c09ae738b390354f42514f3ec8f1bc4e5a8e72cd848be9259072d1b85"
+  },
+  "integration": "Semantic branch only; no canonical merge.",
+  "acceptance_scope": "Lexical source preservation and linked whole-ROM equality; no emulator or hardware session."
+}

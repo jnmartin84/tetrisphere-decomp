@@ -1,0 +1,314 @@
+name: Tetrisphere (North America)
+sha1: 32adaa274ceed246aeee9f53592d642a121f3bdb
+options:
+  basename: tetrisphere
+  target_path: tetrisphere.z64
+  elf_path: build/tetrisphere.elf
+  base_path: .
+  platform: n64
+  compiler: IDO
+
+  # asm_path: asm
+  # src_path: src
+  # build_path: build
+  # create_asm_dependencies: True
+
+  ld_script_path: tetrisphere.ld
+  ld_dependencies: True
+
+  find_file_boundaries: True
+  header_encoding: ASCII
+
+  o_as_suffix: True
+  use_legacy_include_asm: False
+  mips_abi_float_regs: o32
+
+  # section_order: [".text", ".data", ".rodata", ".bss"]
+  # auto_link_sections: [".data", ".rodata", ".bss"]
+
+  symbol_addrs_path:
+    - symbol_addrs.txt
+  reloc_addrs_path:
+    - reloc_addrs.txt
+
+  # undefined_funcs_auto_path: undefined_funcs_auto.txt
+  # undefined_syms_auto_path: undefined_syms_auto.txt
+
+  extensions_path: tools/splat_ext
+  asm_nonmatching_label_macro: ""
+  asm_end_label: ""
+
+  # string_encoding: ASCII
+  # data_string_encoding: ASCII
+  rodata_string_guesser_level: 2
+  data_string_guesser_level: 2
+  libultra_symbols: True
+  hardware_regs: True
+  # gfx_ucode: # one of [f3d, f3db, f3dex, f3dexb, f3dex2]
+segments:
+  - name: header
+    type: header
+    start: 0x0
+
+  - name: ipl3
+    type: bin
+    start: 0x40
+
+  - name: entry
+    type: code
+    start: 0x1000
+    vram: 0x80025C50
+    subsegments:
+      - [0x1000, hasm]
+
+  - name: main
+    type: code
+    start: 0x1050
+    vram: 0x80025CA0
+    follows_vram: entry
+    subalign: 4
+    bss_size: 0x72E20
+    subsegments:
+      - [0x1050, c, code_1050]
+      - [0x2160, c, n_audio/env]
+      - [0x38D0, c, sched]
+      - [0x48C0, c, boot]
+      - [0x60D0, c, controller]
+      - [0x62D0, c, code_62D0]
+      - [0x8170, c, code_8170]
+      - [0xE820, c, util]
+      - [0xE9A0, c, rdpinit]
+      - [0xEC60, c, main]
+      - [0x4D170, c, code_4D170]
+      - [0x54150, c, code_54150]
+      - [0x54A10, c, lz]
+      - [0x54D20, c, synsetvol]
+      - [0x54E30, c, audio_engine]
+      - [0x59BB0, c, audiomgr]
+      - [0x5A480, c, audio]
+      - [0x5B5D0, c, code_5B5D0]
+      - [0x5D240, c, rand]
+      - [0x5D480, c, game2]
+      - [0xAB540, c, code_AB540]
+      - [0xAB7E0, hasm, code_AB7E0]
+      - [0xAB830, hasm, code_AB830]
+      - [0xAB860, hasm, code_AB860]
+      - [0xAB890, c, n_audio/sl]
+      - [0xAB950, c, n_audio/synthesizer]
+      - [0xAC030, c, libultra/os/virtualtophysical]
+      - [0xAC0B0, c, libultra/os/createmesgqueue]
+      - [0xAC0E0, c, libultra/io/vimgr]
+      - [0xAC440, c, libultra/io/visetmode]
+      - [0xAC4B0, c, libultra/io/viblack]
+      - [0xAC520, c, libultra/os/seteventmesg]
+      - [0xAC590, c, libultra/io/visetevent]
+      - [0xAC600, c, libultra/os/createthread]
+      - [0xAC750, c, libultra/os/startthread]
+      - [0xAC8A0, hasm, libultra/os/setintmask]
+      - [0xAC940, c, libultra/os/recvmesg]
+      - [0xACA80, c, libultra/os/sendmesg]
+      - [0xACBD0, c, libultra/io/sptaskyielded]
+      - [0xACC50, c, libultra/io/vigetcurrframebuf]
+      - [0xACC90, c, libultra/io/vigetnextframebuf]
+      - [0xACCD0, c, libultra/io/viswapbuf]
+      - [0xACD20, hasm, libultra/os/writebackdcacheall]
+      - [0xACD50, c, libultra/io/sptask]
+      - [0xAD040, c, libultra/io/dpsetnextbuf]
+      - [0xAD0F0, c, libultra/io/sptaskyield]
+      - [0xAD110, hasm, code_AD110]
+      - [0xAD170, c, libultra/os/initialize]
+      - [0xAD400, c, libultra/io/pirawread]
+      - [0xAD460, c, libultra/os/getcurrfaultthread]
+      - [0xAD470, c, libultra/io/pimgr]
+      - [0xAD600, c, libultra/os/setthreadpri]
+      - [0xAD6E0, c, libultra/io/conteepwrite]
+      - [0xADBC0, c, libultra/io/conteepread]
+      - [0xADEC0, c, libultra/io/contreaddata]
+      - [0xAE120, c, libultra/io/conteepprobe]
+      - [0xAE190, hasm, libultra/os/invaldcache]
+      - [0xAE240, c, libultra/io/pidma]
+      - [0xAE350, c, libultra/io/visetspecial]
+      - [0xAE510, c, libultra/libc/sprintf]
+      - [0xAE590, c, libultra/io/controller]
+      - [0xAE950, c, libultra/libc/string]
+      - [0xAE9F0, c, libultra/libc/syncprintf]
+      - [0xAEA30, c, libultra/os/stopthread]
+      - [0xAEAF0, c, libultra/libc/ll]
+      - [0xAEDB0, c, libultra/os/settime]
+      - [0xAEDE0, hasm, libultra/libc/bzero]
+      - [0xAEE80, c, libultra/gu/cosf]
+      - [0xAEFF0, c, libultra/gu/sinf]
+      - [0xAF1B0, c, libultra/gu/mtxutil]
+      - [0xAF420, c, libultra/gu/translate]
+      - [0xAF4C0, c, libultra/gu/mtxcatf]
+      - [0xAF6D0, c, libultra/gu/rotate]
+      - [0xAF8C0, c, libultra/gu/scale]
+      - [0xAF960, c, libultra/gu/perspective]
+      - [0xAFBF0, c, libultra/gu/lookatref]
+      - [0xB00B0, c, libultra/gu/sins]
+      - [0xB0120, c, libultra/gu/rotaterpy]
+      - [0xB02C0, c, libultra/gu/coss]
+      - [0xB02F0, c, libultra/gu/ortho]
+      - [0xB04B0, hasm, libultra/gu/sqrtf]
+      - [0xB04C0, c, libultra/audio/synaddplayer]
+      - [0xB0510, c, libultra/audio/synallocvoice]
+      - [0xB0740, c, libultra/audio/synstopvoice]
+      - [0xB07C0, c, libultra/os/jammesg]
+      - [0xB0910, c, libultra/audio/synsetpan]
+      - [0xB09A0, c, libultra/audio/synstartvoiceparam]
+      - [0xB0A90, c, libultra/audio/synsetpitch]
+      - [0xB0B20, c, libultra/io/aisetfreq]
+      - [0xB0C80, c, libultra/audio/heapalloc]
+      - [0xB0CE0, c, libultra/io/aisetnextbuf]
+      - [0xB0D90, c, libultra/io/aigetlen]
+      - [0xB0DA0, c, libultra/audio/heapinit]
+      - [0xB0DE0, c, libultra/gu/lookat]
+      - [0xB1110, hasm, libultra/os/writebackdcache]
+      - [0xB1190, c, libultra/os/gettime]
+      - [0xB1220, c, libultra/audio/syndelete]
+      - [0xB1230, c, libultra/audio/drvrnew]
+      - [0xB19D0, c, libultra/audio/synallocfx]
+      - [0xB1A70, c, libultra/audio/mainbus]
+      - [0xB1BC0, c, libultra/audio/resample]
+      - [0xB1EC0, c, libultra/audio/auxbus]
+      - [0xB1FD0, c, libultra/audio/save]
+      - [0xB2090, hasm, libultra/os/probetlb]
+      - [0xB2150, c, libultra/os/thread]
+      - [0xB2190, c, libultra/os/timerintr]
+      - [0xB2590, c, libultra/os/getthreadpri]
+      - [0xB25B0, hasm, libultra/os/interrupt]
+      - [0xB25F0, c, libultra/io/vi]
+      - [0xB2730, c, libultra/io/vigetcurrcontext]
+      - [0xB2740, c, libultra/io/viswapcontext]
+      - [0xB2AA0, hasm, libultra/os/getcount]
+      - [0xB2AB0, hasm, libultra/os/exceptasm]
+      - [0xB33C0, c, libultra/io/spgetstat]
+      - [0xB33D0, hasm, libultra/libc/bcopy]
+      - [0xB36E0, c, libultra/io/spsetstat]
+      - [0xB36F0, c, libultra/io/spsetpc]
+      - [0xB3730, c, libultra/io/sprawdma]
+      - [0xB37C0, c, libultra/io/sp]
+      - [0xB37F0, c, libultra/io/dp]
+      - [0xB3820, hasm, libultra/os/setsr]
+      - [0xB3840, hasm, libultra/os/setfpccsr]
+      - [0xB3850, c, libultra/io/siraw]
+      - [0xB38F0, hasm, libultra/os/invalicache]
+      - [0xB3970, hasm, libultra/os/maptlbrdb]
+      - [0xB39D0, c, libultra/io/cartrominit]
+      - [0xB3AC0, c, libultra/io/leodiskinit]
+      - [0xB3BC0, c, libultra/io/piacs]
+      - [0xB3C80, c, libultra/io/pirawdma]
+      - [0xB3D60, c, libultra/io/epirawdma]
+      - [0xB3F90, c, libultra/io/devmgr]
+      - [0xB4420, c, libultra/io/siacs]
+      - [0xB44E0, c, libultra/io/sirawdma]
+      - [0xB4590, c, libultra/io/pigetcmdq]
+      - [0xB45C0, c, libultra/libc/xprintf]
+      - [0xB5280, c, libultra/os/settimer]
+      - [0xB5360, c, libultra/gu/normalize]
+      - [0xB53F0, c, libultra/io/ai]
+      - [0xB5420, c, libultra/audio/filter]
+      - [0xB5440, c, libultra/audio/reverb]
+      - [0xB6090, c, libultra/audio/load]
+      - [0xB6BE0, hasm, libultra/os/setcompare]
+      - [0xB6BF0, c, libultra/io/leointerrupt]
+      - [0xB7470, c, libultra/os/destroythread]
+      - [0xB7570, c, libultra/io/si]
+      - [0xB75A0, c, libultra/os/resetglobalintmask]
+      - [0xB7600, c, libultra/io/epirawwrite]
+      - [0xB7650, c, libultra/io/epirawread]
+      - [0xB76A0, c, libultra/os/setglobalintmask]
+      - [0xB76F0, c, libultra/os/yieldthread]
+      - [0xB7740, c, libultra/libc/xlitob]
+      - [0xB79E0, c, libultra/libc/xldtob]
+      - [0xB84A0, c, libultra/audio/copy]
+      - [0xB8520, c, libultra/libc/ldiv]
+      - [0xB86B0, hasm, ucode]
+      - [0xB8880, data]
+      - { start: 0xBA970, type: .data, name: n_audio/env }
+      - [0xBAAB0, data]
+      - { start: 0xBF830, type: .data, name: game2 }
+      - [0xC2060, data]
+      - { start: 0xC5680, type: .data, name: libultra/io/vimgr }
+      - { start: 0xC56A0, type: .data, name: libultra/os/initialize }
+      - { start: 0xC56C0, type: .data, name: libultra/io/pimgr }
+      - [0xC56F0, data]
+      - { start: 0xC5700, type: .data, name: libultra/gu/sins }
+      - { start: 0xC5F00, type: .data, name: libultra/io/aisetnextbuf }
+      - { start: 0xC5F10, type: .data, name: libultra/audio/drvrnew }
+      - { start: 0xC60A0, type: .data, name: libultra/os/thread }
+      - { start: 0xC60C0, type: .data, name: libultra/os/timerintr }
+      - { start: 0xC60D0, type: .data, name: libultra/io/vi }
+      - [0xC6140, data]
+      - { start: 0xC6160, type: .data, name: libultra/io/piacs }
+      - { start: 0xC6170, type: .data, name: libultra/io/siacs }
+      - { start: 0xC6180, type: .data, name: libultra/libc/xprintf }
+      - [0xC61D0, data]
+      - { start: 0xC62C0, type: .data, name: libultra/libc/xlitob }
+      - { start: 0xC62F0, type: .rodata, name: n_audio/env, linker_section_order: .data }
+      - { start: 0xC6350, type: .rodata, name: sched, linker_section_order: .data }
+      - [0xC6370, data]
+      # code_8170 own compiler .rodata, 80 bytes: one item per EBB-distinct f64 constant
+      # reference, in function order -- func_8002E0D4 3x255.0 (2x-unrolled loop: two peel
+      # arms plus one LICM-hoisted preheader load), func_8002FD9C 3x0.017453293,
+      # func_8002FF08 3x0.017453293, func_80030964 1x255.0, func_800312C4 1x0.017453293 (six refs CSE to one item). The item at 0xC7298 is
+      # func_8002D93C's and stays in the data blob: that function spells its constant as
+      # an extern, so the object does not emit it and the carve starts after it.
+      # 0xC72F8-0xC7338: func_80032320's two switch jump tables (jtbl_800EBF48 pal2 switch,
+      # jtbl_800EBF68 fmt switch) + 8 bytes of IDO align pad -- a switch always emits its own
+      # table, so the carve must run through 0xC7340 (the credits strings that follow are data).
+      - { start: 0xC72A0, type: .rodata, name: code_8170, linker_section_order: .data }
+      - [0xC7340, data]
+      - { start: 0xC8E50, type: .rodata, name: main, linker_section_order: .data }
+      - [0xC9230, data]
+      # func_80073290 (code_4D170) owns jtbl_800EE070 (12-case switch, 0xC9420..0xC9450): a C
+      # switch always emits its own table, so the object rodata is placed here and the data
+      # blob is split around it (landed 2026-09-04).
+      - { start: 0xC9420, type: .rodata, name: code_4D170, linker_section_order: .data }
+      - [0xC9450, data]
+      - { start: 0xC9A9C, type: .rodata, name: code_5B5D0, linker_section_order: .data }
+      - [0xC9AFC, data]
+      - { start: 0xCC1E0, type: .rodata, name: game2, linker_section_order: .data }
+      - [0xCC520, data]
+      - { start: 0xCC540, type: .rodata, name: n_audio/synthesizer, linker_section_order: .data }
+      - [0xCC550, data]
+      - { start: 0xCC5D0, type: .rodata, name: libultra/gu/cosf, linker_section_order: .data }
+      - { start: 0xCC620, type: .rodata, name: libultra/gu/sinf, linker_section_order: .data }
+      - { start: 0xCC670, type: .rodata, name: libultra/gu/rotate, linker_section_order: .data }
+      - { start: 0xCC680, type: .rodata, name: libultra/gu/perspective, linker_section_order: .data }
+      - { start: 0xCC690, type: .rodata, name: libultra/gu/lookatref, linker_section_order: .data }
+      - { start: 0xCC6A0, type: .rodata, name: libultra/gu/rotaterpy, linker_section_order: .data }
+      - { start: 0xCC6B0, type: .rodata, name: libultra/audio/drvrnew, linker_section_order: .data }
+      - { start: 0xCC6D0, type: .rodata, name: libultra/audio/resample, linker_section_order: .data }
+      - [0xCC710, data]
+      - { start: 0xCC760, type: .rodata, name: libultra/io/devmgr, linker_section_order: .data }
+      - { start: 0xCC780, type: .rodata, name: libultra/libc/xprintf, linker_section_order: .data }
+      - [0xCC880, data]
+      - { start: 0xCC890, type: .rodata, name: libultra/audio/reverb, linker_section_order: .data }
+      - { start: 0xCC8C0, type: .rodata, name: libultra/libc/xldtob, linker_section_order: .data }
+      - [0xCC920, data]
+      - { type: bss, vram: 0x800F2040, name: game_bss }
+      - { type: .bss, vram: 0x80127CF0, name: game2 }
+      - { type: bss, vram: 0x8013FAB0, name: game_bss_b }
+      - { type: .bss, vram: 0x80161580, name: libultra/io/vimgr }
+      - { type: bss, vram: 0x801627A0, name: os_bss_a }
+      - { type: .bss, vram: 0x80162820, name: libultra/io/sptask }
+      - { type: .bss, vram: 0x80162860, name: libultra/os/initialize }
+      - { type: .bss, vram: 0x80162870, name: libultra/io/pimgr }
+      - { type: bss, vram: 0x80163A40, name: os_bss_c }
+      - { type: .bss, vram: 0x80163B10, name: libultra/gu/rotate }
+      - { type: .bss, vram: 0x80163B20, name: libultra/gu/rotaterpy }
+      - { type: .bss, vram: 0x80163B30, name: libultra/os/timerintr }
+      - { type: .bss, vram: 0x80163B70, name: libultra/io/cartrominit }
+      - { type: .bss, vram: 0x80163BF0, name: libultra/io/leodiskinit }
+      - { type: .bss, vram: 0x80163C70, name: libultra/io/piacs }
+      - { type: .bss, vram: 0x80163C90, name: libultra/io/siacs }
+      - { type: bss, vram: 0x80163CB0, name: os_bss_e }
+      - { type: .bss, vram: 0x80163E60, name: libultra/io/leointerrupt }
+      - { type: bss, vram: 0x80164E60, name: os_bss_f }
+
+  - type: bin
+    start: 0xCD3F0
+    follows_vram: main
+
+  - [0x800000]

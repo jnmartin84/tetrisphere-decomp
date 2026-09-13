@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch": "001-startup-controller-functions",
+  "baseline_commit": "823ca10873a7eafde7d68951087cdaf9d3095dfd",
+  "input_manifest": "analysis/semantic/baseline_inputs.json",
+  "input_manifest_sha256": "8332127a712317675b12f39e704ac98f088a5b2b72b397fa7edee0ba285ea187",
+  "files": {
+    "src/boot.c": {
+      "baseline_sha256": "4a4f5b72997b55326b9f06d03b41899d5d10bf5f4587b0faa0effdf2d0641b71",
+      "renames": {
+        "func_80029938": "controllerEepromThreadMain",
+        "func_8002AD20": "initControllers",
+        "func_8002AE0C": "readAndDispatchControllerData"
+      },
+      "counts": {
+        "func_80029938": 3,
+        "func_8002AD20": 2,
+        "func_8002AE0C": 2
+      }
+    },
+    "src/controller.c": {
+      "baseline_sha256": "2473cf0e6527ed284bc209d4487ca063dfca7da2c1b24f9834c59ec571e18e8e",
+      "renames": {
+        "func_8002AD20": "initControllers",
+        "func_8002AE0C": "readAndDispatchControllerData"
+      },
+      "counts": {
+        "func_8002AD20": 1,
+        "func_8002AE0C": 1
+      }
+    },
+    "src/main.c": {
+      "baseline_sha256": "ad540d3f80c1ac47e59e22478400325b1bdee0b31bebca9bbecd27b28d844d64",
+      "renames": {
+        "func_8006E98C": "processBufferedControllerSamples"
+      },
+      "counts": {
+        "func_8006E98C": 2
+      }
+    }
+  },
+  "decisions": [
+    {
+      "old": "func_80029938",
+      "new": "controllerEepromThreadMain",
+      "meaning": "Thread 5 entry services retrace-driven controller reads and queued EEPROM operations.",
+      "confidence": "high",
+      "evidence": [
+        "src/boot.c:152-242",
+        "src/boot.c:464",
+        "src/boot.c:291"
+      ]
+    },
+    {
+      "old": "func_8002AD20",
+      "new": "initControllers",
+      "meaning": "Initializes controller status and mask; returns -1 for any connected responsive controller, otherwise mask. Preserve return convention.",
+      "confidence": "high",
+      "evidence": [
+        "src/controller.c:15-32",
+        "src/boot.c:465"
+      ]
+    },
+    {
+      "old": "func_8002AE0C",
+      "new": "readAndDispatchControllerData",
+      "meaning": "Retrieves completed controller read data and conditionally forwards buttons or error substitutes for connected ports.",
+      "confidence": "high",
+      "evidence": [
+        "src/controller.c:34-55",
+        "src/boot.c:230-232"
+      ]
+    },
+    {
+      "old": "func_8006E98C",
+      "new": "processBufferedControllerSamples",
+      "meaning": "Drains buffered current/previous button samples through func_8006E418 up to a captured producer index.",
+      "confidence": "high",
+      "evidence": [
+        "src/main.c:12292-12307",
+        "src/main.c:12761"
+      ]
+    }
+  ],
+  "scope": "Four global C function identifiers. No fields, globals, types, signatures, comments, strings, formatting or fixed SDK ABI names change. Historical research retains baseline spellings.",
+  "validation": "Run identifier_renames.py, matchdiff.sh and full-ROM cmp; evidence stored separately."
+}

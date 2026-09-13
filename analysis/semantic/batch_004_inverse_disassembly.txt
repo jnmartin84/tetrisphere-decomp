@@ -1,0 +1,215 @@
+
+/home/jnmartin84/wt/semantic_names/build/tetrisphere.us.elf:     file format elf32-tradbigmips
+
+
+Disassembly of section .main:
+
+8002cdc0 <func_8002CDC0>:
+8002cdc0:	c4820000 	lwc1	$f2,0(a0)
+8002cdc4:	c48c0004 	lwc1	$f12,4(a0)
+8002cdc8:	46021102 	mul.s	$f4,$f2,$f2
+8002cdcc:	c48e0008 	lwc1	$f14,8(a0)
+8002cdd0:	44808000 	mtc1	zero,$f16
+8002cdd4:	3c013f80 	lui	at,0x3f80
+8002cdd8:	460c6182 	mul.s	$f6,$f12,$f12
+8002cddc:	00000000 	nop
+8002cde0:	460e7282 	mul.s	$f10,$f14,$f14
+8002cde4:	46062200 	add.s	$f8,$f4,$f6
+8002cde8:	460a4000 	add.s	$f0,$f8,$f10
+8002cdec:	c4880010 	lwc1	$f8,16(a0)
+8002cdf0:	46001483 	div.s	$f18,$f2,$f0
+8002cdf4:	00000000 	nop
+8002cdf8:	46007183 	div.s	$f6,$f14,$f0
+8002cdfc:	e4920000 	swc1	$f18,0(a0)
+8002ce00:	c4920014 	lwc1	$f18,20(a0)
+8002ce04:	46006103 	div.s	$f4,$f12,$f0
+8002ce08:	e4860008 	swc1	$f6,8(a0)
+8002ce0c:	c4860018 	lwc1	$f6,24(a0)
+8002ce10:	46004283 	div.s	$f10,$f8,$f0
+8002ce14:	e4840004 	swc1	$f4,4(a0)
+8002ce18:	46009103 	div.s	$f4,$f18,$f0
+8002ce1c:	e48a0010 	swc1	$f10,16(a0)
+8002ce20:	c48a0020 	lwc1	$f10,32(a0)
+8002ce24:	46003203 	div.s	$f8,$f6,$f0
+8002ce28:	e4840014 	swc1	$f4,20(a0)
+8002ce2c:	c4840024 	lwc1	$f4,36(a0)
+8002ce30:	e4880018 	swc1	$f8,24(a0)
+8002ce34:	46005483 	div.s	$f18,$f10,$f0
+8002ce38:	c4880028 	lwc1	$f8,40(a0)
+8002ce3c:	46002183 	div.s	$f6,$f4,$f0
+8002ce40:	e4920020 	swc1	$f18,32(a0)
+8002ce44:	c4920000 	lwc1	$f18,0(a0)
+8002ce48:	46004283 	div.s	$f10,$f8,$f0
+8002ce4c:	e4860024 	swc1	$f6,36(a0)
+8002ce50:	e48a0028 	swc1	$f10,40(a0)
+8002ce54:	e4b20000 	swc1	$f18,0(a1)
+8002ce58:	c4840004 	lwc1	$f4,4(a0)
+8002ce5c:	00000000 	nop
+8002ce60:	e4a40010 	swc1	$f4,16(a1)
+8002ce64:	c4860008 	lwc1	$f6,8(a0)
+8002ce68:	00000000 	nop
+8002ce6c:	e4a60020 	swc1	$f6,32(a1)
+8002ce70:	c4880010 	lwc1	$f8,16(a0)
+8002ce74:	00000000 	nop
+8002ce78:	e4a80004 	swc1	$f8,4(a1)
+8002ce7c:	c48a0014 	lwc1	$f10,20(a0)
+8002ce80:	00000000 	nop
+8002ce84:	e4aa0014 	swc1	$f10,20(a1)
+8002ce88:	c4920018 	lwc1	$f18,24(a0)
+8002ce8c:	c4aa0000 	lwc1	$f10,0(a1)
+8002ce90:	e4b20024 	swc1	$f18,36(a1)
+8002ce94:	c4840020 	lwc1	$f4,32(a0)
+8002ce98:	46005487 	neg.s	$f18,$f10
+8002ce9c:	e4a40008 	swc1	$f4,8(a1)
+8002cea0:	c4860024 	lwc1	$f6,36(a0)
+8002cea4:	00000000 	nop
+8002cea8:	e4a60018 	swc1	$f6,24(a1)
+8002ceac:	c4880028 	lwc1	$f8,40(a0)
+8002ceb0:	00000000 	nop
+8002ceb4:	e4a80028 	swc1	$f8,40(a1)
+8002ceb8:	c4840030 	lwc1	$f4,48(a0)
+8002cebc:	c48a0034 	lwc1	$f10,52(a0)
+8002cec0:	46049182 	mul.s	$f6,$f18,$f4
+8002cec4:	c4a80010 	lwc1	$f8,16(a1)
+8002cec8:	00000000 	nop
+8002cecc:	460a4482 	mul.s	$f18,$f8,$f10
+8002ced0:	c48a0038 	lwc1	$f10,56(a0)
+8002ced4:	c4a80020 	lwc1	$f8,32(a1)
+8002ced8:	46123101 	sub.s	$f4,$f6,$f18
+8002cedc:	460a4182 	mul.s	$f6,$f8,$f10
+8002cee0:	c4a80004 	lwc1	$f8,4(a1)
+8002cee4:	46062481 	sub.s	$f18,$f4,$f6
+8002cee8:	e4b20030 	swc1	$f18,48(a1)
+8002ceec:	c4840030 	lwc1	$f4,48(a0)
+8002cef0:	46004287 	neg.s	$f10,$f8
+8002cef4:	46045182 	mul.s	$f6,$f10,$f4
+8002cef8:	c4880034 	lwc1	$f8,52(a0)
+8002cefc:	c4b20014 	lwc1	$f18,20(a1)
+8002cf00:	00000000 	nop
+8002cf04:	46089282 	mul.s	$f10,$f18,$f8
+8002cf08:	c4880038 	lwc1	$f8,56(a0)
+8002cf0c:	c4b20024 	lwc1	$f18,36(a1)
+8002cf10:	460a3101 	sub.s	$f4,$f6,$f10
+8002cf14:	46089182 	mul.s	$f6,$f18,$f8
+8002cf18:	c4b20008 	lwc1	$f18,8(a1)
+8002cf1c:	46062281 	sub.s	$f10,$f4,$f6
+8002cf20:	e4aa0034 	swc1	$f10,52(a1)
+8002cf24:	c4840030 	lwc1	$f4,48(a0)
+8002cf28:	46009207 	neg.s	$f8,$f18
+8002cf2c:	46044182 	mul.s	$f6,$f8,$f4
+8002cf30:	c4920034 	lwc1	$f18,52(a0)
+8002cf34:	c4aa0018 	lwc1	$f10,24(a1)
+8002cf38:	00000000 	nop
+8002cf3c:	46125202 	mul.s	$f8,$f10,$f18
+8002cf40:	c4920038 	lwc1	$f18,56(a0)
+8002cf44:	c4aa0028 	lwc1	$f10,40(a1)
+8002cf48:	e4b0000c 	swc1	$f16,12(a1)
+8002cf4c:	46083101 	sub.s	$f4,$f6,$f8
+8002cf50:	e4b0001c 	swc1	$f16,28(a1)
+8002cf54:	46125182 	mul.s	$f6,$f10,$f18
+8002cf58:	44815000 	mtc1	at,$f10
+8002cf5c:	e4b0002c 	swc1	$f16,44(a1)
+8002cf60:	e4aa003c 	swc1	$f10,60(a1)
+8002cf64:	46062201 	sub.s	$f8,$f4,$f6
+8002cf68:	03e00008 	jr	ra
+8002cf6c:	e4a80038 	swc1	$f8,56(a1)
+
+/home/jnmartin84/wt/semantic_names/build/tetrisphere.us.elf:     file format elf32-tradbigmips
+
+
+Disassembly of section .main:
+
+80031fec <func_80031FEC>:
+80031fec:	27bdff00 	addiu	sp,sp,-256
+80031ff0:	afb00034 	sw	s0,52(sp)
+80031ff4:	00808025 	move	s0,a0
+80031ff8:	afbf003c 	sw	ra,60(sp)
+80031ffc:	afb10038 	sw	s1,56(sp)
+80032000:	afa50104 	sw	a1,260(sp)
+80032004:	afa60108 	sw	a2,264(sp)
+80032008:	afa7010c 	sw	a3,268(sp)
+8003200c:	0005c0c0 	sll	t8,a1,0x3
+80032010:	9209003d 	lbu	t1,61(s0)
+80032014:	8e0e0014 	lw	t6,20(s0)
+80032018:	0305c021 	addu	t8,t8,a1
+8003201c:	0018c140 	sll	t8,t8,0x5
+80032020:	00095180 	sll	t2,t1,0x6
+80032024:	01d8c821 	addu	t9,t6,t8
+80032028:	032a2821 	addu	a1,t9,t2
+8003202c:	0c034fee 	jal	800d3fb8 <guMtxL2F>
+80032030:	27a40080 	addiu	a0,sp,128
+80032034:	920b003b 	lbu	t3,59(s0)
+80032038:	260401b8 	addiu	a0,s0,440
+8003203c:	1560000b 	bnez	t3,8003206c <func_80031FEC+0x80>
+80032040:	26110178 	addiu	s1,s0,376
+80032044:	0c00b370 	jal	8002cdc0 <func_8002CDC0>
+80032048:	02202825 	move	a1,s1
+8003204c:	14400007 	bnez	v0,8003206c <func_80031FEC+0x80>
+80032050:	240c0001 	li	t4,1
+80032054:	3c04800f 	lui	a0,0x800f
+80032058:	a20c003b 	sb	t4,59(s0)
+8003205c:	0c034d97 	jal	800d365c <rmonPrintf>
+80032060:	2484bed4 	addiu	a0,a0,-16684
+80032064:	0c034fc0 	jal	800d3f00 <guMtxIdentF>
+80032068:	02202025 	move	a0,s1
+8003206c:	8fa20108 	lw	v0,264(sp)
+80032070:	44800000 	mtc1	zero,$f0
+80032074:	c4440004 	lwc1	$f4,4(v0)
+80032078:	3c013f80 	lui	at,0x3f80
+8003207c:	e7a40070 	swc1	$f4,112(sp)
+80032080:	c4460008 	lwc1	$f6,8(v0)
+80032084:	44811000 	mtc1	at,$f2
+80032088:	e7a60074 	swc1	$f6,116(sp)
+
+/home/jnmartin84/wt/semantic_names/build/tetrisphere.us.elf:     file format elf32-tradbigmips
+
+
+Disassembly of section .main:
+
+800d3fb8 <guMtxL2F>:
+800d3fb8:	3c014780 	lui	at,0x4780
+800d3fbc:	44810000 	mtc1	at,$f0
+800d3fc0:	27bdfff0 	addiu	sp,sp,-16
+800d3fc4:	00a01025 	move	v0,a1
+800d3fc8:	24a30020 	addiu	v1,a1,32
+800d3fcc:	00003025 	move	a2,zero
+800d3fd0:	00804025 	move	t0,a0
+800d3fd4:	240c0004 	li	t4,4
+800d3fd8:	240b0002 	li	t3,2
+800d3fdc:	3c0affff 	lui	t2,0xffff
+800d3fe0:	00002025 	move	a0,zero
+800d3fe4:	01004825 	move	t1,t0
+800d3fe8:	8c6e0000 	lw	t6,0(v1)
+800d3fec:	8c590000 	lw	t9,0(v0)
+800d3ff0:	24840001 	addiu	a0,a0,1
+800d3ff4:	000e7c02 	srl	t7,t6,0x10
+800d3ff8:	31f8ffff 	andi	t8,t7,0xffff
+800d3ffc:	032a6824 	and	t5,t9,t2
+800d4000:	030d7025 	or	t6,t8,t5
+800d4004:	afae0004 	sw	t6,4(sp)
+800d4008:	8c6f0000 	lw	t7,0(v1)
+800d400c:	8c580000 	lw	t8,0(v0)
+800d4010:	8fa50004 	lw	a1,4(sp)
+800d4014:	31f9ffff 	andi	t9,t7,0xffff
+800d4018:	00186c00 	sll	t5,t8,0x10
+800d401c:	44859000 	mtc1	a1,$f18
+800d4020:	01aa7024 	and	t6,t5,t2
+800d4024:	032e3825 	or	a3,t9,t6
+800d4028:	468094a0 	cvt.s.w	$f18,$f18
+800d402c:	44878000 	mtc1	a3,$f16
+800d4030:	afa70000 	sw	a3,0(sp)
+800d4034:	24420004 	addiu	v0,v0,4
+800d4038:	24630004 	addiu	v1,v1,4
+800d403c:	46808420 	cvt.s.w	$f16,$f16
+800d4040:	25290008 	addiu	t1,t1,8
+800d4044:	46009483 	div.s	$f18,$f18,$f0
+800d4048:	46008403 	div.s	$f16,$f16,$f0
+800d404c:	e532fff8 	swc1	$f18,-8(t1)
+800d4050:	148bffe5 	bne	a0,t3,800d3fe8 <guMtxL2F+0x30>
+800d4054:	e530fffc 	swc1	$f16,-4(t1)
+800d4058:	24c60001 	addiu	a2,a2,1
+800d405c:	14ccffe0 	bne	a2,t4,800d3fe0 <guMtxL2F+0x28>
+800d4060:	25080010 	addiu	t0,t0,16
+800d4064:	03e00008 	jr	ra
+800d4068:	27bd0010 	addiu	sp,sp,16
+800d406c:	00000000 	nop

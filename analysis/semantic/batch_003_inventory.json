@@ -1,0 +1,17 @@
+{
+  "scope": "All 997 production inputs; substring search includes comments and suffixed aliases. No proposed new name exists before application. YAML references are historical comments; retained unchanged.",
+  "hits": {
+    "src/code_8170.c": {
+      "func_8002FD9C": 2,
+      "func_8002FF08": 2
+    },
+    "tetrisphere.yaml": {
+      "func_8002FD9C": 1,
+      "func_8002FF08": 1
+    }
+  },
+  "lexical_substitution_counts": {
+    "func_8002FD9C": 2,
+    "func_8002FF08": 2
+  }
+}

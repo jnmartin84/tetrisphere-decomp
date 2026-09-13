@@ -1,0 +1,33 @@
+{
+  "rom_size": 8388608,
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "header_identical": true,
+  "target_size": 12588,
+  "target_instructions": 3147,
+  "target_sha256": "d1f543090c83e965b5a83179514c57b6a005254927f5675f73c07da5005bcff6",
+  "independent_elf_extraction": "PASS",
+  "whole_rom_splice": "PASS",
+  "remaining_global_asm_pragmas": 0,
+  "symbols": {
+    "func_800857E8": "0x800857e8",
+    "func_80088914": "0x80088914",
+    "func_800906E8": "0x800906e8",
+    "func_800920E4": "0x800920e4",
+    "D_8013D170": "0x8013d170",
+    "D_8013D268_t": "0x8013d268",
+    "storage857_prefix": "0x8013d270",
+    "storage857_DD10": "0x8013dd10",
+    "storage857_middle": "0x8013e478",
+    "storage857_F348": "0x8013f348",
+    "D_8013FAB0": "0x8013fab0"
+  },
+  "source_hashes": {
+    "src/game2.c": "b02bca7b68e938e65a50e4b2c6ee000eccc4f4a2ad87b03a0514411064cbd212",
+    "asm/data/game_bss_b.bss.s": "a7e1391b6be1abf9d3e51177bd2b140e26519faff71eedc9871b88af5905c865",
+    "undefined_syms.txt": "cb0d8c08fa3c7a76dcda9532b353c87dbd0a621bba8a66dd0ef7e5e6d9831fd1",
+    "tetrisphere.yaml": "55fb4681e916038662b5848a5c61890238e9b5c2e7a9a7dd0b570e2d60c48ff8"
+  },
+  "stock_observer_identical": true,
+  "stock_uopt_output_sha256": "5e88522f3b563726ee1e524832cd84850ecb69b1e554cf4bfc290d0db9de46cd",
+  "observer_input_sha256": "a5787afd7d0689da8543cdf133bcc5f5f4bae717bbc3bc5edc1deb3f3d683e53"
+}

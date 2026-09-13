@@ -1,0 +1,40 @@
+{
+  "semantic_commit": "490402d76f15dc7d4774c15dde72e868b3f15fcf",
+  "original_decomp_commit": "823ca10873a7eafde7d68951087cdaf9d3095dfd",
+  "source_files_verified": 134,
+  "source_import": "Exact approved identifier substitutions from immutable original source; all other src bytes preserved.",
+  "semantic_function_names": 26,
+  "semantic_identifier_tokens": 138,
+  "ido_release": "https://github.com/decompals/ido-static-recomp/releases/tag/v1.2",
+  "macos": {
+    "system": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+    "make": "GNU Make 3.81",
+    "binutils": "GNU assembler (GNU Binutils) 2.47.20260726",
+    "full_rom_match": true,
+    "rom_bytes": 8388608,
+    "sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+    "matchdiff": "FULL MATCH"
+  },
+  "linux_fresh_source_checkout": {
+    "system": "Ubuntu 24.04 ARM64",
+    "binutils": "GNU MIPS binutils 2.42",
+    "input": "Only staged text files plus supplied original ROM; no preexisting IDO or extracted assets",
+    "full_rom_match": true,
+    "matchdiff": "FULL MATCH",
+    "rom_bytes": 8388608,
+    "sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87"
+  },
+  "git_policy": "Fresh root history; no ROM, extracted assets, compiler executables or binary artifacts tracked.",
+  "scope": "Build tooling changed; game-source changes remain identifier-only. No emulator or hardware session.",
+  "setup_tests": {
+    "macos": 5,
+    "linux": 5,
+    "coverage": "Host mappings and unsupported hosts; unsafe archives; checksum failure preserves installation; missing/wrong ROM preserves local assets."
+  },
+  "source_only_index": {
+    "files": 1065,
+    "binary_artifacts": 0,
+    "inspection": "All staged objects decoded as UTF-8 with no NULs; regular files only, binary suffixes and output directories rejected."
+  },
+  "validation_notes": "Imported legacy headers/source retain original whitespace. New tooling and publication docs pass scoped whitespace checks. No source layout normalization."
+}

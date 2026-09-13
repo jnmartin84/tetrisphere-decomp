@@ -1,0 +1,3039 @@
+asm/1000.s: Assembler messages:
+asm/1000.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/1000.s
+asm/code_AB7E0.s: Assembler messages:
+asm/code_AB7E0.s:14: Warning: missing .end
+asm/code_AB7E0.s:26:  Info: macro invoked from here
+asm/code_AB7E0.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/code_AB7E0.s
+asm/code_AB830.s: Assembler messages:
+asm/code_AB830.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/code_AB830.s
+asm/code_AB860.s: Assembler messages:
+asm/code_AB860.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/code_AB860.s
+asm/code_AD110.s: Assembler messages:
+asm/code_AD110.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/code_AD110.s
+[[0;32m MIPS GNU Assembler [0m]  asm/header.s
+asm/ucode.s: Assembler messages:
+asm/ucode.s:14: Warning: missing .end
+asm/ucode.s:17:  Info: macro invoked from here
+asm/ucode.s:14: Warning: missing .end
+asm/ucode.s:76:  Info: macro invoked from here
+asm/ucode.s:14: Warning: missing .end
+asm/ucode.s:81:  Info: macro invoked from here
+asm/ucode.s:14: Warning: missing .end
+asm/ucode.s:104:  Info: macro invoked from here
+asm/ucode.s:14: Warning: missing .end
+asm/ucode.s:133:  Info: macro invoked from here
+asm/ucode.s:14: Warning: missing .end
+asm/ucode.s:147:  Info: macro invoked from here
+asm/ucode.s:14: Warning: missing .end
+asm/ucode.s:155:  Info: macro invoked from here
+asm/ucode.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/ucode.s
+asm/libultra/gu/sqrtf.s: Assembler messages:
+asm/libultra/gu/sqrtf.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/gu/sqrtf.s
+asm/libultra/os/exceptasm.s: Assembler messages:
+asm/libultra/os/exceptasm.s:14: Warning: missing .end
+asm/libultra/os/exceptasm.s:19:  Info: macro invoked from here
+asm/libultra/os/exceptasm.s:14: Warning: missing .end
+asm/libultra/os/exceptasm.s:351:  Info: macro invoked from here
+asm/libultra/os/exceptasm.s:14: Warning: missing .end
+asm/libultra/os/exceptasm.s:375:  Info: macro invoked from here
+asm/libultra/os/exceptasm.s:14: Warning: missing .end
+asm/libultra/os/exceptasm.s:426:  Info: macro invoked from here
+asm/libultra/os/exceptasm.s:14: Warning: missing .end
+asm/libultra/os/exceptasm.s:442:  Info: macro invoked from here
+asm/libultra/os/exceptasm.s:14: Warning: missing .end
+asm/libultra/os/exceptasm.s:512:  Info: macro invoked from here
+asm/libultra/os/exceptasm.s:14: Warning: missing .end
+asm/libultra/os/exceptasm.s:534:  Info: macro invoked from here
+asm/libultra/os/exceptasm.s:14: Warning: missing .end
+asm/libultra/os/exceptasm.s:541:  Info: macro invoked from here
+asm/libultra/os/exceptasm.s:14: Warning: missing .end
+asm/libultra/os/exceptasm.s:639:  Info: macro invoked from here
+asm/libultra/os/exceptasm.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/os/exceptasm.s
+asm/libultra/os/getcount.s: Assembler messages:
+asm/libultra/os/getcount.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/os/getcount.s
+asm/libultra/os/interrupt.s: Assembler messages:
+asm/libultra/os/interrupt.s:14: Warning: missing .end
+asm/libultra/os/interrupt.s:23:  Info: macro invoked from here
+asm/libultra/os/interrupt.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/os/interrupt.s
+asm/libultra/os/invaldcache.s: Assembler messages:
+asm/libultra/os/invaldcache.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/os/invaldcache.s
+asm/libultra/os/invalicache.s: Assembler messages:
+asm/libultra/os/invalicache.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/os/invalicache.s
+asm/libultra/os/maptlbrdb.s: Assembler messages:
+asm/libultra/os/maptlbrdb.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/os/maptlbrdb.s
+asm/libultra/os/probetlb.s: Assembler messages:
+asm/libultra/os/probetlb.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/os/probetlb.s
+asm/libultra/os/setcompare.s: Assembler messages:
+asm/libultra/os/setcompare.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/os/setcompare.s
+asm/libultra/os/setfpccsr.s: Assembler messages:
+asm/libultra/os/setfpccsr.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/os/setfpccsr.s
+asm/libultra/os/setintmask.s: Assembler messages:
+asm/libultra/os/setintmask.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/os/setintmask.s
+asm/libultra/os/setsr.s: Assembler messages:
+asm/libultra/os/setsr.s:14: Warning: missing .end
+asm/libultra/os/setsr.s:19:  Info: macro invoked from here
+asm/libultra/os/setsr.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/os/setsr.s
+asm/libultra/os/writebackdcache.s: Assembler messages:
+asm/libultra/os/writebackdcache.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/os/writebackdcache.s
+asm/libultra/os/writebackdcacheall.s: Assembler messages:
+asm/libultra/os/writebackdcacheall.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/os/writebackdcacheall.s
+asm/libultra/libc/bcopy.s: Assembler messages:
+asm/libultra/libc/bcopy.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/libc/bcopy.s
+asm/libultra/libc/bzero.s: Assembler messages:
+asm/libultra/libc/bzero.s: Warning: missing .end at end of assembly
+[[0;32m MIPS GNU Assembler [0m]  asm/libultra/libc/bzero.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/B8880.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/BAAB0.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/C2060.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/C56F0.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/C6140.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/C61D0.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/C6370.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/C7340.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/C9230.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/C9450.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/C9AFC.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/CC520.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/CC550.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/CC710.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/CC880.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/CC920.data.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/game_bss.bss.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/game_bss_b.bss.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/os_bss_a.bss.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/os_bss_c.bss.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/os_bss_e.bss.s
+[[0;32m MIPS GNU Assembler [0m]  asm/data/os_bss_f.bss.s
+[[0;32m IDO 5.3 [0m]  src/audio.c
+cfe: Warning 835: src/audio_engine.c, line 170: No prototype for the call to func_8007E63C
+     func_8007E63C(src, mgr + 0x418);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 188: No prototype for the call to func_80079660
+     func_80079660(*(u8 **)(mgr + 0x444), mgr + 0x454);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 193: No prototype for the call to func_8007E6A0
+         func_8007E6A0(src, q);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 238: No prototype for the call to an anonymous function
+             func_80033470();
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 242: No prototype for the call to func_8007AC44
+                 func_8007AC44(0x80000400, *(u16 *)(rec + 0x26));
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 243: No prototype for the call to lwDecode
+                 lwDecode((void *)0x80000400, *(s32 *)(m + 0x1570));
+ ------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 298: No prototype for the call to func_8007AC44
+                 func_8007AC44(*(s32 *)(m + 0x1570), *(u16 *)(rec + 0x26));
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 299: No prototype for the call to lwDecode
+                 lwDecode(*(s32 *)(m + 0x1570), (u8 *)0x80000400);
+ ------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 430: No prototype for the call to func_80029760
+             func_80029760(D_800EE0D0, s);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 435: No prototype for the call to func_80029760
+             func_80029760(D_800EE114);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 458: No prototype for the call to func_80029760
+     func_80029760(D_800EE130, s);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 461: No prototype for the call to func_80029760
+     func_80029760(D_800EE174);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 477: No prototype for the call to func_80029760
+         func_80029760(D_800EE190);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 482: No prototype for the call to func_80029760
+         func_80029760(D_800EE1B4);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 501: No prototype for the call to func_80029760
+     func_80029760(D_800EE1E0);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 504: No prototype for the call to func_80029760
+     func_80029760(D_800EE204);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 544: No prototype for the call to func_80029760
+   func_80029760(D_800EE230, s);
+ ---------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 654: src/audio_engine.c, line 554: Must be an integer type greater than zero.
+ typedef struct { u8 bytes[0]; } BEmpty; typedef struct { u8 value; } BByte; typedef struct { s32 unk0; s32 unk4; s32 unk8; } BLoop;  
+ --------------------------^
+The array size must be either a char, signed or unsigned integer or
+an enumerated type with a value greater than zero.
+cfe: Warning 835: src/audio_engine.c, line 682: No prototype for the call to func_80029760
+             func_80029760(D_800EE274);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 701: No prototype for the call to func_80029760
+             func_80029760(D_800EE28C);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 707: No prototype for the call to func_80029760
+             func_80029760(D_800EE2A4);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 709: No prototype for the call to func_80079660
+             func_80079660(g->unk444, g->strm);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 742: No prototype for the call to func_80079660
+                 func_80079660(m->unk444, m->strm);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 928: No prototype for the call to __allocParam
+                                 pp = __allocParam();
+ -------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 934: No prototype for the call to an anonymous function
+                                     drv->unk8(drv, 3, pp);
+ ---------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 936: No prototype for the call to __allocParam
+                                 pp = __allocParam();
+ -------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 941: No prototype for the call to an anonymous function
+                                     drv->unk8(drv, 3, pp);
+ ---------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 955: No prototype for the call to __allocParam
+                                 pp = __allocParam();
+ -------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 961: No prototype for the call to an anonymous function
+                                     drv->unk8(drv, 3, pp);
+ ---------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 963: No prototype for the call to __allocParam
+                                 pp = __allocParam();
+ -------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 968: No prototype for the call to an anonymous function
+                                     drv->unk8(drv, 3, pp);
+ ---------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 977: No prototype for the call to __allocParam
+                                 pp = __allocParam();
+ -------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 983: No prototype for the call to an anonymous function
+                                     drv->unk8(drv, 3, pp);
+ ---------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 985: No prototype for the call to __allocParam
+                                 pp = __allocParam();
+ -------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 990: No prototype for the call to an anonymous function
+                                     drv->unk8(drv, 3, pp);
+ ---------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1217: No prototype for the call to func_8007E63C
+     func_8007E63C(src, &hdr);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1237: No prototype for the call to func_80029760
+         func_80029760(D_800EE2BC, slotIdx * 4, arg3);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1241: No prototype for the call to func_8007E6A0
+         func_8007E6A0(src, &vh);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1257: No prototype for the call to func_8007AC44
+             func_8007AC44((void *)dst, vh.unkE);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1261: No prototype for the call to lwDecode
+                     lwDecode((void *)dst, out);
+ ----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1299: No prototype for the call to lwDecode
+                         lwDecode((void *)dst, out + vh.unk0);
+ --------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1314: No prototype for the call to lwDecode
+                         lwDecode((void *)dst, out);
+ --------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1331: No prototype for the call to lwDecode
+                 lwDecode((void *)dst, out);
+ ------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1550: No prototype for the call to func_8007CE78
+         v = func_8007CE78(e, (u8)(k + -i));
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1552: No prototype for the call to func_8007CE78
+             v = func_8007CE78(e, 0xF0);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1554: No prototype for the call to func_80029760
+                 func_80029760(D_800EE30C);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 654: src/audio_engine.c, line 1641: Must be an integer type greater than zero.
+ typedef struct { u8 pad0[0x24]; } EngRow; typedef struct { u8 zero[0]; } EngEmpty;
+ -------------------------------------------------------------------^
+The array size must be either a char, signed or unsigned integer or
+an enumerated type with a value greater than zero.
+cfe: Warning 835: src/audio_engine.c, line 1680: No prototype for the call to func_80029760
+             func_80029760(D_800EE320);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1697: No prototype for the call to func_80029760
+             func_80029760(D_800EE338);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1725: No prototype for the call to __allocParam
+                         pp = __allocParam();
+ -----------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1731: No prototype for the call to an anonymous function
+                             drv->unk8(drv, 3, pp);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1733: No prototype for the call to __allocParam
+                         pp = __allocParam();
+ -----------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1738: No prototype for the call to an anonymous function
+                             drv->unk8(drv, 3, pp);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1753: No prototype for the call to __allocParam
+                         pp = __allocParam();
+ -----------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1759: No prototype for the call to an anonymous function
+                             drv->unk8(drv, 3, pp);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1761: No prototype for the call to __allocParam
+                         pp = __allocParam();
+ -----------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1766: No prototype for the call to an anonymous function
+                             drv->unk8(drv, 3, pp);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1773: No prototype for the call to __allocParam
+                         pp = __allocParam();
+ -----------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1779: No prototype for the call to an anonymous function
+                             drv->unk8(drv, 3, pp);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1781: No prototype for the call to __allocParam
+                         pp = __allocParam();
+ -----------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1786: No prototype for the call to an anonymous function
+                             drv->unk8(drv, 3, pp);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1805: No prototype for the call to func_80029760
+                         func_80029760(D_800EE350);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1864: No prototype for the call to __allocParam
+                                             pp = __allocParam();
+ -------------------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1870: No prototype for the call to an anonymous function
+                                                 drv->unk8(drv, 3, pp);
+ ---------------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1872: No prototype for the call to __allocParam
+                                             pp = __allocParam();
+ -------------------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1898: No prototype for the call to an anonymous function
+                                                 drv->unk8(drv, 3, pp);
+ ---------------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1987: No prototype for the call to __allocParam
+                                             pp = __allocParam();
+ -------------------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1993: No prototype for the call to an anonymous function
+                                                 drv->unk8(drv, 3, pp);
+ ---------------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 1995: No prototype for the call to __allocParam
+                                             pp = __allocParam();
+ -------------------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 2000: No prototype for the call to an anonymous function
+                                                 drv->unk8(drv, 3, pp);
+ ---------------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 2035: No prototype for the call to func_80029760
+                                                 func_80029760(D_800EE370);
+ -------------------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 2079: No prototype for the call to func_80029760
+         func_80029760(D_800EE398, (f64)r);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 2084: No prototype for the call to func_80029760
+         func_80029760(D_800EE3B0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 2100: No prototype for the call to func_80029760
+         func_80029760(D_800EE3C4, (f64)r);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 2105: No prototype for the call to func_80029760
+         func_80029760(D_800EE3DC);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 2159: No prototype for the call to func_80029760
+     func_80029760(D_800EE3F0, s->unkC);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 2160: No prototype for the call to func_80029760
+     func_80029760(D_800EE3FC, s->unk4);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 2161: No prototype for the call to func_80029760
+     func_80029760(D_800EE40C, s->unk8);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 2162: No prototype for the call to func_80029760
+     func_80029760(D_800EE41C, s->unk0, s->unk0);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/audio_engine.c, line 2163: No prototype for the call to func_80029760
+     func_80029760(D_800EE42C, s->unkE);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+[[0;32m IDO 5.3 [0m]  src/audio_engine.c
+cfe: Warning 835: src/audiomgr.c, line 162: No prototype for the call to func_8007ED88
+         if (func_8007ED88(D_80104CD8[D_800E28C0 % 3], samples))
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+[[0;32m IDO 5.3 [0m]  src/audiomgr.c
+cfe: Warning 835: src/boot.c, line 24: No prototype for the call to an anonymous function
+         osPiRawReadIo(addr, &buf[i]);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/boot.c, line 43: No prototype for the call to an anonymous function
+         D_800F2040 = __osGetCurrFaultedThread();
+ ---------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+[[0;32m IDO 5.3 [0m]  src/boot.c
+[[0;32m IDO 5.3 [0m]  src/code_1050.c
+cfe: Warning 835: src/code_4D170.c, line 117: No prototype for the call to an anonymous function
+                         func_80038478(&D_800F22B4, xpos, arg3, str, arg5, arg6, arg7, (int) (D_800E23B4 * arg8) / 255);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 121: No prototype for the call to an anonymous function
+                         func_800382B4(&D_800F22B4, arg9 & 0xFF, xpos, arg3, str, arg5, arg6, arg7, (int) (D_800E23B4 * arg8) / 255);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 127: No prototype for the call to an anonymous function
+                         func_80038478(&D_800F22B4, xpos, arg3, str, arg5, arg6, arg7, (int) (D_800E23B4 * arg8) / 255);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 131: No prototype for the call to an anonymous function
+                         func_800382B4(&D_800F22B4, arg1.b[3], xpos, arg3, str, arg5, arg6, arg7, (int) (D_800E23B4 * arg8) / 255);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 152: No prototype for the call to an anonymous function
+                         func_80038478(&D_800F22B4, xpos, arg3, str, arg5, arg6, arg7, (int) (D_800E23B4 * arg8) / 255);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 155: No prototype for the call to an anonymous function
+                         func_800382B4(&D_800F22B4, width & 0xFF, xpos, arg3, str, arg5, arg6, arg7, (int) (D_800E23B4 * arg8) / 255);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 160: No prototype for the call to an anonymous function
+                         func_80038478(&D_800F22B4, xpos, arg3, str, arg5, arg6, arg7, (int) (D_800E23B4 * arg8) / 255);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 163: No prototype for the call to an anonymous function
+                         func_800382B4(&D_800F22B4, (u8)arg1.s[1], xpos, arg3, str, arg5, arg6, arg7, (int) (D_800E23B4 * arg8) / 255);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 239: No prototype for the call to an anonymous function
+     func_80038478(&D_800F22B4, arg1, arg2, buf, arg3, arg4, arg5, (s32) (D_800E23B4 * arg6) / 255);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 266: No prototype for the call to an anonymous function
+     func_80038478(&D_800F22B4, arg1 - (func_800388BC(buf + n) >> 1), arg2, buf + n, arg3, arg4, arg5, (s32) (D_800E23B4 * arg6) / 255);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 266: No prototype for the call to an anonymous function
+     func_80038478(&D_800F22B4, arg1 - (func_800388BC(buf + n) >> 1), arg2, buf + n, arg3, arg4, arg5, (s32) (D_800E23B4 * arg6) / 255);
+ ----------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 524: No prototype for the call to func_80029760
+     func_80029760(&D_800EDF70, D_800FC5AC - D_800F22C0, D_800F22C0);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 747: No prototype for the call to func_80029760
+     func_80029760(&D_800EDFBC, D_800F22C0 - sp40);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 755: No prototype for the call to func_80029760
+     func_80029760(&D_800EDFE4, sp48 - old);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 757: No prototype for the call to func_80029760
+     func_80029760(&D_800EE010, D_800F22C0 - sp40, D_800F22C0);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 654: src/code_4D170.c, line 822: Must be an integer type greater than zero.
+ typedef struct { u8 bytes[0]; } E743;
+ --------------------------^
+The array size must be either a char, signed or unsigned integer or
+an enumerated type with a value greater than zero.
+cfe: Warning 835: src/code_4D170.c, line 1011: No prototype for the call to func_800384E4
+                     func_800384E4(&D_800F22B4, x, y, buf1, r, g, b, arg4);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 639: src/code_4D170.c, line 1053: Incompatible type for the function parameter
+ extern void func_800743BC(s32, s32, s32, s32, s32);
+ -----------------------------------------^
+If both parameter type lists are present, corresponding
+parameters shall have compatible types.
+cfe: Warning 642: src/code_4D170.c, line 1082: prototype declaration and non-prototype definition found for func_80071DD8, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_80071DD8(s32);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/code_4D170.c, line 1200: No prototype for the call to an anonymous function
+     func_80038478(&D_800F22B4, arg1, arg2, (u8 *) arg0, D_801039AA, D_801039AC, D_801039AE, D_801039B0);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1762: No prototype for the call to func_80071DE8
+         func_80071DE8(D_801127E6 - 1, 0, 0x100, 0x93, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1766: No prototype for the call to func_80071DE8
+             func_80071DE8(D_801127E8 - 1, 0, 0xF7, 0xBF, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1768: No prototype for the call to func_80071DE8
+             func_80071DE8(D_801127E8 - 1, 0, 0xFF, 0xBF, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1772: No prototype for the call to func_8007240C
+             func_8007240C(2, 0x89, 0xC8, 0xFE, 0xBE, 0x3F, D_800E23B4);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1784: No prototype for the call to func_8007240C
+             func_8007240C(2, 0x89, 0xC8, (s32) (r * 255.0f * 255.0f) / 255, (s32) (g * 255.0f * 255.0f) / 255, (s32) (b * 255.0f * 255.0f) / 255, (s32) (sinf((f32) (((D_800E2434 + 0xFF) & 0xFF) * 0x12 * D_800EE0B8)) * 255.0f * 255.0f) / 255);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1788: No prototype for the call to func_8007240C
+             func_8007240C(2, 0x89, 0xC8, 0xFE, 0xBE, 0x3F, 0xFF);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1806: No prototype for the call to func_80071DE8
+                 func_80071DE8(D_801125DA, 0, 0x26, 0x2B, 8, 0xFF, 0xFF, 0xFF, 0xFF);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1808: No prototype for the call to func_80071DE8
+                 func_80071DE8(D_801125DA, 0, 0x1F, 0x2B, 8, 0xFF, 0xFF, 0xFF, 0xFF);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1810: No prototype for the call to func_80071DE8
+                 func_80071DE8(D_801125DA, 0, 0x18, 0x2B, 8, 0xFF, 0xFF, 0xFF, 0xFF);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1815: No prototype for the call to func_80071DE8
+                 func_80071DE8(D_80112602 - 1, 0, 0x1F, 0x2B, 8, 0xFF, 0xFF, 0xFF, 0xFF);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1817: No prototype for the call to func_80071DE8
+                 func_80071DE8(D_80112602 - 1, 0, 0x25, 0x2B, 8, 0xFF, 0xFF, 0xFF, 0xFF);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1822: No prototype for the call to func_80071DE8
+                 func_80071DE8(D_801125DA, 0, 0x25, 0x35, 8, 0xFF, 0xFF, 0xFF, 0xFF);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1824: No prototype for the call to func_80071DE8
+                 func_80071DE8(D_801125DA, 0, 0x1F, 0x35, 8, 0xFF, 0xFF, 0xFF, 0xFF);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1830: No prototype for the call to func_80071DE8
+                     w = func_80071DE8(D_800E44A0, 0, 0x1B, 0x2B, 8, 0xFF, 0xFF, 0xFF, D_800E23B4) + 0x42;
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1832: No prototype for the call to an anonymous function
+                     func_80038478(&D_800F22B4, w - 0x47, 0x2A, buf, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1833: No prototype for the call to func_80071DE8
+                     func_80071DE8(D_801125DA, 0, w - 0x4F, 0x2B, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1835: No prototype for the call to func_80071DE8
+                     w = func_80071DE8(D_800E44A0, 0, 0x1E, 0x2B, 8, 0xFF, 0xFF, 0xFF, D_800E23B4) + 0x42;
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1837: No prototype for the call to an anonymous function
+                     func_80038478(&D_800F22B4, w - 0x45, 0x2A, buf, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1838: No prototype for the call to func_80071DE8
+                     func_80071DE8(D_801125DA, 0, w - 0x4B, 0x2B, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1841: No prototype for the call to func_80071DE8
+                 w = func_80071DE8(D_800E44A0, 0, 0x16, 0x2B, 8, 0xFF, 0xFF, 0xFF, D_800E23B4) + 0x42;
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1843: No prototype for the call to an anonymous function
+                 func_80038478(&D_800F22B4, w - 0x46, 0x2A, buf, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1845: No prototype for the call to func_80071DE8
+                     func_80071DE8(D_801125DA, 0, w - 0x50, 0x2B, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1847: No prototype for the call to func_80071DE8
+                     func_80071DE8(D_801125DA, 0, w - 0x4D, 0x2B, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1878: No prototype for the call to func_80071DE8
+                 func_80071DE8(D_80112602, 0, 0x96, 0xC3, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1881: No prototype for the call to func_80071DE8
+             w = func_80071DE8(D_800E44F4, 0, 0x1E, 0x2C, 8, 0xFF, 0xFF, 0xFF, D_800E23B4) + 0x42;
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1883: No prototype for the call to an anonymous function
+             func_80038478(&D_800F22B4, w - 0x45, 0x2B, buf, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1884: No prototype for the call to func_80071DE8
+             func_80071DE8(D_800E44F8, 0, w - 0x4B, 0x2C, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1905: No prototype for the call to func_80071DE8
+                     func_80071DE8(D_800E241C, 0, 0x113, 0x19, 5, 0xFE, 0xBE, 0x3F, 0xFF);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1907: No prototype for the call to func_80071DE8
+                     func_80071DE8(D_800E241C, 0, 0xF5, 0x19, 5, 0xFE, 0xBE, 0x3F, 0xFF);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1912: No prototype for the call to func_80071DE8
+                     func_80071DE8(D_800E241C, 0, 0x113, 0x19, 5, 0xFE, 0xBE, 0x3F, D_800E2424 * 0x19);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1914: No prototype for the call to func_80071DE8
+                     func_80071DE8(D_800E241C, 0, 0xF5, 0x19, 5, 0xFE, 0xBE, 0x3F, D_800E2424 * 0x19);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1925: No prototype for the call to func_8007570C
+                 func_8007570C(0x107, 0x2A, (s16) (*(s16 *)(D_80110220_5 + 0x2AE8) + *(s16 *)(D_80110220_5 + 0x2AE6)), 0);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1932: No prototype for the call to func_8007570C
+                 func_8007570C(0xE9, 0x2A, (s16) arg0, 0);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1939: No prototype for the call to func_80071DE8
+                     func_80071DE8(D_800E2420, 2, 0xFA, 0x28, 5, 0xFF, 0xFF, 0xFF, 0xFF);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1941: No prototype for the call to func_80071DE8
+                     func_80071DE8(D_800E2420, 2, 0xDC, 0x28, 5, 0xFF, 0xFF, 0xFF, 0xFF);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1946: No prototype for the call to func_80071DE8
+                     func_80071DE8(D_800E2420, 2, 0xFA, 0x28, 5, 0xFF, 0xFF, 0xFF, D_800E2428 * 0x19);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1948: No prototype for the call to func_80071DE8
+                     func_80071DE8(D_800E2420, 2, 0xDC, 0x28, 5, 0xFF, 0xFF, 0xFF, D_800E2428 * 0x19);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1963: No prototype for the call to func_8007570C
+         func_8007570C(0x81, 0x2B, (s16) (D_80112D06 + D_80112D08), 0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1971: No prototype for the call to func_80071DE8
+             func_80071DE8(D_801127E6 - 1, 1, 0x7E, 0xAA, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1972: No prototype for the call to func_80071DE8
+             func_80071DE8(D_801127E8 - 1, 1, 0x7E, 0xC7, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1981: No prototype for the call to func_8007570C
+             func_8007570C(0xA5, 0x2B, (s16) (*(s16 *)(D_80113488 + 0x2AE8) + *(s16 *)(D_80113488 + 0x2AE6)), 1);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1992: No prototype for the call to func_80071DE8
+                 func_80071DE8(D_8011586A - 1, 2, 0x97, 0xBC, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1994: No prototype for the call to func_80071DE8
+                 func_80071DE8(D_8011586A - 1, 2, 0x9C, 0xBC, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1997: No prototype for the call to func_80071DE8
+                 func_80071DE8(D_80112602 - 1, 2, 0x83, 0xBC, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_4D170.c, line 1999: No prototype for the call to func_80071DE8
+                 func_80071DE8(D_80112602 - 1, 2, 0x8B, 0xBC, 8, 0xFF, 0xFF, 0xFF, D_800E23B4);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+[[0;32m IDO 5.3 [0m]  src/code_4D170.c
+[[0;32m IDO 5.3 [0m]  src/code_54150.c
+[[0;32m IDO 5.3 [0m]  src/code_5B5D0.c
+[[0;32m IDO 5.3 [0m]  src/code_62D0.c
+cfe: Warning 835: src/code_8170.c, line 254: No prototype for the call to an anonymous function
+     _bzero(pool->unk0, heapSize | idx);
+ ----------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 255: No prototype for the call to an anonymous function
+     _bzero(pool->unk4, heapSize | idx);
+ ----------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 256: No prototype for the call to an anonymous function
+     _bzero(pool->unk10, countA * 0x34);
+ ----------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 257: No prototype for the call to an anonymous function
+     _bzero(pool->unk14, countB * 0x120);
+ ----------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 280: No prototype for the call to func_8002DFA0
+                         v = func_8002DFA0(pool, idx, cursor & 0xFF, c1 & 0xFF, (s32)c2);
+ -----------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 432: No prototype for the call to func_8002F55C
+         func_8002F55C(arg0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 435: No prototype for the call to func_8002F55C
+         func_8002F55C(arg0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 441: No prototype for the call to func_8003031C
+         func_8003031C(arg0, arg2, arg3);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 442: No prototype for the call to func_80030EB4
+         func_80030EB4(arg0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 443: No prototype for the call to func_80031964
+         func_80031964(arg0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 444: No prototype for the call to func_8002E0D4
+         func_8002E0D4(arg0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 447: No prototype for the call to func_8002DEA8
+         func_8002DEA8(arg0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 448: No prototype for the call to func_80031A98
+         func_80031A98(arg0, arg2);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 811: No prototype for the call to func_80030140
+         func_80030140(arg0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 845: No prototype for the call to func_80030078
+         func_80030078(arg0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 885: No prototype for the call to func_800300F8
+             func_800300F8(arg0, i);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 920: No prototype for the call to func_80030164
+             func_80030164(arg0, i);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 963: No prototype for the call to func_800301FC
+             func_800301FC(arg0, i);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 1000: No prototype for the call to func_8003024C
+             func_8003024C(arg0, i);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 1600: No prototype for the call to func_800310C4
+         base = func_800310C4(arg0, i, &v);
+ ----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 1604: No prototype for the call to func_800321D4
+             func_800321D4(arg0, v, base, i, 1, arg1);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 1608: No prototype for the call to func_800310C4
+         base = func_800310C4(arg0, i, &v);
+ ----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 1613: No prototype for the call to func_800321D4
+             func_800321D4(arg0, v, base, i, 2, arg1);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 1762: No prototype for the call to func_80032320
+         func_80032320(arg0, arg1, *(s16 *)arg2, arg0->unk14[arg3].unk80, arg4);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 1857: No prototype for the call to func_80030964
+                 func_80030964(arg0, arg1, arg2, *(u8 *)&r, *(u8 *)&g, *(u8 *)&b);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 1862: No prototype for the call to func_800305B0
+                 func_800305B0(arg0);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/code_8170.c, line 2068: No prototype for the call to func_800331B0
+             func_800331B0(arg0, arg1, *(s16 *)(p + i * 2));
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+[[0;32m IDO 5.3 [0m]  src/code_8170.c
+[[0;32m IDO 5.3 [0m]  src/code_AB540.c
+[[0;32m IDO 5.3 [0m]  src/controller.c
+cfe: Warning 581: src/game2.c:21773: Macro P redefined.
+cfe: Warning 654: src/game2.c, line 285: Must be an integer type greater than zero.
+ typedef struct { u8 bytes[0]; } Empty82;
+ --------------------------^
+The array size must be either a char, signed or unsigned integer or
+an enumerated type with a value greater than zero.
+cfe: Warning 642: src/game2.c, line 371: prototype declaration and non-prototype definition found for func_80082520, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_80082520(void *a0, s32 a1, s32 a2, s32 a3, s16 a4);
+ ----------------------------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 373: No prototype for the call to func_800823F0
+     func_800823F0(a0, a1, a2, a3, a4);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 654: src/game2.c, line 2232: Must be an integer type greater than zero.
+ typedef struct { void *p[6]; } PtrTab6; typedef struct { u8 bytes[0]; } Empty88;
+ ------------------------------------------------------------------^
+The array size must be either a char, signed or unsigned integer or
+an enumerated type with a value greater than zero.
+cfe: Warning 835: src/game2.c, line 2342: No prototype for the call to func_80029760
+     func_80029760(D_800EE750, *(s16 *)(D_8013DD00 + 0x23B2));
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 2354: No prototype for the call to func_80029760
+         func_80029760(D_800EE770);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 2672: No prototype for the call to func_80029760
+         func_80029760(D_800EFB28);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 2677: No prototype for the call to func_80029760
+     func_80029760(D_800EFB5C, *(s16 *)(D_8013FAC0 + 0x16));
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 2858: No prototype for the call to func_80029760
+         func_80029760(D_800F0068);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 625: src/game2.c, line 2924: Empty declaration
+ ;
+ ^
+Empty declarations are invalid in standard C.
+cfe: Warning 835: src/game2.c, line 3040: No prototype for the call to func_800820D0
+         func_800820D0(D_80130A28, D_800E6BE4[a0 * 6], D_800E6BE4[a0 * 6 + 1],
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 3086: No prototype for the call to func_800820D0
+         func_800820D0(D_80130A28, D_800E6BE4[a0 * 6], D_800E6BE4[a0 * 6 + 1],
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 3579: No prototype for the call to func_80029760
+         func_80029760(D_800F0134);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 3603: No prototype for the call to func_80029760
+         func_80029760(D_800F0190);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 3605: No prototype for the call to func_80029760
+         func_80029760(D_800F01D4);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 3614: prototype declaration and non-prototype definition found for func_8008BE58, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg0;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 3615: prototype declaration and non-prototype definition found for func_8008BE58, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg1;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 3616: prototype declaration and non-prototype definition found for func_8008BE58, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg2;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 3617: prototype declaration and non-prototype definition found for func_8008BE58, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg3;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 3618: prototype declaration and non-prototype definition found for func_8008BE58, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg4;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 3724: No prototype for the call to func_8008B62C
+         func_8008B62C((s16)(a0 | 0), (s16)(a1 | 0), (s16)(a2 | 0), a3);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 3726: No prototype for the call to func_8008B424
+         func_8008B424((s16)(a0 | 0), (s16)(a1 | 0), (s16)(a2 | 0), a3);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 3728: No prototype for the call to func_8008B220
+         func_8008B220((s16)(a0 | 0), (s16)(a1 | 0), (s16)(a2 | 0), a3);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 3954: No prototype for the call to func_80029760
+         func_80029760(D_800F022C);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 3976: prototype declaration and non-prototype definition found for func_8008C01C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008C01C(s16, s16, s16, s16, s16, void *);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 3976: prototype declaration and non-prototype definition found for func_8008C01C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008C01C(s16, s16, s16, s16, s16, void *);
+ -------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 3976: prototype declaration and non-prototype definition found for func_8008C01C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008C01C(s16, s16, s16, s16, s16, void *);
+ ------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 3976: prototype declaration and non-prototype definition found for func_8008C01C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008C01C(s16, s16, s16, s16, s16, void *);
+ -----------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 3976: prototype declaration and non-prototype definition found for func_8008C01C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008C01C(s16, s16, s16, s16, s16, void *);
+ ----------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 3995: prototype declaration and non-prototype definition found for func_8008C1E4, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008C1E4(s16, s16, s16, s16, s16, void *);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 3995: prototype declaration and non-prototype definition found for func_8008C1E4, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008C1E4(s16, s16, s16, s16, s16, void *);
+ -------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 3995: prototype declaration and non-prototype definition found for func_8008C1E4, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008C1E4(s16, s16, s16, s16, s16, void *);
+ ------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 3995: prototype declaration and non-prototype definition found for func_8008C1E4, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008C1E4(s16, s16, s16, s16, s16, void *);
+ -----------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 3995: prototype declaration and non-prototype definition found for func_8008C1E4, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008C1E4(s16, s16, s16, s16, s16, void *);
+ ----------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 4100: No prototype for the call to func_8008B220
+     func_8008B220((s16)(a1 + ((S13DD00 *)D_8013DD00)->f2B20), (s16)(a0 + ((S13DD00 *)D_8013DD00)->f2B24), (s16)(i + 1), a3);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 4109: prototype declaration and non-prototype definition found for func_8008B220, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008B220(s16, s16, s16, s16, ...);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 4109: prototype declaration and non-prototype definition found for func_8008B220, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008B220(s16, s16, s16, s16, ...);
+ -------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 4109: prototype declaration and non-prototype definition found for func_8008B220, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008B220(s16, s16, s16, s16, ...);
+ ------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 4109: prototype declaration and non-prototype definition found for func_8008B220, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008B220(s16, s16, s16, s16, ...);
+ -----------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 4110: prototype declaration and non-prototype definition found for func_8008B424, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008B424(s16, s16, s16, s16, ...);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 4110: prototype declaration and non-prototype definition found for func_8008B424, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008B424(s16, s16, s16, s16, ...);
+ -------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 4110: prototype declaration and non-prototype definition found for func_8008B424, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008B424(s16, s16, s16, s16, ...);
+ ------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 4110: prototype declaration and non-prototype definition found for func_8008B424, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008B424(s16, s16, s16, s16, ...);
+ -----------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 4140: No prototype for the call to func_80029760
+         func_80029760(D_800F0274);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 4144: No prototype for the call to func_80029760
+         func_80029760(D_800F02A8);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 4320: No prototype for the call to func_80029760
+         func_80029760(D_800F02BC);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 4457: No prototype for the call to func_80029760
+         func_80029760(&D_800F02FC);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 4634: No prototype for the call to func_800820D0
+             func_800820D0(&D_80130A28, D_800E6BE4[arg6 * 6], D_800E6BE4[arg6 * 6 + 1], D_800E6BE4[arg6 * 6 + 2],
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 4898: prototype declaration and non-prototype definition found for func_8008B62C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008B62C(s16, s16, s16, s16, ...);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 4898: prototype declaration and non-prototype definition found for func_8008B62C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008B62C(s16, s16, s16, s16, ...);
+ -------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 4898: prototype declaration and non-prototype definition found for func_8008B62C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008B62C(s16, s16, s16, s16, ...);
+ ------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 4898: prototype declaration and non-prototype definition found for func_8008B62C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_8008B62C(s16, s16, s16, s16, ...);
+ -----------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 4968: No prototype for the call to func_80029760
+             func_80029760(D_800F030C);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 4997: No prototype for the call to func_80088E50
+             func_80088E50(*(s16 *)(D_8013DD00 + 0x23BA));
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5004: No prototype for the call to func_80029760
+             func_80029760(D_800F0338);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5005: No prototype for the call to func_80029760
+             func_80029760(D_800F0374);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5018: No prototype for the call to func_80029760
+             func_80029760(D_800F03A4, temp_a1);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5053: No prototype for the call to func_80029760
+             func_80029760(D_800F03C8, D_800E4498);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5069: No prototype for the call to an anonymous function
+                 func_8007F720((u32)(s16)local_state906.head.u.second, D_80107290);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5072: No prototype for the call to an anonymous function
+                 func_8007F720(D_800E6BE0, D_80107290);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5079: No prototype for the call to an anonymous function
+                         func_8007FE4C(D_80107290);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5194: No prototype for the call to func_80029760
+             func_80029760(D_800F03FC);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5263: No prototype for the call to func_80029760
+         func_80029760(D_800F0420);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5273: No prototype for the call to an anonymous function
+                     func_8002AB74(D_72A5A0, sp8C, *(s16 *)(D_8013DD00 + 0x23BA) + 8);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5278: No prototype for the call to an anonymous function
+                     func_8002AB74(D_72A5A0, sp8C, *(s16 *)(D_8013DD00 + 0x23BA));
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5281: No prototype for the call to an anonymous function
+                     func_8002AB74(D_72A5A0, sp8C, *(s16 *)(D_8013DD00 + 0x23BA) + 4);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5284: No prototype for the call to an anonymous function
+                     func_8002AB74(D_72A5A0, sp8C, 7);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5291: No prototype for the call to func_80029760
+             func_80029760(D_800F0434, *(s16 *)(D_8013DD00 + 0x25C6), *(s16 *)(D_8013DD00 + 0x25C4));
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5305: No prototype for the call to func_80029760
+             func_80029760(D_800F0454, *(s16 *)(D_8013DD00 + 0x321A));
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5313: No prototype for the call to func_80029760
+                         func_80029760(D_800F0474);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5373: No prototype for the call to func_80029760
+                                 func_80029760(D_800F0494, temp_v1_4, var_s6, var_s2);
+ ---------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 5464: No prototype for the call to func_80029760
+     func_80029760(D_800F04CC);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 5884: prototype declaration and non-prototype definition found for func_80093214, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_80093214(Rec *, s16, s16, s16);
+ ---------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 5884: prototype declaration and non-prototype definition found for func_80093214, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_80093214(Rec *, s16, s16, s16);
+ --------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 5884: prototype declaration and non-prototype definition found for func_80093214, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_80093214(Rec *, s16, s16, s16);
+ -------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 5942: prototype declaration and non-prototype definition found for func_8008CF50, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_8008CF50(void *, s16, s16, s16, s32, s32);
+ ---------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 5942: prototype declaration and non-prototype definition found for func_8008CF50, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_8008CF50(void *, s16, s16, s16, s32, s32);
+ --------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 5942: prototype declaration and non-prototype definition found for func_8008CF50, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_8008CF50(void *, s16, s16, s16, s32, s32);
+ -------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 5942: prototype declaration and non-prototype definition found for func_8008CF50, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_8008CF50(void *, s16, s16, s16, s32, s32);
+ ------------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 5942: prototype declaration and non-prototype definition found for func_8008CF50, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_8008CF50(void *, s16, s16, s16, s32, s32);
+ -----------------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 6147: prototype declaration and non-prototype definition found for func_80092620, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_80092620(void *, s16, s16, s16);
+ ---------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 6147: prototype declaration and non-prototype definition found for func_80092620, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_80092620(void *, s16, s16, s16);
+ --------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 6147: prototype declaration and non-prototype definition found for func_80092620, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_80092620(void *, s16, s16, s16);
+ -------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 6308: No prototype for the call to func_80029760
+             func_80029760(D_800F0520);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6309: No prototype for the call to func_80029760
+             func_80029760(D_800F0570);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6310: No prototype for the call to func_80029760
+             func_80029760(D_800F05BC);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6311: No prototype for the call to func_80029760
+             func_80029760(D_800F05EC, sp6C[1], (*(s16 *)((u8 *)D_8013DD00 + (0x23B2))) );
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6312: No prototype for the call to func_80029760
+             func_80029760(D_800F0618, 8);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6313: No prototype for the call to func_80029760
+             func_80029760(D_800F062C, 1);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6314: No prototype for the call to func_80029760
+             func_80029760(D_800F0644, 0x1F);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6317: No prototype for the call to an anonymous function
+             func_8002AF20(D_800F0678, D_800F2300);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6343: No prototype for the call to func_800C8A8C
+         if (func_800C8A8C(sp6C, sp68, sp66, sp64) != 0) {
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6370: No prototype for the call to func_80093E44
+             func_80093E44(sp6C, sp68, sp66, sp64, sp60, f2, 1, (*(s16 *)((u8 *)arg0 + (0x12))) );
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6374: No prototype for the call to an anonymous function
+                     func_80075698((s32)D_8013DD00, 3, D_8013DD00);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6376: No prototype for the call to an anonymous function
+                     func_80075698((s32)D_8013DD00, 1, D_8013DD00);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6544: No prototype for the call to func_80029760
+     func_80029760(D_800F0694);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6697: No prototype for the call to func_80029760
+                                 func_80029760(&D_800F06C4);
+ ---------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6767: No prototype for the call to func_80093400
+                     func_80093400(*(s16 *)(D_8013DD00 + 0x2B62), *(s16 *)(D_8013DD00 + 0x2B64), *(s16 *)(D_8013DD00 + 0x2B66), *(s16 *)&D_80135AD0);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 6782: No prototype for the call to func_80029760
+                     func_80029760(&D_800F06E0);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 7862: prototype declaration and non-prototype definition found for func_80097E3C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_80097E3C(s16, s16);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 7862: prototype declaration and non-prototype definition found for func_80097E3C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_80097E3C(s16, s16);
+ -------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 7916: No prototype for the call to func_8009C330
+         func_8009C330();
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 8222: No prototype for the call to func_8009A348
+                 func_8009A348((G9E6C *)arg0);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 8266: No prototype for the call to func_8009AB48
+                 func_8009AB48();
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 630: src/game2.c, line 8266: The number of arguments doesn't agree with the number in the declaration.
+                 func_8009AB48();
+ -----------------------------^
+cfe: Warning 835: src/game2.c, line 9142: No prototype for the call to func_80097848
+                             func_80097848();
+ -----------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 9147: No prototype for the call to func_8009C330
+                                 func_8009C330();
+ ---------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 9203: No prototype for the call to func_80097848
+                             func_80097848();
+ -----------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 9208: No prototype for the call to func_8009C330
+                                 func_8009C330();
+ ---------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 9264: No prototype for the call to func_80097848
+                             func_80097848();
+ -----------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 9269: No prototype for the call to func_8009C330
+                                 func_8009C330();
+ ---------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 9325: No prototype for the call to func_80097848
+                             func_80097848();
+ -----------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 9330: No prototype for the call to func_8009C330
+                                 func_8009C330();
+ ---------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 9948: No prototype for the call to func_8009C330
+         func_8009C330(temp_a0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 10056: No prototype for the call to func_8009C330
+             func_8009C330(temp_a0);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 10520: No prototype for the call to func_8009C330
+                 if (flags & 0x10) { func_8009C330(v, (s32)&D_8015EDA0 + ((s32)&D_8015EDA8 * 0)); }
+ -------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 10617: prototype declaration and non-prototype definition found for func_800A3894, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800A3894(u8, s16);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 10617: prototype declaration and non-prototype definition found for func_800A3894, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800A3894(u8, s16);
+ ------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 10851: No prototype for the call to func_800A43E0
+         func_800A43E0();
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 630: src/game2.c, line 10851: The number of arguments doesn't agree with the number in the declaration.
+         func_800A43E0();
+ ---------------------^
+cfe: Warning 835: src/game2.c, line 11169: No prototype for the call to func_800A4AF0
+         func_800A4AF0(0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11170: No prototype for the call to func_800A4AF0
+         func_800A4AF0(1);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11171: No prototype for the call to func_800A4AF0
+         func_800A4AF0(2);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11172: No prototype for the call to func_800A4AF0
+         func_800A4AF0(3);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11173: No prototype for the call to func_800A4AF0
+         func_800A4AF0(4);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11174: No prototype for the call to func_800A4AF0
+         func_800A4AF0(5);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11175: No prototype for the call to func_800A4AF0
+         func_800A4AF0(6);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11176: No prototype for the call to func_800A4AF0
+         func_800A4AF0(7);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11182: No prototype for the call to func_800A3E6C
+         func_800A3E6C(0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11187: No prototype for the call to func_800A3E6C
+         func_800A3E6C(1);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11188: No prototype for the call to func_800A3E6C
+         func_800A3E6C(2);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11193: No prototype for the call to func_800A3E6C
+         func_800A3E6C(9);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11194: No prototype for the call to func_800A4938
+         func_800A4938(0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11195: No prototype for the call to func_800A4938
+         func_800A4938(1);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11196: No prototype for the call to func_800A4938
+         func_800A4938(2);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11197: No prototype for the call to func_800A4938
+         func_800A4938(9);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 11260: No prototype for the call to func_80029760
+     func_80029760(D_800F0704, *(s16 *)(D_8013DD00 + 0x23B2), D_8015D980, &D_8013DD00);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 11681: prototype declaration and non-prototype definition found for func_80098D8C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s32 func_80098D8C(s16, s16, s16);
+ -------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 11681: prototype declaration and non-prototype definition found for func_80098D8C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s32 func_80098D8C(s16, s16, s16);
+ ------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 11681: prototype declaration and non-prototype definition found for func_80098D8C, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s32 func_80098D8C(s16, s16, s16);
+ -----------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 12295: No prototype for the call to func_80096488
+     func_80096488(0x1F);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 12393: No prototype for the call to func_80096488
+     func_80096488(0x1F);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 12448: prototype declaration and non-prototype definition found for func_800A91FC, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800A91FC(u8, u8);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 12448: prototype declaration and non-prototype definition found for func_800A91FC, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800A91FC(u8, u8);
+ ------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 12622: No prototype for the call to func_80029760
+             func_80029760(D_800F0730);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 12624: No prototype for the call to func_80029760
+             func_80029760(D_800F0734);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 12636: No prototype for the call to func_80029760
+         func_80029760(D_800F0738);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 12819: No prototype for the call to func_800BEC50
+                     func_800BEC50(s.fA + i, s.fC + j);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 12958: No prototype for the call to func_80070104
+                 func_80070104(D_800F073C);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 13163: No prototype for the call to func_80029760
+     func_80029760(D_800F0750);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 13214: No prototype for the call to func_80029760
+             func_80029760(D_800F0770, &D_8013DD00);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 13218: No prototype for the call to func_80029760
+         func_80029760(D_800F079C, &D_8013DD00);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 13485: No prototype for the call to func_800ADC98
+                 func_800ADC98(arg2);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 13490: No prototype for the call to func_800ADCF0
+                 func_800ADCF0(arg2);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 13515: No prototype for the call to func_800ADC70
+             func_800ADC70((u8 *)scratch + ((arg1 = 0) * 0));
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 13527: No prototype for the call to func_800ADCF0
+             func_800ADCF0(arg2);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 13575: No prototype for the call to func_800B2E94
+         arg0 = func_800B2E94(arg2);
+ ----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 13590: No prototype for the call to func_800ADCF0
+                 func_800ADCF0(arg2);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 13596: No prototype for the call to func_800ADD50
+                 func_800ADD50(arg2);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 14335: No prototype for the call to func_80029760
+     func_80029760(D_800F07AC, (*(s16 *)((u8 *)arg0 + (0x23B2))) , arg0);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 14380: No prototype for the call to func_80029760
+                     func_80029760(D_800F07D8, &D_800E4498, arg0);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 14675: No prototype for the call to func_800905A4
+         func_800905A4((u8 *)arg0 + (*(s16 *)(arg0 + (0)))  * 0, *(s8 *)(arg0 + 0x3102), arg0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 14698: No prototype for the call to func_80029760
+     func_80029760(D_800F0804);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 14730: No prototype for the call to func_80029760
+         func_80029760(&D_800F0830, &D_800E44D0, &D_800E44D4, &D_800E44C8);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 14884: No prototype for the call to func_80029760
+                                                         func_80029760(&D_800F0858);
+ ---------------------------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 15047: prototype declaration and non-prototype definition found for func_800AFDEC, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 a0;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 15048: prototype declaration and non-prototype definition found for func_800AFDEC, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 a1;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 15049: prototype declaration and non-prototype definition found for func_800AFDEC, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 a2;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 15051: prototype declaration and non-prototype definition found for func_800AFDEC, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 a4;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 16209: No prototype for the call to func_80029760
+         func_80029760(D_800F0878, *(s16 *)(a0 + 0x2A), *(s16 *)(a0 + 0x2C));
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 16301: No prototype for the call to func_80029760
+                 func_80029760(D_800F08A0, *(s16 *)(a1 + 0xC) - *(s16 *)(a1 + 0x12),
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 16330: No prototype for the call to func_80029760
+                     func_80029760(D_800F08CC);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 16378: No prototype for the call to func_80029760
+                 func_80029760(D_800F08E0);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 16463: No prototype for the call to func_80029760
+         func_80029760(D_800F08F4, 6);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 16471: No prototype for the call to func_80029760
+             func_80029760(D_800F091C, *(s16 *)(a0 + 0x2AE6) + *(s16 *)(a0 + 0x2AE8) + 1);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 16477: No prototype for the call to func_80029760
+         func_80029760(D_800F0954);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 16484: No prototype for the call to func_80029760
+             func_80029760(D_800F0980, *(s16 *)(a0 + 0x2C86));
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 16492: No prototype for the call to func_80029760
+         func_80029760(D_800F09B0, pct);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 16493: No prototype for the call to func_80029760
+         func_80029760(D_800F09D8);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 16497: No prototype for the call to func_80029760
+         func_80029760(D_800F09F8, pct);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 16498: No prototype for the call to func_80029760
+         func_80029760(D_800F0A20);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 16820: No prototype for the call to func_80029760
+         func_80029760(D_800F0A58);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 17286: No prototype for the call to func_80029760
+         func_80029760(D_800F0A74);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 17290: No prototype for the call to func_80029760
+         func_80029760(D_800F0AA4);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 17310: No prototype for the call to func_80029760
+         func_80029760(D_800F0AE0);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 17358: No prototype for the call to func_80029760
+                     func_80029760(D_800F0B24);
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 17446: No prototype for the call to func_800B6AA8
+                 func_800B6AA8(p[4], p[5], p[6]);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 17587: prototype declaration and non-prototype definition found for func_80096488, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_80096488(s32);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 17650: prototype declaration and non-prototype definition found for func_800B5DBC, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg0;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 17651: prototype declaration and non-prototype definition found for func_800B5DBC, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg1;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 17652: prototype declaration and non-prototype definition found for func_800B5DBC, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg2;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 17654: prototype declaration and non-prototype definition found for func_800B5DBC, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg4;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 17655: prototype declaration and non-prototype definition found for func_800B5DBC, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg5;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 17656: prototype declaration and non-prototype definition found for func_800B5DBC, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg6;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 17676: No prototype for the call to func_800B58A4
+         func_800B58A4(arg0, arg1, arg2, arg3);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 18082: prototype declaration and non-prototype definition found for func_800B75B4, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg0;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 18083: prototype declaration and non-prototype definition found for func_800B75B4, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg1;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 18084: prototype declaration and non-prototype definition found for func_800B75B4, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 arg2;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 18499: No prototype for the call to func_80029760
+     func_80029760(D_800F0B3C, D_8013E474);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 18982: No prototype for the call to func_80029760
+         func_80029760(D_800F0B54);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 18985: No prototype for the call to func_80029760
+     func_80029760(D_800F0B7C);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 19036: No prototype for the call to func_80029760
+     func_80029760(D_800F0BA8);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 19224: No prototype for the call to func_800BA694
+         func_800BA694((u8 *)((s32)D_8013DD00 + i * 0x1C + 0x928));
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 19574: No prototype for the call to func_8009C330
+                         func_8009C330(g, &D_800F22B4, q, r);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 19733: prototype declaration and non-prototype definition found for func_800BAE00, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800BAE00(s16, s16, s16, s32, s32, s32, s32, s32);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 19733: prototype declaration and non-prototype definition found for func_800BAE00, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800BAE00(s16, s16, s16, s32, s32, s32, s32, s32);
+ -------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 19733: prototype declaration and non-prototype definition found for func_800BAE00, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800BAE00(s16, s16, s16, s32, s32, s32, s32, s32);
+ ------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 19733: prototype declaration and non-prototype definition found for func_800BAE00, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800BAE00(s16, s16, s16, s32, s32, s32, s32, s32);
+ -----------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 19733: prototype declaration and non-prototype definition found for func_800BAE00, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800BAE00(s16, s16, s16, s32, s32, s32, s32, s32);
+ ----------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 19733: prototype declaration and non-prototype definition found for func_800BAE00, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800BAE00(s16, s16, s16, s32, s32, s32, s32, s32);
+ ---------------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 19733: prototype declaration and non-prototype definition found for func_800BAE00, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800BAE00(s16, s16, s16, s32, s32, s32, s32, s32);
+ --------------------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 19733: prototype declaration and non-prototype definition found for func_800BAE00, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800BAE00(s16, s16, s16, s32, s32, s32, s32, s32);
+ -------------------------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 20822: No prototype for the call to func_800BFA94
+                     func_800BFA94(j & 0xFF, k & 0xFF, ((B_Cnt *)base)->h[j][k],
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 21560: No prototype for the call to func_80029760
+                 func_80029760(D_800F0BCC);
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 21583: No prototype for the call to func_800C1654
+             func_800C1654(o);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 21868: prototype declaration and non-prototype definition found for func_8008D130, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_8008D130(void *, s16, s16, s16, s32, s32);
+ ---------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 21868: prototype declaration and non-prototype definition found for func_8008D130, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_8008D130(void *, s16, s16, s16, s32, s32);
+ --------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 21868: prototype declaration and non-prototype definition found for func_8008D130, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_8008D130(void *, s16, s16, s16, s32, s32);
+ -------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 21868: prototype declaration and non-prototype definition found for func_8008D130, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_8008D130(void *, s16, s16, s16, s32, s32);
+ ------------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 21868: prototype declaration and non-prototype definition found for func_8008D130, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_8008D130(void *, s16, s16, s16, s32, s32);
+ -----------------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 21956: No prototype for the call to func_80029760
+     func_80029760(D_800F0BF4);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 22198: No prototype for the call to func_80029760
+     func_80029760(D_800F0C08, *(s16 *)(D_8013DD00 + 0x23B2));
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 22272: No prototype for the call to func_80029760
+     func_80029760(D_800F0C1C);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 22289: No prototype for the call to func_80029760
+     func_80029760(D_800F0C38);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 22328: No prototype for the call to func_80029760
+         func_80029760(D_800F0C64);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 22338: No prototype for the call to func_80029760
+         func_80029760(D_800F0CC4);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 22343: No prototype for the call to func_80029760
+     func_80029760(D_800F0D08, *(s16 *)(D_8013DD00 + 0x23B2));
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 22385: No prototype for the call to func_80029760
+     func_80029760(D_800F0D1C, arg1);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 22394: No prototype for the call to func_80029760
+     func_80029760(D_800F0D3C, D_80130A20);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 22420: No prototype for the call to func_80029760
+         func_80029760(D_800F0D54);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 22594: prototype declaration and non-prototype definition found for func_800C3FC0, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800C3FC0(G_C3FC0 *, s16, s16, s16, s32);
+ -------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 22594: prototype declaration and non-prototype definition found for func_800C3FC0, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800C3FC0(G_C3FC0 *, s16, s16, s16, s32);
+ ------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 22594: prototype declaration and non-prototype definition found for func_800C3FC0, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800C3FC0(G_C3FC0 *, s16, s16, s16, s32);
+ -----------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 22594: prototype declaration and non-prototype definition found for func_800C3FC0, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800C3FC0(G_C3FC0 *, s16, s16, s16, s32);
+ ----------------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 22626: prototype declaration and non-prototype definition found for func_800B4740, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800B4740(u8, u8, u8, u16, s32, s32);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 22626: prototype declaration and non-prototype definition found for func_800B4740, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800B4740(u8, u8, u8, u16, s32, s32);
+ ------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 22626: prototype declaration and non-prototype definition found for func_800B4740, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800B4740(u8, u8, u8, u16, s32, s32);
+ ----------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 22626: prototype declaration and non-prototype definition found for func_800B4740, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800B4740(u8, u8, u8, u16, s32, s32);
+ --------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 22626: prototype declaration and non-prototype definition found for func_800B4740, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800B4740(u8, u8, u8, u16, s32, s32);
+ -------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 22626: prototype declaration and non-prototype definition found for func_800B4740, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800B4740(u8, u8, u8, u16, s32, s32);
+ ------------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 22862: No prototype for the call to func_800C48D4
+         func_800C48D4(base - (i << 8), (u8)i);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 23102: No prototype for the call to func_80029760
+     func_80029760(D_800F0D7C, D_8014D264);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 23243: No prototype for the call to func_80029760
+     func_80029760(D_800F0D8C, arg0);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 23360: prototype declaration and non-prototype definition found for func_800C6000, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800C6000(s16, s16, s16);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 23360: prototype declaration and non-prototype definition found for func_800C6000, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800C6000(s16, s16, s16);
+ -------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 23360: prototype declaration and non-prototype definition found for func_800C6000, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800C6000(s16, s16, s16);
+ ------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 23985: prototype declaration and non-prototype definition found for func_800B3DEC, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800B3DEC(s32, s32, s32, s16, s16, s32);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 23985: prototype declaration and non-prototype definition found for func_800B3DEC, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800B3DEC(s32, s32, s32, s16, s16, s32);
+ -------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 23985: prototype declaration and non-prototype definition found for func_800B3DEC, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800B3DEC(s32, s32, s32, s16, s16, s32);
+ -----------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 23985: prototype declaration and non-prototype definition found for func_800B3DEC, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800B3DEC(s32, s32, s32, s16, s16, s32);
+ ----------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 23985: prototype declaration and non-prototype definition found for func_800B3DEC, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800B3DEC(s32, s32, s32, s16, s16, s32);
+ ---------------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 24024: No prototype for the call to func_80029760
+     func_80029760(D_800F0DAC, *((s16 *)(v0 + 0x23B2)), ((*((s32 *)(v0 + 0x2AF8))) * 5) * 2);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 24151: prototype declaration and non-prototype definition found for func_80092824, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_80092824(void *, s16, s16, s16);
+ ---------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 24151: prototype declaration and non-prototype definition found for func_80092824, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_80092824(void *, s16, s16, s16);
+ --------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 24151: prototype declaration and non-prototype definition found for func_80092824, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern s16 func_80092824(void *, s16, s16, s16);
+ -------------------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 24372: prototype declaration and non-prototype definition found for func_800C8C48, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 a1;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 24373: prototype declaration and non-prototype definition found for func_800C8C48, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 a2;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 24374: prototype declaration and non-prototype definition found for func_800C8C48, the type of this parameter is not compatible with the type after applying default argument promotion
+ s16 a3;
+ ----^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 24672: No prototype for the call to func_80029760
+         func_80029760(D_800F0DD4);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 642: src/game2.c, line 25395: prototype declaration and non-prototype definition found for func_800C96C0, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800C96C0(u8, u16);
+ --------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 642: src/game2.c, line 25395: prototype declaration and non-prototype definition found for func_800C96C0, the type of this parameter is not compatible with the type after applying default argument promotion
+ extern void func_800C96C0(u8, u16);
+ ------------------------------^
+If one type has a parameter type list and the other is specified by a
+function definition that contains a (possibly empty) identifier list,
+both shall agree in the number of parameters, and the type of each
+prototype parameter shall be compatible with the type that results
+from application of the default argument promotions to the type of the
+corresponding identifier.
+cfe: Warning 835: src/game2.c, line 25629: No prototype for the call to func_80029760
+     func_80029760(D_800F0DE4);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 25673: No prototype for the call to func_80029760
+         func_80029760(D_800F0E00, t);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 25733: No prototype for the call to func_80029760
+         func_80029760(D_800F0E1C);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 25830: No prototype for the call to func_80029760
+                 func_80029760("Checking Tower.\n");
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 26044: No prototype for the call to func_80029760
+     func_80029760("\n\n*** DOING INIT *initPlayers\n\n");
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 26372: No prototype for the call to func_800AF09C_p
+         func_800AF09C_p(1);
+ -----------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 26396: No prototype for the call to func_800AF09C_p
+             func_800AF09C_p(((var_s6 << 0x10) >> 0x10));
+ ---------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 26525: No prototype for the call to func_800C0308
+                         func_800C0308(D_8014CBC8[(*(s16 *)(temp_s0 + 0x4))], (*(s16 *)(temp_s0 + 0xA)), (*(s16 *)(temp_s0 + 0xC)), (*(s16 *)((u8 *)D_8013DD00 + 0x24B0)), 0);
+ -------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 26563: No prototype for the call to func_8009423C
+                                 (*(s16 *)(temp_s0 + 0x8)) = func_8009423C(temp_s0);
+ -------------------------------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 26573: No prototype for the call to func_80092238_p
+                                 func_80092238_p(D_8013DD00, var_at >> 0x10);
+ -----------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 26769: No prototype for the call to func_8008A7EC_p
+                         var_at = func_8008A7EC_p((s16) ((*(s16 *)((u8 *)D_8013DD00 + 0x2B62)) + 1), (s16) ((*(s16 *)((u8 *)D_8013DD00 + 0x2B64)) + 1), (*(s16 *)((u8 *)D_8013DD00 + 0x2B66)));
+ ------------------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 26771: No prototype for the call to func_800C8E24
+                         if (func_800C8E24(D_8014CC98[var_at], (*(s16 *)((u8 *)D_8013DD00 + 0x2B62)), (*(s16 *)((u8 *)D_8013DD00 + 0x2B64)), (*(s16 *)((u8 *)D_8013DD00 + 0x2B66)), 3) != 0) {
+ -----------------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27019: No prototype for the call to an anonymous function
+                     func_80069940();
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27026: No prototype for the call to an anonymous function
+                     func_80069940();
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27032: No prototype for the call to an anonymous function
+                     func_80069940();
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27037: No prototype for the call to an anonymous function
+                 func_80069940();
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27057: No prototype for the call to func_800AF09C_p
+         func_800AF09C_p(1);
+ -----------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27065: No prototype for the call to an anonymous function
+     func_80075CD8(arg1);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27067: No prototype for the call to func_800AF09C_p
+             func_800AF09C_p(((var_s6 << 0x10) >> 0x10));
+ ---------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27080: No prototype for the call to func_800B8D40_p
+             func_800B8D40_p(var_s6 & 0xFF);
+ ---------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27096: No prototype for the call to func_800AF09C_p
+             func_800AF09C_p(((var_s6 << 0x10) >> 0x10));
+ ---------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27114: No prototype for the call to func_800AF09C_p
+             func_800AF09C_p(((var_s6 << 0x10) >> 0x10));
+ ---------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27152: No prototype for the call to func_800AF09C_p
+             func_800AF09C_p(((var_s6 << 0x10) >> 0x10));
+ ---------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27160: No prototype for the call to func_800AF09C_p
+             func_800AF09C_p(((var_s6 << 0x10) >> 0x10));
+ ---------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27169: No prototype for the call to an anonymous function
+                     func_800699B4();
+ ---------------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/game2.c, line 27174: No prototype for the call to an anonymous function
+                 func_800699B4();
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+[[0;32m IDO 5.3 [0m]  src/game2.c
+[[0;32m IDO 5.3 [0m]  src/lz.c
+cfe: Warning 581: src/main.c:1613: Macro SB redefined.
+cfe: Warning 835: src/main.c, line 6920: No prototype for the call to func_80029760
+             func_80029760(D_800ECD28, func_800334D8());
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/main.c, line 8208: No prototype for the call to func_80029760
+             func_80029760(D_800ECD80, func_800334D8());
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/main.c, line 10614: No prototype for the call to func_80029760
+             func_80029760(D_800ED990);
+ -------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/main.c, line 10907: No prototype for the call to func_80029760
+         func_80029760(D_800ED9A4);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/main.c, line 10908: No prototype for the call to func_80029760
+         func_80029760(D_800ED9C8, 0x200);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/main.c, line 11490: No prototype for the call to func_80029760
+     func_80029760(D_800EDA40);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/main.c, line 12337: No prototype for the call to func_80029760
+     func_80029760(D_800EDA60, D_800FACC0.unk18E8[0], D_800FACC0.unk3200[0]);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/main.c, line 12338: No prototype for the call to func_80029760
+     func_80029760(D_800EDA7C, D_800FACC0.unk18E8[1], D_800FACC0.unk3200[1]);
+ -----------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/main.c, line 13256: No prototype for the call to an anonymous function
+                 func_800B7E3C();
+ -----------------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+cfe: Warning 835: src/main.c, line 13268: No prototype for the call to an anonymous function
+         func_800CD3B8(arg0, arg1);
+ ---------------------^
+To achieve better type-checking, there should be a full prototype for
+the function being called.
+[[0;32m IDO 5.3 [0m]  src/main.c
+[[0;32m IDO 5.3 [0m]  src/rand.c
+[[0;32m IDO 5.3 [0m]  src/rdpinit.c
+[[0;32m IDO 5.3 [0m]  src/sched.c
+[[0;32m IDO 5.3 [0m]  src/synsetvol.c
+[[0;32m IDO 5.3 [0m]  src/util.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/createmesgqueue.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/createthread.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/destroythread.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/getcurrfaultthread.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/getthreadpri.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/gettime.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/initialize.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/jammesg.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/recvmesg.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/resetglobalintmask.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/sendmesg.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/seteventmesg.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/setglobalintmask.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/setthreadpri.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/settime.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/settimer.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/startthread.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/stopthread.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/thread.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/timerintr.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/virtualtophysical.c
+[[0;32m IDO 5.3 [0m]  src/libultra/os/yieldthread.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/auxbus.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/copy.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/drvrnew.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/filter.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/heapalloc.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/heapinit.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/load.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/mainbus.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/resample.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/reverb.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/save.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/synaddplayer.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/synallocfx.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/synallocvoice.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/syndelete.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/synsetpan.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/synsetpitch.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/synstartvoiceparam.c
+[[0;32m IDO 5.3 [0m]  src/libultra/audio/synstopvoice.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/ai.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/aigetlen.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/aisetfreq.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/aisetnextbuf.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/cartrominit.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/conteepprobe.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/conteepread.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/conteepwrite.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/contreaddata.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/controller.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/devmgr.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/dp.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/dpsetnextbuf.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/epirawdma.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/epirawread.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/epirawwrite.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/leodiskinit.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/leointerrupt.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/piacs.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/pidma.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/pigetcmdq.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/pimgr.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/pirawdma.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/pirawread.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/si.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/siacs.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/siraw.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/sirawdma.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/sp.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/spgetstat.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/sprawdma.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/spsetpc.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/spsetstat.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/sptask.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/sptaskyield.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/sptaskyielded.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/vi.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/viblack.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/vigetcurrcontext.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/vigetcurrframebuf.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/vigetnextframebuf.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/vimgr.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/visetevent.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/visetmode.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/visetspecial.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/viswapbuf.c
+[[0;32m IDO 5.3 [0m]  src/libultra/io/viswapcontext.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/cosf.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/coss.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/lookat.c
+cfe: Warning 581: src/libultra/gu/lookatref.c:3: Macro FTOFRAC8 redefined.
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/lookatref.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/mtxcatf.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/mtxutil.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/normalize.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/ortho.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/perspective.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/rotate.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/rotaterpy.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/scale.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/sinf.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/sins.c
+[[0;32m IDO 5.3 [0m]  src/libultra/gu/translate.c
+[[0;32m IDO 5.3 [0m]  src/libultra/libc/ldiv.c
+cc: Warning: -mips3 should not be used for ucode 32-bit compiles
+[ IDO -mips3, e_flags patched to mips2 ]  src/libultra/libc/ll.c
+[[0;32m IDO 5.3 [0m]  src/libultra/libc/sprintf.c
+[[0;32m IDO 5.3 [0m]  src/libultra/libc/string.c
+[[0;32m IDO 5.3 [0m]  src/libultra/libc/syncprintf.c
+[[0;32m IDO 5.3 [0m]  src/libultra/libc/xldtob.c
+[[0;32m IDO 5.3 [0m]  src/libultra/libc/xlitob.c
+[[0;32m IDO 5.3 [0m]  src/libultra/libc/xprintf.c
+[[0;32m IDO 5.3 [0m]  src/n_audio/env.c
+[[0;32m IDO 5.3 [0m]  src/n_audio/sl.c
+[[0;32m IDO 5.3 [0m]  src/n_audio/synthesizer.c
+[[0;35m Binary blob [0m]  assets/CD3F0.bin
+[[0;35m Binary blob [0m]  assets/ipl3.bin
+[[0;35m GNU Linker [0m]  build/tetrisphere.us.elf
+[[0;36m GNU Objcopy [0m]  build/tetrisphere.us.elf
+[[0;36m HOST CC [0m]  tools/n64crc
+BootChip: CIC-NUS-6102
+CRC 1: 0x3C1FDABE  Calculated: 0x3C1FDABE (Good)
+CRC 2: 0x02A4E0BA  Calculated: 0x02A4E0BA (Good)
+[[0;36m ROM built [0m]  build/tetrisphere.us.z64
+build/tetrisphere.us.z64: OK
+FULL ROM MATCH: 8,388,608 bytes including header; SHA256 f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87

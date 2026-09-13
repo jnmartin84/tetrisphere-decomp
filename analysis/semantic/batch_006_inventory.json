@@ -1,0 +1,32 @@
+{
+  "scope": "All 997 production inputs; substring inventory includes comments/aliases. No new name preexists.",
+  "hits": {
+    "src/boot.c": {
+      "func_800CCE7C": 4
+    },
+    "src/game2.c": {
+      "func_800CCE7C": 2,
+      "func_80070118": 2,
+      "func_800CCB78": 1
+    },
+    "src/main.c": {
+      "func_80070118": 1,
+      "func_800CCB78": 3
+    }
+  },
+  "lexical_substitution_counts": {
+    "src/boot.c": {
+      "func_800CCE7C": 4
+    },
+    "src/main.c": {
+      "func_80070118": 1,
+      "func_800CCB78": 3
+    },
+    "src/game2.c": {
+      "func_800CCE7C": 1,
+      "func_80070118": 2,
+      "func_800CCB78": 1
+    }
+  },
+  "new_tokens": 12
+}

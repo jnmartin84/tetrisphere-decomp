@@ -1,0 +1,15 @@
+{
+  "inventory_scope": "All 997 manifested production inputs; substring search includes comments and suffixed aliases. Only game2.c contains any old name; no new names exist before application.",
+  "hits": {
+    "src/game2.c": {
+      "func_800920E4": 3,
+      "func_800921A8": 6,
+      "func_8009423C": 3
+    }
+  },
+  "lexical_substitution_counts": {
+    "func_800920E4": 2,
+    "func_800921A8": 5,
+    "func_8009423C": 2
+  }
+}

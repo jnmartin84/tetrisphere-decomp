@@ -1,0 +1,26 @@
+{
+  "scope": "All 997 production inputs; substring inventory includes comments. Proposed names do not preexist. Historical comments remain unchanged. No aliases or configuration references require editing.",
+  "hits": {
+    "src/boot.c": {
+      "func_80029780": 1
+    },
+    "src/main.c": {
+      "func_80054098": 7,
+      "func_80066DB8": 3,
+      "func_80066E6C": 21,
+      "func_80029780": 3
+    }
+  },
+  "lexical_substitution_counts": {
+    "src/main.c": {
+      "func_80054098": 5,
+      "func_80066DB8": 3,
+      "func_80066E6C": 21,
+      "func_80029780": 3
+    },
+    "src/boot.c": {
+      "func_80029780": 1
+    }
+  },
+  "new_tokens": 33
+}
