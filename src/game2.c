@@ -7950,27 +7950,27 @@ extern s16 D_8015EDA4, D_8015F4DC, D_8015EE1A, D_8015EDB4;
 extern s32 D_80160C78, D_80160C7C;
 extern s16 D_8015F87A;
 void func_8009A348() {
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA000E02, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
     gCmd(D_800F22B4++, 0xB900031D, 0x00504B50);
-    gCmd(D_800F22B4++, 0xB6000000, 0x001F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 0x00000205);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
     gCmd(D_800F22B4++, 0xF5400000, 0);
     if (D_8015D76A == 0) {
-        gCmd(D_800F22B4++, 0xFD700000, (u32)D_80138F8C);
+        gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_80138F8C);
         gCmd(D_800F22B4++, 0xF5700000, 0x07080200);
-        gCmd(D_800F22B4++, 0xE6000000, 0);
+        gDPLoadSync(D_800F22B4++);
         gCmd(D_800F22B4++, 0xF3000000, 0x071FF200);
-        gCmd(D_800F22B4++, 0xE7000000, 0);
+        gDPPipeSync(D_800F22B4++);
         gCmd(D_800F22B4++, 0xF5680800, 0x00080200);
         gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
     } else {
-        gCmd(D_800F22B4++, 0xFD700000, (u32)D_801396F4);
+        gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_801396F4);
         gCmd(D_800F22B4++, 0xF5700000, 0x07080200);
-        gCmd(D_800F22B4++, 0xE6000000, 0);
+        gDPLoadSync(D_800F22B4++);
         gCmd(D_800F22B4++, 0xF3000000, 0x071FF200);
-        gCmd(D_800F22B4++, 0xE7000000, 0);
+        gDPPipeSync(D_800F22B4++);
         gCmd(D_800F22B4++, 0xF5680800, 0x00080200);
         gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
     }
@@ -8132,18 +8132,18 @@ void func_8009AB60(s32 arg0) {
         *(s16 *)(D_8013DD00 + 0x2444) = func_8008AA00(g, D_8015F882, D_8015F886) - 1;
         D_8015F87A = sins(D_80160C5C) * 0x50 / 0x10000 + 0xB8;
         D_80160C5C += D_80160C64 * 0x300;
-        gCmd(D_800F22B4++, 0xB6000000, 0x001F3204);
-        gCmd(D_800F22B4++, 0xB7000000, 0x00000205);
+        gSPClearGeometryMode(D_800F22B4++, G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+        gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
         gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
         gCmd(D_800F22B4++, 0xB900031D, 0x005049D8);
         if (*(u8 *)(D_8013DD00 + 0x1267) != 0) {
             *(s16 *)(D_8013DD00 + 0x23AE) = 1;
             *(s16 *)(D_8013DD00 + 0x23B0) = 1;
-            gCmd(D_800F22B4++, 0xFD100000, (u32)D_8013178C);
+            gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_8013178C);
             gCmd(D_800F22B4++, 0xF5100000, 0x07090240);
-            gCmd(D_800F22B4++, 0xE6000000, 0);
+            gDPLoadSync(D_800F22B4++);
             gCmd(D_800F22B4++, 0xF3000000, 0x073FF100);
-            gCmd(D_800F22B4++, 0xE7000000, 0);
+            gDPPipeSync(D_800F22B4++);
             gCmd(D_800F22B4++, 0xF5101000, 0x00090240);
             gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
             D_8015F84E = 0x10;
@@ -8160,11 +8160,11 @@ void func_8009AB60(s32 arg0) {
         }
         if (*(s16 *)(D_8013DD00 + 0x23A8) != 0) {
             if ((func_8008AB0C(g, D_8015F88A, D_8015F88E) >= 8 && D_8015D76A == 0) || flag != 0) {
-                gCmd(D_800F22B4++, 0xFD100000, (u32)D_8013178C);
+                gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_8013178C);
                 gCmd(D_800F22B4++, 0xF5100000, 0x07054150);
-                gCmd(D_800F22B4++, 0xE6000000, 0);
+                gDPLoadSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF3000000, 0x073FF100);
-                gCmd(D_800F22B4++, 0xE7000000, 0);
+                gDPPipeSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF5101000, 0x00054150);
                 gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
                 func_800829F4(D_80131790, 0, 0x10, 0xF, 0x10, 0, 0x1F, 0xF, 0x1F);
@@ -8221,34 +8221,34 @@ void func_8009AB60(s32 arg0) {
             if (*(s16 *)(D_8013DD00 + 0x3232) == *(s16 *)(D_8013DD00 + 0x2374)) {
                 func_8009A348((G9E6C *)arg0);
             } else {
-                gCmd(D_800F22B4++, 0xE7000000, 0);
-                gCmd(D_800F22B4++, 0xBA000E02, 0x00008000);
+                gDPPipeSync(D_800F22B4++);
+                gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
                 gCmd(D_800F22B4++, 0xF5400000, 0);
-                gCmd(D_800F22B4++, 0xFD500000, (u32)D_800E32D0);
+                gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32)D_800E32D0);
                 gCmd(D_800F22B4++, 0xF5500000, 0x07000000);
-                gCmd(D_800F22B4++, 0xE6000000, 0);
+                gDPLoadSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF3000000, 0x073FF080);
-                gCmd(D_800F22B4++, 0xE7000000, 0);
+                gDPPipeSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF5402000, 0);
                 gCmd(D_800F22B4++, 0xF2000000, 0x003FC03C);
-                gCmd(D_800F22B4++, 0xFD100000, (u32)D_800E93C0);
-                gCmd(D_800F22B4++, 0xE8000000, 0);
+                gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_800E93C0);
+                gDPTileSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF5000100, 0x07000000);
-                gCmd(D_800F22B4++, 0xE6000000, 0);
+                gDPLoadSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-                gCmd(D_800F22B4++, 0xE7000000, 0);
-                gCmd(D_800F22B4++, 0xFD100000, (u32)D_800E93E0);
-                gCmd(D_800F22B4++, 0xE8000000, 0);
+                gDPPipeSync(D_800F22B4++);
+                gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_800E93E0);
+                gDPTileSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF5000110, 0x07000000);
-                gCmd(D_800F22B4++, 0xE6000000, 0);
+                gDPLoadSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-                gCmd(D_800F22B4++, 0xE7000000, 0);
-                gCmd(D_800F22B4++, 0xFD100000, (u32)D_800E9400);
-                gCmd(D_800F22B4++, 0xE8000000, 0);
+                gDPPipeSync(D_800F22B4++);
+                gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_800E9400);
+                gDPTileSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF5000120, 0x07000000);
-                gCmd(D_800F22B4++, 0xE6000000, 0);
+                gDPLoadSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-                gCmd(D_800F22B4++, 0xE7000000, 0);
+                gDPPipeSync(D_800F22B4++);
                 { s32 z0; z0 &= 0; D_8015F84E = 0x10 + z0; }
                 D_8015F7EC = 0xFF;
                 D_8015F7FC = 0xFF;
@@ -8298,7 +8298,7 @@ void func_8009AB60(s32 arg0) {
                     func_8009A044(0, 2, func_8008E5B0(D_8015F882, D_8015F886 + 2, 8), g->arr[0][2], 0);
                     func_8009A044(1, 2, func_8008E5B0(D_8015F882 + 1, D_8015F886 + 2, 8), g->arr[1][2], 0);
                     func_8009A044(2, 2, func_8008E5B0(D_8015F882 + 2, D_8015F886 + 2, 8), g->arr[2][2], 0);
-                    gCmd(D_800F22B4++, 0xBA000E02, 0);
+                    gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
                     *(s16 *)(D_8013DD00 + 0x2374) = saved;
                 }
             }
@@ -8993,7 +8993,7 @@ void func_8009D90C(void)
 extern u16 D_8015F59C;
 
 void func_8009E214(void) {
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPTileSync(D_800F22B4++);
     if (D_8015E588 & 0x80) {
         if (D_8015E588 & 0x20) {
             gCmd(D_800F22B4++, 0xF5402000, 0x00900000);
@@ -9015,14 +9015,14 @@ void func_8009E314(u16 a0) {
     if (!(a0 & 0x40)) {
         if (D_8015D97C == 1) {
             D_8015D97C = 0;
-            gCmd(D_800F22B4++, 0xE7000000, 0);
+            gDPPipeSync(D_800F22B4++);
             gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
         }
     }
     if (a0 & 0x40) {
         if (D_8015D97C == 0) {
             D_8015D97C = 1;
-            gCmd(D_800F22B4++, 0xE7000000, 0);
+            gDPPipeSync(D_800F22B4++);
             gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFCF279);
         }
     }
@@ -9441,102 +9441,102 @@ void func_8009FA20(void) {
         }
     }
     *(u16 *)(D_8013DD00 + 6) += 0x800;
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D778);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D778);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000100, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D798);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D798);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000110, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D7B8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D7B8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000120, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D7D8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D7D8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000130, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D7F8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D7F8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000140, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D818);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D818);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000150, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D838);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D838);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000160, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D858);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D858);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000170, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D878);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D878);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000180, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D898);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D898);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000190, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D8B8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D8B8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001A0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D8D8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D8D8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001B0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D8F8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D8F8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001C0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D918);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D918);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001D0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D938);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D938);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001E0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D958);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D958);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001F0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     for (D_8015F836 = 0; D_8015F836 < 15; D_8015F836++) {
         for (D_8015F83A = 0; D_8015F83A < 15; D_8015F83A++) {
             D_8015F842 = (((D_8015F83A + *(s32 *)(D_8013DD00 + 0x2B24)) & 0x1F) << 5)
@@ -9741,9 +9741,9 @@ void func_800A0ED8(void) {
     Unk9C330 *v;
 
     D_8015D97C = 1;
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFCF279);
-    gCmd(D_800F22B4++, 0xBA000E02, 0x8000);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
     for (D_8015F836 = 0; D_8015F836 < 0xF; D_8015F836++) {
         for (D_8015F83A = 0; D_8015F83A < 0xF; D_8015F83A++) {
             D_8015F842 = (((D_8015F83A + *(s32 *)(D_8013DD00 + 0x2B24)) & 0x1F) << 5) + ((D_8015F836 + *(s32 *)(D_8013DD00 + 0x2B20)) & 0x1F) + (*(s32 *)(D_8013DD00 + 0x2B28) * 0);
@@ -9771,12 +9771,12 @@ void func_800A0ED8(void) {
             D_8015F59C = *(s16 *)D_8015E990 / 9;
             gCmd(D_800F22B4++, 0xF5480000, 0);
             if (D_8015F59C == D_80134BFA) {
-                gCmd(D_800F22B4++, 0xBA000E02, 0);
-                gCmd(D_800F22B4++, 0xFD100000, D_8013535C);
+                gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
+                gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, D_8013535C);
                 gCmd(D_800F22B4++, 0xF5100000, 0x07054150);
-                gCmd(D_800F22B4++, 0xE6000000, 0);
+                gDPLoadSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF3000000, 0x073FF100);
-                gCmd(D_800F22B4++, 0xE7000000, 0);
+                gDPPipeSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF5101000, 0x00054150);
                 gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
                 u = *(Unk9C330 **) D_8015EDA8;
@@ -9789,18 +9789,18 @@ void func_800A0ED8(void) {
                 u->unk48 = (*(s16 *)(p + 0x14) + D_8015FDF4) >> 2;
                 u->unk4A = (*(s16 *)(p + 0x12) + D_8015FDFC) >> 2;
             } else {
-                gCmd(D_800F22B4++, 0xBA000E02, 0x8000);
-                gCmd(D_800F22B4++, 0xFD100000, *(s32 *)((u8 *)D_8014CC98[D_8015F59C] + 0x50));
-                gCmd(D_800F22B4++, 0xE8000000, 0);
+                gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
+                gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, *(s32 *)((u8 *)D_8014CC98[D_8015F59C] + 0x50));
+                gDPTileSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF5000100, 0x07000000);
-                gCmd(D_800F22B4++, 0xE6000000, 0);
+                gDPLoadSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF0000000, 0x073FC000);
-                gCmd(D_800F22B4++, 0xE7000000, 0);
-                gCmd(D_800F22B4++, 0xFD500000, *(s32 *)((*(s16 *)D_8015E990 % 9) * 4 + (u8 *)D_8014CC98[D_8015F59C] + 0x54));
+                gDPPipeSync(D_800F22B4++);
+                gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, *(s32 *)((*(s16 *)D_8015E990 % 9) * 4 + (u8 *)D_8014CC98[D_8015F59C] + 0x54));
                 gCmd(D_800F22B4++, 0xF5500000, 0x07000000);
-                gCmd(D_800F22B4++, 0xE6000000, 0);
+                gDPLoadSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF3000000, 0x0707F400);
-                gCmd(D_800F22B4++, 0xE7000000, 0);
+                gDPPipeSync(D_800F22B4++);
                 gCmd(D_800F22B4++, 0xF5480400, 0);
                 gCmd(D_800F22B4++, 0xF2000000, 0x0003C03C);
             }
@@ -9858,7 +9858,7 @@ void func_800A0ED8(void) {
             D_8015F84E += 4; D_800E44F0 += 4;
         }
     }
-    gCmd(D_800F22B4++, 0xBA000E02, 0);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
 }
 
 /* func_800A18F4  ROM 0x7CCA4  status: pending
@@ -9884,11 +9884,11 @@ void func_800A18F4(void) {
     u8 *temp_s1;
     s32 var_s2;
 
-    gCmd(D_800F22B4++, 0xFD100000, D_8013535C);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, D_8013535C);
     gCmd(D_800F22B4++, 0xF5100000, 0x07054150);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x073FF100);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5101000, 0x00054150);
     gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
 
@@ -10006,11 +10006,11 @@ void func_800A1E58(void) {
     u8 *temp_s0;
     s32 var_s4;
 
-    gCmd(D_800F22B4++, 0xFD100000, D_80135360);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, D_80135360);
     gCmd(D_800F22B4++, 0xF5100000, 0x07054150);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x073FF100);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5101000, 0x00054150);
     gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
 
@@ -10366,24 +10366,24 @@ void func_800A348C(void) {
     D_8015F84E = 0x10;
     D_8015EDB6 = 0xFF;
     func_80097CEC(0, *(s16 *)(D_8013DD00 + 0x23E8));
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xB6000000, 0x001F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 0x00020205);
+    gDPPipeSync(D_800F22B4++);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_LIGHTING);
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
     gCmd(D_800F22B4++, 0xB900031D, 0x00552078);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA000E02, 0x00008000);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
     gCmd(D_800F22B4++, 0xF5400000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32)D_800E3AD8);
-    gCmd(D_800F22B4++, 0xE8000000, 0); gCmd(D_800F22B4++, 0xF5000100, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_800E3AD8);
+    gDPTileSync(D_800F22B4++); gCmd(D_800F22B4++, 0xF5000100, 0x07000000);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x073FC000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD500000, (u32)D_800E2AD0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32)D_800E2AD0);
     gCmd(D_800F22B4++, 0xF5500000, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x073FF080);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5402000, 0);
     gCmd(D_800F22B4++, 0xF2000000, 0x003FC03C);
     D_8015D97C = 0;
@@ -10398,7 +10398,7 @@ void func_800A348C(void) {
         func_8009FA20();
     }
     func_800A0ED8();
-    gCmd(D_800F22B4++, 0xBA000E02, 0);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
     if (D_8015FDEE != 0) {
         func_800A18F4();
     }
@@ -10406,7 +10406,7 @@ void func_800A348C(void) {
         func_800A1E58();
     }
     func_8009AB60(D_8015F848);
-    gCmd(D_800F22B4++, 0xBA000E02, 0);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
     D_8015FDF4++;
     D_8015FDFC++;
     if (D_8015FDF4 > 0x100) {
@@ -10479,11 +10479,11 @@ s16 a1;
     s16 v;
     s32 flags;
 
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5402000, (((K94H *)D_8014CBC8[a1])->b8 & 0xF) << 20);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA000E02, 0x8000);
-    gCmd(D_800F22B4++, 0xBA000C02, 0x2000);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
+    gDPSetTextureFilter(D_800F22B4++, G_TF_BILERP);
     D_8015F84E = 0x10;
     gCmd(D_800F22B4++, 0x01040040,
          (u32)&((K94FT *)&((K94FAEC *)D_8013FAEC)->blk[D_8013FAF1])->t[a0]);
@@ -10643,7 +10643,7 @@ u8 a0;
         D_8015EDB6 = D_8015EDB6 * 3.0f;
     }
 
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     if (D_8015EDB6 >= 0xFF) {
         gCmd(D_800F22B4++, 0xB900031D, 0x552078);
     } else {
@@ -10896,7 +10896,7 @@ u8 a0;
                 ((T_2278 *)D_8013DD00)->r[a0].y,
                 ((T_2278 *)D_8013DD00)->r[a0].z);
     D_8015EDB6 = ((T_21D8 *)D_8013DD00)->e[a0].w;
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     if (D_8015EDB6 == 0xFF) {
         gCmd(D_800F22B4++, 0xB900031D, 0x552078);
     } else {
@@ -10988,117 +10988,117 @@ void func_800A4D60(void) {
     gCmd(D_800F22B4++, 0xBC000002, 0x80000040);
     gCmd(D_800F22B4++, 0x03860010, (u32) (D_8013DD00 + 0x21C8));
     gCmd(D_800F22B4++, 0x03880010, (u32) (D_8013DD00 + 0x21C0));
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xED000000, 0x5003C0);
     gCmd(D_800F22B4++, 0xB900031D, 0x5049D8);
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xBA000E02, 0x8000);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
     gCmd(D_800F22B4++, 0xF5400000, 0);
-    gCmd(D_800F22B4++, 0xFD500000, (u32) D_800E2AD0); gCmd(D_800F22B4++, 0xF5500000, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32) D_800E2AD0); gCmd(D_800F22B4++, 0xF5500000, 0x07000000);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x073FF080);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5402000, 0);
     gCmd(D_800F22B4++, 0xF2000000, 0x3FC03C);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3AD8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3AD8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000100, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3AF8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3AF8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000110, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B18);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B18);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000120, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B38);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B38);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000130, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B58);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B58);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000140, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B78);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B78);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000150, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B98);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B98);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000160, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BB8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BB8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000170, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BD8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BD8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000180, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BF8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BF8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000190, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C18);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C18);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001A0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C38);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C38);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001B0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C58);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C58);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001C0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C78);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C78);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001D0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C98);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C98);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001E0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3CB8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3CB8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001F0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
-    gCmd(D_800F22B4++, 0xB6000000, 0xF3205);
-    gCmd(D_800F22B4++, 0xB7000000, 0x22205);
+    gDPPipeSync(D_800F22B4++);
+    gDPLoadSync(D_800F22B4++);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR);
+    gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK | G_LIGHTING);
 }
 /* clang-format on */
 
@@ -11557,7 +11557,7 @@ void func_800A6FD0(s16 a0) {
     *(u8 *)(p + 5) = 1;
     *(u8 *)(p + 6) = 4;
     *(s16 *)(p + 8) = 0;
-    gCmd(p + 0x80, 0xB7000000, 0x205);
+    gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
     *(s16 *)(p + 0x88) = 0xD;
     gCmd(p + 0x90, 0xFCFFFFFF, 0xFFFCF279);
     *(s16 *)(p + 0x98) = 0x10;
@@ -11695,7 +11695,7 @@ void func_800A742C(u8 *arg0, s32 arg1) {
     D_800E44F0 = 0;
     last88 = last98 = lastA8 = -1;
     type = *(s16 *)(D_8013DD00 + 0x23B2);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     if ((func_800CD350() >> 2) >= D_800E6DBC) {
         for (i = 0; i < 0x100; i++) {
             p = &D_8013FAF8[i * 0xD0];
@@ -11703,66 +11703,66 @@ void func_800A742C(u8 *arg0, s32 arg1) {
                 (!(*(u16 *)(p + 8) & 0x10) ||
                  (func_80098D8C((s16)(*(s32 *)(p + 0x3C) >> 8), (s16)(*(s32 *)(p + 0x40) >> 8), (s16)(*(s32 *)(p + 0x44) >> 8)) == 0))) {
                 if (*(s32 *)(p + 0xC8) != 0) {
-                    gCmd(D_800F22B4++, 0xE7000000, 0);
-                    gCmd(D_800F22B4++, 0xBA000E02, 0x8000);
+                    gDPPipeSync(D_800F22B4++);
+                    gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
                     if (D_800E2AD0 == *(u8 **)(p + 0xC4)) {
-                        gCmd(D_800F22B4++, 0xFD100000, *(s32 *)(p + 0xC8));
-                        gCmd(D_800F22B4++, 0xE8000000, 0);
+                        gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, *(s32 *)(p + 0xC8));
+                        gDPTileSync(D_800F22B4++);
                         gCmd(D_800F22B4++, 0xF5000100, 0x07000000);
-                        gCmd(D_800F22B4++, 0xE6000000, 0);
+                        gDPLoadSync(D_800F22B4++);
                         gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-                        gCmd(D_800F22B4++, 0xE7000000, 0);
+                        gDPPipeSync(D_800F22B4++);
                         gCmd(D_800F22B4++, 0xF5400000, 0);
-                        gCmd(D_800F22B4++, 0xFD500000, (u32) D_800E2AD0);
+                        gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32) D_800E2AD0);
                         gCmd(D_800F22B4++, 0xF5500000, 0x07000000);
-                        gCmd(D_800F22B4++, 0xE6000000, 0);
+                        gDPLoadSync(D_800F22B4++);
                         gCmd(D_800F22B4++, 0xF3000000, 0x073FF080);
-                        gCmd(D_800F22B4++, 0xE7000000, 0);
+                        gDPPipeSync(D_800F22B4++);
                         gCmd(D_800F22B4++, 0xF5402000, 0);
                         gCmd(D_800F22B4++, 0xF2000000, 0x3FC03C);
                     } else {
-                        gCmd(D_800F22B4++, 0xFD100000, *(s32 *)(p + 0xC8));
-                        gCmd(D_800F22B4++, 0xE8000000, 0);
+                        gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, *(s32 *)(p + 0xC8));
+                        gDPTileSync(D_800F22B4++);
                         gCmd(D_800F22B4++, 0xF5000100, 0x07000000);
-                        gCmd(D_800F22B4++, 0xE6000000, 0);
+                        gDPLoadSync(D_800F22B4++);
                         gCmd(D_800F22B4++, 0xF0000000, 0x073FC000);
-                        gCmd(D_800F22B4++, 0xE7000000, 0);
+                        gDPPipeSync(D_800F22B4++);
                         gCmd(D_800F22B4++, 0xF5480000, 0);
-                        gCmd(D_800F22B4++, 0xFD500000, *(s32 *)(p + 0xC4));
+                        gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, *(s32 *)(p + 0xC4));
                         gCmd(D_800F22B4++, 0xF5500000, 0x07000000);
-                        gCmd(D_800F22B4++, 0xE6000000, 0);
+                        gDPLoadSync(D_800F22B4++);
                         gCmd(D_800F22B4++, 0xF3000000, 0x0707F400);
-                        gCmd(D_800F22B4++, 0xE7000000, 0);
+                        gDPPipeSync(D_800F22B4++);
                         gCmd(D_800F22B4++, 0xF5480400, 0);
                         gCmd(D_800F22B4++, 0xF2000000, 0x3C03C);
                     }
                 } else {
-                    gCmd(D_800F22B4++, 0xE7000000, 0);
-                    gCmd(D_800F22B4++, 0xBA000E02, 0);
+                    gDPPipeSync(D_800F22B4++);
+                    gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
                     gCmd(D_800F22B4++, 0xF5400000, 0);
-                    gCmd(D_800F22B4++, 0xFD100000, *(s32 *)(p + 0xC4));
+                    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, *(s32 *)(p + 0xC4));
                     gCmd(D_800F22B4++, 0xF5100000, 0x07054150);
-                    gCmd(D_800F22B4++, 0xE6000000, 0);
+                    gDPLoadSync(D_800F22B4++);
                     gCmd(D_800F22B4++, 0xF3000000, 0x073FF100);
-                    gCmd(D_800F22B4++, 0xE7000000, 0);
+                    gDPPipeSync(D_800F22B4++);
                     gCmd(D_800F22B4++, 0xF5101000, 0x54150);
                     gCmd(D_800F22B4++, 0xF2000000, 0x7C07C);
                 }
                 if (last88 != *(s16 *)(p + 0x88)) {
                     last88 = *(s16 *)(p + 0x88);
-                    gCmd(D_800F22B4++, 0xB6000000, 0x1F3205);
+                    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
                     D_800F22B4->words = *(Gwords *)(p + 0x80);
                     D_800F22B4++;
                 }
                 if (last98 != *(s16 *)(p + 0x98)) {
                     last98 = *(s16 *)(p + 0x98);
-                    gCmd(D_800F22B4++, 0xE7000000, 0);
+                    gDPPipeSync(D_800F22B4++);
                     D_800F22B4->words = *(Gwords *)(p + 0x90);
                     D_800F22B4++;
                 }
                 if (lastA8 != *(s16 *)(p + 0xA8)) {
                     lastA8 = *(s16 *)(p + 0xA8);
-                    gCmd(D_800F22B4++, 0xE7000000, 0);
+                    gDPPipeSync(D_800F22B4++);
                     D_800F22B4->words = *(Gwords *)(p + 0xA0);
                     D_800F22B4++;
                 }
@@ -11887,7 +11887,7 @@ void func_800A80E4(void) {
 }
 void func_800A8158(u16 a0) {
     u8 *p = &D_8013FAF8[a0 * 0xD0];
-    gCmd(p+0x80, 0xB7000000, 0x205);
+    gSPSetGeometryMode(p+0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
     *(s16*)(p+0x88) = 0xD;
     gCmd(p+0x90, 0xFC121824, 0xFF33FFFF);
     *(s16*)(p+0x98) = 7;
@@ -11914,7 +11914,7 @@ void func_800A8158(u16 a0) {
 }
 void func_800A81DC(u16 a0) {
     u8 *p = &D_8013FAF8[a0 * 0xD0];
-    gCmd(p+0x80, 0xB7000000, 1);
+    gSPSetGeometryMode(p+0x80, G_ZBUFFER);
     *(s16*)(p+0x88) = 8;
     gCmd(p+0x90, 0xFCFFFFFF, 0xFFFCF279);
     *(s16*)(p+0x98) = 0x10;
@@ -12024,7 +12024,7 @@ s16 arg4;
     *(s16 *)(dst + 0xBE) = *(s16 *)(src + 0x82);
     *(s32 *)(dst + 0xC4) = arg2;
     *(void **)(dst + 0xC8) = (void *)(((*((u8 *)arg1 + 8) & 0xFF) << 5) + D_800E3AD8);
-    gCmd(dst + 0x80, 0xB7000000, 1);
+    gSPSetGeometryMode(dst + 0x80, G_ZBUFFER);
     *(s16 *)(dst + 0x88) = 8;
     gCmd(dst + 0x90, 0xFCFFFFFF, 0xFFFCF279);
     *(s16 *)(dst + 0x98) = 0x10;
@@ -16887,11 +16887,11 @@ void func_800B37AC(s16 *arg0) {
     n = *(s32 *)(arg0 + 4);
     if (n != 0) {
         do {
-            gCmd(D_800F22B4++, 0xFD700000, (u32)&((u8 *)D_80137900)[(9 - n % 10) << 10]);
+            gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)&((u8 *)D_80137900)[(9 - n % 10) << 10]);
             gCmd(D_800F22B4++, 0xF5700000, 0x07000000);
-            gCmd(D_800F22B4++, 0xE6000000, 0);
+            gDPLoadSync(D_800F22B4++);
             gCmd(D_800F22B4++, 0xF3000000, 0x071FF200);
-            gCmd(D_800F22B4++, 0xE7000000, 0);
+            gDPPipeSync(D_800F22B4++);
             gCmd(D_800F22B4++, 0xF5680800, 0);
             gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
             gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848);
@@ -16977,11 +16977,11 @@ void func_800B3C3C(void) {
     } else {
         *(u32 *)((u8 *)D_8013DD00 + 0x73C) -= D_80160C64;
     }
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
     gCmd(D_800F22B4++, 0xB900031D, 0x504240);
-    gCmd(D_800F22B4++, 0xB6000000, 0x1F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 4);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_SHADE);
     i = 0;
     p = (s16 *)((u8 *)D_8013DD00 + 0x704);
     do {
@@ -17107,11 +17107,11 @@ void func_800B3F74(E_B3DEC *p) {
     r = *(D_800E90DC + i * 3);
     g = *(D_800E90DC + i * 3 + 1);
     b = *(D_800E90DC + i * 3 + 2);
-    gCmd(D_800F22B4++, 0xFD700000, D_80131F28[i]);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, D_80131F28[i]);
     gCmd(D_800F22B4++, 0xF5700000, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x071FF200);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5680800, 0);
     gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
     gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848);
@@ -17193,11 +17193,11 @@ void func_800B4394(void) {
         }
     }
     i = 0;
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
     gCmd(D_800F22B4++, 0xB900031D, 0x504240);
-    gCmd(D_800F22B4++, 0xB6000000, 0x1F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 4);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_SHADE);
     p = ((Ring_B3DEC *)D_8013DD00)->ring;
     do {
         if (p->f00 != 0) {
@@ -17555,7 +17555,7 @@ void func_800B53F0(s16 a0, s16 a1, s16 a2, s16 a3, s16 a4, s16 a5, s16 a6, s16 a
         *(s8 *)(p + 0x74) = a21;
         *(s8 *)(p + 0x75) = a22;
         *(s8 *)(p + 0x76) = a23;
-        gCmd(p + 0x80, 0xB7000000, 0x20205);
+        gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_LIGHTING);
         *(s16 *)(p + 0x88) = 0xF;
     } else {
         *(s8 *)(p + 0x6C) = -1;
@@ -17570,7 +17570,7 @@ void func_800B53F0(s16 a0, s16 a1, s16 a2, s16 a3, s16 a4, s16 a5, s16 a6, s16 a
         *(s8 *)(p + 0x74) = -1;
         *(s8 *)(p + 0x75) = -1;
         *(s8 *)(p + 0x76) = -1;
-        gCmd(p + 0x80, 0xB7000000, 0x205);
+        gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
         *(s16 *)(p + 0x88) = 0xD;
     }
     gCmd(p + 0x90, 0xFC121824, 0xFF33FFFF);
@@ -17812,7 +17812,7 @@ void func_800B667C(s16 a0, s16 a1, s16 a2, s16 a3, s16 a4, s16 a5, s16 a6, s16 a
     *(s8 *)(p + 0x71) = -1;
     *(s8 *)(p + 0x72) = -1;
     *(s8 *)(p + 0x73) = -1;
-    gCmd(p + 0x80, 0xB7000000, 0x205);
+    gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
     *(s16 *)(p + 0x88) = 0xD;
     gCmd(p + 0x90, 0xFC121824, 0xFF33FFFF);
     *(s16 *)(p + 0x98) = 7;
@@ -18044,7 +18044,7 @@ void func_800B7190(s16 a0, s16 a1, s16 a2, s16 a3, s16 a4, s16 a5, s16 a6, s16 a
     *(s8 *)(p + 0x73) = -1;
     *(s8 *)(p + 0x77) = -1;
     *(s8 *)(p + 0x7B) = -1;
-    gCmd(p + 0x80, 0xB7000000, 0x20205);
+    gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_LIGHTING);
     *(s16 *)(p + 0x88) = 0xF;
     gCmd(p + 0x90, 0xFC121824, 0xFF33FFFF);
     *(s16 *)(p + 0x98) = 7;
@@ -18700,17 +18700,17 @@ void func_800B9300(void) {
     r = D_800E9150[idx];
     g = D_800E9150[idx + 1];
     b = D_800E9150[idx + 2];
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
     gCmd(D_800F22B4++, 0xB900031D, 0x00504240);
-    gCmd(D_800F22B4++, 0xB6000000, 0x001F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 0x00000004);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_SHADE);
 
-    gCmd(D_800F22B4++, 0xFD700000, (u32)D_80137150);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_80137150);
     gCmd(D_800F22B4++, 0xF5700000, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x071FF200);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5680800, 0);
     gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
     gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848);
@@ -18755,11 +18755,11 @@ void func_800B9300(void) {
     D_800E44F0 += 4;
     D_8015F848 += 4;
 
-    gCmd(D_800F22B4++, 0xFD700000, (u32)D_80136234);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_80136234);
     gCmd(D_800F22B4++, 0xF5700000, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x071FF200);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5680800, 0);
     gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
     gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848);
@@ -18804,11 +18804,11 @@ void func_800B9300(void) {
     D_800E44F0 += 4;
     D_8015F848 += 4;
 
-    gCmd(D_800F22B4++, 0xFD700000, (u32)D_801369E0);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_801369E0);
     gCmd(D_800F22B4++, 0xF5700000, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x071FF200);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5680800, 0);
     gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
     gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848);
@@ -18853,11 +18853,11 @@ void func_800B9300(void) {
     D_800E44F0 += 4;
     D_8015F848 += 4;
 
-    gCmd(D_800F22B4++, 0xFD700000, (u32)D_80135ACC);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_80135ACC);
     gCmd(D_800F22B4++, 0xF5700000, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x071FF200);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5680800, 0);
     gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
     gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848);
@@ -19207,17 +19207,17 @@ void func_800BABB4(void) {
     s16 i;
 
     D_800E44F0 = 0;
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
     gCmd(D_800F22B4++, 0xB900031D, 0x00504240);
-    gCmd(D_800F22B4++, 0xB6000000, 0x001F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 4);
-    gCmd(D_800F22B4++, 0xBA000E02, 0);
-    gCmd(D_800F22B4++, 0xFD700000, (u32)D_8013448C);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_SHADE);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_8013448C);
     gCmd(D_800F22B4++, 0xF5700000, 0x07054150);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x071FF200);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5680800, 0x00054150);
     gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
     for (i = 0; i < 0x20; i++) {
@@ -19611,121 +19611,121 @@ void func_800BBCA4(void) {
     s16 i;
     D_800E44F0 = 0;
     D_8015F84E = 0x10;
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xB900031D, 0x552078);
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
-    gCmd(D_800F22B4++, 0xB6000000, 0x1F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 0x22205);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3AD8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK | G_LIGHTING);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3AD8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000100, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3AF8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3AF8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000110, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B18);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B18);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000120, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B38);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B38);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000130, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B58);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B58);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000140, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B78);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B78);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000150, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B98);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B98);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000160, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BB8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BB8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000170, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BD8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BD8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000180, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BF8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BF8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000190, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C18);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C18);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001A0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C38);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C38);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001B0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C58);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C58);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001C0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C78);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C78);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001D0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C98);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C98);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001E0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3CB8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3CB8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001F0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA000E02, 0x8000);
+    gDPPipeSync(D_800F22B4++);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
     gCmd(D_800F22B4++, 0xF5400000, 0);
-    gCmd(D_800F22B4++, 0xFD500000, (u32) D_800E2AD0); gCmd(D_800F22B4++, 0xF5500000, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32) D_800E2AD0); gCmd(D_800F22B4++, 0xF5500000, 0x07000000);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x073FF080);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5402000, 0);
     gCmd(D_800F22B4++, 0xF2000000, 0x3FC03C);
     for (i = 0; i < 0x20; i++) {
         func_800BB3D0((u8 *)&((T_CE6 *)D_8013DD00)->e[i]);
     }
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA000E02, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
 }
 /* clang-format on */
 
@@ -19937,7 +19937,7 @@ void func_800BD170(u8 *arg0) {
     func_8009849C();
     q = *(s16 *)(arg0 + 4) / 9;
     r = *(s16 *)(arg0 + 4) % 9;
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5402000, (((u8 *)D_8014CC98[q])[8] & 0xF) << 20);
     D_8015F84E = 0x10;
     flag = *(u16 *)(arg0 + 6);
@@ -19995,116 +19995,116 @@ void func_800BD418(void) {
     u8 *p;
     s32 i;
 
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA000E02, 0x8000);
-    gCmd(D_800F22B4++, 0xBA000C02, 0x2000);
-    gCmd(D_800F22B4++, 0xB6000000, 0x1F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 0x22205);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
+    gDPSetTextureFilter(D_800F22B4++, G_TF_BILERP);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK | G_LIGHTING);
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
     gCmd(D_800F22B4++, 0xB900031D, 0x5049D8);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA000E02, 0x8000);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
     gCmd(D_800F22B4++, 0xF5400000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3AD8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3AD8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000100, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3AF8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3AF8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000110, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B18);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B18);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000120, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B38);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B38);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000130, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B58);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B58);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000140, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B78);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B78);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000150, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B98);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B98);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000160, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BB8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BB8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000170, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BD8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BD8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000180, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BF8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BF8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5000190, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C18);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C18);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001A0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C38);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C38);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001B0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C58);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C58);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001C0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C78);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C78);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001D0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C98);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C98);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001E0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3CB8);
-    gCmd(D_800F22B4++, 0xE8000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3CB8);
+    gDPTileSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF50001F0, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFD500000, (u32) D_800E2AD0); gCmd(D_800F22B4++, 0xF5500000, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32) D_800E2AD0); gCmd(D_800F22B4++, 0xF5500000, 0x07000000);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x073FF080);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5402000, 0);
     gCmd(D_800F22B4++, 0xF2000000, 0x3FC03C);
 
@@ -20126,8 +20126,8 @@ void func_800BD418(void) {
         p += 0xC;
     } while (i != 9);
 
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA000E02, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
 }
 /* clang-format on */
 
@@ -20297,12 +20297,12 @@ void func_800BE974(void) {
     if (D_8013DD00[0x1274] != 0) {
         return;
     }
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFE793C);
     gCmd(D_800F22B4++, 0xB900031D, 0x005049D8);
-    gCmd(D_800F22B4++, 0xB6000000, 0x001F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 0x00002205);
-    gCmd(D_800F22B4++, 0xBA000602, 0x80);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK);
+    gDPSetColorDither(D_800F22B4++, G_CD_NOISE);
     func_80097CEC(0, *(s16 *)(D_8013DD00 + 0x23E8));
     if (*(s16 *)(D_8013DD00 + 0x23B2) == 1) {
         p = D_8015E590;
@@ -20335,8 +20335,8 @@ void func_800BE974(void) {
         }
     }
     for (j = 0; j < 0x10; j++) {
-        gCmd(D_800F22B4++, 0xE7000000, 0);
-        gCmd(D_800F22B4++, 0xBA000602, 0);
+        gDPPipeSync(D_800F22B4++);
+        gDPSetColorDither(D_800F22B4++, G_CD_MAGICSQ);
         osWritebackDCacheAll();
     }
 }
@@ -20651,12 +20651,12 @@ void func_800BF8B0(void) {
     u16 j;
     u8 *p;
 
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFE793C);
     gCmd(D_800F22B4++, 0xB900031D, 0x005049D8);
-    gCmd(D_800F22B4++, 0xB6000000, 0x001F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 0x00000205);
-    gCmd(D_800F22B4++, 0xBA000602, 0x80);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
+    gDPSetColorDither(D_800F22B4++, G_CD_NOISE);
     func_80097CEC(0, *(s16 *)(D_8013DD00 + 0x23E8));
     p = D_8013DD00 + 0x75;
     for (i = 0; i < 0x24; i++) {
@@ -20673,8 +20673,8 @@ void func_800BF8B0(void) {
         p += 7;
     }
     for (j = 0; j < 0x10; j++) {
-        gCmd(D_800F22B4++, 0xE7000000, 0);
-        gCmd(D_800F22B4++, 0xBA000602, 0);
+        gDPPipeSync(D_800F22B4++);
+        gDPSetColorDither(D_800F22B4++, G_CD_MAGICSQ);
         osWritebackDCacheAll();
     }
 }
@@ -20779,35 +20779,35 @@ void func_800BFDA4(void) {
     s16 k;
     s16 v;
 
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA000E02, 0x8000);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16);
     gCmd(D_800F22B4++, 0xF5400000, 0);
-    gCmd(D_800F22B4++, 0xFD500000, (u32)D_800E2AD0);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32)D_800E2AD0);
     gCmd(D_800F22B4++, 0xF5500000, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x073FF080);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5402000, 0);
     gCmd(D_800F22B4++, 0xF2000000, 0x003FC03C);
     if (*(u8 *)(D_8013DD00 + 0x67C) != 0) {
-        gCmd(D_800F22B4++, 0xFD100000, (u32)D_800E9420);
-        gCmd(D_800F22B4++, 0xE8000000, 0);
+        gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_800E9420);
+        gDPTileSync(D_800F22B4++);
         gCmd(D_800F22B4++, 0xF5000100, 0x07000000);
-        gCmd(D_800F22B4++, 0xE6000000, 0);
+        gDPLoadSync(D_800F22B4++);
         gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-        gCmd(D_800F22B4++, 0xE7000000, 0);
+        gDPPipeSync(D_800F22B4++);
     } else {
-        gCmd(D_800F22B4++, 0xFD100000, (u32)(((*(u8 *)(*(u8 **)(D_8013DD00 + 0x668) + 8) & 0xFF) << 5) + D_800E3AD8));
-        gCmd(D_800F22B4++, 0xE8000000, 0);
+        gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)(((*(u8 *)(*(u8 **)(D_8013DD00 + 0x668) + 8) & 0xFF) << 5) + D_800E3AD8));
+        gDPTileSync(D_800F22B4++);
         gCmd(D_800F22B4++, 0xF5000100, 0x07000000);
-        gCmd(D_800F22B4++, 0xE6000000, 0);
+        gDPLoadSync(D_800F22B4++);
         gCmd(D_800F22B4++, 0xF0000000, 0x0703C000);
-        gCmd(D_800F22B4++, 0xE7000000, 0);
+        gDPPipeSync(D_800F22B4++);
     }
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
     gCmd(D_800F22B4++, 0xB900031D, 0x005049D8);
-    gCmd(D_800F22B4++, 0xB6000000, 0x001F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 0x00022205);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK | G_LIGHTING);
     D_8015F84E = 0x10;
     func_80097CEC(0, *(s16 *)(D_8013DD00 + 0x23E8));
     base = *(u8 **)(D_8013DD00 + 0x668);
@@ -20834,8 +20834,8 @@ void func_800BFDA4(void) {
             *(s16 *)(D_8013DD00 + 0x67A) = 0x100;
         }
     }
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA000E02, 0);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
     osWritebackDCacheAll();
 }
 
@@ -20955,12 +20955,12 @@ void func_800C0570(T_C0570 *arg0, s16 arg1) {
     s16 a;
 
     if (arg0->t[arg1] != 0) {
-        gCmd(D_800F22B4++, 0xBA000E02, 0);
-        gCmd(D_800F22B4++, 0xFD100000, D_801326DC);
+        gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
+        gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, D_801326DC);
         gCmd(D_800F22B4++, 0xF5100000, 0x07054150);
-        gCmd(D_800F22B4++, 0xE6000000, 0);
+        gDPLoadSync(D_800F22B4++);
         gCmd(D_800F22B4++, 0xF3000000, 0x073FF100);
-        gCmd(D_800F22B4++, 0xE7000000, 0);
+        gDPPipeSync(D_800F22B4++);
         gCmd(D_800F22B4++, 0xF5101000, 0x00054150);
         gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
         gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848);
@@ -21064,11 +21064,11 @@ void func_800C090C(void) {
     u8 k;
 
     D_800E44F0 = 0;
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
     gCmd(D_800F22B4++, 0xB900031D, 0x00504A50);
-    gCmd(D_800F22B4++, 0xB6000000, 0x001F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 0x00000205);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH);
     for (i = 0; i < ((PB_C090C *)D_8013DD00)->count; i++) {
         e = &((PB_C090C *)D_8013DD00)->arr[i];
         n = sins(e->f20) * ((e->f22 & 0xFFFF) + e->f22 * 0 + e->f22 * 0) >> 15;
@@ -21216,17 +21216,17 @@ void func_800C0EE8(void) {
     s16 i;
 
     D_800E44F0 = 0;
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
     gCmd(D_800F22B4++, 0xB900031D, 0x00504A50);
-    gCmd(D_800F22B4++, 0xB6000000, 0x001F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 0x00000005);
-    gCmd(D_800F22B4++, 0xBA000E02, 0);
-    gCmd(D_800F22B4++, 0xFD100000, D_801326DC);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, D_801326DC);
     gCmd(D_800F22B4++, 0xF5100000, 0x07054150);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x073FF100);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5101000, 0x00054150);
     gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
     for (i = 0; i < ((B_C0EE8 *)D_8013DD00)->count; i++) {
@@ -21831,18 +21831,18 @@ void func_800C25FC(void) {
 
     D_800E44F0 = 0;
     if (D_800E23B4 != 0) {
-        gCmd(D_800F22B4++, 0xE7000000, 0);
-        gCmd(D_800F22B4++, 0xBA000E02, 0);
+        gDPPipeSync(D_800F22B4++);
+        gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
         gCmd(D_800F22B4++, 0xED000000, 0x5003C0);
         gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
         gCmd(D_800F22B4++, 0xB900031D, 0x504240);
-        gCmd(D_800F22B4++, 0xB6000000, 0x1F3205);
-        gCmd(D_800F22B4++, 0xB7000000, 4);
-        gCmd(D_800F22B4++, 0xFD700000, D_80134BF4);
+        gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+        gSPSetGeometryMode(D_800F22B4++, G_SHADE);
+        gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, D_80134BF4);
         gCmd(D_800F22B4++, 0xF5700000, 0x07054150);
-        gCmd(D_800F22B4++, 0xE6000000, 0);
+        gDPLoadSync(D_800F22B4++);
         gCmd(D_800F22B4++, 0xF3000000, 0x071FF200);
-        gCmd(D_800F22B4++, 0xE7000000, 0);
+        gDPPipeSync(D_800F22B4++);
         gCmd(D_800F22B4++, 0xF5680800, 0x54150);
         gCmd(D_800F22B4++, 0xF2000000, 0x7C07C);
         for (i = 0, p = D_8013D380; i < 3; i++, p += 0x4C) {
@@ -22108,7 +22108,7 @@ void func_800C3058(void) {
 
     for (i = 1; i <= D_8015D980; i++) {
         func_800AF09C(i);
-        gCmd(D_800F22B4++, 0x06000000, (u32)D_10000D8);
+        gSPDisplayList(D_800F22B4++, (u32)D_10000D8);
         if (*(u8 *)(D_8013DD00 + 0x1680) == 0) {
             func_800AF294();
         } else {
@@ -22139,15 +22139,15 @@ void func_800C3058(void) {
                 a = 0xFF;
             }
             gCmd(D_800F22B4++, 0x03800010, (u32)D_800E0770);
-            gCmd(D_800F22B4++, 0xB6000000, 0x1F3204);
+            gSPClearGeometryMode(D_800F22B4++, G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
             gCmd(D_800F22B4++, 0xBB000000, 0);
-            gCmd(D_800F22B4++, 0xBA001402, 0);
+            gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE);
             gCmd(D_800F22B4++, 0xB900031D, 0x504340);
             gCmd(D_800F22B4++, 0xFCFFFFFF, 0xFFFDF6FB);
-            gCmd(D_800F22B4++, 0xF7000000, 0x10001);
+            gDPSetFillColor(D_800F22B4++, 0x10001);
             gCmd(D_800F22B4++, 0xFA000000, a & 0xFF);
             gCmd(D_800F22B4++, 0xF64FC3BC, 0);
-            gCmd(D_800F22B4++, 0xE7000000, 0);
+            gDPPipeSync(D_800F22B4++);
             func_800AF294();
         }
     }
@@ -22845,16 +22845,16 @@ void func_800C4C78(void) {
     u16 i;
     u16 base;
 
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
     gCmd(D_800F22B4++, 0xB900031D, 0x00504A50);
-    gCmd(D_800F22B4++, 0xB6000000, 0x001F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 5);
-    gCmd(D_800F22B4++, 0xFD700000, D_80134BF4);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, D_80134BF4);
     gCmd(D_800F22B4++, 0xF5700000, 0x07054150);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x071FF200);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5680800, 0x00054150);
     gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
     base = ((*(s32 *)(D_8013DD00 + 0x1278) << 15) - 0x4C8000) / 128;
@@ -23768,16 +23768,16 @@ void func_800C7300(void) {
     s16 x;
     s16 y;
 
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
     gCmd(D_800F22B4++, 0xB900031D, 0x00504240);
-    gCmd(D_800F22B4++, 0xB6000000, 0x001F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 4);
-    gCmd(D_800F22B4++, 0xFD100000, (u32)D_801317A0);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_SHADE);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_801317A0);
     gCmd(D_800F22B4++, 0xF5100000, 0x07000000);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x073FF100);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5101000, 0);
     gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
     gCmd(D_800F22B4++, 0x04300040, (u32)D_8015F848);
@@ -24812,11 +24812,11 @@ void func_800C9B2C(E_CA404 *p) {
     }
 
     off[0] = (c - 1) * 0x180;
-    gCmd(D_800F22B4++, 0xFD700000, off[0] + *(u32 *)&D_80138824);
+    gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, off[0] + *(u32 *)&D_80138824);
     gCmd(D_800F22B4++, 0xF5700000, 0x07094250);
-    gCmd(D_800F22B4++, 0xE6000000, 0);
+    gDPLoadSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF3000000, 0x070BF200);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
+    gDPPipeSync(D_800F22B4++);
     gCmd(D_800F22B4++, 0xF5680800, 0x00094250);
     gCmd(D_800F22B4++, 0xF2000000, 0x0007C02C);
 
@@ -24979,8 +24979,8 @@ void func_800CA148(void) {
 
     gCmd(D_800F22B4++, 0xFC121824, 0xFF33FFFF);
     gCmd(D_800F22B4++, 0xB900031D, 0x00504240);
-    gCmd(D_800F22B4++, 0xB6000000, 0x001F3205);
-    gCmd(D_800F22B4++, 0xB7000000, 4);
+    gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_SHADE);
     for (i = 0, p = D_8015FA10; i < 0x10; i++, p++) {
         flags = p->unk4;
         if ((flags & 1) && p->unk5 != -1) {
@@ -24999,11 +24999,11 @@ void func_800CA148(void) {
             if (!(flags & 2)) {
                 alpha = 0xFF;
             }
-            gCmd(D_800F22B4++, 0xFD700000, D_801380B0[p->unk5]);
+            gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, D_801380B0[p->unk5]);
             gCmd(D_800F22B4++, 0xF5700000, 0x07094250);
-            gCmd(D_800F22B4++, 0xE6000000, 0);
+            gDPLoadSync(D_800F22B4++);
             gCmd(D_800F22B4++, 0xF3000000, 0x071FF200);
-            gCmd(D_800F22B4++, 0xE7000000, 0);
+            gDPPipeSync(D_800F22B4++);
             gCmd(D_800F22B4++, 0xF5680800, 0x00094250);
             gCmd(D_800F22B4++, 0xF2000000, 0x0007C07C);
             func_800C988C(p->unk2, r, g, b, alpha);
@@ -25406,12 +25406,12 @@ extern void func_800CAE1C(void);
  * Store order is uniform w0-then-w1 (the canon macro): three of the seven pairs write
  * w1 first in ROM, but that is SCHEDULING, not source. */
 void func_800CB070(void) {
-    gCmd(D_800F22B4++, 0x06000000, (u32)D_10000D8);
+    gSPDisplayList(D_800F22B4++, (u32)D_10000D8);
     gCmd(D_800F22B4++, 0x01030040, (u32)D_15F978);
     gCmd(D_800F22B4++, 0x01020040, (u32)D_15F9B8);
-    gCmd(D_800F22B4++, 0xBC00000E, D_8015F9F8);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA000E02, 0);
+    gSPPerspNormalize(D_800F22B4++, D_8015F9F8);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
     gCmd(D_800F22B4++, 0xED000000, 0x005003C0);
     if (D_8015FDF8 == 0) {
         func_800C96C0(D_8015FDFE + 1, D_8015FDE8[D_8015FDFE]);
@@ -26278,8 +26278,8 @@ void buildAndSubmitGraphicsTasks(void *arg0) {
             func_80038478(&D_800F22B4, 0x20, 0x20, D_800E22D0, 0xFF, 0xFF, 0xFF, 0xFF);
             func_800338B0(&D_800F22B4);
         }
-        gCmd(D_800F22B4++, 0xE9000000, 0);
-        gCmd(D_800F22B4++, 0xB8000000, 0);
+        gDPFullSync(D_800F22B4++);
+        gSPEndDisplayList(D_800F22B4++);
         D_80160C68++;
         osWritebackDCache(dl, (s32)D_800F22B4 - (s32)gp - 0x68);
         tasks[D_800E2AC0] = (ScTCE7C *)gp;
@@ -26366,12 +26366,12 @@ void func_800CD3B8(u8 *arg0, s32 arg1) {
     }
     var_at = (s32)(u32)&D_10000D8;
     guPerspective((Mtx *)arg0, &D_801309EC, 33.0f, 1.3333334f, 10.0f, 8192.0f, 1.0f);
-    gCmd(D_800F22B4++, 0xBC00000E, (*(u16 *)&D_801309EC) + (*(s16 *)temp_s0 * 0));
+    gSPPerspNormalize(D_800F22B4++, (*(u16 *)&D_801309EC) + (*(s16 *)temp_s0 * 0));
     D_800E4488 = osGetTime();
     if (D_8015D980 == 1) {
         func_800AF09C_p(1);
         if ((*(u8 *)((u8 *)D_8013DD00 + 0x1274)) != 0) {
-            gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8);
+            gSPDisplayList(D_800F22B4++, (u32) &D_10000D8);
             sp13C = (Mtx *)(arg0 + 0x40);
             sp140 = (Mtx *)(arg0 + 0x140);
             D_8015F848 = (Vtx *) D_8013DCF8;
@@ -26380,7 +26380,7 @@ void func_800CD3B8(u8 *arg0, s32 arg1) {
             D_8013DCF8 += D_800E44F0 * 0x10;
         }
         if (D_8015FDF6 != 0) {
-            gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8);
+            gSPDisplayList(D_800F22B4++, (u32) &D_10000D8);
             sp13C = (Mtx *)(arg0 + 0x40);
             sp140 = (Mtx *)(arg0 + 0x140);
             D_8015F848 = (Vtx *) D_8013DCF8;
@@ -26399,13 +26399,13 @@ void func_800CD3B8(u8 *arg0, s32 arg1) {
             case 1:                                 /* switch 1 */
                 sp13C = (Mtx *)(arg0 + 0x40); sp140 = (Mtx *)(arg0 + 0x140);
                 if (D_8014D262 == 1) {
-                    gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8);
+                    gSPDisplayList(D_800F22B4++, (u32) &D_10000D8);
                 } else {
-                    gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000128);
+                    gSPDisplayList(D_800F22B4++, (u32) &D_1000128);
                 }
                 break;
             case 2:                                 /* switch 1 */
-                gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000178);
+                gSPDisplayList(D_800F22B4++, (u32) &D_1000178);
                 sp13C = (Mtx *)(arg0 + 0x80);
                 sp140 = (Mtx *)(arg0 + 0x180);
                 break;
@@ -27040,7 +27040,7 @@ block_289:;
                 func_800B2F10(((u8 *)D_8013DD00));
             }
     }
-    gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000208);
+    gSPDisplayList(D_800F22B4++, (u32) &D_1000208);
     for (var_s6 = 1; D_8015D980 >= var_s6; var_s6 += 1) {
             switch (var_s6) {                       /* switch 3; irregular */
             case 1:                                 /* switch 3 */
@@ -27055,26 +27055,26 @@ block_289:;
     }
     if ((D_8015D980 == 1) && (D_8015FDF6 != 0) && ((*(u8 *)((u8 *)D_8013DD00 + 0x1680)) == 4)) {
         func_800AF09C_p(1);
-        gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8);
+        gSPDisplayList(D_800F22B4++, (u32) &D_10000D8);
         D_8015F848 = (Vtx *) D_8013DCF8;
         D_800E44F0 = 0;
         func_800BA084();
         D_8013DCF8 += D_800E44F0 * 0x10;
     }
-    gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8);
+    gSPDisplayList(D_800F22B4++, (u32) &D_10000D8);
     func_80075CD8(arg1);
     for (var_s6 = 1; D_8015D980 >= var_s6; var_s6 += 1) {
             func_800AF09C_p(((var_s6 << 0x10) >> 0x10));
             switch (var_s6) {                       /* switch 4; irregular */
             case 1:                                 /* switch 4 */
                 if (D_8014D262 == 1) {
-                    gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8);
+                    gSPDisplayList(D_800F22B4++, (u32) &D_10000D8);
                 } else {
-                    gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000128);
+                    gSPDisplayList(D_800F22B4++, (u32) &D_1000128);
                 }
                 break;
             case 2:                                 /* switch 4 */
-                gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000178);
+                gSPDisplayList(D_800F22B4++, (u32) &D_1000178);
                 break;
             }
             func_800B8D40_p(var_s6 & 0xFF);
@@ -27097,13 +27097,13 @@ block_289:;
             switch (var_s6) {                       /* switch 5; irregular */
             case 1:                                 /* switch 5 */
                 if (D_8014D262 == 1) {
-                    gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8);
+                    gSPDisplayList(D_800F22B4++, (u32) &D_10000D8);
                 } else {
-                    gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000128);
+                    gSPDisplayList(D_800F22B4++, (u32) &D_1000128);
                 }
                 break;
             case 2:                                 /* switch 5 */
-                gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000178);
+                gSPDisplayList(D_800F22B4++, (u32) &D_1000178);
                 break;
             }
             func_800A742C(D_8013DCF8, arg0);
@@ -27128,13 +27128,13 @@ block_289:;
             switch (var_s6) {                       /* switch 6; irregular */
             case 1:                                 /* switch 6 */
                 if (D_8014D262 == 1) {
-                    gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8);
+                    gSPDisplayList(D_800F22B4++, (u32) &D_10000D8);
                 } else {
-                    gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000128);
+                    gSPDisplayList(D_800F22B4++, (u32) &D_1000128);
                 }
                 break;
             case 2:                                 /* switch 6 */
-                gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000178);
+                gSPDisplayList(D_800F22B4++, (u32) &D_1000178);
                 break;
             }
             D_8015F848 = (Vtx *) D_8013DCF8;
@@ -27145,7 +27145,7 @@ block_289:;
     guLookAt(arg0 + 0x280, 0.0f, 0.0f, 512.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
     guRotateRPY_2(arg0 + 0x2C0, 0.0f, 0.0f, -90.0f);
     guPerspective(arg0 + 0x240, &D_801309EC, 33.0f, 1.3333334f, 10.0f, 8192.0f, 1.0f);
-    gCmd(D_800F22B4++, 0x06000000, (u32) &D_10001C8);
+    gSPDisplayList(D_800F22B4++, (u32) &D_10001C8);
     gCmd(D_800F22B4++, 0xED000000, 0x5003C0);
     gCmd(D_800F22B4++, 0x03800010, (u32) &D_10000A8);
     for (var_s6 = 1; D_8015D980 >= var_s6; var_s6 += 1) {
@@ -27161,16 +27161,16 @@ block_289:;
             switch (var_s6) {                       /* switch 7; irregular */
             case 1:                                 /* switch 7 */
                 if (D_8014D262 == 1u) {
-                    gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8);
+                    gSPDisplayList(D_800F22B4++, (u32) &D_10000D8);
                 } else {
-                    gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000128);
+                    gSPDisplayList(D_800F22B4++, (u32) &D_1000128);
                 }
                 if (D_800E44A8 != 4) {
                     func_800699B4();
                 }
                 break;
             case 2:                                 /* switch 7 */
-                gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000178);
+                gSPDisplayList(D_800F22B4++, (u32) &D_1000178);
                 func_800699B4();
                 break;
             }

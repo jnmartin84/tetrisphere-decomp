@@ -1385,9 +1385,9 @@ u8 *arg0;
         ((u8 **)arg0)[arg0[0x3D]][i * 0x10 + 0xA] = (s32)-z;
     }
     if (n != 0) {
-        gCmd(D_800F22B4++, 0xB7000000, 0x20000);
+        gSPSetGeometryMode(D_800F22B4++, G_LIGHTING);
     } else {
-        gCmd(D_800F22B4++, 0xB6000000, 0x20000);
+        gSPClearGeometryMode(D_800F22B4++, G_LIGHTING);
     }
 }
 
@@ -1574,26 +1574,26 @@ s32 arg1;
 
     base = *(u8 **)(arg0 + 0x1C) + *(s32 *)(*(u8 **)(arg0 + 0x1C) + 8);
     n = *(s32 *)base;
-    gCmd(D_800F22B4++, 0xB6000000, 0x1D3204);
-    gCmd(D_800F22B4++, 0xB7000000, 0x20005);
+    gSPClearGeometryMode(D_800F22B4++, G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);
+    gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_LIGHTING);
     guPerspective(&((P1A98 *)arg0)->proj[arg0[0x3D]], &pn, *(f32 *)(arg0 + 0x270),
                   1.3333334f, *(f32 *)(arg0 + 0x40), *(f32 *)(arg0 + 0x44), 1.0f);
-    gCmd(D_800F22B4++, 0xBC00000E, pn);
+    gSPPerspNormalize(D_800F22B4++, pn);
     gCmd(D_800F22B4++, 0x1030040, (u32)&((M1A98 *)arg0)->mtx[arg0[0x3D]] + 0x80000078);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA001402, 0x100000);
-    gCmd(D_800F22B4++, 0xBA001701, 0x800000);
-    gCmd(D_800F22B4++, 0xBA000602, 0);
-    gCmd(D_800F22B4++, 0xBA000402, 0x30);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetCycleType(D_800F22B4++, G_CYC_2CYCLE);
+    gDPPipelineMode(D_800F22B4++, G_PM_1PRIMITIVE);
+    gDPSetColorDither(D_800F22B4++, G_CD_MAGICSQ);
+    gDPSetAlphaDither(D_800F22B4++, G_AD_DISABLE);
     gCmd(D_800F22B4++, 0xFA000000, 0xFFFFFFFF);
     gCmd(D_800F22B4++, 0xF9000000, 0);
-    gCmd(D_800F22B4++, 0xBA001301, 0x80000);
-    gCmd(D_800F22B4++, 0xBA001102, 0);
-    gCmd(D_800F22B4++, 0xBA001001, 0x10000);
-    gCmd(D_800F22B4++, 0xBA000E02, 0);
-    gCmd(D_800F22B4++, 0xBA000C02, 0x2000);
+    gDPSetTexturePersp(D_800F22B4++, G_TP_PERSP);
+    gDPSetTextureDetail(D_800F22B4++, G_TD_CLAMP);
+    gDPSetTextureLOD(D_800F22B4++, G_TL_LOD);
+    gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
+    gDPSetTextureFilter(D_800F22B4++, G_TF_BILERP);
     gCmd(D_800F22B4++, 0xFC26A004, 0x1F0C93FF);
-    gCmd(D_800F22B4++, 0xB9000002, 1);
+    gDPSetAlphaCompare(D_800F22B4++, G_AC_THRESHOLD);
     gCmd(D_800F22B4++, 0xB900031D, *(s32 *)(arg0 + 0x68) | 0xC080000);
     arg0[0x38] = 1;
     for (i = 0; i < n; i++) {
@@ -1864,27 +1864,27 @@ s32 arg4;
             arg0->unk3E = -1;
         }
         if (p[0] & 4) {
-            gCmd(D_800F22B4++, 0xB7000000, 0x200);
+            gSPSetGeometryMode(D_800F22B4++, G_SHADING_SMOOTH);
         } else {
-            gCmd(D_800F22B4++, 0xB6000000, 0x200);
+            gSPClearGeometryMode(D_800F22B4++, G_SHADING_SMOOTH);
         }
         if (p[0] & 1) {
             if (arg0->unk3A != 0) {
-                gCmd(D_800F22B4++, 0xB7000000, 0x1000);
+                gSPSetGeometryMode(D_800F22B4++, G_CULL_FRONT);
             } else {
-                gCmd(D_800F22B4++, 0xB7000000, 0x2000);
+                gSPSetGeometryMode(D_800F22B4++, G_CULL_BACK);
             }
         } else {
             if (arg0->unk3A != 0) {
-                gCmd(D_800F22B4++, 0xB6000000, 0x1000);
+                gSPClearGeometryMode(D_800F22B4++, G_CULL_FRONT);
             } else {
-                gCmd(D_800F22B4++, 0xB6000000, 0x2000);
+                gSPClearGeometryMode(D_800F22B4++, G_CULL_BACK);
             }
         }
         if (p[0] & 2) {
-            gCmd(D_800F22B4++, 0xB6000000, 0x20000);
+            gSPClearGeometryMode(D_800F22B4++, G_LIGHTING);
         } else {
-            gCmd(D_800F22B4++, 0xB7000000, 0x20000);
+            gSPSetGeometryMode(D_800F22B4++, G_LIGHTING);
         }
         if (arg0->unk4A != 0) {
             if (p[0] & 0x20) {
@@ -1898,12 +1898,12 @@ s32 arg4;
         sh = 0;
         if (p[0] & 0x80) {
             sh = 1;
-            gCmd(D_800F22B4++, 0xB7000000, 0x40000);
+            gSPSetGeometryMode(D_800F22B4++, G_TEXTURE_GEN);
         } else if (p[0] & 0x40) {
             sh = 1;
-            gCmd(D_800F22B4++, 0xB7000000, 0xC0000);
+            gSPSetGeometryMode(D_800F22B4++, G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR);
         } else {
-            gCmd(D_800F22B4++, 0xB6000000, 0xC0000);
+            gSPClearGeometryMode(D_800F22B4++, G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR);
         }
         if (n != 0) {
             arg0->unk5C = arg0->unk4C;
@@ -1920,40 +1920,40 @@ s32 arg4;
             arg0->unk6C = arg0->unk6C & ~8;
             arg0->unk70 = arg0->unk70 & ~8;
         }
-        gCmd(D_800F22B4++, 0xE7000000, 0);
+        gDPPipeSync(D_800F22B4++);
         gCmd(D_800F22B4++, 0xFA000000, ((r & 0xFF) << 0x18) | ((g & 0xFF) << 0x10) | ((b & 0xFF) << 8) | ((u32)a & 0xFF));
         if (alpha < 0xFF || fmt == 1) {
             if (count != 0) {
                 if (arg0->unk38 != 5) {
-                    gCmd(D_800F22B4++, 0xBA001402, 0x100000);
+                    gDPSetCycleType(D_800F22B4++, G_CYC_2CYCLE);
                     gCmd(D_800F22B4++, 0xB900031D, arg0->unk60 | 0x0C080000);
                     arg0->unk38 = 5;
                 }
             } else if (arg0->unk38 != 4) {
-                gCmd(D_800F22B4++, 0xBA001402, 0);
+                gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE);
                 gCmd(D_800F22B4++, 0xB900031D, arg0->unk5C | arg0->unk60);
                 arg0->unk38 = 4;
             }
         } else if (count != 0) {
             if (p[0] & 0x10) {
                 if (arg0->unk38 != 1) {
-                    gCmd(D_800F22B4++, 0xBA001402, 0x100000);
+                    gDPSetCycleType(D_800F22B4++, G_CYC_2CYCLE);
                     gCmd(D_800F22B4++, 0xB900031D, arg0->unk68 | 0x0C080000);
                     arg0->unk38 = 1;
                 }
             } else if (arg0->unk38 != 3) {
-                gCmd(D_800F22B4++, 0xBA001402, 0x100000);
+                gDPSetCycleType(D_800F22B4++, G_CYC_2CYCLE);
                 gCmd(D_800F22B4++, 0xB900031D, arg0->unk70 | 0x0C080000);
                 arg0->unk38 = 3;
             }
         } else if (p[0] & 0x10) {
             if (arg0->unk38 != 0) {
-                gCmd(D_800F22B4++, 0xBA001402, 0);
+                gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE);
                 gCmd(D_800F22B4++, 0xB900031D, arg0->unk64 | arg0->unk68);
                 arg0->unk38 = 0;
             }
         } else if (arg0->unk38 != 2) {
-            gCmd(D_800F22B4++, 0xBA001402, 0);
+            gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE);
             gCmd(D_800F22B4++, 0xB900031D, arg0->unk6C | arg0->unk70);
             arg0->unk38 = 2;
         }
@@ -1990,19 +1990,19 @@ s32 arg4;
                 ww >>= 1;
                 hh >>= 1;
             }
-            gCmd(D_800F22B4++, 0xE7000000, 0);
-            gCmd(D_800F22B4++, 0xE8000000, 0);
+            gDPPipeSync(D_800F22B4++);
+            gDPTileSync(D_800F22B4++);
             switch (fmt) {
             case 0:
-                gCmd(D_800F22B4++, 0xFD100000, timg);
+                gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, timg);
                 gCmd(D_800F22B4++, 0xF5100000, 0x02000000);
                 break;
             case 1:
-                gCmd(D_800F22B4++, 0xFD700000, timg);
+                gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, timg);
                 gCmd(D_800F22B4++, 0xF5700000, 0x02000000);
                 break;
             case 4:
-                gCmd(D_800F22B4++, 0xFD880000, timg);
+                gDPSetTextureImage(D_800F22B4++, G_IM_FMT_I, G_IM_SIZ_8b, 1, timg);
                 gCmd(D_800F22B4++, 0xF5880000, 0x02000000);
                 break;
             case 2:

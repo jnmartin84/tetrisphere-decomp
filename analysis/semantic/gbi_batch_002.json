@@ -1,0 +1,4610 @@
+[
+  {
+    "file": "src/code_8170.c",
+    "line": 1388,
+    "offset": 42171,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x20000)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_LIGHTING)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1390,
+    "offset": 42233,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x20000)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_LIGHTING)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1577,
+    "offset": 47204,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x1D3204)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1578,
+    "offset": 47250,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x20005)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_LIGHTING)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1581,
+    "offset": 47461,
+    "old": "gCmd(D_800F22B4++, 0xBC00000E, pn)",
+    "new": "gSPPerspNormalize(D_800F22B4++, pn)",
+    "macro": "gSPPerspNormalize"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1583,
+    "offset": 47589,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1584,
+    "offset": 47628,
+    "old": "gCmd(D_800F22B4++, 0xBA001402, 0x100000)",
+    "new": "gDPSetCycleType(D_800F22B4++, G_CYC_2CYCLE)",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1585,
+    "offset": 47674,
+    "old": "gCmd(D_800F22B4++, 0xBA001701, 0x800000)",
+    "new": "gDPPipelineMode(D_800F22B4++, G_PM_1PRIMITIVE)",
+    "macro": "gDPPipelineMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1586,
+    "offset": 47720,
+    "old": "gCmd(D_800F22B4++, 0xBA000602, 0)",
+    "new": "gDPSetColorDither(D_800F22B4++, G_CD_MAGICSQ)",
+    "macro": "gDPSetColorDither"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1587,
+    "offset": 47759,
+    "old": "gCmd(D_800F22B4++, 0xBA000402, 0x30)",
+    "new": "gDPSetAlphaDither(D_800F22B4++, G_AD_DISABLE)",
+    "macro": "gDPSetAlphaDither"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1590,
+    "offset": 47888,
+    "old": "gCmd(D_800F22B4++, 0xBA001301, 0x80000)",
+    "new": "gDPSetTexturePersp(D_800F22B4++, G_TP_PERSP)",
+    "macro": "gDPSetTexturePersp"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1591,
+    "offset": 47933,
+    "old": "gCmd(D_800F22B4++, 0xBA001102, 0)",
+    "new": "gDPSetTextureDetail(D_800F22B4++, G_TD_CLAMP)",
+    "macro": "gDPSetTextureDetail"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1592,
+    "offset": 47972,
+    "old": "gCmd(D_800F22B4++, 0xBA001001, 0x10000)",
+    "new": "gDPSetTextureLOD(D_800F22B4++, G_TL_LOD)",
+    "macro": "gDPSetTextureLOD"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1593,
+    "offset": 48017,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1594,
+    "offset": 48056,
+    "old": "gCmd(D_800F22B4++, 0xBA000C02, 0x2000)",
+    "new": "gDPSetTextureFilter(D_800F22B4++, G_TF_BILERP)",
+    "macro": "gDPSetTextureFilter"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1596,
+    "offset": 48148,
+    "old": "gCmd(D_800F22B4++, 0xB9000002, 1)",
+    "new": "gDPSetAlphaCompare(D_800F22B4++, G_AC_THRESHOLD)",
+    "macro": "gDPSetAlphaCompare"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1867,
+    "offset": 55525,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x200)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_SHADING_SMOOTH)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1869,
+    "offset": 55593,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x200)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_SHADING_SMOOTH)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1873,
+    "offset": 55718,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x1000)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_CULL_FRONT)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1875,
+    "offset": 55795,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x2000)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_CULL_BACK)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1879,
+    "offset": 55918,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x1000)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_CULL_FRONT)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1881,
+    "offset": 55995,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x2000)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_CULL_BACK)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1885,
+    "offset": 56095,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x20000)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_LIGHTING)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1887,
+    "offset": 56165,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x20000)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_LIGHTING)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1901,
+    "offset": 56481,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x40000)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_TEXTURE_GEN)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1904,
+    "offset": 56588,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0xC0000)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1906,
+    "offset": 56658,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0xC0000)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1923,
+    "offset": 57270,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1928,
+    "offset": 57558,
+    "old": "gCmd(D_800F22B4++, 0xBA001402, 0x100000)",
+    "new": "gDPSetCycleType(D_800F22B4++, G_CYC_2CYCLE)",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1933,
+    "offset": 57792,
+    "old": "gCmd(D_800F22B4++, 0xBA001402, 0)",
+    "new": "gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE)",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1940,
+    "offset": 58073,
+    "old": "gCmd(D_800F22B4++, 0xBA001402, 0x100000)",
+    "new": "gDPSetCycleType(D_800F22B4++, G_CYC_2CYCLE)",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1945,
+    "offset": 58307,
+    "old": "gCmd(D_800F22B4++, 0xBA001402, 0x100000)",
+    "new": "gDPSetCycleType(D_800F22B4++, G_CYC_2CYCLE)",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1951,
+    "offset": 58556,
+    "old": "gCmd(D_800F22B4++, 0xBA001402, 0)",
+    "new": "gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE)",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1956,
+    "offset": 58764,
+    "old": "gCmd(D_800F22B4++, 0xBA001402, 0)",
+    "new": "gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE)",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1993,
+    "offset": 59754,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1994,
+    "offset": 59801,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1997,
+    "offset": 59899,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, timg)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, timg)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 2001,
+    "offset": 60056,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, timg)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, timg)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 2005,
+    "offset": 60213,
+    "old": "gCmd(D_800F22B4++, 0xFD880000, timg)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_I, G_IM_SIZ_8b, 1, timg)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7953,
+    "offset": 304427,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7954,
+    "offset": 304466,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7957,
+    "offset": 304601,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x001F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7958,
+    "offset": 304649,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x00000205)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7961,
+    "offset": 304767,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, (u32)D_80138F8C)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_80138F8C)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7963,
+    "offset": 304876,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7965,
+    "offset": 304971,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7969,
+    "offset": 305131,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, (u32)D_801396F4)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_801396F4)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7971,
+    "offset": 305240,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7973,
+    "offset": 305335,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8135,
+    "offset": 311385,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x001F3204)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8136,
+    "offset": 311437,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x00000205)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8142,
+    "offset": 311740,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32)D_8013178C)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_8013178C)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8144,
+    "offset": 311857,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8146,
+    "offset": 311960,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8163,
+    "offset": 313120,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32)D_8013178C)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_8013178C)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8165,
+    "offset": 313245,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8167,
+    "offset": 313356,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8224,
+    "offset": 316457,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8225,
+    "offset": 316508,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0x00008000)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8227,
+    "offset": 316619,
+    "old": "gCmd(D_800F22B4++, 0xFD500000, (u32)D_800E32D0)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32)D_800E32D0)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8229,
+    "offset": 316744,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8231,
+    "offset": 316855,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8234,
+    "offset": 317017,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32)D_800E93C0)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_800E93C0)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8235,
+    "offset": 317082,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8237,
+    "offset": 317193,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8239,
+    "offset": 317304,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8240,
+    "offset": 317355,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32)D_800E93E0)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_800E93E0)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8241,
+    "offset": 317420,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8243,
+    "offset": 317531,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8245,
+    "offset": 317642,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8246,
+    "offset": 317693,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32)D_800E9400)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_800E9400)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8247,
+    "offset": 317758,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8249,
+    "offset": 317869,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8251,
+    "offset": 317980,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8301,
+    "offset": 321238,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8996,
+    "offset": 343653,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9018,
+    "offset": 344248,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9025,
+    "offset": 344447,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9444,
+    "offset": 360261,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D778)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D778)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9445,
+    "offset": 360315,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9447,
+    "offset": 360402,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9449,
+    "offset": 360489,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9450,
+    "offset": 360528,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D798)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D798)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9451,
+    "offset": 360582,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9453,
+    "offset": 360669,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9455,
+    "offset": 360756,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9456,
+    "offset": 360795,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D7B8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D7B8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9457,
+    "offset": 360849,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9459,
+    "offset": 360936,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9461,
+    "offset": 361023,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9462,
+    "offset": 361062,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D7D8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D7D8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9463,
+    "offset": 361116,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9465,
+    "offset": 361203,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9467,
+    "offset": 361290,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9468,
+    "offset": 361329,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D7F8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D7F8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9469,
+    "offset": 361383,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9471,
+    "offset": 361470,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9473,
+    "offset": 361557,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9474,
+    "offset": 361596,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D818)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D818)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9475,
+    "offset": 361650,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9477,
+    "offset": 361737,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9479,
+    "offset": 361824,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9480,
+    "offset": 361863,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D838)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D838)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9481,
+    "offset": 361917,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9483,
+    "offset": 362004,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9485,
+    "offset": 362091,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9486,
+    "offset": 362130,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D858)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D858)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9487,
+    "offset": 362184,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9489,
+    "offset": 362271,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9491,
+    "offset": 362358,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9492,
+    "offset": 362397,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D878)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D878)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9493,
+    "offset": 362451,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9495,
+    "offset": 362538,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9497,
+    "offset": 362625,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9498,
+    "offset": 362664,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D898)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D898)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9499,
+    "offset": 362718,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9501,
+    "offset": 362805,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9503,
+    "offset": 362892,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9504,
+    "offset": 362931,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D8B8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D8B8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9505,
+    "offset": 362985,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9507,
+    "offset": 363072,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9509,
+    "offset": 363159,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9510,
+    "offset": 363198,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D8D8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D8D8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9511,
+    "offset": 363252,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9513,
+    "offset": 363339,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9515,
+    "offset": 363426,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9516,
+    "offset": 363465,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D8F8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D8F8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9517,
+    "offset": 363519,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9519,
+    "offset": 363606,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9521,
+    "offset": 363693,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9522,
+    "offset": 363732,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D918)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D918)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9523,
+    "offset": 363786,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9525,
+    "offset": 363873,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9527,
+    "offset": 363960,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9528,
+    "offset": 363999,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D938)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D938)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9529,
+    "offset": 364053,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9531,
+    "offset": 364140,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9533,
+    "offset": 364227,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9534,
+    "offset": 364266,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_8015D958)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_8015D958)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9535,
+    "offset": 364320,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9537,
+    "offset": 364407,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9539,
+    "offset": 364494,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9744,
+    "offset": 374326,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9746,
+    "offset": 374413,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0x8000)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9774,
+    "offset": 375818,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9775,
+    "offset": 375869,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, D_8013535C)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, D_8013535C)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9777,
+    "offset": 375989,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9779,
+    "offset": 376100,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9792,
+    "offset": 376873,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0x8000)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9793,
+    "offset": 376929,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, *(s32 *)((u8 *)D_8014CC98[D_8015F59C] + 0x50))",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, *(s32 *)((u8 *)D_8014CC98[D_8015F59C] + 0x50))",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9794,
+    "offset": 377024,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9796,
+    "offset": 377135,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9798,
+    "offset": 377246,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9799,
+    "offset": 377297,
+    "old": "gCmd(D_800F22B4++, 0xFD500000, *(s32 *)((*(s16 *)D_8015E990 % 9) * 4 + (u8 *)D_8014CC98[D_8015F59C] + 0x54))",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, *(s32 *)((*(s16 *)D_8015E990 % 9) * 4 + (u8 *)D_8014CC98[D_8015F59C] + 0x54))",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9801,
+    "offset": 377483,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9803,
+    "offset": 377594,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9861,
+    "offset": 380170,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9887,
+    "offset": 381231,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, D_8013535C)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, D_8013535C)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9889,
+    "offset": 381327,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9891,
+    "offset": 381414,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10009,
+    "offset": 386589,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, D_80135360)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, D_80135360)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10011,
+    "offset": 386685,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10013,
+    "offset": 386772,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10369,
+    "offset": 400610,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10370,
+    "offset": 400649,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x001F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10371,
+    "offset": 400697,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x00020205)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_LIGHTING)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10374,
+    "offset": 400841,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10375,
+    "offset": 400880,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0x00008000)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10377,
+    "offset": 400967,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32)D_800E3AD8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_800E3AD8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10378,
+    "offset": 401020,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10379,
+    "offset": 401103,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10381,
+    "offset": 401190,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10382,
+    "offset": 401229,
+    "old": "gCmd(D_800F22B4++, 0xFD500000, (u32)D_800E2AD0)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32)D_800E2AD0)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10384,
+    "offset": 401330,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10386,
+    "offset": 401417,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10401,
+    "offset": 401809,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10409,
+    "offset": 401995,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10482,
+    "offset": 405089,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10484,
+    "offset": 405208,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10485,
+    "offset": 405247,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0x8000)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10486,
+    "offset": 405291,
+    "old": "gCmd(D_800F22B4++, 0xBA000C02, 0x2000)",
+    "new": "gDPSetTextureFilter(D_800F22B4++, G_TF_BILERP)",
+    "macro": "gDPSetTextureFilter"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10646,
+    "offset": 412283,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10899,
+    "offset": 422381,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10991,
+    "offset": 424981,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10995,
+    "offset": 425160,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0x8000)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10997,
+    "offset": 425243,
+    "old": "gCmd(D_800F22B4++, 0xFD500000, (u32) D_800E2AD0)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32) D_800E2AD0)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10998,
+    "offset": 425341,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11000,
+    "offset": 425428,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11003,
+    "offset": 425552,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3AD8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3AD8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11004,
+    "offset": 425606,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11006,
+    "offset": 425693,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11008,
+    "offset": 425780,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11009,
+    "offset": 425819,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3AF8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3AF8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11010,
+    "offset": 425873,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11012,
+    "offset": 425960,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11014,
+    "offset": 426047,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11015,
+    "offset": 426086,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B18)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B18)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11016,
+    "offset": 426140,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11018,
+    "offset": 426227,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11020,
+    "offset": 426314,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11021,
+    "offset": 426353,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B38)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B38)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11022,
+    "offset": 426407,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11024,
+    "offset": 426494,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11026,
+    "offset": 426581,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11027,
+    "offset": 426620,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B58)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B58)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11028,
+    "offset": 426674,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11030,
+    "offset": 426761,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11032,
+    "offset": 426848,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11033,
+    "offset": 426887,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B78)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B78)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11034,
+    "offset": 426941,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11036,
+    "offset": 427028,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11038,
+    "offset": 427115,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11039,
+    "offset": 427154,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B98)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B98)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11040,
+    "offset": 427208,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11042,
+    "offset": 427295,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11044,
+    "offset": 427382,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11045,
+    "offset": 427421,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BB8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BB8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11046,
+    "offset": 427475,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11048,
+    "offset": 427562,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11050,
+    "offset": 427649,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11051,
+    "offset": 427688,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BD8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BD8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11052,
+    "offset": 427742,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11054,
+    "offset": 427829,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11056,
+    "offset": 427916,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11057,
+    "offset": 427955,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BF8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BF8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11058,
+    "offset": 428009,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11060,
+    "offset": 428096,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11062,
+    "offset": 428183,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11063,
+    "offset": 428222,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C18)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C18)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11064,
+    "offset": 428276,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11066,
+    "offset": 428363,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11068,
+    "offset": 428450,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11069,
+    "offset": 428489,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C38)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C38)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11070,
+    "offset": 428543,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11072,
+    "offset": 428630,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11074,
+    "offset": 428717,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11075,
+    "offset": 428756,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C58)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C58)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11076,
+    "offset": 428810,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11078,
+    "offset": 428897,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11080,
+    "offset": 428984,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11081,
+    "offset": 429023,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C78)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C78)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11082,
+    "offset": 429077,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11084,
+    "offset": 429164,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11086,
+    "offset": 429251,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11087,
+    "offset": 429290,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C98)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C98)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11088,
+    "offset": 429344,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11090,
+    "offset": 429431,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11092,
+    "offset": 429518,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11093,
+    "offset": 429557,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3CB8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3CB8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11094,
+    "offset": 429611,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11096,
+    "offset": 429698,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11098,
+    "offset": 429785,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11099,
+    "offset": 429824,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11100,
+    "offset": 429863,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0xF3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11101,
+    "offset": 429908,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x22205)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK | G_LIGHTING)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11560,
+    "offset": 448545,
+    "old": "gCmd(p + 0x80, 0xB7000000, 0x205)",
+    "new": "gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11698,
+    "offset": 453370,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11706,
+    "offset": 453866,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11707,
+    "offset": 453921,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0x8000)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11709,
+    "offset": 454045,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, *(s32 *)(p + 0xC8))",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, *(s32 *)(p + 0xC8))",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11710,
+    "offset": 454121,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11712,
+    "offset": 454248,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11714,
+    "offset": 454375,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11716,
+    "offset": 454493,
+    "old": "gCmd(D_800F22B4++, 0xFD500000, (u32) D_800E2AD0)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32) D_800E2AD0)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11718,
+    "offset": 454635,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11720,
+    "offset": 454762,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11724,
+    "offset": 454975,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, *(s32 *)(p + 0xC8))",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, *(s32 *)(p + 0xC8))",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11725,
+    "offset": 455051,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11727,
+    "offset": 455178,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11729,
+    "offset": 455305,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11731,
+    "offset": 455423,
+    "old": "gCmd(D_800F22B4++, 0xFD500000, *(s32 *)(p + 0xC4))",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, *(s32 *)(p + 0xC4))",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11733,
+    "offset": 455567,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11735,
+    "offset": 455694,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11740,
+    "offset": 455920,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11741,
+    "offset": 455975,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11743,
+    "offset": 456085,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, *(s32 *)(p + 0xC4))",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, *(s32 *)(p + 0xC4))",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11745,
+    "offset": 456221,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11747,
+    "offset": 456340,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11753,
+    "offset": 456636,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x1F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11759,
+    "offset": 456914,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11765,
+    "offset": 457185,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11890,
+    "offset": 463894,
+    "old": "gCmd(p+0x80, 0xB7000000, 0x205)",
+    "new": "gSPSetGeometryMode(p+0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 11917,
+    "offset": 464912,
+    "old": "gCmd(p+0x80, 0xB7000000, 1)",
+    "new": "gSPSetGeometryMode(p+0x80, G_ZBUFFER)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 12027,
+    "offset": 468328,
+    "old": "gCmd(dst + 0x80, 0xB7000000, 1)",
+    "new": "gSPSetGeometryMode(dst + 0x80, G_ZBUFFER)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16890,
+    "offset": 626518,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, (u32)&((u8 *)D_80137900)[(9 - n % 10) << 10])",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)&((u8 *)D_80137900)[(9 - n % 10) << 10])",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16892,
+    "offset": 626664,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16894,
+    "offset": 626767,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16980,
+    "offset": 630334,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16983,
+    "offset": 630467,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x1F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 16984,
+    "offset": 630513,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 4)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_SHADE)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17110,
+    "offset": 635860,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, D_80131F28[i])",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, D_80131F28[i])",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17112,
+    "offset": 635959,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17114,
+    "offset": 636046,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17196,
+    "offset": 639641,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17199,
+    "offset": 639774,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x1F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17200,
+    "offset": 639820,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 4)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_SHADE)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17558,
+    "offset": 652781,
+    "old": "gCmd(p + 0x80, 0xB7000000, 0x20205)",
+    "new": "gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_LIGHTING)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17573,
+    "offset": 653257,
+    "old": "gCmd(p + 0x80, 0xB7000000, 0x205)",
+    "new": "gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 17815,
+    "offset": 662222,
+    "old": "gCmd(p + 0x80, 0xB7000000, 0x205)",
+    "new": "gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18047,
+    "offset": 672035,
+    "old": "gCmd(p + 0x80, 0xB7000000, 0x20205)",
+    "new": "gSPSetGeometryMode(p + 0x80, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_LIGHTING)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18703,
+    "offset": 697742,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18706,
+    "offset": 697877,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x001F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18707,
+    "offset": 697925,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x00000004)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_SHADE)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18709,
+    "offset": 697974,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, (u32)D_80137150)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_80137150)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18711,
+    "offset": 698075,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18713,
+    "offset": 698162,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18758,
+    "offset": 699638,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, (u32)D_80136234)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_80136234)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18760,
+    "offset": 699739,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18762,
+    "offset": 699826,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18807,
+    "offset": 701298,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, (u32)D_801369E0)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_801369E0)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18809,
+    "offset": 701399,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18811,
+    "offset": 701486,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18856,
+    "offset": 702958,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, (u32)D_80135ACC)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_80135ACC)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18858,
+    "offset": 703059,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 18860,
+    "offset": 703146,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19210,
+    "offset": 713687,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19213,
+    "offset": 713822,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x001F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19214,
+    "offset": 713870,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 4)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_SHADE)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19215,
+    "offset": 713909,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19216,
+    "offset": 713948,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, (u32)D_8013448C)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, (u32)D_8013448C)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19218,
+    "offset": 714049,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19220,
+    "offset": 714136,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19614,
+    "offset": 728463,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19617,
+    "offset": 728596,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x1F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19618,
+    "offset": 728642,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x22205)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK | G_LIGHTING)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19619,
+    "offset": 728687,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3AD8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3AD8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19620,
+    "offset": 728741,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19622,
+    "offset": 728828,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19624,
+    "offset": 728915,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19625,
+    "offset": 728954,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3AF8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3AF8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19626,
+    "offset": 729008,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19628,
+    "offset": 729095,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19630,
+    "offset": 729182,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19631,
+    "offset": 729221,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B18)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B18)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19632,
+    "offset": 729275,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19634,
+    "offset": 729362,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19636,
+    "offset": 729449,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19637,
+    "offset": 729488,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B38)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B38)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19638,
+    "offset": 729542,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19640,
+    "offset": 729629,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19642,
+    "offset": 729716,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19643,
+    "offset": 729755,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B58)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B58)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19644,
+    "offset": 729809,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19646,
+    "offset": 729896,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19648,
+    "offset": 729983,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19649,
+    "offset": 730022,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B78)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B78)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19650,
+    "offset": 730076,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19652,
+    "offset": 730163,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19654,
+    "offset": 730250,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19655,
+    "offset": 730289,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B98)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B98)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19656,
+    "offset": 730343,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19658,
+    "offset": 730430,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19660,
+    "offset": 730517,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19661,
+    "offset": 730556,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BB8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BB8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19662,
+    "offset": 730610,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19664,
+    "offset": 730697,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19666,
+    "offset": 730784,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19667,
+    "offset": 730823,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BD8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BD8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19668,
+    "offset": 730877,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19670,
+    "offset": 730964,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19672,
+    "offset": 731051,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19673,
+    "offset": 731090,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BF8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BF8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19674,
+    "offset": 731144,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19676,
+    "offset": 731231,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19678,
+    "offset": 731318,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19679,
+    "offset": 731357,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C18)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C18)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19680,
+    "offset": 731411,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19682,
+    "offset": 731498,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19684,
+    "offset": 731585,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19685,
+    "offset": 731624,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C38)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C38)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19686,
+    "offset": 731678,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19688,
+    "offset": 731765,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19690,
+    "offset": 731852,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19691,
+    "offset": 731891,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C58)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C58)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19692,
+    "offset": 731945,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19694,
+    "offset": 732032,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19696,
+    "offset": 732119,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19697,
+    "offset": 732158,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C78)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C78)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19698,
+    "offset": 732212,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19700,
+    "offset": 732299,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19702,
+    "offset": 732386,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19703,
+    "offset": 732425,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C98)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C98)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19704,
+    "offset": 732479,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19706,
+    "offset": 732566,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19708,
+    "offset": 732653,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19709,
+    "offset": 732692,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3CB8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3CB8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19710,
+    "offset": 732746,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19712,
+    "offset": 732833,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19714,
+    "offset": 732920,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19715,
+    "offset": 732959,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19716,
+    "offset": 732998,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0x8000)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19718,
+    "offset": 733081,
+    "old": "gCmd(D_800F22B4++, 0xFD500000, (u32) D_800E2AD0)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32) D_800E2AD0)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19719,
+    "offset": 733179,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19721,
+    "offset": 733266,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19727,
+    "offset": 733488,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19728,
+    "offset": 733527,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19940,
+    "offset": 740107,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19998,
+    "offset": 742407,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19999,
+    "offset": 742446,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0x8000)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20000,
+    "offset": 742490,
+    "old": "gCmd(D_800F22B4++, 0xBA000C02, 0x2000)",
+    "new": "gDPSetTextureFilter(D_800F22B4++, G_TF_BILERP)",
+    "macro": "gDPSetTextureFilter"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20001,
+    "offset": 742534,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x1F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20002,
+    "offset": 742580,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x22205)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK | G_LIGHTING)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20005,
+    "offset": 742719,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20006,
+    "offset": 742758,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0x8000)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20008,
+    "offset": 742841,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3AD8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3AD8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20009,
+    "offset": 742895,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20011,
+    "offset": 742982,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20013,
+    "offset": 743069,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20014,
+    "offset": 743108,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3AF8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3AF8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20015,
+    "offset": 743162,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20017,
+    "offset": 743249,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20019,
+    "offset": 743336,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20020,
+    "offset": 743375,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B18)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B18)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20021,
+    "offset": 743429,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20023,
+    "offset": 743516,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20025,
+    "offset": 743603,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20026,
+    "offset": 743642,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B38)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B38)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20027,
+    "offset": 743696,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20029,
+    "offset": 743783,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20031,
+    "offset": 743870,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20032,
+    "offset": 743909,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B58)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B58)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20033,
+    "offset": 743963,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20035,
+    "offset": 744050,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20037,
+    "offset": 744137,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20038,
+    "offset": 744176,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B78)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B78)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20039,
+    "offset": 744230,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20041,
+    "offset": 744317,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20043,
+    "offset": 744404,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20044,
+    "offset": 744443,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3B98)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3B98)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20045,
+    "offset": 744497,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20047,
+    "offset": 744584,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20049,
+    "offset": 744671,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20050,
+    "offset": 744710,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BB8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BB8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20051,
+    "offset": 744764,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20053,
+    "offset": 744851,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20055,
+    "offset": 744938,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20056,
+    "offset": 744977,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BD8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BD8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20057,
+    "offset": 745031,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20059,
+    "offset": 745118,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20061,
+    "offset": 745205,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20062,
+    "offset": 745244,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3BF8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3BF8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20063,
+    "offset": 745298,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20065,
+    "offset": 745385,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20067,
+    "offset": 745472,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20068,
+    "offset": 745511,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C18)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C18)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20069,
+    "offset": 745565,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20071,
+    "offset": 745652,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20073,
+    "offset": 745739,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20074,
+    "offset": 745778,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C38)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C38)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20075,
+    "offset": 745832,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20077,
+    "offset": 745919,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20079,
+    "offset": 746006,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20080,
+    "offset": 746045,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C58)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C58)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20081,
+    "offset": 746099,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20083,
+    "offset": 746186,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20085,
+    "offset": 746273,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20086,
+    "offset": 746312,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C78)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C78)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20087,
+    "offset": 746366,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20089,
+    "offset": 746453,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20091,
+    "offset": 746540,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20092,
+    "offset": 746579,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3C98)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3C98)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20093,
+    "offset": 746633,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20095,
+    "offset": 746720,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20097,
+    "offset": 746807,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20098,
+    "offset": 746846,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32) D_800E3CB8)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32) D_800E3CB8)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20099,
+    "offset": 746900,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20101,
+    "offset": 746987,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20103,
+    "offset": 747074,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20104,
+    "offset": 747113,
+    "old": "gCmd(D_800F22B4++, 0xFD500000, (u32) D_800E2AD0)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32) D_800E2AD0)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20105,
+    "offset": 747211,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20107,
+    "offset": 747298,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20129,
+    "offset": 748016,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20130,
+    "offset": 748055,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20300,
+    "offset": 754192,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20303,
+    "offset": 754327,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x001F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20304,
+    "offset": 754375,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x00002205)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20305,
+    "offset": 754423,
+    "old": "gCmd(D_800F22B4++, 0xBA000602, 0x80)",
+    "new": "gDPSetColorDither(D_800F22B4++, G_CD_NOISE)",
+    "macro": "gDPSetColorDither"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20338,
+    "offset": 755379,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20339,
+    "offset": 755422,
+    "old": "gCmd(D_800F22B4++, 0xBA000602, 0)",
+    "new": "gDPSetColorDither(D_800F22B4++, G_CD_MAGICSQ)",
+    "macro": "gDPSetColorDither"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20654,
+    "offset": 767312,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20657,
+    "offset": 767447,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x001F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20658,
+    "offset": 767495,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x00000205)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20659,
+    "offset": 767543,
+    "old": "gCmd(D_800F22B4++, 0xBA000602, 0x80)",
+    "new": "gDPSetColorDither(D_800F22B4++, G_CD_NOISE)",
+    "macro": "gDPSetColorDither"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20676,
+    "offset": 768006,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20677,
+    "offset": 768049,
+    "old": "gCmd(D_800F22B4++, 0xBA000602, 0)",
+    "new": "gDPSetColorDither(D_800F22B4++, G_CD_MAGICSQ)",
+    "macro": "gDPSetColorDither"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20782,
+    "offset": 773451,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20783,
+    "offset": 773490,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0x8000)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_RGBA16)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20785,
+    "offset": 773573,
+    "old": "gCmd(D_800F22B4++, 0xFD500000, (u32)D_800E2AD0)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_16b, 1, (u32)D_800E2AD0)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20787,
+    "offset": 773674,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20789,
+    "offset": 773761,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20793,
+    "offset": 773935,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32)D_800E9420)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_800E9420)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20794,
+    "offset": 773992,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20796,
+    "offset": 774087,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20798,
+    "offset": 774182,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20800,
+    "offset": 774238,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32)(((*(u8 *)(*(u8 **)(D_8013DD00 + 0x668) + 8) & 0xFF) << 5) + D_800E3AD8))",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)(((*(u8 *)(*(u8 **)(D_8013DD00 + 0x668) + 8) & 0xFF) << 5) + D_800E3AD8))",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20801,
+    "offset": 774357,
+    "old": "gCmd(D_800F22B4++, 0xE8000000, 0)",
+    "new": "gDPTileSync(D_800F22B4++)",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20803,
+    "offset": 774452,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20805,
+    "offset": 774547,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20809,
+    "offset": 774688,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x001F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20810,
+    "offset": 774736,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x00022205)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_BACK | G_LIGHTING)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20837,
+    "offset": 775868,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20838,
+    "offset": 775907,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20958,
+    "offset": 779347,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20959,
+    "offset": 779390,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, D_801326DC)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, D_801326DC)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20961,
+    "offset": 779494,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 20963,
+    "offset": 779589,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21067,
+    "offset": 782827,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21070,
+    "offset": 782962,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x001F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21071,
+    "offset": 783010,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x00000205)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21219,
+    "offset": 787652,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21222,
+    "offset": 787787,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x001F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21223,
+    "offset": 787835,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 0x00000005)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21224,
+    "offset": 787883,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21225,
+    "offset": 787922,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, D_801326DC)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, D_801326DC)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21227,
+    "offset": 788018,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21229,
+    "offset": 788105,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21834,
+    "offset": 811067,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21835,
+    "offset": 811110,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21839,
+    "offset": 811305,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x1F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21840,
+    "offset": 811355,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 4)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_SHADE)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21841,
+    "offset": 811398,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, D_80134BF4)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, D_80134BF4)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21843,
+    "offset": 811502,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 21845,
+    "offset": 811597,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22111,
+    "offset": 822017,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32)D_10000D8)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32)D_10000D8)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22142,
+    "offset": 823282,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x1F3204)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22144,
+    "offset": 823383,
+    "old": "gCmd(D_800F22B4++, 0xBA001402, 0)",
+    "new": "gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE)",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22147,
+    "offset": 823540,
+    "old": "gCmd(D_800F22B4++, 0xF7000000, 0x10001)",
+    "new": "gDPSetFillColor(D_800F22B4++, 0x10001)",
+    "macro": "gDPSetFillColor"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22150,
+    "offset": 823694,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22848,
+    "offset": 848236,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22851,
+    "offset": 848371,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x001F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22852,
+    "offset": 848419,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 5)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22853,
+    "offset": 848458,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, D_80134BF4)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, D_80134BF4)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22855,
+    "offset": 848554,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22857,
+    "offset": 848641,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23771,
+    "offset": 878930,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23774,
+    "offset": 879065,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x001F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23775,
+    "offset": 879113,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 4)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_SHADE)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23776,
+    "offset": 879152,
+    "old": "gCmd(D_800F22B4++, 0xFD100000, (u32)D_801317A0)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, (u32)D_801317A0)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23778,
+    "offset": 879253,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 23780,
+    "offset": 879340,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24815,
+    "offset": 914110,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, off[0] + *(u32 *)&D_80138824)",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, off[0] + *(u32 *)&D_80138824)",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24817,
+    "offset": 914224,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24819,
+    "offset": 914311,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24982,
+    "offset": 920380,
+    "old": "gCmd(D_800F22B4++, 0xB6000000, 0x001F3205)",
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_ZBUFFER | G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD)",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 24983,
+    "offset": 920428,
+    "old": "gCmd(D_800F22B4++, 0xB7000000, 4)",
+    "new": "gSPSetGeometryMode(D_800F22B4++, G_SHADE)",
+    "macro": "gSPSetGeometryMode"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25002,
+    "offset": 920999,
+    "old": "gCmd(D_800F22B4++, 0xFD700000, D_801380B0[p->unk5])",
+    "new": "gDPSetTextureImage(D_800F22B4++, G_IM_FMT_IA, G_IM_SIZ_16b, 1, D_801380B0[p->unk5])",
+    "macro": "gDPSetTextureImage"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25004,
+    "offset": 921120,
+    "old": "gCmd(D_800F22B4++, 0xE6000000, 0)",
+    "new": "gDPLoadSync(D_800F22B4++)",
+    "macro": "gDPLoadSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25006,
+    "offset": 921223,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25409,
+    "offset": 934734,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32)D_10000D8)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32)D_10000D8)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25412,
+    "offset": 934888,
+    "old": "gCmd(D_800F22B4++, 0xBC00000E, D_8015F9F8)",
+    "new": "gSPPerspNormalize(D_800F22B4++, D_8015F9F8)",
+    "macro": "gSPPerspNormalize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25413,
+    "offset": 934936,
+    "old": "gCmd(D_800F22B4++, 0xE7000000, 0)",
+    "new": "gDPPipeSync(D_800F22B4++)",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 25414,
+    "offset": 934975,
+    "old": "gCmd(D_800F22B4++, 0xBA000E02, 0)",
+    "new": "gDPSetTextureLUT(D_800F22B4++, G_TT_NONE)",
+    "macro": "gDPSetTextureLUT"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26281,
+    "offset": 965962,
+    "old": "gCmd(D_800F22B4++, 0xE9000000, 0)",
+    "new": "gDPFullSync(D_800F22B4++)",
+    "macro": "gDPFullSync"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26282,
+    "offset": 966005,
+    "old": "gCmd(D_800F22B4++, 0xB8000000, 0)",
+    "new": "gSPEndDisplayList(D_800F22B4++)",
+    "macro": "gSPEndDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26369,
+    "offset": 969097,
+    "old": "gCmd(D_800F22B4++, 0xBC00000E, (*(u16 *)&D_801309EC) + (*(s16 *)temp_s0 * 0))",
+    "new": "gSPPerspNormalize(D_800F22B4++, (*(u16 *)&D_801309EC) + (*(s16 *)temp_s0 * 0))",
+    "macro": "gSPPerspNormalize"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26374,
+    "offset": 969330,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_10000D8)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26383,
+    "offset": 969665,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_10000D8)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26402,
+    "offset": 970515,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_10000D8)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26404,
+    "offset": 970610,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000128)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_1000128)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 26408,
+    "offset": 970784,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000178)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_1000178)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27043,
+    "offset": 1008563,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000208)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_1000208)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27058,
+    "offset": 1009256,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_10000D8)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27064,
+    "offset": 1009447,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_10000D8)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27071,
+    "offset": 1009841,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_10000D8)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27073,
+    "offset": 1009936,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000128)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_1000128)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27077,
+    "offset": 1010110,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000178)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_1000178)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27100,
+    "offset": 1011220,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_10000D8)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27102,
+    "offset": 1011315,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000128)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_1000128)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27106,
+    "offset": 1011489,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000178)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_1000178)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27131,
+    "offset": 1012811,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_10000D8)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27133,
+    "offset": 1012906,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000128)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_1000128)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27137,
+    "offset": 1013080,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000178)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_1000178)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27148,
+    "offset": 1013549,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_10001C8)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_10001C8)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27164,
+    "offset": 1014316,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_10000D8)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_10000D8)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27166,
+    "offset": 1014411,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000128)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_1000128)",
+    "macro": "gSPDisplayList"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 27173,
+    "offset": 1014679,
+    "old": "gCmd(D_800F22B4++, 0x06000000, (u32) &D_1000178)",
+    "new": "gSPDisplayList(D_800F22B4++, (u32) &D_1000178)",
+    "macro": "gSPDisplayList"
+  }
+]
