@@ -19564,8 +19564,8 @@ void func_800BB3D0(u8 *p) {
                     D_8015EDA0 = (s32)((u8 *)D_8014CC98[q] + r * 0x60 + 0x78);
                     {
                         Gfx *g = D_800F22B4++;
-                        g->words.w0 = 0xE8000000;
-                        g->words.w1 = 0;
+                        gDPTileSync(
+                            g);
                         if (*(u8 *)(p + 0x24) == 4) {
                             gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, 8, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0);
                         } else {

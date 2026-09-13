@@ -1,0 +1,600 @@
+[
+  {
+    "file": "src/game2.c",
+    "line": 19566,
+    "offset": 736437,
+    "old": "Gfx *g = D_800F22B4++;\n                        g->words.w0 = 0xE8000000;\n                        g->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xE8000000",
+      "0"
+    ],
+    "new": "Gfx *g = D_800F22B4++;\n                        gDPTileSync(\n                            g);",
+    "macro": "gDPTileSync"
+  },
+  {
+    "file": "src/main.c",
+    "line": 689,
+    "offset": 26195,
+    "old": "Gfx *g = D_800F22B4++; g->words.w0 = 0xB900031D; g->words.w1 = 0x0F0A4000;",
+    "args": [
+      "D_800F22B4++",
+      "0xB900031D",
+      "0x0F0A4000"
+    ],
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_OPA_SURF, G_RM_OPA_SURF2);",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/main.c",
+    "line": 691,
+    "offset": 26291,
+    "old": "Gfx *g = D_800F22B4++; g->words.w0 = 0xB900031D; g->words.w1 = 0x00504240;",
+    "args": [
+      "D_800F22B4++",
+      "0xB900031D",
+      "0x00504240"
+    ],
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2);",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/main.c",
+    "line": 841,
+    "offset": 31362,
+    "old": "Gfx *g = D_800F22B4++; g->words.w0 = 0xBC00000E; g->words.w1 = perspNorm;",
+    "args": [
+      "D_800F22B4++",
+      "0xBC00000E",
+      "perspNorm"
+    ],
+    "new": "gSPPerspNormalize(D_800F22B4++, perspNorm);",
+    "macro": "gSPPerspNormalize"
+  },
+  {
+    "file": "src/main.c",
+    "line": 843,
+    "offset": 31517,
+    "old": "Gfx *g = D_800F22B4++; g->words.w0 = 0x01030040; g->words.w1 = (u32)((u8 *)D_801028D4 + 0x80000F80);",
+    "args": [
+      "D_800F22B4++",
+      "0x01030040",
+      "(u32)((u8 *)D_801028D4 + 0x80000F80)"
+    ],
+    "new": "gSPMatrix(D_800F22B4++, (u32)((u8 *)D_801028D4 + 0x80000F80), G_MTX_PROJECTION | G_MTX_LOAD | G_MTX_NOPUSH);",
+    "macro": "gSPMatrix"
+  },
+  {
+    "file": "src/main.c",
+    "line": 844,
+    "offset": 31626,
+    "old": "Gfx *g = D_800F22B4++; g->words.w0 = 0x01020040; g->words.w1 = (u32)((u8 *)D_801028D4 + 0x80000FC0);",
+    "args": [
+      "D_800F22B4++",
+      "0x01020040",
+      "(u32)((u8 *)D_801028D4 + 0x80000FC0)"
+    ],
+    "new": "gSPMatrix(D_800F22B4++, (u32)((u8 *)D_801028D4 + 0x80000FC0), G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_NOPUSH);",
+    "macro": "gSPMatrix"
+  },
+  {
+    "file": "src/main.c",
+    "line": 848,
+    "offset": 31868,
+    "old": "Gfx *g = D_800F22B4++; g->words.w0 = 0xB900031D; g->words.w1 = 0x00504240;",
+    "args": [
+      "D_800F22B4++",
+      "0xB900031D",
+      "0x00504240"
+    ],
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_XLU_SURF, G_RM_XLU_SURF2);",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/main.c",
+    "line": 857,
+    "offset": 32527,
+    "old": "Gfx *g = D_800F22B4++; g->words.w0 = 0x04F00100; g->words.w1 = (u32)&D_801028D4->vtx[i * 9 * 4];",
+    "args": [
+      "D_800F22B4++",
+      "0x04F00100",
+      "(u32)&D_801028D4->vtx[i * 9 * 4]"
+    ],
+    "new": "gSPVertex(D_800F22B4++, (u32)&D_801028D4->vtx[i * 9 * 4], 16, 0);",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/main.c",
+    "line": 882,
+    "offset": 34473,
+    "old": "Gfx *g = D_800F22B4++; g->words.w0 = 0x04300040; g->words.w1 = (u32)&D_801028D4->vtx[i * 9 * 4 + 0x20];",
+    "args": [
+      "D_800F22B4++",
+      "0x04300040",
+      "(u32)&D_801028D4->vtx[i * 9 * 4 + 0x20]"
+    ],
+    "new": "gSPVertex(D_800F22B4++, (u32)&D_801028D4->vtx[i * 9 * 4 + 0x20], 4, 0);",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/main.c",
+    "line": 893,
+    "offset": 35406,
+    "old": "Gfx *g = D_800F22B4++; g->words.w0 = 0x04F00100; g->words.w1 = (u32)&D_801028D4->vtx[i * 9 * 4 + 0x10];",
+    "args": [
+      "D_800F22B4++",
+      "0x04F00100",
+      "(u32)&D_801028D4->vtx[i * 9 * 4 + 0x10]"
+    ],
+    "new": "gSPVertex(D_800F22B4++, (u32)&D_801028D4->vtx[i * 9 * 4 + 0x10], 16, 0);",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/main.c",
+    "line": 920,
+    "offset": 37396,
+    "old": "Gfx *g = D_800F22B4++; g->words.w0 = 0x04F00100; g->words.w1 = (u32)&D_801028D4->vtx[i * 9 * 4];",
+    "args": [
+      "D_800F22B4++",
+      "0x04F00100",
+      "(u32)&D_801028D4->vtx[i * 9 * 4]"
+    ],
+    "new": "gSPVertex(D_800F22B4++, (u32)&D_801028D4->vtx[i * 9 * 4], 16, 0);",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/main.c",
+    "line": 945,
+    "offset": 39342,
+    "old": "Gfx *g = D_800F22B4++; g->words.w0 = 0x04300040; g->words.w1 = (u32)&D_801028D4->vtx[i * 9 * 4 + 0x20];",
+    "args": [
+      "D_800F22B4++",
+      "0x04300040",
+      "(u32)&D_801028D4->vtx[i * 9 * 4 + 0x20]"
+    ],
+    "new": "gSPVertex(D_800F22B4++, (u32)&D_801028D4->vtx[i * 9 * 4 + 0x20], 4, 0);",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/main.c",
+    "line": 956,
+    "offset": 40275,
+    "old": "Gfx *g = D_800F22B4++; g->words.w0 = 0x04F00100; g->words.w1 = (u32)&D_801028D4->vtx[i * 9 * 4 + 0x10];",
+    "args": [
+      "D_800F22B4++",
+      "0x04F00100",
+      "(u32)&D_801028D4->vtx[i * 9 * 4 + 0x10]"
+    ],
+    "new": "gSPVertex(D_800F22B4++, (u32)&D_801028D4->vtx[i * 9 * 4 + 0x10], 16, 0);",
+    "macro": "gSPVertex"
+  },
+  {
+    "file": "src/main.c",
+    "line": 1532,
+    "offset": 55400,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xFF10013F;\n        g->words.w1 = (u32) D_800DFF00;",
+    "args": [
+      "D_800F22B4++",
+      "0xFF10013F",
+      "(u32) D_800DFF00"
+    ],
+    "new": "gDPSetColorImage(\n            D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 320, (u32) D_800DFF00\n        );",
+    "macro": "gDPSetColorImage"
+  },
+  {
+    "file": "src/main.c",
+    "line": 1537,
+    "offset": 55517,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xBB000000;\n        g->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xBB000000",
+      "0"
+    ],
+    "new": "gSPTexture(\n            D_800F22B4++, 0, 0, 0, G_TX_RENDERTILE, G_OFF\n        );",
+    "macro": "gSPTexture"
+  },
+  {
+    "file": "src/main.c",
+    "line": 1542,
+    "offset": 55619,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xBA001402;\n        g->words.w1 = 0x00300000;",
+    "args": [
+      "D_800F22B4++",
+      "0xBA001402",
+      "0x00300000"
+    ],
+    "new": "gDPSetCycleType(\n            D_800F22B4++, G_CYC_FILL\n        );",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/main.c",
+    "line": 1547,
+    "offset": 55730,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xF7000000;\n        g->words.w1 = 0x00010001;",
+    "args": [
+      "D_800F22B4++",
+      "0xF7000000",
+      "0x00010001"
+    ],
+    "new": "gDPSetFillColor(\n            D_800F22B4++, 0x00010001\n        );",
+    "macro": "gDPSetFillColor"
+  },
+  {
+    "file": "src/main.c",
+    "line": 1552,
+    "offset": 55841,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xB900031D;\n        g->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xB900031D",
+      "0"
+    ],
+    "new": "gDPSetRenderMode(\n            D_800F22B4++, G_RM_NOOP, G_RM_NOOP2\n        );",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/main.c",
+    "line": 1557,
+    "offset": 55943,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xF64FC3BC;\n        g->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xF64FC3BC",
+      "0"
+    ],
+    "new": "gDPFillRectangle(\n            D_800F22B4++, 0, 0, 319, 239\n        );",
+    "macro": "gDPFillRectangle"
+  },
+  {
+    "file": "src/main.c",
+    "line": 1562,
+    "offset": 56045,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xE7000000;\n        g->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xE7000000",
+      "0"
+    ],
+    "new": "gDPPipeSync(\n            D_800F22B4++\n        );",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/main.c",
+    "line": 1567,
+    "offset": 56147,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xFF10013F;\n        g->words.w1 = *(u32 *)((u8 *) D_801028C8 + 0x1910);",
+    "args": [
+      "D_800F22B4++",
+      "0xFF10013F",
+      "*(u32 *)((u8 *) D_801028C8 + 0x1910)"
+    ],
+    "new": "gDPSetColorImage(\n            D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 320, *(u32 *)((u8 *) D_801028C8 + 0x1910)\n        );",
+    "macro": "gDPSetColorImage"
+  },
+  {
+    "file": "src/main.c",
+    "line": 1572,
+    "offset": 56284,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xFCFFFFFF;\n        g->words.w1 = 0xFFFE793C;",
+    "args": [
+      "D_800F22B4++",
+      "0xFCFFFFFF",
+      "0xFFFE793C"
+    ],
+    "new": "gDPSetCombineMode(\n            D_800F22B4++, G_CC_SHADE, G_CC_SHADE\n        );",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/main.c",
+    "line": 1577,
+    "offset": 56395,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xBA001402;\n        g->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xBA001402",
+      "0"
+    ],
+    "new": "gDPSetCycleType(\n            D_800F22B4++, G_CYC_1CYCLE\n        );",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12646,
+    "offset": 441762,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xE7000000; gp->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xE7000000",
+      "0"
+    ],
+    "new": "gDPPipeSync(D_800F22B4++);",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12647,
+    "offset": 441839,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0x03800010; gp->words.w1 = (u32)(u8 *)D_800E0770;",
+    "args": [
+      "D_800F22B4++",
+      "0x03800010",
+      "(u32)(u8 *)D_800E0770"
+    ],
+    "new": "gSPViewport(D_800F22B4++, (u32)(u8 *)D_800E0770);",
+    "macro": "gSPViewport"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12648,
+    "offset": 441936,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xED000000; gp->words.w1 = 0x005003C0;",
+    "args": [
+      "D_800F22B4++",
+      "0xED000000",
+      "0x005003C0"
+    ],
+    "new": "gDPSetScissor(D_800F22B4++, G_SC_NON_INTERLACE, 0, 0, 320, 240);",
+    "macro": "gDPSetScissor"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12649,
+    "offset": 442022,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xB6000000; gp->words.w1 = 0x001F3204;",
+    "args": [
+      "D_800F22B4++",
+      "0xB6000000",
+      "0x001F3204"
+    ],
+    "new": "gSPClearGeometryMode(D_800F22B4++, G_SHADE | G_SHADING_SMOOTH | G_CULL_FRONT | G_CULL_BACK | G_FOG | G_LIGHTING | G_TEXTURE_GEN | G_TEXTURE_GEN_LINEAR | G_LOD);",
+    "macro": "gSPClearGeometryMode"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12650,
+    "offset": 442108,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xBB000000; gp->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xBB000000",
+      "0"
+    ],
+    "new": "gSPTexture(D_800F22B4++, 0, 0, 0, G_TX_RENDERTILE, G_OFF);",
+    "macro": "gSPTexture"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12652,
+    "offset": 442210,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xBA001402; gp->words.w1 = 0x00300000;",
+    "args": [
+      "D_800F22B4++",
+      "0xBA001402",
+      "0x00300000"
+    ],
+    "new": "gDPSetCycleType(D_800F22B4++, G_CYC_FILL);",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12653,
+    "offset": 442300,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xB900031D; gp->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xB900031D",
+      "0"
+    ],
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_NOOP, G_RM_NOOP2);",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12655,
+    "offset": 442394,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xBA001402; gp->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xBA001402",
+      "0"
+    ],
+    "new": "gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE);",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12656,
+    "offset": 442475,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xB900031D; gp->words.w1 = 0x00504340;",
+    "args": [
+      "D_800F22B4++",
+      "0xB900031D",
+      "0x00504340"
+    ],
+    "new": "gDPSetRenderMode(D_800F22B4++, G_RM_CLD_SURF, G_RM_CLD_SURF2);",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12657,
+    "offset": 442565,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xFCFFFFFF; gp->words.w1 = 0xFFFDF6FB;",
+    "args": [
+      "D_800F22B4++",
+      "0xFCFFFFFF",
+      "0xFFFDF6FB"
+    ],
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_PRIMITIVE, G_CC_PRIMITIVE);",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12661,
+    "offset": 442839,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xF7000000;\n      gp->words.w1 = ((((r << 8) & 0xF800) | ((g << 3) & 0x7C0) | ((b >> 2) & 0x3E) | 1) << 16) | (((r << 8) & 0xF800) | ((g << 3) & 0x7C0) | ((b >> 2) & 0x3E) | 1);",
+    "args": [
+      "D_800F22B4++",
+      "0xF7000000",
+      "((((r << 8) & 0xF800) | ((g << 3) & 0x7C0) | ((b >> 2) & 0x3E) | 1) << 16) | (((r << 8) & 0xF800) | ((g << 3) & 0x7C0) | ((b >> 2) & 0x3E) | 1)"
+    ],
+    "new": "gDPSetFillColor(D_800F22B4++,\n        ((((r << 8) & 0xF800) | ((g << 3) & 0x7C0) | ((b >> 2) & 0x3E) | 1) << 16) | (((r << 8) & 0xF800) | ((g << 3) & 0x7C0) | ((b >> 2) & 0x3E) | 1));",
+    "macro": "gDPSetFillColor"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12666,
+    "offset": 443239,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xE7000000; gp->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xE7000000",
+      "0"
+    ],
+    "new": "gDPPipeSync(D_800F22B4++);",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12667,
+    "offset": 443316,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xFCFFFFFF; gp->words.w1 = 0xFFFE793C;",
+    "args": [
+      "D_800F22B4++",
+      "0xFCFFFFFF",
+      "0xFFFE793C"
+    ],
+    "new": "gDPSetCombineMode(D_800F22B4++, G_CC_SHADE, G_CC_SHADE);",
+    "macro": "gDPSetCombineMode"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12669,
+    "offset": 443427,
+    "old": "Gfx *gp = D_800F22B4++; gp->words.w0 = 0xBA001402; gp->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xBA001402",
+      "0"
+    ],
+    "new": "gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE);",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12677,
+    "offset": 443584,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xE7000000;\n        g->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xE7000000",
+      "0"
+    ],
+    "new": "gDPPipeSync(\n            D_800F22B4++\n        );",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12682,
+    "offset": 443686,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xBA001402;\n        g->words.w1 = 0x00300000;",
+    "args": [
+      "D_800F22B4++",
+      "0xBA001402",
+      "0x00300000"
+    ],
+    "new": "gDPSetCycleType(\n            D_800F22B4++, G_CYC_FILL\n        );",
+    "macro": "gDPSetCycleType"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12687,
+    "offset": 443797,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xB900031D;\n        g->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xB900031D",
+      "0"
+    ],
+    "new": "gDPSetRenderMode(\n            D_800F22B4++, G_RM_NOOP, G_RM_NOOP2\n        );",
+    "macro": "gDPSetRenderMode"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12692,
+    "offset": 443899,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xFF10013F;\n        g->words.w1 = osVirtualToPhysical((void *)0x80000400);",
+    "args": [
+      "D_800F22B4++",
+      "0xFF10013F",
+      "osVirtualToPhysical((void *)0x80000400)"
+    ],
+    "new": "gDPSetColorImage(\n            D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 320, osVirtualToPhysical((void *)0x80000400)\n        );",
+    "macro": "gDPSetColorImage"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12697,
+    "offset": 444039,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xF7000000;\n        g->words.w1 = 0xFFFCFFFC;",
+    "args": [
+      "D_800F22B4++",
+      "0xF7000000",
+      "0xFFFCFFFC"
+    ],
+    "new": "gDPSetFillColor(\n            D_800F22B4++, 0xFFFCFFFC\n        );",
+    "macro": "gDPSetFillColor"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12707,
+    "offset": 444348,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xE7000000;\n        g->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xE7000000",
+      "0"
+    ],
+    "new": "gDPPipeSync(\n            D_800F22B4++\n        );",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12712,
+    "offset": 444450,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xFF10013F;\n        g->words.w1 = osVirtualToPhysical(*(void **)((u8 *) D_801028C8 + 0x1910));",
+    "args": [
+      "D_800F22B4++",
+      "0xFF10013F",
+      "osVirtualToPhysical(*(void **)((u8 *) D_801028C8 + 0x1910))"
+    ],
+    "new": "gDPSetColorImage(\n            D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 320, osVirtualToPhysical(*(void **)((u8 *) D_801028C8 + 0x1910))\n        );",
+    "macro": "gDPSetColorImage"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12717,
+    "offset": 444610,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xE7000000;\n        g->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xE7000000",
+      "0"
+    ],
+    "new": "gDPPipeSync(\n            D_800F22B4++\n        );",
+    "macro": "gDPPipeSync"
+  },
+  {
+    "file": "src/main.c",
+    "line": 12722,
+    "offset": 444712,
+    "old": "Gfx *g = D_800F22B4++;\n        g->words.w0 = 0xBA001402;\n        g->words.w1 = 0;",
+    "args": [
+      "D_800F22B4++",
+      "0xBA001402",
+      "0"
+    ],
+    "new": "gDPSetCycleType(\n            D_800F22B4++, G_CYC_1CYCLE\n        );",
+    "macro": "gDPSetCycleType"
+  }
+]
