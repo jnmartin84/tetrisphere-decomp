@@ -2,8 +2,10 @@
 
 Byte-matching N64 decompilation with semantic function names. Game source is
 imported exactly from semantic commit `490402d76f15dc7d4774c15dde72e868b3f15fcf`:
-26 identified functions, with every other source byte preserved from the
-completed decompilation. See [semantic findings](analysis/semantic/README.md).
+26 identified functions, with every other source byte initially preserved from
+the completed decompilation. Subsequent matching changes include the
+[GBI restoration in beginGraphicsFrame](analysis/semantic/GBI_BEGIN_GRAPHICS_FRAME.md).
+See [semantic findings](analysis/semantic/README.md).
 
 ## Build
 
@@ -62,8 +64,9 @@ source distribution manifest; after editing, the baseline manifest will correctl
 report the changed files. `python3 check-package.py --rom` checks the full ROM.
 
 Preserve game source formatting, types, expressions and physical line grouping.
-IDO code generation depends on source shape. Semantic changes so far alter only
-identifier spellings; tooling changes are documented separately.
+IDO code generation depends on source shape. The semantic rename batches alter
+only identifier spellings; GBI restorations and tooling changes are documented
+separately.
 
 See [build details](docs/BUILD.md), [asset research](docs/ASSETS.md), and
 [publication provenance](evidence/PUBLICATION.json). The original portable snapshot

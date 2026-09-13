@@ -26178,24 +26178,24 @@ void beginGraphicsFrame(void *arg0, void *arg1) {
     }
     D_8013DCF8 = *(s32 *)((u8 *)arg0 + 0x18EC);
     D_8013DCFC = D_8013DCF8;
-    gCmd(D_800F22B4++, 0xBC000006, 0);
-    gCmd(D_800F22B4++, 0xBC000406, osVirtualToPhysical(D_800DF75C));
-    gCmd(D_800F22B4++, 0xBC000806, osVirtualToPhysical(arg1));
-    gCmd(D_800F22B4++, 0x06000000, (u32)D_1000010);
-    gCmd(D_800F22B4++, 0x06000000, (u32)D_1000030);
-    gCmd(D_800F22B4++, 0xFE000000, osVirtualToPhysical(D_80000400));
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA001402, 0x300000);
-    gCmd(D_800F22B4++, 0xB900031D, 0);
-    gCmd(D_800F22B4++, 0xFF10013F, osVirtualToPhysical(D_80000400));
-    gCmd(D_800F22B4++, 0xF7000000, 0xFFFCFFFC);
-    gCmd(D_800F22B4++, 0xF64FC3BC, 0);
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xFF10013F, osVirtualToPhysical(*(void **)((u8 *)arg0 + 0x1910)));
-    gCmd(D_800F22B4++, 0xE7000000, 0);
-    gCmd(D_800F22B4++, 0xBA001402, 0);
-    gCmd(D_800F22B4++, 0x06000000, (u32)D_1000030);
-    gCmd(D_800F22B4++, 0x06000000, (u32)D_1000010);
+    gSPSegment(D_800F22B4++, 0, 0);
+    gSPSegment(D_800F22B4++, 1, osVirtualToPhysical(D_800DF75C));
+    gSPSegment(D_800F22B4++, 2, osVirtualToPhysical(arg1));
+    gSPDisplayList(D_800F22B4++, D_1000010);
+    gSPDisplayList(D_800F22B4++, D_1000030);
+    gDPSetDepthImage(D_800F22B4++, osVirtualToPhysical(D_80000400));
+    gDPPipeSync(D_800F22B4++);
+    gDPSetCycleType(D_800F22B4++, G_CYC_FILL);
+    gDPSetRenderMode(D_800F22B4++, G_RM_NOOP, G_RM_NOOP2);
+    gDPSetColorImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 320, osVirtualToPhysical(D_80000400));
+    gDPSetFillColor(D_800F22B4++, 0xFFFCFFFC);
+    gDPFillRectangle(D_800F22B4++, 0, 0, 319, 239);
+    gDPPipeSync(D_800F22B4++);
+    gDPSetColorImage(D_800F22B4++, G_IM_FMT_RGBA, G_IM_SIZ_16b, 320, osVirtualToPhysical(*(void **)((u8 *)arg0 + 0x1910)));
+    gDPPipeSync(D_800F22B4++);
+    gDPSetCycleType(D_800F22B4++, G_CYC_1CYCLE);
+    gSPDisplayList(D_800F22B4++, D_1000030);
+    gSPDisplayList(D_800F22B4++, D_1000010);
 }
 #undef gCmd
 
