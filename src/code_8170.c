@@ -1592,7 +1592,7 @@ s32 arg1;
     gDPSetTextureLOD(D_800F22B4++, G_TL_LOD);
     gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
     gDPSetTextureFilter(D_800F22B4++, G_TF_BILERP);
-    gCmd(D_800F22B4++, 0xFC26A004, 0x1F0C93FF);
+    gDPSetCombineLERP(D_800F22B4++, TEXEL1, TEXEL0, LOD_FRACTION, TEXEL0, TEXEL1, TEXEL0, LOD_FRACTION, TEXEL0, COMBINED, 0, SHADE, 0, COMBINED, 0, PRIMITIVE, 0);
     gDPSetAlphaCompare(D_800F22B4++, G_AC_THRESHOLD);
     gDPSetRenderMode(D_800F22B4++, *(s32 *)(arg0 + 0x68), G_RM_PASS);
     arg0[0x38] = 1;
@@ -1921,7 +1921,7 @@ s32 arg4;
             arg0->unk70 = arg0->unk70 & ~8;
         }
         gDPPipeSync(D_800F22B4++);
-        gCmd(D_800F22B4++, 0xFA000000, ((r & 0xFF) << 0x18) | ((g & 0xFF) << 0x10) | ((b & 0xFF) << 8) | ((u32)a & 0xFF));
+        gDPSetPrimColor(D_800F22B4++, 0, 0, r, g, b, (u32)a);
         if (alpha < 0xFF || fmt == 1) {
             if (count != 0) {
                 if (arg0->unk38 != 5) {
@@ -1976,7 +1976,7 @@ s32 arg4;
         p += count * 2;
         p += 5;
         if (count != 0) {
-            gCmd(D_800F22B4++, 0xFC26A004, 0x1F0C93FF);
+            gDPSetCombineLERP(D_800F22B4++, TEXEL1, TEXEL0, LOD_FRACTION, TEXEL0, TEXEL1, TEXEL0, LOD_FRACTION, TEXEL0, COMBINED, 0, SHADE, 0, COMBINED, 0, PRIMITIVE, 0);
             if (sh != 0) {
                 gSPTexture(D_800F22B4++, w << 6, h << 6, levels, 2, 1);
             } else {
@@ -2060,7 +2060,7 @@ s32 arg4;
                 }
             }
         } else {
-            gCmd(D_800F22B4++, 0xFC323864, 0xFF73FFFF);
+            gDPSetCombineLERP(D_800F22B4++, PRIMITIVE, 0, SHADE, 0, PRIMITIVE, 0, SHADE, 0, PRIMITIVE, 0, SHADE, 0, PRIMITIVE, 0, SHADE, 0);
         }
         n = *(s16 *)p;
         p += 2;

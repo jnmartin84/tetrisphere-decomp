@@ -1,0 +1,90 @@
+[
+  {
+    "file": "src/code_8170.c",
+    "line": 1595,
+    "offset": 48364,
+    "old": "gCmd(D_800F22B4++, 0xFC26A004, 0x1F0C93FF)",
+    "new": "gDPSetCombineLERP(D_800F22B4++, TEXEL1, TEXEL0, LOD_FRACTION, TEXEL0, TEXEL1, TEXEL0, LOD_FRACTION, TEXEL0, COMBINED, 0, SHADE, 0, COMBINED, 0, PRIMITIVE, 0)",
+    "macro": "gDPSetCombineLERP"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1979,
+    "offset": 59796,
+    "old": "gCmd(D_800F22B4++, 0xFC26A004, 0x1F0C93FF)",
+    "new": "gDPSetCombineLERP(D_800F22B4++, TEXEL1, TEXEL0, LOD_FRACTION, TEXEL0, TEXEL1, TEXEL0, LOD_FRACTION, TEXEL0, COMBINED, 0, SHADE, 0, COMBINED, 0, PRIMITIVE, 0)",
+    "macro": "gDPSetCombineLERP"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 2063,
+    "offset": 62863,
+    "old": "gCmd(D_800F22B4++, 0xFC323864, 0xFF73FFFF)",
+    "new": "gDPSetCombineLERP(D_800F22B4++, PRIMITIVE, 0, SHADE, 0, PRIMITIVE, 0, SHADE, 0, PRIMITIVE, 0, SHADE, 0, PRIMITIVE, 0, SHADE, 0)",
+    "macro": "gDPSetCombineLERP"
+  },
+  {
+    "file": "src/code_8170.c",
+    "line": 1924,
+    "offset": 57792,
+    "old": "gCmd(D_800F22B4++, 0xFA000000, ((r & 0xFF) << 0x18) | ((g & 0xFF) << 0x10) | ((b & 0xFF) << 8) | ((u32)a & 0xFF))",
+    "new": "gDPSetPrimColor(D_800F22B4++, 0, 0, r, g, b, (u32)a)",
+    "macro": "gDPSetPrimColor"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9009,
+    "offset": 346147,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, (((u8 *)D_8014CC98[D_8015F59C])[8] & 0xF) << 20)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, ((u8 *)D_8014CC98[D_8015F59C])[8], G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10483,
+    "offset": 410222,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, (((K94H *)D_8014CBC8[a1])->b8 & 0xF) << 20)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, ((K94H *)D_8014CBC8[a1])->b8, G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19572,
+    "offset": 737505,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, (((u8 *)D_8014CC98[q])[8] & 0xF) << 20)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, ((u8 *)D_8014CC98[q])[8], G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 19941,
+    "offset": 752923,
+    "old": "gCmd(D_800F22B4++, 0xF5402000, (((u8 *)D_8014CC98[q])[8] & 0xF) << 20)",
+    "new": "gDPSetTile(D_800F22B4++, G_IM_FMT_CI, G_IM_SIZ_4b, 16, 0, G_TX_RENDERTILE, ((u8 *)D_8014CC98[q])[8], G_TX_WRAP, 0, 0, G_TX_WRAP, 0, 0)",
+    "macro": "gDPSetTile"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10488,
+    "offset": 410457,
+    "old": "gCmd(D_800F22B4++, 0x01040040,\n         (u32)&((K94FT *)&((K94FAEC *)D_8013FAEC)->blk[D_8013FAF1])->t[a0])",
+    "new": "gSPMatrix(D_800F22B4++,\n         (u32)&((K94FT *)&((K94FAEC *)D_8013FAEC)->blk[D_8013FAF1])->t[a0], G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_PUSH)",
+    "macro": "gSPMatrix"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 10490,
+    "offset": 410569,
+    "old": "gCmd(D_800F22B4++, 0x01000040,\n         (u32)&((K94FR *)&((K94FAEC *)D_8013FAEC)->blk[D_8013FAF1])->r[a0])",
+    "new": "gSPMatrix(D_800F22B4++,\n         (u32)&((K94FR *)&((K94FAEC *)D_8013FAEC)->blk[D_8013FAF1])->r[a0], G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH)",
+    "macro": "gSPMatrix"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 22148,
+    "offset": 840656,
+    "old": "gCmd(D_800F22B4++, 0xFA000000, a & 0xFF)",
+    "new": "gDPSetPrimColor(D_800F22B4++, 0, 0, 0, 0, 0, a)",
+    "macro": "gDPSetPrimColor"
+  }
+]
