@@ -1,0 +1,82 @@
+[
+  {
+    "file": "src/game2.c",
+    "line": 7740,
+    "offset": 296361,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        (((D_8015F84E + 3) & 0xFF) << 24) | (((D_8015F84E + 3) * 10 & 0xFF) << 16) | ((D_8015F84E * 10 & 0xFF) << 8) | ((D_8015F84E + 2) * 10 & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E + 3, D_8015F84E, D_8015F84E + 2, D_8015F84E + 3)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 7808,
+    "offset": 298629,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        (((D_8015F84E + 3) & 0xFF) << 24) | (((D_8015F84E + 3) * 10 & 0xFF) << 16) | ((D_8015F84E * 10 & 0xFF) << 8) | ((D_8015F84E + 2) * 10 & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E + 3, D_8015F84E, D_8015F84E + 2, D_8015F84E + 3)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8340,
+    "offset": 324301,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        (((D_8015F84E + 3) & 0xFF) << 24) | (((D_8015F84E + 3) * 10 & 0xFF) << 16) | ((D_8015F84E * 10 & 0xFF) << 8) | ((D_8015F84E + 2) * 10 & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E + 3, D_8015F84E, D_8015F84E + 2, D_8015F84E + 3)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8416,
+    "offset": 326891,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        (((D_8015F84E + 3) & 0xFF) << 24) | ((((D_8015F84E + 3) * 10) & 0xFF) << 16) | ((((D_8015F84E + 2) * 10) & 0xFF) << 8) | ((D_8015F84E * 10) & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E + 3, D_8015F84E + 2, D_8015F84E, D_8015F84E + 3)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8491,
+    "offset": 329415,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        (((D_8015F84E + 3) & 0xFF) << 24) | (((D_8015F84E + 3) * 10 & 0xFF) << 16) | (((D_8015F84E + 1) * 10 & 0xFF) << 8) | ((D_8015F84E + 2) * 10 & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E + 3, D_8015F84E + 1, D_8015F84E + 2, D_8015F84E + 3)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8563,
+    "offset": 331850,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        (((D_8015F84E + 2) & 0xFF) << 24) | ((((D_8015F84E + 2) * 10) & 0xFF) << 16) | (((D_8015F84E * 10) & 0xFF) << 8) | (((D_8015F84E + 3) * 10) & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E + 2, D_8015F84E, D_8015F84E + 3, D_8015F84E + 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8635,
+    "offset": 334293,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        (((D_8015F84E + 2) & 0xFF) << 24) | ((((D_8015F84E + 2) * 10) & 0xFF) << 16) | (((D_8015F84E * 10) & 0xFF) << 8) | (((D_8015F84E + 3) * 10) & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E + 2, D_8015F84E, D_8015F84E + 3, D_8015F84E + 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 8707,
+    "offset": 336700,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n        (((D_8015F84E + 2) & 0xFF) << 24) | ((((D_8015F84E + 2) * 10) & 0xFF) << 16) | ((((D_8015F84E + 3) * 10) & 0xFF) << 8) | (((D_8015F84E * 10) & 0xFF)))",
+    "new": "gSP1Triangle(D_800F22B4++,\n        D_8015F84E + 2, D_8015F84E + 3, D_8015F84E, D_8015F84E + 2)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9622,
+    "offset": 371965,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n                            (((D_8015F84E + 3) & 0xFF) << 24) | (((D_8015F84E + 3) * 10 & 0xFF) << 16) | ((D_8015F84E * 10 & 0xFF) << 8) | ((D_8015F84E + 2) * 10 & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n                            D_8015F84E + 3, D_8015F84E, D_8015F84E + 2, D_8015F84E + 3)",
+    "macro": "gSP1Triangle"
+  },
+  {
+    "file": "src/game2.c",
+    "line": 9814,
+    "offset": 382325,
+    "old": "gCmd(D_800F22B4++, 0xBF000000,\n                (((D_8015F84E + 3) & 0xFF) << 24) | (((D_8015F84E + 3) * 10 & 0xFF) << 16) | ((D_8015F84E * 10 & 0xFF) << 8) | ((D_8015F84E + 2) * 10 & 0xFF))",
+    "new": "gSP1Triangle(D_800F22B4++,\n                D_8015F84E + 3, D_8015F84E, D_8015F84E + 2, D_8015F84E + 3)",
+    "macro": "gSP1Triangle"
+  }
+]
