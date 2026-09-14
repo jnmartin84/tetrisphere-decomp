@@ -1,76 +1,62 @@
-# Tetrisphere (USA)
+# Tetrisphere
 
-Byte-matching N64 decompilation with semantic function names. Game source is
-imported exactly from semantic commit `490402d76f15dc7d4774c15dde72e868b3f15fcf`:
-26 identified functions, with every other source byte initially preserved from
-the completed decompilation. The subsequent
-[GBI audit](analysis/semantic/GBI_AUDIT.md) restores 1,137 raw graphics commands
-while retaining the full ROM match, with remaining sites explicitly recorded.
-See [semantic findings](analysis/semantic/README.md).
+A 100% source-complete byte-matching decompilation of Tetrisphere (USA) for the
+Nintendo 64.
 
-## Build
+Work toward full semantic recovery and improved readability is ongoing.
 
-Install host prerequisites:
+## Building from scratch
 
-```sh
-# macOS (Homebrew, plus Xcode Command Line Tools)
-brew install make mips-linux-gnu-binutils python
+### 1. Install prerequisites
 
-# Ubuntu / Debian
-sudo apt-get install build-essential binutils-mips-linux-gnu python3 curl
-```
-
-Place your original big-endian USA ROM at `tetrisphere.z64` in this folder.
-Expected size: 8,388,608 bytes. SHA-256:
-`f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87`.
-The ROM is never downloaded by these tools.
+**macOS:** with [Homebrew](https://brew.sh) installed, install the Xcode Command
+Line Tools (if needed) and build dependencies:
 
 ```sh
-make tools        # download and verify the host's IDO 5.3; build host CRC tool
-make -j4          # extract local assets, compile, link, verify every ROM byte
+xcode-select --install
+brew install git make mips-linux-gnu-binutils python
 ```
 
-The default build also runs tool setup automatically. Success ends with
-`FULL ROM MATCH: 8,388,608 bytes including header`.
-Output: `build/tetrisphere.us.z64`. `./build-portable.sh -j4` is equivalent.
-Use `make clean` to remove outputs; `make distclean` also removes extracted
-binary assets. Neither command removes the reference ROM or checked-in assembly.
-`make extract` regenerates only the two binary assets from the verified ROM.
+Ensure Homebrew's binaries are on your `PATH`.
 
-[Official IDO v1.2](https://github.com/decompals/ido-static-recomp/releases/tag/v1.2)
-is pinned for reproducibility. Setup detects Linux x86-64, Linux ARM64, or
-macOS Intel/Apple Silicon (universal binary), verifies the archive SHA-256,
-and installs under ignored `tools/ido5.3/v1.2/<host>/`. It validates cached
-files before reusing them. Once tools are cached, builds need no network.
-For an offline setup, use `python3 tools/setup_ido.py --archive /path/to/the-official-host-archive.tar.gz`.
-The same checksum is required. The standalone installer also recognizes
-Windows x86-64; use WSL for the full Unix-based build. Native Windows and
-Linux x86-64 full builds have not been validated here.
+**Ubuntu / Debian** (including WSL on Windows):
 
-Native macOS ARM64 and Linux ARM64 verification results are recorded in
-[evidence/PUBLICATION.json](evidence/PUBLICATION.json).
+```sh
+sudo apt-get update
+sudo apt-get install git build-essential binutils-mips-linux-gnu python3 curl
+```
 
-## Source-only repository
+### 2. Clone the repository
 
-No ROM, extracted binary assets, compiler binaries, host executables, screenshots,
-or archives belong in Git. Generated assembly, linker inputs, C sources and SDK
-headers are included as text. The two raw assets are reconstructed locally from
-ROM ranges 0x40..0x1000 and 0xCD3F0..0x800000; no splat setup is needed.
-A fresh clone plus your ROM and the host prerequisites is sufficient.
+```sh
+git clone https://github.com/jnmartin84/tetrisphere.git
+cd tetrisphere
+```
 
-Before committing, run `python3 tools/audit_git.py` to scan every staged file's
-content and path. `.gitignore` excludes binary artifacts and `.gitattributes`
-disables checkout newline conversion. `python3 check-package.py` verifies the
-source distribution manifest; after editing, the baseline manifest will correctly
-report the changed files. `python3 check-package.py --rom` checks the full ROM.
+### 3. Supply the original ROM
 
-Preserve game source formatting, types, expressions and physical line grouping.
-IDO code generation depends on source shape. The semantic rename batches alter
-only identifier spellings; GBI restorations and tooling changes are documented
-separately.
+Place your original big-endian USA ROM in the repository root as
+`tetrisphere.z64`. The ROM is not included or downloaded.
 
-See [build details](docs/BUILD.md), [asset research](docs/ASSETS.md), and
-[publication provenance](evidence/PUBLICATION.json). The original portable snapshot
-manifest and evidence remain historical records in `evidence/`. Semantic batch
-ledgers describe the old branch's original baseline; they are historical evidence,
-not instructions to apply its Git-baseline validator to this new root history.
+- Size: **8,388,608 bytes**
+- SHA-256: `f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87`
+
+### 4. Build
+
+```sh
+make tools
+make -j4
+```
+
+`make tools` detects your operating system and architecture, downloads and verifies
+the appropriate IDO compiler, and builds the host tools. It supports macOS on
+Intel and Apple Silicon, and Linux on x86-64 and ARM64.
+
+The build extracts the required assets from your ROM, compiles and links the
+source, and verifies every byte of the result, including the ROM header. A
+successful build reports `FULL ROM MATCH`.
+
+The rebuilt ROM is **`build/tetrisphere.us.z64`**.
+
+Use `make clean` to remove build outputs, or `make distclean` to also remove
+extracted assets. Both preserve your original ROM.
