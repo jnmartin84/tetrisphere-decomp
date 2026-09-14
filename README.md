@@ -29,8 +29,8 @@ sudo apt-get install git build-essential binutils-mips-linux-gnu python3 curl
 ### 2. Clone the repository
 
 ```sh
-git clone https://github.com/jnmartin84/tetrisphere.git
-cd tetrisphere
+git clone https://github.com/jnmartin84/tetrisphere-decomp.git
+cd tetrisphere-decomp
 ```
 
 ### 3. Supply the original ROM
