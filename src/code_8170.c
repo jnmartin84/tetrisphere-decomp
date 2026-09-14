@@ -128,7 +128,7 @@ typedef struct {
     /*0x04*/ u8 unk4;
 } Entry;
 
-u8 *func_8002CF70(arg0, arg1, arg2, arg3, arg4)
+u8 *LWAllocateMemory(arg0, arg1, arg2, arg3, arg4)
 s32 arg0;
 s32 arg1;
 void **arg2;
@@ -387,7 +387,7 @@ typedef struct { s32 unk0; u32 unk4; } TG8;
     (((u32)func_80025CA0 < (u32)(p) && (u32)(p) < (u32)eqpower) \
       || (u32)(p) < 0x80000400 || (u32)(p) >= 0x80400001)
 
-s32 func_8002D93C(arg0, arg1, arg2, arg3)
+s32 LWPlayAnimation(arg0, arg1, arg2, arg3)
 u8 *arg0;
 s32 arg1;
 void *arg2;

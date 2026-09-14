@@ -1,0 +1,390 @@
+{
+  "checkout": "/Users/jnmartin/landed_tsphere",
+  "head": "fc38500",
+  "rom_size": 8388608,
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "assembly": "asm/data/C6370.data.s",
+  "source": "src/code_8170.c",
+  "entries": [
+    {
+      "symbol": "D_800EBA80",
+      "rom_offset": "0xC6E30",
+      "vram": "800EBA80",
+      "text": "asked to overwrite animStream",
+      "asm_line": 1025,
+      "source_call_line": 168,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBAA0",
+      "rom_offset": "0xC6E50",
+      "vram": "800EBAA0",
+      "text": "detected by LWAllocateMemory",
+      "asm_line": 1031,
+      "source_call_line": 168,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBAC0",
+      "rom_offset": "0xC6E70",
+      "vram": "800EBAC0",
+      "text": "asked to overwrite geomStream",
+      "asm_line": 1037,
+      "source_call_line": 181,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBAE0",
+      "rom_offset": "0xC6E90",
+      "vram": "800EBAE0",
+      "text": "detected by LWAllocateMemory",
+      "asm_line": 1043,
+      "source_call_line": 181,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBB00",
+      "rom_offset": "0xC6EB0",
+      "vram": "800EBB00",
+      "text": "unaligned geomStream",
+      "asm_line": 1049,
+      "source_call_line": 186,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBB18",
+      "rom_offset": "0xC6EC8",
+      "vram": "800EBB18",
+      "text": "detected by LWAllocateMemory",
+      "asm_line": 1055,
+      "source_call_line": 186,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBB38",
+      "rom_offset": "0xC6EE8",
+      "vram": "800EBB38",
+      "text": "geomStream not valid",
+      "asm_line": 1061,
+      "source_call_line": 189,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBB50",
+      "rom_offset": "0xC6F00",
+      "vram": "800EBB50",
+      "text": "detected by LWAllocateMemory",
+      "asm_line": 1067,
+      "source_call_line": 189,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBB70",
+      "rom_offset": "0xC6F20",
+      "vram": "800EBB70",
+      "text": "unaligned memory ptr",
+      "asm_line": 1073,
+      "source_call_line": 198,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBB88",
+      "rom_offset": "0xC6F38",
+      "vram": "800EBB88",
+      "text": "detected by LWAllocateMemory",
+      "asm_line": 1079,
+      "source_call_line": 198,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBBA8",
+      "rom_offset": "0xC6F58",
+      "vram": "800EBBA8",
+      "text": "unaligned animStream",
+      "asm_line": 1085,
+      "source_call_line": 201,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBBC0",
+      "rom_offset": "0xC6F70",
+      "vram": "800EBBC0",
+      "text": "detected by LWAllocateMemory",
+      "asm_line": 1091,
+      "source_call_line": 201,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBBE0",
+      "rom_offset": "0xC6F90",
+      "vram": "800EBBE0",
+      "text": "invalid memory ptr",
+      "asm_line": 1097,
+      "source_call_line": 204,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBBF4",
+      "rom_offset": "0xC6FA4",
+      "vram": "800EBBF4",
+      "text": "detected by LWAllocateMemory",
+      "asm_line": 1103,
+      "source_call_line": 204,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBC14",
+      "rom_offset": "0xC6FC4",
+      "vram": "800EBC14",
+      "text": "animmStream address not valid",
+      "asm_line": 1109,
+      "source_call_line": 207,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBC34",
+      "rom_offset": "0xC6FE4",
+      "vram": "800EBC34",
+      "text": "detected by LWAllocateMemory",
+      "asm_line": 1115,
+      "source_call_line": 207,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBC54",
+      "rom_offset": "0xC7004",
+      "vram": "800EBC54",
+      "text": "memory address bad after alloc",
+      "asm_line": 1121,
+      "source_call_line": 342,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBC74",
+      "rom_offset": "0xC7024",
+      "vram": "800EBC74",
+      "text": "detected by LWAllocateMemory",
+      "asm_line": 1127,
+      "source_call_line": 342,
+      "function": "func_8002CF70",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBC94",
+      "rom_offset": "0xC7044",
+      "vram": "800EBC94",
+      "text": "LWInfo ptr is invalid",
+      "asm_line": 1133,
+      "source_call_line": 399,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBCAC",
+      "rom_offset": "0xC705C",
+      "vram": "800EBCAC",
+      "text": "detected by LWPlayAnimation",
+      "asm_line": 1139,
+      "source_call_line": 399,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBCC8",
+      "rom_offset": "0xC7078",
+      "vram": "800EBCC8",
+      "text": "geom info ptr is invalid",
+      "asm_line": 1145,
+      "source_call_line": 402,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBCE4",
+      "rom_offset": "0xC7094",
+      "vram": "800EBCE4",
+      "text": "detected by LWPlayAnimation",
+      "asm_line": 1151,
+      "source_call_line": 402,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBD00",
+      "rom_offset": "0xC70B0",
+      "vram": "800EBD00",
+      "text": "geomstream address is invalid",
+      "asm_line": 1157,
+      "source_call_line": 406,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBD20",
+      "rom_offset": "0xC70D0",
+      "vram": "800EBD20",
+      "text": "detected by LWPlayAnimation",
+      "asm_line": 1163,
+      "source_call_line": 406,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBD3C",
+      "rom_offset": "0xC70EC",
+      "vram": "800EBD3C",
+      "text": "animStream address invalid",
+      "asm_line": 1169,
+      "source_call_line": 410,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBD58",
+      "rom_offset": "0xC7108",
+      "vram": "800EBD58",
+      "text": "detected by LWPlayAnimation",
+      "asm_line": 1175,
+      "source_call_line": 410,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBD74",
+      "rom_offset": "0xC7124",
+      "vram": "800EBD74",
+      "text": "lights[0] address invalid",
+      "asm_line": 1181,
+      "source_call_line": 413,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBD90",
+      "rom_offset": "0xC7140",
+      "vram": "800EBD90",
+      "text": "detected by LWPlayAnimation",
+      "asm_line": 1187,
+      "source_call_line": 413,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBDAC",
+      "rom_offset": "0xC715C",
+      "vram": "800EBDAC",
+      "text": "lights[1] address invalid",
+      "asm_line": 1193,
+      "source_call_line": 416,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBDC8",
+      "rom_offset": "0xC7178",
+      "vram": "800EBDC8",
+      "text": "detected by LWPlayAnimation",
+      "asm_line": 1199,
+      "source_call_line": 416,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBDE4",
+      "rom_offset": "0xC7194",
+      "vram": "800EBDE4",
+      "text": "lightinfo address invalid",
+      "asm_line": 1205,
+      "source_call_line": 419,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBE00",
+      "rom_offset": "0xC71B0",
+      "vram": "800EBE00",
+      "text": "detected by LWPlayAnimation",
+      "asm_line": 1211,
+      "source_call_line": 419,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBE1C",
+      "rom_offset": "0xC71CC",
+      "vram": "800EBE1C",
+      "text": "objectinfo address invalid",
+      "asm_line": 1217,
+      "source_call_line": 422,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBE38",
+      "rom_offset": "0xC71E8",
+      "vram": "800EBE38",
+      "text": "detected by LWPlayAnimation",
+      "asm_line": 1223,
+      "source_call_line": 422,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBE54",
+      "rom_offset": "0xC7204",
+      "vram": "800EBE54",
+      "text": "materiallights[0] address invalid",
+      "asm_line": 1229,
+      "source_call_line": 425,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBE78",
+      "rom_offset": "0xC7228",
+      "vram": "800EBE78",
+      "text": "detected by LWPlayAnimation",
+      "asm_line": 1235,
+      "source_call_line": 425,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBE94",
+      "rom_offset": "0xC7244",
+      "vram": "800EBE94",
+      "text": "materiallights[1] address invalid",
+      "asm_line": 1241,
+      "source_call_line": 428,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    },
+    {
+      "symbol": "D_800EBEB8",
+      "rom_offset": "0xC7268",
+      "vram": "800EBEB8",
+      "text": "detected by LWPlayAnimation",
+      "asm_line": 1247,
+      "source_call_line": 428,
+      "function": "func_8002D93C",
+      "rom_bytes_verified": true
+    }
+  ]
+}

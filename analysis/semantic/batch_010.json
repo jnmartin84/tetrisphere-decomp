@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "batch": "010-lw-original-function-names",
+  "baseline_commit": "fc385006a6cb58d8f332d864734b48b59a97bf39",
+  "input_manifest": "analysis/semantic/batch_010_inputs.json",
+  "input_manifest_sha256": "1b832aac7f59e4291f7e057cbba0b5a8bc13bf7ffda87bdba99905fbd8042f3a",
+  "files": {
+    "src/code_4D170.c": {
+      "baseline_sha256": "cc91a5a5353a408e8283af63b235509794e6c105b38d2fd53640cffff36afdfe",
+      "renames": {
+        "func_8002CF70": "LWAllocateMemory",
+        "func_8002D93C": "LWPlayAnimation"
+      },
+      "counts": {
+        "func_8002CF70": 4,
+        "func_8002D93C": 3
+      }
+    },
+    "src/code_8170.c": {
+      "baseline_sha256": "f2cf07b91a21aae828938402c4fbbd11cf24dfea3f8d0d4d258fe91a36d42362",
+      "renames": {
+        "func_8002CF70": "LWAllocateMemory",
+        "func_8002D93C": "LWPlayAnimation"
+      },
+      "counts": {
+        "func_8002CF70": 1,
+        "func_8002D93C": 1
+      }
+    },
+    "src/game2.c": {
+      "baseline_sha256": "1f690806c6a29b8b35f33b29e43f80caad83d607851189fd50a178e4fbed32ae",
+      "renames": {
+        "func_8002CF70": "LWAllocateMemory",
+        "func_8002D93C": "LWPlayAnimation"
+      },
+      "counts": {
+        "func_8002D93C": 10,
+        "func_8002CF70": 7
+      }
+    },
+    "src/main.c": {
+      "baseline_sha256": "4a7aa54b079f1a54f7a9f393ddd32ebd815bd51fa3cb02c80a144620e0c6a7f9",
+      "renames": {
+        "func_8002CF70": "LWAllocateMemory",
+        "func_8002D93C": "LWPlayAnimation"
+      },
+      "counts": {
+        "func_8002CF70": 71,
+        "func_8002D93C": 76
+      }
+    }
+  },
+  "decisions": [
+    {
+      "old": "func_8002CF70",
+      "new": "LWAllocateMemory",
+      "confidence": "high",
+      "evidence": "ROM_STRING_LW_EVIDENCE.json and ROM_STRING_SEMANTICS.md; direct original routine diagnostics"
+    },
+    {
+      "old": "func_8002D93C",
+      "new": "LWPlayAnimation",
+      "confidence": "high",
+      "evidence": "ROM_STRING_LW_EVIDENCE.json and ROM_STRING_SEMANTICS.md; direct original routine diagnostics"
+    }
+  ]
+}

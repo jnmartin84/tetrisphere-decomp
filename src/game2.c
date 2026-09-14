@@ -10818,7 +10818,7 @@ u8 a0;
 extern void *D_8013FAE4;
 extern s16 D_80160C64;
 extern f32 D_80161540[4][4];
-extern s32 func_8002D93C(void *, s32, void *, void *);
+extern s32 LWPlayAnimation(void *, s32, void *, void *);
 extern void func_800A43E0();
 extern void guScaleF(f32 mf[4][4], f32 x, f32 y, f32 z);
 extern void guTranslateF(f32 mf[4][4], f32 x, f32 y, f32 z);
@@ -10844,7 +10844,7 @@ u8 a0;
     *(f32 *)((u8 *)D_8013FAE4 + 0x28) = 1.0f - (((E_21D8 *)D_8013DD00)->e[a0].w / 255.0f);
     *(f32 *)((u8 *)D_8013FAE4 + 0x28) = *(f32 *)((u8 *)D_8013FAE4 + 0x28) * ((f32) D_800E23B4 / 255);
     if (c == 0 || c == 9) {
-        if (func_8002D93C(D_8013FAE4, D_80160C64, D_801309A8, D_80161540) != 0) {
+        if (LWPlayAnimation(D_8013FAE4, D_80160C64, D_801309A8, D_80161540) != 0) {
             *(s32 *)((u8 *)D_8013FAE4 + 0x24) = 0;
         }
     } else {
@@ -18310,7 +18310,7 @@ extern u8 D_800E2828[];
 extern u8 D_800E2AB0[];
 extern u8 D_8013D468;
 extern u8 **func_8007D45C(void *, void *, s32);
-extern s32 func_8002D93C(void *, s32, void *, void *);
+extern s32 LWPlayAnimation(void *, s32, void *, void *);
 extern void func_800AE5EC(void);
 extern void func_800ADBE4(u8 *);
 extern void func_800ADCF0(u8 *);
@@ -18441,7 +18441,7 @@ void func_800B8540(u8 *arg0) {
                 guScaleF(D_80161540, -1.0, 1.0, 1.0);
             }
         }
-        if (func_8002D93C(p, n - *(s32 *)(p + 0x24), D_80161540, D_801309A8) != 0) {
+        if (LWPlayAnimation(p, n - *(s32 *)(p + 0x24), D_80161540, D_801309A8) != 0) {
             if (*(u8 *)(arg0 + 0) == 7) {
                 func_800C5F94();
             }
@@ -18476,7 +18476,7 @@ void func_800B8D40(u8 arg0) {
 }
 
 #include <PR/ultratypes.h>
-extern s32 func_8002CF70(s32 a0, s32 a1, s32 *a2, s32 a3, s32 *a4);
+extern s32 LWAllocateMemory(s32 a0, s32 a1, s32 *a2, s32 a3, s32 *a4);
 extern void func_800ADCF0(u8 *);
 extern void func_800AE5EC(void);
 extern u8 D_800F0B3C[];
@@ -18497,7 +18497,7 @@ void func_800B8DF0(s16 arg0, s16 arg1, s16 arg2, u8 arg3, s32 arg4, u8 arg5, s32
         return;
     }
     func_80029760(D_800F0B3C, D_8013E474);
-    sp = (u8 *)func_8002CF70(D_8013E474, arg4, &D_8013EBDC, 1, &sp2C);
+    sp = (u8 *)LWAllocateMemory(D_8013E474, arg4, &D_8013EBDC, 1, &sp2C);
     D_800F22C0 = D_8013E474 = D_8013E474 + sp2C;
     *(u8 *)(sp + 0x48) = 0;
     if (arg5 == 2) {
@@ -18909,7 +18909,7 @@ extern void *D_8013FAB8;
 extern u8 D_8015F4F0;
 extern s16 D_80160C64;
 extern f32 D_80161540[4][4];
-extern s32 func_8002D93C(void *, s32, void *, void *);
+extern s32 LWPlayAnimation(void *, s32, void *, void *);
 extern void guMtxIdentF(f32 mf[4][4]);
 extern void guTranslateF(f32 mf[4][4], f32 x, f32 y, f32 z);
 
@@ -18942,7 +18942,7 @@ void func_800BA084(void) {
         n = n * 6;
     }
     if (D_8013FAB0 != 0) {
-        if (func_8002D93C(D_8013FAB0, n, D_80161540, D_801309A8) != 0) {
+        if (LWPlayAnimation(D_8013FAB0, n, D_80161540, D_801309A8) != 0) {
             if (D_8013FAB0 == D_8013FAB8) {
                 *(u8 *)(D_8013DD00 + 0x1688) = 0x30;
                 D_8013FAB0 = 0;
@@ -19013,9 +19013,9 @@ void func_800BA25C(void) {
     D_800F22C0 = (D_800F22C0 + 0xF) & -0x10;
     D_8013FAB4 = loadAnim(p3[n]);
     D_800F22C0 = (D_800F22C0 + 0xF) & -0x10;
-    D_8013FAB0 = (void *)func_8002CF70(D_800F22C0, D_8013FAAC, &D_8013F344, 1, &sz);
+    D_8013FAB0 = (void *)LWAllocateMemory(D_800F22C0, D_8013FAAC, &D_8013F344, 1, &sz);
     D_800F22C0 += sz;
-    D_8013FAB8 = (void *)func_8002CF70(D_800F22C0, D_8013FAB4, &D_8013F344, 1, &sz);
+    D_8013FAB8 = (void *)LWAllocateMemory(D_800F22C0, D_8013FAB4, &D_8013F344, 1, &sz);
     D_800F22C0 += sz;
     q = D_8013FAB0;
     *(u8 *)(q + 0x49) = 0;
@@ -22376,7 +22376,7 @@ void func_800C38F4(void) {
 
 extern void func_80071DD8(s32 a0);
 extern void func_8007ACFC(u8 *a0);
-extern s32 func_8002CF70(s32 a0, s32 a1, s32 *a2, s32 a3, s32 *a4);
+extern s32 LWAllocateMemory(s32 a0, s32 a1, s32 *a2, s32 a3, s32 *a4);
 extern u8 D_800F0D1C[];
 extern u8 D_800F0D3C[];
 extern u8 D_80108828[];
@@ -22389,7 +22389,7 @@ void func_800C3AD8(s32 arg0, s32 arg1) {
         if (D_800E44A8 != 4 && D_800E44A8 != 0xA) func_8007ACFC(D_80108828);
     }
     D_800F22C0 = D_8013E474 = (D_8013E474 + 0xF) & ~0xF;
-    D_80130A20 = func_8002CF70(D_8013E474, arg0, &arg1, 1, &sp24);
+    D_80130A20 = LWAllocateMemory(D_8013E474, arg0, &arg1, 1, &sp24);
     D_800F22C0 = D_8013E474 = D_8013E474 + sp24;
     func_80029760(D_800F0D3C, D_80130A20);
     D_80130A26 = 0;
@@ -22401,14 +22401,14 @@ void func_800C3AD8(s32 arg0, s32 arg1) {
  * NOTE: gate D_8015D980==1 && D_800E44A8!=4 && D_80139E64!=0, then state[0x701]=1; D_80130A26=1;
  * if func_8002D93C(D_80130A20, D_80160C64, 0, 0)!=0 && state[0x1680]==6 then state[0x1688]=0x60.
  * const 1 hoisted (shared by both sb). D_8015D980/D_800E44A8/D_80160C64 s16, D_80130A26/E64 u8. */
-extern s32 func_8002D93C(void *, s32, void *, void *);
+extern s32 LWPlayAnimation(void *, s32, void *, void *);
 void func_800C3C10(void) {
     if (D_8015D980 != 1) return;
     if (D_800E44A8 == 4) return;
     if (D_80139E64 == 0) return;
     *(u8 *)(D_8013DD00 + 0x701) = 1;
     D_80130A26 = 1;
-    if (func_8002D93C(D_80130A20, D_80160C64, 0, 0) == 0) return;
+    if (LWPlayAnimation(D_80130A20, D_80160C64, 0, 0) == 0) return;
     if (*(u8 *)(D_8013DD00 + 0x1680) == 6) {
         *(u8 *)(D_8013DD00 + 0x1688) = 0x60;
     }
@@ -22437,7 +22437,7 @@ void func_800C3CEC(void) {
         if (D_800E44A8 == 2) {
             guTranslateF(D_801309A8, (f32) D_8013FADA, -350.0f, 0.0f);
         }
-        if (func_8002D93C(D_80103454, D_80160C64, D_80161540, D_801309A8)) {
+        if (LWPlayAnimation(D_80103454, D_80160C64, D_80161540, D_801309A8)) {
             D_8014D266 = 0;
         }
     }
@@ -22464,7 +22464,7 @@ void func_800C3DE4(u8 arg0) {
     D_8013FADA = D_800E9166[arg0];
     D_8014D266 = 1;
     D_800F22C0 = (D_8013E474 + 0xF) & ~0xF;
-    *(s32 *)(D_801033B8 + 0x9C) = func_8002CF70(D_800F22C0, D_80103450, &D_8010344C, 1, &sp24);
+    *(s32 *)(D_801033B8 + 0x9C) = LWAllocateMemory(D_800F22C0, D_80103450, &D_8010344C, 1, &sp24);
     D_800F22C0 += sp24;
     D_8013E474 = D_800F22C0;
     p = *(u8 **)(D_801033B8 + 0x9C);
@@ -23926,7 +23926,7 @@ void func_800C78A0(void) {
     if (D_800E44A8 == 3) {
         guTranslateF(D_801309A8, -1068.0f, 768.0f, -2054.0f);
     }
-    if (func_8002D93C(p, D_80160C64, D_80161540, D_801309A8) != 0) {
+    if (LWPlayAnimation(p, D_80160C64, D_80161540, D_801309A8) != 0) {
         *(s32 *)((u8 *)p + 0x24) = 0;
     }
 }

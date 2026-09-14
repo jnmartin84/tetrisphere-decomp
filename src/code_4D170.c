@@ -402,7 +402,7 @@ extern s16 D_800E44A8;
 extern s32 D_8013FADC;
 extern s32 D_8013FAE0;
 extern Obj2F *D_8013FAE4;
-extern Obj2F *func_8002CF70(s32, s32, s32 *, s32, s32 *);
+extern Obj2F *LWAllocateMemory(s32, s32, s32 *, s32, s32 *);
 
 void func_80072F18(void) {
     s32 sizeA[2];
@@ -417,7 +417,7 @@ void func_80072F18(void) {
         D_8013FADC = loadMesh(0x43);
         D_8013FAE0 = loadAnim(0xC4);
         D_800F22C0 = (D_800F22C0 + 0xF) & ~0xF;
-        obj = func_8002CF70(D_800F22C0, D_8013FAE0, &D_8013FADC, 1, sizeA);
+        obj = LWAllocateMemory(D_800F22C0, D_8013FAE0, &D_8013FADC, 1, sizeA);
         D_8013FAE4 = obj;
         D_800F22C0 += sizeA[0];
         obj->unk48 = 0;
@@ -464,7 +464,7 @@ void func_80072F18(void) {
         TB2F->unk54[5] = loadAnim(0xD7);
         for (j = 0; j < 6; j++) {
             D_800F22C0 = (D_800F22C0 + 0xF) & ~0xF;
-            obj = func_8002CF70(D_800F22C0, TB2F->unk54[j], &D_8013EBDC, 1, sizeB);
+            obj = LWAllocateMemory(D_800F22C0, TB2F->unk54[j], &D_8013EBDC, 1, sizeB);
             TB2F->unk6C[j] = obj;
             D_800F22C0 += sizeB[0];
             obj->unk40 = 256.0f;
@@ -636,7 +636,7 @@ void func_80073290(void) {
         sp48 = loadAnim(0x38);
         sp44 = loadMesh(0x13);
         D_800F22C0 = (D_800F22C0 + 0xF) & ~0xF;
-        *(s32 *)((u8 *)&D_801033B8 + 8) = (s32) func_8002CF70(D_800F22C0, sp48, &sp44, 1, &i);
+        *(s32 *)((u8 *)&D_801033B8 + 8) = (s32) LWAllocateMemory(D_800F22C0, sp48, &sp44, 1, &i);
         *(s16 *)((u8 *)&D_801033B8 + 0xC) = 0;
         D_800F22C0 += i;
     }
@@ -1648,7 +1648,7 @@ extern void func_8007ADF8(void *);
 extern void func_8007D45C(void *, void *, s32);
 extern void func_8007F720(s32, void *);
 extern void func_800ADD50(void *);
-extern s32 func_8002D93C(void *, s32, void *, void *);
+extern s32 LWPlayAnimation(void *, s32, void *, void *);
 extern void guRotateRPYF_2(f32 mf[4][4], f32 r, f32 p, f32 h);
 
 typedef struct {
@@ -2052,7 +2052,7 @@ void func_80075CD8(s32 arg0) {
         guTranslateF(D_80102B68, 120.0f, -35.0f, 0.0f);
         guRotateRPYF_2(D_80102BB0, 0.0f, TB3B8->unk10, 0.0f);
         guMtxCatF(D_80102B28, D_80102BB0, D_80102B28);
-        if (func_8002D93C(TB3B8->unk8, (TB3B8->unkC + D_80160C64) - TB3B8->unk8->unk24, D_80102B28, D_80102B68) != 0) {
+        if (LWPlayAnimation(TB3B8->unk8, (TB3B8->unkC + D_80160C64) - TB3B8->unk8->unk24, D_80102B28, D_80102B68) != 0) {
             TB3B8->unk8->unk24 = 0;
         }
         TB3B8->unkC = TB3B8->unk8->unk24;
@@ -2065,7 +2065,7 @@ void func_80075CD8(s32 arg0) {
             if (TB3B8->unk18 >= 0) {
                 TB3B8->unk1A = 0xC0;
                 func_8006FA28(0, 0, 0x13F, 0xEF, 0, 0, 0, TB3B8->unk1A);
-                if ((*(u8 *)(D_80108828 + 0x1594) != 0) || (D_801026C2 != 0)) { a1v = (TB3B8->unk18 + D_80160C64) - TB3B8->unk14->unk24; } else { a1v = 0; } if (func_8002D93C(TB3B8->unk14, a1v, NULL, NULL) != 0) {
+                if ((*(u8 *)(D_80108828 + 0x1594) != 0) || (D_801026C2 != 0)) { a1v = (TB3B8->unk18 + D_80160C64) - TB3B8->unk14->unk24; } else { a1v = 0; } if (LWPlayAnimation(TB3B8->unk14, a1v, NULL, NULL) != 0) {
                     func_800ADD50(D_80110220);
                     TB3B8->unk18 = -1;
                     if (D_800E44FC == 0) {

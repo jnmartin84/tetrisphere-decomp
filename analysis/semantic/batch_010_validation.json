@@ -1,0 +1,1072 @@
+{
+  "status": "IDENTIFIER_ONLY_VERIFIED",
+  "baseline_commit": "fc385006a6cb58d8f332d864734b48b59a97bf39",
+  "ledger_sha256": "94a7246a32144a9071f1e3910cf595cd27da880d04acf6693b61200e711f65b5",
+  "files": {
+    "src/code_4D170.c": {
+      "before_sha256": "cc91a5a5353a408e8283af63b235509794e6c105b38d2fd53640cffff36afdfe",
+      "after_sha256": "61d6474bac18737df0ff7f4ba860bd21d47b5b6fba063a6ad180012df6dacb66",
+      "substitutions": [
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 11208,
+          "line": 405
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 11554,
+          "line": 420
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 13202,
+          "line": 467
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 19320,
+          "line": 639
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 53985,
+          "line": 1651
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 74360,
+          "line": 2055
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 75040,
+          "line": 2068
+        }
+      ]
+    },
+    "src/code_8170.c": {
+      "before_sha256": "f2cf07b91a21aae828938402c4fbbd11cf24dfea3f8d0d4d258fe91a36d42362",
+      "after_sha256": "831e2b9d6daa7e05a4547c5888bda9bca7ba0d0866edf66f67f3ea969195d8fc",
+      "substitutions": [
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 3281,
+          "line": 131
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 10729,
+          "line": 390
+        }
+      ]
+    },
+    "src/game2.c": {
+      "before_sha256": "1f690806c6a29b8b35f33b29e43f80caad83d607851189fd50a178e4fbed32ae",
+      "after_sha256": "eabe817c65984abd1c142f0f88881cfeebf73080091d814b5d4d83de46096809",
+      "substitutions": [
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 423735,
+          "line": 10821
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 424643,
+          "line": 10847
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 693300,
+          "line": 18313
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 698542,
+          "line": 18444
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 699664,
+          "line": 18479
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 700364,
+          "line": 18500
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 714583,
+          "line": 18912
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 715432,
+          "line": 18945
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 717433,
+          "line": 19016
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 717540,
+          "line": 19018
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 848803,
+          "line": 22379
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 849302,
+          "line": 22392
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 849924,
+          "line": 22404
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 850159,
+          "line": 22411
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 851064,
+          "line": 22440
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 852127,
+          "line": 22467
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 901354,
+          "line": 23929
+        }
+      ]
+    },
+    "src/main.c": {
+      "before_sha256": "4a7aa54b079f1a54f7a9f393ddd32ebd815bd51fa3cb02c80a144620e0c6a7f9",
+      "after_sha256": "9d354b1e3cc85422fc8027e5e8952b9440af62ec9cbe4cea7556c607c4ff81db",
+      "substitutions": [
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 60111,
+          "line": 1743
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 60171,
+          "line": 1744
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 64108,
+          "line": 1888
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 64492,
+          "line": 1896
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 64986,
+          "line": 1904
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 66575,
+          "line": 1953
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 68520,
+          "line": 1995
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 68881,
+          "line": 2001
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 69208,
+          "line": 2006
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 72417,
+          "line": 2108
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 72477,
+          "line": 2109
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 91626,
+          "line": 2665
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 91799,
+          "line": 2668
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 93161,
+          "line": 2695
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 93344,
+          "line": 2699
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 93784,
+          "line": 2710
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 135348,
+          "line": 3666
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 136034,
+          "line": 3684
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 136598,
+          "line": 3696
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 137071,
+          "line": 3703
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 164229,
+          "line": 4320
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 164865,
+          "line": 4334
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 170993,
+          "line": 4553
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 171347,
+          "line": 4560
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 176532,
+          "line": 4710
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 176713,
+          "line": 4712
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 210355,
+          "line": 5634
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 210569,
+          "line": 5638
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 210773,
+          "line": 5642
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 211206,
+          "line": 5654
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 211420,
+          "line": 5658
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 215783,
+          "line": 5773
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 215982,
+          "line": 5777
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 216184,
+          "line": 5781
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 217752,
+          "line": 5822
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 218121,
+          "line": 5832
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 218320,
+          "line": 5836
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 218504,
+          "line": 5840
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 219207,
+          "line": 5859
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 219511,
+          "line": 5868
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 229236,
+          "line": 6154
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 229553,
+          "line": 6161
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 229833,
+          "line": 6167
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 233961,
+          "line": 6275
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 234120,
+          "line": 6279
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 234359,
+          "line": 6285
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 252111,
+          "line": 6764
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 252366,
+          "line": 6771
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 257146,
+          "line": 6918
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 258177,
+          "line": 6939
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 258674,
+          "line": 6947
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 259817,
+          "line": 6977
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 260892,
+          "line": 7003
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 261682,
+          "line": 7025
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 261827,
+          "line": 7028
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 265822,
+          "line": 7160
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 266057,
+          "line": 7164
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 268878,
+          "line": 7240
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 269086,
+          "line": 7246
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 274588,
+          "line": 7439
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 274913,
+          "line": 7444
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 275263,
+          "line": 7450
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 275767,
+          "line": 7461
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 276116,
+          "line": 7467
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 277193,
+          "line": 7497
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 277688,
+          "line": 7506
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 277964,
+          "line": 7511
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 279276,
+          "line": 7548
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 280053,
+          "line": 7559
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 280998,
+          "line": 7578
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 282193,
+          "line": 7597
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 282321,
+          "line": 7599
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 282934,
+          "line": 7614
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 283403,
+          "line": 7624
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 284613,
+          "line": 7670
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 285804,
+          "line": 7695
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 286011,
+          "line": 7701
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 289480,
+          "line": 7818
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 289540,
+          "line": 7819
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 292230,
+          "line": 7917
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 292738,
+          "line": 7930
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 293509,
+          "line": 7948
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 294063,
+          "line": 7962
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 294525,
+          "line": 7974
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 294776,
+          "line": 7979
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 296381,
+          "line": 8028
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 297497,
+          "line": 8049
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 297738,
+          "line": 8055
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 298152,
+          "line": 8067
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 299364,
+          "line": 8090
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 299605,
+          "line": 8096
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 302680,
+          "line": 8198
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 303172,
+          "line": 8210
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 309291,
+          "line": 8399
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 309351,
+          "line": 8400
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 313430,
+          "line": 8524
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 313817,
+          "line": 8533
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 315732,
+          "line": 8594
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 316831,
+          "line": 8630
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 322181,
+          "line": 8739
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 322241,
+          "line": 8740
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 325605,
+          "line": 8860
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 331643,
+          "line": 9012
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 334536,
+          "line": 9110
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 334943,
+          "line": 9119
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 338340,
+          "line": 9228
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 343960,
+          "line": 9364
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 349854,
+          "line": 9559
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 350146,
+          "line": 9564
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 350334,
+          "line": 9568
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 350590,
+          "line": 9573
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 351022,
+          "line": 9588
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 351193,
+          "line": 9596
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 351343,
+          "line": 9601
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 351564,
+          "line": 9609
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 354403,
+          "line": 9708
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 356254,
+          "line": 9773
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 361673,
+          "line": 9945
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 361861,
+          "line": 9948
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 362049,
+          "line": 9951
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 362384,
+          "line": 9957
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 362589,
+          "line": 9960
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 362794,
+          "line": 9963
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 364338,
+          "line": 10019
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 364425,
+          "line": 10020
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 364567,
+          "line": 10025
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 364723,
+          "line": 10028
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 365473,
+          "line": 10048
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 365560,
+          "line": 10049
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 388143,
+          "line": 11006
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 389186,
+          "line": 11027
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 390053,
+          "line": 11053
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 390388,
+          "line": 11061
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 392597,
+          "line": 11129
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 393033,
+          "line": 11139
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 395432,
+          "line": 11230
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 396024,
+          "line": 11247
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 397206,
+          "line": 11283
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 397447,
+          "line": 11288
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 399780,
+          "line": 11367
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 401349,
+          "line": 11414
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 434058,
+          "line": 12406
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 434966,
+          "line": 12437
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 435895,
+          "line": 12465
+        },
+        {
+          "old": "func_8002CF70",
+          "new": "LWAllocateMemory",
+          "offset": 436722,
+          "line": 12483
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 461933,
+          "line": 13257
+        },
+        {
+          "old": "func_8002D93C",
+          "new": "LWPlayAnimation",
+          "offset": 462271,
+          "line": 13262
+        }
+      ]
+    }
+  },
+  "inverse_restores_original_bytes": true,
+  "production_inputs_verified": true,
+  "rom_verified_by_this_tool": false
+}

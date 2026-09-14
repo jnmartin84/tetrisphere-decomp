@@ -1,0 +1,18 @@
+{
+  "baseline_commit": "fc385006a6cb58d8f332d864734b48b59a97bf39",
+  "baseline_matchdiff": "FULL MATCH",
+  "candidate_matchdiff": "FULL MATCH",
+  "full_rom_cmp": true,
+  "header_included": true,
+  "rom_bytes": 8388608,
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "identifier_substitutions": 173,
+  "source_files": 4,
+  "symbols": {
+    "LWAllocateMemory": "0x8002CF70",
+    "LWPlayAnimation": "0x8002D93C"
+  },
+  "guard_unit_tests": 24,
+  "compiler": "Official IDO 5.3 v1.2 macOS universal; native ARM64",
+  "production_source_policy": "Only approved identifier tokens; comments, literals, whitespace, types and expressions preserved"
+}
