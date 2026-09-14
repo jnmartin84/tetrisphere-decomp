@@ -1,0 +1,3982 @@
+{
+  "Makefile": {
+    "sha256": "62d9b8f1b5865b603132ab544d9e7109c0e7edc0ed2ecc8e7e1db9067c670d0a",
+    "mode": "0o644"
+  },
+  "asm/1000.s": {
+    "sha256": "28103ca8cffe2b9f540989111711a7439f2feb609bbb7198188bc112cd2815d6",
+    "mode": "0o644"
+  },
+  "asm/code_AB7E0.s": {
+    "sha256": "e9021f97ee3b9c95bdabfd4f8bc0385a5634f8e674fb31320ba37f9ef1ee9ca2",
+    "mode": "0o644"
+  },
+  "asm/code_AB830.s": {
+    "sha256": "e2ca189882a47c23a6df8f855522bce03a70188f9f4266286c552633136990e3",
+    "mode": "0o644"
+  },
+  "asm/code_AB860.s": {
+    "sha256": "8002908aed3d4f1907dac49e1992dc9905c32e2a5b5495df1226d0c6775dc5f5",
+    "mode": "0o644"
+  },
+  "asm/code_AD110.s": {
+    "sha256": "92f14a2336cc8b02f84ad8992a5533dfae7b878487442c9549e82328490226aa",
+    "mode": "0o644"
+  },
+  "asm/data/B8880.data.s": {
+    "sha256": "ec7f235a785f61a791b3becc110fd17072234bad60c1f16064ce474555b1df6b",
+    "mode": "0o644"
+  },
+  "asm/data/BAAB0.data.s": {
+    "sha256": "e4f1a0084e0959d77bb7b1407bfd278b174b881e34e390fd8f3021a144899a1d",
+    "mode": "0o644"
+  },
+  "asm/data/C2060.data.s": {
+    "sha256": "5dd2f9eda4405c548dadfa34b78763117cee4db830781d3757f2ffb2ce0cc022",
+    "mode": "0o644"
+  },
+  "asm/data/C56F0.data.s": {
+    "sha256": "dd91d83ff6d969e8e0855fe47087d02d3c08a5b86dbaa34637d3f64329129250",
+    "mode": "0o644"
+  },
+  "asm/data/C6140.data.s": {
+    "sha256": "27953e3ec1741d2ea494d6816ceeaabab7b8585b3b96605fea20c6d837896f98",
+    "mode": "0o644"
+  },
+  "asm/data/C61D0.data.s": {
+    "sha256": "9d0d90e03c5444ce39971bbaf39552f867d3aaf423c723329421b2e85ec1b9f7",
+    "mode": "0o644"
+  },
+  "asm/data/C6370.data.s": {
+    "sha256": "3eb9c16c89dd79f332c7d8805f1a2e9ea1948c913877ad30d8af1708489931eb",
+    "mode": "0o644"
+  },
+  "asm/data/C7340.data.s": {
+    "sha256": "b0167931c91b6d7af69b38ee3fbbfc77e77bbe58be3fee57ad0dcbc74329843d",
+    "mode": "0o644"
+  },
+  "asm/data/C9230.data.s": {
+    "sha256": "14f7a9900102e8f20840d934f5bc40edf4bde002d7fe34ed3a16bcec986638c8",
+    "mode": "0o644"
+  },
+  "asm/data/C9450.data.s": {
+    "sha256": "79d71a70c9d16aa3f5634c831e595dfd47274a4a1968b1b36ad5b3d439ec427c",
+    "mode": "0o644"
+  },
+  "asm/data/C9AFC.data.s": {
+    "sha256": "fb843ca8f4b558dc2eb6c1362da303b6c54253d05d51ed1addea5a1828477f78",
+    "mode": "0o644"
+  },
+  "asm/data/CC520.data.s": {
+    "sha256": "8fb9ee68c671a05d9f2c8ed5b5399d6a0fc918bb584c6c6004db4a7793119dd4",
+    "mode": "0o644"
+  },
+  "asm/data/CC550.data.s": {
+    "sha256": "280b4a86edfe9b4e9cc8f23f07137c4e0b827da73036574a446e013e46d38445",
+    "mode": "0o644"
+  },
+  "asm/data/CC710.data.s": {
+    "sha256": "0c06e6ddf71f2c95d0ac85114a06797ccdeab6fc8a1194a8c9cef7b935da45d6",
+    "mode": "0o644"
+  },
+  "asm/data/CC880.data.s": {
+    "sha256": "79c01420959502ac011a710424d0fbb383c9ecf30ef8260aa585a30721ef36e8",
+    "mode": "0o644"
+  },
+  "asm/data/CC920.data.s": {
+    "sha256": "a9dee73e36e1604b7a7db971f4936184632f037376240841adf294b72cf8bf7e",
+    "mode": "0o644"
+  },
+  "asm/data/game_bss.bss.s": {
+    "sha256": "473791913b7607ecbc42e7b9a7ecd7052ecb91f8ef775b3b098095c677a9fc3e",
+    "mode": "0o644"
+  },
+  "asm/data/game_bss_b.bss.s": {
+    "sha256": "a7e1391b6be1abf9d3e51177bd2b140e26519faff71eedc9871b88af5905c865",
+    "mode": "0o644"
+  },
+  "asm/data/os_bss_a.bss.s": {
+    "sha256": "99fe3f7108c0d1458a887974f2bb61c6484049ee39501fb2a58eaa447eb6353c",
+    "mode": "0o644"
+  },
+  "asm/data/os_bss_c.bss.s": {
+    "sha256": "dfb639512862aab7a87a0fc944c130939e1a676aa3f1dd597d4e2782aa672228",
+    "mode": "0o644"
+  },
+  "asm/data/os_bss_e.bss.s": {
+    "sha256": "e1cc7d941c44062af22527fc1c40b50d86a231f9e31efd7f740fb3efff3bb772",
+    "mode": "0o644"
+  },
+  "asm/data/os_bss_f.bss.s": {
+    "sha256": "2136e14803af8d414251933194ee06e08479bfd68980d5c03407bac5e2cec654",
+    "mode": "0o644"
+  },
+  "asm/header.s": {
+    "sha256": "eee1b5ad20fbbb3eb44b0c1b3c7610afd591bcec378d3b0502b71cf042a66363",
+    "mode": "0o644"
+  },
+  "asm/libultra/gu/sqrtf.s": {
+    "sha256": "ea02eb8554354550173fa431aabda4cf11b7d7f58a656792934eed25df34ecb5",
+    "mode": "0o644"
+  },
+  "asm/libultra/libc/bcopy.s": {
+    "sha256": "6805d679da268c51bf616d0a234f24aaf99de526f6a6aacb6c4bcca5c0df4b3f",
+    "mode": "0o644"
+  },
+  "asm/libultra/libc/bzero.s": {
+    "sha256": "387b41dabb979d269815c2ed32e75c62fa4774eb9577ad66b697117e5065fd72",
+    "mode": "0o644"
+  },
+  "asm/libultra/os/exceptasm.s": {
+    "sha256": "92368d9dcdb752af45999fb4c5a613b356cb6be6b5f099ed91c88c6e5b385fc6",
+    "mode": "0o644"
+  },
+  "asm/libultra/os/getcount.s": {
+    "sha256": "fd9b7eee2eb7a67c9082e6a8a861e49d09ecc6c9dae4f502339356ed6202930e",
+    "mode": "0o644"
+  },
+  "asm/libultra/os/interrupt.s": {
+    "sha256": "01fadb6643c6d1ef918c5930a07e2b05dc0f50f616cbbc052aa9f5683fc361d6",
+    "mode": "0o644"
+  },
+  "asm/libultra/os/invaldcache.s": {
+    "sha256": "1a282d1c164ff4276c941f36c414a3f500dcd3cf3dcd19bac38bfca78e7a0ed6",
+    "mode": "0o644"
+  },
+  "asm/libultra/os/invalicache.s": {
+    "sha256": "cd8bcc68f8881607ec3d3e2e883e195add5931146835e88fed00ed21143d4ecc",
+    "mode": "0o644"
+  },
+  "asm/libultra/os/maptlbrdb.s": {
+    "sha256": "6a7dbb5860560e784c3a593b1ff45a06e4a74c0a479de395233aa34cd335baac",
+    "mode": "0o644"
+  },
+  "asm/libultra/os/probetlb.s": {
+    "sha256": "b83d413615206028017f30d13c10739231beba0c6b3290ce2128300795104d03",
+    "mode": "0o644"
+  },
+  "asm/libultra/os/setcompare.s": {
+    "sha256": "d8bd9060a2cb4c9b17b4c674f7c88b7e35f5c9e012765d5dcdaac319a7116662",
+    "mode": "0o644"
+  },
+  "asm/libultra/os/setfpccsr.s": {
+    "sha256": "750eb839882eb5b39dbdaaa867a3769e803d50488e36cf07d0a8f8c575705c2d",
+    "mode": "0o644"
+  },
+  "asm/libultra/os/setintmask.s": {
+    "sha256": "dc6082095c499feee483d96589f6abde2a30a9fef71fc983d51abecf9fc90253",
+    "mode": "0o644"
+  },
+  "asm/libultra/os/setsr.s": {
+    "sha256": "96bd50bf6c91234594bff9032c5d42dffb173700ebaba3eb5de8c2f06c2000c0",
+    "mode": "0o644"
+  },
+  "asm/libultra/os/writebackdcache.s": {
+    "sha256": "30af1b06ea62890684418e89e472366a559186b514b9f71ffc46fd7c3f3610ef",
+    "mode": "0o644"
+  },
+  "asm/libultra/os/writebackdcacheall.s": {
+    "sha256": "436183b4d19b57b88d18e350a3101affffe1a376baece12528080f4d799e6ca4",
+    "mode": "0o644"
+  },
+  "asm/nonmatchings/audio_engine/func_8007A088.s": {
+    "sha256": "3c85474e733742b71d485e3bfb88f7bdcde19e33e0fddbd773e8e18dcbbd18b5",
+    "mode": "0o644"
+  },
+  "asm/nonmatchings/audio_engine/func_8007C1BC.s": {
+    "sha256": "272be1091eb0866c06139a6bd8d6adbc6d0e7ea67956c3775908bd612d7c4cb4",
+    "mode": "0o644"
+  },
+  "asm/nonmatchings/code_4D170/func_80073290.s": {
+    "sha256": "184151af3cabd4ae77ae284ad3962cb409b502fa4de87187ff9e7fea6be3de45",
+    "mode": "0o644"
+  },
+  "asm/nonmatchings/game2/func_800857E8.s": {
+    "sha256": "3ba7df46d1eba1e670e06657ea4937be8cd7dec39e0ca91f0875bad2b176cb33",
+    "mode": "0o644"
+  },
+  "asm/nonmatchings/game2/func_8008EEA4.s": {
+    "sha256": "5edbf963fb543e1f81b820d89f55e5283dc12e68efe6e1aef7689b13a5e0a0e9",
+    "mode": "0o644"
+  },
+  "asm/nonmatchings/game2/func_800906E8.s": {
+    "sha256": "065f95d1bbd8c8dc18bd54093b75531b130ddd39ac24a704d67b7985b3054dda",
+    "mode": "0o644"
+  },
+  "asm/nonmatchings/game2/func_800954FC.s": {
+    "sha256": "21c25564570299f4d7cab6bea6fe895b2f2eee9a4b570cf47954738bd84c85ce",
+    "mode": "0o644"
+  },
+  "asm/nonmatchings/game2/func_800ACB94.s": {
+    "sha256": "a1032f505c6002db29e1dd1787aed0137dd8b71f41579c54b491d775acf53166",
+    "mode": "0o644"
+  },
+  "asm/nonmatchings/game2/func_800BA694.s": {
+    "sha256": "56c7b581261fc37e794f14ae4d5ceca159f98c2459e55401f1f6f5b7b0def416",
+    "mode": "0o644"
+  },
+  "asm/ucode.s": {
+    "sha256": "4f90a5f4a12e6e7f0639f1f4ac55390c383531e625dc68bf9e326138460bf208",
+    "mode": "0o644"
+  },
+  "assets/CD3F0.bin": {
+    "sha256": "fcb35002c2d15b32481c905274031b1139ef73beb6d983b5b0f205c86fb6812f",
+    "mode": "0o644"
+  },
+  "assets/ipl3.bin": {
+    "sha256": "61e88238552c356c23d19409fe5570ee6910419586bc6fc740f638f761adc46e",
+    "mode": "0o644"
+  },
+  "hardware_regs.ld": {
+    "sha256": "eeafe4fb47ce426ce055d43037423b876639aa6f3967b9be2ecf306a9f970282",
+    "mode": "0o644"
+  },
+  "include/PR/PRimage.h": {
+    "sha256": "25bac64b4d176598cedb468b437b8ac7c13c4f255b8573d6aa60058f0b86be1c",
+    "mode": "0o644"
+  },
+  "include/PR/R4300.h": {
+    "sha256": "bb8a7702ef8dfe94c389f0c411a4f2346c506ea8766e85c332a44486a97b7b44",
+    "mode": "0o644"
+  },
+  "include/PR/abi.h": {
+    "sha256": "9efe7ee3c940ff96d46f936ad95e9cc52b879ee8c4b5c264cb8f42e1cf1ce1bf",
+    "mode": "0o644"
+  },
+  "include/PR/gbi.h": {
+    "sha256": "74d8f61eebd436e772b0198bdf855a8c718eb09069925125a4ec6a10ff7422cf",
+    "mode": "0o644"
+  },
+  "include/PR/gs2dex.h": {
+    "sha256": "e9d3519bb328f9ac60b60d119650e1e4d652eaaddcd9db009f9cbd44daecb398",
+    "mode": "0o644"
+  },
+  "include/PR/gt.h": {
+    "sha256": "05e50d177fe2ae42b02bcb384452317029b919f53403a5be1a3d64d47f2e1296",
+    "mode": "0o644"
+  },
+  "include/PR/gu.h": {
+    "sha256": "7724e4c1b01afb9a6de5a326c8e3fb09b74a197efbf4219c0a1626514344e9ee",
+    "mode": "0o644"
+  },
+  "include/PR/leo.h": {
+    "sha256": "e8ad69061d2fb4ee2acbd4c48184b6cebb05b0f3e56087d18d92c3061c0b0b47",
+    "mode": "0o644"
+  },
+  "include/PR/leoappli.h": {
+    "sha256": "902916bad5d2056117570acebaa28cf57c46c2a22bb7cdd111d48ccacc249532",
+    "mode": "0o644"
+  },
+  "include/PR/libaudio.h": {
+    "sha256": "c263287182edf755fbec5bafcbb8c0bf63cb470c568f5c5369e5f4466ca701da",
+    "mode": "0o644"
+  },
+  "include/PR/libmus.h": {
+    "sha256": "2f33d2f7bb2a24f83ab716240e95ba130075a91153d5a5605772500c064dce79",
+    "mode": "0o644"
+  },
+  "include/PR/libmus_data.h": {
+    "sha256": "3be46f7bfb00800e7e61318fcac61d0516129a5c369b62d69c68b64df875623e",
+    "mode": "0o644"
+  },
+  "include/PR/mbi.h": {
+    "sha256": "8a0b32eb3cc7844a38b1b3ed1b160036b203efac0dc3c0275c53354423e40960",
+    "mode": "0o644"
+  },
+  "include/PR/n_libaudio.h": {
+    "sha256": "fc533a59b0806a49dd79d9b2eb1f3754482a0d1604fd4995cd01f23c41cb7944",
+    "mode": "0o644"
+  },
+  "include/PR/n_libaudio_s_to_n.h": {
+    "sha256": "6cad54fa2252fad7cb476882c819515ccec2d4120c94f6488f052cfdf261fddf",
+    "mode": "0o644"
+  },
+  "include/PR/n_libaudio_sc.h": {
+    "sha256": "fb52827eea1e056cbaa484f1abf968275664d3ad507219d543a89db6d5b538b8",
+    "mode": "0o644"
+  },
+  "include/PR/n_libaudio_sn_sc.h": {
+    "sha256": "507afabcb13b508de04dbed5e59d64caa3544fca57f967a130a0047cde85f0dd",
+    "mode": "0o644"
+  },
+  "include/PR/os.h": {
+    "sha256": "e0af7328cadb2164b18c61717d916396741cf053d32b96b0dea06f6d664ff7e2",
+    "mode": "0o644"
+  },
+  "include/PR/os_ai.h": {
+    "sha256": "933e7fe35c87702a2137b9c575022e18bd72e6ce11d8a44035a7ffbddf71aeb6",
+    "mode": "0o644"
+  },
+  "include/PR/os_cache.h": {
+    "sha256": "a9455e20523c6915f26c05d5d399763f1e051c01eac85c10911b7b3a65c0d5c9",
+    "mode": "0o644"
+  },
+  "include/PR/os_cont.h": {
+    "sha256": "8b486936ae60b8a486e87489e77f40f557a0bf59fddf9c1adc5c97aa18388c0b",
+    "mode": "0o644"
+  },
+  "include/PR/os_convert.h": {
+    "sha256": "6d98f19765d055a7857398cc6d7bd7a2ac2e93a4a858f1c27aa22361e4f892f1",
+    "mode": "0o644"
+  },
+  "include/PR/os_debug.h": {
+    "sha256": "260815777abca616a9783db7a57cd94881586c84ef0adcce26516ba50476a523",
+    "mode": "0o644"
+  },
+  "include/PR/os_eeprom.h": {
+    "sha256": "f1f0f50895c4505c3420674504b7868ff85fe08df42433389deeb407e68c5163",
+    "mode": "0o644"
+  },
+  "include/PR/os_error.h": {
+    "sha256": "eae3744bf9ee921d089714e81590226b56fca5ca2f0ef866532eb788e829b120",
+    "mode": "0o644"
+  },
+  "include/PR/os_exception.h": {
+    "sha256": "953bf8361f5e756010c45dc5f823c12183838bd723ec691a99a9fcf682e0698c",
+    "mode": "0o644"
+  },
+  "include/PR/os_flash.h": {
+    "sha256": "7206e87e62400994347ff2d84bd5f563894c9c18cdbe34c0c5dd9fb2bcfa758f",
+    "mode": "0o644"
+  },
+  "include/PR/os_gbpak.h": {
+    "sha256": "c13616c011c214aef601f6249ae12465dcb8a6edfe68df27aaf6d086e09bbc8f",
+    "mode": "0o644"
+  },
+  "include/PR/os_gio.h": {
+    "sha256": "c0197b2afd220c07028a972ca0d5903af3064d48d8657935e3c57fc9a55f3b92",
+    "mode": "0o644"
+  },
+  "include/PR/os_host.h": {
+    "sha256": "3b990c99a18cba34c3d8a856e3e99691125ec8338df42198fe469ee7bb9f9bcc",
+    "mode": "0o644"
+  },
+  "include/PR/os_internal.h": {
+    "sha256": "da340c8b06f7b7b51f0a31c051caab4264954a41e1564d6a4ffea64f9be4f21e",
+    "mode": "0o644"
+  },
+  "include/PR/os_internal_debug.h": {
+    "sha256": "3e4f1baa87602ad77163c15990625e1fd3b9ae6cffcaabb3424dafec6d638bd0",
+    "mode": "0o644"
+  },
+  "include/PR/os_internal_error.h": {
+    "sha256": "ab7537aef80c392dcf0010bde8078f1b5d1973740bc6d51e1f4df3d757e28356",
+    "mode": "0o644"
+  },
+  "include/PR/os_internal_exception.h": {
+    "sha256": "cfcf365cbc270f022b0de024a12cd9bb4ca016e2086a3c27e88fdbf69b0728fb",
+    "mode": "0o644"
+  },
+  "include/PR/os_internal_gio.h": {
+    "sha256": "032d50b58fd0f3d8831430a7125cd039efd1f56affdd8cbeb8777ab464ecba15",
+    "mode": "0o644"
+  },
+  "include/PR/os_internal_host.h": {
+    "sha256": "83dda0b09da200ab1be91aeda90c2d0f52b7a282979391e05a9f4feeff1fffd1",
+    "mode": "0o644"
+  },
+  "include/PR/os_internal_reg.h": {
+    "sha256": "bbfe19f64f9383dfbd4d2ee17d2556ad8e3ae29f0803580637d0df59aa110f39",
+    "mode": "0o644"
+  },
+  "include/PR/os_internal_rsp.h": {
+    "sha256": "77f2c0f58ebe5384970a553cabf850841a679e97dbd049926d13b0cb29f18c58",
+    "mode": "0o644"
+  },
+  "include/PR/os_internal_si.h": {
+    "sha256": "2d88a8388c9211646c446bcd936606b038f80f53c10b9674f48ad6f6dede5acc",
+    "mode": "0o644"
+  },
+  "include/PR/os_internal_thread.h": {
+    "sha256": "f7700e0bd2c22fb6716d656435b7431c6701cbfd518f2908d13845d11be5ddd9",
+    "mode": "0o644"
+  },
+  "include/PR/os_internal_tlb.h": {
+    "sha256": "e67bca1ce07a917679abb4094b087ee70bd01399576fe9d7c4e85c82f642ccf8",
+    "mode": "0o644"
+  },
+  "include/PR/os_libc.h": {
+    "sha256": "fb2f4e113eee01c1953aee8efea3b6eb450ea97e2a5af23ba868ca1059d26b6e",
+    "mode": "0o644"
+  },
+  "include/PR/os_message.h": {
+    "sha256": "241238eea37d71382b7a3c994d5837e4482d77548a4cbdaeb30b9f67013cdfb7",
+    "mode": "0o644"
+  },
+  "include/PR/os_motor.h": {
+    "sha256": "68103a1c114bc7e7c6decf847a5ec3c346e23e9de9c7488ca6bbedc39dae8ec4",
+    "mode": "0o644"
+  },
+  "include/PR/os_pfs.h": {
+    "sha256": "6b14a950c344f7396bc1e58c9b6612f061053bd41b868dba32e13d904a3effd7",
+    "mode": "0o644"
+  },
+  "include/PR/os_pi.h": {
+    "sha256": "3e29b28b596036ffbe86afa8bcec1126511b78fe862297c48061f97d42b747ea",
+    "mode": "0o644"
+  },
+  "include/PR/os_rdp.h": {
+    "sha256": "a85b9def6f64bf25e6aeb064e1f2626f7b2d4d0ef0821d21844a9eefb19f6e21",
+    "mode": "0o644"
+  },
+  "include/PR/os_reg.h": {
+    "sha256": "2a14f15494cf3754f1fe0149a8c8cab4806e843f3be6a30ad0c726443edef52d",
+    "mode": "0o644"
+  },
+  "include/PR/os_rsp.h": {
+    "sha256": "ede13674c9af25912778dd077c3dd709929d43fcb9f135f6465553d0f9e8fa26",
+    "mode": "0o644"
+  },
+  "include/PR/os_si.h": {
+    "sha256": "ffd228b5b0e450efcf1756d778d701be958cce724d1912792c31b3cac26f74b9",
+    "mode": "0o644"
+  },
+  "include/PR/os_system.h": {
+    "sha256": "bc8afaa3362ff4851feee1feed818dd009a13c3de19435a2e09656a64bf531d8",
+    "mode": "0o644"
+  },
+  "include/PR/os_thread.h": {
+    "sha256": "b7c244ead94962a0ebcb0787a589e7b398eaf02d8fc6538698c7353b08dcbf7d",
+    "mode": "0o644"
+  },
+  "include/PR/os_time.h": {
+    "sha256": "21bd983fa7b11daa6a06c053b5e9cd7c08420dd20657c4fd61be434389af3342",
+    "mode": "0o644"
+  },
+  "include/PR/os_tlb.h": {
+    "sha256": "9bbb49127e7e2600f6dcceffe4a1d38f31d463327cfa384ce930ddfa63223893",
+    "mode": "0o644"
+  },
+  "include/PR/os_version.h": {
+    "sha256": "66c2147d22b8ccf5b2eb4967c90b27dfb8c83ce07e08382fcd408c8ca0bc3873",
+    "mode": "0o644"
+  },
+  "include/PR/os_vi.h": {
+    "sha256": "f59a0d52ab0e2bc2ca0b8226bc9b9c1e58d3a9eb8df8c4e6d45aaa6ac51fb2b6",
+    "mode": "0o644"
+  },
+  "include/PR/os_voice.h": {
+    "sha256": "c0fb2f6f8eb68a6608a2401f6a2f4a38d1c65b5d1ae944d0b5999502a9cc432f",
+    "mode": "0o644"
+  },
+  "include/PR/ramrom.h": {
+    "sha256": "fa009dd8676f0af0ed0f0339dfe6ac2f67ad1a1b8675bdff42f71b937608a370",
+    "mode": "0o644"
+  },
+  "include/PR/rcp.h": {
+    "sha256": "61e531c5c93e7b71c167ac1d3d08254f67e5009408defa4fe5b941674c5a6b8e",
+    "mode": "0o644"
+  },
+  "include/PR/rdb.h": {
+    "sha256": "ce4b388d5bf24b869eaee1919fd81a0655006b2327a6f521d954cfc0e546dfeb",
+    "mode": "0o644"
+  },
+  "include/PR/region.h": {
+    "sha256": "d1f523d36ab27f28eea0ffa0d87875661c14844d12c9bf0142932aa38af5869f",
+    "mode": "0o644"
+  },
+  "include/PR/rmon.h": {
+    "sha256": "b646e7e7febea89d9bfed1c1b58ebbe40a7d5378ccb50a1063cc1de5e8d3d07a",
+    "mode": "0o644"
+  },
+  "include/PR/sched.h": {
+    "sha256": "f908ae21bf462ffa9a77e61b023c2b1af1c8a187de5a8370005c88ff094df5ed",
+    "mode": "0o644"
+  },
+  "include/PR/sp.h": {
+    "sha256": "6d4dd33330efa090dcf438a5a05b82a8fa54e94db78bc7c8f4d32f16a638de18",
+    "mode": "0o644"
+  },
+  "include/PR/sptask.h": {
+    "sha256": "12b0a593a7013076fb60cf7224f0bdf25da554076e8b6f2ffe3999769e737dc5",
+    "mode": "0o644"
+  },
+  "include/PR/ucode.h": {
+    "sha256": "50201220d2f811d64e5e11611ec835f0c3bf1a79c3045a2dc40f7e46012765a4",
+    "mode": "0o644"
+  },
+  "include/PR/ucode_debug.h": {
+    "sha256": "715bccc464d8dbaa1a421007b6bab49a303bf5d8eb75ed74c184dddf59e67661",
+    "mode": "0o644"
+  },
+  "include/PR/ultraerror.h": {
+    "sha256": "979fbca1aee61876a524ff3825cfb9c6a18ef28c99eb100e8b9b751b5c266b86",
+    "mode": "0o644"
+  },
+  "include/PR/ultralog.h": {
+    "sha256": "52564b52560297920881f56e81894cfd9d9ed22b4cba1f9298eb1e10b1cda449",
+    "mode": "0o644"
+  },
+  "include/PR/ultratypes.h": {
+    "sha256": "1efbb2464233bd34b60e0f909e3409eb282a5a34aa04591637932bb1bf412ddd",
+    "mode": "0o644"
+  },
+  "include/PR/uportals.h": {
+    "sha256": "76548ed2614bedba9c9236883ab236251a30995b12f96da1e7a8eee8cb1eca4e",
+    "mode": "0o644"
+  },
+  "include/assert.h": {
+    "sha256": "c3abfb8478f3d5f2564817bc86f4a4a578d9755fd9b3bf4301ff0690628b41c8",
+    "mode": "0o644"
+  },
+  "include/common.h": {
+    "sha256": "c55aa08d46dbca20c0691d133ddcd9732acc33af2c429d0fab7cae74854c0269",
+    "mode": "0o644"
+  },
+  "include/libc/math.h": {
+    "sha256": "e13f7c37cc5ea7cf75a93c4b45c6b96f321d67a70e8cdbfbba0edb7de0c3e226",
+    "mode": "0o644"
+  },
+  "include/libc/stdarg.h": {
+    "sha256": "759498a7844671810843e0715215b1ddb3b402d2465e96aa19b65494d71ac2b4",
+    "mode": "0o644"
+  },
+  "include/libc/stddef.h": {
+    "sha256": "e822ef44f9d0312debaef69d9934b62121b2927f8d4de349ad309e5ce8706721",
+    "mode": "0o644"
+  },
+  "include/libc/stdio.h": {
+    "sha256": "060f3f7b91cde2ab969d3d04b40ed57ff2b61167ece52309b64f4c6ab9ebfae1",
+    "mode": "0o644"
+  },
+  "include/libc/stdlib.h": {
+    "sha256": "181e9dc382377ed777654ddbf8393f9244ac9dcee66f58e78b43d0dea53ebbe9",
+    "mode": "0o644"
+  },
+  "include/libc/string.h": {
+    "sha256": "ff969e54b7abd39d23a73c7b19b66afad925a626559bdaa2c47512341c440db5",
+    "mode": "0o644"
+  },
+  "include/macro.inc": {
+    "sha256": "9397256d8069ce9ce42df66f811c206bb3635b34a8e5aa79fb7e1b410126b288",
+    "mode": "0o644"
+  },
+  "include/seq.h": {
+    "sha256": "461e7a489e3dd8cd66b4fafa015829b3140357819b9f8313e6fefc753bee2418",
+    "mode": "0o644"
+  },
+  "include/synthInternals.h": {
+    "sha256": "5ec35559afa619d3c5bac341e2cfdc1e0653f1ade722d9b21346d888d9d359f7",
+    "mode": "0o644"
+  },
+  "include/sys/u64driver.h": {
+    "sha256": "a607ebf8b5c61cd3b9d19db7c3796a6c1c0f1bee8c240b34b0c4e0982f313ded",
+    "mode": "0o644"
+  },
+  "include/sys/u64gio.h": {
+    "sha256": "93c4d7dcf0391755a6963caac88c13496913e7570ab403a098cf6ae7ae5cb44d",
+    "mode": "0o644"
+  },
+  "include/ultra64.h": {
+    "sha256": "334dac734e99fcd8b227322092501397cfcdfb89af3529de6f81953b8feff65d",
+    "mode": "0o644"
+  },
+  "src/audio.c": {
+    "sha256": "da90c63d120a9932b7296da6637489074f3ff633e1251b98653d5bb58798ff02",
+    "mode": "0o644"
+  },
+  "src/audio_engine.c": {
+    "sha256": "1ff23197db0c3b5b374ed1a17e4283eb7e30a553cb35f53c0a2367edf6ad02ed",
+    "mode": "0o644"
+  },
+  "src/audiomgr.c": {
+    "sha256": "94839a0f97d220f014ac49ac3bde98b92b64e15c7d50209cb3eabfff02738a69",
+    "mode": "0o644"
+  },
+  "src/boot.c": {
+    "sha256": "58743e9f4ed458f51b041d2f06105319b36c9e3bf762410e7b4346c778705a9a",
+    "mode": "0o644"
+  },
+  "src/code_1050.c": {
+    "sha256": "cddcfafa1d36d49c457a7c75b634e784f09a7f64ae44ed9e80f84fcc60e4b602",
+    "mode": "0o644"
+  },
+  "src/code_4D170.c": {
+    "sha256": "6682c0eda2fa10ec927db28cb5e3a7e5d25f0f8ad38c6d0bb5d92730a7837811",
+    "mode": "0o644"
+  },
+  "src/code_54150.c": {
+    "sha256": "6188c99acf30a05b91705da4bf1c4d20895f36cc22058721ba9528514a47047b",
+    "mode": "0o644"
+  },
+  "src/code_5B5D0.c": {
+    "sha256": "9c6b709cb35310acbebcdcbcb5d09e40c07bc09809877eb048761850568651d8",
+    "mode": "0o644"
+  },
+  "src/code_62D0.c": {
+    "sha256": "cedb6c565042509ec6ba535bdcb7c4534220c2c27702058c4d0b948f76276b6f",
+    "mode": "0o644"
+  },
+  "src/code_8170.c": {
+    "sha256": "831e2b9d6daa7e05a4547c5888bda9bca7ba0d0866edf66f67f3ea969195d8fc",
+    "mode": "0o644"
+  },
+  "src/code_AB540.c": {
+    "sha256": "da7bad37b576e06d328231dba2b2cad7b0a7a356994ca6692c619e106c818241",
+    "mode": "0o644"
+  },
+  "src/controller.c": {
+    "sha256": "d447647b52f141990b288bc5e21de6e7909c4edd42c9248fd8c03af653f98054",
+    "mode": "0o644"
+  },
+  "src/game2.c": {
+    "sha256": "b19eeb18239cbfa50e1e8cca20ad46e4b89dfedef64fdba67db7083344693342",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/auxbus.c": {
+    "sha256": "7429268bd6b212c5cb3d2883fdcf12b91fef02c39f7a42d6dddefb6a72809d03",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/copy.c": {
+    "sha256": "0fd8589166ec400818eb5f6f4cf6d471aad743e03c52ff2a8a60132be2a198c6",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/drvrnew.c": {
+    "sha256": "47fb5d8b0d5c3ea4a8dc0ea864e80081689c08f549e3355280f1fd8c208d305c",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/filter.c": {
+    "sha256": "6b3f704a777130ca145ee1eb05c870f34f95ce6143e7df04af40b7b109841dea",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/heapalloc.c": {
+    "sha256": "6c1bb5074c1834d2c722a6e5402845bb04b8659c3361e495563514c166686ca8",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/heapinit.c": {
+    "sha256": "9856519f01737487ebaf8021f4d387ff320a540456eb200551231729c5da5732",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/load.c": {
+    "sha256": "07a668e0c98be207d68d4c7b611ee62c3f4d600bfd71f7c08b0f001940950f10",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/mainbus.c": {
+    "sha256": "4af24914932552aaed275d2b7470944731407df3c241698c56291336fd906997",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/resample.c": {
+    "sha256": "78bfabd9e37db9803a619933658d4573fc2d081aa26a4fee095b59f05d5d3a0f",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/reverb.c": {
+    "sha256": "e8f5e8b365e6072c6da8eccfc45a3c4a1784a7896cf9d9a9e2bfe2beb3ba441b",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/save.c": {
+    "sha256": "124697e5836a75d3c4502e887d00fba52c8a459da906e75293455f14ded2d347",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/synaddplayer.c": {
+    "sha256": "5353afaeb9a4fbddaac30546d2db921a4d2bc1af6a468e5c39eb6ef5cd635444",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/synallocfx.c": {
+    "sha256": "1a95729050a47f9d023d08503d1667a2ab405e31dd2b797d7bcb01ab5728e185",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/synallocvoice.c": {
+    "sha256": "a2424e27eb79961c44a832cf8d10187bb6ded582281fdee80ede6fc585816104",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/syndelete.c": {
+    "sha256": "117f8fcf7e0332a9652ccda80dc3bf71732162d7ed3c44f20bade150aecb1fa4",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/synsetpan.c": {
+    "sha256": "237ed40c8ea181ba439769f8c77798d4088fee58944122f3ed0051ba5b0054e3",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/synsetpitch.c": {
+    "sha256": "4dfdadb490bcca2dbab9c7667e1a4155f2b33f8af38f404162cf5ba36e717f23",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/synstartvoiceparam.c": {
+    "sha256": "821dcdd9731fb9333d6a7613e471a8242366363b7f324d64efb25d3dd93e6f83",
+    "mode": "0o644"
+  },
+  "src/libultra/audio/synstopvoice.c": {
+    "sha256": "cb3bea8eb64ed5d40417187f9ddd0666a8b6cec8670aad853871980f6d803082",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/cosf.c": {
+    "sha256": "c7b7a5b2f3a068d34ca1a611a9d74d46627f9125820c71fda605c9c47bcad089",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/coss.c": {
+    "sha256": "2880c0606aa36d8dfee9d07c3d804eeac6b3fbea144263c73f7e731a38f0d01b",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/lookat.c": {
+    "sha256": "47c9198fad38efd3ec8ca19c962227a05d52b93e4a57ee3070336d177f4aa143",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/lookatref.c": {
+    "sha256": "b7456c85c75b13eae71ade1ce887a3458282dce66c2c844b80e3ad938fab1c61",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/mtxcatf.c": {
+    "sha256": "c632b4011c1782e07544a32c71067c876ddf1073bc7d6e70678c5faefc05f888",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/mtxutil.c": {
+    "sha256": "5b586c4123ad7c00bd6548b21e0670e6824a5ce18145dafe027fbd1612c1d064",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/normalize.c": {
+    "sha256": "78a5026317b626a0bf19dab585ad63e7ba84d6ad459a6cc1b1a7b4f91c87eaf9",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/ortho.c": {
+    "sha256": "d875823b07da493e6bbdbf3d87b952c5f153e60b809c1ec4ba7b4496d723cbb7",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/perspective.c": {
+    "sha256": "8b42efaf31493280e86d1f56c3f219a84663804625333b742565013982737e2f",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/rotate.c": {
+    "sha256": "0b0fcec25ca88ae135438370f924e9142c333021580f01552679c9cfa71facbc",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/rotaterpy.c": {
+    "sha256": "7f30207518f6397b181d8b26af42583cc29d936ebcca8f0d13ba1909ea1c8e01",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/scale.c": {
+    "sha256": "f5ad9bbcbefcaa9314fef4298e70e35c046df0660779a5a8ccdae96d402ccc08",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/sinf.c": {
+    "sha256": "bfdf8d17facc510edfc46dab2e9dd607cebbb462317de4d74a1e568e579645f2",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/sins.c": {
+    "sha256": "1af4cccac8d2cd1ac3dae7da9319b6321e491bedbc21afe555cf0bb8958779d5",
+    "mode": "0o644"
+  },
+  "src/libultra/gu/translate.c": {
+    "sha256": "e6e123ddf8a8525bbe9de429f1b518a8d6ee9652f67943ee79c24929d2397eff",
+    "mode": "0o644"
+  },
+  "src/libultra/io/ai.c": {
+    "sha256": "93edff171323a2caad99712f83def88edef0520e22bb2332268334674e83f8ca",
+    "mode": "0o644"
+  },
+  "src/libultra/io/aigetlen.c": {
+    "sha256": "31043f773920302d5cdd00f21e9a668898306c3b48e1ca81ab77cdb3f004de51",
+    "mode": "0o644"
+  },
+  "src/libultra/io/aisetfreq.c": {
+    "sha256": "70c971b814c372a99311444b456ffb8a9d46f9769ec1516769285fcc02d87833",
+    "mode": "0o644"
+  },
+  "src/libultra/io/aisetnextbuf.c": {
+    "sha256": "64df240e3ac9567d6d2759bc4dd32a872960bb07de161c7aaa2db1074026faeb",
+    "mode": "0o644"
+  },
+  "src/libultra/io/cartrominit.c": {
+    "sha256": "4c671c858056dede1df2ae89bec58095ba576ce035b0ed01f0015ae3ed806fd8",
+    "mode": "0o644"
+  },
+  "src/libultra/io/conteepprobe.c": {
+    "sha256": "95347a45f509c6e3ccd67e7ecb5eace619249b3d1e770f8270ce480db2e43cef",
+    "mode": "0o644"
+  },
+  "src/libultra/io/conteepread.c": {
+    "sha256": "d6c962b3a55ac79a2788924357061733cd30d51f05967fd69ea5a890c8f155ec",
+    "mode": "0o644"
+  },
+  "src/libultra/io/conteepwrite.c": {
+    "sha256": "3d50c664e57b84d44cb870604a266cc99152bc2bd1df660e8fd626e5c8ba9b73",
+    "mode": "0o644"
+  },
+  "src/libultra/io/contreaddata.c": {
+    "sha256": "a24893c09af5563b9a4441b6cd30378b1c47341375dc1da5860fb5aa19d9049b",
+    "mode": "0o644"
+  },
+  "src/libultra/io/controller.c": {
+    "sha256": "8a7a186946b031118eb68febe280ffeb9b14f6e58dcb8d49b2b0861f64a16c97",
+    "mode": "0o644"
+  },
+  "src/libultra/io/devmgr.c": {
+    "sha256": "fb071a4b0819775fb96bd05212562680e67c89764c74e9d63f69b6eb500b5dbc",
+    "mode": "0o644"
+  },
+  "src/libultra/io/dp.c": {
+    "sha256": "770a517680da3038ec51eab461d326b4731b45fe65fabbdab341d7c8ef76a436",
+    "mode": "0o644"
+  },
+  "src/libultra/io/dpsetnextbuf.c": {
+    "sha256": "df58fb0ed041dcd13d68c8c42a997850b6a288bffedbf706fa1122080a5b25bc",
+    "mode": "0o644"
+  },
+  "src/libultra/io/epirawdma.c": {
+    "sha256": "cc05a19cc8bf1e5fdd58e8e426b500f2eac244901e362bcec0b40ea546265a0b",
+    "mode": "0o644"
+  },
+  "src/libultra/io/epirawread.c": {
+    "sha256": "bbe2ed93c9e6dd26d7f3c375b628e371e8163a6fe1a2e8ca08cbc378cbf4902f",
+    "mode": "0o644"
+  },
+  "src/libultra/io/epirawwrite.c": {
+    "sha256": "e5168136ab834aec4a1b6a7508a66e46348b72844819f6ce96a411bf928a9f5d",
+    "mode": "0o644"
+  },
+  "src/libultra/io/leodiskinit.c": {
+    "sha256": "049bbe652534ac4e1cd889b24fe74e6b4ead556d060500bf64cf10347def54e9",
+    "mode": "0o644"
+  },
+  "src/libultra/io/leointerrupt.c": {
+    "sha256": "702822fa0978ee9c685c113be3509138b50c0c8cdb7f08e876daee2d66140382",
+    "mode": "0o644"
+  },
+  "src/libultra/io/piacs.c": {
+    "sha256": "e15097299a66ed7863de85058e9181f73e29783385889b6a0060e0e2b2f92a1f",
+    "mode": "0o644"
+  },
+  "src/libultra/io/pidma.c": {
+    "sha256": "5b278b009c44bb75ebbf6dfed39e23838c5bf34f16c87cabdfa9220ca0434f9d",
+    "mode": "0o644"
+  },
+  "src/libultra/io/pigetcmdq.c": {
+    "sha256": "6542e4c317a6b13d22a8f51d72a9c43d6e7c5ca4b3c3c3f55f40d662a5fa5edd",
+    "mode": "0o644"
+  },
+  "src/libultra/io/pimgr.c": {
+    "sha256": "10e540394218552fbdb2b08fff4439456a9ce4ebd75f7bf1ae4a6637c8e04e85",
+    "mode": "0o644"
+  },
+  "src/libultra/io/pirawdma.c": {
+    "sha256": "a7c4761d2983028bf0c8daf4e268e3f8b72bc06091a1eb3b4c82ee950a899881",
+    "mode": "0o644"
+  },
+  "src/libultra/io/pirawread.c": {
+    "sha256": "15aec7f82d2401bd825f461089b1de2176595940e024746598f9ed685eac72e9",
+    "mode": "0o644"
+  },
+  "src/libultra/io/si.c": {
+    "sha256": "e8b3b9cb2149268c6927ec1134cc4ae955a4921f5d8ff3b609b13195b3d4bd12",
+    "mode": "0o644"
+  },
+  "src/libultra/io/siacs.c": {
+    "sha256": "3c5b54c44925ed18bb8caac08e44d443ad4e540113252bed702727f240d50bc7",
+    "mode": "0o644"
+  },
+  "src/libultra/io/siraw.c": {
+    "sha256": "a1071cb4f1603d1014271a8866338a68f023152405e5f34dbe4bcbeac068d018",
+    "mode": "0o644"
+  },
+  "src/libultra/io/sirawdma.c": {
+    "sha256": "7c813678abe6e7c7a8e32cd447cfde40289165d9e251076c620e2185ea55d3a2",
+    "mode": "0o644"
+  },
+  "src/libultra/io/sp.c": {
+    "sha256": "c9fc21b86f234d90c7a9628b30e029c2220e079ee79123178976222f0f2878dc",
+    "mode": "0o644"
+  },
+  "src/libultra/io/spgetstat.c": {
+    "sha256": "311e9eeb0b3286d36dc31463fc02dbdc0fd3c22a092cf6f80f010d39a098f3f3",
+    "mode": "0o644"
+  },
+  "src/libultra/io/sprawdma.c": {
+    "sha256": "464f4047a544a2352743568e3d04d20122b3bed6ce0538fb0e7ef03db76f2648",
+    "mode": "0o644"
+  },
+  "src/libultra/io/spsetpc.c": {
+    "sha256": "201b8fb1c867d8141d27d9fc960a77a77b532266e6d93bfe79ef495b4705de94",
+    "mode": "0o644"
+  },
+  "src/libultra/io/spsetstat.c": {
+    "sha256": "1d4111413807152405a36fcc927f1ec87d6c2470e7e89d7bf0f92b88c003a834",
+    "mode": "0o644"
+  },
+  "src/libultra/io/sptask.c": {
+    "sha256": "194c0263abac26c671e80cfe0c6685b9f8b8b19e6e4da96ac60f10c301f41a32",
+    "mode": "0o644"
+  },
+  "src/libultra/io/sptaskyield.c": {
+    "sha256": "76dcc4157883ef5ef6827696be014e58042528bdf4c711fc54566794b6ff4cca",
+    "mode": "0o644"
+  },
+  "src/libultra/io/sptaskyielded.c": {
+    "sha256": "2040938798842659cbc9e442f4c8b988492c5e0849a4b3b63ed71cfbae43081b",
+    "mode": "0o644"
+  },
+  "src/libultra/io/vi.c": {
+    "sha256": "dabc0f367a5c0d19aab0601c19d1d790b3e9f2ddedec8f7df0a28034c21562d5",
+    "mode": "0o644"
+  },
+  "src/libultra/io/viblack.c": {
+    "sha256": "8afdf1a80d26cb576e721b6a508a2a515bf27ec7e804ac5a5e30ab7f36800010",
+    "mode": "0o644"
+  },
+  "src/libultra/io/vigetcurrcontext.c": {
+    "sha256": "056b17cef255e86ef010bed82d1c66eb63f7d0888bdbda765008d6b6d0ad29e0",
+    "mode": "0o644"
+  },
+  "src/libultra/io/vigetcurrframebuf.c": {
+    "sha256": "f4f061d11be141c45340e13074ce5e5f9cbf1e1e4dc8e3244890965ebd21b8f3",
+    "mode": "0o644"
+  },
+  "src/libultra/io/vigetnextframebuf.c": {
+    "sha256": "dce48d87b49dc10b386f81040267af1417b889a4c0f6a1983a1bd3e60961aa33",
+    "mode": "0o644"
+  },
+  "src/libultra/io/vimgr.c": {
+    "sha256": "0c3787126e17688262ce734b1bb4b5f7fae9e086d6b381e8ca165becad04c5d6",
+    "mode": "0o644"
+  },
+  "src/libultra/io/visetevent.c": {
+    "sha256": "bf404f5f12e82994f2dd2ea5bff8e09ba84187a448fec60eaa31037e355d9383",
+    "mode": "0o644"
+  },
+  "src/libultra/io/visetmode.c": {
+    "sha256": "2e537647514187dadae16f691afcbe9097c04b5f53e4f708b9f0d56bef0383af",
+    "mode": "0o644"
+  },
+  "src/libultra/io/visetspecial.c": {
+    "sha256": "f7a809bbce88cff70f702b42564469dcb10524b9691d3fe396b57135dace17b7",
+    "mode": "0o644"
+  },
+  "src/libultra/io/viswapbuf.c": {
+    "sha256": "b47f45e39e7bda4bc73600384b888b3e80bad41afa78993227a65ca18951dd6d",
+    "mode": "0o644"
+  },
+  "src/libultra/io/viswapcontext.c": {
+    "sha256": "b22372a62fba097575de9839d128fe07d6da8abb840835e9203c47c91537862a",
+    "mode": "0o644"
+  },
+  "src/libultra/libc/ldiv.c": {
+    "sha256": "e392f67923031f5572e589d5b1179389a2dc13bb0ef506350aa856a20e5071ae",
+    "mode": "0o644"
+  },
+  "src/libultra/libc/ll.c": {
+    "sha256": "11a550c2b35172242a0479e3328bfee24a4befeb287980e2470f77b6134cfd54",
+    "mode": "0o644"
+  },
+  "src/libultra/libc/sprintf.c": {
+    "sha256": "8aa919e84ef6a89b9dafe45711f0adb05ceed6e369a872fbb1ae98ccc0088836",
+    "mode": "0o644"
+  },
+  "src/libultra/libc/string.c": {
+    "sha256": "50f1005798f8919bbc75fbefe6e3596cc1574ffb4f97fc74b9992959feeb8413",
+    "mode": "0o644"
+  },
+  "src/libultra/libc/syncprintf.c": {
+    "sha256": "7f16cc866035400eea0057055328df74a00f74d2d83bc95d223e3ec6ae4eec85",
+    "mode": "0o644"
+  },
+  "src/libultra/libc/xldtob.c": {
+    "sha256": "4417a3daa9294f2e46214bf19e86c7f6b9d42b05b36b4bd7238a6d518e5f40b5",
+    "mode": "0o644"
+  },
+  "src/libultra/libc/xlitob.c": {
+    "sha256": "b433c6c405a8d64c04e0746271031994ab8d6717f291cedad30e682a864bc9d1",
+    "mode": "0o644"
+  },
+  "src/libultra/libc/xprintf.c": {
+    "sha256": "1e2a639d3d12834f0336116186f83a799e4438a7a7ef87e0ed89ef3864c1a951",
+    "mode": "0o644"
+  },
+  "src/libultra/os/createmesgqueue.c": {
+    "sha256": "a22ee9bd7b578ae677d9628ab42333751306d49f974cc9dbcb681973f4aaba9a",
+    "mode": "0o644"
+  },
+  "src/libultra/os/createthread.c": {
+    "sha256": "7579f31ed6fa33d7a49ae68fc0392d97e57f5db8c130c17843fe3c645546c311",
+    "mode": "0o644"
+  },
+  "src/libultra/os/destroythread.c": {
+    "sha256": "92b045091d66dba77fdc89aa1ba0796875c4ab34c0ce9e3594b2df7c4d233ab6",
+    "mode": "0o644"
+  },
+  "src/libultra/os/getcurrfaultthread.c": {
+    "sha256": "c731eea33507a80a8379ccfb5720ffcca08a722560d33aa6270176ac3c3e447e",
+    "mode": "0o644"
+  },
+  "src/libultra/os/getthreadpri.c": {
+    "sha256": "c1a543c1f9855d8b2ab3e4699b8debbb2d1d148cbb4f07afed587c64ff77e713",
+    "mode": "0o644"
+  },
+  "src/libultra/os/gettime.c": {
+    "sha256": "a0f1afb8870d5112df37c5935fd9063d0fd19f90cbef5b07f5a7fa58c3c50d15",
+    "mode": "0o644"
+  },
+  "src/libultra/os/initialize.c": {
+    "sha256": "deaaa7466badaeecb10c6ec2df965cdb9c718dc84aa69a143353e05dc5ce2907",
+    "mode": "0o644"
+  },
+  "src/libultra/os/jammesg.c": {
+    "sha256": "9ce6ec8c0f7604a2446ba8f0273a5e87d549af7f5ca4762d21b5b09440c9e879",
+    "mode": "0o644"
+  },
+  "src/libultra/os/recvmesg.c": {
+    "sha256": "6bf5e355f840ad618614fde66e780bd7ca3449eaa398c58445259d3196efec0c",
+    "mode": "0o644"
+  },
+  "src/libultra/os/resetglobalintmask.c": {
+    "sha256": "4dc6cf082676c71ebaf220b27d826d8e88c5ee0fb7707de24ffd92036db5ec31",
+    "mode": "0o644"
+  },
+  "src/libultra/os/sendmesg.c": {
+    "sha256": "6ab22710804c92064d6f077ffc67e3ff41ba1096919bbeea2d1d3beba7c2327a",
+    "mode": "0o644"
+  },
+  "src/libultra/os/seteventmesg.c": {
+    "sha256": "0ae46b6447ed17459d0e2aeb8e179dc88f1f60ba6f4eeb6cf703d0c81cc1bd09",
+    "mode": "0o644"
+  },
+  "src/libultra/os/setglobalintmask.c": {
+    "sha256": "85baf4c0f0462cb49e07dc6c9e6651ae5e3d8d22537f648aeec66131792a685f",
+    "mode": "0o644"
+  },
+  "src/libultra/os/setthreadpri.c": {
+    "sha256": "ac85f1f82e45ad7870e50097a0c0bfb82982ae7a326f9cf3a048f5529bc0cacc",
+    "mode": "0o644"
+  },
+  "src/libultra/os/settime.c": {
+    "sha256": "186afb642730e257823ae2965e6550b56b6d1fb9dc3b7c0160c84ed6dff9a8ab",
+    "mode": "0o644"
+  },
+  "src/libultra/os/settimer.c": {
+    "sha256": "b5d09bd42c62c21fe8909277b3067e52b911c8abb962c58c5486a0fac54858da",
+    "mode": "0o644"
+  },
+  "src/libultra/os/startthread.c": {
+    "sha256": "78735322769a1d5a6facd5fc443cfdd3f9e798562e0defee4a9a8de7f562ce57",
+    "mode": "0o644"
+  },
+  "src/libultra/os/stopthread.c": {
+    "sha256": "4461b466f21939cd583f6c0d38f154b290105eaf7da70a33fc5ec62b30970bdf",
+    "mode": "0o644"
+  },
+  "src/libultra/os/thread.c": {
+    "sha256": "c195356104347853050f4083fa56a8a626f5dc2008f8cf4a0a2acf733b89826b",
+    "mode": "0o644"
+  },
+  "src/libultra/os/timerintr.c": {
+    "sha256": "916cc48fad757289146c4f6f004ddd3ddcb66b57c24ecf6ceea7b485483c57d2",
+    "mode": "0o644"
+  },
+  "src/libultra/os/virtualtophysical.c": {
+    "sha256": "8ed671e96d3962776f05bd92fd75b51c33bc96af918950990626d4ed19a8fa52",
+    "mode": "0o644"
+  },
+  "src/libultra/os/yieldthread.c": {
+    "sha256": "7eafd5d8c2e3dacb9fbd6ca7b0870099a85e27b547c38d802db7c6ed1ae084fe",
+    "mode": "0o644"
+  },
+  "src/lz.c": {
+    "sha256": "351173a002c5c5535d3b7efb54adaeec26aa2b3f5cc902fb28c07721e10556a3",
+    "mode": "0o644"
+  },
+  "src/main.c": {
+    "sha256": "91de9924bca05ff7f35cbe614ad8ba9132bc357716bbe5b95c9efc5dd0d28e66",
+    "mode": "0o644"
+  },
+  "src/n_audio/env.c": {
+    "sha256": "beb3fb0cccce2b94efb804674360dda881233548475f124e64e79e0bd1d48a53",
+    "mode": "0o644"
+  },
+  "src/n_audio/sl.c": {
+    "sha256": "4b94ea0cf8ca8325a2f1ef4c650d1d3f3d3b5e1ffdfae78af428064a87cfcda0",
+    "mode": "0o644"
+  },
+  "src/n_audio/synthesizer.c": {
+    "sha256": "f766fa46a86deae0a45285be298b7cd4c0388f57710ea3886e8e865331c4fc9f",
+    "mode": "0o644"
+  },
+  "src/rand.c": {
+    "sha256": "61f26d70beffec49ea501edfacce3354dc1de5bca895ee5d31e7894c97f3a26d",
+    "mode": "0o644"
+  },
+  "src/rdpinit.c": {
+    "sha256": "920d10ab1c0d6bd5a87ea19d22524d6f98e138ea538507b1a9d51ccfb4f3989c",
+    "mode": "0o644"
+  },
+  "src/sched.c": {
+    "sha256": "da4dfe4e34be81e48f3905771ac81c0ae638a614a915afa54d3fe02c43c466e3",
+    "mode": "0o644"
+  },
+  "src/synsetvol.c": {
+    "sha256": "72b8b748797d42fa681b6b38a1567e9f9e5301fd8670ac7a75d95c254d841aa6",
+    "mode": "0o644"
+  },
+  "src/util.c": {
+    "sha256": "476c110e5d95886b5472f2b3b1070a79d859b51358b64d32eccf957f39c0811f",
+    "mode": "0o644"
+  },
+  "tetrisphere.ld": {
+    "sha256": "4e2245f549180c8ff561e219b39ff81253546fd3436961f39ca820ada21094fe",
+    "mode": "0o644"
+  },
+  "tetrisphere.yaml": {
+    "sha256": "55fb4681e916038662b5848a5c61890238e9b5c2e7a9a7dd0b570e2d60c48ff8",
+    "mode": "0o644"
+  },
+  "tetrisphere.z64": {
+    "sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+    "mode": "0o644"
+  },
+  "tools/ido5.3/v1.2/macos/.installed.json": {
+    "sha256": "1bd577b0360e0e6cc5ff107d8baf88c6f982b8b9a6e2a4fca4eff996fe88c9de",
+    "mode": "0o644"
+  },
+  "tools/ido5.3/v1.2/macos/acpp": {
+    "sha256": "26d97a4120b293f3e755d3d4e1d2d5b9e4486d22404f716b6db0c0a324f04228",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/as0": {
+    "sha256": "8976f7d4ef96bd3c8343e7df5f93b21766308e782ccefbc69a02de6ee9033825",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/as1": {
+    "sha256": "46e76dd428651d77e478e4dab229fcd4a3179f3fc5794328a279780a9830673a",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/c++filt": {
+    "sha256": "f09697955715117b52ce789ff39efa783f6016836c084803ac8e185c94c126f3",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/cc": {
+    "sha256": "1f35d3e39e1258476d4beb369a4bf5c9419365c9116c4c5b151fd585e4152443",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/cfe": {
+    "sha256": "642685feaa57191eef4cee7fb05695ce1219464678272a2a89de243138691c9f",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/copt": {
+    "sha256": "f79a4bd4cdb8f33dd2fee5e1cef93b7abef0cd0dda163578a2d67de234365c38",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/crt1.o": {
+    "sha256": "95bd24880e95e102bbdf2a1cfa2e10d391cb57784a42db19afd609c0904aee28",
+    "mode": "0o644"
+  },
+  "tools/ido5.3/v1.2/macos/crtn.o": {
+    "sha256": "62197e97a5e56e21c6a4e76ffe9f634cf90b47046ebe4841086108101ce496eb",
+    "mode": "0o644"
+  },
+  "tools/ido5.3/v1.2/macos/err.english.cc": {
+    "sha256": "6f2d777730f0a70328bb932c116c1c195da765cb9bbdee8c6d3eaf7d6ad77e78",
+    "mode": "0o644"
+  },
+  "tools/ido5.3/v1.2/macos/ld": {
+    "sha256": "b0c94ef1d7a0b9a849a862c5cfe222b561609e245ab5d5d71790d376b733d417",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/libc.so": {
+    "sha256": "803f8b127194a79d92c5caea62fd39097be16d3fcd9870b4470123cebd5d27fe",
+    "mode": "0o644"
+  },
+  "tools/ido5.3/v1.2/macos/libc.so.1": {
+    "sha256": "803f8b127194a79d92c5caea62fd39097be16d3fcd9870b4470123cebd5d27fe",
+    "mode": "0o644"
+  },
+  "tools/ido5.3/v1.2/macos/libexc.so": {
+    "sha256": "b59bf75bcbff1526ad4e3b2b49b313788a6e4c97df5b69b4bc2ddbd6726c5864",
+    "mode": "0o644"
+  },
+  "tools/ido5.3/v1.2/macos/libgen.so": {
+    "sha256": "bb66dea1242000f648e890252cbe47037310559cc0ecda8ed212c0e545bf8063",
+    "mode": "0o644"
+  },
+  "tools/ido5.3/v1.2/macos/libm.so": {
+    "sha256": "8acc66c2d1315b90f38a280fe04a26d0e61b5ca377976ed5d7f88bb064bd2e35",
+    "mode": "0o644"
+  },
+  "tools/ido5.3/v1.2/macos/strip": {
+    "sha256": "212ff4a92e071235a2706e187dd78d8bd53a1c96dae489f740b8f89a7dce2137",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/ugen": {
+    "sha256": "f6048be5618c9ebca0eb3f82a82fedc2ae9a3230c40aaac201438b4f6f2fe0b4",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/ujoin": {
+    "sha256": "1b87e15cbc650a1822dea203096c217e1e7f432e2f5d80f6ab5ee9f7d5479799",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/uld": {
+    "sha256": "e8f1ca01699ab5e5cd66d1878511d2b97040df179df71e765081cf954a4dc4d9",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/umerge": {
+    "sha256": "f2a4654c2c16747715763256d6a83d6d714fe5b26f6297063b5113955d68171d",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/uopt": {
+    "sha256": "36cc91348306bebf355f696d051ec37da70f283deb0f278bf444e99c3e66f4f0",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/upas": {
+    "sha256": "b018060f715fdbdc83983379a866a69a6898e22e7508942ba7ccc74803cb19aa",
+    "mode": "0o755"
+  },
+  "tools/ido5.3/v1.2/macos/usplit": {
+    "sha256": "80dc2c925bd7d0e3baef67214e340113b9692d53804f37c1ca826f8c6819e4dc",
+    "mode": "0o755"
+  },
+  "tools/rom.py": {
+    "sha256": "b5e3bfce685b6fb28af79399bee4a9b0684b30d650da6ab056b873d9a88174bb",
+    "mode": "0o644"
+  },
+  "tools/setup_ido.py": {
+    "sha256": "9a7fa515446c0ca82925375c07eff51837c1f40f6981c1e115392aa8effd8a86",
+    "mode": "0o644"
+  },
+  "tools/ultralib/.github/workflows/ci_egcs.txt": {
+    "sha256": "6e7146dbf7e492f05f8bc720deb6d59c3424bf3e1f72cfa73983475cac98f749",
+    "mode": "0o644"
+  },
+  "tools/ultralib/.github/workflows/ci_gcc.yml": {
+    "sha256": "0d3420fd72bd4650a768b30f4e66f70a913f2d14300bda3b22508296e9a747c5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/.github/workflows/ci_ido.yml": {
+    "sha256": "33125b41fc3d3d5f5d5adf1d9fbfea36a2c338f3fff5bf6212be91f9e8c51d26",
+    "mode": "0o644"
+  },
+  "tools/ultralib/.gitignore": {
+    "sha256": "35a510e151df0e69708e7976cd06e77bf20a5cc741c38aaf632f38e057e9b90b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/Makefile": {
+    "sha256": "3132ac94d885ea2b1c384ee12265dd549dfa18ec89ccb583630aedfd6e30fa1b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/README.md": {
+    "sha256": "ea99bbd02a52de069ca18149e67df44e623f9ce216c801b21ea7095876cfad25",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/I/libgultra.txt": {
+    "sha256": "e1f49b4a5671c46bffafb444b70cbc1882600bf8622b720a1c6840cc17c51b10",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/I/libgultra_d.txt": {
+    "sha256": "e1f49b4a5671c46bffafb444b70cbc1882600bf8622b720a1c6840cc17c51b10",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/I/libgultra_rom.txt": {
+    "sha256": "e1f49b4a5671c46bffafb444b70cbc1882600bf8622b720a1c6840cc17c51b10",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/I/libultra.txt": {
+    "sha256": "0f95c72cde5430bfeacc0429aed5fbaeb749efa329eea55b3e31ece84ca76894",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/I/libultra_d.txt": {
+    "sha256": "dd945f1a9f099808250cc414e2ac2360adee5ada3246cc4e745603faff3304ee",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/I/libultra_rom.txt": {
+    "sha256": "d8a6303228ba2fdfcc716810bb73f68ddb10e31e6798930ac9a18dda5a8370ce",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/J/libgultra.txt": {
+    "sha256": "62fe94dd6469a8b191c8e449e348f76bae64669b106a4c23b1f5a3748c130cf6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/J/libgultra_d.txt": {
+    "sha256": "fae0031597a684d93cf327ed5d0e77bb6c2a70ed28f0d85ce85fd48e5d518f72",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/J/libgultra_rom.txt": {
+    "sha256": "2e44eaa0ce5ab53c4711fbb4978bf2cc6d23e63e8f653ae99b6ec5d3bbe165f6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/J/libultra.txt": {
+    "sha256": "f9421f4223a2d4bf4d90c4f528868cc77d9fe04f01eb808a1c22b6f4145afe22",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/J/libultra_d.txt": {
+    "sha256": "0bb4058117fb99067572e89a9f85ece2dd9d33d51650f03b8b71fa1d3a0996ca",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/J/libultra_rom.txt": {
+    "sha256": "fc33fc309b33e122df8b308abb44a2fec6455d241ff0cc6346975d8561766235",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/K/libgultra.txt": {
+    "sha256": "3c68bafdebc07de01c974cae10fb1c9ff09096cc4fb2628a9c5c9d1e695b23e9",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/K/libgultra_d.txt": {
+    "sha256": "54d3e7d91682bfec0aebed622d327c25552298d6f06ee0fe67f678b296256663",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/K/libgultra_rom.txt": {
+    "sha256": "de9ee49ef2997fc41227d729ce88443fedf61bda63ba367200d4600c3ce18400",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/K/libultra.txt": {
+    "sha256": "7b21e6a91ce3bc542fc7ae1f15dcd1e76ff02f803d0f05dfc135b006534f0454",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/K/libultra_d.txt": {
+    "sha256": "d7f7e9d071a35ff9fceccded27c76c7cf0afdc9a94dbaac45ecabccd229b06fe",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/K/libultra_rom.txt": {
+    "sha256": "57a272d9f1840e28da0ee7b69040cfed3f7a435f5c8aa15a75168f72c64cda60",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/L/libgultra.txt": {
+    "sha256": "3702934413c041a04ab39869318ba40e7754304c784321eb2c71e7d403bcac4b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/L/libgultra_d.txt": {
+    "sha256": "fa8d5ecfa5d51859b706298360dfeead9fe58b74071cad8dac8042763625f3fe",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/L/libgultra_rom.txt": {
+    "sha256": "6752167b7916bec6a64f6f9fd26f76d000ff023cd4d809efadb1e4d123dfc42e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/L/libultra.txt": {
+    "sha256": "af2247202c6d7b044053417267f31f68747cbc9e0db15770c2d0d66e24f8dd94",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/L/libultra_d.txt": {
+    "sha256": "6489cb698eaadffa937d9a7b7233e2116c1e7e0ea9604505463ad03eeb421409",
+    "mode": "0o644"
+  },
+  "tools/ultralib/base/L/libultra_rom.txt": {
+    "sha256": "55d7c2b52ba1acc697af9e88b259dec124789e37f6927a42e4f9572e3a83cd99",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/R4300.h": {
+    "sha256": "bb8a7702ef8dfe94c389f0c411a4f2346c506ea8766e85c332a44486a97b7b44",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/abi.h": {
+    "sha256": "9efe7ee3c940ff96d46f936ad95e9cc52b879ee8c4b5c264cb8f42e1cf1ce1bf",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/gbi.h": {
+    "sha256": "74d8f61eebd436e772b0198bdf855a8c718eb09069925125a4ec6a10ff7422cf",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/gs2dex.h": {
+    "sha256": "e9d3519bb328f9ac60b60d119650e1e4d652eaaddcd9db009f9cbd44daecb398",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/gt.h": {
+    "sha256": "05e50d177fe2ae42b02bcb384452317029b919f53403a5be1a3d64d47f2e1296",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/gu.h": {
+    "sha256": "1565778f29e09b6c789e01065b8e5d2691bf6fca263a8a4d5dde1c1fb4daf950",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/libaudio.h": {
+    "sha256": "b852721c926112f5187afad772d107bc0f0e006dbd3b54c09ae7b1ebedd77c5b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/mbi.h": {
+    "sha256": "8a0b32eb3cc7844a38b1b3ed1b160036b203efac0dc3c0275c53354423e40960",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os.h": {
+    "sha256": "e0af7328cadb2164b18c61717d916396741cf053d32b96b0dea06f6d664ff7e2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_ai.h": {
+    "sha256": "933e7fe35c87702a2137b9c575022e18bd72e6ce11d8a44035a7ffbddf71aeb6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_cache.h": {
+    "sha256": "a9455e20523c6915f26c05d5d399763f1e051c01eac85c10911b7b3a65c0d5c9",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_cont.h": {
+    "sha256": "2b95c331e2fe26f6cdfab7785af05b615a0f4ef3fa825799dca42b8f91a7c178",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_convert.h": {
+    "sha256": "6d98f19765d055a7857398cc6d7bd7a2ac2e93a4a858f1c27aa22361e4f892f1",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_debug.h": {
+    "sha256": "260815777abca616a9783db7a57cd94881586c84ef0adcce26516ba50476a523",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_eeprom.h": {
+    "sha256": "f1f0f50895c4505c3420674504b7868ff85fe08df42433389deeb407e68c5163",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_error.h": {
+    "sha256": "eae3744bf9ee921d089714e81590226b56fca5ca2f0ef866532eb788e829b120",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_exception.h": {
+    "sha256": "bd9ea719bc4dc4c6b702e4f8726ff5db18bd28f9684bec93b004227f683097f7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_flash.h": {
+    "sha256": "44a68f18c6dcc000162daddf36041f55658c12fcb1dd80a92348a0da75b20ef7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_gbpak.h": {
+    "sha256": "c13616c011c214aef601f6249ae12465dcb8a6edfe68df27aaf6d086e09bbc8f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_gio.h": {
+    "sha256": "c0197b2afd220c07028a972ca0d5903af3064d48d8657935e3c57fc9a55f3b92",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_host.h": {
+    "sha256": "38befae366a3292e7e1e1871678da5f969bf357a5c59f1df20f69901175adac4",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_internal.h": {
+    "sha256": "0103aa8359ff23c9ef0b248b0721ea9df0c4557271e4146ac264d0d998b7280d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_internal_debug.h": {
+    "sha256": "3e4f1baa87602ad77163c15990625e1fd3b9ae6cffcaabb3424dafec6d638bd0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_internal_error.h": {
+    "sha256": "ab7537aef80c392dcf0010bde8078f1b5d1973740bc6d51e1f4df3d757e28356",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_internal_exception.h": {
+    "sha256": "29a917236f862a49065d0ff97fa1362bbb31a2810011628f7d92ac4bfd27a798",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_internal_flash.h": {
+    "sha256": "d6a7580b3afae0ca7c8dfd09ec7ed1114348a5225e7cece991e68a55ee89a0ec",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_internal_gio.h": {
+    "sha256": "032d50b58fd0f3d8831430a7125cd039efd1f56affdd8cbeb8777ab464ecba15",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_internal_host.h": {
+    "sha256": "83dda0b09da200ab1be91aeda90c2d0f52b7a282979391e05a9f4feeff1fffd1",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_internal_reg.h": {
+    "sha256": "dde409666c4d9319e29a08f36be9156670b947ab3a50eed349ff9e9840d3846b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_internal_rsp.h": {
+    "sha256": "77f2c0f58ebe5384970a553cabf850841a679e97dbd049926d13b0cb29f18c58",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_internal_si.h": {
+    "sha256": "2d88a8388c9211646c446bcd936606b038f80f53c10b9674f48ad6f6dede5acc",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_internal_thread.h": {
+    "sha256": "f7700e0bd2c22fb6716d656435b7431c6701cbfd518f2908d13845d11be5ddd9",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_internal_tlb.h": {
+    "sha256": "e67bca1ce07a917679abb4094b087ee70bd01399576fe9d7c4e85c82f642ccf8",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_libc.h": {
+    "sha256": "ad1cc85b23566bde17ed1d246fd7901e7ecb5df06a47042ecffce71299800966",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_message.h": {
+    "sha256": "153e099d48bc1b15faf60eec47d7cedefeab2a9a53350ea56e688298992e1808",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_motor.h": {
+    "sha256": "5427945af7af41c3b76538b1b672a3501d5b64a68a3eb924150b75b6dd021963",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_pfs.h": {
+    "sha256": "7c25656a964161b4f0b673db46fc04e97f6cc05a58313d84270d3293c7e7eb55",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_pi.h": {
+    "sha256": "81118945972f58ea944ef37a373e43602f295095e1323cf5703a10092ac04d8c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_rdp.h": {
+    "sha256": "a85b9def6f64bf25e6aeb064e1f2626f7b2d4d0ef0821d21844a9eefb19f6e21",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_reg.h": {
+    "sha256": "2a14f15494cf3754f1fe0149a8c8cab4806e843f3be6a30ad0c726443edef52d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_rsp.h": {
+    "sha256": "ede13674c9af25912778dd077c3dd709929d43fcb9f135f6465553d0f9e8fa26",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_si.h": {
+    "sha256": "ffd228b5b0e450efcf1756d778d701be958cce724d1912792c31b3cac26f74b9",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_system.h": {
+    "sha256": "bc8afaa3362ff4851feee1feed818dd009a13c3de19435a2e09656a64bf531d8",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_thread.h": {
+    "sha256": "b20409b6441549f5d01a58fb14d2f676461bdb215b01cb7ffe5288b948b97ca1",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_time.h": {
+    "sha256": "21bd983fa7b11daa6a06c053b5e9cd7c08420dd20657c4fd61be434389af3342",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_tlb.h": {
+    "sha256": "9bbb49127e7e2600f6dcceffe4a1d38f31d463327cfa384ce930ddfa63223893",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_version.h": {
+    "sha256": "2c9cd06141806f935d6cdbdd432ec963aa3f4a96b0ad000163e41264612a5e90",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_vi.h": {
+    "sha256": "f59a0d52ab0e2bc2ca0b8226bc9b9c1e58d3a9eb8df8c4e6d45aaa6ac51fb2b6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/os_voice.h": {
+    "sha256": "c0fb2f6f8eb68a6608a2401f6a2f4a38d1c65b5d1ae944d0b5999502a9cc432f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/ramrom.h": {
+    "sha256": "fa009dd8676f0af0ed0f0339dfe6ac2f67ad1a1b8675bdff42f71b937608a370",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/rcp.h": {
+    "sha256": "a5dba6d666628ab55ef2ba54ef12d547346e88c9226c1de9d6b7de95e1ade95f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/rdb.h": {
+    "sha256": "ce4b388d5bf24b869eaee1919fd81a0655006b2327a6f521d954cfc0e546dfeb",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/region.h": {
+    "sha256": "d1f523d36ab27f28eea0ffa0d87875661c14844d12c9bf0142932aa38af5869f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/rmon.h": {
+    "sha256": "b646e7e7febea89d9bfed1c1b58ebbe40a7d5378ccb50a1063cc1de5e8d3d07a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/sched.h": {
+    "sha256": "f908ae21bf462ffa9a77e61b023c2b1af1c8a187de5a8370005c88ff094df5ed",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/sp.h": {
+    "sha256": "6d4dd33330efa090dcf438a5a05b82a8fa54e94db78bc7c8f4d32f16a638de18",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/sptask.h": {
+    "sha256": "12b0a593a7013076fb60cf7224f0bdf25da554076e8b6f2ffe3999769e737dc5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/ucode.h": {
+    "sha256": "50201220d2f811d64e5e11611ec835f0c3bf1a79c3045a2dc40f7e46012765a4",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/ultraerror.h": {
+    "sha256": "a6b2ce4f9e98e8feccdc5abd43d6de13c3afb7a00d3126ad83ff5d161b02d229",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/ultralog.h": {
+    "sha256": "52564b52560297920881f56e81894cfd9d9ed22b4cba1f9298eb1e10b1cda449",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PR/ultratypes.h": {
+    "sha256": "e25fc6df3953acbab2234ece2218ec74080cdc3e673ce1ec5896d4ce921bb4de",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PRinternal/controller.h": {
+    "sha256": "a96f974223530e51b7b6f02a662a4665cd0d3f3d1e95f52f37240be4c493b42b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PRinternal/controller_gbpak.h": {
+    "sha256": "b65f160e18c168b8e46eb163572c1ccc6a40019236fa91ac42f06b9d850a78a9",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PRinternal/controller_voice.h": {
+    "sha256": "342f0f7b17d35e8db3899675b092a3636c1e81f91f581754c2597902a8cab612",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PRinternal/dbgdefs.h": {
+    "sha256": "6167cbafc0f45bc61c288f78afef5b92626353e13b32779ba9bfffa2010a31d1",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PRinternal/dbgproto.h": {
+    "sha256": "240117180b6a0590beb1f6c3b9adfb79ec00c2a2dcc2af4b13081628816ae8a6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PRinternal/macros.h": {
+    "sha256": "a8931d15afa699dafd26f6a0be1b20995c223952bb10cb7845ea6e3ca62da794",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PRinternal/osint.h": {
+    "sha256": "a1409372ead900ab42129ed889bde53762274514bbfb39ba0571aff7f813bd90",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PRinternal/piint.h": {
+    "sha256": "93235c9cc407882f95355243975ea49a7294f60a4e80012a0ba2c96a38534456",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PRinternal/rmonint.h": {
+    "sha256": "e03eaf6c39d49242602c7ec59663f7b62184b840252325201cde7170e22d5ebb",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PRinternal/siint.h": {
+    "sha256": "9f0c99c8652d36023162bfd8722dbb5117ca03f6b97d958af81b883f7a12de87",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/PRinternal/viint.h": {
+    "sha256": "96ec910ebcc51a2677575161a4cdb9d079e6f49bfda4ea2c3029a40550db242c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/asm.h": {
+    "sha256": "7700e13e0af5bba3b649db63e8c5f2f1ea8248c05efefeffd680f0861cf506db",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/assert.h": {
+    "sha256": "c4d1fce8da480af73fe15237f2068a5446477ca6a544487daa10cd4ebf938c78",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/gcc/math.h": {
+    "sha256": "2d4f83a11a792ff666e37b6679e4a97a809098494fbdeb028f1d21486afa733b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/gcc/memory.h": {
+    "sha256": "15e3c8fdc512418f26b716cbeaff56d21ba5e6745dc5109b2843ff3d768c7feb",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/gcc/sgidefs.h": {
+    "sha256": "b66cf01b3f272f3608642f99cc05e5dde086d09a11ddffe09f9b347a438b311a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/gcc/stdarg.h": {
+    "sha256": "5089f3f53300aa00c032fa2b24956b5de95b6e26d5c7a89d5b439c986d25fc89",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/gcc/stdio.h": {
+    "sha256": "2d4f83a11a792ff666e37b6679e4a97a809098494fbdeb028f1d21486afa733b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/gcc/stdlib.h": {
+    "sha256": "1a29fccb7c0c43145c4381c6f3dea4ab192471fe983736ec758353a3788aec25",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/gcc/string.h": {
+    "sha256": "8235290bf7031f3f89783f7772b122e366ff86ece22934a11cd494d7ff913d09",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/ido/math.h": {
+    "sha256": "2d4f83a11a792ff666e37b6679e4a97a809098494fbdeb028f1d21486afa733b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/ido/memory.h": {
+    "sha256": "15e3c8fdc512418f26b716cbeaff56d21ba5e6745dc5109b2843ff3d768c7feb",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/ido/stdarg.h": {
+    "sha256": "656dc702ee6d9487667210fcab90b41f7d1188251713e6893a2c2da71cc4d035",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/ido/stdio.h": {
+    "sha256": "2d4f83a11a792ff666e37b6679e4a97a809098494fbdeb028f1d21486afa733b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/ido/stdlib.h": {
+    "sha256": "1a29fccb7c0c43145c4381c6f3dea4ab192471fe983736ec758353a3788aec25",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/ido/string.h": {
+    "sha256": "8235290bf7031f3f89783f7772b122e366ff86ece22934a11cd494d7ff913d09",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/modern_gcc/math.h": {
+    "sha256": "2d4f83a11a792ff666e37b6679e4a97a809098494fbdeb028f1d21486afa733b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/modern_gcc/memory.h": {
+    "sha256": "15e3c8fdc512418f26b716cbeaff56d21ba5e6745dc5109b2843ff3d768c7feb",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/modern_gcc/sgidefs.h": {
+    "sha256": "b66cf01b3f272f3608642f99cc05e5dde086d09a11ddffe09f9b347a438b311a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/modern_gcc/stdarg.h": {
+    "sha256": "546daf67261fa1b0a4f0f4575e6eb4463de615858402f8322afd42b2c82ca856",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/modern_gcc/stdio.h": {
+    "sha256": "2d4f83a11a792ff666e37b6679e4a97a809098494fbdeb028f1d21486afa733b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/modern_gcc/stdlib.h": {
+    "sha256": "1a29fccb7c0c43145c4381c6f3dea4ab192471fe983736ec758353a3788aec25",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/compiler/modern_gcc/string.h": {
+    "sha256": "8235290bf7031f3f89783f7772b122e366ff86ece22934a11cd494d7ff913d09",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/fpregdef.h": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/regdef.h": {
+    "sha256": "37975e52bcb54798a67147f4d96bf3d472d39958098e3246c4fbe44daaa7d8ec",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/sgidefs.h": {
+    "sha256": "531dc0f0f72e3ac0ecb9c928f2ae8bea5dc88ac239fc69eaee127e18b28df315",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/sys/asm.h": {
+    "sha256": "0e5e5e1562fb488b49b92dcccba09e94462ba6a545a6887656b03b7ccdc13cd0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/sys/fpregdef.h": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/sys/regdef.h": {
+    "sha256": "69af9e251c38c0f347d56673bca52496937a12ef3739c8a99080fd18215dbb40",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/ultra64.h": {
+    "sha256": "334dac734e99fcd8b227322092501397cfcdfb89af3529de6f81953b8feff65d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/include/ultrahost.h": {
+    "sha256": "bfcbf54d3af3d308e10d8c510adb74164bc4aeee8625568e361e5d4a2c2ba27f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/makefiles/gcc.mk": {
+    "sha256": "58544e9b621e20fa7359445c5eb9703e7f91e94cff6b95acbb0a48c0da724bde",
+    "mode": "0o644"
+  },
+  "tools/ultralib/makefiles/ido.mk": {
+    "sha256": "53e7017ffb69368d0a37bc5d4f87b27a93dceca343aa69cbbe9b821750337bf7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/makefiles/modern_gcc.mk": {
+    "sha256": "36803f893cb27ac58f77f73f46abe6126eef89867f7b4ec2fed5f42f2394e800",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/Makefile": {
+    "sha256": "186974fb132ca11e102b5ad3a56db32a8d34f337d94596bdf1d24633d52a1673",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/auxbus.c": {
+    "sha256": "7429268bd6b212c5cb3d2883fdcf12b91fef02c39f7a42d6dddefb6a72809d03",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/bnkf.c": {
+    "sha256": "d0c2703580d4bb21c9eb6e9318901ed2dc4e343212dbac5015214e621fd4a2b7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cents2ratio.c": {
+    "sha256": "96918337ed651f8146a5bf1293c9a4232283e0187210d524aadf9b7d1a870277",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/copy.c": {
+    "sha256": "0fd8589166ec400818eb5f6f4cf6d471aad743e03c52ff2a8a60132be2a198c6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cseq.c": {
+    "sha256": "c8238075726a7a76841b60df278f6d50aee098748f9821f3492773731d38211d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cseq.h": {
+    "sha256": "c10072d9bda4da8fb617657dd78ffc481e8086509078830110fa0acb7fcf6f07",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cseqp.h": {
+    "sha256": "b2f981075c1c7d9e271b621593cd5e8238888927ce33ade647eebba10b62f8ee",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspdelete.c": {
+    "sha256": "c858b2fde5a1826002c85b2cd13cd17dd23bf34c2da87562358fdb064b7f9c05",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspgetchlvol.c": {
+    "sha256": "f0032c9cb066d722e2b77b76080ee8abcaf61efd8b6a89d0aec65a82ccf90691",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspgetfxmix.c": {
+    "sha256": "48b8c519a4f0f76e85965800d8a307b2792be5f4876ecb8c9ceb04cd237cec53",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspgetpan.c": {
+    "sha256": "2e8b99c45e6de633a142b298aee108829277d7b291dff63d17516d16d1b8f1ca",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspgetpriority.c": {
+    "sha256": "d6083ef2c46f1a47785fbdd75bca198d868ffb33c6b21054d256e0725914958f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspgetprogram.c": {
+    "sha256": "988f4be8b415537c12aafe4253c18a7bebf2a02a7a67d54bc0f7ee70836dca2e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspgetseq.c": {
+    "sha256": "fa4cbffde124b594902415bc989db3bb4b3722bc2e844d653db1a850665dac4e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspgetstate.c": {
+    "sha256": "d3ef3a33a2da89979e0d12bc667bd7dabf1ec8a706e933846e9611888fd6eb33",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspgettempo.c": {
+    "sha256": "ecbc467f3150978113fa72c3b6f2a296a05e4e4600ab0f54ab1cc31f0b50c584",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspgetvol.c": {
+    "sha256": "292f94868457abd99dd5665b8e031b960560c2f350a4d48c41ddb25cdbd93887",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/csplayer.c": {
+    "sha256": "090e2b2a644a27eb41828e39392adbe8529ed984f3ac9747e3be1d5205856826",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspplay.c": {
+    "sha256": "c99892fdfaa07f35a1dcbbd1db80808bd97016197e47ba489d82501a4aa297cd",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspsendmidi.c": {
+    "sha256": "bc413e7a57adbeb401039b4bd0bc69de375ec98a7e35c8d504086fae55e29fc0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspsetbank.c": {
+    "sha256": "90110ebb6cbcc0c811accccb5872a536628c6e2f9c22eae6b65ff010a62abca9",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspsetchlvol.c": {
+    "sha256": "2690f13e7d500da64f38a3214ec36c9dc43767b9ccbb4a18905261acc3efb374",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspsetfxmix.c": {
+    "sha256": "2b4c1cd3ff5d6efe5a0eee6e37ea8e442cc816271749b919e21da549360d88d1",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspsetpan.c": {
+    "sha256": "78fe857145548f01805a92f166b9d0ddbd45ef86b75eb4fed41516e9feb1651b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspsetpriority.c": {
+    "sha256": "48822dbd2a53ec639cd854e6948a3d1059d4895bf2039280c560b622f6fa7975",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspsetprogram.c": {
+    "sha256": "d9e6f5a4ecc7ccd1f29ee5e842afdde0c3477c47de02dad7a2c29781822394f2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspsetseq.c": {
+    "sha256": "c1ae77fa920b3aea17e91f2f6a9df3c6b52f1dd423170954609dbef30b1d80ee",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspsettempo.c": {
+    "sha256": "60bd948f5f2eed439a02bbdc9ac793cf239a6fd1b3430d07d7af96e8ea71adcd",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspsetvol.c": {
+    "sha256": "48e443791b54f650f3a7a344deece28ff7023bfa7f1622aab29bc79555aea256",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/cspstop.c": {
+    "sha256": "1030e87b25fef1ca225c727cbbecd9d53ee30898324bca98c425be0f1ec1bfa6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/drvrnew.c": {
+    "sha256": "099b0bb14f2fdf0c17620c734927adde727ccd92d6e8d7328b9d48c0d720ebde",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/env.c": {
+    "sha256": "1795cd404cb06a4561c79e12809b71e23c6cd355c8e2343dbb4aa879e73ea458",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/event.c": {
+    "sha256": "88048452411893c5b678eae2eae31dba437d4b5034ca0539ad5d61916f0509ed",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/filter.c": {
+    "sha256": "6b3f704a777130ca145ee1eb05c870f34f95ce6143e7df04af40b7b109841dea",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/heapalloc.c": {
+    "sha256": "6c1bb5074c1834d2c722a6e5402845bb04b8659c3361e495563514c166686ca8",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/heapcheck.c": {
+    "sha256": "f508f398abba2f1a00b931fc50c627ad5936e94b1b67c33e993512e63a4fdf2e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/heapinit.c": {
+    "sha256": "9856519f01737487ebaf8021f4d387ff320a540456eb200551231729c5da5732",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/initfx.h": {
+    "sha256": "d95b6013b9ce5d791addb68741494271f66e71fbe96d6b6cfd912345ec72b7e4",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/load.c": {
+    "sha256": "497c254a83373de6232ffe2f9ca0ad92be7be452a77e1b14d858df981bacd56c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/mainbus.c": {
+    "sha256": "4af24914932552aaed275d2b7470944731407df3c241698c56291336fd906997",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/parse_abi.c": {
+    "sha256": "04694b63e677dbd2aa3e066813d2d0ce8bf6577a3e56027277857881de7bbf55",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/resample.c": {
+    "sha256": "78bfabd9e37db9803a619933658d4573fc2d081aa26a4fee095b59f05d5d3a0f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/reverb.c": {
+    "sha256": "e8f5e8b365e6072c6da8eccfc45a3c4a1784a7896cf9d9a9e2bfe2beb3ba441b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/save.c": {
+    "sha256": "124697e5836a75d3c4502e887d00fba52c8a459da906e75293455f14ded2d347",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seq.c": {
+    "sha256": "6cc9b63a63fab77631285793c3e54b9366ee8471e6f3e613ff3e0a30a6c616c7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seq.h": {
+    "sha256": "5eb8402a34676e4427ec47b5318250fd71bd9f115fd0cd6a9b5e95d8d849c68a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqp.h": {
+    "sha256": "cf58498fb69b10873be6b079a20eefc175365ab649ddbf306299f054ed02dd1a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpdelete.c": {
+    "sha256": "be908520e8cd2e6ee086d2259220c9a69284ffcfafab8ad48bde09163beed592",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpgetchlvol.c": {
+    "sha256": "1e5a633eb5aa4cc4958d1b38d48df4fd4bfc90f224643e3caef3cbc8e2e88553",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpgetfxmix.c": {
+    "sha256": "f681eb535113e4ab4fd886f275ccab0a8a576543062717d373c3e5e3ab155daa",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpgetpan.c": {
+    "sha256": "24355a60bb3ef41fa781ea4fc186a9b23774acc831833dbdfcbb780b28ff9fa4",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpgetpriority.c": {
+    "sha256": "5dc46bcad60c548a4d4914fc07014578d6f2ecd9b901166f184af73c6c7ea9da",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpgetprogram.c": {
+    "sha256": "a4490bab79941a22da2fe6db29bbbf6c533f66e6971ec949c6bf497f47536f85",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpgetseq.c": {
+    "sha256": "a5acb1780f0d344c593226b30da7a4cfcbc2ecbfbc63608be056362d92acc0e0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpgetstate.c": {
+    "sha256": "f557a5813ee33bf0fa284821700f03387bc81edebb20be0fb73bb8446cc277eb",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpgettempo.c": {
+    "sha256": "10644ba7a13fa0848fbdddb4fe658a8ef04a7be2aaf03d59e842b0e09ba86898",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpgetvol.c": {
+    "sha256": "586cf3bb967286e4f2e364c441f27a2a4de9cf60d9845c9ce2daa19d83898e4e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqplayer.c": {
+    "sha256": "8120e513f74d507c679097235f6c28c70cb22a95d395fcc3a55cee20b84c8713",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqploop.c": {
+    "sha256": "a2bbe3abfdadab5d5b4efca0b00aa08bd64e5ade7311d15225bef76b10026814",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpplay.c": {
+    "sha256": "cbac7aaa7db1d7ddbf19610ae74d5853fb035c59ea96a1bba3782878125808ba",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpsendmidi.c": {
+    "sha256": "0104050249be95729e816896ebc7cd4e9140fee73a824741c881b9cd865be857",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpsetbank.c": {
+    "sha256": "768a7db2faf2c8af605b7ef16f11b66f257a1fdd4d88441bf85ed6e43ef75503",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpsetchlvol.c": {
+    "sha256": "e352f2c10ee9c31ca4cb185a26227cd35bb5e1983709fa42f01ff501497205d6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpsetfxmix.c": {
+    "sha256": "00256d7f36c3206e9aa1fb6c854d9ecfe0fa939638ec73c0912db5e1abb35717",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpsetpan.c": {
+    "sha256": "3670a397a8dce90a01d79562953885ee8bb5889e28ee6ba4508eef451107661b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpsetpriority.c": {
+    "sha256": "7e17beef3e8578a462d232b3734018d68656f062b23a2f6ff327ba4f1a190e20",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpsetprogram.c": {
+    "sha256": "737da5c85d68836b6cb5129f0e458537a6fda515b14d055fe17dfebf5d7ab213",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpsetseq.c": {
+    "sha256": "051be85f0f8f655b613d69faa137971d284d92856c8d21c24aa5c7dedefa4773",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpsettempo.c": {
+    "sha256": "cd64136d0e7bc045bbf2fcf74e3e5c543ba064052d40239ec810ce03b28a1e93",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpsetvol.c": {
+    "sha256": "1dffbea3a245f0f3671bba65d658f262238109be12ba68a0e0a7d0709c4c6620",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/seqpstop.c": {
+    "sha256": "f8f0ac755312bdb712de6768c297c22f03df20f6ba90d524d5dc16b75a137f20",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sl.c": {
+    "sha256": "945e4045c6b13560291eb309b683323a9b44adf17f929998c1cca04e9f0fff19",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndp.h": {
+    "sha256": "06be89608e7efe62cb84ec5135bd1d8af52c3eb1ea58099e980fdf0640db671c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpallocate.c": {
+    "sha256": "bac96c8a50a0c52981446cf9184a3a83b2adf4194481fa55ba1f2cca1aa6454d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpdeallocate.c": {
+    "sha256": "9eb3e2ba2545f88a47875047398af3768aa3a308b8171aa294b559f388516d81",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpdelete.c": {
+    "sha256": "68f4195edfac325c6f779a96090ff5a77d58ce213cdd4007ff649f781062dcd5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpgetsound.c": {
+    "sha256": "b860d4f84a5790aaef4e075db8e4147adb56d305e5f946b30c16f466a38043bf",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpgetstate.c": {
+    "sha256": "d7c468bb212fd421df040e1557b4bfa8b831c5ca47ee6ea2834e5132f37ee192",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndplayer.c": {
+    "sha256": "8f48ffc74b79a9a6f57726b99b28eea21b9a42cb50fc8beee9c1230fd0908c81",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpplay.c": {
+    "sha256": "776e151aaaa12877e634602ef0a34d20915032a4b89514d79f4c7563bb6d7c22",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpplayat.c": {
+    "sha256": "36d60de96794ac7551f40772f6da46c3ffd3174b94f036ed08561af7f8957461",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpsetfxmix.c": {
+    "sha256": "ef9ef5231ab17b7f97d8dc16412822ca3c07cc74aa66c793eb12b7fcdb5a03d5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpsetpan.c": {
+    "sha256": "3d31c18472d729232f18a149e1daec83d29a60ac367f417ea44ec291cf38c9c1",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpsetpitch.c": {
+    "sha256": "25f2dadd10cd345356a0756c858930969829bd97553682608ca857c90bb694ac",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpsetpriority.c": {
+    "sha256": "9170fb5fbacdcdb02d24ec9cffe35cef4774565beba5483f864be5431baacc70",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpsetsound.c": {
+    "sha256": "288d71c42afaa76c3120943dc1257bb1f14749322296e451852d20148374caee",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpsetvol.c": {
+    "sha256": "390c2df09677139bdd3a5637b63bc94f140b05c4a4e9fedc6dce51234fb6ec29",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/sndpstop.c": {
+    "sha256": "e5b8bc1e9a3e6422f2715686c5b8921374a6ec2ac7ce01e31880426d678b6545",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synaddplayer.c": {
+    "sha256": "5353afaeb9a4fbddaac30546d2db921a4d2bc1af6a468e5c39eb6ef5cd635444",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synallocfx.c": {
+    "sha256": "1a95729050a47f9d023d08503d1667a2ab405e31dd2b797d7bcb01ab5728e185",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synallocvoice.c": {
+    "sha256": "a2424e27eb79961c44a832cf8d10187bb6ded582281fdee80ede6fc585816104",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/syndelete.c": {
+    "sha256": "117f8fcf7e0332a9652ccda80dc3bf71732162d7ed3c44f20bade150aecb1fa4",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synfreefx.c": {
+    "sha256": "335b62fbdcae3a4b5bf23656685093c922d6c137abb691960a4bb668f5e55dc8",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synfreevoice.c": {
+    "sha256": "74acdb41d655a9fd85aabf99e8d585056fbcd8d678a99d44329b2afe7037149b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/syngetfxref.c": {
+    "sha256": "94ade327d16235cf91c83f8a131113fbf85c8032c9dae41c61fefc4ad1b160ca",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/syngetpriority.c": {
+    "sha256": "2abd5a5c52d8d7d88c29a69e902138e4b3984ae70d7b696eda9fa4c92d824746",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synremoveplayer.c": {
+    "sha256": "92ba21990329447685d86caed92f652a4981030de4f7331e6bea71b95e5a649d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synsetfxmix.c": {
+    "sha256": "e3565b251db5056f22f18553ec7d8da0b875d4e140574856e7f056239d39a0a7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synsetfxparam.c": {
+    "sha256": "11d07ab8ec18ddc863c9ce46b040cc30b04a17e67b2477380eb006dcd18542f0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synsetpan.c": {
+    "sha256": "237ed40c8ea181ba439769f8c77798d4088fee58944122f3ed0051ba5b0054e3",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synsetpitch.c": {
+    "sha256": "4dfdadb490bcca2dbab9c7667e1a4155f2b33f8af38f404162cf5ba36e717f23",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synsetpriority.c": {
+    "sha256": "b81406084339cc2ab8a267e3e8ab51facd11a4a3160b2ca45bdff23d06377573",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synsetvol.c": {
+    "sha256": "f7e23f64bed955da40082cedcb150273c608200b66773bb15721a7668824a2c6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synstartvoice.c": {
+    "sha256": "8cd6712775e09b1f737a81680441c7891178181404b6dffd26444a71acdc2b5c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synstartvoiceparam.c": {
+    "sha256": "821dcdd9731fb9333d6a7613e471a8242366363b7f324d64efb25d3dd93e6f83",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synstopvoice.c": {
+    "sha256": "cb3bea8eb64ed5d40417187f9ddd0666a8b6cec8670aad853871980f6d803082",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synthInternals.h": {
+    "sha256": "797c65321f3ae4ebfa83b3babdacd70495c7a80cee2a708a0b8095043f1a309b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/audio/synthesizer.c": {
+    "sha256": "f766fa46a86deae0a45285be298b7cd4c0388f57710ea3886e8e865331c4fc9f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/debug/assert.c": {
+    "sha256": "560aa418f3d9a8edda2ee15cc3c2440d1276e01364fbc13b5bb9f698cba90df5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/debug/assertbreak.s": {
+    "sha256": "a3c09e1c37a78efc12387ef21093efaaae5f028870133a1eaeeb8e56813935ec",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/debug/atomic.c": {
+    "sha256": "7806a980a8513f4dd17102368f6c9e2728fc1a4f6cecb93150ef451aa7f0ffed",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/debug/kdebugserver.c": {
+    "sha256": "330835044ef687df0e8b5ab0a3e23ad3aae240604593480b08a2e16ce4ec3d6a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/debug/osint_debug.h": {
+    "sha256": "b7f450cbd40c785c8663997544f6f5b60eab93d93c04f3cad9433a358adc5bfb",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/debug/profile.c": {
+    "sha256": "722f19868b63ae685ccb99fbb42e7ed415354a8f5d403ac4eb44f73c1ff3ce23",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/debug/threadprofile.c": {
+    "sha256": "06d01121c3979282faaec0add73e4ca440083ae39e20e10963d337122f4965c6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/debug/threadprofileclear.c": {
+    "sha256": "0cacf2f74d7a542034841116e3c61a904a25837905c9f3197985a20229f95c9b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/debug/threadprofileinit.c": {
+    "sha256": "d02a2146af79088ed52eba547aa88108951ec937856908b9406889df76839aaf",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/debug/threadprofilereadcount.c": {
+    "sha256": "502b13f7e642265ed7987cf771b3bc779fcd4d42cea0b171fa20aee01ceb4d6e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/debug/threadprofilereadtime.c": {
+    "sha256": "350d40992b102454024815c507359d4abe1c4c2925f5261b25056d8a61674bf0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/debug/threadprofilestart.c": {
+    "sha256": "a5bef19660fb09b4fa1ab298f2cab62ebd4c6f49e1a2300129650ac5c32592d0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/debug/threadprofilestop.c": {
+    "sha256": "2dea92d960682b8b80abedd3b4854b4d83667839fec3a0379315971a894015f0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/error/commonerror.c": {
+    "sha256": "3d1fad06bfa79144f897fe8cf700f22137345f4b3f780928a5aab3753a6f1988",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/error/error.c": {
+    "sha256": "37f0e13c17a9e93f35569f33d357202cd4229ca1c7bc1f76724606da8ce3606d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/error/errorasm.s": {
+    "sha256": "fa7c4a634f90cc091be36a0396fe2773ee78ef9fe0e499ee5cccb46698836e02",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/error/kmcprintf.c": {
+    "sha256": "6a8919e172db5956d76acbae8a6fdfcd766e4b7a4fedf56c6e5350a5f9ae5207",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashallerase.c": {
+    "sha256": "03425b2484218a497d45ba0482a3ffd79df6e5800054016ba3fd32b1af509d3a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashallerasethrough.c": {
+    "sha256": "e382045e0bdfee883f0b3ecb6ac55ac00e1afdb6b8ae3b01596313565a27ce04",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashchange.c": {
+    "sha256": "8a17600ab202abb0f4ac109639a909ecbc5febfb63f9a761f70e3d5949c502d7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashcheckeraseend.c": {
+    "sha256": "3ac7ae6f0462c5ec49660a1cf94babc0d925b7dd0c21a5605aaf03005bcb0839",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashclearstatus.c": {
+    "sha256": "df5d9bf23453deba3d7356414f3c797a42671810e14736d3e806df8291e588b0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashgetaddr.c": {
+    "sha256": "17e46fffb4da8e27699f8bbd7d6edaa42235117aa36af4c74902852c0c058972",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashinit.c": {
+    "sha256": "f54e3b99530dd6d699deeb393a7df466f8ebbaae91d8a52d57176902375c6db1",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashreadarray.c": {
+    "sha256": "84ab5e4896dab6f4c28a45f9ece6c854593887f29e2b1719ddee1be40f784b21",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashreadid.c": {
+    "sha256": "9c092138908e3cfecfe232d3d6f4f07216fe4ce051f625a35f978234c26faa50",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashreadstatus.c": {
+    "sha256": "76ecbd3fe78ce3e17838807dc5a2e69a3f8bd3ae5e416a6ecc4ab1d629e9c357",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashreinit.c": {
+    "sha256": "ed4ccc24cdb49db22e039f3b8b225c1b31a3c91a5a4b36da4d7e16776cf173a1",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashsectorerase.c": {
+    "sha256": "39291caf25826bcc9f374cc1aaf6155ca080b11e1c93bbb03ce5575701f56659",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashsectorerasethrough.c": {
+    "sha256": "4c012268314e39ccd244f508e748023aee032fd08f3111448fadc1a5aea72c99",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashwritearray.c": {
+    "sha256": "d16086c954211549c88c2e6e5d48c0d63ef79ac16d7d8f69cd76c1a3898ed8ac",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/flash/flashwritebuffer.c": {
+    "sha256": "d8aa59cf838336cf4976427b218d09368ebe9a7eb52fbf9e4fb28fa3fc4ba269",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gio/giointerrupt.c": {
+    "sha256": "e5f97ddd73f1e7543b45618f7adc2ef3e0a48443883dc53be776c5f35d22ded2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gio/giorawinterrupt.c": {
+    "sha256": "18c4f6f628d6f75594c62fe8d52a2d1ecb93c5892d584cb00f43ab388de0d174",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gt/Makefile": {
+    "sha256": "f2b7dc6fcf126b23e46ece29b290bf5d90f308303956a460751d604132fa865a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gt/dumpturbo.c": {
+    "sha256": "0269fa8bc9a046bc915589cc7813ac0942fa8e7612280f5f8ac71fa55a0a5f0b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gt/gt.c": {
+    "sha256": "a8e400afa881cf111fcad1d93b3856f4a0b7f5487e71ec76b73f9995ad6e4a60",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gt/gtint.h": {
+    "sha256": "b08bcdb54943d78b187e574141d687624c6cdce0c7e7ea2c9302d1aeea0fa34a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/Makefile": {
+    "sha256": "2516398c34a9c239c76fda0828f1e5ff316a894a3770c6c98443e9c7a6f705da",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/align.c": {
+    "sha256": "63a639dae5f33631fbce47b2e694c4c8f5be1142b1adc6c6eae93bded350a7df",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/cosf.c": {
+    "sha256": "c7b7a5b2f3a068d34ca1a611a9d74d46627f9125820c71fda605c9c47bcad089",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/coss.c": {
+    "sha256": "2880c0606aa36d8dfee9d07c3d804eeac6b3fbea144263c73f7e731a38f0d01b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/dump_gbi.c": {
+    "sha256": "a498230309747029f07909ccb11222b2b26a229e1e11212c21ce9355292692b5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/frustum.c": {
+    "sha256": "a196e1f6ca30d1ca2d4d4215aeffc3439de775b72d5802d8aa30ed5ac69d0b7e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/guint.h": {
+    "sha256": "9ce18160a62e53bbb69f44eed00af6d0d51e4fd54d6b1c783de772693ac39c28",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/guloadtile_bug.c": {
+    "sha256": "9b2ccd801b65947da212994f306704c6373772e5ad9e872ac8a0c4e2ccb1cfae",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/libm_vals.s": {
+    "sha256": "6704d61a14621f9bb499fb525d1494ba61536f31201fc456ed88196e308c056c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/loadtextureblockmipmap.c": {
+    "sha256": "f835570bc3b1635ab2f725ceed616d02a07e54ea67fbce67b26161dcdd1686db",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/lookat.c": {
+    "sha256": "47c9198fad38efd3ec8ca19c962227a05d52b93e4a57ee3070336d177f4aa143",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/lookathil.c": {
+    "sha256": "a8a43ddbdef2246a68a540ce9331a3a4fe0d9de552e5f1b64db365914730d7ed",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/lookatref.c": {
+    "sha256": "feedb76b02ed22b05b2edeb4247ecb3cc28be784b23d32b178d34c48e9518724",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/lookatstereo.c": {
+    "sha256": "c6604cf59054c94a1b58df447269fa13eb12fccb585cb9e1f4713e7dedc0be6e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/mtxcatf.c": {
+    "sha256": "c632b4011c1782e07544a32c71067c876ddf1073bc7d6e70678c5faefc05f888",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/mtxcatl.c": {
+    "sha256": "5478304ead71743cd9e777562a87382ae48f77b20d96de7856ed8a21ad13597d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/mtxutil.c": {
+    "sha256": "4f61c11992bbfb679343516902e734ab3b475769fc3fd85b2ef2dd58f4d2c1df",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/normalize.c": {
+    "sha256": "78a5026317b626a0bf19dab585ad63e7ba84d6ad459a6cc1b1a7b4f91c87eaf9",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/ortho.c": {
+    "sha256": "87884fd216bac820a93254460fa87d82044891b072a3268bbd0656063edb8791",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/parse_gbi.c": {
+    "sha256": "93f56ede5836dd7157ac67b2229c4f14b4b52dc55ed5f0d159863f5c5718e417",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/parse_rdp.c": {
+    "sha256": "fb1c673d7b4dc50d7e3d4296b0c11d73c67a5b8efe0643bcfb63ce6d0608210b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/parse_string.c": {
+    "sha256": "cd4709a933e151fa3933424008c2864cc5ada0242d9d3e3ad2c46f0a2dd6f7fb",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/perspective.c": {
+    "sha256": "8b42efaf31493280e86d1f56c3f219a84663804625333b742565013982737e2f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/position.c": {
+    "sha256": "53bfa0354839128e9292c9ff2274c20b0450db4effa5abe8e0509fd17838cd9b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/poslight.c": {
+    "sha256": "e994c73d0cb91c0fbfd3538f0738e0290ad073bb9ceca69db85a3308eab2a528",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/poslighthil.c": {
+    "sha256": "b4a16aee8f08dc5f24dc8b6039e856066bf5f9faab00e63ed0762a99fb575553",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/random.c": {
+    "sha256": "0e84bed8a8006414cad47d6325a61a298f3ca1d16a19af69d71acf7c11d46c87",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/readme.txt": {
+    "sha256": "968a6b0eb7a73a859e6bf854f0d63127fc2ad7ae64edce78614887d498c67117",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/rotate.c": {
+    "sha256": "bea1effa8b13c4124a56209c99d66b7708921be670a0ae48942c3e09b674ba65",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/rotaterpy.c": {
+    "sha256": "1c35f4ae1622fa6fe626aa87099c8b6b3499b588bba833cb81d83e8bd846beb2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/scale.c": {
+    "sha256": "0b0f0a35ba4bdd0e495195d926b814b05fa9f176984a8805f526ec4044dea39d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/sinf.c": {
+    "sha256": "bfdf8d17facc510edfc46dab2e9dd607cebbb462317de4d74a1e568e579645f2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/sins.c": {
+    "sha256": "1af4cccac8d2cd1ac3dae7da9319b6321e491bedbc21afe555cf0bb8958779d5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/sintable.h": {
+    "sha256": "add4207a9ccf3195f2ee4a93329b5716d682cb2ba51bdecb85b3319cf53d1b0c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/sqrtf.s": {
+    "sha256": "3b84e48940b96ff7865e60c7ce6822a7797a7b32f678c3a1b41051ef085592c9",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/translate.c": {
+    "sha256": "e6e123ddf8a8525bbe9de429f1b518a8d6ee9652f67943ee79c24929d2397eff",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/us2dex.c": {
+    "sha256": "73984b6e3a339731ce1260f2fc38250dc22745373189888af0ca96359aef67d5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/us2dex2_emu.c": {
+    "sha256": "ed9be2e4ca761e1caaf81591c9f9fd8e151c8fcee6b11c26ccfd0fb804c9e71f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/us2dex_emu.c": {
+    "sha256": "d69ecbe68ff06f8a9f5304cac7f184404feb2a1ac87ec395d6d1a4f7ee5bff33",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/gu/usprite.c": {
+    "sha256": "84c7725bd1768c076652cd519cbebaf5f2addcc93d0ff07d3d556a1061410cdf",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/host/host_ptn64.c": {
+    "sha256": "0874577a8d06bea3f612aaa3a5b4aa253e52a9f23fbb96cb2f7411c9095f349f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/host/readhost.c": {
+    "sha256": "af2773b8e63c6ded09cc6fd8f47bcefa25c99b4ff5646bf53fdb671566cc9573",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/host/writehost.c": {
+    "sha256": "004949d2b3b76b18387af46111feb568b23637400305f47055bca6ad955d1e5a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/ai.c": {
+    "sha256": "93edff171323a2caad99712f83def88edef0520e22bb2332268334674e83f8ca",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/aigetlen.c": {
+    "sha256": "31043f773920302d5cdd00f21e9a668898306c3b48e1ca81ab77cdb3f004de51",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/aigetstat.c": {
+    "sha256": "eee7f2dd73aa014f11e59ac801f7ad51367d20b27199e4e10b7e59d61709228a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/aisetfreq.c": {
+    "sha256": "70c971b814c372a99311444b456ffb8a9d46f9769ec1516769285fcc02d87833",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/aisetnextbuf.c": {
+    "sha256": "f6d2431b522ae2c862b4b12afda3daa298459c339fd46693a663ca6e90de7984",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/cartrominit.c": {
+    "sha256": "6a1dd76512ee9f587cae255e23a0305763a85c7a9b4fe4482b7a85a3e65ebd4b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/contchannelreset.c": {
+    "sha256": "4784bf1f98eef7b480de1b6d80ec1957f7f60625267b8038d31fd07e2e53b2d7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/conteeplongread.c": {
+    "sha256": "92b9740544161713a5e2fb3f2b3869d371e9b286aa2c58cb3e2623760d318329",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/conteeplongwrite.c": {
+    "sha256": "13f02e31542d2077a858a51c4b1858aeb65fc37413a9b01cdfcac4d663d9749d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/conteepprobe.c": {
+    "sha256": "5035295ce7915cc3814228226967b6dd902dccc4efa941e1cf40100cb2474626",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/conteepread.c": {
+    "sha256": "09be5b39319240320752f0c1805fc12a0023114db48b8a4dede8072c8683bfcf",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/conteepwrite.c": {
+    "sha256": "02bda26f9dec55fab67f00531edc682092afa6f0c9f27cbbaaa124d4e1f894a6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/contpfs.c": {
+    "sha256": "a35869c90552b1793380ccaeac3a6f16696bd7eedc2f9f9ed661656641db6a9e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/contquery.c": {
+    "sha256": "63736ea113f40b9c5bfbc770e1a62ad0d253dede2201224428c86f1f75d3480c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/contramread.c": {
+    "sha256": "cd11e8c9be55449db2b52da9c2bf4f95cd95401eafc51942cfcff7e477e9aff3",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/contramwrite.c": {
+    "sha256": "160c3d357459d53d350c5b26c2fbc9f463d1261efeab8a7e3e012428dbde9213",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/contreaddata.c": {
+    "sha256": "95465aee267f770ef65cc78ec227d730dfc9491df7d22bbcaa1a94d4f2ca30b1",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/contreset.c": {
+    "sha256": "c4965ca4887699f32e4165ebc9fb950de12a28a0d1f4fec865e37454f89a6932",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/controller.c": {
+    "sha256": "6e22c89fba1c80399f176ee51ac81c248b87473769fee33a3c87c8e9009e9da8",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/contsetch.c": {
+    "sha256": "97635b25d895be83c1917e482aa7f6c92b166a4052027ea7facdd14e3f5b4019",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/crc.c": {
+    "sha256": "d3aa99a917dbb29183a0af40412a4fa4d76b9d7a0c81da1d86ccf7de5424f7e6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/devmgr.c": {
+    "sha256": "fb071a4b0819775fb96bd05212562680e67c89764c74e9d63f69b6eb500b5dbc",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/dp.c": {
+    "sha256": "770a517680da3038ec51eab461d326b4731b45fe65fabbdab341d7c8ef76a436",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/dpctr.c": {
+    "sha256": "72100808a8dd9f9540bdd90a59c9f36881e33d48618b271745463a606666f7ff",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/dpgetstat.c": {
+    "sha256": "3cfe7d4a5583d1cd8cf7d83c4dfe6c0c7ea7b1d5b0fa330d325cf23ea4eb63a5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/dpsetnextbuf.c": {
+    "sha256": "df58fb0ed041dcd13d68c8c42a997850b6a288bffedbf706fa1122080a5b25bc",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/dpsetstat.c": {
+    "sha256": "b774645df2b0bebccaa16113166a2b706085e33f5c1c03bf8177b212bc943024",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/driverominit.c": {
+    "sha256": "20c90b46a3d6e5248259b1f0f0c58d422fd2bc7d3659239aef555341f58eb8e1",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/epidma.c": {
+    "sha256": "766784be338adf849c60ffb47ab2c3f232cc52b11f3e3aa94db139182e71797d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/epigettype.c": {
+    "sha256": "7124ea7a7795d5ce6ee7f1ed306e5771082a577c750928a580bf40d84e5bae4e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/epilinkhandle.c": {
+    "sha256": "379f20924f1318db4b111c355e38f26c332d0ad1e86e54e103356a0667180b0c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/epirawdma.c": {
+    "sha256": "cc05a19cc8bf1e5fdd58e8e426b500f2eac244901e362bcec0b40ea546265a0b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/epirawread.c": {
+    "sha256": "41e63d68a65875ea6d49b2c665d5184afb93e97544fb0296f05f6d04bc11dd4d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/epirawwrite.c": {
+    "sha256": "19f70dcf7e95d3425852aab651d37e75b89e6699836d345bd9ee0046d72d4a38",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/epiread.c": {
+    "sha256": "e6565aaad974156c93a2edf9e7701c56d9453ec6b7c95f1130e36a2f2f216721",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/epiwrite.c": {
+    "sha256": "aa256a3ea50729b10ced033938a8618d5c794887cf13fb278193e225634ca5b7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/gbpakcheckconnector.c": {
+    "sha256": "16a9f6646407473e6b3b2d2ab6cfe6aa0c36fa7f9b03511951f50a6943557b5c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/gbpakgetbank.c": {
+    "sha256": "561d8992a5efd9a8c05bde12a339f5f5aa0e7b15090475f2d0859dbb61c50548",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/gbpakgetstatus.c": {
+    "sha256": "13d5f9fc1e6aa15d736681aada5522f39a25346f2609da08ee6ed5ff5ff913ff",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/gbpakinit.c": {
+    "sha256": "c9b054509085a4f7affd190c4fbbfa062d2fc8f227e69081983a101a16e0db8e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/gbpakpower.c": {
+    "sha256": "81f3cc64d68a9cb15b5f038659257bdc00f8f5c5057a2a6ac77814f5beefb935",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/gbpakreadid.c": {
+    "sha256": "13e85ce0e5acb023798f38e50c4246c38efd32ce78178b0b1ce095ad606e9401",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/gbpakreadwrite.c": {
+    "sha256": "5022180115a49a45f039acb745911ce141acf03a706c4887cda0e8f680beeedb",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/gbpaksetbank.c": {
+    "sha256": "ca77402822d7a897c1c3c4e9b2f20e717f4b3268a5b682c3f5dd12de974e71da",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/leodiskinit.c": {
+    "sha256": "4bccd6efcf893f5632d365f3be8b04698aee7d867a0e2927f328a3226dc90a1d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/leointerrupt.c": {
+    "sha256": "702822fa0978ee9c685c113be3509138b50c0c8cdb7f08e876daee2d66140382",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/motor.c": {
+    "sha256": "b4348208c58d8f761b721383ae3bb8c15674e99f3b2ee669e547d7e6b360b87a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsallocatefile.c": {
+    "sha256": "6e88577799aaee7f20d4a1972053c15a4b35126b1dac66cd76686fbe589e8a0a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfschecker.c": {
+    "sha256": "a8076f54d3979460e673205984fc95f45afcc520c3c82b039142badf4e1433fe",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsdeletefile.c": {
+    "sha256": "3ecbc2d6991c09b2d60482a3bc0bbc46f6062eeb93586b39cc0f1983e1b46e4b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsfilestate.c": {
+    "sha256": "0cf59f7108cab161643fe316f5594756e03c9047bb095cc6556a51282d20dbaa",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsfreeblocks.c": {
+    "sha256": "48d1c5609a73ea2da5d0346c27875bea52e6366b4825da2a8ca36082782e9e00",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsgetlabel.c": {
+    "sha256": "376bc5a2a2c312e748f8d780e8700525f17209e7e2cd66de383273fd14cde5a2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsgetstatus.c": {
+    "sha256": "72c9bcf62a10dedf13df7e2f8a086e1ca2704daead7feee5aa0bcaa81ad9612f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsinit.c": {
+    "sha256": "64ce4153c20dec4df65a0bcba808f43cc5a81c40d77ad9314930a75dcc4d2773",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsinitpak.c": {
+    "sha256": "51f192aa91e208339ab79e9bea604ab5366050d07da1ef1105f17344bd3bee1b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsisplug.c": {
+    "sha256": "208485f9b91f1248ad9d0ff013fd9d1ee9ceb7730d6d62ecf99ca137ed2f9ea6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsnumfiles.c": {
+    "sha256": "5b7e0ffa78a9f707d01380b14cec21488ec38d015b74bc6d639bb56cab9e28f7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsreadwritefile.c": {
+    "sha256": "9fae2ef59a879f02ffc1d256acad2e7e603179c14882ff1733750aaf7cae66ae",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsreformat.c": {
+    "sha256": "3b652189a8e15b10ba45fccc80108c2865948b1987879e0a69b40ab3a609af1a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsrepairid.c": {
+    "sha256": "923c92b662db729776b69ce29e6b1ce84640a511a1d33cdaa8051fbb41b4e0a2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfssearchfile.c": {
+    "sha256": "9300ad589bf041d3add7d62522346f79e7784315bbcfc5eec62905a5479a3e76",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfsselectbank.c": {
+    "sha256": "e98534ba738efb21a029f05e8fb128d4188faceeab0ce6c490a0556df1692dfc",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pfssetlabel.c": {
+    "sha256": "f0803e717f443edb5a645281acb17e23c3d9adbb1a2b12375655e52c96157a6a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pi.c": {
+    "sha256": "e0a6dd0568e3c67e6e291bf33b9cd60609cb5597bc1326e58c439ea5d7cb1547",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/piacs.c": {
+    "sha256": "e15097299a66ed7863de85058e9181f73e29783385889b6a0060e0e2b2f92a1f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pidma.c": {
+    "sha256": "5b278b009c44bb75ebbf6dfed39e23838c5bf34f16c87cabdfa9220ca0434f9d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pigetcmdq.c": {
+    "sha256": "6542e4c317a6b13d22a8f51d72a9c43d6e7c5ca4b3c3c3f55f40d662a5fa5edd",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pigetstat.c": {
+    "sha256": "f386de5ef13080a9943990ea0c1c4825771a73814e8491fecdb0bf524ac53a04",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pigettype.c": {
+    "sha256": "0f8d8c0ee85024d8456dbd00daadff6e35f62f8f48e4ab8c16fb864e203c2165",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pimgr.c": {
+    "sha256": "10e540394218552fbdb2b08fff4439456a9ce4ebd75f7bf1ae4a6637c8e04e85",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pirawdma.c": {
+    "sha256": "a7c4761d2983028bf0c8daf4e268e3f8b72bc06091a1eb3b4c82ee950a899881",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pirawread.c": {
+    "sha256": "15aec7f82d2401bd825f461089b1de2176595940e024746598f9ed685eac72e9",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/pirawwrite.c": {
+    "sha256": "60337cd631dfed6aad43f6cd5187a7b2fcf69c7b1e7a34fd513898db2070c29e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/piread.c": {
+    "sha256": "30a56924619ed41dcc63ed8d0355fbbe24347366c5eab815357500e2002a831d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/piwrite.c": {
+    "sha256": "3400a07c91710ca651ffdf2e23f269d929d9f03f900b901956c9c41a8a66d41f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/si.c": {
+    "sha256": "e8b3b9cb2149268c6927ec1134cc4ae955a4921f5d8ff3b609b13195b3d4bd12",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/siacs.c": {
+    "sha256": "3c5b54c44925ed18bb8caac08e44d443ad4e540113252bed702727f240d50bc7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/sigetstat.c": {
+    "sha256": "5a4b6884562b4fd8d99c7d549031364012659a183bb76f23d60156991ca41cd3",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/sirawdma.c": {
+    "sha256": "7c813678abe6e7c7a8e32cd447cfde40289165d9e251076c620e2185ea55d3a2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/sirawread.c": {
+    "sha256": "bcac288b80c10d12a17f9e4a9403bfee8e93ac5f04b71a261e7c713427f34baf",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/sirawwrite.c": {
+    "sha256": "c27c11f717b2b2fb5233b73fa74566bfc31212e6bd54e9817eb447bc95e43b55",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/sp.c": {
+    "sha256": "c9fc21b86f234d90c7a9628b30e029c2220e079ee79123178976222f0f2878dc",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/spgetstat.c": {
+    "sha256": "311e9eeb0b3286d36dc31463fc02dbdc0fd3c22a092cf6f80f010d39a098f3f3",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/sprawdma.c": {
+    "sha256": "464f4047a544a2352743568e3d04d20122b3bed6ce0538fb0e7ef03db76f2648",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/sprawread.c": {
+    "sha256": "afa3cea81a6316162c00ec88dd28295e93d7428bb698b139a8473258475ccdbe",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/sprawwrite.c": {
+    "sha256": "9eda97ad0e0e4b5249131b2f0718534ca317b679b25cf4a02fec9f4ce902ffa5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/spsetpc.c": {
+    "sha256": "201b8fb1c867d8141d27d9fc960a77a77b532266e6d93bfe79ef495b4705de94",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/spsetstat.c": {
+    "sha256": "1d4111413807152405a36fcc927f1ec87d6c2470e7e89d7bf0f92b88c003a834",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/sptask.c": {
+    "sha256": "194c0263abac26c671e80cfe0c6685b9f8b8b19e6e4da96ac60f10c301f41a32",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/sptaskyield.c": {
+    "sha256": "76dcc4157883ef5ef6827696be014e58042528bdf4c711fc54566794b6ff4cca",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/sptaskyielded.c": {
+    "sha256": "2040938798842659cbc9e442f4c8b988492c5e0849a4b3b63ed71cfbae43081b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/vi.c": {
+    "sha256": "dabc0f367a5c0d19aab0601c19d1d790b3e9f2ddedec8f7df0a28034c21562d5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/viblack.c": {
+    "sha256": "8afdf1a80d26cb576e721b6a508a2a515bf27ec7e804ac5a5e30ab7f36800010",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/viextendvstart.c": {
+    "sha256": "1c269b408c2872686f9d4ce1324df89011df1a7ad12b30e974d059d0f98d6100",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/vifade.c": {
+    "sha256": "d75113b601d81eb6818efe6d46366496d8ea1ccd4f64ba276edce686c6dbec59",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/vigetcurrcontext.c": {
+    "sha256": "056b17cef255e86ef010bed82d1c66eb63f7d0888bdbda765008d6b6d0ad29e0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/vigetcurrframebuf.c": {
+    "sha256": "f4f061d11be141c45340e13074ce5e5f9cbf1e1e4dc8e3244890965ebd21b8f3",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/vigetfield.c": {
+    "sha256": "ff40d85914d92b81269e8e2865d8494a1124dfc741aa9ddc7051d7a13024a0c4",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/vigetline.c": {
+    "sha256": "dc058d474a40d8fe69031b2a6e8089f9e95689ff6d978c68619a0f736e2aeb1f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/vigetmode.c": {
+    "sha256": "b40c45b53aed8daad045bb7005c0623972a7e1c97d5779304278b0fed81cab6a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/vigetnextcontext.c": {
+    "sha256": "981cecd7444379b2ffc0b887e8d6319af09b67bed5aac2e5f46dd25daf9b45c4",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/vigetnextframebuf.c": {
+    "sha256": "dce48d87b49dc10b386f81040267af1417b889a4c0f6a1983a1bd3e60961aa33",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/vigetstat.c": {
+    "sha256": "f3a3befa36612f0b0e38ca0550a33881d271a8e6e788f238423eee3ef5f75443",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/vimgr.c": {
+    "sha256": "0c3787126e17688262ce734b1bb4b5f7fae9e086d6b381e8ca165becad04c5d6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/virepeatline.c": {
+    "sha256": "69761184d1ad0819d8717bfb95df59979b24da555eac421233d400c2383fd99d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/visetevent.c": {
+    "sha256": "bf404f5f12e82994f2dd2ea5bff8e09ba84187a448fec60eaa31037e355d9383",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/visetmode.c": {
+    "sha256": "2e537647514187dadae16f691afcbe9097c04b5f53e4f708b9f0d56bef0383af",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/visetspecial.c": {
+    "sha256": "f7a809bbce88cff70f702b42564469dcb10524b9691d3fe396b57135dace17b7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/visetxscale.c": {
+    "sha256": "af3ffd19a8eee6dac3c0114be5cb26b987ea45ffefeb65b4154cd93004989137",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/visetyscale.c": {
+    "sha256": "cc708f74d8678f69cb957407a9859d9b3d053a05017c4638afb28fdf6e03e16c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/viswapbuf.c": {
+    "sha256": "b47f45e39e7bda4bc73600384b888b3e80bad41afa78993227a65ca18951dd6d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/viswapcontext.c": {
+    "sha256": "b22372a62fba097575de9839d128fe07d6da8abb840835e9203c47c91537862a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/io/vitbl.c": {
+    "sha256": "7aeba4bc6c39051047fe45914497b7a2232f39641609966c2762fb4ac0149b93",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/bcmp.s": {
+    "sha256": "52ea8db4b2523e93adb3abb3f001166248f5006d400521ef0f4e73e2afc13723",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/bcopy.s": {
+    "sha256": "924368801b4e8669f84691538bf1f35f67825412d13a1b0234fe91a06152de2c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/bzero.s": {
+    "sha256": "95714b8fddcdd0c30f1c709edbe1609b1cc176ed47d702fdd6af6b9fab4c4e6a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/ldiv.c": {
+    "sha256": "e392f67923031f5572e589d5b1179389a2dc13bb0ef506350aa856a20e5071ae",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/ll.c": {
+    "sha256": "11a550c2b35172242a0479e3328bfee24a4befeb287980e2470f77b6134cfd54",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/llbit.c": {
+    "sha256": "053b08bb412fa620c33eedf6e1d60efd2848c3d09883de1d7d60721b868f511a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/llcvt.c": {
+    "sha256": "d7999e5979aa12bb5e6eeda999e8ecc1a291c975d475e654f3e60847b2f63593",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/sprintf.c": {
+    "sha256": "5f1885419cebd168f1bbff011076756ea5a65a96612b8fe6c9b87d8eefe975bc",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/string.c": {
+    "sha256": "31902f760f5d7e3c1ad604d31fb65374514c884441665ad903216d7009d4c023",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/syncprintf.c": {
+    "sha256": "7f16cc866035400eea0057055328df74a00f74d2d83bc95d223e3ec6ae4eec85",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/xldtob.c": {
+    "sha256": "4417a3daa9294f2e46214bf19e86c7f6b9d42b05b36b4bd7238a6d518e5f40b5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/xlitob.c": {
+    "sha256": "b433c6c405a8d64c04e0746271031994ab8d6717f291cedad30e682a864bc9d1",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/xprintf.c": {
+    "sha256": "1e2a639d3d12834f0336116186f83a799e4438a7a7ef87e0ed89ef3864c1a951",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/libc/xstdio.h": {
+    "sha256": "f12e01b05a22622e42efff0fa2f72533b1086fe8cbb0825a601f450d79a02d36",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/log/delay.s": {
+    "sha256": "785a65688092b1881f3072cc0c99afb0ff73f84448a3256a7b8926caf1b03008",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/log/log.c": {
+    "sha256": "f17b227acacc57bc75c83327487b2389c623f0334738667051e4ebd529124d65",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/log/logfloat.c": {
+    "sha256": "cc1de4eebc611ddac961f4feddd4f8cc83223fc6b492961acb2cccdb45ea29ff",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/Makefile": {
+    "sha256": "9da17f625d365429082beca447e63cb1dad7d92022945274c91c3c6e39880051",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/asm.h": {
+    "sha256": "9a39d4995da3850932f71bf7b6c43832b7f387b8499713601164825346f78cf1",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/mtxcatf.s": {
+    "sha256": "2ca308523126e7df3d522f73fa8538ac861290093cdcb6b3b877ce6fc19ac11b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/mtxcatl.c": {
+    "sha256": "afadd7a026d98f32460d436f49e9621f1072d45309ef4f441485bae28c17b44d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/mtxf2l.s": {
+    "sha256": "29cbb01580ed47f55ca08619e94e47de208a1ace53c91f8c54a3ac99e5fa3a4f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/mtxident.s": {
+    "sha256": "df94c75d4f6631a1e8669baa512b6fbc85fc23a4846f2fb05c19ea170b0aeb55",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/mtxidentf.s": {
+    "sha256": "ed8d9c36eb6b2a4b0e1e0f35f0f827054d92cbf97e59a0c335c3a7d15f4390d2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/mtxl2f.s": {
+    "sha256": "e6cba63237d9acb8b75a7980f53a213f10e16c16af27941fc6393f5ccbb9377a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/mtxxfmf.c": {
+    "sha256": "09b3c3e9506b24985f5cef7c869eb29b2f1082c16d03c3fa7ea1b28823c8c457",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/mtxxfml.c": {
+    "sha256": "2f13d9d3accd5bf09be716a679eea05a389f32bf3dc6fe60e4d05c4572d4be3d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/normalize.s": {
+    "sha256": "e9bc0a67cd9573556813a086aa4a6d4635036ae5c43409eaa8a801775ff8e695",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/regdef.h": {
+    "sha256": "69af9e251c38c0f347d56673bca52496937a12ef3739c8a99080fd18215dbb40",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/rotate.c": {
+    "sha256": "4711e0fb0eac590bc8922faa02920a1e7c0c29a8b080d32e64f4a05a0b67e173",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/scale.s": {
+    "sha256": "ad439852a8d19b28e646e363c172eda41da3a70f9467a4b52ac4ce17f551aa91",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/scalef.s": {
+    "sha256": "08de9d2ff7d413ea5004e0a155fb1096a553e0b24dc2a10658e66f44ad1547e2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/translate.s": {
+    "sha256": "9c43fa17cbd29d65e9840f2e1741e4b5676469f982d30ea3b655de8cf049b44e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/mgu/translatef.s": {
+    "sha256": "326e915ddf810ff18c77d1637ad4f9e3187ca1fcc14fc1f4bd72b3731173feaa",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/monutil.s": {
+    "sha256": "3b6398cad34275bceab42f1d4c3264bd10efad8f28401d378ec03f7fe9db5ad9",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/ackramromread.c": {
+    "sha256": "76bcfe02d3f97327736342515728859f3325993b33fdb313df4613b5c735284c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/ackramromwrite.c": {
+    "sha256": "87c2437bb2cd26de02b9fff6a320bf43e3ad2074fa4cfdede637a8b791432892",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/afterprenmi.c": {
+    "sha256": "cfccbfe91da545e61b5db5b44edc97e5e56d79fd05e80c9a465fa8bab3ef15db",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/atomic.c": {
+    "sha256": "7806a980a8513f4dd17102368f6c9e2728fc1a4f6cecb93150ef451aa7f0ffed",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/createmesgqueue.c": {
+    "sha256": "a22ee9bd7b578ae677d9628ab42333751306d49f974cc9dbcb681973f4aaba9a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/createthread.c": {
+    "sha256": "7579f31ed6fa33d7a49ae68fc0392d97e57f5db8c130c17843fe3c645546c311",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/destroythread.c": {
+    "sha256": "eb3c4cf948f87882f16117866c77c29bd5bc0c1691a042ea6f95a8c8ab223da2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/exceptasm.h": {
+    "sha256": "1c9e7ab900d40dc52a9f0fe6398402a388c84cbabe3880ac3fb857b62f6c9d06",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/exceptasm.s": {
+    "sha256": "1e62373ef160265264bb82a459571b8a7df0518fcbdcfa31d0f84be75d366b47",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/exit.c": {
+    "sha256": "a859dcd96b44439fc761b525efdc4f19f6e9e1da93193e5682b5b067f0a00c3f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getactivequeue.c": {
+    "sha256": "bb1ccc9c23af79d8b931ee27ca51be272e303ee13c5205adf3687ca34c176b91",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getcause.s": {
+    "sha256": "e9298c2eaae761a8c9efb7f853bab55935a323953d6ce82c233318cc0d7fdb18",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getcompare.s": {
+    "sha256": "137951527b641255822988eb51170b239d62cf6365a1c712dd94e6a00e8376db",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getconfig.s": {
+    "sha256": "f19474e8c83e372faf523b976654e7a12fab96825bcd77d361f64e3a65d3932c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getcount.s": {
+    "sha256": "f9037878087d34aad996abeb795830e2494390c17cd719482183ef95c34063d7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getcurrfaultthread.c": {
+    "sha256": "c731eea33507a80a8379ccfb5720ffcca08a722560d33aa6270176ac3c3e447e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getfpccsr.s": {
+    "sha256": "4d310cd005c15b7ec08ea1fa3fed4c826e7092821c51c9cd199e656624590256",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/gethwinterrupt.c": {
+    "sha256": "1cc17db32bf1fdd8d0f397eab0759bb9589e37b0632bc573f0a2fca1ead18d53",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getintmask.s": {
+    "sha256": "87bb77cc999d3df87495b7b254b3c7e0fc90f49778e5638fc478741ded862a46",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getmemsize.c": {
+    "sha256": "37dd1764d8fc3a1bae3edb1ce9dcdafaf317ec113a977b3fb81a2261cbbf9f3e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getnextfaultthread.c": {
+    "sha256": "08946abc9d0be1d0c249f4d2208743b9b1a1df45ff5552c37c5165e7e0fbb79e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getsr.s": {
+    "sha256": "ad4696396be0274ca559eed860f72b62caf2a81c3aa17fe8a2e9d6c9ff4f3289",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getthreadid.c": {
+    "sha256": "d969e57318932e94f3d5ff388c119ee3fab531dfbc950ee655847fc646d634d2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getthreadpri.c": {
+    "sha256": "c1a543c1f9855d8b2ab3e4699b8debbb2d1d148cbb4f07afed587c64ff77e713",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/gettime.c": {
+    "sha256": "a0f1afb8870d5112df37c5935fd9063d0fd19f90cbef5b07f5a7fa58c3c50d15",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/gettlbasid.s": {
+    "sha256": "287c2b258e23193f07d387907a642740f44e4ea2c35b2c0743b0fe6f56efcd10",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/gettlbhi.s": {
+    "sha256": "38d291fefc1b1be113eb782bf1a2dae8ff1c1311c2cb01515c87960e4c1ae611",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/gettlblo0.s": {
+    "sha256": "85deb63727acaec619f321abc3b60eb9362264f3b3585e3291e517a53d60c47c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/gettlblo1.s": {
+    "sha256": "d460bffc545f8d310daff5428592c42b2ab9e02a9ab917583246380ad10c0077",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/gettlbpagemask.s": {
+    "sha256": "b5d5dcc02e4af7fd3410cb2aaaecd29ae5fe7e649b58d5e26caf238a676b649b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/getwatchlo.s": {
+    "sha256": "3c3ea18de513763f8cd228f599d4549ce230e670aba05e01a11600c392423fb8",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/initialize.c": {
+    "sha256": "deaaa7466badaeecb10c6ec2df965cdb9c718dc84aa69a143353e05dc5ce2907",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/initialize_emu.c": {
+    "sha256": "69e5c146b16f5402e33fba63e11598f89703cc6f392e2db50eba6c307cb339e6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/initialize_isv.c": {
+    "sha256": "8171892c26bf1ad1d1de23d5f488611773c91ce736ce311849d0507ebee85894",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/initialize_kmc.c": {
+    "sha256": "b91aa14ffbe1e3cd83b45791ea0db8a543af9b2ffcb8a8dc3600ea02b66f1c67",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/initialize_msp.c": {
+    "sha256": "4d62ba4980aa08b207e83bad6cf036f65a1bc92f007a6dd00ed5abfa9da4d5a5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/initrdb.c": {
+    "sha256": "e9121acc11baa1a91eea3c4a27bcfadf3765e3edc6b7a9e41104d13afccf42af",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/interrupt.s": {
+    "sha256": "1b021e0791519c17d7dbf182b0fc7dc9ff20ecb9ad3386f4940585ac01543a13",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/invaldcache.s": {
+    "sha256": "b6877939c38d88fd40cd2648627d17907b0d745ce4a7c3ab597d682af893b808",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/invalicache.s": {
+    "sha256": "f947f477d46525a1fa7ce0d3287415146132f311adeb26a794056be42d8c095c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/jammesg.c": {
+    "sha256": "9ce6ec8c0f7604a2446ba8f0273a5e87d549af7f5ca4762d21b5b09440c9e879",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/maptlb.s": {
+    "sha256": "d867b577e877417a5257e0499aabbca4871a6dd7a5aca01668dbe6195d6d3541",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/maptlbrdb.s": {
+    "sha256": "7553541375ebf7a4e1b683d4311d096cfaf88ac70cd161eb7629ce368ffed77e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/parameters.s": {
+    "sha256": "d15795f252f82e39d77ad65ac75027d3f2fda9642450fd0953b49162532eb87b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/physicaltovirtual.c": {
+    "sha256": "20fcf48cd14075577eafe3a68b7a7d6b9bc3273e19c2a4e99a541524b369308a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/probetlb.s": {
+    "sha256": "87ad17c1ec1295f9bfde52d5955a38bb2c6aa4a714ca5e8dc29947e9261f2d79",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/rdbsend.c": {
+    "sha256": "9964f436e7d396ffa83a291ddd8aa970f42430d49b0310aaa2289e926781e666",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/recvmesg.c": {
+    "sha256": "6bf5e355f840ad618614fde66e780bd7ca3449eaa398c58445259d3196efec0c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/resetglobalintmask.c": {
+    "sha256": "4dc6cf082676c71ebaf220b27d826d8e88c5ee0fb7707de24ffd92036db5ec31",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/sendmesg.c": {
+    "sha256": "6ab22710804c92064d6f077ffc67e3ff41ba1096919bbeea2d1d3beba7c2327a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/setcause.s": {
+    "sha256": "4113ac3348f1efa71f11d9012f1478dcab05aaa854a0c6b6a100286886123ad5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/setcompare.s": {
+    "sha256": "e10ced6bfacd287de4d570bbb2247b9c0c08f5c05122344cb9af9dc03866841d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/setconfig.s": {
+    "sha256": "ef09802668ad171e08cae5b5d81898fd195029e3346cb34697d3a0111c86016f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/setcount.s": {
+    "sha256": "299b0b052f130d50c49417538b0ed2959a5f608b39f2ab48c6a2f7d177d74cf8",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/seterrorhandler.c": {
+    "sha256": "bef01ba0c72d501b27c44a22e3dc946fd9d0ab38357c6c1938ec1210f2daedab",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/seteventmesg.c": {
+    "sha256": "897e03810d8b81e52285617879b44bc62da1f68ff866c29c87a58da3901ed09e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/setfpccsr.s": {
+    "sha256": "7484e9ab3555e309d6a9eb347b8918c9893b1c922b13e09df13a8f20d21e3727",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/setglobalintmask.c": {
+    "sha256": "85baf4c0f0462cb49e07dc6c9e6651ae5e3d8d22537f648aeec66131792a685f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/sethwinterrupt.c": {
+    "sha256": "7b505a7cc2862b25b2c1ba7a09f319eb2a0307812fee91dbba03f47c34bd0fba",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/setintmask.s": {
+    "sha256": "5c293ff21f8ced2e00d857fa3b00e625b97885cba3596f56fe431c208c0bbb76",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/setpiinterrupt.c": {
+    "sha256": "826ea6333ee1a830a373abd4edd03a84d3241ae6d654e120425348ce0173b4d6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/setsr.s": {
+    "sha256": "f610de9653b6e58164b99f9c303bcc6c9fbfd5cbbd2c10f7bb97dfe34aa7b50a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/setthreadpri.c": {
+    "sha256": "ac85f1f82e45ad7870e50097a0c0bfb82982ae7a326f9cf3a048f5529bc0cacc",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/settime.c": {
+    "sha256": "186afb642730e257823ae2965e6550b56b6d1fb9dc3b7c0160c84ed6dff9a8ab",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/settimer.c": {
+    "sha256": "b5d09bd42c62c21fe8909277b3067e52b911c8abb962c58c5486a0fac54858da",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/settlbasid.s": {
+    "sha256": "68c0ba5bb075d15a8ff5aeb8c015b0c8f898dea98a5aea7363df8fc10e651fbb",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/setwatchlo.s": {
+    "sha256": "b161a7b086f2ada7226b8ff9de2b82521228883063d640606b21aafa5944c027",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/startthread.c": {
+    "sha256": "78735322769a1d5a6facd5fc443cfdd3f9e798562e0defee4a9a8de7f562ce57",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/stopthread.c": {
+    "sha256": "4461b466f21939cd583f6c0d38f154b290105eaf7da70a33fc5ec62b30970bdf",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/stoptimer.c": {
+    "sha256": "7e830d1f43202f005957c724a4a21b40ad1dc5a6a1bf8c8af2485ce574fce09c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/syncputchars.c": {
+    "sha256": "fbb30a2ee54553149057724cf5bf750815b5f25320be476f8752e34a9891552b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/testhost.c": {
+    "sha256": "ad44196c0f1f253d30a393f5848016c3d52606a5b55ac974b234212535778ad0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/thread.c": {
+    "sha256": "c195356104347853050f4083fa56a8a626f5dc2008f8cf4a0a2acf733b89826b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/threadasm.h": {
+    "sha256": "bf3900c63fea638ccbb848bc215f25866a9449da0b2b79bb742d9854cd5cea07",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/timerintr.c": {
+    "sha256": "916cc48fad757289146c4f6f004ddd3ddcb66b57c24ecf6ceea7b485483c57d2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/unmaptlb.s": {
+    "sha256": "fccf7c13a09d6d5617e7f78749add6b019ced83b3d50fcfc7197f37cb9c80f76",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/unmaptlball.s": {
+    "sha256": "b53b187627fd3ee40a4beb6717949db6720aa3000b82fd14930a352b8ee92db7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/virtualtophysical.c": {
+    "sha256": "8ed671e96d3962776f05bd92fd75b51c33bc96af918950990626d4ed19a8fa52",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/writebackdcache.s": {
+    "sha256": "6f4f79f58dd3c72494b9380ab0c571361835d884e4bf34ec5ac3de2799694042",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/writebackdcacheall.s": {
+    "sha256": "5cbaf6045c7d1fa16c361c7f5cc203128543bb4395a009c89c136149cf6abc84",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/os/yieldthread.c": {
+    "sha256": "7eafd5d8c2e3dacb9fbd6ca7b0870099a85e27b547c38d802db7c6ed1ae084fe",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rg/free.c": {
+    "sha256": "1705a3aa40581fbf728a8e589a9652fb1daa9e7706dc753fbdc56f6d5eacd008",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rg/getbufcount.c": {
+    "sha256": "0863a4d0cfbc7bf29e629afc5d51243ddf9c083406cb0a447cc17681efab30d9",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rg/getsize.c": {
+    "sha256": "02a87663adb28e2109f3a17e3c0a6ec6aa08ce3901eb7e323193450aa4eea589",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rg/malloc.c": {
+    "sha256": "47ea9502c721187a5f182f2bcb568cc83de2e31db822419975535afddcb5221b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rg/printregion.c": {
+    "sha256": "219c12e478f337a4f5814ff0137b81af329cc8a2a7361770c4f00688eced80f7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rg/region.c": {
+    "sha256": "ee8804a733031d1c04e088be96d4f82f67ea6fd4fac59d4bb8d8c85f2b1fde3a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rmon/rmonbrk.c": {
+    "sha256": "429307e18ebc1390357c96e5a6a9eadd84a6406205cb341d93310529c38b487f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rmon/rmoncmds.c": {
+    "sha256": "dcb27678f9ea69a7835741865c2f1419e9ed48b0c0a09f9670c97ddceaac6fed",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rmon/rmonmain.c": {
+    "sha256": "55210b89230ee7fbe94c84874e24bcb5c44ebcf92e0b8d0b5c7e6b3863b35e34",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rmon/rmonmem.c": {
+    "sha256": "22d94af3449c2fd4fbdaea7a203b32e0b65be840aabe074af57f5bf4a103546f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rmon/rmonmisc.c": {
+    "sha256": "3454a9de7a930a626247b8148546a97fff8a02930833fef9fc34637b5d5136c0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rmon/rmonprint.c": {
+    "sha256": "4d7d019001eac6a5e6fe274b53ce27f7a5bdd2ad04cc8a60a0c9ef7424817fbf",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rmon/rmonrcp.s": {
+    "sha256": "96619c4c73b7e28c661870bf611e24fc5ef26854b1c92c95d7e8caad015a5d5e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rmon/rmonregs.c": {
+    "sha256": "274c7b05467f73f62f306f3f42308e8214acf57a854cca78a8b9b8b43c83c42d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rmon/rmonsio.c": {
+    "sha256": "c43e1d3185271138a0d1abee65d6757127b54ae4187c4205fdeba3ec1ac9ac36",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/rmon/rmontask.c": {
+    "sha256": "c3ceaa20de7b78dd53911c4ff53bba37cfdb98429bfcd3e47d52ab5531a3a9f3",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/sched/Makefile": {
+    "sha256": "869ccbf90d548971c9ffe3325920abf71a37161e634bdb5e3f2f7f237873a2eb",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/sched/sched.c": {
+    "sha256": "b075b651c957c9de4d6dd31a3fceb8d750ec5976b450ac76e977392ced179a18",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/sched/sched_log.fmt": {
+    "sha256": "a429ff002e17e3198a077e9e48a6027e725add8f518e3e770aaedcb8b78bf3ab",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/sp/Makefile": {
+    "sha256": "eea83f7723c24ed0683a4a689b47866debf7c23aed927c74c6309c893ddb6ea9",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/sp/clearattribute.c": {
+    "sha256": "024dc2aa110a95c60d96085912d872ef0417fe90a0c2d50f699f401fbeca4329",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/sp/color.c": {
+    "sha256": "75ae1c1022120a480181862c160b6431bf31114ba547afd38d898c79fe8b5cdc",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/sp/hide.c": {
+    "sha256": "ad47b1101d122d280828789c43a76d2e361420fe43c87c0a92c16ac17606bd3e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/sp/setattribute.c": {
+    "sha256": "becd616dfadc1872c2594ec251ab2414c7718b7edbfdcf22cc0b67e05ebd1ebf",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/sp/show.c": {
+    "sha256": "7f50fa93a1c7f7eb9ec4935ea34836cee008ede664cd89b97c70d89a9091dc84",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/sp/sprite.c": {
+    "sha256": "6cdfe9972e11dba9307f1f743829b9f726fd6d64ea1fbf37058345fcf5a097c2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/sp/spriteex.c": {
+    "sha256": "758ccc92d65adf101adf74b988d23693937e6896cdeb6686fd32527452016823",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/sp/spriteex2.c": {
+    "sha256": "1c15c90de2e1265d64250444f03f251768019906be07887ba1dcb8bbcf240aa6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/sp/spscale.c": {
+    "sha256": "9de11f13cbf1d3060121ef7401a2dd3e4d1902d75f0c5bf4d4bfaa1d21cd8cb5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpalhaf1.c": {
+    "sha256": "e5f1732d6bb54ff6464874d72f1b6b86a9ad2f8f7dc02b19809299e7d42637ee",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpalhan1.c": {
+    "sha256": "a72b5844b996b72396dea65cc1aef9a8e1715741466f8c4c746e47955c890302",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpalhpf1.c": {
+    "sha256": "35aca796371da4773c70e311c95aaa52bd7d28147c569fd42499b690ce43850b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpalhpf2.c": {
+    "sha256": "77c2ba266e94ac1ea8dbf4f29e55014d5ee9b6c764c4807f13ec1d4a457eeb0d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpalhpn1.c": {
+    "sha256": "61f08a9f6dc584ccdf80a123a51fc0122eb304e59f1fa7cc5abb8c42d51ca6c7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpalhpn2.c": {
+    "sha256": "1c239a3933d564e8ddee08b2ea03b0249aaecdc3282e8d1e11720a702bbfd26b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpallaf1.c": {
+    "sha256": "e0d7adbe6eff74c98053e0d7eb63902c4d14cc5d2f55171b1affe718a86cea0d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpallaf2.c": {
+    "sha256": "e59521a168b24b0798afe996050bbdcf949a649ef4c9b881e7e536d64e8fc546",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpallan1.c": {
+    "sha256": "5dc5941a65093f7abbccf4f64f638bcadcf3648f855f982ca6e895621ffe0122",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpallan2.c": {
+    "sha256": "b27fd4512e4544a55c6f88cfac3958523eb86b13ae6c9283385d9480dfad9ed9",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpallpf1.c": {
+    "sha256": "d972d3cdfbceba2075477b6a24775b880c4c5e0bc8b8595ecc5c2027abfbe852",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpallpf2.c": {
+    "sha256": "8e2b306b520d56cd2ee0b4cf7aa80980ef2f8830dd2780471b63a7130de20773",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpallpn1.c": {
+    "sha256": "606f89cef6bfc5fd9fe311b840bc2c74326e608471fdca10c447992a1111242d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodefpallpn2.c": {
+    "sha256": "c499b490fd83a54638b886f957e2407b79690ed386d443e24590f5ba6a9a255d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempalhaf1.c": {
+    "sha256": "e9f25e437e0ad8c0a7ec813de1f5aa695088f1766f5ad735ff5a91d5bb49d369",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempalhan1.c": {
+    "sha256": "9871cc314ecb31d88857779db8f1835be3369d1057a1f68588542719c33dc540",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempalhpf1.c": {
+    "sha256": "086825023c3b22c1eda60a0efc39417be9cccd16a0820e1495c419e27ad25982",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempalhpf2.c": {
+    "sha256": "c40a2a3abc3055601dff05e005da3d775208d7626dd55218a97ba24fde27e195",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempalhpn1.c": {
+    "sha256": "3e3d5821e48451658d29a200e4d1971512d0f9b947feba5cc6a85bec46c717ab",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempalhpn2.c": {
+    "sha256": "89d77d33e157d6f337a5c3dd5229f4f4422835aff7c24745dc8be6e8130d636a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempallaf1.c": {
+    "sha256": "cf4c47f6bfb1386cfa08b4a645ec61d20ca79588955364a5a5a92d21bbc6aab3",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempallaf2.c": {
+    "sha256": "363ea89e6b6f16096e0f20a5c7c7da2c89f5bbb72285065b54db0717a7846229",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempallan1.c": {
+    "sha256": "42da3ce31fc2765378237314c5596ae28cb2eaee2e4e31769eb28e6589b77b43",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempallan2.c": {
+    "sha256": "c98b15210b588c23d8d1bd24b32d5c76243e27ea01d40d3a12bcb24f1e39dc34",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempallpf1.c": {
+    "sha256": "74c89b323c267655f9f03333ac6aa367cc8b56e131bc24467d52fd7ba4fa82a6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempallpf2.c": {
+    "sha256": "eaeffad0d546bb79fa31c4475aecc117e1e7a920688dbdbc31c6e24659fd4786",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempallpn1.c": {
+    "sha256": "bd6024412cddf9bc928c018f0b894bf737b93194f0e950d1cce83c385e35f773",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodempallpn2.c": {
+    "sha256": "e42089e37652e9cf4b94cdab42171e7266027b20e7fda7fb3fe8aff58b96b24a",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentschaf1.c": {
+    "sha256": "a2e2c1f4f7f72a21fb05bbf0f8ee013820de75d6e52f5760636e8fb18155c362",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentschan1.c": {
+    "sha256": "19717e33dcf8636359069fdb8c3396c7383e167054f55a2f250a78e9f5ccb316",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentschpf1.c": {
+    "sha256": "3ff704c68fb27550f3ed98e5a82d0cf0c4c66a1741235d4ca3636e3c7bf34c91",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentschpf2.c": {
+    "sha256": "efa58de4c17b55d63a53a2b1634fd582afd0f8b52ef61dd32269472829898252",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentschpn1.c": {
+    "sha256": "7e91d7cf1fcb59b0a6df7a026cdc40e11d3c641bab9265d8dfd9d27bc52b2f94",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentschpn2.c": {
+    "sha256": "d2da5f18ae1d162df8a0b17bd204ac313a866b33610834abf4da29054a0a7d4b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentsclaf1.c": {
+    "sha256": "5244afcb35319be2384c84e363192b1e6db9e32f07e325063f726d36c1bde7d5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentsclaf2.c": {
+    "sha256": "0dbc859b6aa35b1e2a380b0dd467d3ea76e2895d2079080c4d5d672fe13cc5d4",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentsclan1.c": {
+    "sha256": "2ce73cf7b8502fadaf8c83383e2c0769b831786bdf9321790b4acc7425415c24",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentsclan2.c": {
+    "sha256": "d762c25793a11a1b4d5939a0f1c1d3930f33addf35cf9081075d6dbed077f8b7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentsclpf1.c": {
+    "sha256": "be5a5805167f29975488a55ee54457d23e5edc26c7eee3d86f94a226433c3cb5",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentsclpf2.c": {
+    "sha256": "d12cb35ca1986cc2f8a058ec03df69053d3ff105591f198c869759b404e8f896",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentsclpn1.c": {
+    "sha256": "e40e2b885a90b8733b3950ab39aa5c85e15dc73beb8ec18dbbefa7847eb45810",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodentsclpn2.c": {
+    "sha256": "3052ad04a130cf8c46a78e8f48ed500f306d5fa116ec0f735bb96254f7557a50",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepalhaf1.c": {
+    "sha256": "c53e7df30d7ec481380cd4857a8508d167349847ed3a18f9c9e02cc30b637fc0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepalhan1.c": {
+    "sha256": "8ec1cc3907212b16d4401fd30b6ce57ec61974e7fe3221ff9f525c73df41467e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepalhpf1.c": {
+    "sha256": "d0a46db759d378ca1985cee00601e08ea29c73ffe43579f0d433883d6c614057",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepalhpf2.c": {
+    "sha256": "3391fa0c7c1e4da80ef4ad610e8cc5ae8400b2fe3df929d5438ba674804d217d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepalhpn1.c": {
+    "sha256": "8b2ec1147f7017d439f61456ef97be2a08ae7c1648a3189e1e379946e17e949f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepalhpn2.c": {
+    "sha256": "486a32f3532d8f02ef21bdf894560026ab9ea048bb0ec825a746a3c80c5e53db",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepallaf1.c": {
+    "sha256": "8fb766e7640b1fb372c8b1ac9968d40e405a2d4ce6361fd2282d33a6da6768ce",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepallaf2.c": {
+    "sha256": "ed6173c0fc7e0673fa724e3474f974ff7a094268a08b39f3b550af1a77a50212",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepallan1.c": {
+    "sha256": "1139f91967efcbf42e73cd3a053b255f86f565aca145df7315a89bdb86741296",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepallan2.c": {
+    "sha256": "fa761b183fc6125770f44da8023dfbf7d9795a8b0110ba3ebd9622397fe9294e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepallpf1.c": {
+    "sha256": "0a3a814a145bfc93befee9169d645ec2cdbce98769aebc69bb42cde96524f085",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepallpf2.c": {
+    "sha256": "c8b6597006e679b47073275621c4043df0abab633375c56e21f628ffb635189f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepallpn1.c": {
+    "sha256": "6c72bf1d545be54ba8c6949ac3709c1106deacf9d23f60a63ab07bebad1bba54",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/vimodes/vimodepallpn2.c": {
+    "sha256": "7bed0c0c17debc90f9489b313c6d85060eac9c13cdcf139af40c3478647bb3c0",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicecheckresult.c": {
+    "sha256": "58d617d9e7b2c67fdaf513aee0e19b63aec70295e56fa8e01ea9a21a67ae75c4",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicecheckword.c": {
+    "sha256": "d79ba0def2edcb8071a3ed29088c14ad7414599b08df09e94c798182e924861e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicecleardictionary.c": {
+    "sha256": "06496d67ae80c0cda3922e3a89736c06dc0b25b048c8bae88ad19200aa8a91d8",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicecontread2.c": {
+    "sha256": "7248020d1998343957bda109959306cfd18720fc83c42ffcf4aa073e6351df69",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicecontread36.c": {
+    "sha256": "b4249754e9c74213b6a5f00a862c1e10665e3c404c6903e1c3e291e9fcfdc0b4",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicecontrolgain.c": {
+    "sha256": "3d9981d2607fc4a1c47e4d4e92e59c07aac855a8c22ed4a3467d42980fc7a74d",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicecontwrite20.c": {
+    "sha256": "ad9a028c50efacd5e67315bf738537cb56205c1b77e94ae47f065a6df2b6f35c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicecontwrite4.c": {
+    "sha256": "74656aea1fa7576138de07b49fc03db0be3534ac27d96ed76cd65035131d2505",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicecountsyllables.c": {
+    "sha256": "23dd1b90609e95b33c0c9ecdf31337d07413d2d5f9d70ae5b18b14ffce7939f1",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicecrc.c": {
+    "sha256": "580f4be887d3f463434a7399896054a31672fcfacce72b9a52a22583c2d039e7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicegetreaddata.c": {
+    "sha256": "8fe6b89e6633243154dba881e2b60aa3ead04a2e3c663399f13adf617ddb29e3",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicegetstatus.c": {
+    "sha256": "05278141587219831b5d8faa45288ad5f42f81a50551493a3ce8a54dfde4beb4",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voiceinit.c": {
+    "sha256": "41579a80bb836399a2989c6b6a272aaa774b55c34ec22c9fac454faf1de7f3ff",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voiceinternal.h": {
+    "sha256": "99682abfdb8aad915edf06933630a38c2cf3cf5902197bac3fe7aed960c74d08",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicemaskdictionary.c": {
+    "sha256": "12b60a34be2c0255fb70b37e1ea05c2e8bf55bda9d6967bec0dda66eef7943f6",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicesetadconverter.c": {
+    "sha256": "9b6cec89d403a2d9f2936f8d7900ae3f8e37963a583bd53a64cfbf88819ad943",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicesetword.c": {
+    "sha256": "52c1adafc037d642bb90f162891d2ed31948ca3182f2625e3ba453fa18c231fc",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicestartreaddata.c": {
+    "sha256": "b692f74c5bf05d6c023e7d8d3e83cdd320d314a6bdf4519870cf30d0aac5fcea",
+    "mode": "0o644"
+  },
+  "tools/ultralib/src/voice/voicestopreaddata.c": {
+    "sha256": "5543220383f1749208ae2b4013186d7973b3c0ece7d6fde7f74f80ed7109733c",
+    "mode": "0o644"
+  },
+  "tools/ultralib/tools/Makefile": {
+    "sha256": "be1e3c701e7f32489f5215118ce13a1f7e55a1e5010f596598b1133f2ea3865f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/tools/ar.py": {
+    "sha256": "db227492a5bb6c4c449c3cd64c96adea3ba420373e3e0611c2eedd9a23a13bef",
+    "mode": "0o755"
+  },
+  "tools/ultralib/tools/asm_differ/.gitignore": {
+    "sha256": "8bce8def1723dd4ab3b39c3ab4581fbb368e39503dc527e3fae45761961a360f",
+    "mode": "0o644"
+  },
+  "tools/ultralib/tools/asm_differ/.gitrepo": {
+    "sha256": "f7b942e8e672299e6d0af134f74f59a4ab705dcc10ec3d52f8ca22a5e5f1ba3e",
+    "mode": "0o644"
+  },
+  "tools/ultralib/tools/asm_differ/.pre-commit-config.yaml": {
+    "sha256": "5c4a68fca9ec351eb77219861b818af3780ae9e8ac86d22c66db0ae270ddfcb8",
+    "mode": "0o644"
+  },
+  "tools/ultralib/tools/asm_differ/LICENSE": {
+    "sha256": "88d9b4eb60579c191ec391ca04c16130572d7eedc4a86daa58bf28c6e14c9bcd",
+    "mode": "0o644"
+  },
+  "tools/ultralib/tools/asm_differ/README.md": {
+    "sha256": "bf061d85d58c48c1bb45c8c3e8f0798b7c4db6bc9ce53e673041fdb5fbbbafe2",
+    "mode": "0o644"
+  },
+  "tools/ultralib/tools/asm_differ/diff-stylesheet.css": {
+    "sha256": "e3af5cc3b9eb8b52206b96745df45777c61c03293690b226aca4315d55485694",
+    "mode": "0o644"
+  },
+  "tools/ultralib/tools/asm_differ/diff.py": {
+    "sha256": "e6a9ef695dcb31a4611dd17eeb0ea207034e4e42c30bcfcfdc5e35fb81ae9133",
+    "mode": "0o755"
+  },
+  "tools/ultralib/tools/asm_differ/diff_settings.py": {
+    "sha256": "53b4bb4bfc04ba588f64abfadbcaa5cad1f759348edb354c02f8556dc4f53675",
+    "mode": "0o644"
+  },
+  "tools/ultralib/tools/asm_differ/mypy.ini": {
+    "sha256": "46a0d4a3ef4e03944b699ec69da2c898a19699115bdece473c87e9d13998f51b",
+    "mode": "0o644"
+  },
+  "tools/ultralib/tools/asm_differ/screenshot.png": {
+    "sha256": "253754363ccf5dc62cfdd830f612d0eb3141c89d57182fa032d62d1ca120a1ce",
+    "mode": "0o644"
+  },
+  "tools/ultralib/tools/compile_sjis.py": {
+    "sha256": "dde2cc00e92e1ad9359cb75d053755ae3ebd1678c0241f0c65cd2c343265f03d",
+    "mode": "0o755"
+  },
+  "tools/ultralib/tools/disassemble_elf.py": {
+    "sha256": "77dcc1c19853894a41a43a1cad24fefd9ba44ea6e3ad8a170d4a6f6eb080d186",
+    "mode": "0o755"
+  },
+  "tools/ultralib/tools/fix_objfile.py": {
+    "sha256": "25b715978555b0a0f8a28fd53ac0b6d0f5235e93218933d85373a91d4c9b8403",
+    "mode": "0o755"
+  },
+  "tools/ultralib/tools/libdiff.py": {
+    "sha256": "77ff2b2bebaa53b2d494253a0250c9668817043fd206abedac257f3900f6b608",
+    "mode": "0o755"
+  },
+  "tools/ultralib/tools/libelf.py": {
+    "sha256": "6ba50db89408da49772d8107947a9cd6ca03a2930d64a1b05745a0cfe2e5f86b",
+    "mode": "0o755"
+  },
+  "tools/ultralib/tools/m2ctx.py": {
+    "sha256": "d54ddf06432bb8d2ce408af8cb31d2cc664c1c084e63cfb6de0ac9bdf9344c9a",
+    "mode": "0o755"
+  },
+  "tools/ultralib/tools/mdebug.py": {
+    "sha256": "072b5969cac487a0247ecdfa90fdbddcdec569b4109b0f6e7d456d5ac7d0fda7",
+    "mode": "0o644"
+  },
+  "tools/ultralib/tools/mips_isa.py": {
+    "sha256": "f390f37678c71ce571bc8d96c3c5649e65cd3c2dbc3080bd9f88ff8a1b9e5afe",
+    "mode": "0o644"
+  },
+  "tools/ultralib/tools/patch_ar_meta.py": {
+    "sha256": "c2356f4fbc47f779fa8014f1442ebca0e4eaf9057059e47b8c6dc55dbcc1878f",
+    "mode": "0o755"
+  },
+  "tools/ultralib/tools/print_mdebug.py": {
+    "sha256": "5674778f5de80bdc7dab34ac0b75532ff37e0b7a7f79428fb4965f0da1d0538f",
+    "mode": "0o755"
+  },
+  "tools/ultralib/tools/set_o32abi_bit.py": {
+    "sha256": "575fa03f02f8b17c6645ddc331c486b834b4d02a285ff522fa9a9d677c98b97e",
+    "mode": "0o755"
+  },
+  "tools/ultralib/tools/shiftjis_conv.py": {
+    "sha256": "851f05633587e214e2d3eecdf79d2a757b36f7d9725e85537afe116c8a025b80",
+    "mode": "0o755"
+  },
+  "tools/ultralib/tools/strip_debug.sh": {
+    "sha256": "1907778a13d5531c5400a76eba6d69f2dbdbc3b0c1ef063fdc55696d5fe99e41",
+    "mode": "0o755"
+  },
+  "tools/ultralib/tools/util.py": {
+    "sha256": "63ca4bfdf01c1c7827455d6e9b3859e9d19d1baf6ac7aadd5da7e9e180e21711",
+    "mode": "0o644"
+  },
+  "undefined_funcs_auto.txt": {
+    "sha256": "33d82db892a9822319e550a1afc6a05439e1b09b11078d1941d8c27e32c7ba1d",
+    "mode": "0o644"
+  },
+  "undefined_syms.txt": {
+    "sha256": "cb0d8c08fa3c7a76dcda9532b353c87dbd0a621bba8a66dd0ef7e5e6d9831fd1",
+    "mode": "0o644"
+  },
+  "undefined_syms_auto.txt": {
+    "sha256": "81443f0d27174d6c872a7f522c67485c6bda8bfbb3c86ab0df6aef71a091e2ca",
+    "mode": "0o644"
+  }
+}

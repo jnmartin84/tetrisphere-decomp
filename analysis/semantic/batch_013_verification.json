@@ -1,0 +1,18 @@
+{
+  "baseline_commit": "ce93c6c1faa448e7ce3e3fc15ca782dc51475026",
+  "baseline_matchdiff": "FULL MATCH",
+  "candidate_matchdiff": "FULL MATCH",
+  "full_rom_cmp": true,
+  "header_included": true,
+  "rom_bytes": 8388608,
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "identifier_substitutions": 17,
+  "source_files": 2,
+  "linked_addresses": {
+    "buildAnimationLightDirections": "0x80030EB4",
+    "startEndSequenceAnimation": "0x800C3AD8",
+    "updateAndDrawEndSequenceAnimation": "0x800C3C10",
+    "gEndSequenceAnimation": "0x80130A20"
+  },
+  "production_inputs_verified": 995
+}

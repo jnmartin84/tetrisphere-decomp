@@ -1,0 +1,124 @@
+{
+  "status": "IDENTIFIER_ONLY_VERIFIED",
+  "baseline_commit": "ce93c6c1faa448e7ce3e3fc15ca782dc51475026",
+  "ledger_sha256": "02a8ba90428cd4c5beb1562cb07c33e1f56753816af15cd8d0ec78d41b714f80",
+  "files": {
+    "src/code_8170.c": {
+      "before_sha256": "831e2b9d6daa7e05a4547c5888bda9bca7ba0d0866edf66f67f3ea969195d8fc",
+      "after_sha256": "006e340f3a1286bd67f68121f718d02aaafc792db7cf501837ccf4726f262d16",
+      "substitutions": [
+        {
+          "old": "func_80030EB4",
+          "new": "buildAnimationLightDirections",
+          "offset": 9810,
+          "line": 355
+        },
+        {
+          "old": "func_80030EB4",
+          "new": "buildAnimationLightDirections",
+          "offset": 12216,
+          "line": 442
+        },
+        {
+          "old": "func_80030EB4",
+          "new": "buildAnimationLightDirections",
+          "offset": 41340,
+          "line": 1362
+        }
+      ]
+    },
+    "src/game2.c": {
+      "before_sha256": "b19eeb18239cbfa50e1e8cca20ad46e4b89dfedef64fdba67db7083344693342",
+      "after_sha256": "5b24dca695f0c19a29fcb8e86fa2ffbc02ea6b6277ab76fede469d4f5c8d03e1",
+      "substitutions": [
+        {
+          "old": "D_80130A20",
+          "new": "gEndSequenceAnimation",
+          "offset": 3510,
+          "line": 120
+        },
+        {
+          "old": "func_800C3AD8",
+          "new": "startEndSequenceAnimation",
+          "offset": 834356,
+          "line": 22014
+        },
+        {
+          "old": "func_800C3AD8",
+          "new": "startEndSequenceAnimation",
+          "offset": 834902,
+          "line": 22030
+        },
+        {
+          "old": "func_800C3AD8",
+          "new": "startEndSequenceAnimation",
+          "offset": 842796,
+          "line": 22205
+        },
+        {
+          "old": "func_800C3AD8",
+          "new": "startEndSequenceAnimation",
+          "offset": 845002,
+          "line": 22265
+        },
+        {
+          "old": "func_800C3AD8",
+          "new": "startEndSequenceAnimation",
+          "offset": 846017,
+          "line": 22298
+        },
+        {
+          "old": "func_800C3AD8",
+          "new": "startEndSequenceAnimation",
+          "offset": 848736,
+          "line": 22374
+        },
+        {
+          "old": "func_800C3AD8",
+          "new": "startEndSequenceAnimation",
+          "offset": 849031,
+          "line": 22383
+        },
+        {
+          "old": "D_80130A20",
+          "new": "gEndSequenceAnimation",
+          "offset": 849384,
+          "line": 22392
+        },
+        {
+          "old": "D_80130A20",
+          "new": "gEndSequenceAnimation",
+          "offset": 849529,
+          "line": 22394
+        },
+        {
+          "old": "func_800C3C10",
+          "new": "updateAndDrawEndSequenceAnimation",
+          "offset": 850073,
+          "line": 22405
+        },
+        {
+          "old": "D_80130A20",
+          "new": "gEndSequenceAnimation",
+          "offset": 850275,
+          "line": 22411
+        },
+        {
+          "old": "D_80130A20",
+          "new": "gEndSequenceAnimation",
+          "offset": 972013,
+          "line": 25947
+        },
+        {
+          "old": "func_800C3C10",
+          "new": "updateAndDrawEndSequenceAnimation",
+          "offset": 1028229,
+          "line": 27084
+        }
+      ]
+    }
+  },
+  "inverse_restores_original_bytes": true,
+  "production_inputs_verified": true,
+  "rom_verified_by_this_tool": false
+}

@@ -352,7 +352,7 @@ s32 *arg4;
 extern void func_8002AF20(char *, char *);
 extern void func_8002F55C();
 extern void func_8003031C();
-extern void func_80030EB4();
+extern void buildAnimationLightDirections();
 extern void func_80031964();
 extern void func_8002E0D4();
 extern void func_8002DEA8();
@@ -439,7 +439,7 @@ void *arg3;
     arg0[0x39] = *(f32 *)(arg0 + 0x21C) * D_800EBEE8;
     if (arg0[0x3C] == 0) {
         func_8003031C(arg0, arg2, arg3);
-        func_80030EB4(arg0);
+        buildAnimationLightDirections(arg0);
         func_80031964(arg0);
         func_8002E0D4(arg0);
         *(s16 *)(arg0 + 0x3E) = -2;
@@ -1359,7 +1359,7 @@ typedef struct {
     f32 f10, f14, f18, f1C, f20, f24, f28, f2C, f30;
 } T52;
 
-void func_80030EB4(arg0)
+void buildAnimationLightDirections(arg0)
 u8 *arg0;
 {
     u8 *base;

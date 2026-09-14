@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "batch": "013-animation-subsystem-connections",
+  "baseline_commit": "ce93c6c1faa448e7ce3e3fc15ca782dc51475026",
+  "input_manifest": "analysis/semantic/batch_013_inputs.json",
+  "input_manifest_sha256": "b0a0ef88eba162e742dd0b67a66808dfa39bd1168ba59149d6a1a55fc741e8e8",
+  "files": {
+    "src/code_8170.c": {
+      "baseline_sha256": "831e2b9d6daa7e05a4547c5888bda9bca7ba0d0866edf66f67f3ea969195d8fc",
+      "renames": {
+        "func_80030EB4": "buildAnimationLightDirections"
+      },
+      "counts": {
+        "func_80030EB4": 3
+      }
+    },
+    "src/game2.c": {
+      "baseline_sha256": "b19eeb18239cbfa50e1e8cca20ad46e4b89dfedef64fdba67db7083344693342",
+      "renames": {
+        "D_80130A20": "gEndSequenceAnimation",
+        "func_800C3AD8": "startEndSequenceAnimation",
+        "func_800C3C10": "updateAndDrawEndSequenceAnimation"
+      },
+      "counts": {
+        "D_80130A20": 5,
+        "func_800C3AD8": 7,
+        "func_800C3C10": 2
+      }
+    }
+  },
+  "decisions": [
+    {
+      "old": "D_80130A20",
+      "new": "gEndSequenceAnimation",
+      "meaning": "LW runtime instance created for the win/lose end sequence, advanced by the frame driver; existing s32 storage preserved.",
+      "confidence": "high semantic; descriptive name, not recovered original spelling",
+      "evidence": "POST_RENAME_CONNECTIONS.md and ANIMATION_CONNECTIONS_LANDING.md"
+    },
+    {
+      "old": "func_800C3AD8",
+      "new": "startEndSequenceAnimation",
+      "meaning": "Conditionally starts animation audio and allocates the LW visual instance from the game arena, with existing mode gates.",
+      "confidence": "high semantic; descriptive name, not recovered original spelling",
+      "evidence": "POST_RENAME_CONNECTIONS.md and ANIMATION_CONNECTIONS_LANDING.md"
+    },
+    {
+      "old": "func_800C3C10",
+      "new": "updateAndDrawEndSequenceAnimation",
+      "meaning": "Updates and builds end-sequence animation graphics with LWPlayAnimation; handles completion in phase 6.",
+      "confidence": "high semantic; descriptive name, not recovered original spelling",
+      "evidence": "POST_RENAME_CONNECTIONS.md and ANIMATION_CONNECTIONS_LANDING.md"
+    },
+    {
+      "old": "func_80030EB4",
+      "new": "buildAnimationLightDirections",
+      "meaning": "Builds selected animation light-buffer directions from lightinfo rotations and configures G_LIGHTING.",
+      "confidence": "high semantic; descriptive name, not recovered original spelling",
+      "evidence": "POST_RENAME_CONNECTIONS.md and ANIMATION_CONNECTIONS_LANDING.md"
+    }
+  ]
+}

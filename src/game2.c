@@ -117,7 +117,7 @@ u8 *D_801309F8;
 u8 D_801309FC[0x4];
 u8  pad_80130A00[0x1C];
 s32 D_80130A1C;
-s32 D_80130A20;
+s32 gEndSequenceAnimation;
 s32 D_80130A24;
 u8 D_80130A28[0x300];
 u8 D_80130D28[0x200];
@@ -22011,7 +22011,7 @@ void func_800C2DF0(void) {
 extern u8 D_801309EE;
 extern u8 D_801033B8[];
 extern void func_800CBFF4(void);
-extern void func_800C3AD8(s32, s32);
+extern void startEndSequenceAnimation(s32, s32);
 void func_800C2E34(void) {
     func_800CBFF4();
     if (D_801309EE == 0) {
@@ -22027,7 +22027,7 @@ void func_800C2E34(void) {
         D_801309E8 = 0;
         D_80139E68 = 0;
         D_80139E64 = 2;
-        func_800C3AD8(*(s32 *)(D_801033B8 + 0x84), *(s32 *)(D_801033B8 + 0x88));
+        startEndSequenceAnimation(*(s32 *)(D_801033B8 + 0x84), *(s32 *)(D_801033B8 + 0x88));
     }
 }
 
@@ -22202,7 +22202,7 @@ void func_800C3374(void) {
     func_800ADC44((u8 *)D_80113488);
     if (D_8015D980 == 1 && D_800E44A8 != 4) {
         D_80139E64 = 1;
-        func_800C3AD8(*(s32 *)(D_801033B8 + 0x8C), *(s32 *)(D_801033B8 + 0x90));
+        startEndSequenceAnimation(*(s32 *)(D_801033B8 + 0x8C), *(s32 *)(D_801033B8 + 0x90));
     }
     D_80130A26 = 1;
     func_8007D45C(D_8010B358, D_800E2828, 0x19);
@@ -22262,7 +22262,7 @@ void func_800C370C(void) {
     *(s16 *)(D_8013DD00 + 0x23D6) = 1;
     D_801309E8 = 0;
     D_80139E64 = 2;
-    func_800C3AD8(*(s32 *)(D_801033B8 + 0x84), *(s32 *)(D_801033B8 + 0x88));
+    startEndSequenceAnimation(*(s32 *)(D_801033B8 + 0x84), *(s32 *)(D_801033B8 + 0x88));
 }
 
 #include <PR/ultratypes.h>
@@ -22295,7 +22295,7 @@ void func_800C384C(void) {
     *(s16 *)(D_8013FAC0 + 0x12) = 0;
     *(s16 *)(D_8013DD00 + 0x23DA) = 0;
     *(s16 *)(D_8013DD00 + 0x23D6) = 1;
-    func_800C3AD8(*(s32 *)(D_801033B8 + 0x84), *(s32 *)(D_801033B8 + 0x88));
+    startEndSequenceAnimation(*(s32 *)(D_801033B8 + 0x84), *(s32 *)(D_801033B8 + 0x88));
     D_80139E64 = 2;
     D_801309E8 = 0;
     D_80139E68 = 0;
@@ -22371,7 +22371,7 @@ void Begin_WinAnim(void) {
     *(s16 *)(D_8013FAC0 + 0x12) = 0;
     D_801309E8 = 0;
     D_80139E64 = 2;
-    func_800C3AD8(*(s32 *)(D_801033B8 + 0x84), *(s32 *)(D_801033B8 + 0x88));
+    startEndSequenceAnimation(*(s32 *)(D_801033B8 + 0x84), *(s32 *)(D_801033B8 + 0x88));
 }
 
 extern void func_80071DD8(s32 a0);
@@ -22380,7 +22380,7 @@ extern s32 LWAllocateMemory(s32 a0, s32 a1, s32 *a2, s32 a3, s32 *a4);
 extern u8 D_800F0D1C[];
 extern u8 D_800F0D3C[];
 extern u8 gAnimPlayer[];
-void func_800C3AD8(s32 arg0, s32 arg1) {
+void startEndSequenceAnimation(s32 arg0, s32 arg1) {
     s32 sp24;
     func_80029760(D_800F0D1C, arg1);
     func_80071DD8(0);
@@ -22389,9 +22389,9 @@ void func_800C3AD8(s32 arg0, s32 arg1) {
         if (D_800E44A8 != 4 && D_800E44A8 != 0xA) func_8007ACFC(gAnimPlayer);
     }
     D_800F22C0 = D_8013E474 = (D_8013E474 + 0xF) & ~0xF;
-    D_80130A20 = LWAllocateMemory(D_8013E474, arg0, &arg1, 1, &sp24);
+    gEndSequenceAnimation = LWAllocateMemory(D_8013E474, arg0, &arg1, 1, &sp24);
     D_800F22C0 = D_8013E474 = D_8013E474 + sp24;
-    func_80029760(D_800F0D3C, D_80130A20);
+    func_80029760(D_800F0D3C, gEndSequenceAnimation);
     D_80130A26 = 0;
     D_80139E68 = 0x96;
     if (D_800E44A8 == 1) D_80139E68 = 0xDC;
@@ -22402,13 +22402,13 @@ void func_800C3AD8(s32 arg0, s32 arg1) {
  * if func_8002D93C(D_80130A20, D_80160C64, 0, 0)!=0 && state[0x1680]==6 then state[0x1688]=0x60.
  * const 1 hoisted (shared by both sb). D_8015D980/D_800E44A8/D_80160C64 s16, D_80130A26/E64 u8. */
 extern s32 LWPlayAnimation(void *, s32, void *, void *);
-void func_800C3C10(void) {
+void updateAndDrawEndSequenceAnimation(void) {
     if (D_8015D980 != 1) return;
     if (D_800E44A8 == 4) return;
     if (D_80139E64 == 0) return;
     *(u8 *)(D_8013DD00 + 0x701) = 1;
     D_80130A26 = 1;
-    if (LWPlayAnimation(D_80130A20, D_80160C64, 0, 0) == 0) return;
+    if (LWPlayAnimation(gEndSequenceAnimation, D_80160C64, 0, 0) == 0) return;
     if (*(u8 *)(D_8013DD00 + 0x1680) == 6) {
         *(u8 *)(D_8013DD00 + 0x1688) = 0x60;
     }
@@ -25944,7 +25944,7 @@ void func_800CC548(void) {
     *(u8 *)(D_8013DD00 + 0x127F) = 0;
     *(u8 *)(D_8013DD00 + 0x1680) = 0;
     D_80139E64 = 0;
-    D_80130A20 = 0;
+    gEndSequenceAnimation = 0;
     *(u8 *)(D_8013DD00 + 0x700) = 0;
     *(u8 *)(D_8013DD00 + 0x66C) = 0;
     *(u8 *)(D_8013DD00 + 0x666) = 0;
@@ -27081,7 +27081,7 @@ block_289:;
             func_800AF294();
     }
     func_800C3CEC();
-    func_800C3C10();
+    updateAndDrawEndSequenceAnimation();
     if (((u8) D_80110220[0x701] == 0) && ((u8) D_80113488[0x701] == 0)) {
         D_8013E474 = D_8013DD08;
         D_800F22C0 = D_8013DD08;
