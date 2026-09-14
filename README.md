@@ -1,7 +1,7 @@
 # Tetrisphere
 
 A 100% source-complete byte-matching decompilation of Tetrisphere (USA) for the
-Nintendo 64.
+Nintendo 64, done with the aid of Fable 5 and GPT-6 Astra.
 
 Work toward full semantic recovery and improved readability is ongoing.
 
