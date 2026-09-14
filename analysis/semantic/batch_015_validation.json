@@ -1,0 +1,15 @@
+{
+  "status": "SCOPED_IDENTIFIER_ONLY_VERIFIED",
+  "baseline_commit": "ef6da689eb997e96f9220c42cbc12caa88dc4458",
+  "ledger_sha256": "34c3ebad9c90d1758f1e04bfd64fbf7d0ad2003cffc3dbfdeee2adda71b254bb",
+  "substitutions": 284,
+  "inverse_restores_original_bytes": true,
+  "production_inputs_verified": true,
+  "rom_verified_by_this_tool": false,
+  "files": {
+    "src/code_8170.c": {
+      "before_sha256": "006e340f3a1286bd67f68121f718d02aaafc792db7cf501837ccf4726f262d16",
+      "after_sha256": "39220a0802388958cee3a8b2b17b7ed1f9cffe6155d354b59112520a55aabe19"
+    }
+  }
+}

@@ -65,20 +65,20 @@ extern char D_800EBC54[], D_800EBC74[];
       || (u32)(p) < 0x80000400 || (u32)(p) >= 0x80400001)
 
 typedef struct {
-    /*0x00*/ s16 *unk0;
-    /*0x04*/ void *unk4;
-} PoolEnt;
+    /*0x00*/ s16 *indexList;
+    /*0x04*/ void *geomStream;
+} LWGeometryInfo;
 
 typedef struct {
-    /*0x00*/ u8 *unk0;
-    /*0x04*/ u8 *unk4;
-    /*0x08*/ u8 *unk8;
-    /*0x0C*/ u8 *unkC;
-    /*0x10*/ u8 *unk10;
-    /*0x14*/ u8 *unk14;
-    /*0x18*/ PoolEnt *unk18;
-    /*0x1C*/ void *unk1C;
-    /*0x20*/ s32 unk20;
+    /*0x00*/ u8 *lights0;
+    /*0x04*/ u8 *lights1;
+    /*0x08*/ u8 *materialLights0;
+    /*0x0C*/ u8 *materialLights1;
+    /*0x10*/ u8 *lightInfo;
+    /*0x14*/ u8 *objectInfo;
+    /*0x18*/ LWGeometryInfo *geometryInfo;
+    /*0x1C*/ void *animStream;
+    /*0x20*/ s32 geomStreamCount;
     /*0x24*/ s32 unk24;
     /*0x28*/ f32 unk28;
     /*0x2C*/ f32 unk2C;
@@ -98,22 +98,22 @@ typedef struct {
     /*0x4A*/ u8 unk4A;
     /*0x4B*/ u8 pad4B[0x270 - 0x4B];
     /*0x270*/ f32 unk270;
-} Pool;
+} LWInfo;
 
 typedef struct {
     /*0x00*/ s32 pad0;
-    /*0x04*/ s32 unk4;
-    /*0x08*/ s32 unk8;
+    /*0x04*/ s32 lightBlockOffset;
+    /*0x08*/ s32 objectBlockOffset;
     /*0x0C*/ s32 padC;
-    /*0x10*/ s32 unk10;
-} Heap;
+    /*0x10*/ s32 streamSize;
+} LWAnimStreamHeader;
 
 typedef struct {
     /*0x00*/ s32 pad0;
     /*0x04*/ s32 unk4;
     /*0x08*/ s32 pad8[3];
-    /*0x14*/ s32 unk14;
-} Blk;
+    /*0x14*/ s32 streamSize;
+} LWGeomStreamHeader;
 
 typedef struct {
     /*0x00*/ s32 count;
@@ -128,17 +128,17 @@ typedef struct {
     /*0x04*/ u8 unk4;
 } Entry;
 
-u8 *LWAllocateMemory(arg0, arg1, arg2, arg3, arg4)
-s32 arg0;
-s32 arg1;
-void **arg2;
-s32 arg3;
-s32 *arg4;
+u8 *LWAllocateMemory(memory, animStream, geomStreams, geomStreamCount, allocatedSize)
+s32 memory;
+s32 animStream;
+void **geomStreams;
+s32 geomStreamCount;
+s32 *allocatedSize;
 {
     /* Local homes are part of the matching frame layout. */
-    Pool *pool;
-    s32 countA;
-    s32 countB;
+    LWInfo *lwInfo;
+    s32 lightCount;
+    s32 objectCount;
     u8 *blk;
     s32 base;
     s32 heapSize;
@@ -159,114 +159,114 @@ s32 *arg4;
     u8 *src;
     void **entryCursor;
 
-    blk = (u8 *)(((Heap *)arg1)->unk4 + arg1);
-    countA = *(s32 *)blk;
-    blk = (u8 *)(((Heap *)arg1)->unk8 + arg1);
-    countB = *(s32 *)blk;
-    header = ((Heap *)arg1)->unk10;
-    if (arg0 >= arg1 && arg0 < arg1 + header) {
+    blk = (u8 *)(((LWAnimStreamHeader *)animStream)->lightBlockOffset + animStream);
+    lightCount = *(s32 *)blk;
+    blk = (u8 *)(((LWAnimStreamHeader *)animStream)->objectBlockOffset + animStream);
+    objectCount = *(s32 *)blk;
+    header = ((LWAnimStreamHeader *)animStream)->streamSize;
+    if (memory >= animStream && memory < animStream + header) {
         func_8002AF20(D_800EBA80, D_800EBAA0);
     }
 
     i = 0;
-    if (arg3 > 0) {
+    if (geomStreamCount > 0) {
         do {
             /* Dead stores mint the size and address spill items in this order. */
-            idx = countA * 16;
+            idx = lightCount * 16;
             j = (u32)func_80025CA0;
-            blk = (u8 *)arg2[i];
-            blkSize = ((Blk *)blk)->unk14;
-            if (arg0 >= (s32)blk) {
-                if (arg0 < (s32)blk + blkSize) {
+            blk = (u8 *)geomStreams[i];
+            blkSize = ((LWGeomStreamHeader *)blk)->streamSize;
+            if (memory >= (s32)blk) {
+                if (memory < (s32)blk + blkSize) {
                     func_8002AF20(D_800EBAC0, D_800EBAE0);
                 }
             }
-            blk = (u8 *)arg2[i];
+            blk = (u8 *)geomStreams[i];
             if ((s32)blk % 16) {
                 func_8002AF20(D_800EBB00, D_800EBB18);
             }
-            if (BADPTR(arg2[i])) {
+            if (BADPTR(geomStreams[i])) {
                 func_8002AF20(D_800EBB38, D_800EBB50);
             }
             i++;
-        } while (i != arg3);
-        arg0 = arg0 + i * 0;
+        } while (i != geomStreamCount);
+        memory = memory + i * 0;
     }
     i = 0;
 
-    if (arg0 % 16) {
+    if (memory % 16) {
         func_8002AF20(D_800EBB70, D_800EBB88);
     }
-    if (arg1 % 16) {
+    if (animStream % 16) {
         func_8002AF20(D_800EBBA8, D_800EBBC0);
     }
-    if (BADPTR(arg0)) {
+    if (BADPTR(memory)) {
         func_8002AF20(D_800EBBE0, D_800EBBF4);
     }
-    if (BADPTR(arg1)) {
+    if (BADPTR(animStream)) {
         func_8002AF20(D_800EBC14, D_800EBC34);
     }
 
-    base = arg0;
-    pool = (Pool *)arg0;
-    heapSize = countA * 16;
+    base = memory;
+    lwInfo = (LWInfo *)memory;
+    heapSize = lightCount * 16;
     /* Keep a zero-valued 32-bit identity through the size-copy passes. */
-    idx = arg1;
+    idx = animStream;
     idx *= 0;
-    arg0 += 0x278;
-    while ((arg0 - base) % 16) arg0++;
-    pool->unk0 = (u8 *)arg0;
-    arg0 += heapSize;
-    while ((arg0 - base) % 16) arg0++;
-    pool->unk4 = (u8 *)arg0;
-    arg0 += heapSize;
-    while ((arg0 - base) % 16) arg0++;
-    pool->unk10 = (u8 *)arg0; arg0 += countA * 0x34;
-    while ((arg0 - base) % 16) arg0++;
-    pool->unk14 = (u8 *)arg0;
-    arg0 += countB * 0x120;
-    while ((arg0 - base) % 16) arg0++;
-    pool->unk18 = (PoolEnt *)arg0;
-    arg0 += arg3 * 8;
+    memory += 0x278;
+    while ((memory - base) % 16) memory++;
+    lwInfo->lights0 = (u8 *)memory;
+    memory += heapSize;
+    while ((memory - base) % 16) memory++;
+    lwInfo->lights1 = (u8 *)memory;
+    memory += heapSize;
+    while ((memory - base) % 16) memory++;
+    lwInfo->lightInfo = (u8 *)memory; memory += lightCount * 0x34;
+    while ((memory - base) % 16) memory++;
+    lwInfo->objectInfo = (u8 *)memory;
+    memory += objectCount * 0x120;
+    while ((memory - base) % 16) memory++;
+    lwInfo->geometryInfo = (LWGeometryInfo *)memory;
+    memory += geomStreamCount * 8;
 
-    arg0 = arg0;
+    memory = memory;
     i = 0;
-    if (arg3 > 0) {
-        cursor = (s32)arg2;
+    if (geomStreamCount > 0) {
+        cursor = (s32)geomStreams;
         do {
             header = *(s32 *)cursor;
-            sub = (Sub *)(((Blk *)header)->unk4 + header);
+            sub = (Sub *)(((LWGeomStreamHeader *)header)->unk4 + header);
             bcount = sub->count + (((u32)header & 1) * 0) + (((u32)header & 2) * 0) + (((u32)header & 4) * 0) + (((u32)header & 8) * 0);
-            while ((arg0 - base) % 16) arg0++;
-            pool->unk18[i].unk0 = (s16 *)arg0;
+            while ((memory - base) % 16) memory++;
+            lwInfo->geometryInfo[i].indexList = (s16 *)memory;
             i++;
-            arg0 += bcount * 2;
+            memory += bcount * 2;
             cursor += 4;
-        } while (i != arg3);
-        arg0 = arg0 + i * 0;
+        } while (i != geomStreamCount);
+        memory = memory + i * 0;
         i = 0;
     }
-    arg0 = arg0;
-    while ((arg0 - base) % 16) arg0++;
-    pool->unk8 = (u8 *)arg0;
-    arg0 = arg0;
+    memory = memory;
+    while ((memory - base) % 16) memory++;
+    lwInfo->materialLights0 = (u8 *)memory;
+    memory = memory;
 
-    _bzero(pool->unk0, heapSize | idx);
-    _bzero(pool->unk4, heapSize | idx);
-    _bzero(pool->unk10, countA * 0x34);
-    _bzero(pool->unk14, countB * 0x120);
+    _bzero(lwInfo->lights0, heapSize | idx);
+    _bzero(lwInfo->lights1, heapSize | idx);
+    _bzero(lwInfo->lightInfo, lightCount * 0x34);
+    _bzero(lwInfo->objectInfo, objectCount * 0x120);
 
-    pool->unk3D = 0;
+    lwInfo->unk3D = 0;
     /* End these cold lifetimes after the clear calls, before the entry loop. */
-    do { j = countB * 0x120; blkSize = countB; } while (0);
-    arg0 += j * 0 + blkSize * 0;
+    do { j = objectCount * 0x120; blkSize = objectCount; } while (0);
+    memory += j * 0 + blkSize * 0;
     idx = 0;
     j = 0;
-    if (arg3 > 0) {
-        entryCursor = arg2;
+    if (geomStreamCount > 0) {
+        entryCursor = geomStreams;
         do {
             blk = (u8 *)*entryCursor;
-            sub = (Sub *)(((Blk *)blk)->unk4 + (s32)blk);
+            sub = (Sub *)(((LWGeomStreamHeader *)blk)->unk4 + (s32)blk);
             bcount = sub->count;
             entryOffsets = sub->off;
             if (bcount > 0) {
@@ -277,16 +277,16 @@ s32 *arg4;
                     c2 = e->unk2;
                     e = (Entry *)((u8 *)e + 4);
                     if (e->unk0 & 8) {
-                        v = func_8002DFA0(pool, idx, cursor & 0xFF, c1 & 0xFF, (s32)c2);
+                        v = func_8002DFA0(lwInfo, idx, cursor & 0xFF, c1 & 0xFF, (s32)c2);
                         if (v == -1) {
-                            arg0 += heapSize + (((u32)cursor & 1) * 0);
-                            pool->unk8[idx * 16 + 0] = cursor;
-                            pool->unk8[idx * 16 + 1 + (((u32)cursor & 2) * 0)] = c1;
-                            pool->unk8[idx * 16 + 2 + (((u32)cursor & 4) * 0)] = c2;
+                            memory += heapSize + (((u32)cursor & 1) * 0);
+                            lwInfo->materialLights0[idx * 16 + 0] = cursor;
+                            lwInfo->materialLights0[idx * 16 + 1 + (((u32)cursor & 2) * 0)] = c1;
+                            lwInfo->materialLights0[idx * 16 + 2 + (((u32)cursor & 4) * 0)] = c2;
                             v = idx + (((u32)cursor & 8) * 0);
                             idx += 1 + (((u32)cursor & 16) * 0);
                         }
-                        *(s16 *)((u8 *)pool->unk18[j].unk0 + i * 2) = v + (((u32)cursor & 32) * 0);
+                        *(s16 *)((u8 *)lwInfo->geometryInfo[j].indexList + i * 2) = v + (((u32)cursor & 32) * 0);
                     }
                     i++;
                     entryOffsets++;
@@ -295,54 +295,54 @@ s32 *arg4;
             }
             /* Same-line updates retain the counter store in the delay slot. */
             j++; entryCursor++;
-        } while (j != arg3);
+        } while (j != geomStreamCount);
         j = 0;
     }
 
     {
-        blk = (u8 *)arg0;
-        src = pool->unk8;
-        pool->unkC = (u8 *)arg0;
-        if ((s32)((u8 *)arg0 - pool->unk8) > 0) {
+        blk = (u8 *)memory;
+        src = lwInfo->materialLights0;
+        lwInfo->materialLights1 = (u8 *)memory;
+        if ((s32)((u8 *)memory - lwInfo->materialLights0) > 0) {
             do {
                 *blk++ = *src++;
                 j++;
-            } while (j < (s32)(pool->unkC - pool->unk8));
+            } while (j < (s32)(lwInfo->materialLights1 - lwInfo->materialLights0));
         }
     }
 
-    pool->unk48 = 1;
-    pool->unk49 = 1;
-    pool->unk4A = 1;
-    pool->unk3C = 0;
-    pool->unk24 = 0;
-    pool->unk3A = 0;
-    pool->unk39 = 0;
-    arg0 = (s32)((u8 *)arg0 + (s32)pool->unkC) - (s32)pool->unk8;
-    pool->unk1C = arg1;
-    pool->unk20 = arg3;
-    if (arg3 > 0) {
+    lwInfo->unk48 = 1;
+    lwInfo->unk49 = 1;
+    lwInfo->unk4A = 1;
+    lwInfo->unk3C = 0;
+    lwInfo->unk24 = 0;
+    lwInfo->unk3A = 0;
+    lwInfo->unk39 = 0;
+    memory = (s32)((u8 *)memory + (s32)lwInfo->materialLights1) - (s32)lwInfo->materialLights0;
+    lwInfo->animStream = animStream;
+    lwInfo->geomStreamCount = geomStreamCount;
+    if (geomStreamCount > 0) {
         do {
-            pool->unk18[i].unk4 = arg2[i];
+            lwInfo->geometryInfo[i].geomStream = geomStreams[i];
             i++;
-        } while (i != arg3);
+        } while (i != geomStreamCount);
     }
 
-    pool->unk3D = 0;
-    pool->unk38 = 2;
-    pool->unk30 = 1.0f;
-    pool->unk270 = 40.0f;
-    pool->unk28 = 0.0f;
-    pool->unk2C = 0.0f;
-    pool->unk34 = 0.0f;
-    pool->unk40 = 16.0f;
-    pool->unk44 = 16384.0f;
+    lwInfo->unk3D = 0;
+    lwInfo->unk38 = 2;
+    lwInfo->unk30 = 1.0f;
+    lwInfo->unk270 = 40.0f;
+    lwInfo->unk28 = 0.0f;
+    lwInfo->unk2C = 0.0f;
+    lwInfo->unk34 = 0.0f;
+    lwInfo->unk40 = 16.0f;
+    lwInfo->unk44 = 16384.0f;
 
-    if (BADPTR(arg0)) {
+    if (BADPTR(memory)) {
         func_8002AF20(D_800EBC54, D_800EBC74);
     }
-    *arg4 = arg0 - base;
-    return (u8 *)pool;
+    *allocatedSize = memory - base;
+    return (u8 *)lwInfo;
 }
 
 /* LWPlayAnimation. Ten LWInfo pointer-validity asserts, then the per-frame
@@ -381,7 +381,7 @@ extern char D_800EBE78[];
 extern char D_800EBE94[];
 extern char D_800EBEB8[];
 
-typedef struct { s32 unk0; u32 unk4; } TG8;
+typedef struct { s32 indexList; u32 geomStream; } LWGeometryInfoCheckView;
 
 #define BADPTR(p) \
     (((u32)func_80025CA0 < (u32)(p) && (u32)(p) < (u32)eqpower) \
@@ -402,7 +402,7 @@ void *arg3;
         func_8002AF20(D_800EBCC8, D_800EBCE4);
     }
     for (i = 0; i < *(s32 *)(arg0 + 0x20); i++) {
-        if (BADPTR(((TG8 *)*(u8 **)(arg0 + 0x18))[i].unk4)) {
+        if (BADPTR(((LWGeometryInfoCheckView *)*(u8 **)(arg0 + 0x18))[i].geomStream)) {
             func_8002AF20(D_800EBD00, D_800EBD20);
         }
     }
@@ -660,19 +660,19 @@ void func_8002E8D8(u8 *arg0, f32 *arg1) {
 }
 
 typedef struct { u8 pad0[4]; f32 unk4, unk8, unkC; u8 pad1[0x34 - 0x10]; } Elem2EBF4;
-typedef struct { u8 pad0[0x10]; Elem2EBF4 *unk10; } Obj2EBF4;
+typedef struct { u8 pad0[0x10]; Elem2EBF4 *lightInfo; } LWInfoLightView;
 typedef struct { u8 pad0[2]; s16 unk2; f32 unk4; u8 pad1[4]; f32 unkC; } Cur2EBF4;
 
-void func_8002EBF4(Obj2EBF4 *arg0, Cur2EBF4 *arg1, s32 arg2) {
+void func_8002EBF4(LWInfoLightView *arg0, Cur2EBF4 *arg1, s32 arg2) {
     if (arg1->unk2 != 0) {
         arg1 = (Cur2EBF4 *)((u8 *)arg1 + 4);
-        arg0->unk10[arg2].unk4 += *(f32 *)arg1;
+        arg0->lightInfo[arg2].unk4 += *(f32 *)arg1;
         return;
     }
-    arg0->unk10[arg2].unk4 += arg0->unk10[arg2].unk8;
+    arg0->lightInfo[arg2].unk4 += arg0->lightInfo[arg2].unk8;
     arg1 = (Cur2EBF4 *)((u8 *)arg1 + 0xC);
-    arg0->unk10[arg2].unk8 += arg0->unk10[arg2].unkC;
-    arg0->unk10[arg2].unkC += *(f32 *)arg1;
+    arg0->lightInfo[arg2].unk8 += arg0->lightInfo[arg2].unkC;
+    arg0->lightInfo[arg2].unkC += *(f32 *)arg1;
 }
 
 void func_8002ECA4(u8 *a0, f32 *a1)
@@ -900,7 +900,7 @@ void func_8002F55C(u8 *arg0) {
                 func_8002E598(arg0, p, i);
             }
             if (cnt != 0) {
-                func_8002EBF4((Obj2EBF4 *)arg0, (Cur2EBF4 *)p, i);
+                func_8002EBF4((LWInfoLightView *)arg0, (Cur2EBF4 *)p, i);
             }
         }
 
@@ -1164,33 +1164,33 @@ typedef struct {
 
 typedef struct {
     u8 pad0[8];
-    s32 unk8;
-} T24C_Hdr;
+    s32 objectBlockOffset;
+} LWAnimStreamObjectView;
 
 typedef struct {
     u8 pad0[0x14];
-    u8 *unk14;
+    u8 *objectInfo;
     u8 pad18[4];
-    T24C_Hdr *unk1C;
-} T24C_A0;
+    LWAnimStreamObjectView *animStream;
+} LWInfoObjectView;
 
-void func_8003024C(T24C_A0 *arg0, s32 arg1) {
+void func_8003024C(LWInfoObjectView *arg0, s32 arg1) {
     u8 *base;
     f32 *q;
 
-    base = arg0->unk1C->unk8 + (u8 *) arg0->unk1C;
+    base = arg0->animStream->objectBlockOffset + (u8 *) arg0->animStream;
     q = (f32 *) (base + ((s32 *) base)[arg1 + 1]);
     q += 1;
     q += *(s32 *) q;
-    ((T24C_Item *) arg0->unk14)[arg1].unkA8 = *++q;
-    ((T24C_Item *) arg0->unk14)[arg1].unkAC = *++q;
-    ((T24C_Item *) arg0->unk14)[arg1].unkB0 = *++q;
-    ((T24C_Item *) arg0->unk14)[arg1].unkB4 = *++q;
-    ((T24C_Item *) arg0->unk14)[arg1].unkB8 = *++q;
-    ((T24C_Item *) arg0->unk14)[arg1].unkBC = *++q;
-    ((T24C_Item *) arg0->unk14)[arg1].unkC0 = *++q;
-    ((T24C_Item *) arg0->unk14)[arg1].unkC4 = *++q;
-    ((T24C_Item *) arg0->unk14)[arg1].unkC8 = *++q;
+    ((T24C_Item *) arg0->objectInfo)[arg1].unkA8 = *++q;
+    ((T24C_Item *) arg0->objectInfo)[arg1].unkAC = *++q;
+    ((T24C_Item *) arg0->objectInfo)[arg1].unkB0 = *++q;
+    ((T24C_Item *) arg0->objectInfo)[arg1].unkB4 = *++q;
+    ((T24C_Item *) arg0->objectInfo)[arg1].unkB8 = *++q;
+    ((T24C_Item *) arg0->objectInfo)[arg1].unkBC = *++q;
+    ((T24C_Item *) arg0->objectInfo)[arg1].unkC0 = *++q;
+    ((T24C_Item *) arg0->objectInfo)[arg1].unkC4 = *++q;
+    ((T24C_Item *) arg0->objectInfo)[arg1].unkC8 = *++q;
 }
 
 typedef struct {
@@ -1209,10 +1209,10 @@ typedef struct {
     /* 0x210 */ f32 f210;
     /* 0x214 */ f32 f214;
     /* 0x218 */ f32 f218;
-} V31C;
+} LWInfoTransformView;
 
 void func_8003031C(arg0, arg1, arg2)
-V31C *arg0;
+LWInfoTransformView *arg0;
 f32 (*arg1)[4];
 f32 (*arg2)[4];
 {
@@ -1391,7 +1391,7 @@ u8 *arg0;
     }
 }
 
-typedef struct { s32 unk0; u8 *unk4; } T8Ent;
+typedef struct { s32 indexList; u8 *geomStream; } LWGeometryInfoStreamView;
 
 u8 *func_800310C4(a0, a1, a2)
 u8 *a0;
@@ -1409,7 +1409,7 @@ s16 *a2;
     *a2 = *(s16 *)base;
     base += 2;
     n = *(s16 *)base;
-    q = ((T8Ent *)*(u8 **)(a0 + 0x18))[*a2].unk4 + *(s32 *)((T8Ent *)*(u8 **)(a0 + 0x18))[*a2].unk4;
+    q = ((LWGeometryInfoStreamView *)*(u8 **)(a0 + 0x18))[*a2].geomStream + *(s32 *)((LWGeometryInfoStreamView *)*(u8 **)(a0 + 0x18))[*a2].geomStream;
     q += 4;
     for (i = 0; i < n; i++) {
         if (*q) {
@@ -1429,9 +1429,9 @@ s16 *a2;
 }
 
 typedef struct { Mtx mtx[2]; u8 pad80[0x120 - 0x80]; } T24C_Mtx;
-#define ITEM ((T24C_Item *) ((u8 *) arg0->unk14 + idx * 0x120))
+#define ITEM ((T24C_Item *) ((u8 *) arg0->objectInfo + idx * 0x120))
 
-void func_800312C4(T24C_A0 *arg0, s32 *base, s32 *tbl, s32 idx, f32 *mf) {
+void func_800312C4(LWInfoObjectView *arg0, s32 *base, s32 *tbl, s32 idx, f32 *mf) {
     f32 ntx, nty, ntz;
     f32 wx, wy, wz;
     f32 scx, scy, scz;
@@ -1495,7 +1495,7 @@ void func_800312C4(T24C_A0 *arg0, s32 *base, s32 *tbl, s32 idx, f32 *mf) {
     out[1][3] = 0.0f;
     out[2][3] = 0.0f;
     out[3][3] = 1.0f;
-    guMtxF2L(out, &((T24C_Mtx *) arg0->unk14)[idx].mtx[*((u8 *) arg0 + 0x3D)]);
+    guMtxF2L(out, &((T24C_Mtx *) arg0->objectInfo)[idx].mtx[*((u8 *) arg0 + 0x3D)]);
     i = 0;
     if (n > 0) {
         do {
@@ -1507,7 +1507,7 @@ void func_800312C4(T24C_A0 *arg0, s32 *base, s32 *tbl, s32 idx, f32 *mf) {
 }
 
 
-void func_80031964(T24C_A0 *arg0) {
+void func_80031964(LWInfoObjectView *arg0) {
     s32 *base;
     s32 i;
     s32 n;
@@ -1515,7 +1515,7 @@ void func_80031964(T24C_A0 *arg0) {
     s32 *tbl;
     f32 m[4][4];
 
-    base = (s32 *) (arg0->unk1C->unk8 + (u8 *) arg0->unk1C);
+    base = (s32 *) (arg0->animStream->objectBlockOffset + (u8 *) arg0->animStream);
     n = *base;
     tbl = base + 1;
     for (i = 0; i < n; i++) {
@@ -1651,8 +1651,8 @@ typedef struct {
 
 typedef struct {
     /* 0x000 */ u8 pad0[0x14];
-    /* 0x014 */ E321 *unk14;
-    /* 0x018 */ s32 unk18;
+    /* 0x014 */ E321 *objectInfo;
+    /* 0x018 */ s32 geometryInfo;
     /* 0x01C */ u8 pad1C[0x24 - 0x1C];
     /* 0x024 */ s32 unk24;
     /* 0x028 */ u8 pad28[0x38 - 0x28];
@@ -1680,17 +1680,17 @@ typedef struct {
     /* 0x0F8 */ Mtx mtx[2];
     /* 0x178 */ f32 mf178[4][4];
     /* 0x1B8 */ f32 mf1B8[4][4];
-} O321;
+} LWInfoRenderView;
 
 extern Gfx *D_800F22B4;
-extern void func_80031FEC(O321 *, s32, u8 *, s32);
+extern void func_80031FEC(LWInfoRenderView *, s32, u8 *, s32);
 extern void func_80032320();
 extern s32 func_8002CDC0(f32 [4][4], f32 [4][4]);
 extern void transformVector4InPlace(f32 [4][4], f32 *);
 extern char D_800EBED4[];
 
 void func_80031FEC(arg0, arg1, arg2, arg3)
-O321 *arg0;
+LWInfoRenderView *arg0;
 s32 arg1;
 u8 *arg2;
 s32 arg3;
@@ -1701,7 +1701,7 @@ s32 arg3;
     f32 up[4];
     f32 eye[4];
 
-    guMtxL2F(mf, &arg0->unk14[arg1].mtx[arg0->unk3D]);
+    guMtxL2F(mf, &arg0->objectInfo[arg1].mtx[arg0->unk3D]);
     if (arg0->unk3B == 0) {
         if (func_8002CDC0(arg0->mf1B8, arg0->mf178) == 0) {
             arg0->unk3B = 1;
@@ -1727,14 +1727,14 @@ s32 arg3;
     transformVector4InPlace(mf, at);
     transformVector4InPlace(arg0->mf178, up);
     transformVector4InPlace(arg0->mf178, eye);
-    guLookAtReflect(&mtx, &arg0->unk14[arg1].lookat, eye[0], eye[1], eye[2], at[0], at[1], at[2], up[0], up[1],
+    guLookAtReflect(&mtx, &arg0->objectInfo[arg1].lookat, eye[0], eye[1], eye[2], at[0], at[1], at[2], up[0], up[1],
                     up[2]);
-    gSPLookAtX(D_800F22B4++, (u32) &arg0->unk14[arg1].lookat);
-    gSPLookAtY(D_800F22B4++, (u32) &arg0->unk14[arg1].lookat.l[1]);
+    gSPLookAtX(D_800F22B4++, (u32) &arg0->objectInfo[arg1].lookat);
+    gSPLookAtY(D_800F22B4++, (u32) &arg0->objectInfo[arg1].lookat.l[1]);
 }
 
 void func_800321D4(arg0, arg1, arg2, arg3, arg4, arg5)
-O321 *arg0;
+LWInfoRenderView *arg0;
 s32 arg1;
 u8 *arg2;
 s32 arg3;
@@ -1749,7 +1749,7 @@ s32 arg5;
      * duplicated 0x80000000 be CSE'd into a temp. Folding 0xF8 into the literal keeps the
      * two constants distinct, so each stays an immediate (as1 $at) as the ROM has it. */
     gSPMatrix(D_800F22B4++, (u32)&((Mtx *)arg0)[arg0->unk3D] + 0x800000F8, G_MTX_MODELVIEW | G_MTX_LOAD | G_MTX_NOPUSH);
-    gSPMatrix(D_800F22B4++, (u32)&arg0->unk14[arg3].mtx[arg0->unk3D] + 0x80000000, G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH);
+    gSPMatrix(D_800F22B4++, (u32)&arg0->objectInfo[arg3].mtx[arg0->unk3D] + 0x80000000, G_MTX_MODELVIEW | G_MTX_MUL | G_MTX_NOPUSH);
     if (*arg2 != 0) {
         func_80031FEC(arg0, arg3, arg2, arg5);
         arg2 += 0x10;
@@ -1759,7 +1759,7 @@ s32 arg5;
     n = *(s16 *)arg2;
     arg2 += 2;
     for (j = 0; j < n; j++) {
-        func_80032320(arg0, arg1, *(s16 *)arg2, arg0->unk14[arg3].unk80, arg4);
+        func_80032320(arg0, arg1, *(s16 *)arg2, arg0->objectInfo[arg3].unk80, arg4);
         arg2 += 2;
     }
 }
@@ -1784,10 +1784,10 @@ typedef struct {
 
 extern void func_800331B0();
 
-#define NODE ((T321 *)((T321 *)((u8 *)arg0->unk18 + arg1 * 8))->unk4)
+#define NODE ((T321 *)((T321 *)((u8 *)arg0->geometryInfo + arg1 * 8))->unk4)
 
 void func_80032320(arg0, arg1, arg2, arg3, arg4)
-O321 *arg0;
+LWInfoRenderView *arg0;
 s32 arg1;
 s32 arg2;
 s32 arg3;
@@ -2106,16 +2106,16 @@ s32 arg2;
     u32 val;
     s32 vidx;
 
-    base = ((T8Ent *)*(u8 **)(arg0 + 0x18))[arg1].unk4
-         + *(s32 *)(((T8Ent *)*(u8 **)(arg0 + 0x18))[arg1].unk4 + 8);
+    base = ((LWGeometryInfoStreamView *)*(u8 **)(arg0 + 0x18))[arg1].geomStream
+         + *(s32 *)(((LWGeometryInfoStreamView *)*(u8 **)(arg0 + 0x18))[arg1].geomStream + 8);
     p = base;
     for (i = 0; i < arg2; i++) {
         p += 2;
     }
     cur = 0;
     p = *(s16 *)p + base;
-    base2 = ((T8Ent *)*(u8 **)(arg0 + 0x18))[arg1].unk4
-          + *(s32 *)(((T8Ent *)*(u8 **)(arg0 + 0x18))[arg1].unk4 + 0xC);
+    base2 = ((LWGeometryInfoStreamView *)*(u8 **)(arg0 + 0x18))[arg1].geomStream
+          + *(s32 *)(((LWGeometryInfoStreamView *)*(u8 **)(arg0 + 0x18))[arg1].geomStream + 0xC);
     n = ((H6 *)p)->cnt;
     e = (u8 *)&((H6 *)p)->rec[n];
     np = ((H6 *)p)->off + p;

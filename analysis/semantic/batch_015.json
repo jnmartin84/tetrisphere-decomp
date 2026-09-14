@@ -1,0 +1,2076 @@
+{
+  "schema_version": 1,
+  "batch": "015-lw-runtime-data-vocabulary",
+  "baseline_commit": "ef6da689eb997e96f9220c42cbc12caa88dc4458",
+  "input_manifest": "analysis/semantic/batch_015_inputs.json",
+  "input_manifest_sha256": "701b6b664a752b70970af4347ceb6cdf3ab6d835d2886ffb6b38a1b2edeeb755",
+  "files": {
+    "src/code_8170.c": {
+      "kind": "c",
+      "baseline_sha256": "006e340f3a1286bd67f68121f718d02aaafc792db7cf501837ccf4726f262d16",
+      "events": [
+        {
+          "old": "unk0",
+          "new": "indexList",
+          "offset": 2051,
+          "line": 68,
+          "scope": "PoolEnt member declaration"
+        },
+        {
+          "old": "unk4",
+          "new": "geomStream",
+          "offset": 2076,
+          "line": 69,
+          "scope": "PoolEnt member declaration"
+        },
+        {
+          "old": "PoolEnt",
+          "new": "LWGeometryInfo",
+          "offset": 2084,
+          "line": 70,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk0",
+          "new": "lights0",
+          "offset": 2128,
+          "line": 73,
+          "scope": "Pool member declaration"
+        },
+        {
+          "old": "unk4",
+          "new": "lights1",
+          "offset": 2151,
+          "line": 74,
+          "scope": "Pool member declaration"
+        },
+        {
+          "old": "unk8",
+          "new": "materialLights0",
+          "offset": 2174,
+          "line": 75,
+          "scope": "Pool member declaration"
+        },
+        {
+          "old": "unkC",
+          "new": "materialLights1",
+          "offset": 2197,
+          "line": 76,
+          "scope": "Pool member declaration"
+        },
+        {
+          "old": "unk10",
+          "new": "lightInfo",
+          "offset": 2220,
+          "line": 77,
+          "scope": "Pool member declaration"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 2244,
+          "line": 78,
+          "scope": "Pool member declaration"
+        },
+        {
+          "old": "PoolEnt",
+          "new": "LWGeometryInfo",
+          "offset": 2264,
+          "line": 79,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk18",
+          "new": "geometryInfo",
+          "offset": 2273,
+          "line": 79,
+          "scope": "Pool member declaration"
+        },
+        {
+          "old": "unk1C",
+          "new": "animStream",
+          "offset": 2299,
+          "line": 80,
+          "scope": "Pool member declaration"
+        },
+        {
+          "old": "unk20",
+          "new": "geomStreamCount",
+          "offset": 2323,
+          "line": 81,
+          "scope": "Pool member declaration"
+        },
+        {
+          "old": "Pool",
+          "new": "LWInfo",
+          "offset": 2796,
+          "line": 101,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk4",
+          "new": "lightBlockOffset",
+          "offset": 2860,
+          "line": 105,
+          "scope": "Heap member declaration"
+        },
+        {
+          "old": "unk8",
+          "new": "objectBlockOffset",
+          "offset": 2883,
+          "line": 106,
+          "scope": "Heap member declaration"
+        },
+        {
+          "old": "unk10",
+          "new": "streamSize",
+          "offset": 2929,
+          "line": 108,
+          "scope": "Heap member declaration"
+        },
+        {
+          "old": "Heap",
+          "new": "LWAnimStreamHeader",
+          "offset": 2938,
+          "line": 109,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk14",
+          "new": "streamSize",
+          "offset": 3051,
+          "line": 115,
+          "scope": "Blk member declaration"
+        },
+        {
+          "old": "Blk",
+          "new": "LWGeomStreamHeader",
+          "offset": 3060,
+          "line": 116,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 3298,
+          "line": 131,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg1",
+          "new": "animStream",
+          "offset": 3304,
+          "line": 131,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg2",
+          "new": "geomStreams",
+          "offset": 3310,
+          "line": 131,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg3",
+          "new": "geomStreamCount",
+          "offset": 3316,
+          "line": 131,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg4",
+          "new": "allocatedSize",
+          "offset": 3322,
+          "line": 131,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 3332,
+          "line": 132,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg1",
+          "new": "animStream",
+          "offset": 3342,
+          "line": 133,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg2",
+          "new": "geomStreams",
+          "offset": 3355,
+          "line": 134,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg3",
+          "new": "geomStreamCount",
+          "offset": 3365,
+          "line": 135,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg4",
+          "new": "allocatedSize",
+          "offset": 3376,
+          "line": 136,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "Pool",
+          "new": "LWInfo",
+          "offset": 3449,
+          "line": 139,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 3455,
+          "line": 139,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "countA",
+          "new": "lightCount",
+          "offset": 3469,
+          "line": 140,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "countB",
+          "new": "objectCount",
+          "offset": 3485,
+          "line": 141,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "Heap",
+          "new": "LWAnimStreamHeader",
+          "offset": 3790,
+          "line": 162,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "arg1",
+          "new": "animStream",
+          "offset": 3797,
+          "line": 162,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk4",
+          "new": "lightBlockOffset",
+          "offset": 3804,
+          "line": 162,
+          "scope": "Heap explicitly cast access"
+        },
+        {
+          "old": "arg1",
+          "new": "animStream",
+          "offset": 3811,
+          "line": 162,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "countA",
+          "new": "lightCount",
+          "offset": 3822,
+          "line": 163,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "Heap",
+          "new": "LWAnimStreamHeader",
+          "offset": 3863,
+          "line": 164,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "arg1",
+          "new": "animStream",
+          "offset": 3870,
+          "line": 164,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk8",
+          "new": "objectBlockOffset",
+          "offset": 3877,
+          "line": 164,
+          "scope": "Heap explicitly cast access"
+        },
+        {
+          "old": "arg1",
+          "new": "animStream",
+          "offset": 3884,
+          "line": 164,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "countB",
+          "new": "objectCount",
+          "offset": 3895,
+          "line": 165,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "Heap",
+          "new": "LWAnimStreamHeader",
+          "offset": 3932,
+          "line": 166,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "arg1",
+          "new": "animStream",
+          "offset": 3939,
+          "line": 166,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk10",
+          "new": "streamSize",
+          "offset": 3946,
+          "line": 166,
+          "scope": "Heap explicitly cast access"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 3961,
+          "line": 167,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg1",
+          "new": "animStream",
+          "offset": 3969,
+          "line": 167,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 3977,
+          "line": 167,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg1",
+          "new": "animStream",
+          "offset": 3984,
+          "line": 167,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg3",
+          "new": "geomStreamCount",
+          "offset": 4074,
+          "line": 172,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "countA",
+          "new": "lightCount",
+          "offset": 4200,
+          "line": 175,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg2",
+          "new": "geomStreams",
+          "offset": 4273,
+          "line": 177,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "Blk",
+          "new": "LWGeomStreamHeader",
+          "offset": 4306,
+          "line": 178,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk14",
+          "new": "streamSize",
+          "offset": 4318,
+          "line": 178,
+          "scope": "Blk explicitly cast access"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 4341,
+          "line": 179,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 4381,
+          "line": 180,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg2",
+          "new": "geomStreams",
+          "offset": 4525,
+          "line": 184,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg2",
+          "new": "geomStreams",
+          "offset": 4659,
+          "line": 188,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg3",
+          "new": "geomStreamCount",
+          "offset": 4779,
+          "line": 192,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 4794,
+          "line": 193,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 4801,
+          "line": 193,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 4841,
+          "line": 197,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg1",
+          "new": "animStream",
+          "offset": 4915,
+          "line": 200,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 4996,
+          "line": 203,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg1",
+          "new": "animStream",
+          "offset": 5073,
+          "line": 206,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5147,
+          "line": 210,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 5157,
+          "line": 211,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "Pool",
+          "new": "LWInfo",
+          "offset": 5165,
+          "line": 211,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5172,
+          "line": 211,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "countA",
+          "new": "lightCount",
+          "offset": 5193,
+          "line": 212,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg1",
+          "new": "animStream",
+          "offset": 5291,
+          "line": 214,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5315,
+          "line": 216,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5342,
+          "line": 217,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5361,
+          "line": 217,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 5373,
+          "line": 218,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk0",
+          "new": "lights0",
+          "offset": 5379,
+          "line": 218,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5392,
+          "line": 218,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5402,
+          "line": 219,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5432,
+          "line": 220,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5451,
+          "line": 220,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 5463,
+          "line": 221,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk4",
+          "new": "lights1",
+          "offset": 5469,
+          "line": 221,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5482,
+          "line": 221,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5492,
+          "line": 222,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5522,
+          "line": 223,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5541,
+          "line": 223,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 5553,
+          "line": 224,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk10",
+          "new": "lightInfo",
+          "offset": 5559,
+          "line": 224,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5573,
+          "line": 224,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5579,
+          "line": 224,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "countA",
+          "new": "lightCount",
+          "offset": 5587,
+          "line": 224,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5614,
+          "line": 225,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5633,
+          "line": 225,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 5645,
+          "line": 226,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 5651,
+          "line": 226,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5665,
+          "line": 226,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5675,
+          "line": 227,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "countB",
+          "new": "objectCount",
+          "offset": 5683,
+          "line": 227,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5711,
+          "line": 228,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5730,
+          "line": 228,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 5742,
+          "line": 229,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk18",
+          "new": "geometryInfo",
+          "offset": 5748,
+          "line": 229,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "PoolEnt",
+          "new": "LWGeometryInfo",
+          "offset": 5757,
+          "line": 229,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5767,
+          "line": 229,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5777,
+          "line": 230,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg3",
+          "new": "geomStreamCount",
+          "offset": 5785,
+          "line": 230,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5800,
+          "line": 232,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 5807,
+          "line": 232,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg3",
+          "new": "geomStreamCount",
+          "offset": 5832,
+          "line": 234,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg2",
+          "new": "geomStreams",
+          "offset": 5866,
+          "line": 235,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "Blk",
+          "new": "LWGeomStreamHeader",
+          "offset": 5950,
+          "line": 238,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6138,
+          "line": 240,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6157,
+          "line": 240,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 6177,
+          "line": 241,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk18",
+          "new": "geometryInfo",
+          "offset": 6183,
+          "line": 241,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "unk0",
+          "new": "indexList",
+          "offset": 6192,
+          "line": 241,
+          "scope": "geometry descriptor element"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6206,
+          "line": 241,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6241,
+          "line": 243,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg3",
+          "new": "geomStreamCount",
+          "offset": 6308,
+          "line": 245,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6323,
+          "line": 246,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6330,
+          "line": 246,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6369,
+          "line": 249,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6376,
+          "line": 249,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6394,
+          "line": 250,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6413,
+          "line": 250,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 6425,
+          "line": 251,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk8",
+          "new": "materialLights0",
+          "offset": 6431,
+          "line": 251,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6444,
+          "line": 251,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6454,
+          "line": 252,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6461,
+          "line": 252,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 6479,
+          "line": 254,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk0",
+          "new": "lights0",
+          "offset": 6485,
+          "line": 254,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 6519,
+          "line": 255,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk4",
+          "new": "lights1",
+          "offset": 6525,
+          "line": 255,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 6559,
+          "line": 256,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk10",
+          "new": "lightInfo",
+          "offset": 6565,
+          "line": 256,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "countA",
+          "new": "lightCount",
+          "offset": 6572,
+          "line": 256,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 6599,
+          "line": 257,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 6605,
+          "line": 257,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "countB",
+          "new": "objectCount",
+          "offset": 6612,
+          "line": 257,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 6634,
+          "line": 259,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "countB",
+          "new": "objectCount",
+          "offset": 6745,
+          "line": 261,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "countB",
+          "new": "objectCount",
+          "offset": 6771,
+          "line": 261,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 6796,
+          "line": 262,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg3",
+          "new": "geomStreamCount",
+          "offset": 6857,
+          "line": 265,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg2",
+          "new": "geomStreams",
+          "offset": 6891,
+          "line": 266,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "Blk",
+          "new": "LWGeomStreamHeader",
+          "offset": 6976,
+          "line": 269,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 7423,
+          "line": 280,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 7537,
+          "line": 282,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 7609,
+          "line": 283,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk8",
+          "new": "materialLights0",
+          "offset": 7615,
+          "line": 283,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 7672,
+          "line": 284,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk8",
+          "new": "materialLights0",
+          "offset": 7678,
+          "line": 284,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 7757,
+          "line": 285,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk8",
+          "new": "materialLights0",
+          "offset": 7763,
+          "line": 285,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8007,
+          "line": 289,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk18",
+          "new": "geometryInfo",
+          "offset": 8013,
+          "line": 289,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "unk0",
+          "new": "indexList",
+          "offset": 8022,
+          "line": 289,
+          "scope": "geometry descriptor element"
+        },
+        {
+          "old": "arg3",
+          "new": "geomStreamCount",
+          "offset": 8361,
+          "line": 298,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 8416,
+          "line": 303,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8436,
+          "line": 304,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk8",
+          "new": "materialLights0",
+          "offset": 8442,
+          "line": 304,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8456,
+          "line": 305,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unkC",
+          "new": "materialLights1",
+          "offset": 8462,
+          "line": 305,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 8475,
+          "line": 305,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 8505,
+          "line": 306,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8512,
+          "line": 306,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk8",
+          "new": "materialLights0",
+          "offset": 8518,
+          "line": 306,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8633,
+          "line": 310,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unkC",
+          "new": "materialLights1",
+          "offset": 8639,
+          "line": 310,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8646,
+          "line": 310,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk8",
+          "new": "materialLights0",
+          "offset": 8652,
+          "line": 310,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8681,
+          "line": 314,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8702,
+          "line": 315,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8723,
+          "line": 316,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8744,
+          "line": 317,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8765,
+          "line": 318,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8786,
+          "line": 319,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8807,
+          "line": 320,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 8828,
+          "line": 321,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 8847,
+          "line": 321,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8859,
+          "line": 321,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unkC",
+          "new": "materialLights1",
+          "offset": 8865,
+          "line": 321,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8878,
+          "line": 321,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk8",
+          "new": "materialLights0",
+          "offset": 8884,
+          "line": 321,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8894,
+          "line": 322,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk1C",
+          "new": "animStream",
+          "offset": 8900,
+          "line": 322,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "arg1",
+          "new": "animStream",
+          "offset": 8908,
+          "line": 322,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8918,
+          "line": 323,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk20",
+          "new": "geomStreamCount",
+          "offset": 8924,
+          "line": 323,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "arg3",
+          "new": "geomStreamCount",
+          "offset": 8932,
+          "line": 323,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg3",
+          "new": "geomStreamCount",
+          "offset": 8946,
+          "line": 324,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 8983,
+          "line": 326,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk18",
+          "new": "geometryInfo",
+          "offset": 8989,
+          "line": 326,
+          "scope": "LWAllocateMemory pool root"
+        },
+        {
+          "old": "unk4",
+          "new": "geomStream",
+          "offset": 8998,
+          "line": 326,
+          "scope": "geometry descriptor element"
+        },
+        {
+          "old": "arg2",
+          "new": "geomStreams",
+          "offset": 9005,
+          "line": 326,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg3",
+          "new": "geomStreamCount",
+          "offset": 9053,
+          "line": 328,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 9071,
+          "line": 331,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 9092,
+          "line": 332,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 9113,
+          "line": 333,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 9137,
+          "line": 334,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 9163,
+          "line": 335,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 9187,
+          "line": 336,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 9211,
+          "line": 337,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 9235,
+          "line": 338,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 9260,
+          "line": 339,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 9300,
+          "line": 341,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg4",
+          "new": "allocatedSize",
+          "offset": 9367,
+          "line": 344,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "arg0",
+          "new": "memory",
+          "offset": 9374,
+          "line": 344,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "pool",
+          "new": "lwInfo",
+          "offset": 9404,
+          "line": 345,
+          "scope": "LWAllocateMemory parameter/local"
+        },
+        {
+          "old": "unk0",
+          "new": "indexList",
+          "offset": 10575,
+          "line": 384,
+          "scope": "TG8 member declaration"
+        },
+        {
+          "old": "unk4",
+          "new": "geomStream",
+          "offset": 10585,
+          "line": 384,
+          "scope": "TG8 member declaration"
+        },
+        {
+          "old": "TG8",
+          "new": "LWGeometryInfoCheckView",
+          "offset": 10593,
+          "line": 384,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "TG8",
+          "new": "LWGeometryInfoCheckView",
+          "offset": 11088,
+          "line": 405,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk4",
+          "new": "geomStream",
+          "offset": 11120,
+          "line": 405,
+          "scope": "TG8 explicitly cast access"
+        },
+        {
+          "old": "unk10",
+          "new": "lightInfo",
+          "offset": 21168,
+          "line": 663,
+          "scope": "Obj2EBF4 member declaration"
+        },
+        {
+          "old": "Obj2EBF4",
+          "new": "LWInfoLightView",
+          "offset": 21177,
+          "line": 663,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "Obj2EBF4",
+          "new": "LWInfoLightView",
+          "offset": 21290,
+          "line": 666,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk10",
+          "new": "lightInfo",
+          "offset": 21420,
+          "line": 669,
+          "scope": "Obj2EBF4 receiver"
+        },
+        {
+          "old": "unk10",
+          "new": "lightInfo",
+          "offset": 21486,
+          "line": 672,
+          "scope": "Obj2EBF4 receiver"
+        },
+        {
+          "old": "unk10",
+          "new": "lightInfo",
+          "offset": 21512,
+          "line": 672,
+          "scope": "Obj2EBF4 receiver"
+        },
+        {
+          "old": "unk10",
+          "new": "lightInfo",
+          "offset": 21583,
+          "line": 674,
+          "scope": "Obj2EBF4 receiver"
+        },
+        {
+          "old": "unk10",
+          "new": "lightInfo",
+          "offset": 21609,
+          "line": 674,
+          "scope": "Obj2EBF4 receiver"
+        },
+        {
+          "old": "unk10",
+          "new": "lightInfo",
+          "offset": 21637,
+          "line": 675,
+          "scope": "Obj2EBF4 receiver"
+        },
+        {
+          "old": "Obj2EBF4",
+          "new": "LWInfoLightView",
+          "offset": 29023,
+          "line": 903,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk8",
+          "new": "objectBlockOffset",
+          "offset": 35852,
+          "line": 1167,
+          "scope": "T24C_Hdr member declaration"
+        },
+        {
+          "old": "T24C_Hdr",
+          "new": "LWAnimStreamObjectView",
+          "offset": 35860,
+          "line": 1168,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 35915,
+          "line": 1172,
+          "scope": "T24C_A0 member declaration"
+        },
+        {
+          "old": "T24C_Hdr",
+          "new": "LWAnimStreamObjectView",
+          "offset": 35943,
+          "line": 1174,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk1C",
+          "new": "animStream",
+          "offset": 35953,
+          "line": 1174,
+          "scope": "T24C_A0 member declaration"
+        },
+        {
+          "old": "T24C_A0",
+          "new": "LWInfoObjectView",
+          "offset": 35962,
+          "line": 1175,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "T24C_A0",
+          "new": "LWInfoObjectView",
+          "offset": 35991,
+          "line": 1177,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk1C",
+          "new": "animStream",
+          "offset": 36062,
+          "line": 1181,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk8",
+          "new": "objectBlockOffset",
+          "offset": 36069,
+          "line": 1181,
+          "scope": "T24C_Hdr receiver"
+        },
+        {
+          "old": "unk1C",
+          "new": "animStream",
+          "offset": 36089,
+          "line": 1181,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 36205,
+          "line": 1185,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 36257,
+          "line": 1186,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 36309,
+          "line": 1187,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 36361,
+          "line": 1188,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 36413,
+          "line": 1189,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 36465,
+          "line": 1190,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 36517,
+          "line": 1191,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 36569,
+          "line": 1192,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 36621,
+          "line": 1193,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "V31C",
+          "new": "LWInfoTransformView",
+          "offset": 37103,
+          "line": 1212,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "V31C",
+          "new": "LWInfoTransformView",
+          "offset": 37147,
+          "line": 1215,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk0",
+          "new": "indexList",
+          "offset": 42369,
+          "line": 1394,
+          "scope": "T8Ent member declaration"
+        },
+        {
+          "old": "unk4",
+          "new": "geomStream",
+          "offset": 42379,
+          "line": 1394,
+          "scope": "T8Ent member declaration"
+        },
+        {
+          "old": "T8Ent",
+          "new": "LWGeometryInfoStreamView",
+          "offset": 42387,
+          "line": 1394,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "T8Ent",
+          "new": "LWGeometryInfoStreamView",
+          "offset": 42685,
+          "line": 1412,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk4",
+          "new": "geomStream",
+          "offset": 42719,
+          "line": 1412,
+          "scope": "T8Ent explicitly cast access"
+        },
+        {
+          "old": "T8Ent",
+          "new": "LWGeometryInfoStreamView",
+          "offset": 42736,
+          "line": 1412,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk4",
+          "new": "geomStream",
+          "offset": 42770,
+          "line": 1412,
+          "scope": "T8Ent explicitly cast access"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 43207,
+          "line": 1432,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "T24C_A0",
+          "new": "LWInfoObjectView",
+          "offset": 43249,
+          "line": 1434,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 45629,
+          "line": 1498,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "T24C_A0",
+          "new": "LWInfoObjectView",
+          "offset": 45873,
+          "line": 1510,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk1C",
+          "new": "animStream",
+          "offset": 45996,
+          "line": 1518,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk8",
+          "new": "objectBlockOffset",
+          "offset": 46003,
+          "line": 1518,
+          "scope": "T24C_Hdr receiver"
+        },
+        {
+          "old": "unk1C",
+          "new": "animStream",
+          "offset": 46023,
+          "line": 1518,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 50018,
+          "line": 1654,
+          "scope": "O321 member declaration"
+        },
+        {
+          "old": "unk18",
+          "new": "geometryInfo",
+          "offset": 50045,
+          "line": 1655,
+          "scope": "O321 member declaration"
+        },
+        {
+          "old": "O321",
+          "new": "LWInfoRenderView",
+          "offset": 50875,
+          "line": 1683,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "O321",
+          "new": "LWInfoRenderView",
+          "offset": 50932,
+          "line": 1686,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "O321",
+          "new": "LWInfoRenderView",
+          "offset": 51162,
+          "line": 1693,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 51308,
+          "line": 1704,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 52057,
+          "line": 1730,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 52206,
+          "line": 1732,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 52269,
+          "line": 1733,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "O321",
+          "new": "LWInfoRenderView",
+          "offset": 52353,
+          "line": 1737,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 52956,
+          "line": 1752,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk14",
+          "new": "objectInfo",
+          "offset": 53294,
+          "line": 1762,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "unk18",
+          "new": "geometryInfo",
+          "offset": 54382,
+          "line": 1787,
+          "scope": "reviewed T24C_A0/O321 receiver"
+        },
+        {
+          "old": "O321",
+          "new": "LWInfoRenderView",
+          "offset": 54458,
+          "line": 1790,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "T8Ent",
+          "new": "LWGeometryInfoStreamView",
+          "offset": 63890,
+          "line": 2109,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk4",
+          "new": "geomStream",
+          "offset": 63927,
+          "line": 2109,
+          "scope": "T8Ent explicitly cast access"
+        },
+        {
+          "old": "T8Ent",
+          "new": "LWGeometryInfoStreamView",
+          "offset": 63954,
+          "line": 2110,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk4",
+          "new": "geomStream",
+          "offset": 63991,
+          "line": 2110,
+          "scope": "T8Ent explicitly cast access"
+        },
+        {
+          "old": "T8Ent",
+          "new": "LWGeometryInfoStreamView",
+          "offset": 64124,
+          "line": 2117,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk4",
+          "new": "geomStream",
+          "offset": 64161,
+          "line": 2117,
+          "scope": "T8Ent explicitly cast access"
+        },
+        {
+          "old": "T8Ent",
+          "new": "LWGeometryInfoStreamView",
+          "offset": 64189,
+          "line": 2118,
+          "scope": "file-local typedef identity"
+        },
+        {
+          "old": "unk4",
+          "new": "geomStream",
+          "offset": 64226,
+          "line": 2118,
+          "scope": "T8Ent explicitly cast access"
+        }
+      ]
+    }
+  },
+  "decisions": {
+    "type_names": {
+      "Pool": "LWInfo",
+      "PoolEnt": "LWGeometryInfo",
+      "Heap": "LWAnimStreamHeader",
+      "Blk": "LWGeomStreamHeader",
+      "TG8": "LWGeometryInfoCheckView",
+      "T8Ent": "LWGeometryInfoStreamView",
+      "Obj2EBF4": "LWInfoLightView",
+      "T24C_Hdr": "LWAnimStreamObjectView",
+      "T24C_A0": "LWInfoObjectView",
+      "O321": "LWInfoRenderView",
+      "V31C": "LWInfoTransformView"
+    },
+    "members_by_original_view": {
+      "Pool": {
+        "unk0": "lights0",
+        "unk4": "lights1",
+        "unk8": "materialLights0",
+        "unkC": "materialLights1",
+        "unk10": "lightInfo",
+        "unk14": "objectInfo",
+        "unk18": "geometryInfo",
+        "unk1C": "animStream",
+        "unk20": "geomStreamCount"
+      },
+      "PoolEnt": {
+        "unk0": "indexList",
+        "unk4": "geomStream"
+      },
+      "Heap": {
+        "unk4": "lightBlockOffset",
+        "unk8": "objectBlockOffset",
+        "unk10": "streamSize"
+      },
+      "Blk": {
+        "unk14": "streamSize"
+      },
+      "TG8": {
+        "unk0": "indexList",
+        "unk4": "geomStream"
+      },
+      "T8Ent": {
+        "unk0": "indexList",
+        "unk4": "geomStream"
+      },
+      "Obj2EBF4": {
+        "unk10": "lightInfo"
+      },
+      "T24C_Hdr": {
+        "unk8": "objectBlockOffset"
+      },
+      "T24C_A0": {
+        "unk14": "objectInfo",
+        "unk1C": "animStream"
+      },
+      "O321": {
+        "unk14": "objectInfo",
+        "unk18": "geometryInfo"
+      }
+    },
+    "constructor_names": {
+      "pool": "lwInfo",
+      "countA": "lightCount",
+      "countB": "objectCount",
+      "arg0": "memory",
+      "arg1": "animStream",
+      "arg2": "geomStreams",
+      "arg3": "geomStreamCount",
+      "arg4": "allocatedSize"
+    },
+    "evidence": "ROM_STRING_SEMANTICS.md, ROM_STRING_LW_EVIDENCE.json, LW_DATA_NAMES_LANDING.md"
+  }
+}

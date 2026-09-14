@@ -1,0 +1,15 @@
+{
+  "baseline_commit": "ef6da689eb997e96f9220c42cbc12caa88dc4458",
+  "baseline_matchdiff": "FULL MATCH",
+  "candidate_matchdiff": "FULL MATCH",
+  "full_rom_cmp": true,
+  "header_included": true,
+  "rom_bytes": 8388608,
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "identifier_substitutions": 284,
+  "source_files": 1,
+  "typedef_names": 11,
+  "production_inputs_verified": 995,
+  "independent_token_stream_check": true,
+  "structure_layout_changes": false
+}
