@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "batch": "016-lw-object-material-functions",
+  "baseline_commit": "9840f7226709243cf8adbd0700d5cfb079124c25",
+  "input_manifest": "analysis/semantic/batch_016_inputs.json",
+  "input_manifest_sha256": "a66924349ed612d3d0803c375dd2f5deb7dcc525aaec29b2ec4ebf732db6ef13",
+  "files": {
+    "src/code_8170.c": {
+      "baseline_sha256": "39220a0802388958cee3a8b2b17b7ed1f9cffe6155d354b59112520a55aabe19",
+      "renames": {
+        "func_8002E0D4": "updateAnimationObjectAlpha",
+        "func_800301FC": "resetAnimationObjectTransparency",
+        "func_8003024C": "resetAnimationObjectTransform",
+        "func_800312C4": "buildAnimationObjectHierarchyMatrices",
+        "func_80031964": "buildAnimationObjectMatrices",
+        "func_800305B0": "loadAnimationLights",
+        "func_80030964": "loadMaterialTintedAnimationLights",
+        "func_8002DFA0": "findMaterialLightColor"
+      },
+      "counts": {
+        "func_8002E0D4": 3,
+        "func_800301FC": 3,
+        "func_8003024C": 3,
+        "func_800312C4": 3,
+        "func_80031964": 3,
+        "func_800305B0": 2,
+        "func_80030964": 2,
+        "func_8002DFA0": 3
+      }
+    }
+  },
+  "decisions": [
+    {
+      "old": "func_8002E0D4",
+      "new": "updateAnimationObjectAlpha",
+      "confidence": "high semantic; descriptive name",
+      "evidence": "LW_OBJECT_MATERIAL_TRACE.md and LW_OBJECT_MATERIAL_NAMES_LANDING.md"
+    },
+    {
+      "old": "func_800301FC",
+      "new": "resetAnimationObjectTransparency",
+      "confidence": "high semantic; descriptive name",
+      "evidence": "LW_OBJECT_MATERIAL_TRACE.md and LW_OBJECT_MATERIAL_NAMES_LANDING.md"
+    },
+    {
+      "old": "func_8003024C",
+      "new": "resetAnimationObjectTransform",
+      "confidence": "high semantic; descriptive name",
+      "evidence": "LW_OBJECT_MATERIAL_TRACE.md and LW_OBJECT_MATERIAL_NAMES_LANDING.md"
+    },
+    {
+      "old": "func_800312C4",
+      "new": "buildAnimationObjectHierarchyMatrices",
+      "confidence": "high semantic; descriptive name",
+      "evidence": "LW_OBJECT_MATERIAL_TRACE.md and LW_OBJECT_MATERIAL_NAMES_LANDING.md"
+    },
+    {
+      "old": "func_80031964",
+      "new": "buildAnimationObjectMatrices",
+      "confidence": "high semantic; descriptive name",
+      "evidence": "LW_OBJECT_MATERIAL_TRACE.md and LW_OBJECT_MATERIAL_NAMES_LANDING.md"
+    },
+    {
+      "old": "func_800305B0",
+      "new": "loadAnimationLights",
+      "confidence": "high semantic; descriptive name",
+      "evidence": "LW_OBJECT_MATERIAL_TRACE.md and LW_OBJECT_MATERIAL_NAMES_LANDING.md"
+    },
+    {
+      "old": "func_80030964",
+      "new": "loadMaterialTintedAnimationLights",
+      "confidence": "high semantic; descriptive name",
+      "evidence": "LW_OBJECT_MATERIAL_TRACE.md and LW_OBJECT_MATERIAL_NAMES_LANDING.md"
+    },
+    {
+      "old": "func_8002DFA0",
+      "new": "findMaterialLightColor",
+      "confidence": "high semantic; descriptive name",
+      "evidence": "LW_OBJECT_MATERIAL_TRACE.md and LW_OBJECT_MATERIAL_NAMES_LANDING.md"
+    }
+  ]
+}

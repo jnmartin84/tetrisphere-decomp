@@ -52,7 +52,7 @@ f32 arg1[4][4];
  */
 extern void func_8002AF20(char *, char *);
 extern void func_80025CA0();
-extern s32 func_8002DFA0();
+extern s32 findMaterialLightColor();
 extern s16 eqpower[];
 extern char D_800EBA80[], D_800EBAA0[], D_800EBAC0[], D_800EBAE0[];
 extern char D_800EBB00[], D_800EBB18[], D_800EBB38[], D_800EBB50[];
@@ -277,7 +277,7 @@ s32 *allocatedSize;
                     c2 = e->unk2;
                     e = (Entry *)((u8 *)e + 4);
                     if (e->unk0 & 8) {
-                        v = func_8002DFA0(lwInfo, idx, cursor & 0xFF, c1 & 0xFF, (s32)c2);
+                        v = findMaterialLightColor(lwInfo, idx, cursor & 0xFF, c1 & 0xFF, (s32)c2);
                         if (v == -1) {
                             memory += heapSize + (((u32)cursor & 1) * 0);
                             lwInfo->materialLights0[idx * 16 + 0] = cursor;
@@ -353,8 +353,8 @@ extern void func_8002AF20(char *, char *);
 extern void func_8002F55C();
 extern void func_8003031C();
 extern void buildAnimationLightDirections();
-extern void func_80031964();
-extern void func_8002E0D4();
+extern void buildAnimationObjectMatrices();
+extern void updateAnimationObjectAlpha();
 extern void func_8002DEA8();
 extern void func_80031A98();
 extern void func_80025CA0();
@@ -440,8 +440,8 @@ void *arg3;
     if (arg0[0x3C] == 0) {
         func_8003031C(arg0, arg2, arg3);
         buildAnimationLightDirections(arg0);
-        func_80031964(arg0);
-        func_8002E0D4(arg0);
+        buildAnimationObjectMatrices(arg0);
+        updateAnimationObjectAlpha(arg0);
         *(s16 *)(arg0 + 0x3E) = -2;
         arg0[0x3B] = 0;
         func_8002DEA8(arg0);
@@ -481,7 +481,7 @@ void func_8002DEA8(void *arg0) {
     *(u32 *)(p + 0x58) = 0x104340;
 }
 
-s32 func_8002DFA0(arg0, arg1, arg2, arg3, arg4)
+s32 findMaterialLightColor(arg0, arg1, arg2, arg3, arg4)
 u8 *arg0;
 s32 arg1;
 u8 arg2;
@@ -508,7 +508,7 @@ typedef struct {
     /* 0x0D0 */ u8 padD0[0x120 - 0xD0];
 } V120;
 
-void func_8002E0D4(arg0)
+void updateAnimationObjectAlpha(arg0)
 u8 *arg0;
 {
     s32 n;
@@ -768,8 +768,8 @@ extern void func_80030078();
 extern u8 *func_800300F8();
 extern void func_80030140();
 extern u8 *func_80030164();
-extern u8 *func_800301FC();
-extern void func_8003024C();
+extern u8 *resetAnimationObjectTransparency();
+extern void resetAnimationObjectTransform();
 
 void func_8002F55C(u8 *arg0) {
     u8 *base;
@@ -960,7 +960,7 @@ void func_8002F55C(u8 *arg0) {
             }
         }
         if (t == 0) {
-            func_800301FC(arg0, i);
+            resetAnimationObjectTransparency(arg0, i);
         } else if (per >= t) {
             p += 8;
             prev = 0;
@@ -997,7 +997,7 @@ void func_8002F55C(u8 *arg0) {
             }
         }
         if (t == 0) {
-            func_8003024C(arg0, i);
+            resetAnimationObjectTransform(arg0, i);
         } else if (per >= t) {
             p += 8;
             prev = 0;
@@ -1142,7 +1142,7 @@ u8 *func_80030164(u8 *a0, s32 a1)
     return base;
 }
 
-u8 *func_800301FC(u8 *a0, s32 a1)
+u8 *resetAnimationObjectTransparency(u8 *a0, s32 a1)
 {
     u8 *base = *(u8 **)(a0 + 0x1C);
     s32 *p;
@@ -1174,7 +1174,7 @@ typedef struct {
     LWAnimStreamObjectView *animStream;
 } LWInfoObjectView;
 
-void func_8003024C(LWInfoObjectView *arg0, s32 arg1) {
+void resetAnimationObjectTransform(LWInfoObjectView *arg0, s32 arg1) {
     u8 *base;
     f32 *q;
 
@@ -1260,7 +1260,7 @@ typedef struct {
     char pad8[0x34 - 8];
 } C34;
 
-void func_800305B0(arg0)
+void loadAnimationLights(arg0)
 u8 *arg0;
 {
     u8 *base;
@@ -1301,7 +1301,7 @@ typedef struct {
 #define SRC (((C34B *)*(s32 *)(arg0 + 0x10))[j])
 #define LT  (&((u8 **)arg0)[arg0[0x3D]])
 
-void func_80030964(arg0, arg1, arg2, arg3, arg4, arg5)
+void loadMaterialTintedAnimationLights(arg0, arg1, arg2, arg3, arg4, arg5)
 u8 *arg0;
 s32 arg1;
 s32 arg2;
@@ -1431,7 +1431,7 @@ s16 *a2;
 typedef struct { Mtx mtx[2]; u8 pad80[0x120 - 0x80]; } T24C_Mtx;
 #define ITEM ((T24C_Item *) ((u8 *) arg0->objectInfo + idx * 0x120))
 
-void func_800312C4(LWInfoObjectView *arg0, s32 *base, s32 *tbl, s32 idx, f32 *mf) {
+void buildAnimationObjectHierarchyMatrices(LWInfoObjectView *arg0, s32 *base, s32 *tbl, s32 idx, f32 *mf) {
     f32 ntx, nty, ntz;
     f32 wx, wy, wz;
     f32 scx, scy, scz;
@@ -1499,7 +1499,7 @@ void func_800312C4(LWInfoObjectView *arg0, s32 *base, s32 *tbl, s32 idx, f32 *mf
     i = 0;
     if (n > 0) {
         do {
-            func_800312C4(arg0, base, tbl, *kids, (f32 *) out);
+            buildAnimationObjectHierarchyMatrices(arg0, base, tbl, *kids, (f32 *) out);
             i += 1;
             kids += 1;
         } while (i != n);
@@ -1507,7 +1507,7 @@ void func_800312C4(LWInfoObjectView *arg0, s32 *base, s32 *tbl, s32 idx, f32 *mf
 }
 
 
-void func_80031964(LWInfoObjectView *arg0) {
+void buildAnimationObjectMatrices(LWInfoObjectView *arg0) {
     s32 *base;
     s32 i;
     s32 n;
@@ -1529,7 +1529,7 @@ void func_80031964(LWInfoObjectView *arg0) {
         m[0][2] = 0.0f; m[1][2] = 0.0f; m[2][2] = 1.0f; m[3][2] = 0.0f;
         m[0][3] = 0.0f; m[1][3] = 0.0f; m[2][3] = 0.0f; m[3][3] = 1.0f;
         if (*(s32 *) p & 0x10) {
-            func_800312C4(arg0, base, tbl, i, &m[0][0]);
+            buildAnimationObjectHierarchyMatrices(arg0, base, tbl, i, &m[0][0]);
         }
     }
 }
@@ -1854,12 +1854,12 @@ s32 arg4;
         alpha = a;
         if (p[0] & 8) {
             if (arg2 != arg0->unk3E) {
-                func_80030964(arg0, arg1, arg2, *(u8 *)&r, *(u8 *)&g, *(u8 *)&b);
+                loadMaterialTintedAnimationLights(arg0, arg1, arg2, *(u8 *)&r, *(u8 *)&g, *(u8 *)&b);
             }
             arg0->unk3E = arg2;
         } else {
             if (arg0->unk3E != -1) {
-                func_800305B0(arg0);
+                loadAnimationLights(arg0);
             }
             arg0->unk3E = -1;
         }

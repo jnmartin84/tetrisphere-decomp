@@ -1,0 +1,148 @@
+{
+  "status": "IDENTIFIER_ONLY_VERIFIED",
+  "baseline_commit": "9840f7226709243cf8adbd0700d5cfb079124c25",
+  "ledger_sha256": "bcf785d3ded9b7eb205690b2857ccf5c2e9fc469e5abd667b44ccf6cf1c9964b",
+  "files": {
+    "src/code_8170.c": {
+      "before_sha256": "39220a0802388958cee3a8b2b17b7ed1f9cffe6155d354b59112520a55aabe19",
+      "after_sha256": "252be384b3622224daf94d2e47a365f56b4323162fc7cf91bb7f23bdcfe8e96c",
+      "substitutions": [
+        {
+          "old": "func_8002DFA0",
+          "new": "findMaterialLightColor",
+          "offset": 1519,
+          "line": 55
+        },
+        {
+          "old": "func_8002DFA0",
+          "new": "findMaterialLightColor",
+          "offset": 8159,
+          "line": 280
+        },
+        {
+          "old": "func_80031964",
+          "new": "buildAnimationObjectMatrices",
+          "offset": 10901,
+          "line": 356
+        },
+        {
+          "old": "func_8002E0D4",
+          "new": "updateAnimationObjectAlpha",
+          "offset": 10930,
+          "line": 357
+        },
+        {
+          "old": "func_80031964",
+          "new": "buildAnimationObjectMatrices",
+          "offset": 13380,
+          "line": 443
+        },
+        {
+          "old": "func_8002E0D4",
+          "new": "updateAnimationObjectAlpha",
+          "offset": 13409,
+          "line": 444
+        },
+        {
+          "old": "func_8002DFA0",
+          "new": "findMaterialLightColor",
+          "offset": 14540,
+          "line": 484
+        },
+        {
+          "old": "func_8002E0D4",
+          "new": "updateAnimationObjectAlpha",
+          "offset": 15131,
+          "line": 511
+        },
+        {
+          "old": "func_800301FC",
+          "new": "resetAnimationObjectTransparency",
+          "offset": 26753,
+          "line": 771
+        },
+        {
+          "old": "func_8003024C",
+          "new": "resetAnimationObjectTransform",
+          "offset": 26782,
+          "line": 772
+        },
+        {
+          "old": "func_800301FC",
+          "new": "resetAnimationObjectTransparency",
+          "offset": 31828,
+          "line": 963
+        },
+        {
+          "old": "func_8003024C",
+          "new": "resetAnimationObjectTransform",
+          "offset": 32811,
+          "line": 1000
+        },
+        {
+          "old": "func_800301FC",
+          "new": "resetAnimationObjectTransparency",
+          "offset": 36525,
+          "line": 1145
+        },
+        {
+          "old": "func_8003024C",
+          "new": "resetAnimationObjectTransform",
+          "offset": 37189,
+          "line": 1177
+        },
+        {
+          "old": "func_800305B0",
+          "new": "loadAnimationLights",
+          "offset": 39764,
+          "line": 1263
+        },
+        {
+          "old": "func_80030964",
+          "new": "loadMaterialTintedAnimationLights",
+          "offset": 41083,
+          "line": 1304
+        },
+        {
+          "old": "func_800312C4",
+          "new": "buildAnimationObjectHierarchyMatrices",
+          "offset": 44639,
+          "line": 1434
+        },
+        {
+          "old": "func_800312C4",
+          "new": "buildAnimationObjectHierarchyMatrices",
+          "offset": 47141,
+          "line": 1502
+        },
+        {
+          "old": "func_80031964",
+          "new": "buildAnimationObjectMatrices",
+          "offset": 47277,
+          "line": 1510
+        },
+        {
+          "old": "func_800312C4",
+          "new": "buildAnimationObjectHierarchyMatrices",
+          "offset": 48002,
+          "line": 1532
+        },
+        {
+          "old": "func_80030964",
+          "new": "loadMaterialTintedAnimationLights",
+          "offset": 57300,
+          "line": 1857
+        },
+        {
+          "old": "func_800305B0",
+          "new": "loadAnimationLights",
+          "offset": 57482,
+          "line": 1862
+        }
+      ]
+    }
+  },
+  "inverse_restores_original_bytes": true,
+  "production_inputs_verified": true,
+  "rom_verified_by_this_tool": false
+}
