@@ -135,8 +135,8 @@ extern u8 D_80104ED0[];
 extern u8 D_80104F08[];
 extern void *D_80104CD8[3];
 extern u8 D_80107290[];
-extern u8 D_80108828[];
-extern u8 D_80109DC0[];
+extern u8 gAnimPlayer[];
+extern u8 gAnimPlayer2[];
 extern void osScAddClient(void *, void *, void *);
 extern s32 func_8007ED88();
 extern void func_8007EF50(s32);
@@ -169,8 +169,8 @@ void func_8007EBDC(void *arg)
       case 4:
         D_800E28D0 = 1;
         func_80079B80(0, D_80107290);
-        func_80079B80(0, D_80108828);
-        func_80079B80(0, D_80109DC0);
+        func_80079B80(0, gAnimPlayer);
+        func_80079B80(0, gAnimPlayer2);
         break;
       case 10:
         done = 1;

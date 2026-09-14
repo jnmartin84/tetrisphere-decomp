@@ -406,7 +406,7 @@ typedef struct { s16 unk0; s16 pad2; void *unk4; } AudioCmd;
 typedef struct { u8 pad88[0x88]; u32 unk88; } AudioMgr;
 extern s32 D_800DFE84, D_800DF778;
 extern AudioCmd D_80104BF0;
-extern AudioMgr D_80108828, D_80109DC0;
+extern AudioMgr gAnimPlayer, gAnimPlayer2;
 extern OSMesgQueue D_80104B10, D_80104B48;
 extern void func_80029760();
 extern char D_800EE0D0[], D_800EE0F0[], D_800EE0FC[], D_800EE108[], D_800EE114[];
@@ -421,10 +421,10 @@ void func_8007ACFC(void *arg) {
     D_800DF778 = 0;
     if (((u8 *)arg)[0x1595] == 0) {
         if (((u8 *)arg)[0x450] != 1) {
-            if (arg == &D_80108828) {
+            if (arg == &gAnimPlayer) {
                 s = D_800EE0F0;
             } else {
-                nv = (arg == &D_80109DC0) ? D_800EE0FC : D_800EE108;
+                nv = (arg == &gAnimPlayer2) ? D_800EE0FC : D_800EE108;
                 s = nv;
             }
             func_80029760(D_800EE0D0, s);
@@ -449,10 +449,10 @@ void func_8007ADF8(void *arg) {
     func_8007ACE8(arg);
     D_80104BF0.unk0 = 0;
     D_80104BF0.unk4 = arg;
-    if (arg == &D_80108828) {
+    if (arg == &gAnimPlayer) {
         s = D_800EE150;
     } else {
-        nv = (arg == &D_80109DC0) ? D_800EE15C : D_800EE168;
+        nv = (arg == &gAnimPlayer2) ? D_800EE15C : D_800EE168;
         s = nv;
     }
     func_80029760(D_800EE130, s);
@@ -507,8 +507,8 @@ void func_8007AF98(void *arg) {
 }
 
 extern AudioCmd D_80104BF0;
-extern AudioMgr D_80108828;
-extern AudioMgr D_80109DC0;
+extern AudioMgr gAnimPlayer;
+extern AudioMgr gAnimPlayer2;
 extern OSMesgQueue D_80104B10;
 extern char D_800EE230[];
 extern char D_800EE250[];
@@ -532,13 +532,13 @@ void func_8007B038(void *arg) {
   func_8007ACF4(arg);
   D_80104BF0.unk0 = 4;
   D_80104BF0.unk4 = arg;
-  if (arg == (&D_80108828))
+  if (arg == (&gAnimPlayer))
   {
     s = D_800EE250;
   }
   else
   {
-    new_var = (arg == (&D_80109DC0)) ? (D_800EE25C) : (D_800EE268);
+    new_var = (arg == (&gAnimPlayer2)) ? (D_800EE25C) : (D_800EE268);
     s = new_var;
   }
   func_80029760(D_800EE230, s);
@@ -2144,11 +2144,11 @@ u32 func_8007E758(u8 *p) {
 }
 
 typedef struct {
-    u32 unk0;
-    u32 unk4;
-    u32 unk8;
-    u16 unkC;
-    u16 unkE;
+    u32 sampleLength;
+    u32 loopBegin;
+    u32 loopEnd;
+    u16 flags;
+    u16 sampleId;
 } StructE784; /* size 0x10 */
 extern char D_800EE3F0[];
 extern char D_800EE3FC[];
@@ -2156,9 +2156,9 @@ extern char D_800EE40C[];
 extern char D_800EE41C[];
 extern char D_800EE42C[];
 void func_8007E784(StructE784 *s) {
-    func_80029760(D_800EE3F0, s->unkC);
-    func_80029760(D_800EE3FC, s->unk4);
-    func_80029760(D_800EE40C, s->unk8);
-    func_80029760(D_800EE41C, s->unk0, s->unk0);
-    func_80029760(D_800EE42C, s->unkE);
+    func_80029760(D_800EE3F0, s->flags);
+    func_80029760(D_800EE3FC, s->loopBegin);
+    func_80029760(D_800EE40C, s->loopEnd);
+    func_80029760(D_800EE41C, s->sampleLength, s->sampleLength);
+    func_80029760(D_800EE42C, s->sampleId);
 }

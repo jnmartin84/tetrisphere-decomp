@@ -772,7 +772,7 @@ dlabel D_80108820
 dlabel D_80108825
     /* 80108825 */ .space 0x03
 
-dlabel D_80108828
+dlabel gAnimPlayer
     /* 80108828 */ .space 0x157C
 
 dlabel D_80109DA4
@@ -793,7 +793,7 @@ dlabel D_80109DB8
 dlabel D_80109DBC
     /* 80109DBC */ .space 0x04
 
-dlabel D_80109DC0
+dlabel gAnimPlayer2
     /* 80109DC0 */ .space 0x450
 
 dlabel D_8010A210

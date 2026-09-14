@@ -253,8 +253,8 @@ extern OSThread schedThread;
 extern u8 D_80108811;
 extern u8 D_80108825;
 extern u8 D_80107290[];
-extern u8 D_80108828[];
-extern u8 D_80109DC0[];
+extern u8 gAnimPlayer[];
+extern u8 gAnimPlayer2[];
 extern OSMesgQueue D_800F22C8;
 extern u32 D_800DF720;
 extern s32 leomecha_bss_0004;
@@ -308,8 +308,8 @@ void mainproc(void *arg) {
             func_80029760(D_800EB094);
             leomecha_bss_0004 = 1;
             func_8007ADF8(D_80107290);
-            func_8007ADF8(D_80108828);
-            func_8007ADF8(D_80109DC0);
+            func_8007ADF8(gAnimPlayer);
+            func_8007ADF8(gAnimPlayer2);
             break;
         }
     }
@@ -343,8 +343,8 @@ void func_8002A140(void) {
     case 4:
         leomecha_bss_0004 = 1;
         func_8007ADF8(D_80107290);
-        func_8007ADF8(D_80108828);
-        func_8007ADF8(D_80109DC0);
+        func_8007ADF8(gAnimPlayer);
+        func_8007ADF8(gAnimPlayer2);
         break;
     }
 }
@@ -371,8 +371,8 @@ void func_8002A218(void) {
         case 4:
             leomecha_bss_0004 = 1;
             func_8007ADF8(D_80107290);
-            func_8007ADF8(D_80108828);
-            func_8007ADF8(D_80109DC0);
+            func_8007ADF8(gAnimPlayer);
+            func_8007ADF8(gAnimPlayer2);
             break;
         }
     }

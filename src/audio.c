@@ -43,8 +43,8 @@ extern u8 D_800DF770;
 extern char D_800EE490[];
 extern u8 D_802A2000[];
 extern AudioMgr D_80107290;
-extern AudioMgr D_80108828;
-extern AudioMgr D_80109DC0;
+extern AudioMgr gAnimPlayer;
+extern AudioMgr gAnimPlayer2;
 extern u8 D_80108810;
 extern u8 *D_8010881C;
 extern u8 *D_80108820;
@@ -97,8 +97,8 @@ void func_8007F0D0(void *arg0) {
     }
     func_80029760(D_800EE490, heapSize, D_8010B7BC);
     func_80079D3C(&D_80107290, D_8010B7C8, D_8010C6C8, 0x10, D_800E28E8, 1);
-    func_80079D3C(&D_80108828, D_8010DB48, D_8010EA48, 0x10, 0x7FFF, 0);
-    func_80079D3C(&D_80109DC0, D_8010ED08, D_8010D888, 0, 0x7FFF, 0);
+    func_80079D3C(&gAnimPlayer, D_8010DB48, D_8010EA48, 0x10, 0x7FFF, 0);
+    func_80079D3C(&gAnimPlayer2, D_8010ED08, D_8010D888, 0, 0x7FFF, 0);
     D_8010881C = D_8010B7BC;
     D_80109DB4 = (u8 *) 0x80352000;
     func_80033470();
@@ -168,8 +168,8 @@ void func_8007F3D4(AudioArg *arg0) {
     }
     if ((D_800E2828 == (u8 *) arg0) && (D_8010A210 != 3)) {
         func_80029760(D_800EE4E8);
-        func_8007ACE8(&D_80109DC0);
-        func_8007ADF8(&D_80109DC0);
+        func_8007ACE8(&gAnimPlayer2);
+        func_8007ADF8(&gAnimPlayer2);
     }
     D_8010B7C4 = 0;
     func_8007CD44(D_8010B358);
@@ -273,14 +273,14 @@ void loadsong(u32 arg0, AudioMgr *arg1) {
     arg1->unk157C = arg0;
     arg1->unk157E = arg0;
     func_8007ADF8(arg1);
-    if (&D_80109DC0 == arg1) {
+    if (&gAnimPlayer2 == arg1) {
         func_8007AF98(D_8010B358);
     }
     arg1->unk1594 = 0;
     func_80033470();
     func_8008012C((void *) 0x80000400, arg0);
-    if ((arg1 == &D_80108828) || (arg1 == &D_80109DC0)) {
-        if (arg1 == &D_80108828) {
+    if ((arg1 == &gAnimPlayer) || (arg1 == &gAnimPlayer2)) {
+        if (arg1 == &gAnimPlayer) {
             arg1->unk158C = (u8 *) 0x80349910;
         } else {
             arg1->unk158C = D_800F22C0;
@@ -392,13 +392,13 @@ void func_8007FE4C(AudioMgr *arg0) {
         arg0->unk1594 = 0;
         D_800DFE84 = 1;
         func_80033470();
-        if ((arg0 == &D_80108828) || (arg0 == &D_80109DC0)) {
-            if (arg0 == &D_80109DC0) {
+        if ((arg0 == &gAnimPlayer) || (arg0 == &gAnimPlayer2)) {
+            if (arg0 == &gAnimPlayer2) {
                 func_8007AF98(D_8010B358);
             }
             func_80079B80(0x7FFF, arg0);
             func_8008012C((void *) 0x80000400, arg0->unk157C);
-            if (arg0 == &D_80108828) {
+            if (arg0 == &gAnimPlayer) {
                 arg0->unk158C = D_800F22C0;
             } else {
                 arg0->unk158C = D_800F22C0 + 0x29000;

@@ -1,0 +1,43 @@
+{
+  "status": "SCOPED_IDENTIFIER_ONLY_VERIFIED",
+  "baseline_commit": "e56cdd8923d788818628a06793c3bef59a566011",
+  "ledger_sha256": "60cb7d07de9fd84a34e08bc4627a882cbc1faf6526dc37d133393800baa7e8b2",
+  "substitutions": 179,
+  "inverse_restores_original_bytes": true,
+  "production_inputs_verified": true,
+  "rom_verified_by_this_tool": false,
+  "files": {
+    "src/audio.c": {
+      "before_sha256": "2059638db0168ed1e86798caa2df8adc308413ff3c20b219dc0b264476d986c7",
+      "after_sha256": "da90c63d120a9932b7296da6637489074f3ff633e1251b98653d5bb58798ff02"
+    },
+    "src/audio_engine.c": {
+      "before_sha256": "1bc4564bdf358e6dfd024afd431d2e0dde3445546343e203ea57e3e2a748dd2f",
+      "after_sha256": "1ff23197db0c3b5b374ed1a17e4283eb7e30a553cb35f53c0a2367edf6ad02ed"
+    },
+    "src/audiomgr.c": {
+      "before_sha256": "99b852f1ca8eeb89dbe02e06dab9db87173ce0dab070c3dba724289d7d607ec0",
+      "after_sha256": "94839a0f97d220f014ac49ac3bde98b92b64e15c7d50209cb3eabfff02738a69"
+    },
+    "src/boot.c": {
+      "before_sha256": "485e694987e8d90f9480d94b91cf6b140ac40ba5a1d6c6ecc77bca0ea0225b00",
+      "after_sha256": "58743e9f4ed458f51b041d2f06105319b36c9e3bf762410e7b4346c778705a9a"
+    },
+    "src/code_4D170.c": {
+      "before_sha256": "40dd997b5c04b00886cdf442f1da3e77935d34bdd206d027d8000e88ea4de610",
+      "after_sha256": "6682c0eda2fa10ec927db28cb5e3a7e5d25f0f8ad38c6d0bb5d92730a7837811"
+    },
+    "src/game2.c": {
+      "before_sha256": "196c38d340ea5e99b9d18d26328d0f8ee6aca48c610ec845504176ebc0f1d5d0",
+      "after_sha256": "b19eeb18239cbfa50e1e8cca20ad46e4b89dfedef64fdba67db7083344693342"
+    },
+    "src/main.c": {
+      "before_sha256": "264b741d28f93677b9a323ee95c40984fe09dc7ec22e6c8cbc5d4f50dfe6d02c",
+      "after_sha256": "91de9924bca05ff7f35cbe614ad8ba9132bc357716bbe5b95c9efc5dd0d28e66"
+    },
+    "asm/data/game_bss.bss.s": {
+      "before_sha256": "22083aff478b24f3ad0ac8430c1aef5f1e2ebf2cd4743adf745d66e09a02be54",
+      "after_sha256": "473791913b7607ecbc42e7b9a7ecd7052ecb91f8ef775b3b098095c677a9fc3e"
+    }
+  }
+}

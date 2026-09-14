@@ -13411,7 +13411,7 @@ extern s16 D_800E4484, D_800E449C;
 extern u8 D_800E44FC;
 extern s16 D_801033D0;
 extern s32 D_80103958, D_8010395C, D_80103960;
-extern u8 D_80108828[];
+extern u8 gAnimPlayer[];
 /* Update input commands, directional repeats, and per-frame control values. */
 u16 func_800ACB94(arg0, arg1, arg2)
 u16 arg0;
@@ -13608,7 +13608,7 @@ InputState_ACB94 *arg2;
     if (arg2->unk1680 != 0) {
         if ((buttons & 0xB000) && !(arg1 & 0xB000)) {
             if (D_80139E64 != 0) {
-                func_8007ADF8(D_80108828);
+                func_8007ADF8(gAnimPlayer);
             }
             arg2->unk1688 = 0x80;
             D_80139E68 = 0;
@@ -14312,8 +14312,8 @@ extern s16 D_800E6E1C[];
 extern u8  D_800F07AC[];
 extern u8  D_800F07D8[];
 extern u8  D_800F0804[];
-extern u8  D_80108828[];
-extern u8  D_80109DC0[];
+extern u8  gAnimPlayer[];
+extern u8  gAnimPlayer2[];
 extern s16 D_8013FAD6;
 extern s16 D_8015D980;
 extern void func_80069620(void);
@@ -14693,8 +14693,8 @@ block_61:
         F16(0x3264) = 0;
     }
     func_80070104(0);
-    func_8007ADF8(D_80108828);
-    func_8007ADF8(D_80109DC0);
+    func_8007ADF8(gAnimPlayer);
+    func_8007ADF8(gAnimPlayer2);
     func_80029760(D_800F0804);
 }
 
@@ -22379,14 +22379,14 @@ extern void func_8007ACFC(u8 *a0);
 extern s32 LWAllocateMemory(s32 a0, s32 a1, s32 *a2, s32 a3, s32 *a4);
 extern u8 D_800F0D1C[];
 extern u8 D_800F0D3C[];
-extern u8 D_80108828[];
+extern u8 gAnimPlayer[];
 void func_800C3AD8(s32 arg0, s32 arg1) {
     s32 sp24;
     func_80029760(D_800F0D1C, arg1);
     func_80071DD8(0);
     if (D_8015D980 == 2) { D_80130A26 = 1; return; }
     if (D_80139E64 == 2 && D_8015D980 == 1) {
-        if (D_800E44A8 != 4 && D_800E44A8 != 0xA) func_8007ACFC(D_80108828);
+        if (D_800E44A8 != 4 && D_800E44A8 != 0xA) func_8007ACFC(gAnimPlayer);
     }
     D_800F22C0 = D_8013E474 = (D_8013E474 + 0xF) & ~0xF;
     D_80130A20 = LWAllocateMemory(D_8013E474, arg0, &arg1, 1, &sp24);

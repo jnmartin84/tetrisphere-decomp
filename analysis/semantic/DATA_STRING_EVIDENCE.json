@@ -1,0 +1,114 @@
+[
+  {
+    "symbol": "D_800F0434",
+    "text": "DropPieces: %d PiecesLeft: %d\n",
+    "rom_offset": "0xcb7e4",
+    "asm": "asm/data/C9AFC.data.s",
+    "line": 243,
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F0454",
+    "text": "Number of Display Pieces: %d\n",
+    "rom_offset": "0xcb804",
+    "asm": "asm/data/C9AFC.data.s",
+    "line": 249,
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F0858",
+    "text": "Setting GravDropPiece to TRUE\n",
+    "rom_offset": "0xcbc08",
+    "asm": "asm/data/C9AFC.data.s",
+    "line": 417,
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F0954",
+    "text": "\n*** I am a MEAN AI!  Make XCount 21!!.\n",
+    "rom_offset": "0xcbd04",
+    "asm": "asm/data/C9AFC.data.s",
+    "line": 459,
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F0AA4",
+    "text": "Alloc_DelayedPopCubes: _BlankPiece.CubeName... returning\n",
+    "rom_offset": "0xcbe54",
+    "asm": "asm/data/C9AFC.data.s",
+    "line": 507,
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F0C1C",
+    "text": "Setting QuestAnimActive.\n",
+    "rom_offset": "0xcbfcc",
+    "asm": "asm/data/C9AFC.data.s",
+    "line": 567,
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800EE0F0",
+    "text": "ANIMPLAYER",
+    "rom_offset": "0xc94a0",
+    "asm": "asm/data/C9450.data.s",
+    "line": 37,
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800EE0FC",
+    "text": "ANIMPLAYER2",
+    "rom_offset": "0xc94ac",
+    "asm": "asm/data/C9450.data.s",
+    "line": 43,
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800EE108",
+    "text": "DCMPLAYER",
+    "rom_offset": "0xc94b8",
+    "asm": "asm/data/C9450.data.s",
+    "line": 49,
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800EE3F0",
+    "text": "\tflags: %x",
+    "rom_offset": "0xc97a0",
+    "asm": "asm/data/C9450.data.s",
+    "line": 229,
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800EE3FC",
+    "text": "\tloopBegin: %x",
+    "rom_offset": "0xc97ac",
+    "asm": "asm/data/C9450.data.s",
+    "line": 235,
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800EE40C",
+    "text": "\tloopEnd: %x",
+    "rom_offset": "0xc97bc",
+    "asm": "asm/data/C9450.data.s",
+    "line": 241,
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800EE41C",
+    "text": "\tsmplen: %d %x",
+    "rom_offset": "0xc97cc",
+    "asm": "asm/data/C9450.data.s",
+    "line": 247,
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800EE42C",
+    "text": "\tSample ID: %x\n",
+    "rom_offset": "0xc97dc",
+    "asm": "asm/data/C9450.data.s",
+    "line": 253,
+    "rom_bytes_verified": true
+  }
+]

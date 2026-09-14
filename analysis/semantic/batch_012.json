@@ -1,0 +1,1145 @@
+{
+  "schema_version": 1,
+  "batch": "012-scoped-audio-data-identifiers",
+  "baseline_commit": "e56cdd8923d788818628a06793c3bef59a566011",
+  "input_manifest": "analysis/semantic/batch_012_inputs.json",
+  "input_manifest_sha256": "40d58d0edd1ab2d55208dd0ebc8414593cb5e3e76ab8530dc5907eaf0e78029d",
+  "files": {
+    "src/audio.c": {
+      "kind": "c",
+      "baseline_sha256": "2059638db0168ed1e86798caa2df8adc308413ff3c20b219dc0b264476d986c7",
+      "events": [
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 760,
+          "line": 46
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 788,
+          "line": 47
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 2402,
+          "line": 100
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 2475,
+          "line": 101
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 4381,
+          "line": 171
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 4417,
+          "line": 172
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 7315,
+          "line": 276
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 7486,
+          "line": 282
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 7511,
+          "line": 282
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 7547,
+          "line": 283
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 10701,
+          "line": 395
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 10726,
+          "line": 395
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 10766,
+          "line": 396
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 10966,
+          "line": 401
+        }
+      ]
+    },
+    "src/audio_engine.c": {
+      "kind": "c",
+      "baseline_sha256": "1bc4564bdf358e6dfd024afd431d2e0dde3445546343e203ea57e3e2a748dd2f",
+      "events": [
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 15694,
+          "line": 409
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 15706,
+          "line": 409
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 16200,
+          "line": 424
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 16297,
+          "line": 427
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 16919,
+          "line": 452
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 16992,
+          "line": 455
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 18445,
+          "line": 510
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 18473,
+          "line": 511
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 19097,
+          "line": 535
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 19173,
+          "line": 541
+        },
+        {
+          "old": "unk0",
+          "new": "sampleLength",
+          "offset": 88414,
+          "line": 2147
+        },
+        {
+          "old": "unk4",
+          "new": "loopBegin",
+          "offset": 88428,
+          "line": 2148
+        },
+        {
+          "old": "unk8",
+          "new": "loopEnd",
+          "offset": 88442,
+          "line": 2149
+        },
+        {
+          "old": "unkC",
+          "new": "flags",
+          "offset": 88456,
+          "line": 2150
+        },
+        {
+          "old": "unkE",
+          "new": "sampleId",
+          "offset": 88470,
+          "line": 2151
+        },
+        {
+          "old": "unkC",
+          "new": "flags",
+          "offset": 88705,
+          "line": 2159
+        },
+        {
+          "old": "unk4",
+          "new": "loopBegin",
+          "offset": 88745,
+          "line": 2160
+        },
+        {
+          "old": "unk8",
+          "new": "loopEnd",
+          "offset": 88785,
+          "line": 2161
+        },
+        {
+          "old": "unk0",
+          "new": "sampleLength",
+          "offset": 88825,
+          "line": 2162
+        },
+        {
+          "old": "unk0",
+          "new": "sampleLength",
+          "offset": 88834,
+          "line": 2162
+        },
+        {
+          "old": "unkE",
+          "new": "sampleId",
+          "offset": 88874,
+          "line": 2163
+        }
+      ]
+    },
+    "src/audiomgr.c": {
+      "kind": "c",
+      "baseline_sha256": "99b852f1ca8eeb89dbe02e06dab9db87173ce0dab070c3dba724289d7d607ec0",
+      "events": [
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 3771,
+          "line": 138
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 3795,
+          "line": 139
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 4638,
+          "line": 172
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 4676,
+          "line": 173
+        }
+      ]
+    },
+    "src/boot.c": {
+      "kind": "c",
+      "baseline_sha256": "485e694987e8d90f9480d94b91cf6b140ac40ba5a1d6c6ecc77bca0ea0225b00",
+      "events": [
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 7630,
+          "line": 256
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 7654,
+          "line": 257
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 9301,
+          "line": 311
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 9340,
+          "line": 312
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 10069,
+          "line": 346
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 10104,
+          "line": 347
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 10773,
+          "line": 374
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 10812,
+          "line": 375
+        }
+      ]
+    },
+    "src/code_4D170.c": {
+      "kind": "c",
+      "baseline_sha256": "40dd997b5c04b00886cdf442f1da3e77935d34bdd206d027d8000e88ea4de610",
+      "events": [
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 55014,
+          "line": 1696
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 74920,
+          "line": 2068
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 75337,
+          "line": 2074
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 75392,
+          "line": 2075
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 75433,
+          "line": 2076
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 75487,
+          "line": 2077
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 75542,
+          "line": 2078
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 75604,
+          "line": 2079
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 76006,
+          "line": 2088
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 76065,
+          "line": 2089
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 76110,
+          "line": 2090
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 76168,
+          "line": 2091
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 76227,
+          "line": 2092
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 76293,
+          "line": 2093
+        }
+      ]
+    },
+    "src/game2.c": {
+      "kind": "c",
+      "baseline_sha256": "196c38d340ea5e99b9d18d26328d0f8ee6aca48c610ec845504176ebc0f1d5d0",
+      "events": [
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 520634,
+          "line": 13414
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 526797,
+          "line": 13611
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 549023,
+          "line": 14315
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 549048,
+          "line": 14316
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 559342,
+          "line": 14696
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 559373,
+          "line": 14697
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 849003,
+          "line": 22382
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 849294,
+          "line": 22389
+        }
+      ]
+    },
+    "src/main.c": {
+      "kind": "c",
+      "baseline_sha256": "264b741d28f93677b9a323ee95c40984fe09dc7ec22e6c8cbc5d4f50dfe6d02c",
+      "events": [
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 203949,
+          "line": 5445
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 204060,
+          "line": 5450
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 216504,
+          "line": 5788
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 216552,
+          "line": 5789
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 216723,
+          "line": 5794
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 216801,
+          "line": 5796
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 216852,
+          "line": 5797
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 217201,
+          "line": 5807
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 217265,
+          "line": 5809
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 217316,
+          "line": 5810
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 217506,
+          "line": 5815
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 217649,
+          "line": 5819
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 217757,
+          "line": 5821
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 217894,
+          "line": 5823
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 217986,
+          "line": 5826
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 218985,
+          "line": 5851
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 219102,
+          "line": 5853
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 219334,
+          "line": 5860
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 219446,
+          "line": 5863
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 219915,
+          "line": 5876
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 219950,
+          "line": 5877
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 220469,
+          "line": 5893
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 220504,
+          "line": 5894
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 253427,
+          "line": 6811
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 253516,
+          "line": 6815
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 257521,
+          "line": 6925
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 257561,
+          "line": 6926
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 259313,
+          "line": 6960
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 259365,
+          "line": 6961
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 259536,
+          "line": 6965
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 261224,
+          "line": 7009
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 261268,
+          "line": 7010
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 261625,
+          "line": 7023
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 261953,
+          "line": 7029
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 262043,
+          "line": 7031
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 266544,
+          "line": 7176
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 266592,
+          "line": 7177
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 266717,
+          "line": 7181
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 269078,
+          "line": 7245
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 269994,
+          "line": 7270
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 276708,
+          "line": 7483
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 276760,
+          "line": 7484
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 276910,
+          "line": 7488
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 278349,
+          "line": 7518
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 278401,
+          "line": 7519
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 278572,
+          "line": 7523
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 278664,
+          "line": 7526
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 278715,
+          "line": 7527
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 278856,
+          "line": 7531
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 282943,
+          "line": 7613
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 283192,
+          "line": 7616
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 284621,
+          "line": 7668
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 284784,
+          "line": 7672
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 286033,
+          "line": 7700
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 286682,
+          "line": 7718
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 286717,
+          "line": 7719
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 291199,
+          "line": 7880
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 291288,
+          "line": 7884
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 295053,
+          "line": 7982
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 295101,
+          "line": 7983
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 295256,
+          "line": 7987
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 295384,
+          "line": 7990
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 295432,
+          "line": 7991
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 295587,
+          "line": 7995
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 297774,
+          "line": 8054
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 299647,
+          "line": 8095
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 300180,
+          "line": 8109
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 300215,
+          "line": 8110
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 302909,
+          "line": 8200
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 302956,
+          "line": 8201
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 303109,
+          "line": 8206
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 303148,
+          "line": 8207
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 311288,
+          "line": 8466
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 314329,
+          "line": 8547
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 315307,
+          "line": 8576
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 315752,
+          "line": 8592
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 363544,
+          "line": 9984
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 363664,
+          "line": 9988
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 364079,
+          "line": 10005
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 364114,
+          "line": 10006
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 364360,
+          "line": 10016
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 364399,
+          "line": 10017
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 365263,
+          "line": 10037
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 365404,
+          "line": 10041
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 365448,
+          "line": 10042
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 365491,
+          "line": 10043
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 390604,
+          "line": 11063
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 390647,
+          "line": 11064
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 390756,
+          "line": 11068
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 393091,
+          "line": 11137
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 393887,
+          "line": 11164
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 395788,
+          "line": 11236
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 395828,
+          "line": 11237
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 396432,
+          "line": 11255
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 398796,
+          "line": 11326
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 399850,
+          "line": 11365
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 401736,
+          "line": 11419
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 436156,
+          "line": 12468
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 436208,
+          "line": 12469
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 436350,
+          "line": 12473
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 436394,
+          "line": 12474
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 437063,
+          "line": 12487
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 437127,
+          "line": 12488
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 437325,
+          "line": 12492
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 437381,
+          "line": 12493
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 437873,
+          "line": 12511
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 437917,
+          "line": 12512
+        },
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 438027,
+          "line": 12516
+        }
+      ]
+    },
+    "asm/data/game_bss.bss.s": {
+      "kind": "asm_dlabel",
+      "baseline_sha256": "22083aff478b24f3ad0ac8430c1aef5f1e2ebf2cd4743adf745d66e09a02be54",
+      "events": [
+        {
+          "old": "D_80108828",
+          "new": "gAnimPlayer",
+          "offset": 12948,
+          "line": 775
+        },
+        {
+          "old": "D_80109DC0",
+          "new": "gAnimPlayer2",
+          "offset": 13300,
+          "line": 796
+        }
+      ]
+    }
+  },
+  "decisions": {
+    "globals": {
+      "D_80108828": "gAnimPlayer",
+      "D_80109DC0": "gAnimPlayer2"
+    },
+    "StructE784_members_only": {
+      "unk0": "sampleLength",
+      "unk4": "loopBegin",
+      "unk8": "loopEnd",
+      "unkC": "flags",
+      "unkE": "sampleId"
+    },
+    "evidence": "DATA_STRING_SEMANTICS.md and DATA_STRING_EVIDENCE.json"
+  }
+}
