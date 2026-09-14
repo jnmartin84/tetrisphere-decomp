@@ -1,0 +1,886 @@
+{
+  "status": "IDENTIFIER_ONLY_VERIFIED",
+  "baseline_commit": "0520fe670e293441d6e95b9e890c89afb431cdb2",
+  "ledger_sha256": "b5ccadfde40ed4e0aee92d0222b339e73eaaf27c7a6f96a7efc2e5cba9bc8df0",
+  "files": {
+    "src/audio.c": {
+      "before_sha256": "b30fffd86e5ed134d6d48595ae45e93d2eebb51ed821d11677f7158f8f75f03b",
+      "after_sha256": "2059638db0168ed1e86798caa2df8adc308413ff3c20b219dc0b264476d986c7",
+      "substitutions": [
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 5919,
+          "line": 224
+        }
+      ]
+    },
+    "src/code_4D170.c": {
+      "before_sha256": "61d6474bac18737df0ff7f4ba860bd21d47b5b6fba063a6ad180012df6dacb66",
+      "after_sha256": "40dd997b5c04b00886cdf442f1da3e77935d34bdd206d027d8000e88ea4de610",
+      "substitutions": [
+        {
+          "old": "func_80073290",
+          "new": "InitPlayScreen",
+          "offset": 14522,
+          "line": 515
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 53923,
+          "line": 1649
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 75592,
+          "line": 2079
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 76286,
+          "line": 2093
+        }
+      ]
+    },
+    "src/game2.c": {
+      "before_sha256": "eabe817c65984abd1c142f0f88881cfeebf73080091d814b5d4d83de46096809",
+      "after_sha256": "196c38d340ea5e99b9d18d26328d0f8ee6aca48c610ec845504176ebc0f1d5d0",
+      "substitutions": [
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 139314,
+          "line": 3564
+        },
+        {
+          "old": "func_8008BB24",
+          "new": "PlacePiece",
+          "offset": 140614,
+          "line": 3588
+        },
+        {
+          "old": "func_8008BB24",
+          "new": "PlacePiece",
+          "offset": 155996,
+          "line": 4016
+        },
+        {
+          "old": "func_8008BB24",
+          "new": "PlacePiece",
+          "offset": 156348,
+          "line": 4025
+        },
+        {
+          "old": "func_8008BB24",
+          "new": "PlacePiece",
+          "offset": 159386,
+          "line": 4105
+        },
+        {
+          "old": "func_8008BB24",
+          "new": "PlacePiece",
+          "offset": 160393,
+          "line": 4123
+        },
+        {
+          "old": "func_8008E94C",
+          "new": "CopyLevelPuzzle",
+          "offset": 165603,
+          "line": 4296
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 168335,
+          "line": 4385
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 168613,
+          "line": 4392
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 168741,
+          "line": 4395
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 170010,
+          "line": 4443
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 170460,
+          "line": 4454
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 170813,
+          "line": 4464
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 171220,
+          "line": 4476
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 171653,
+          "line": 4487
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 171902,
+          "line": 4493
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 171970,
+          "line": 4494
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 172042,
+          "line": 4495
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 172114,
+          "line": 4496
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 172364,
+          "line": 4502
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 172436,
+          "line": 4503
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 172512,
+          "line": 4504
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 172580,
+          "line": 4505
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 173400,
+          "line": 4522
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 173712,
+          "line": 4528
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 173788,
+          "line": 4529
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 173868,
+          "line": 4530
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 173948,
+          "line": 4531
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 174261,
+          "line": 4537
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 174341,
+          "line": 4538
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 174425,
+          "line": 4539
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 174501,
+          "line": 4540
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 175411,
+          "line": 4561
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 175469,
+          "line": 4562
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 175531,
+          "line": 4563
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 175585,
+          "line": 4564
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 176905,
+          "line": 4591
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 179125,
+          "line": 4647
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 180325,
+          "line": 4674
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 180382,
+          "line": 4675
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 180443,
+          "line": 4676
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 180496,
+          "line": 4677
+        },
+        {
+          "old": "func_8008BB24",
+          "new": "PlacePiece",
+          "offset": 180658,
+          "line": 4680
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 180851,
+          "line": 4686
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 180908,
+          "line": 4687
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 180969,
+          "line": 4688
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 181022,
+          "line": 4689
+        },
+        {
+          "old": "func_8008BB24",
+          "new": "PlacePiece",
+          "offset": 181184,
+          "line": 4692
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 183031,
+          "line": 4739
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 193520,
+          "line": 5069
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 193683,
+          "line": 5072
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 204867,
+          "line": 5327
+        },
+        {
+          "old": "func_8008E94C",
+          "new": "CopyLevelPuzzle",
+          "offset": 208743,
+          "line": 5397
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 208906,
+          "line": 5400
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 208971,
+          "line": 5401
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 209033,
+          "line": 5402
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 209094,
+          "line": 5403
+        },
+        {
+          "old": "allocatePieceOperationSlot",
+          "new": "AllocDropPiece",
+          "offset": 211554,
+          "line": 5455
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 214285,
+          "line": 5549
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 214570,
+          "line": 5557
+        },
+        {
+          "old": "allocatePieceOperationSlot",
+          "new": "AllocDropPiece",
+          "offset": 232827,
+          "line": 6118
+        },
+        {
+          "old": "advancePieceOperation",
+          "new": "PlacePieceGame",
+          "offset": 237992,
+          "line": 6288
+        },
+        {
+          "old": "func_8008BB24",
+          "new": "PlacePiece",
+          "offset": 243141,
+          "line": 6436
+        },
+        {
+          "old": "func_8008BB24",
+          "new": "PlacePiece",
+          "offset": 246629,
+          "line": 6527
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 256654,
+          "line": 6766
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 257674,
+          "line": 6780
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 501471,
+          "line": 12822
+        },
+        {
+          "old": "func_800C38F4",
+          "new": "Begin_WinAnim",
+          "offset": 513899,
+          "line": 13161
+        },
+        {
+          "old": "func_800AC62C",
+          "new": "PlayerWon",
+          "offset": 513925,
+          "line": 13162
+        },
+        {
+          "old": "func_800C38F4",
+          "new": "Begin_WinAnim",
+          "offset": 514287,
+          "line": 13174
+        },
+        {
+          "old": "allocatePieceOperationSlot",
+          "new": "AllocDropPiece",
+          "offset": 562764,
+          "line": 14813
+        },
+        {
+          "old": "allocatePieceOperationSlot",
+          "new": "AllocDropPiece",
+          "offset": 565628,
+          "line": 14869
+        },
+        {
+          "old": "func_8008BB24",
+          "new": "PlacePiece",
+          "offset": 750301,
+          "line": 19868
+        },
+        {
+          "old": "func_800C38F4",
+          "new": "Begin_WinAnim",
+          "offset": 830932,
+          "line": 21925
+        },
+        {
+          "old": "func_800C38F4",
+          "new": "Begin_WinAnim",
+          "offset": 847284,
+          "line": 22326
+        },
+        {
+          "old": "func_8008BB24",
+          "new": "PlacePiece",
+          "offset": 953400,
+          "line": 25430
+        },
+        {
+          "old": "func_8008BB24",
+          "new": "PlacePiece",
+          "offset": 954687,
+          "line": 25477
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 963141,
+          "line": 25699
+        },
+        {
+          "old": "func_8008B830",
+          "new": "PlacePieceAlways",
+          "offset": 963472,
+          "line": 25704
+        },
+        {
+          "old": "func_800AC62C",
+          "new": "PlayerWon",
+          "offset": 989434,
+          "line": 26422
+        },
+        {
+          "old": "allocatePieceOperationSlot",
+          "new": "AllocDropPiece",
+          "offset": 992856,
+          "line": 26480
+        },
+        {
+          "old": "advancePieceOperation",
+          "new": "PlacePieceGame",
+          "offset": 998556,
+          "line": 26563
+        }
+      ]
+    },
+    "src/main.c": {
+      "before_sha256": "9d354b1e3cc85422fc8027e5e8952b9440af62ec9cbe4cea7556c607c4ff81db",
+      "after_sha256": "264b741d28f93677b9a323ee95c40984fe09dc7ec22e6c8cbc5d4f50dfe6d02c",
+      "substitutions": [
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 73441,
+          "line": 2131
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 78968,
+          "line": 2325
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 79036,
+          "line": 2327
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 122378,
+          "line": 3398
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 122446,
+          "line": 3400
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 164342,
+          "line": 4321
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 171694,
+          "line": 4567
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 171762,
+          "line": 4569
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 216729,
+          "line": 5794
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 217222,
+          "line": 5807
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 217523,
+          "line": 5815
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 236854,
+          "line": 6360
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 237554,
+          "line": 6379
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 238422,
+          "line": 6405
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 239165,
+          "line": 6426
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 242056,
+          "line": 6511
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 242124,
+          "line": 6513
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 252059,
+          "line": 6759
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 256453,
+          "line": 6903
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 257599,
+          "line": 6925
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 259021,
+          "line": 6951
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 259186,
+          "line": 6955
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 259600,
+          "line": 6965
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 261322,
+          "line": 7009
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 266821,
+          "line": 7181
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 277010,
+          "line": 7488
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 278656,
+          "line": 7523
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 278975,
+          "line": 7531
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 290085,
+          "line": 7827
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 295355,
+          "line": 7987
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 295691,
+          "line": 7995
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 303248,
+          "line": 8206
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 304588,
+          "line": 8255
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 304656,
+          "line": 8257
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 310251,
+          "line": 8415
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 311870,
+          "line": 8487
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 314492,
+          "line": 8547
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 354837,
+          "line": 9711
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 354905,
+          "line": 9713
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 361055,
+          "line": 9921
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 361131,
+          "line": 9923
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 363732,
+          "line": 9984
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 363847,
+          "line": 9988
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 365461,
+          "line": 10037
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 365608,
+          "line": 10041
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 390965,
+          "line": 11068
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 396001,
+          "line": 11236
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 399015,
+          "line": 11326
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 434542,
+          "line": 12409
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 436578,
+          "line": 12473
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 437550,
+          "line": 12492
+        },
+        {
+          "old": "func_8007F720",
+          "new": "loadsong",
+          "offset": 438265,
+          "line": 12516
+        },
+        {
+          "old": "func_80073290",
+          "new": "InitPlayScreen",
+          "offset": 439232,
+          "line": 12537
+        },
+        {
+          "old": "func_80073290",
+          "new": "InitPlayScreen",
+          "offset": 439863,
+          "line": 12556
+        },
+        {
+          "old": "func_80073290",
+          "new": "InitPlayScreen",
+          "offset": 440713,
+          "line": 12587
+        }
+      ]
+    }
+  },
+  "inverse_restores_original_bytes": true,
+  "production_inputs_verified": true,
+  "rom_verified_by_this_tool": false
+}

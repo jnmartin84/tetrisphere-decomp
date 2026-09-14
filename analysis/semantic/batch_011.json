@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "batch": "011-original-diagnostic-vocabulary",
+  "baseline_commit": "0520fe670e293441d6e95b9e890c89afb431cdb2",
+  "input_manifest": "analysis/semantic/batch_011_inputs.json",
+  "input_manifest_sha256": "cf264caed46175e847e52bf78ace22c6089a43658f6e01a183d7008e5a3700c9",
+  "files": {
+    "src/audio.c": {
+      "baseline_sha256": "b30fffd86e5ed134d6d48595ae45e93d2eebb51ed821d11677f7158f8f75f03b",
+      "renames": {
+        "func_8007F720": "loadsong"
+      },
+      "counts": {
+        "func_8007F720": 1
+      }
+    },
+    "src/code_4D170.c": {
+      "baseline_sha256": "61d6474bac18737df0ff7f4ba860bd21d47b5b6fba063a6ad180012df6dacb66",
+      "renames": {
+        "func_80073290": "InitPlayScreen",
+        "func_8007F720": "loadsong"
+      },
+      "counts": {
+        "func_80073290": 1,
+        "func_8007F720": 3
+      }
+    },
+    "src/game2.c": {
+      "baseline_sha256": "eabe817c65984abd1c142f0f88881cfeebf73080091d814b5d4d83de46096809",
+      "renames": {
+        "func_8008B830": "PlacePieceAlways",
+        "func_8008BB24": "PlacePiece",
+        "func_8008E94C": "CopyLevelPuzzle",
+        "allocatePieceOperationSlot": "AllocDropPiece",
+        "advancePieceOperation": "PlacePieceGame",
+        "func_800AC62C": "PlayerWon",
+        "func_800C38F4": "Begin_WinAnim",
+        "func_8007F720": "loadsong"
+      },
+      "counts": {
+        "func_8008B830": 53,
+        "func_8008BB24": 12,
+        "func_8008E94C": 2,
+        "func_8007F720": 2,
+        "allocatePieceOperationSlot": 5,
+        "advancePieceOperation": 2,
+        "func_800C38F4": 4,
+        "func_800AC62C": 2
+      }
+    },
+    "src/main.c": {
+      "baseline_sha256": "9d354b1e3cc85422fc8027e5e8952b9440af62ec9cbe4cea7556c607c4ff81db",
+      "renames": {
+        "func_80073290": "InitPlayScreen",
+        "func_8007F720": "loadsong"
+      },
+      "counts": {
+        "func_8007F720": 52,
+        "func_80073290": 3
+      }
+    }
+  },
+  "decisions": [
+    {
+      "old": "func_8008B830",
+      "new": "PlacePieceAlways",
+      "confidence": "high semantic identification; spelling follows diagnostic",
+      "evidence": [
+        "D_800F0134"
+      ]
+    },
+    {
+      "old": "func_8008BB24",
+      "new": "PlacePiece",
+      "confidence": "high semantic identification; spelling follows diagnostic",
+      "evidence": [
+        "D_800F0190",
+        "D_800F01D4"
+      ]
+    },
+    {
+      "old": "func_8008E94C",
+      "new": "CopyLevelPuzzle",
+      "confidence": "high semantic identification; spelling follows diagnostic",
+      "evidence": [
+        "D_800F02BC"
+      ]
+    },
+    {
+      "old": "allocatePieceOperationSlot",
+      "new": "AllocDropPiece",
+      "confidence": "high semantic identification; spelling follows diagnostic",
+      "evidence": [
+        "D_800F04CC"
+      ]
+    },
+    {
+      "old": "advancePieceOperation",
+      "new": "PlacePieceGame",
+      "confidence": "high semantic identification; spelling follows diagnostic",
+      "evidence": [
+        "D_800F0520",
+        "D_800F0678"
+      ]
+    },
+    {
+      "old": "func_800AC62C",
+      "new": "PlayerWon",
+      "confidence": "high semantic identification; spelling follows diagnostic",
+      "evidence": [
+        "D_800F0750"
+      ]
+    },
+    {
+      "old": "func_800C38F4",
+      "new": "Begin_WinAnim",
+      "confidence": "high semantic identification; spelling follows diagnostic",
+      "evidence": [
+        "D_800F0C64",
+        "D_800F0CC4"
+      ]
+    },
+    {
+      "old": "func_80073290",
+      "new": "InitPlayScreen",
+      "confidence": "high semantic identification; spelling follows diagnostic",
+      "evidence": [
+        "D_800EDF70",
+        "D_800EE010"
+      ]
+    },
+    {
+      "old": "func_8007F720",
+      "new": "loadsong",
+      "confidence": "high semantic identification; spelling follows diagnostic",
+      "evidence": [
+        "D_800EE584"
+      ]
+    }
+  ]
+}

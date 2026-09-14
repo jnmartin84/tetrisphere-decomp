@@ -1,0 +1,223 @@
+[
+  {
+    "symbol": "D_800F0134",
+    "old": "func_8008B830",
+    "new": "PlacePieceAlways",
+    "text": "*** ERROR!  generatelevel.c -> PlacePieceAlways did not function ZPos >= PlacePieceHeight.\n",
+    "rom_offset": "0xcb4e4",
+    "asm": "asm/data/C9AFC.data.s",
+    "asm_line": 153,
+    "calls": [
+      {
+        "file": "src/game2.c",
+        "line": 3579,
+        "call": "func_80029760(D_800F0134);"
+      }
+    ],
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F0190",
+    "old": "func_8008BB24",
+    "new": "PlacePiece",
+    "text": "*** WARNING!  generatelevel.c -> PlacePiece is going to plot z+1!\n",
+    "rom_offset": "0xcb540",
+    "asm": "asm/data/C9AFC.data.s",
+    "asm_line": 159,
+    "calls": [
+      {
+        "file": "src/game2.c",
+        "line": 3603,
+        "call": "func_80029760(D_800F0190);"
+      }
+    ],
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F01D4",
+    "old": "func_8008BB24",
+    "new": "PlacePiece",
+    "text": "*** ERROR!  generatelevel.c -> PlacePiece did not function to avoid breaking a piece!\n",
+    "rom_offset": "0xcb584",
+    "asm": "asm/data/C9AFC.data.s",
+    "asm_line": 165,
+    "calls": [
+      {
+        "file": "src/game2.c",
+        "line": 3605,
+        "call": "func_80029760(D_800F01D4);"
+      }
+    ],
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F02BC",
+    "old": "func_8008E94C",
+    "new": "CopyLevelPuzzle",
+    "text": "ERROR!  generatelevel.c -> CopyLevelPuzzle.  Unkwnown Dest!\n",
+    "rom_offset": "0xcb66c",
+    "asm": "asm/data/C9AFC.data.s",
+    "asm_line": 189,
+    "calls": [
+      {
+        "file": "src/game2.c",
+        "line": 4320,
+        "call": "func_80029760(D_800F02BC);"
+      }
+    ],
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F04CC",
+    "old": "allocatePieceOperationSlot",
+    "new": "AllocDropPiece",
+    "text": "\n\n******** WARNING:  piececontrol.c .. AllocDropPiece .. No Piece To Allocate!!!\n",
+    "rom_offset": "0xcb87c",
+    "asm": "asm/data/C9AFC.data.s",
+    "asm_line": 267,
+    "calls": [
+      {
+        "file": "src/game2.c",
+        "line": 5464,
+        "call": "func_80029760(D_800F04CC);"
+      }
+    ],
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F0520",
+    "old": "advancePieceOperation",
+    "new": "PlacePieceGame",
+    "text": "\n\n*** ERROR!! drop.c -> PlacePieceGame was called with a non valid Piece!!!\n",
+    "rom_offset": "0xcb8d0",
+    "asm": "asm/data/C9AFC.data.s",
+    "asm_line": 273,
+    "calls": [
+      {
+        "file": "src/game2.c",
+        "line": 6308,
+        "call": "func_80029760(D_800F0520);"
+      }
+    ],
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F0678",
+    "old": "advancePieceOperation",
+    "new": "PlacePieceGame",
+    "text": "in drop.c placepiecegame",
+    "rom_offset": "0xcba28",
+    "asm": "asm/data/C9AFC.data.s",
+    "asm_line": 321,
+    "calls": [
+      {
+        "file": "src/game2.c",
+        "line": 6317,
+        "call": "func_8002AF20(D_800F0678, D_800F2300);"
+      }
+    ],
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F0750",
+    "old": "func_800AC62C",
+    "new": "PlayerWon",
+    "text": "checkforwin.c PlayerWon Called\n",
+    "rom_offset": "0xcbb00",
+    "asm": "asm/data/C9AFC.data.s",
+    "asm_line": 375,
+    "calls": [
+      {
+        "file": "src/game2.c",
+        "line": 13163,
+        "call": "func_80029760(D_800F0750);"
+      }
+    ],
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F0C64",
+    "old": "func_800C38F4",
+    "new": "Begin_WinAnim",
+    "text": "Begin_WinAnim(): Aborting because another level end is already active\n",
+    "rom_offset": "0xcc014",
+    "asm": "asm/data/C9AFC.data.s",
+    "asm_line": 579,
+    "calls": [
+      {
+        "file": "src/game2.c",
+        "line": 22328,
+        "call": "func_80029760(D_800F0C64);"
+      }
+    ],
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800F0CC4",
+    "old": "func_800C38F4",
+    "new": "Begin_WinAnim",
+    "text": "Begin_WinAnim(): Aborting because drop pieces are still happening\n",
+    "rom_offset": "0xcc074",
+    "asm": "asm/data/C9AFC.data.s",
+    "asm_line": 591,
+    "calls": [
+      {
+        "file": "src/game2.c",
+        "line": 22338,
+        "call": "func_80029760(D_800F0CC4);"
+      }
+    ],
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800EDF70",
+    "old": "func_80073290",
+    "new": "InitPlayScreen",
+    "text": "\n\n*********\n\n  Memory available to InitPlayScreen: %d bytes\n  Start: $%x\n",
+    "rom_offset": "0xc9320",
+    "asm": "asm/data/C9230.data.s",
+    "asm_line": 159,
+    "calls": [
+      {
+        "file": "src/code_4D170.c",
+        "line": 524,
+        "call": "func_80029760(&D_800EDF70, D_800FC5AC - D_800F22C0, D_800F22C0);"
+      }
+    ],
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800EE010",
+    "old": "func_80073290",
+    "new": "InitPlayScreen",
+    "text": "\n  Total memory used by InitPlayScreen: %d bytes Memory End: %x\n\n*********\n\n",
+    "rom_offset": "0xc93c0",
+    "asm": "asm/data/C9230.data.s",
+    "asm_line": 177,
+    "calls": [
+      {
+        "file": "src/code_4D170.c",
+        "line": 757,
+        "call": "func_80029760(&D_800EE010, D_800F22C0 - sp40, D_800F22C0);"
+      }
+    ],
+    "rom_bytes_verified": true
+  },
+  {
+    "symbol": "D_800EE584",
+    "old": "func_8007F720",
+    "new": "loadsong",
+    "text": "audio.c loadsong",
+    "rom_offset": "0xc9934",
+    "asm": "asm/data/C9450.data.s",
+    "asm_line": 347,
+    "calls": [
+      {
+        "file": "src/audio.c",
+        "line": 237,
+        "call": "func_8002AF20(D_800EE584, D_800EE598);"
+      }
+    ],
+    "rom_bytes_verified": true
+  }
+]

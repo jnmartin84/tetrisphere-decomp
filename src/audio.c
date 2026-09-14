@@ -221,7 +221,7 @@ extern void func_800335A8(s32);
 extern void func_8007EAD0(s32);
 extern void func_80079B80(s32, AudioMgr *);
 extern void func_8007ACF4(AudioMgr *);
-void func_8007F720(u32 arg0, AudioMgr *arg1) {
+void loadsong(u32 arg0, AudioMgr *arg1) {
     s32 sp34;
     s16 sp32;
     u16 sp30;

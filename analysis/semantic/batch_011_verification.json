@@ -1,0 +1,24 @@
+{
+  "baseline_commit": "0520fe670e293441d6e95b9e890c89afb431cdb2",
+  "baseline_matchdiff": "FULL MATCH",
+  "candidate_matchdiff": "FULL MATCH",
+  "full_rom_cmp": true,
+  "header_included": true,
+  "rom_bytes": 8388608,
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "identifier_substitutions": 142,
+  "source_files": 4,
+  "symbols": {
+    "InitPlayScreen": "0x80073290",
+    "loadsong": "0x8007F720",
+    "PlacePieceAlways": "0x8008B830",
+    "PlacePiece": "0x8008BB24",
+    "CopyLevelPuzzle": "0x8008E94C",
+    "AllocDropPiece": "0x800921A8",
+    "PlacePieceGame": "0x8009423C",
+    "PlayerWon": "0x800AC62C",
+    "Begin_WinAnim": "0x800C38F4"
+  },
+  "compiler": "Official IDO 5.3 v1.2 macOS universal, native ARM64",
+  "production_inputs_verified": 995
+}

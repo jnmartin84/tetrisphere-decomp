@@ -3561,7 +3561,7 @@ extern void func_8008BE58(s16, s16, s16, s16, s16, void *);
 extern void func_80029760();
 extern u8 D_800F0134[];
 
-void func_8008B830(void *a0, s16 a1, s16 a2, s16 a3) {
+void PlacePieceAlways(void *a0, s16 a1, s16 a2, s16 a3) {
     s16 v;
 
     if (a3 < 8) {
@@ -3585,7 +3585,7 @@ extern s32 func_8008DBF8(void *, s16, s16, s16);
 extern void func_80029760();
 extern u8 D_800F0190[], D_800F01D4[];
 
-void func_8008BB24(void *a0, s16 a1, s16 a2, s16 a3) {
+void PlacePiece(void *a0, s16 a1, s16 a2, s16 a3) {
     s16 v;
 
     if (func_8008DBF8(a0, a1, a2, a3) == 0) {
@@ -4013,7 +4013,7 @@ void func_8008D62C(void *arg0, s16 arg1, s16 arg2, s16 arg3) {
 
 extern void func_8008D34C(void*, s16, s16, s16);
 extern void func_8008D62C(void*, s16, s16, s16);
-extern void func_8008BB24(void*, s16, s16, s16);
+extern void PlacePiece(void*, s16, s16, s16);
 extern void func_8008E244(void*, s16, s16, s16);
 extern void func_8008E428(void*, s16, s16, s16);
 void func_8008D90C(void *arg0, s16 x, s16 y, s16 z, s16 flags) {
@@ -4022,7 +4022,7 @@ void func_8008D90C(void *arg0, s16 x, s16 y, s16 z, s16 flags) {
     } else if (flags & 0x20) {
         func_8008D62C(arg0, x, y, z);
     } else {
-        func_8008BB24(arg0, x, y, z);
+        PlacePiece(arg0, x, y, z);
     }
     if ((flags & 0xE0) == 0xE0) {
         func_8008E244(arg0, x, y, z);
@@ -4102,7 +4102,7 @@ s16 func_8008DEAC(s16 a0, s16 a1, s16 a2, s16 a3) {
 }
 
 #include <PR/ultratypes.h>
-extern void func_8008BB24(void *a0, s16 a1, s16 a2, s16 a3);
+extern void PlacePiece(void *a0, s16 a1, s16 a2, s16 a3);
 /* Moved below func_8008DEAC: this declaration is position-sensitive in
  * ucode distance from the three K&R definitions above (see LEVERS 122/124).
  * It must stay ABOVE func_8008E244, whose call cannot be hand-narrowed. */
@@ -4120,7 +4120,7 @@ s32 func_8008DFC0(void *a0, s16 a1, s16 a2, s16 a3) {
     for (i = a3; i > 0; i--) {
         if (func_8008DBF8(a0, a1, a2, i) != 0) {
             s16 next = i + 1;
-            func_8008BB24(a0, a1, a2, next);
+            PlacePiece(a0, a1, a2, next);
             return next;
         }
     }
@@ -4293,7 +4293,7 @@ extern void func_800922A0(u8 *);
 extern void func_800AF294(void);
 extern void func_800AF09C(s16);
 
-void func_8008E94C(s16 arg0, s16 arg1) {
+void CopyLevelPuzzle(s16 arg0, s16 arg1) {
     s16 *d;
     s16 *s;
     s8 *dp;
@@ -4382,17 +4382,17 @@ void func_8008EBDC(void) {
 }
 
 extern s32 func_80081E90(s32);
-extern void func_8008B830(void*, s16, s16, s16);
+extern void PlacePieceAlways(void*, s16, s16, s16);
 void func_8008ED28(s16 a0, s16 a1, s16 a2, s16 a3, s16 p4, s16 p5) {
     s16 i, j;
     for (i = a0; i < a2 - 3; i += 3) {
         for (j = a1; j < a3 - 3; j += 3) {
             switch (func_80081E90(2)) {
             case 0:
-                func_8008B830((void*)*(u32*)((u8*)&D_8014CC98[p4] + 0x28), i, j, 0);
+                PlacePieceAlways((void*)*(u32*)((u8*)&D_8014CC98[p4] + 0x28), i, j, 0);
                 break;
             case 1:
-                func_8008B830((void*)*(u32*)((u8*)&D_8014CC98[p5] + 0x28), i, j, 0);
+                PlacePieceAlways((void*)*(u32*)((u8*)&D_8014CC98[p5] + 0x28), i, j, 0);
                 break;
             }
         }
@@ -4440,7 +4440,7 @@ void func_8008EEA4(void *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5,
     if (D_800E44A4 != 9u) {
         for (i = 0; i < 0x20; i += 3) {
             for (j = 0; j < 0x20; j += 3) {
-                func_8008B830(D_8014CC98[9], i + 1, j + 1, 0);
+                PlacePieceAlways(D_8014CC98[9], i + 1, j + 1, 0);
             }
         }
     }
@@ -4451,7 +4451,7 @@ void func_8008EEA4(void *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5,
                 unused_after_pe = i + (i + A0(0xE0)) * 0;
                 f7 = j + A0(0xE2) * 0;
                 do {} while (0);
-                func_8008B830(D_8014CC98[8], (unused_after_pe + ((i + A0(0xE0)) == 1) * 0) + 1, f7 + 1, 0);
+                PlacePieceAlways(D_8014CC98[8], (unused_after_pe + ((i + A0(0xE0)) == 1) * 0) + 1, f7 + 1, 0);
             }
         }
         func_80029760(&D_800F02FC);
@@ -4461,7 +4461,7 @@ void func_8008EEA4(void *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5,
         func_8008A06C(*(s16 *)&D_80130A1C);
         for (i = 0; i < 0x20; i += 2) {
             for (j = 0; j < 0x20; j += 2) {
-                func_8008B830(&D_80136238, i, j, 0);
+                PlacePieceAlways(&D_80136238, i, j, 0);
             }
         }
     }
@@ -4473,7 +4473,7 @@ void func_8008EEA4(void *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5,
             func_8008A06C(*(s16 *)&D_80130A1C);
             for (i = 0; i < 0x20; i += 2) {
                 for (j = 0; j < 0x20; j += 2) {
-                    func_8008B830(&D_80136238, i, j, 0);
+                    PlacePieceAlways(&D_80136238, i, j, 0);
                 }
             }
             return;
@@ -4484,25 +4484,25 @@ void func_8008EEA4(void *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5,
                     switch (func_80081E90_unsigned(3)) {
                     case 0:
                         if (A0(0xE0) != 0) {
-                            func_8008B830(D_8014CC98[8], i + 1, j + 1, 0);
+                            PlacePieceAlways(D_8014CC98[8], i + 1, j + 1, 0);
                             D_8016153A = 1;
                         }
                         break;
                     case 1:
                         if (A0(0xE2) != 0) {
-                            func_8008B830(D_8014CC98[10], i, j, 0);
-                            func_8008B830(D_8014CC98[11], i + 2, j, 0);
-                            func_8008B830(D_8014CC98[12], i, j + 2, 0);
-                            func_8008B830(D_8014CC98[13], i + 2, j + 2, 0);
+                            PlacePieceAlways(D_8014CC98[10], i, j, 0);
+                            PlacePieceAlways(D_8014CC98[11], i + 2, j, 0);
+                            PlacePieceAlways(D_8014CC98[12], i, j + 2, 0);
+                            PlacePieceAlways(D_8014CC98[13], i + 2, j + 2, 0);
                             D_8016153A = 1;
                         }
                         break;
                     case 2:
                         if (A0(0xE4) != 0) {
-                            func_8008B830(D_8014CC98[14], i, j + 2, 0);
-                            func_8008B830(D_8014CC98[15], i + 3, j + 2, 0);
-                            func_8008B830(D_8014CC98[16], i, j, 0);
-                            func_8008B830(D_8014CC98[17], i + 3, j, 0);
+                            PlacePieceAlways(D_8014CC98[14], i, j + 2, 0);
+                            PlacePieceAlways(D_8014CC98[15], i + 3, j + 2, 0);
+                            PlacePieceAlways(D_8014CC98[16], i, j, 0);
+                            PlacePieceAlways(D_8014CC98[17], i + 3, j, 0);
                             D_8016153A = 1;
                         }
                         break;
@@ -4519,25 +4519,25 @@ void func_8008EEA4(void *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5,
                             {
                             fallback0:
                                 if (A0(0xE0) != 0) {
-                                    func_8008B830(D_8014CC98[8], i + 1, j + 1, 0);
+                                    PlacePieceAlways(D_8014CC98[8], i + 1, j + 1, 0);
                                     D_8016153E = 3;
                                 }
                                 goto fallback_end;
                             fallback1:
                                 if (A0(0xE2) != 0) {
-                                    func_8008B830(D_8014CC98[10], i, j, 0);
-                                    func_8008B830(D_8014CC98[11], i + 2, j, 0);
-                                    func_8008B830(D_8014CC98[12], i, j + 2, 0);
-                                    func_8008B830(D_8014CC98[13], i + 2, j + 2, 0);
+                                    PlacePieceAlways(D_8014CC98[10], i, j, 0);
+                                    PlacePieceAlways(D_8014CC98[11], i + 2, j, 0);
+                                    PlacePieceAlways(D_8014CC98[12], i, j + 2, 0);
+                                    PlacePieceAlways(D_8014CC98[13], i + 2, j + 2, 0);
                                     D_8016153E = 3;
                                 }
                                 goto fallback_end;
                             fallback2:
                                 if (A0(0xE4) != 0) {
-                                    func_8008B830(D_8014CC98[14], i, j + 2, 0);
-                                    func_8008B830(D_8014CC98[15], i + 3, j + 2, 0);
-                                    func_8008B830(D_8014CC98[16], i, j, 0);
-                                    func_8008B830(D_8014CC98[17], i + 3, j, 0);
+                                    PlacePieceAlways(D_8014CC98[14], i, j + 2, 0);
+                                    PlacePieceAlways(D_8014CC98[15], i + 3, j + 2, 0);
+                                    PlacePieceAlways(D_8014CC98[16], i, j, 0);
+                                    PlacePieceAlways(D_8014CC98[17], i + 3, j, 0);
                                     D_8016153E = 3;
                                 }
                                 goto fallback_end;
@@ -4558,10 +4558,10 @@ void func_8008EEA4(void *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5,
             func_8008D34C(D_8014CC98[5], xb + 2, yb + 2, k);
             func_800C04B8(((xb + 2) << 8) + 0x100, ((yb + 2) << 8) + 0x100,
                           ((A0(0xC) + 2) << 8) - 0x80, ((A0(0xC) + 2) << 8) - 0x80);
-            func_8008B830(D_8014CC98[14], xb, yb + 2, 0);
-            func_8008B830(D_8014CC98[15], xb + 3, yb + 2, 0);
-            func_8008B830(D_8014CC98[16], xb, yb, 0);
-            func_8008B830(D_8014CC98[17], xb + 3, yb, 0);
+            PlacePieceAlways(D_8014CC98[14], xb, yb + 2, 0);
+            PlacePieceAlways(D_8014CC98[15], xb + 3, yb + 2, 0);
+            PlacePieceAlways(D_8014CC98[16], xb, yb, 0);
+            PlacePieceAlways(D_8014CC98[17], xb + 3, yb, 0);
             for (t = 0; t < 4; t++) {
                 j = func_80081E90_unsigned(arg3 - arg1) + arg1;
                 yb = func_80081E90_unsigned(arg4 - arg2) + arg2;
@@ -4588,7 +4588,7 @@ void func_8008EEA4(void *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5,
                     t = *pw;
                     pw++;
                     if (t != 0) {
-                        func_8008B830((void *)*(u32 *)((u8 *)&D_8014CC98[t] + 0x44), i, j, 0);
+                        PlacePieceAlways((void *)*(u32 *)((u8 *)&D_8014CC98[t] + 0x44), i, j, 0);
                         if (&D_8014CC9C == &D_8014CC98[t]) {
                             for (k = 1; k <= A0(0xC); k++) {
                                 func_8008D34C(D_8014CC98[2], i, j, k);
@@ -4644,7 +4644,7 @@ void func_8008EEA4(void *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5,
                     if (t != 0) {
                         switch (t) {
                         case 0xC:
-                            func_8008B830(D_800E6BAC[t], i, j, 0);
+                            PlacePieceAlways(D_800E6BAC[t], i, j, 0);
                             *(s8 *)(D_8013DD00 + 0x2B6B) = *(s8 *)(D_8013DD00 + 0x2B6B) + 1;
                             break;
                         case 0xD:
@@ -4671,25 +4671,25 @@ void func_8008EEA4(void *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5,
         case 10:
             j = func_80081E90(0x16) + 5;
             yb = func_80081E90(0x16) + 5;
-            func_8008B830(D_8014CC98[14], j, yb + 2, 0);
-            func_8008B830(D_8014CC98[15], j + 3, yb + 2, 0);
-            func_8008B830(D_8014CC98[16], j, yb, 0);
-            func_8008B830(D_8014CC98[17], j + 3, yb, 0);
+            PlacePieceAlways(D_8014CC98[14], j, yb + 2, 0);
+            PlacePieceAlways(D_8014CC98[15], j + 3, yb + 2, 0);
+            PlacePieceAlways(D_8014CC98[16], j, yb, 0);
+            PlacePieceAlways(D_8014CC98[17], j + 3, yb, 0);
             unused_after_pe = ((s16)(j + 2u) == A0(0xE0)) * 0;
             for (t = 1; t < 7; t++) {
-                func_8008BB24(&D_8013D590, j + 1u, yb + 1, t);
+                PlacePiece(&D_8013D590, j + 1u, yb + 1, t);
             }
             return;
         case 11:
             j = func_80081E90(0x16) + 5;
             yb = func_80081E90(0x16) + 5;
-            func_8008B830(D_8014CC98[14], j, yb + 2, 0);
-            func_8008B830(D_8014CC98[15], j + 3, yb + 2, 0);
-            func_8008B830(D_8014CC98[16], j, yb, 0);
-            func_8008B830(D_8014CC98[17], j + 3, yb, 0);
+            PlacePieceAlways(D_8014CC98[14], j, yb + 2, 0);
+            PlacePieceAlways(D_8014CC98[15], j + 3, yb + 2, 0);
+            PlacePieceAlways(D_8014CC98[16], j, yb, 0);
+            PlacePieceAlways(D_8014CC98[17], j + 3, yb, 0);
             unused_after_pe = ((s16)(j + 2u) == A0(0xE0)) * 0;
             for (t = 1; t < 7; t++) {
-                func_8008BB24(&D_8013D590, j + 1u, yb + 1, t + (A0(0xE0) == (s16)(j + 2u)) * 0);
+                PlacePiece(&D_8013D590, j + 1u, yb + 1, t + (A0(0xE0) == (s16)(j + 2u)) * 0);
                 func_80093400_p(j + 2u, yb + 2,
                     t + ((void *)(s32)A0(0xE2) == (void *)&D_8013D590) * 0, D_80132E50);
             }
@@ -4736,7 +4736,7 @@ void func_8008EEA4(void *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5,
                 func_8008D34C(D_8014CC98[5], x, y, k);
                 func_800C04B8((((j + dx) & 0x1F) << 8) + 0x100, (((yb + dy) & 0x1F) << 8) + 0x100,
                               ((A0(0xC) + 2) << 8) - 0x80, ((A0(0xC) + 2) << 8) - 0x80);
-                func_8008B830(pe, x, y, 0);
+                PlacePieceAlways(pe, x, y, 0);
             }
             break;
         }
@@ -5066,10 +5066,10 @@ void func_800906E8(s32 var_a0) {
                 D_8013D266_3 = (D_800E0B24) * 1;
             }
             if ((local_state906.head.s.second + ((Prefix906 *)D_8013D170)->f0C * 0) != 0) {
-                func_8007F720((u32)(s16)local_state906.head.u.second, D_80107290);
+                loadsong((u32)(s16)local_state906.head.u.second, D_80107290);
                 D_800E6BE0 = local_state906.head.s.second;
             } else {
-                func_8007F720(D_800E6BE0, D_80107290);
+                loadsong(D_800E6BE0, D_80107290);
             }
             func_8007ACFC(D_80107290);
             if (D_800E6BE0_2 != *(u16 *)(D_80107290 + 0x157C)) {
@@ -5324,7 +5324,7 @@ void func_800906E8(s32 var_a0) {
                 var_a0 = var_s6 << 0x10 + (D_800E4498 * 0);
                 tv1 = var_s6 * 2;
                 do {
-                    func_8008B830(&D_80135AD0, (s16) var_s6, var_s2, 0);
+                    PlacePieceAlways(&D_80135AD0, (s16) var_s6, var_s2, 0);
                     var_s4 = 0;
                     do {
                         temp_s5 = (u8 *)((u32)sp8C + (var_s4 << 0xB) + ((var_s2 + (D_800E4498 * 0)) * -0x40) + ((tv1 + (D_800E44AC * 0)) * -1));
@@ -5394,13 +5394,13 @@ void func_800906E8(s32 var_a0) {
             } while (var_s6 < 0x20);
 
             if ((D_800E44A8 + (*(u16 *)(temp_s5 + 0x1C) * 0)) == 4) {
-                func_8008E94C(2, 0);
+                CopyLevelPuzzle(2, 0);
             }
             if ((D_800E44A8 == 3) && (D_800E44AC == 1) && ((D_800E4498 + (D_800E9470[var_s4 & 7] * 0)) == 1)) {
-                func_8008B830(D_8014CC98[14], 0xD, 0x12, 0 + 0);
-                func_8008B830(D_8014CC98[15], 0x10, 0x12, 0);
-                func_8008B830(D_8014CC98[16], 0xD, 0x10, 0);
-                func_8008B830(D_8014CC98[17], 0x10, 0x10, 0);
+                PlacePieceAlways(D_8014CC98[14], 0xD, 0x12, 0 + 0);
+                PlacePieceAlways(D_8014CC98[15], 0x10, 0x12, 0);
+                PlacePieceAlways(D_8014CC98[16], 0xD, 0x10, 0);
+                PlacePieceAlways(D_8014CC98[17], 0x10, 0x10, 0);
             }
         }
         *(s32 *)(D_8013DD00 + 0x2B18) = (u64) (u32) 0;
@@ -5452,7 +5452,7 @@ void initPieceOperationSlot(s16 a0) {
  *   shifts the i-spill stack slot from 0x1E to 0x1A. func_800920E4(i) then returns
  *   i (i is spilled to 0x1E across the call and reloaded as the result). */
 extern u8 D_800F04CC[];
-s16 allocatePieceOperationSlot(void) {
+s16 AllocDropPiece(void) {
     s16 i;
     for (i = 0; i < 0x40; i++) {
         if (((Game *)D_8013DD00)->arr[i].v == 0) {
@@ -5546,7 +5546,7 @@ s32 func_800923A0(Entry *arg0, s16 arg1) {
 
 /* func_80092454  ROM 0x6D804  STATUS: CLEAN (diff at/after func size = next-func prologue) */
 /* Fills a Rec local (0xA/0xC/0xE), probes via func_800923A0; on success clears a slot then forwards. */
-extern void func_8008B830(void *, s16, s16, s16);
+extern void PlacePieceAlways(void *, s16, s16, s16);
 s16 func_80092454(void *a0, s16 a1, s16 a2, s16 a3) {
     Rec local;
     local.unkA = a1;
@@ -5554,7 +5554,7 @@ s16 func_80092454(void *a0, s16 a1, s16 a2, s16 a3) {
     local.unkE = a3;
     if (func_800923A0(&local, -1) == 0) {
         func_80092238(D_8013DD00, *(s16*)(D_8013DD00 + 0x2B50));
-        func_8008B830(a0, a1, a2, a3);
+        PlacePieceAlways(a0, a1, a2, a3);
         return 1;
     }
     return 0;
@@ -6115,7 +6115,7 @@ s16 func_80093C08(u8 *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5, s1
         if (ret != 0) func_800951CC();
     }
 
-    idx = allocatePieceOperationSlot();
+    idx = AllocDropPiece();
     if (idx == 0x40) return 0;
 
     r = (Rec *)((u8 *)D_8013DD00 + idx * 0x14 + 0x25CC);
@@ -6285,7 +6285,7 @@ void func_800CA554(u8, u8);
 #define G32(o)  (*(s32 *)((u8 *)D_8013DD00 + (o)))
 #define G8(o)   (*(u8  *)((u8 *)D_8013DD00 + (o)))
 
-s32 advancePieceOperation(arg0)
+s32 PlacePieceGame(arg0)
 void *arg0;
 {
     s16 *sp6C;
@@ -6433,7 +6433,7 @@ void *arg0;
         } else {
             G16(0x25C4) = G16(0x25C4) + 1;
             if (sp6A & 0x1000) {
-                func_8008BB24(sp6C, sp68, sp66, sp64 + 1);
+                PlacePiece(sp6C, sp68, sp66, sp64 + 1);
             }
             if (G16(0x25C2) <= func_800C84C8(sp6C, sp68, sp66, (s16)(sp64 + 1), G16(0x25C2), 0, 0, 0x5595, 1)) {
                 A16(0x12) = 1;
@@ -6524,7 +6524,7 @@ void *arg0;
     if (sp6A & 0x200) {
         sp6A |= 0x8000;
         if (func_8008CE04(sp6C, sp68, sp66, sp64) != 0) {
-            func_8008BB24(sp6C, sp68, sp66, sp64);
+            PlacePiece(sp6C, sp68, sp66, sp64);
         }
         if (sp64 >= 2) {
             if (sp6C[2] <= func_80092A14(sp6C, sp68, sp66, (s16)(sp64 - 1))) {
@@ -6763,7 +6763,7 @@ block_36:
                 }
                 x = 0;
                 if (func_80093188(var_s7, sp96, sp94, z) != 0) {
-                    func_8008B830(var_s7, *(s16 *)(D_8013DD00 + 0x2B62), *(s16 *)(D_8013DD00 + 0x2B64), *(s16 *)(D_8013DD00 + 0x2B66));
+                    PlacePieceAlways(var_s7, *(s16 *)(D_8013DD00 + 0x2B62), *(s16 *)(D_8013DD00 + 0x2B64), *(s16 *)(D_8013DD00 + 0x2B66));
                     func_80093400(*(s16 *)(D_8013DD00 + 0x2B62), *(s16 *)(D_8013DD00 + 0x2B64), *(s16 *)(D_8013DD00 + 0x2B66), *(s16 *)&D_80135AD0);
                     x = 1;
                     *(s16 *)(D_8013DD00 + 0x2B62) = sp96;
@@ -6777,7 +6777,7 @@ block_36:
                     *(s32 *)(D_8013DD00 + 0x2B28) = *(s32 *)(D_8013DD00 + 0x2B38);
                     *(s32 *)(D_8013DD00 + 0x2B2C) = *(s32 *)(D_8013DD00 + 0x2B3C);
                 }
-                func_8008B830(var_s7, *(s16 *)(D_8013DD00 + 0x2B62), *(s16 *)(D_8013DD00 + 0x2B64), *(s16 *)(D_8013DD00 + 0x2B66));
+                PlacePieceAlways(var_s7, *(s16 *)(D_8013DD00 + 0x2B62), *(s16 *)(D_8013DD00 + 0x2B64), *(s16 *)(D_8013DD00 + 0x2B66));
                 if (x != 0) {
                     func_80029760(&D_800F06E0);
                     func_800AB4C8(D_8014CBC8[*(s16 *)(D_8013DD00 + 0x2374)], *(s16 *)(D_8013DD00 + 0x2B62), *(s16 *)(D_8013DD00 + 0x2B64), 0);
@@ -12819,7 +12819,7 @@ s16 func_800AA9DC(AA5A8_S s, s16 p0, s16 p1, s16 p2, s16 p3) {
                     func_800BEC50(s.fA + i, s.fC + j);
                 }
             }
-            func_8008B830(D_8014CD10, s.fA, s.fC, 0);
+            PlacePieceAlways(D_8014CD10, s.fA, s.fC, 0);
             if (p2 != 0) {
                 *(s16 *)(D_8013DD00 + 0x2C84) += 1;
                 for (i = 0; i < 0x20; i++) {
@@ -13158,8 +13158,8 @@ s16 func_800AB4C8(Grid *arg0, s16 arg1, s16 arg2, s16 arg3) {
 #include <PR/ultratypes.h>
 extern u8 D_800F0750[];
 extern void func_800C7C90(void);
-extern void func_800C38F4(void);
-void func_800AC62C(u8 *arg) {
+extern void Begin_WinAnim(void);
+void PlayerWon(u8 *arg) {
     func_80029760(D_800F0750);
     func_800C7C90();
     if (*(s16 *)(D_8013DD00 + 0x3264) == 0) {
@@ -13171,7 +13171,7 @@ void func_800AC62C(u8 *arg) {
         *(s16 *)(arg + 0x23D6) = 1;
         *(s16 *)(arg + 0x23DA) = 0;
     }
-    func_800C38F4();
+    Begin_WinAnim();
     if (D_8015D980 >= 2) {
         s16 v = *(s16 *)(arg + 0x23B8);
         if (v != -1) {
@@ -14810,7 +14810,7 @@ extern void func_80029760();
 extern s32 func_8008A7A0(s16, s16, s16);
 extern s16 func_8008CF50(void *, s16, s16, s16, s32, s32);
 extern s32 func_8008DBF8(void *, s16, s16, s16);
-extern s16 allocatePieceOperationSlot(void);
+extern s16 AllocDropPiece(void);
 extern void func_80093214(Rec *, s16, s16, s16);
 
 void func_800AF424(void *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5) {
@@ -14866,7 +14866,7 @@ void func_800AF424(void *arg0, s16 arg1, s16 arg2, s16 arg3, s16 arg4, s16 arg5)
                                                 list[n].f4 = rec.unkE;
                                                 list[n].f8 = 1;
                                                 n++;
-                                                v = allocatePieceOperationSlot();
+                                                v = AllocDropPiece();
                                                 slot = v;
                                                 if (v != 0x40) {
                                                     r = (Rec *)((u8 *)D_8013DD00 + slot * 0x14 + 0x25CC);
@@ -19865,7 +19865,7 @@ void func_800BCF78(T_BCF78 *arg0, s16 arg1, s16 arg2, s16 arg3, u32 arg4) {
     s16 base;
 
     if (func_80092A14(arg0, arg1, arg2, arg3) >= arg0->unk4) {
-        func_8008BB24(arg0, arg1, arg2, arg3);
+        PlacePiece(arg0, arg1, arg2, arg3);
         base = arg0->unk0 - 1;
         for (i = 0; i < 3; i++) {
             for (j = 0; j < 3; j++) {
@@ -21922,7 +21922,7 @@ void func_800C2AC4(void) {
     }
     func_800AF09C((s16)(3 - *(s16 *)(D_8013DD00 + 0x23B2)));
     if (*(u8 *)(D_8013DD00 + 0x1680) == 0) {
-        func_800C38F4();
+        Begin_WinAnim();
     }
     func_800AF294();
     D_801309F2 = 0;
@@ -22323,7 +22323,7 @@ extern s16 D_800DFD54;
 extern u8 D_8015FDF6;
 extern void func_80071DD8(s32);
 
-void func_800C38F4(void) {
+void Begin_WinAnim(void) {
     if (*(u8 *)(D_8013DD00 + 0x1680) != 0) {
         func_80029760(D_800F0C64);
         *(s16 *)(D_8013DD00 + 0x23B4) = 1;
@@ -25427,7 +25427,7 @@ extern s16 func_8008A9C4(s16, s16);
 extern void func_80093214(Rec *, s16, s16, s16);
 extern s16 func_8008AB0C(void *, s16, s16);
 extern s16 func_80092A14(void *, s16, s16, s16);
-extern void func_8008BB24(void *, s16, s16, s16);
+extern void PlacePiece(void *, s16, s16, s16);
 extern s32 func_8008CE04(void *, s16, s16, s16);
 extern s16 func_800C84C8(void *, s16, s16, s16, s16, s16, s16, s16, s16);
 extern u8 **func_8007D45C(void *, void *, s32);
@@ -25474,7 +25474,7 @@ s32 func_800CB1E8(void *arg0, s16 arg1, s16 arg2) {
     if (*(s16 *)((u8 *)arg0 + 4) > func_80092A14(arg0, arg1, arg2, v)) {
         return 1;
     }
-    func_8008BB24(arg0, arg1, arg2, v);
+    PlacePiece(arg0, arg1, arg2, v);
     sc = func_800C84C8(arg0, arg1, arg2, v, *(s16 *)(D_8013DD00 + 0x25C2), 0, 0, 0x5595, 1);
     func_8008CE04(arg0, arg1, arg2, v);
     if (sc >= *(s16 *)(D_8013DD00 + 0x25C2)) {
@@ -25696,12 +25696,12 @@ void func_800CBB1C(s16 arg0) {
         if (lv > 0 && func_8008A7A0((s16)(*(s16 *)(D_8013DD00 + 0x324C) + 1), (s16)(*(s16 *)(D_8013DD00 + 0x324E) + 1), lv) != 0) {
             if (arg0 == 1) {
                 func_800CC060((s16)(((*(s16 *)(D_8013DD00 + 0x324C) + 1) << 8)), (s16)(((*(s16 *)(D_8013DD00 + 0x324E) + 1) << 8)), (s16)((lv << 8) - 0x80));
-                func_8008B830(D_8013E478, *(s16 *)(D_8013DD00 + 0x324C), *(s16 *)(D_8013DD00 + 0x324E), lv);
+                PlacePieceAlways(D_8013E478, *(s16 *)(D_8013DD00 + 0x324C), *(s16 *)(D_8013DD00 + 0x324E), lv);
                 func_8008CF50(D_8013E478, *(s16 *)(D_8013DD00 + 0x324C), *(s16 *)(D_8013DD00 + 0x324E), lv, 0x1F, 0);
                 func_8007D45C(D_8010B358, D_800E2828, 0x17);
             }
             if (arg0 == 2) {
-                func_8008B830(D_8013EBE0, *(s16 *)(D_8013DD00 + 0x324C), *(s16 *)(D_8013DD00 + 0x324E), lv);
+                PlacePieceAlways(D_8013EBE0, *(s16 *)(D_8013DD00 + 0x324C), *(s16 *)(D_8013DD00 + 0x324E), lv);
                 func_800BC850((s16)(*(s16 *)(D_8013DD00 + 0x324C) + 1), (s16)(*(s16 *)(D_8013DD00 + 0x324E) + 1), lv, 0);
                 func_8007D45C(D_8010B358, D_800E2828, 0x18);
             }
@@ -26419,7 +26419,7 @@ void func_800CD3B8(u8 *arg0, s32 arg1) {
                     if ((*(s16 *)((u8 *)D_8013DD00 + 0x23B6)) <= 0) {
                         (*(s16 *)((u8 *)D_8013DD00 + 0x23B6)) = 0;
                         (*(s16 *)((u8 *)D_8013DD00 + 0x23B4)) = 0;
-                        func_800AC62C(D_8013DD00);
+                        PlayerWon(D_8013DD00);
                     }
                 } else if (((*(s16 *)((u8 *)D_8013DD00 + 0x24A6)) != 0) && ((*(s16 *)((u8 *)D_8013DD00 + 0x23B6)) < 0x3C)) {
                     (*(s16 *)((u8 *)D_8013DD00 + 0x23B6)) = 0x3C;
@@ -26477,7 +26477,7 @@ void func_800CD3B8(u8 *arg0, s32 arg1) {
                 }
                 if ((*(s16 *)(((u8 *)D_8013DD00) + 0x24B2)) & 3) {
                     if (var_s1 != 0) {
-                        temp_s0 = (u8 *) &((struct { u8 pad[0x25CC]; struct { u8 b[0x14]; } e[1]; } *) D_8013DD00)->e[allocatePieceOperationSlot()];
+                        temp_s0 = (u8 *) &((struct { u8 pad[0x25CC]; struct { u8 b[0x14]; } e[1]; } *) D_8013DD00)->e[AllocDropPiece()];
                         if ((*(s16 *)(((u8 *)D_8013DD00) + 0x3232)) == (*(s16 *)(((u8 *)D_8013DD00) + 0x2374))) {
                             (*(s16 *)(temp_s0 + 0xE)) = func_8008A9C4((s16) ((*(s16 *)(((u8 *)D_8013DD00) + 0x24AC)) + 1), (s16) ((*(s16 *)(((u8 *)D_8013DD00) + 0x24AE)) + 1));
                             if ((*(s16 *)(temp_s0 + 0xE)) != 0) {
@@ -26560,7 +26560,7 @@ block_87:
                         if (temp_v0_10f != 0) {
                             (*(s16 *)(temp_s0 + 0x8)) = (s16) ((*(s16 *)(temp_s0 + 0x8)) - D_80160C64);
                             if (((*(s16 *)(temp_s0 + 0x8)) <= 0) && ((*(s16 *)(temp_s0 + 0x6)) != 0)) {
-                                (*(s16 *)(temp_s0 + 0x8)) = advancePieceOperation(temp_s0);
+                                (*(s16 *)(temp_s0 + 0x8)) = PlacePieceGame(temp_s0);
                             }
                             if (((*(s16 *)(temp_s0 + 0x6)) == 0) && ((*(s16 *)(temp_s0 + 0x8)) <= 0)) {
                                 var_at = var_s1 << 0x10;

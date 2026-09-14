@@ -512,7 +512,7 @@ extern void func_80029760();
 #define GET(off)  (*(s32 *)((u8 *)&D_80103210 + (off)))
 #define GETP(off) (*(u8 **)((u8 *)&D_80103210 + (off)))
 
-void func_80073290(void) {
+void InitPlayScreen(void) {
     s32 i;
     s32 sp48;
     s32 sp44;
@@ -1646,7 +1646,7 @@ extern void func_80078DA0(void *, s32, s32);
 extern void func_80079B80(s32, void *);
 extern void func_8007ADF8(void *);
 extern void func_8007D45C(void *, void *, s32);
-extern void func_8007F720(s32, void *);
+extern void loadsong(s32, void *);
 extern void func_800ADD50(void *);
 extern s32 LWPlayAnimation(void *, s32, void *, void *);
 extern void guRotateRPYF_2(f32 mf[4][4], f32 r, f32 p, f32 h);
@@ -2076,7 +2076,7 @@ void func_80075CD8(s32 arg0) {
                     *(u8 *)(D_80108828 + 0x1581) = 1;
                     *(u8 *)(D_80108828 + 0x1594) = 0;
                     *(s16 *)(D_80108828 + 0x157C) = 0;
-                    func_8007F720(0x140, D_80108828);
+                    loadsong(0x140, D_80108828);
                 } else {
                     TB3B8->unk18 = TB3B8->unk14->unk24;
                     if (TB3B8->unk14->unk28 >= 1.0) {
@@ -2090,7 +2090,7 @@ void func_80075CD8(s32 arg0) {
                         *(u8 *)(D_80108828 + 0x1581) = 1;
                         *(u8 *)(D_80108828 + 0x1594) = 0;
                         *(s16 *)(D_80108828 + 0x157C) = 0;
-                        func_8007F720(0x140, D_80108828);
+                        loadsong(0x140, D_80108828);
                     }
                 }
             } else if (TB3B8->unk1A > 0) {
