@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "batch": "014-transition-gates-and-effects",
+  "baseline_commit": "0a913fadbd81ab20162b852b1ecba7099d751fce",
+  "input_manifest": "analysis/semantic/batch_014_inputs.json",
+  "input_manifest_sha256": "03a9d65e47713adbf1251548818828446bab7e50de19470988d625e87209e424",
+  "files": {
+    "src/game2.c": {
+      "baseline_sha256": "5b24dca695f0c19a29fcb8e86fa2ffbc02ea6b6277ab76fede469d4f5c8d03e1",
+      "renames": {
+        "func_800C2EF4": "updateEndSequenceState",
+        "func_800C3058": "updateAndDrawEndSequenceFade",
+        "func_800C5CFC": "startTornadoEffect",
+        "D_80139E68": "gEndSequenceDelay",
+        "func_800B9134": "hasPauseBlockingPlayerEffects"
+      },
+      "counts": {
+        "D_80139E68": 13,
+        "func_800B9134": 1,
+        "func_800C2EF4": 2,
+        "func_800C3058": 2,
+        "func_800C5CFC": 4
+      }
+    },
+    "src/main.c": {
+      "baseline_sha256": "91de9924bca05ff7f35cbe614ad8ba9132bc357716bbe5b95c9efc5dd0d28e66",
+      "renames": {
+        "func_800B9134": "hasPauseBlockingPlayerEffects"
+      },
+      "counts": {
+        "func_800B9134": 2
+      }
+    }
+  },
+  "decisions": [
+    {
+      "old": "func_800C2EF4",
+      "new": "updateEndSequenceState",
+      "confidence": "high semantic; descriptive name",
+      "evidence": "TRANSITION_GATE_TRACE.md and TRANSITION_NAMES_LANDING.md"
+    },
+    {
+      "old": "func_800C3058",
+      "new": "updateAndDrawEndSequenceFade",
+      "confidence": "high semantic; descriptive name",
+      "evidence": "TRANSITION_GATE_TRACE.md and TRANSITION_NAMES_LANDING.md"
+    },
+    {
+      "old": "func_800C5CFC",
+      "new": "startTornadoEffect",
+      "confidence": "high semantic; descriptive name",
+      "evidence": "TRANSITION_GATE_TRACE.md and TRANSITION_NAMES_LANDING.md"
+    },
+    {
+      "old": "D_80139E68",
+      "new": "gEndSequenceDelay",
+      "confidence": "high semantic; descriptive name",
+      "evidence": "TRANSITION_GATE_TRACE.md and TRANSITION_NAMES_LANDING.md"
+    },
+    {
+      "old": "func_800B9134",
+      "new": "hasPauseBlockingPlayerEffects",
+      "confidence": "high semantic; descriptive name",
+      "evidence": "TRANSITION_GATE_TRACE.md and TRANSITION_NAMES_LANDING.md"
+    }
+  ]
+}

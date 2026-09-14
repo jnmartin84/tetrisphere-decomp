@@ -1,0 +1,19 @@
+{
+  "baseline_commit": "0a913fadbd81ab20162b852b1ecba7099d751fce",
+  "baseline_matchdiff": "FULL MATCH",
+  "candidate_matchdiff": "FULL MATCH",
+  "full_rom_cmp": true,
+  "header_included": true,
+  "rom_bytes": 8388608,
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "identifier_substitutions": 24,
+  "source_files": 2,
+  "linked_addresses": {
+    "hasPauseBlockingPlayerEffects": "0x800B9134",
+    "updateEndSequenceState": "0x800C2EF4",
+    "updateAndDrawEndSequenceFade": "0x800C3058",
+    "startTornadoEffect": "0x800C5CFC",
+    "gEndSequenceDelay": "0x80139E68"
+  },
+  "production_inputs_verified": 995
+}

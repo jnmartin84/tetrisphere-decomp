@@ -694,7 +694,7 @@ void *D_80139E5C;
  * D_8013D170+0xD8..+0xF8 and the ROM shares one $at across four of them. */
 s32 D_80139E60;
 u8  D_80139E64;
-u32 D_80139E68;
+u32 gEndSequenceDelay;
 u32 pad_80139E6C;
 u8  D_80139E70[0x100];
 u8  D_80139F70[0x100];
@@ -13611,7 +13611,7 @@ InputState_ACB94 *arg2;
                 func_8007ADF8(gAnimPlayer);
             }
             arg2->unk1688 = 0x80;
-            D_80139E68 = 0;
+            gEndSequenceDelay = 0;
         }
         arg2->unk2B40 = arg2->unk2B40 + (((arg2->unk2B28 << 8) - arg2->unk2B40 + 0x80) / 16);
         arg2->unk2B44 = arg2->unk2B44 + (((arg2->unk2B2C << 8) - arg2->unk2B44 + 0x80) / 16);
@@ -18584,7 +18584,7 @@ extern u8 D_8014D266;
 #define P1 ((UnkB9134 *)D_80110220)
 #define P2 ((UnkB9134 *)D_80113488)
 
-s32 func_800B9134(void) {
+s32 hasPauseBlockingPlayerEffects(void) {
     if ((D_8015D980 == 1) && (D_8014D266 != 0)) {
         return 1;
     }
@@ -22025,7 +22025,7 @@ void func_800C2E34(void) {
         *(s16 *)(D_8013DD00 + 0x23DA) = 0;
         *(s16 *)(D_8013DD00 + 0x23D6) = 1;
         D_801309E8 = 0;
-        D_80139E68 = 0;
+        gEndSequenceDelay = 0;
         D_80139E64 = 2;
         startEndSequenceAnimation(*(s32 *)(D_801033B8 + 0x84), *(s32 *)(D_801033B8 + 0x88));
     }
@@ -22042,17 +22042,17 @@ extern u8 D_80130A26;
  * The "+=" with D_80160C64 first is load-bearing: x = x + a * b mirrors the whole tree
  * (product-vs-non-product loses to source order at the top-level +), and with both multu
  * operands non-products their source order fixes the multu order too. */
-void func_800C2EF4(void) {
+void updateEndSequenceState(void) {
     if (*(u8 *)(D_8013DD00 + 0x1680) != 0) {
         func_800ADC44((u8 *)D_80110220);
         func_800ADC44((u8 *)D_80113488);
         if (*(u8 *)(D_8013DD00 + 0x1680) == 5) {
             func_800C2E34();
         } else {
-            if (D_80160C64 < D_80139E68) {
-                D_80139E68 = D_80139E68 - D_80160C64;
+            if (D_80160C64 < gEndSequenceDelay) {
+                gEndSequenceDelay = gEndSequenceDelay - D_80160C64;
             } else {
-                D_80139E68 = 0;
+                gEndSequenceDelay = 0;
                 if (D_80130A26 != 0) {
                     *(s32 *)(D_8013DD00 + 0x1684) += D_80160C64 * *(u8 *)(D_8013DD00 + 0x1688);
                     if (*(u8 *)(D_8013DD00 + 0x1680) == 2) {
@@ -22102,7 +22102,7 @@ extern u8 D_10000D8[];
 extern u8 D_800E0770[];
 extern void func_800AF09C(s16);
 extern void func_800AF294(void);
-void func_800C3058(void) {
+void updateAndDrawEndSequenceFade(void) {
     s16 i;
     s16 a;
 
@@ -22206,7 +22206,7 @@ void func_800C3374(void) {
     }
     D_80130A26 = 1;
     func_8007D45C(D_8010B358, D_800E2828, 0x19);
-    D_80139E68 = 0;
+    gEndSequenceDelay = 0;
     D_801309E8 = 0;
     func_800ADBC0(D_8013DD00);
     *(u8 *)(D_8013DD00 + 0x1680) = 1;
@@ -22243,7 +22243,7 @@ void func_800C3698(void) {
     *(s16*)(D_8013DD00 + 0x23DA) = 0;
     *(s16*)(D_8013DD00 + 0x23D6) = 1;
     D_801309E8 = 0;
-    D_80139E68 = 0;
+    gEndSequenceDelay = 0;
     D_80130A26 = 1;
 }
 
@@ -22279,7 +22279,7 @@ void func_800C37A4(void) {
     *(s16 *)(D_8013DD00 + 0x23DA) = 0;
     *(s16 *)(D_8013DD00 + 0x23D6) = 1;
     D_801309E8 = 0;
-    D_80139E68 = 0;
+    gEndSequenceDelay = 0;
     *(s16 *)(D_8013DD00 + 0x3244) = 0;
 }
 
@@ -22298,7 +22298,7 @@ void func_800C384C(void) {
     startEndSequenceAnimation(*(s32 *)(D_801033B8 + 0x84), *(s32 *)(D_801033B8 + 0x88));
     D_80139E64 = 2;
     D_801309E8 = 0;
-    D_80139E68 = 0;
+    gEndSequenceDelay = 0;
 }
 
 /* func_800C38F4  ROM 0x9ECA4  size 0x1E4  121 insns  STATUS: FULL MATCH
@@ -22393,8 +22393,8 @@ void startEndSequenceAnimation(s32 arg0, s32 arg1) {
     D_800F22C0 = D_8013E474 = D_8013E474 + sp24;
     func_80029760(D_800F0D3C, gEndSequenceAnimation);
     D_80130A26 = 0;
-    D_80139E68 = 0x96;
-    if (D_800E44A8 == 1) D_80139E68 = 0xDC;
+    gEndSequenceDelay = 0x96;
+    if (D_800E44A8 == 1) gEndSequenceDelay = 0xDC;
 }
 
 /* func_800C3C10  ROM 0x9EFC0  STATUS: CLEAN (ido5.3 -O2 -g0 -mips1; 0x9C-byte fn)
@@ -23234,7 +23234,7 @@ extern u8 D_800E90B0[];
 extern u8 D_800E90B4[];
 extern s32 D_801033F8[];
 
-void func_800C5CFC(s16 arg0) {
+void startTornadoEffect(s16 arg0) {
     Sub *p3;
     Sub *p0;
     Sub *p2;
@@ -23717,7 +23717,7 @@ void func_800C6BE0(void) {
 
 
 /* func_800C719C  ROM 0xA254C  status: pending */
-extern void func_800C5CFC(s16);
+extern void startTornadoEffect(s16);
 extern void func_800C6BE0(void);
 
 void func_800C719C(void) {
@@ -23734,10 +23734,10 @@ void func_800C719C(void) {
     switch (*(u8 *)(D_8013DD00 + 0x702)) {
     case 0: func_800C6B74(2); break;
     case 1: func_800C6BE0(); break;
-    case 2: func_800C5CFC(1); break;
+    case 2: startTornadoEffect(1); break;
     case 3: func_800C51F0(); break;
     case 4: func_800C6B74(3); break;
-    case 5: func_800C5CFC(3); break;
+    case 5: startTornadoEffect(3); break;
     }
     *(s8 *)(D_8013DD00 + 0x702) = -1;
 }
@@ -26934,7 +26934,7 @@ block_220:
             func_800B4394();
             D_8013DCF8 += D_800E44F0 * 0x10;
             if ((*(u8 *)((u8 *)D_8013DD00 + 0x1680)) != 0) {
-                func_800C2EF4();
+                updateEndSequenceState();
             }
             if (D_8013FAF0 != 0) {
                 D_8015F848 = (Vtx *) D_8013DCF8;
@@ -27183,7 +27183,7 @@ block_289:;
         D_8013DCF8 += D_800E44F0 * 0x10;
     }
     D_8015F848 = (Vtx *) D_8013DCF8;
-    func_800C3058();
+    updateAndDrawEndSequenceFade();
     D_8013DCF8 += D_800E44F0 * 0x10;
     D_800E4490 = osGetTime();
     D_800E447C += (D_800E4490 - D_800E4488) / 10000;

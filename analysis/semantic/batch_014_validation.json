@@ -1,0 +1,166 @@
+{
+  "status": "IDENTIFIER_ONLY_VERIFIED",
+  "baseline_commit": "0a913fadbd81ab20162b852b1ecba7099d751fce",
+  "ledger_sha256": "1f8d12844e7e9a3e5290cbe707333b2f11cf6f93c9f4faac250e35ab8fa57cec",
+  "files": {
+    "src/game2.c": {
+      "before_sha256": "5b24dca695f0c19a29fcb8e86fa2ffbc02ea6b6277ab76fede469d4f5c8d03e1",
+      "after_sha256": "ebedc9fcb478c75977c40118d432aea5859a35419aa264852bf766b034499e22",
+      "substitutions": [
+        {
+          "old": "D_80139E68",
+          "new": "gEndSequenceDelay",
+          "offset": 22803,
+          "line": 697
+        },
+        {
+          "old": "D_80139E68",
+          "new": "gEndSequenceDelay",
+          "offset": 526883,
+          "line": 13614
+        },
+        {
+          "old": "func_800B9134",
+          "new": "hasPauseBlockingPlayerEffects",
+          "offset": 703133,
+          "line": 18587
+        },
+        {
+          "old": "D_80139E68",
+          "new": "gEndSequenceDelay",
+          "offset": 834877,
+          "line": 22028
+        },
+        {
+          "old": "func_800C2EF4",
+          "new": "updateEndSequenceState",
+          "offset": 835774,
+          "line": 22045
+        },
+        {
+          "old": "D_80139E68",
+          "new": "gEndSequenceDelay",
+          "offset": 836047,
+          "line": 22052
+        },
+        {
+          "old": "D_80139E68",
+          "new": "gEndSequenceDelay",
+          "offset": 836077,
+          "line": 22053
+        },
+        {
+          "old": "D_80139E68",
+          "new": "gEndSequenceDelay",
+          "offset": 836090,
+          "line": 22053
+        },
+        {
+          "old": "D_80139E68",
+          "new": "gEndSequenceDelay",
+          "offset": 836152,
+          "line": 22055
+        },
+        {
+          "old": "func_800C3058",
+          "new": "updateAndDrawEndSequenceFade",
+          "offset": 838333,
+          "line": 22105
+        },
+        {
+          "old": "D_80139E68",
+          "new": "gEndSequenceDelay",
+          "offset": 842995,
+          "line": 22209
+        },
+        {
+          "old": "D_80139E68",
+          "new": "gEndSequenceDelay",
+          "offset": 844267,
+          "line": 22246
+        },
+        {
+          "old": "D_80139E68",
+          "new": "gEndSequenceDelay",
+          "offset": 845599,
+          "line": 22282
+        },
+        {
+          "old": "D_80139E68",
+          "new": "gEndSequenceDelay",
+          "offset": 846205,
+          "line": 22301
+        },
+        {
+          "old": "D_80139E68",
+          "new": "gEndSequenceDelay",
+          "offset": 849683,
+          "line": 22396
+        },
+        {
+          "old": "D_80139E68",
+          "new": "gEndSequenceDelay",
+          "offset": 849727,
+          "line": 22397
+        },
+        {
+          "old": "func_800C5CFC",
+          "new": "startTornadoEffect",
+          "offset": 878751,
+          "line": 23237
+        },
+        {
+          "old": "func_800C5CFC",
+          "new": "startTornadoEffect",
+          "offset": 894046,
+          "line": 23720
+        },
+        {
+          "old": "func_800C5CFC",
+          "new": "startTornadoEffect",
+          "offset": 894597,
+          "line": 23737
+        },
+        {
+          "old": "func_800C5CFC",
+          "new": "startTornadoEffect",
+          "offset": 894707,
+          "line": 23740
+        },
+        {
+          "old": "func_800C2EF4",
+          "new": "updateEndSequenceState",
+          "offset": 1021857,
+          "line": 26937
+        },
+        {
+          "old": "func_800C3058",
+          "new": "updateAndDrawEndSequenceFade",
+          "offset": 1033146,
+          "line": 27186
+        }
+      ]
+    },
+    "src/main.c": {
+      "before_sha256": "91de9924bca05ff7f35cbe614ad8ba9132bc357716bbe5b95c9efc5dd0d28e66",
+      "after_sha256": "d4eaeb85ae3534d8183e2c4492b01953366871661e1940e7ca384430856a7646",
+      "substitutions": [
+        {
+          "old": "func_800B9134",
+          "new": "hasPauseBlockingPlayerEffects",
+          "offset": 427704,
+          "line": 12173
+        },
+        {
+          "old": "func_800B9134",
+          "new": "hasPauseBlockingPlayerEffects",
+          "offset": 430360,
+          "line": 12258
+        }
+      ]
+    }
+  },
+  "inverse_restores_original_bytes": true,
+  "production_inputs_verified": true,
+  "rom_verified_by_this_tool": false
+}

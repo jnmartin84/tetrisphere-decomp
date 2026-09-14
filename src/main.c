@@ -12170,7 +12170,7 @@ void func_8006DF3C(u16 arg0, u16 arg1) {
 
 extern u16 func_800ACB94(u16, u16, void *);
 extern void func_800ADCF0(void *);
-extern s32 func_800B9134(void);
+extern s32 hasPauseBlockingPlayerEffects(void);
 
 extern u8 D_800E44FC;
 extern s16 D_80102664;
@@ -12255,7 +12255,7 @@ void func_8006E418(u16 arg0, u16 arg1, u16 arg2) {
                     }
                     goto block_47;
                 }
-                if (func_800B9134() == 0) {
+                if (hasPauseBlockingPlayerEffects() == 0) {
                     D_8013FAD0 = 1;
                     D_800DFE00 = arg2;
                     if (arg2 == D_80113320) {
