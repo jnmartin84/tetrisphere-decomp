@@ -1,0 +1,8 @@
+{
+  "baseline_head": "fe841555e731ea75ef5f14aa0547b6756a981bf9",
+  "baseline_elf_sha256": "0fd5cf8e45169ec77ca3eb3ec4b1807f692678c0d5343ee3e5275a9fc3135aba",
+  "boot_text_sha256": "3a67656cd049bc3536b3d29ea1142fbf1f2e72c00ee855a436a5be0431d97615",
+  "boot_source_sha256": "58743e9f4ed458f51b041d2f06105319b36c9e3bf762410e7b4346c778705a9a",
+  "game_bss_source_sha256": "473791913b7607ecbc42e7b9a7ecd7052ecb91f8ef775b3b098095c677a9fc3e",
+  "migrated_assembly": "dlabel D_800F2050\n    /* 800F2050 */ .space 0x200\n\ndlabel D_800F2250\n    /* 800F2250 */ .space 0x40\n\n"
+}

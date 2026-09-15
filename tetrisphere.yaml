@@ -287,7 +287,9 @@ segments:
       - { start: 0xCC890, type: .rodata, name: libultra/audio/reverb, linker_section_order: .data }
       - { start: 0xCC8C0, type: .rodata, name: libultra/libc/xldtob, linker_section_order: .data }
       - [0xCC920, data]
-      - { type: bss, vram: 0x800F2040, name: game_bss }
+      - { type: bss, vram: 0x800F2040, name: game_bss_prefix }
+      - { type: .bss, vram: 0x800F2050, name: boot }
+      - { type: bss, vram: 0x800F2290, name: game_bss }
       - { type: .bss, vram: 0x80127CF0, name: game2 }
       - { type: bss, vram: 0x8013FAB0, name: game_bss_b }
       - { type: .bss, vram: 0x80161580, name: libultra/io/vimgr }

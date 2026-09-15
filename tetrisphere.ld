@@ -573,7 +573,6 @@ SECTIONS
         build/src/code_1050.o(.bss);
         build/src/n_audio/env.o(.bss);
         build/src/sched.o(.bss);
-        build/src/boot.o(.bss);
         build/src/controller.o(.bss);
         build/src/code_62D0.o(.bss);
         build/src/code_8170.o(.bss);
@@ -589,6 +588,8 @@ SECTIONS
         build/src/audio.o(.bss);
         build/src/code_5B5D0.o(.bss);
         build/src/rand.o(.bss);
+        build/asm/data/game_bss_prefix.bss.o(.bss);
+        build/src/boot.o(.bss);
         build/asm/data/game_bss.bss.o(.bss);
         build/src/game2.o(.bss);
         build/src/code_AB540.o(.bss);

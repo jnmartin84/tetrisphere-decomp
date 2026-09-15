@@ -76,8 +76,8 @@ void func_80029760(const char *fmt, ...) {
 }
 
 #include <ultra64.h>
-extern u8 D_800F2050[];
-extern u8 D_800F2250[];
+u8 D_800F2050[0x200];
+u8 D_800F2250[0x40];
 extern s32 D_800DF754;
 extern void *D_800F204C;
 extern s16 D_800F2048;
