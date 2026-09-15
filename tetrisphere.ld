@@ -588,7 +588,7 @@ SECTIONS
         build/src/audio.o(.bss);
         build/src/code_5B5D0.o(.bss);
         build/src/rand.o(.bss);
-        build/asm/data/game_bss_prefix.bss.o(.bss);
+        build/src/boot_state.o(.bss);
         build/src/boot.o(.bss);
         build/asm/data/game_bss.bss.o(.bss);
         build/src/game2.o(.bss);

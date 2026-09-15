@@ -77,7 +77,7 @@ def main():
     for addr, size, owner in expected["contributions"]:
         if owner == "build/asm/data/game_bss.bss.o":
             contributions.extend([
-                [addr, 0x10, "build/asm/data/game_bss_prefix.bss.o"],
+                [addr, 0x10, "build/src/boot_state.o"],
                 [addr + 0x10, 0x240, "build/src/boot.o"],
                 [addr + 0x250, size - 0x250, owner],
             ])

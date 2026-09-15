@@ -43,14 +43,15 @@ def main():
         assert boot.count(definition) == 1
         boot = boot.replace(definition, f"extern u8 {name}[];".encode())
     assert hashlib.sha256(boot).hexdigest() == baseline["boot_source_sha256"]
-    prefix = (ROOT / "asm/data/game_bss_prefix.bss.s").read_bytes()
+    assert not (ROOT / "asm/data/game_bss_prefix.bss.s").exists()
+    prefix = baseline["migrated_prefix_assembly"].encode()
     tail = (ROOT / "asm/data/game_bss.bss.s").read_bytes()
     header = prefix[:prefix.index(b"dlabel ")]
     assert tail.startswith(header)
     restored = prefix + b"\n" + baseline["migrated_assembly"].encode() + tail[len(header):]
     assert hashlib.sha256(restored).hexdigest() == baseline["game_bss_source_sha256"]
     yaml = (ROOT / "tetrisphere.yaml").read_text()
-    for entry in ["{ type: bss, vram: 0x800F2040, name: game_bss_prefix }",
+    for entry in ["{ type: .bss, vram: 0x800F2040, name: boot_state }",
                   "{ type: .bss, vram: 0x800F2050, name: boot }",
                   "{ type: bss, vram: 0x800F2290, name: game_bss }"]:
         assert entry in yaml
