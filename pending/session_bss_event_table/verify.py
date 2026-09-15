@@ -79,7 +79,9 @@ def main():
             contributions.extend([
                 [addr, 0x10, "build/src/boot_state.o"],
                 [addr + 0x10, 0x240, "build/src/boot.o"],
-                [addr + 0x250, size - 0x250, owner],
+                [addr + 0x250, 0x85B8, "build/asm/data/game_bss_before_pi.bss.o"],
+                [addr + 0x8808, 0x370, "build/src/pi_state.o"],
+                [addr + 0x8B78, size - 0x8B78, owner],
             ])
         elif owner == "build/asm/data/os_bss_c.bss.o":
             contributions.extend([

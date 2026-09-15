@@ -289,7 +289,9 @@ segments:
       - [0xCC920, data]
       - { type: .bss, vram: 0x800F2040, name: boot_state }
       - { type: .bss, vram: 0x800F2050, name: boot }
-      - { type: bss, vram: 0x800F2290, name: game_bss }
+      - { type: bss, vram: 0x800F2290, name: game_bss_before_pi }
+      - { type: .bss, vram: 0x800FA848, name: pi_state }
+      - { type: bss, vram: 0x800FABB8, name: game_bss }
       - { type: .bss, vram: 0x80127CF0, name: game2 }
       - { type: bss, vram: 0x8013FAB0, name: game_bss_b }
       - { type: .bss, vram: 0x80161580, name: libultra/io/vimgr }

@@ -215,6 +215,10 @@ $(BUILD_DIR)/%.o: %.c
 CARVE_NEIGHBORS := $(BUILD_DIR)/asm/data/C6370.data.o $(BUILD_DIR)/asm/data/C7340.data.o $(BUILD_DIR)/asm/data/C9230.data.o $(BUILD_DIR)/asm/data/CC244.data.o $(BUILD_DIR)/asm/data/CC3A4.data.o $(BUILD_DIR)/asm/data/CC3A8.data.o $(BUILD_DIR)/asm/data/C9AFC.data.o $(BUILD_DIR)/asm/data/B8880.data.o $(BUILD_DIR)/asm/data/BAAB0.data.o $(BUILD_DIR)/asm/data/C9450.data.o
 $(CARVE_NEIGHBORS): ASFLAGS += -no-pad-sections
 
+# These raw BSS fragments meet C storage at eight-byte-offset boundaries.
+# Preserve their exact lengths instead of rounding their tails to 16 bytes.
+$(BUILD_DIR)/asm/data/game_bss_before_pi.bss.o $(BUILD_DIR)/asm/data/game_bss.bss.o: ASFLAGS += -no-pad-sections
+
 # n_audio/sl (asm tail of sl.c before the synthesizer C object) must keep its exact
 # 0xC8 .text size (no 16-byte pad) so synthesizer.o tiles at 0xAB958
 SL_NOPAD := $(BUILD_DIR)/asm/n_audio/sl.o

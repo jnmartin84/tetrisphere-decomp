@@ -590,6 +590,8 @@ SECTIONS
         build/src/rand.o(.bss);
         build/src/boot_state.o(.bss);
         build/src/boot.o(.bss);
+        build/asm/data/game_bss_before_pi.bss.o(.bss);
+        build/src/pi_state.o(.bss);
         build/asm/data/game_bss.bss.o(.bss);
         build/src/game2.o(.bss);
         build/src/code_AB540.o(.bss);

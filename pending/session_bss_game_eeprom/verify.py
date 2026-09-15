@@ -45,15 +45,18 @@ def main():
     assert hashlib.sha256(boot).hexdigest() == baseline["boot_source_sha256"]
     assert not (ROOT / "asm/data/game_bss_prefix.bss.s").exists()
     prefix = baseline["migrated_prefix_assembly"].encode()
-    tail = (ROOT / "asm/data/game_bss.bss.s").read_bytes()
+    tail = (ROOT / "asm/data/game_bss_before_pi.bss.s").read_bytes()
     header = prefix[:prefix.index(b"dlabel ")]
     assert tail.startswith(header)
+    after_pi = (ROOT / "asm/data/game_bss.bss.s").read_bytes()
+    assert after_pi.startswith(header)
+    tail = tail + b"\n" + baseline["migrated_pi_assembly"].encode() + after_pi[len(header):]
     restored = prefix + b"\n" + baseline["migrated_assembly"].encode() + tail[len(header):]
     assert hashlib.sha256(restored).hexdigest() == baseline["game_bss_source_sha256"]
     yaml = (ROOT / "tetrisphere.yaml").read_text()
     for entry in ["{ type: .bss, vram: 0x800F2040, name: boot_state }",
                   "{ type: .bss, vram: 0x800F2050, name: boot }",
-                  "{ type: bss, vram: 0x800F2290, name: game_bss }"]:
+                  "{ type: bss, vram: 0x800F2290, name: game_bss_before_pi }"]:
         assert entry in yaml
     print("C OWNERSHIP: 512-byte EEPROM mirror + 64-byte dirty flags at 0x800F2050.")
     print("boot.o text and all surrounding source/storage preserved; no added BSS symbols.")
