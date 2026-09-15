@@ -793,7 +793,7 @@ dlabel D_8015FB46
 dlabel D_8015FB48
     /* 8015FB48 */ .space 0x2A0
 
-dlabel D_8015FDE8
+dlabel gQueuedVersusAttackPower
     /* 8015FDE8 */ .space 0x04
 
 dlabel D_8015FDEC
@@ -829,13 +829,13 @@ dlabel D_8015FDFE
 dlabel D_8015FE00
     /* 8015FE00 */ .space 0x04
 
-dlabel D_8015FE04
+dlabel gPendingVersusAttackPower
     /* 8015FE04 */ .space 0x04
 
 dlabel D_8015FE08
     /* 8015FE08 */ .space 0x02
 
-dlabel D_8015FE0A
+dlabel gPendingVersusAttackPlayer
     /* 8015FE0A */ .space 0x02
 
 dlabel D_8015FE0C

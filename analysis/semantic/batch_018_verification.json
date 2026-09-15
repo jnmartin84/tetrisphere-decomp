@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "b53c494762644fb7fc10c7588b36585b6c584334",
+  "baseline_matchdiff": "FULL MATCH",
+  "candidate_matchdiff": "FULL MATCH",
+  "full_rom_cmp": true,
+  "header_included": true,
+  "rom_bytes": 8388608,
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "identifier_substitutions": 60,
+  "production_files": 2,
+  "production_inputs_verified": 995,
+  "linked_addresses": {
+    "queueVersusAttackPower": "0x800CA554",
+    "updateVersusAttackBalance": "0x800C96C0",
+    "rebuildVersusAttackIndicators": "0x800C93D4",
+    "startPendingVersusAttack": "0x800CA584",
+    "applyVersusAttackSlot": "0x800CA710",
+    "gQueuedVersusAttackPower": "0x8015FDE8",
+    "gPendingVersusAttackPower": "0x8015FE04",
+    "gPendingVersusAttackPlayer": "0x8015FE0A"
+  }
+}

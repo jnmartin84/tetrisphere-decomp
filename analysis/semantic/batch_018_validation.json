@@ -1,0 +1,19 @@
+{
+  "status": "SCOPED_IDENTIFIER_ONLY_VERIFIED",
+  "baseline_commit": "b53c494762644fb7fc10c7588b36585b6c584334",
+  "ledger_sha256": "dd59f72fac5a3f7122325fc790e39c06a60b8bdfefa74388444a70404ebd7af4",
+  "substitutions": 60,
+  "inverse_restores_original_bytes": true,
+  "production_inputs_verified": true,
+  "rom_verified_by_this_tool": false,
+  "files": {
+    "asm/data/game_bss_b.bss.s": {
+      "before_sha256": "a7e1391b6be1abf9d3e51177bd2b140e26519faff71eedc9871b88af5905c865",
+      "after_sha256": "6c42dca0ec1c299554a53520960262b42cbc7901b0365d82b76b3c54df21d3eb"
+    },
+    "src/game2.c": {
+      "before_sha256": "eb916c77f6b4cb78f1fbd2fdfac406866b18469fc71f413c5634430efc77f268",
+      "after_sha256": "41291e8b128508e8f5c8a6e5d10120f19992b13fcd60d4322750db40180020be"
+    }
+  }
+}

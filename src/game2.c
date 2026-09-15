@@ -6276,7 +6276,7 @@ void func_800C7FC4(void);
 s16  func_800C84C8(void *, s16, s16, s16, s16, s16, s16, s16, s16);
 s32  func_800C897C(void *, s16, s16, s16);
 s32  func_800C8A8C();
-void func_800CA554(u8, u8);
+void queueVersusAttackPower(u8, u8);
 
 /* accessors */
 #define A16(o)  (*(s16 *)((u8 *)arg0 + (o)))
@@ -6393,14 +6393,14 @@ void *arg0;
             if (G16(0x7C4) != 0) {
                 if (G16(0x2AE0) >= 4) {
                     if (G16(0x2AE0) == 4) {
-                        func_800CA554(G8(0x23B3), (u8)(G16(0x2AE8) + G16(0x2AE6)));
+                        queueVersusAttackPower(G8(0x23B3), (u8)(G16(0x2AE8) + G16(0x2AE6)));
                     }
-                    func_800CA554(G8(0x23B3), f2);
+                    queueVersusAttackPower(G8(0x23B3), f2);
                     if (sp62 & 0x40) {
-                        func_800CA554(G8(0x23B3), f2);
+                        queueVersusAttackPower(G8(0x23B3), f2);
                     }
                     if (sp62 & 0x20) {
-                        func_800CA554(G8(0x23B3), f2);
+                        queueVersusAttackPower(G8(0x23B3), f2);
                         G16(0x2AE0) = G16(0x2AE0) - 1;
                     }
                 }
@@ -6529,7 +6529,7 @@ void *arg0;
         if (sp64 >= 2) {
             if (sp6C[2] <= func_80092A14(sp6C, sp68, sp66, (s16)(sp64 - 1))) {
                 if (G16(0x7C4) != 0) {
-                    func_800CA554(G8(0x23B3), (u8)(G16(0x2AE8) + G16(0x2AE6)));
+                    queueVersusAttackPower(G8(0x23B3), (u8)(G16(0x2AE8) + G16(0x2AE6)));
                 }
                 A16(0xA) = A16(0xA) + 0x10;
                 A16(0xC) = A16(0xC) + 0x10;
@@ -24105,7 +24105,7 @@ void func_800C7E5C(Rec *arg0) {
 
 #include <PR/ultratypes.h>
 extern void func_80075C60(s16);
-extern void func_800CA554(u8, u8);
+extern void queueVersusAttackPower(u8, u8);
 void func_800C7FC4(void) {
     func_800C7B4C(0);
     *(s16 *)(D_8013DD00 + 0x2AE6) = *(s16 *)(D_8013DD00 + 0x2AE6) + 1;
@@ -24113,7 +24113,7 @@ void func_800C7FC4(void) {
     *(s16 *)(D_8013DD00 + 0x3258) = 1;
     func_80075C60(*(s16 *)(D_8013DD00 + 0x23B2) - 1);
     func_800941B8(3);
-    func_800CA554(*(u8 *)(D_8013DD00 + 0x23B3),
+    queueVersusAttackPower(*(u8 *)(D_8013DD00 + 0x23B3),
                   *(s16 *)(D_8013DD00 + 0x2AE8) + *(s16 *)(D_8013DD00 + 0x2AE6));
     if (*(s16 *)(D_8013DD00 + 0x2AE6) >= 9) {
         *(s16 *)(D_8013DD00 + 0x2AE6) = 9;
@@ -24529,9 +24529,9 @@ extern u16 D_8015F9F8;
 extern u16 D_8015FDFE;
 extern u16 D_8015FDF0;
 extern u16 D_8015FDF8;
-extern u16 D_8015FDE8[];
-extern s32 D_8015FE04;
-extern u8 D_8015FE0A;
+extern u16 gQueuedVersusAttackPower[];
+extern s32 gPendingVersusAttackPower;
+extern u8 gPendingVersusAttackPlayer;
 extern E_CA404 D_8015FA10[];
 extern void func_800CAB24(void);
 
@@ -24546,8 +24546,8 @@ extern void func_800CAB24(void);
 void func_800C92C0(void) {
     u8 i;
 
-    D_8015FE04 = 0;
-    D_8015FE0A = 1;
+    gPendingVersusAttackPower = 0;
+    gPendingVersusAttackPlayer = 1;
     guPerspective(&D_8015F978, &D_8015F9F8, 60.0f, 1.3333334f, 10.0f, 4096.0f, 1.0f);
     guLookAt(&D_8015F9B8, 0.0f, 0.0f, -256.0f, 0.0f, 0.0f, 0.0f, 0.0f, -256.0f, 0.0f);
     D_8013DD00[0x1A3] = 0;
@@ -24558,8 +24558,8 @@ void func_800C92C0(void) {
     D_8015FDF0 = 0;
     D_8015FDF8 = 0;
     D_8015FDFE = 0;
-    D_8015FDE8[0] = 0;
-    D_8015FDE8[1] = 0;
+    gQueuedVersusAttackPower[0] = 0;
+    gQueuedVersusAttackPower[1] = 0;
 }
 
 /* func_800C93D4  ROM 0xA4784  size 0x2EC  187 insns  STATUS: FULL MATCH
@@ -24594,7 +24594,7 @@ extern s16 D_800E92B4[];
 extern s16 D_800E92C2;
 extern s16 D_8015FB44;
 
-void func_800C93D4(void) {
+void rebuildVersusAttackIndicators(void) {
     E_CA404 *p;
     s32 i;
     s32 rem;
@@ -24608,7 +24608,7 @@ void func_800C93D4(void) {
         p[-1].unk4 = 0;
     }
     D_8015FB44 = 0x41;
-    rem = D_8015FE04;
+    rem = gPendingVersusAttackPower;
     p = D_8015FA10;
     digit = 0;
     for (i = 3, off = 6, divp = &D_800E92C2; i >= 0; i--, off -= 2) {
@@ -24628,16 +24628,16 @@ void func_800C93D4(void) {
             p->unk5 = i;
             p->unk4 = 1;
             p++;
-            p[-1].unk0 = D_8015FE0A;
+            p[-1].unk0 = gPendingVersusAttackPlayer;
         }
     }
 }
 
 extern u8 D_800F0DD4[];
 extern void func_80029760();
-extern void func_800C93D4();
+extern void rebuildVersusAttackIndicators();
 
-void func_800C96C0(arg0, arg1)
+void updateVersusAttackBalance(arg0, arg1)
 u8 arg0;
 u16 arg1;
 {
@@ -24647,16 +24647,16 @@ u16 arg1;
     if ((u32)arg1 == 0) {
         return;
     }
-    if (arg0 == D_8015FE0A) {
-        D_8015FE04 += arg1;
-    } else if (D_8015FE04 < arg1) {
-        D_8015FE04 = arg1 - D_8015FE04;
-        D_8015FE0A = arg0;
+    if (arg0 == gPendingVersusAttackPlayer) {
+        gPendingVersusAttackPower += arg1;
+    } else if (gPendingVersusAttackPower < arg1) {
+        gPendingVersusAttackPower = arg1 - gPendingVersusAttackPower;
+        gPendingVersusAttackPlayer = arg0;
     } else {
-        D_8015FE04 -= arg1;
+        gPendingVersusAttackPower -= arg1;
     }
-    if (arg0 == D_8015FE0A) {
-        n = D_8015FE04 - 1;
+    if (arg0 == gPendingVersusAttackPlayer) {
+        n = gPendingVersusAttackPower - 1;
     } else {
         n = arg1 - 1;
     }
@@ -24665,21 +24665,21 @@ u16 arg1;
     }
     if (n < 0) {
     }
-    if (D_8015FE04 > 0x168) {
-        D_8015FE04 = 0x168;
+    if (gPendingVersusAttackPower > 0x168) {
+        gPendingVersusAttackPower = 0x168;
     }
-    while (D_8015FE04 < 0) {
+    while (gPendingVersusAttackPower < 0) {
         func_80029760(D_800F0DD4);
-        D_8015FE04 = 0;
-        D_8015FE0A = 1;
+        gPendingVersusAttackPower = 0;
+        gPendingVersusAttackPlayer = 1;
     }
-    func_800C93D4();
-    if (arg0 == D_8015FE0A) {
-        if (D_8015FE04 >= 0x48) {
+    rebuildVersusAttackIndicators();
+    if (arg0 == gPendingVersusAttackPlayer) {
+        if (gPendingVersusAttackPower >= 0x48) {
             func_8007D45C(D_8010B358, D_800E2828, 0x3A);
-        } else if (D_8015FE04 >= 0x18) {
+        } else if (gPendingVersusAttackPower >= 0x18) {
             func_8007D45C(D_8010B358, D_800E2828, 0x39);
-        } else if (D_8015FE04 >= 8) {
+        } else if (gPendingVersusAttackPower >= 8) {
             func_8007D45C(D_8010B358, D_800E2828, 0x38);
         } else {
             func_8007D45C(D_8010B358, D_800E2828, 0x37);
@@ -24838,7 +24838,7 @@ void func_800C9B2C(E_CA404 *p) {
         p->unk10 += 0x30;
     }
 
-    if (D_8015FE0A == 1) {
+    if (gPendingVersusAttackPlayer == 1) {
         D_8015F848[0].v.ob[0] = x - 0x10;
         D_8015F848[0].v.ob[1] = y - 0xB;
         D_8015F848[0].v.ob[2] = 0;
@@ -25014,7 +25014,7 @@ void func_800CA148(void) {
     }
 }
 
-extern void func_800CA710(E_CA404*);
+extern void applyVersusAttackSlot(E_CA404*);
 void func_800CA404(void) {
     s16 i;
     E_CA404 *p;
@@ -25028,7 +25028,7 @@ void func_800CA404(void) {
                     if (D_80160C64 < p->unk6) {
                         p->unk6 = p->unk6 - D_80160C64;
                     } else {
-                        func_800CA710(p);
+                        applyVersusAttackSlot(p);
                     }
                 }
                 p++;
@@ -25064,8 +25064,8 @@ void func_800CA404(void) {
  * which turn the conversions into ordinary expression temps evaluated
  * depth-first inside the subscript (i->t8, base->t0, i*2->t9).
  */
-void func_800CA554(u8 a0, u8 a1) {
-    D_8015FDE8[a0 - 1] += a1;
+void queueVersusAttackPower(u8 a0, u8 a1) {
+    gQueuedVersusAttackPower[a0 - 1] += a1;
 }
 
 /* func_800CA584  ROM 0xA5934  size 0x18C  STATUS: ultracheck 0 real diffs (1 past-end)
@@ -25078,7 +25078,7 @@ void func_800CA554(u8 a0, u8 a1) {
  * NAMED base pointer keeps ROM's preheader emission order. */
 extern void func_8006EAAC(s32);
 
-void func_800CA584(void)
+void startPendingVersusAttack(void)
 {
   E_CA404 *p;
   s32 time;
@@ -25089,11 +25089,11 @@ void func_800CA584(void)
   {
     return;
   }
-  if (D_8015FE04 == 0)
+  if (gPendingVersusAttackPower == 0)
   {
     return;
   }
-  if (D_8015FE0A != (*((s16 *) (D_8013DD00 + 0x23B2))))
+  if (gPendingVersusAttackPlayer != (*((s16 *) (D_8013DD00 + 0x23B2))))
   {
     return;
   }
@@ -25103,7 +25103,7 @@ void func_800CA584(void)
   }
   time = 0x3C;
   flag = 0;
-  if (D_8015FE04 >= 8)
+  if (gPendingVersusAttackPower >= 8)
   {
     func_8007D45C(D_8010B358, D_800E2828, 0x35);
   }
@@ -25142,10 +25142,10 @@ void func_800CA584(void)
   }
   D_8015FDF0 = time;
   D_8015FDF8 = 3;
-  D_8015FE04 = 0;
+  gPendingVersusAttackPower = 0;
   if (flag != 0)
   {
-    if (D_8015FE0A == 1)
+    if (gPendingVersusAttackPlayer == 1)
     {
       func_8006EAAC(1);
       func_800ADBC0((u8 *) D_80113488);
@@ -25197,7 +25197,7 @@ void func_800CA584(void)
 extern void func_800CAB58(s16);
 extern void ThrowBlackLayer(s16, s16, s16, s16);
 
-void func_800CA710(E_CA404 *p) {
+void applyVersusAttackSlot(E_CA404 *p) {
     u8 t;
     s16 unused1;
     s16 ox;
@@ -25392,7 +25392,7 @@ extern u8 D_15F978[];
 extern u8 D_15F9B8[];
 /* (u8, u16), K&R: the callee narrows a1 with andi 0xFFFF written back, and andi a0,0xFF
  * at our call site is the ANSI prototype conversion -- not a source mask. */
-extern void func_800C96C0(u8, u16);
+extern void updateVersusAttackBalance(u8, u16);
 extern void func_800CA148(void);
 extern void func_800CAE1C(void);
 
@@ -25414,8 +25414,8 @@ void func_800CB070(void) {
     gDPSetTextureLUT(D_800F22B4++, G_TT_NONE);
     gDPSetScissor(D_800F22B4++, G_SC_NON_INTERLACE, 0, 0, 320, 240);
     if (D_8015FDF8 == 0) {
-        func_800C96C0(D_8015FDFE + 1, D_8015FDE8[D_8015FDFE]);
-        D_8015FDE8[D_8015FDFE] = 0;
+        updateVersusAttackBalance(D_8015FDFE + 1, gQueuedVersusAttackPower[D_8015FDFE]);
+        gQueuedVersusAttackPower[D_8015FDFE] = 0;
         D_8015FDFE = 1 - D_8015FDFE;
     }
     func_800CA148();
@@ -26754,7 +26754,7 @@ block_168:
                             (*(s16 *)((u8 *)D_8013DD00 + 0x2AE8)) = 0xA + ((s32)D_8013DD00 * 0);
                             var_v0 = (*(s16 *)((u8 *)D_8013DD00 + 0x2AE8));
                         }
-                        func_800CA554((*(u8 *)((u8 *)D_8013DD00 + 0x23B3)), (*(s16 *)((u8 *)D_8013DD00 + 0x2AE6)) + var_v0);
+                        queueVersusAttackPower((*(u8 *)((u8 *)D_8013DD00 + 0x23B3)), (*(s16 *)((u8 *)D_8013DD00 + 0x2AE6)) + var_v0);
                         var_s1 = 0x816;
                     } else {
                         var_s1 = 0x200;
@@ -26953,7 +26953,7 @@ block_220:
             }
             func_800B4A54();
             if ((*(u8 *)(((u8 *)D_8013DD00) + 0x1A3)) != 0) {
-                func_800CA584();
+                startPendingVersusAttack();
             }
             if ((*(s16 *)(((u8 *)D_8013DD00) + 0x310C)) != 0) {
                 func_800B31C8();

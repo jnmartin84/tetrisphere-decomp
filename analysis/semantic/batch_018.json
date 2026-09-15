@@ -1,0 +1,431 @@
+{
+  "schema_version": 1,
+  "batch": "018-versus-attack-state",
+  "baseline_commit": "b53c494762644fb7fc10c7588b36585b6c584334",
+  "input_manifest": "analysis/semantic/batch_018_inputs.json",
+  "input_manifest_sha256": "9eed166f81b0bcc971306d5f98fa4c5cc1ad74da7436e6bdaa5465627872c6a1",
+  "files": {
+    "asm/data/game_bss_b.bss.s": {
+      "kind": "asm_dlabel",
+      "baseline_sha256": "a7e1391b6be1abf9d3e51177bd2b140e26519faff71eedc9871b88af5905c865",
+      "events": [
+        {
+          "offset": 13255,
+          "old": "D_8015FDE8",
+          "new": "gQueuedVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 13855,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 13955,
+          "old": "D_8015FE0A",
+          "new": "gPendingVersusAttackPlayer",
+          "scope": "reviewed global function/symbol identity"
+        }
+      ]
+    },
+    "src/game2.c": {
+      "kind": "c",
+      "baseline_sha256": "eb916c77f6b4cb78f1fbd2fdfac406866b18469fc71f413c5634430efc77f268",
+      "events": [
+        {
+          "offset": 237815,
+          "old": "func_800CA554",
+          "new": "queueVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 241503,
+          "old": "func_800CA554",
+          "new": "queueVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 241605,
+          "old": "func_800CA554",
+          "new": "queueVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 241699,
+          "old": "func_800CA554",
+          "new": "queueVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 241815,
+          "old": "func_800CA554",
+          "new": "queueVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 246939,
+          "old": "func_800CA554",
+          "new": "queueVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 908738,
+          "old": "func_800CA554",
+          "new": "queueVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 909071,
+          "old": "func_800CA554",
+          "new": "queueVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 920753,
+          "old": "D_8015FDE8",
+          "new": "gQueuedVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 920778,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 920800,
+          "old": "D_8015FE0A",
+          "new": "gPendingVersusAttackPlayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 921495,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 921515,
+          "old": "D_8015FE0A",
+          "new": "gPendingVersusAttackPlayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 921887,
+          "old": "D_8015FDE8",
+          "new": "gQueuedVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 921910,
+          "old": "D_8015FDE8",
+          "new": "gQueuedVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 923947,
+          "old": "func_800C93D4",
+          "new": "rebuildVersusAttackIndicators",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 924189,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 924826,
+          "old": "D_8015FE0A",
+          "new": "gPendingVersusAttackPlayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 924922,
+          "old": "func_800C93D4",
+          "new": "rebuildVersusAttackIndicators",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 924945,
+          "old": "func_800C96C0",
+          "new": "updateVersusAttackBalance",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925100,
+          "old": "D_8015FE0A",
+          "new": "gPendingVersusAttackPlayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925122,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925157,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925186,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925206,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925226,
+          "old": "D_8015FE0A",
+          "new": "gPendingVersusAttackPlayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925266,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925308,
+          "old": "D_8015FE0A",
+          "new": "gPendingVersusAttackPlayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925334,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925460,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925490,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925527,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925588,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925612,
+          "old": "D_8015FE0A",
+          "new": "gPendingVersusAttackPlayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925638,
+          "old": "func_800C93D4",
+          "new": "rebuildVersusAttackIndicators",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925671,
+          "old": "D_8015FE0A",
+          "new": "gPendingVersusAttackPlayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925697,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925795,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 925893,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 932663,
+          "old": "D_8015FE0A",
+          "new": "gPendingVersusAttackPlayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 939747,
+          "old": "func_800CA710",
+          "new": "applyVersusAttackSlot",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 940217,
+          "old": "func_800CA710",
+          "new": "applyVersusAttackSlot",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 941362,
+          "old": "func_800CA554",
+          "new": "queueVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 941396,
+          "old": "D_8015FDE8",
+          "new": "gQueuedVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 942120,
+          "old": "func_800CA584",
+          "new": "startPendingVersusAttack",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 942254,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 942297,
+          "old": "D_8015FE0A",
+          "new": "gPendingVersusAttackPlayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 942443,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 943053,
+          "old": "D_8015FE04",
+          "new": "gPendingVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 943098,
+          "old": "D_8015FE0A",
+          "new": "gPendingVersusAttackPlayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 945799,
+          "old": "func_800CA710",
+          "new": "applyVersusAttackSlot",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 952145,
+          "old": "func_800C96C0",
+          "new": "updateVersusAttackBalance",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 953403,
+          "old": "func_800C96C0",
+          "new": "updateVersusAttackBalance",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 953433,
+          "old": "D_8015FDE8",
+          "new": "gQueuedVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 953466,
+          "old": "D_8015FDE8",
+          "new": "gQueuedVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 1011525,
+          "old": "func_800CA554",
+          "new": "queueVersusAttackPower",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 1022765,
+          "old": "func_800CA584",
+          "new": "startPendingVersusAttack",
+          "scope": "reviewed global function/symbol identity"
+        }
+      ]
+    }
+  },
+  "decisions": [
+    {
+      "old": "func_800CA554",
+      "new": "queueVersusAttackPower",
+      "confidence": "high semantic; descriptive spelling",
+      "evidence": "VERSUS_ATTACK_TRACE.md"
+    },
+    {
+      "old": "func_800C96C0",
+      "new": "updateVersusAttackBalance",
+      "confidence": "high semantic; descriptive spelling",
+      "evidence": "VERSUS_ATTACK_TRACE.md"
+    },
+    {
+      "old": "func_800C93D4",
+      "new": "rebuildVersusAttackIndicators",
+      "confidence": "high semantic; descriptive spelling",
+      "evidence": "VERSUS_ATTACK_TRACE.md"
+    },
+    {
+      "old": "func_800CA584",
+      "new": "startPendingVersusAttack",
+      "confidence": "high semantic; descriptive spelling",
+      "evidence": "VERSUS_ATTACK_TRACE.md"
+    },
+    {
+      "old": "func_800CA710",
+      "new": "applyVersusAttackSlot",
+      "confidence": "high semantic; descriptive spelling",
+      "evidence": "VERSUS_ATTACK_TRACE.md"
+    },
+    {
+      "old": "D_8015FDE8",
+      "new": "gQueuedVersusAttackPower",
+      "confidence": "high semantic; descriptive spelling",
+      "evidence": "VERSUS_ATTACK_TRACE.md"
+    },
+    {
+      "old": "D_8015FE04",
+      "new": "gPendingVersusAttackPower",
+      "confidence": "high semantic; descriptive spelling",
+      "evidence": "VERSUS_ATTACK_TRACE.md"
+    },
+    {
+      "old": "D_8015FE0A",
+      "new": "gPendingVersusAttackPlayer",
+      "confidence": "high semantic; descriptive spelling",
+      "evidence": "VERSUS_ATTACK_TRACE.md"
+    }
+  ]
+}

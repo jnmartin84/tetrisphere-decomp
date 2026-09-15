@@ -1,0 +1,20 @@
+{
+  "baseline_commit": "b53c494762644fb7fc10c7588b36585b6c584334",
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "power_table_rom_offset": "0xC466C",
+  "big_endian_s16_values": [
+    1,
+    8,
+    24,
+    72
+  ],
+  "amount_range_checked": [
+    0,
+    360
+  ],
+  "max_slots": 15,
+  "amounts_requiring_max_slots": [
+    359
+  ],
+  "scope": "Static ROM table and arithmetic capacity check; no gameplay execution"
+}
