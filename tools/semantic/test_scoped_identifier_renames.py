@@ -31,6 +31,27 @@ class ScopedRenames(unittest.TestCase):
         with self.assertRaises(Invalid):
             transform(raw, events + events, 'c')
 
+    def test_linker_assignment_preserves_address_and_spacing(self):
+        raw = b'/* symbols */\n  D_1234 = 0x1234;\nD_1235=0x1235;\n'
+        start = raw.index(b'D_1234')
+        event = {'old': 'D_1234', 'new': 'gState', 'offset': start}
+        self.assertEqual(transform(raw, [event], 'linker_assignment'),
+                         raw[:start] + b'gState' + raw[start+6:])
+
+    def test_linker_comment_is_not_an_assignment(self):
+        raw = b'/*\nD_1234 = 0x1234;\n*/\n'
+        with self.assertRaises(Invalid):
+            transform(raw, [{'old': 'D_1234', 'new': 'gState',
+                             'offset': raw.index(b'D_1234')}], 'linker_assignment')
+
+    def test_linker_rhs_and_expressions_are_not_rename_sites(self):
+        for raw, old in [(b'D_1234 = 0x1234;\n', '0x1234'),
+                         (b'D_1234 = OTHER;\n', 'OTHER'),
+                         (b'D_1234 = 0x1234 + 2;\n', 'D_1234')]:
+            with self.assertRaises(Invalid):
+                transform(raw, [{'old': old, 'new': 'gState',
+                                 'offset': raw.index(old.encode())}], 'linker_assignment')
+
 
 if __name__ == '__main__':
     unittest.main()

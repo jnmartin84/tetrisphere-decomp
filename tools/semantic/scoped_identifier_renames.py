@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check/apply explicit C token or assembly dlabel renames at baseline offsets.
+"""Check/apply C token, assembly dlabel or linker assignment identifier renames.
 
 Unlike the file-wide guard, this supports selected members without renaming
 unrelated members sharing an unk spelling. It does not infer C type bindings.
@@ -16,6 +16,11 @@ from identifier_renames import IDENT, KEYWORDS, git, identifiers, local_file, re
 def token_spans(raw, kind):
     if kind == 'c':
         return {(a, b): word for word, a, b in identifiers(raw)}
+    if kind == 'linker_assignment':
+        tokens = {(a, b): word for word, a, b in identifiers(raw)}
+        return {m.span(1): m[1] for m in re.finditer(
+            rb'^[ \t]*([A-Za-z_][A-Za-z_0-9]*)[ \t]*=[ \t]*0x[0-9A-Fa-f]+[ \t]*;[ \t]*$',
+            raw, re.M) if tokens.get(m.span(1)) == m[1]}
     require(kind == 'asm_dlabel', 'unsupported token kind')
     return {m.span(1): m[1] for m in re.finditer(
         rb'^dlabel ([A-Za-z_][A-Za-z_0-9]*)[ \t]*$', raw, re.M)}
@@ -58,7 +63,9 @@ def check(root, ledger, applying=False):
     for name, spec in ledger['files'].items():
         require((spec['kind'] == 'c' and Path(name).suffix in ('.c', '.h')) or
                 (spec['kind'] == 'asm_dlabel' and name.startswith('asm/data/')
-                 and Path(name).suffix == '.s'), 'invalid production path/kind')
+                 and Path(name).suffix == '.s') or
+                (spec['kind'] == 'linker_assignment' and name == 'undefined_syms.txt'),
+                'invalid production path/kind')
         before = git(root, 'show', base + ':' + name)
         require(sha(before) == spec['baseline_sha256'], 'baseline hash mismatch: ' + name)
         after = transform(before, spec['events'], spec['kind'])
