@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "batch": "017-quest-diagnostic-names",
+  "baseline_commit": "0e7f9f6af82a492c94ff1fb16848fa655e6b580d",
+  "input_manifest": "analysis/semantic/batch_017_inputs.json",
+  "input_manifest_sha256": "a8ccc30d8b70368579f594f006459f4ef4c4d8e06b0df13c126a8280dfafec41",
+  "files": {
+    "src/game2.c": {
+      "kind": "c",
+      "baseline_sha256": "ebedc9fcb478c75977c40118d432aea5859a35419aa264852bf766b034499e22",
+      "events": [
+        {
+          "offset": 497221,
+          "old": "func_800C7C90",
+          "new": "ScoreTheLevel",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 497343,
+          "old": "func_800C7C90",
+          "new": "ScoreTheLevel",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 513973,
+          "old": "func_800C7C90",
+          "new": "ScoreTheLevel",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 514088,
+          "old": "func_800C7C90",
+          "new": "ScoreTheLevel",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 834316,
+          "old": "D_801309EE",
+          "new": "gQuestAnimActive",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 834490,
+          "old": "D_801309EE",
+          "new": "gQuestAnimActive",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 834517,
+          "old": "func_800C7C90",
+          "new": "ScoreTheLevel",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 845391,
+          "old": "D_801309EE",
+          "new": "gQuestAnimActive",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 848632,
+          "old": "func_800C7C90",
+          "new": "ScoreTheLevel",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 903888,
+          "old": "func_800C7C90",
+          "new": "ScoreTheLevel",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 945738,
+          "old": "func_800CB7E8",
+          "new": "ThrowBlackLayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 947076,
+          "old": "func_800CB7E8",
+          "new": "ThrowBlackLayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 947429,
+          "old": "func_800CB7E8",
+          "new": "ThrowBlackLayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 947780,
+          "old": "func_800CB7E8",
+          "new": "ThrowBlackLayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 960542,
+          "old": "func_800CB7E8",
+          "new": "ThrowBlackLayer",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 961991,
+          "old": "func_800CBB1C",
+          "new": "PlayTowerAnim",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 962210,
+          "old": "D_801309EE",
+          "new": "gQuestAnimActive",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 965431,
+          "old": "D_801309EE",
+          "new": "gQuestAnimActive",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 965518,
+          "old": "func_800CBB1C",
+          "new": "PlayTowerAnim",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 965645,
+          "old": "D_801309EE",
+          "new": "gQuestAnimActive",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 965698,
+          "old": "func_800CBB1C",
+          "new": "PlayTowerAnim",
+          "scope": "reviewed global function/symbol identity"
+        },
+        {
+          "offset": 965753,
+          "old": "func_800CBB1C",
+          "new": "PlayTowerAnim",
+          "scope": "reviewed global function/symbol identity"
+        }
+      ]
+    },
+    "undefined_syms.txt": {
+      "kind": "linker_assignment",
+      "baseline_sha256": "cb0d8c08fa3c7a76dcda9532b353c87dbd0a621bba8a66dd0ef7e5e6d9831fd1",
+      "events": [
+        {
+          "offset": 7899,
+          "old": "D_801309EE",
+          "new": "gQuestAnimActive",
+          "scope": "reviewed global function/symbol identity"
+        }
+      ]
+    }
+  },
+  "decisions": [
+    {
+      "old": "func_800C7C90",
+      "new": "ScoreTheLevel",
+      "evidence": "QUEST_DIAGNOSTIC_NAMES_LANDING.md"
+    },
+    {
+      "old": "func_800CB7E8",
+      "new": "ThrowBlackLayer",
+      "evidence": "QUEST_DIAGNOSTIC_NAMES_LANDING.md"
+    },
+    {
+      "old": "func_800CBB1C",
+      "new": "PlayTowerAnim",
+      "evidence": "QUEST_DIAGNOSTIC_NAMES_LANDING.md"
+    },
+    {
+      "old": "D_801309EE",
+      "new": "gQuestAnimActive",
+      "evidence": "QUEST_DIAGNOSTIC_NAMES_LANDING.md"
+    }
+  ]
+}

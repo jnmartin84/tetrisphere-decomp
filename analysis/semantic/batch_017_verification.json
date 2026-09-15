@@ -1,0 +1,20 @@
+{
+  "baseline_commit": "0e7f9f6af82a492c94ff1fb16848fa655e6b580d",
+  "production_baseline_commit": "ddfaf805462777676186a6a04cb5122fe557add0",
+  "baseline_matchdiff": "FULL MATCH",
+  "candidate_matchdiff": "FULL MATCH",
+  "full_rom_cmp": true,
+  "header_included": true,
+  "rom_bytes": 8388608,
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "identifier_substitutions": 23,
+  "production_files": 2,
+  "linked_addresses": {
+    "ScoreTheLevel": "0x800C7C90",
+    "ThrowBlackLayer": "0x800CB7E8",
+    "PlayTowerAnim": "0x800CBB1C",
+    "gQuestAnimActive": "0x801309EE"
+  },
+  "production_inputs_verified": 995,
+  "guard_tests_passed": 31
+}

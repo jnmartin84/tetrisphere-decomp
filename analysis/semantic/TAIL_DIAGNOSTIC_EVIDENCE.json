@@ -1,0 +1,135 @@
+{
+  "baseline_commit": "ddfaf805462777676186a6a04cb5122fe557add0",
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "source_sha256": "ebedc9fcb478c75977c40118d432aea5859a35419aa264852bf766b034499e22",
+  "entries": [
+    {
+      "symbol": "D_800F0570",
+      "rom_offset": "0xCB920",
+      "literal": "*** THIS IS MAJOR FUCKING EVIL AND WILL CRASH THE GAME!!!!! TELL SOMEONE!!\n",
+      "nul_terminated_rom_bytes_verified": true,
+      "source_references": [
+        {
+          "line": 6258,
+          "text": "extern u8   D_800F0520[], D_800F0570[], D_800F05BC[], D_800F05EC[], D_800F0618[];"
+        },
+        {
+          "line": 6309,
+          "text": "func_80029760(D_800F0570);"
+        }
+      ]
+    },
+    {
+      "symbol": "D_800F0D54",
+      "rom_offset": "0xCC104",
+      "literal": "Inializing heart skull animation thing\n",
+      "nul_terminated_rom_bytes_verified": true,
+      "source_references": [
+        {
+          "line": 22417,
+          "text": "extern u8 D_800F0D54[];"
+        },
+        {
+          "line": 22420,
+          "text": "func_80029760(D_800F0D54);"
+        }
+      ]
+    },
+    {
+      "symbol": "D_800F0D7C",
+      "rom_offset": "0xCC12C",
+      "literal": "FUCK YOU  %d\n",
+      "nul_terminated_rom_bytes_verified": true,
+      "source_references": [
+        {
+          "line": 23026,
+          "text": "extern u8 D_800F0D7C[];"
+        },
+        {
+          "line": 23102,
+          "text": "func_80029760(D_800F0D7C, D_8014D264);"
+        }
+      ]
+    },
+    {
+      "symbol": "D_800F0DAC",
+      "rom_offset": "0xCC15C",
+      "literal": "ScoreTheLevel Player: %d .. Score: %d\n",
+      "nul_terminated_rom_bytes_verified": true,
+      "source_references": [
+        {
+          "line": 23991,
+          "text": "extern u8 D_800F0DAC[];"
+        },
+        {
+          "line": 24024,
+          "text": "func_80029760(D_800F0DAC, *((s16 *)(v0 + 0x23B2)), ((*((s32 *)(v0 + 0x2AF8))) * 5) * 2);"
+        }
+      ]
+    },
+    {
+      "symbol": "D_800F0DD4",
+      "rom_offset": "0xCC184",
+      "literal": "What the FUCK\n",
+      "nul_terminated_rom_bytes_verified": true,
+      "source_references": [
+        {
+          "line": 24636,
+          "text": "extern u8 D_800F0DD4[];"
+        },
+        {
+          "line": 24672,
+          "text": "func_80029760(D_800F0DD4);"
+        }
+      ]
+    },
+    {
+      "symbol": "D_800F0DE4",
+      "rom_offset": "0xCC194",
+      "literal": "ThrowBlackLayer Called.\n",
+      "nul_terminated_rom_bytes_verified": true,
+      "source_references": [
+        {
+          "line": 25615,
+          "text": "extern u8 D_800F0DE4[];"
+        },
+        {
+          "line": 25629,
+          "text": "func_80029760(D_800F0DE4);"
+        }
+      ]
+    },
+    {
+      "symbol": "D_800F0E00",
+      "rom_offset": "0xCC1B0",
+      "literal": "Saying PlayTowerAnim DONE!\n",
+      "nul_terminated_rom_bytes_verified": true,
+      "source_references": [
+        {
+          "line": 25657,
+          "text": "extern u8 D_800F0E00[];"
+        },
+        {
+          "line": 25673,
+          "text": "func_80029760(D_800F0E00, t);"
+        }
+      ]
+    },
+    {
+      "symbol": "D_800F0E1C",
+      "rom_offset": "0xCC1CC",
+      "literal": "BLOWPIECEGONNER!!\n",
+      "nul_terminated_rom_bytes_verified": true,
+      "source_references": [
+        {
+          "line": 25720,
+          "text": "extern u8 D_800F0E1C[];  /* \"BLOWPIECEGONNER!!\" */"
+        },
+        {
+          "line": 25733,
+          "text": "func_80029760(D_800F0E1C);"
+        }
+      ]
+    }
+  ]
+}

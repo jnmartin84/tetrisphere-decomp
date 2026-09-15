@@ -1,0 +1,8 @@
+{
+  "symbol": "D_800F0C1C",
+  "rom_offset": "0xcbfcc",
+  "literal": "Setting QuestAnimActive.\n",
+  "nul_terminated_rom_bytes_verified": true,
+  "callsite": "src/game2.c:22272",
+  "following_assignment": "D_801309EE = 1;"
+}

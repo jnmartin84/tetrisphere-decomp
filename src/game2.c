@@ -12670,11 +12670,11 @@ s32 func_800AA3A4(s16 a0, s16 a1, s16 a2, s16 a3) {
     return count;
 }
 
-extern void func_800C7C90(void);
+extern void ScoreTheLevel(void);
 extern void func_800ADC44(u8 *);
 extern void func_800922A0(u8 *);
 void func_800AA4B0(s16 arg0) {
-    func_800C7C90();
+    ScoreTheLevel();
     if ((D_800E44A8 != 3) || (*(s16 *)(D_8013DD00 + 0x23BC) == 0)) {
         *(s16 *)(D_8013DD00 + 0x23B4) = 1;
         if (D_800E44A8 == 3) {
@@ -13157,11 +13157,11 @@ s16 func_800AB4C8(Grid *arg0, s16 arg1, s16 arg2, s16 arg3) {
 
 #include <PR/ultratypes.h>
 extern u8 D_800F0750[];
-extern void func_800C7C90(void);
+extern void ScoreTheLevel(void);
 extern void Begin_WinAnim(void);
 void PlayerWon(u8 *arg) {
     func_80029760(D_800F0750);
-    func_800C7C90();
+    ScoreTheLevel();
     if (*(s16 *)(D_8013DD00 + 0x3264) == 0) {
         func_8007D45C(D_8010B358, D_800E2828, 0x1E);
     }
@@ -22008,14 +22008,14 @@ void func_800C2DF0(void) {
 }
 
 #include <PR/ultratypes.h>
-extern u8 D_801309EE;
+extern u8 gQuestAnimActive;
 extern u8 D_801033B8[];
 extern void func_800CBFF4(void);
 extern void startEndSequenceAnimation(s32, s32);
 void func_800C2E34(void) {
     func_800CBFF4();
-    if (D_801309EE == 0) {
-        func_800C7C90();
+    if (gQuestAnimActive == 0) {
+        ScoreTheLevel();
         *(u8 *)(D_8013DD00 + 0x1680) = 2;
         *(s32 *)(D_8013DD00 + 0x1684) = 0;
         *(u8 *)(D_8013DD00 + 0x1688) = 0x10;
@@ -22270,7 +22270,7 @@ extern u8 D_800F0C1C[];
 void func_800C37A4(void) {
     *(u8 *)(D_8013DD00 + 0x1680) = 5;
     func_80029760(D_800F0C1C);
-    D_801309EE = 1;
+    gQuestAnimActive = 1;
     *(s32 *)(D_8013DD00 + 0x1684) = 0;
     *(u8 *)(D_8013DD00 + 0x1688) = 0x40;
     *(s16 *)(D_8013DD00 + 0x168A) = 0;
@@ -22362,7 +22362,7 @@ void Begin_WinAnim(void) {
         func_800C37A4();
         return;
     }
-    func_800C7C90();
+    ScoreTheLevel();
     *(u8 *)(D_8013DD00 + 0x1680) = 2;
     *(s32 *)(D_8013DD00 + 0x1684) = 0;
     *(u8 *)(D_8013DD00 + 0x1688) = 0x10;
@@ -23989,7 +23989,7 @@ void func_800C7C2C(s32 a0, s16 a1, s16 a2) {
 }
 
 extern u8 D_800F0DAC[];
-void func_800C7C90(void) {
+void ScoreTheLevel(void) {
     u8 *v0;
     s32 v1;
 
@@ -25195,7 +25195,7 @@ void func_800CA584(void)
  *    0x30 and shifts every offset (83 diffs).  They are dead in the emitted code
  *    but the original source declared them. */
 extern void func_800CAB58(s16);
-extern void func_800CB7E8(s16, s16, s16, s16);
+extern void ThrowBlackLayer(s16, s16, s16, s16);
 
 void func_800CA710(E_CA404 *p) {
     u8 t;
@@ -25247,7 +25247,7 @@ void func_800CA710(E_CA404 *p) {
         ox = (*(s32 *)(D_8013DD00 + 0x2B30) + 7) & 0x1F;
         oy = (*(s32 *)(D_8013DD00 + 0x2B34) + 7) & 0x1F;
         r = func_80081E90(0xC);
-        func_800CB7E8(r + ox - 6, func_80081E90(0xC) + oy - 6, 4, 4);
+        ThrowBlackLayer(r + ox - 6, func_80081E90(0xC) + oy - 6, 4, 4);
         func_800AF294();
         func_8007D45C(D_8010B358, D_800E2828, 0x36);
     } else if (t == 2) {
@@ -25255,7 +25255,7 @@ void func_800CA710(E_CA404 *p) {
         ox = (*(s32 *)(D_8013DD00 + 0x2B30) + 7) & 0x1F;
         oy = (*(s32 *)(D_8013DD00 + 0x2B34) + 7) & 0x1F;
         r = func_80081E90(8);
-        func_800CB7E8(r + ox - 4, func_80081E90(8) + oy - 4, 8, 8);
+        ThrowBlackLayer(r + ox - 4, func_80081E90(8) + oy - 4, 8, 8);
         func_800AF294();
         func_8007D45C(D_8010B358, D_800E2828, 0x36);
     } else if (t == 3) {
@@ -25263,7 +25263,7 @@ void func_800CA710(E_CA404 *p) {
         ox = (*(s32 *)(D_8013DD00 + 0x2B30) + 7) & 0x1F;
         oy = (*(s32 *)(D_8013DD00 + 0x2B34) + 7) & 0x1F;
         r = func_80081E90(4);
-        func_800CB7E8(r + ox - 2, func_80081E90(4) + oy - 2, 0xC, 0xC);
+        ThrowBlackLayer(r + ox - 2, func_80081E90(4) + oy - 2, 0xC, 0xC);
         func_800AF294();
         func_8007D45C(D_8010B358, D_800E2828, 0x36);
     }
@@ -25615,7 +25615,7 @@ void func_800CB6F4(void) {
 extern u8 D_800F0DE4[];
 typedef struct { s16 p0[2]; s16 f4; } E_CB7E8;
 
-void func_800CB7E8(s16 arg0, s16 arg1, s16 arg2, s16 arg3) {
+void ThrowBlackLayer(s16 arg0, s16 arg1, s16 arg2, s16 arg3) {
     s16 rx;
     s16 ry;
     s16 i;
@@ -25659,7 +25659,7 @@ extern u8 D_8013E478[];
 extern u8 D_8013EBE0[];
 extern void func_800CC060(s16, s16, s16);
 
-void func_800CBB1C(s16 arg0) {
+void PlayTowerAnim(s16 arg0) {
     s16 i;
     s16 j;
     s16 n;
@@ -25671,7 +25671,7 @@ void func_800CBB1C(s16 arg0) {
     t = *(s16 *)(D_8013DD00 + 0x3244);
     if (t >= 0x10F) {
         func_80029760(D_800F0E00, t);
-        D_801309EE = 0;
+        gQuestAnimActive = 0;
     } else {
         u = t;
         t = t + u * 0;
@@ -25735,23 +25735,23 @@ void func_800CBEE8(void) {
     }
     if (angle < 180 && *(s16 *)(D_8013DD00 + 0x3244) >= 180) {
         func_800B84D0();
-        D_801309EE = 0;
+        gQuestAnimActive = 0;
     }
 }
 
 /* func_800CBFF4  ROM 0xA73A4  status: pending */
-extern void func_800CBB1C(s16);
+extern void PlayTowerAnim(s16);
 extern void func_800CBEE8(void);
 void func_800CBFF4(void) {
     switch (D_800E44A4) {
     default:
-        D_801309EE = 0;
+        gQuestAnimActive = 0;
         break;
     case 0xA:
-        func_800CBB1C(1);
+        PlayTowerAnim(1);
         break;
     case 0xB:
-        func_800CBB1C(2);
+        PlayTowerAnim(2);
         break;
     case 7:
         func_800CBEE8();

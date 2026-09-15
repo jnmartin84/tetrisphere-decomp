@@ -1,0 +1,19 @@
+{
+  "status": "SCOPED_IDENTIFIER_ONLY_VERIFIED",
+  "baseline_commit": "0e7f9f6af82a492c94ff1fb16848fa655e6b580d",
+  "ledger_sha256": "fb4be9129c314b90d8a099daeb3ee9bb277b3befc4222e415d24fae29af5cd48",
+  "substitutions": 23,
+  "inverse_restores_original_bytes": true,
+  "production_inputs_verified": true,
+  "rom_verified_by_this_tool": false,
+  "files": {
+    "src/game2.c": {
+      "before_sha256": "ebedc9fcb478c75977c40118d432aea5859a35419aa264852bf766b034499e22",
+      "after_sha256": "eb916c77f6b4cb78f1fbd2fdfac406866b18469fc71f413c5634430efc77f268"
+    },
+    "undefined_syms.txt": {
+      "before_sha256": "cb0d8c08fa3c7a76dcda9532b353c87dbd0a621bba8a66dd0ef7e5e6d9831fd1",
+      "after_sha256": "55577c4486d849da6b1dbeba64e74607452ed8f72890066660afef4c4f57df45"
+    }
+  }
+}
