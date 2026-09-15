@@ -1,4 +1,7 @@
 /* Data globals referenced only from C files (invisible to splat auto-detection) */
+/* Interior PIF status-word labels retained after restoring the C buffers. */
+D_80163A7C = __osEepPifRam + 0x3C;
+D_80163ABC = __osContPifRam + 0x3C;
 D_800DF710 = 0x800DF710;
 D_800DF714 = 0x800DF714;
 D_800DFE90 = 0x800DFE90;

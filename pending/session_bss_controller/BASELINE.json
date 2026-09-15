@@ -1,0 +1,8 @@
+{
+  "baseline_head": "c3c212da4281a3d982ea34cfa46dde5269039111",
+  "baseline_elf_sha256": "469aa1b2184fbc0d83eb694cb440aca95629183a24eee071b497aaecdaba96b1",
+  "object_text_sha256": {
+    "conteepread": "00f8a0e5596af7e425d5c3b4722f85fbef3f02effc90d5acb929b8573bd4c3b0",
+    "controller": "f329da586fb53029c77af7860286bf21a1ed3c30fb4f89d70f48c07cf97b6f61"
+  }
+}

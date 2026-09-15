@@ -4,6 +4,8 @@
 #include "PRinternal/controller.h"
 #include "PRinternal/siint.h"
 
+OSPifRam __osEepPifRam;
+
 void __osPackEepReadData(u8 address);
 
 s32 osEepromRead(OSMesgQueue* mq, u8 address, u8* buffer) {

@@ -295,7 +295,8 @@ segments:
       - { type: .bss, vram: 0x80162820, name: libultra/io/sptask }
       - { type: .bss, vram: 0x80162860, name: libultra/os/initialize }
       - { type: .bss, vram: 0x80162870, name: libultra/io/pimgr }
-      - { type: bss, vram: 0x80163A40, name: os_bss_c }
+      - { type: .bss, vram: 0x80163A40, name: libultra/io/conteepread }
+      - { type: .bss, vram: 0x80163A80, name: libultra/io/controller }
       - { type: .bss, vram: 0x80163B10, name: libultra/gu/rotate }
       - { type: .bss, vram: 0x80163B20, name: libultra/gu/rotaterpy }
       - { type: .bss, vram: 0x80163B30, name: libultra/os/timerintr }

@@ -625,14 +625,12 @@ SECTIONS
         build/src/libultra/io/pimgr.o(.bss);
         build/src/libultra/os/setthreadpri.o(.bss);
         build/src/libultra/io/conteepwrite.o(.bss);
-        build/src/libultra/io/conteepread.o(.bss);
         build/src/libultra/io/contreaddata.o(.bss);
         build/src/libultra/io/conteepprobe.o(.bss);
         build/asm/libultra/os/invaldcache.o(.bss);
         build/src/libultra/io/pidma.o(.bss);
         build/src/libultra/io/visetspecial.o(.bss);
         build/src/libultra/libc/sprintf.o(.bss);
-        build/src/libultra/io/controller.o(.bss);
         build/src/libultra/libc/string.o(.bss);
         build/src/libultra/libc/syncprintf.o(.bss);
         build/src/libultra/os/stopthread.o(.bss);
@@ -644,7 +642,8 @@ SECTIONS
         build/src/libultra/gu/mtxutil.o(.bss);
         build/src/libultra/gu/translate.o(.bss);
         build/src/libultra/gu/mtxcatf.o(.bss);
-        build/asm/data/os_bss_c.bss.o(.bss);
+        build/src/libultra/io/conteepread.o(.bss);
+        build/src/libultra/io/controller.o(.bss);
         build/src/libultra/gu/rotate.o(.bss);
         build/src/libultra/gu/scale.o(.bss);
         build/src/libultra/gu/perspective.o(.bss);

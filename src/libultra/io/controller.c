@@ -3,6 +3,14 @@
 #include "PRinternal/controller.h"
 #include "PRinternal/siint.h"
 
+OSPifRam __osContPifRam;
+u8 __osContLastCmd;
+u8 __osMaxControllers;
+
+OSTimer __osEepromTimer;
+OSMesgQueue __osEepromTimerQ ALIGNED(0x8);
+OSMesg __osEepromTimerMsg;
+
 extern s32 __osContinitialized;
 extern u64 osClockRate;
 

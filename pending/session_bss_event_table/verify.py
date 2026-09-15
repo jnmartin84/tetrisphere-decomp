@@ -50,6 +50,9 @@ def layout(root):
     bss = next(s for s in sections if s["name"] == ".main_bss")
     pairs = sorted((s["name"], s["address"]) for s in symbols
                    if bss["address"] <= s["address"] <= bss["address"] + bss["size"])
+    # Recovered inside the old controller reservation; preserve the original
+    # symbol multiset and allow exactly this one additional name/address pair.
+    pairs.remove(("__osEepromTimer", 0x80163AC8))
     contributions = []
     for addr, size, owner in re.findall(
             r"^ \.bss\s+(0x\w+)\s+(0x\w+)\s+(\S+)",
@@ -70,9 +73,16 @@ def main():
         "build/asm/data/os_bss_a.bss.o": "build/src/libultra/os/seteventmesg.o",
         "build/asm/data/os_bss_e.bss.o": "build/src/libultra/debug/kdebugserver.o",
     }
-    expected["contributions"] = [
-        [addr, size, migrated_owners.get(owner, owner)]
-        for addr, size, owner in expected["contributions"]]
+    contributions = []
+    for addr, size, owner in expected["contributions"]:
+        if owner == "build/asm/data/os_bss_c.bss.o":
+            contributions.extend([
+                [addr, 0x40, "build/src/libultra/io/conteepread.o"],
+                [addr + 0x40, size - 0x40, "build/src/libultra/io/controller.o"],
+            ])
+        else:
+            contributions.append([addr, size, migrated_owners.get(owner, owner)])
+    expected["contributions"] = contributions
     assert actual == expected, "Allocated section, BSS symbol address, or ownership drift"
 
     sections, symbols, text = elf_info(ROOT / "build/src/libultra/os/seteventmesg.o")
