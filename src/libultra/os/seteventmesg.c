@@ -3,8 +3,7 @@
 #include "PR/ultraerror.h"
 #include "PRinternal/osint.h"
 
-/* bss lives in the raw data segment; address in undefined_syms.txt */
-extern __OSEventState __osEventStateTab[OS_NUM_EVENTS];
+__OSEventState __osEventStateTab[OS_NUM_EVENTS] ALIGNED(0x8);
 #if BUILD_VERSION >= VERSION_J
 u32 __osPreNMI = FALSE;
 #endif

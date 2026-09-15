@@ -42,7 +42,6 @@ osViModeTable = 0x800E95B0;
 osViGetNextFramebuffer = 0x800D18E0;
 
 /* libultra 2.0H farm: OS data/bss symbols (addresses recovered from ROM reloc sites) */
-__osEventStateTab = 0x801627A0;
 __osCurrentTime = 0x80163B50;
 __osViDevMgr = 0x800EA2D0;
 bcopy = 0x800D8020;

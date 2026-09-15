@@ -291,7 +291,7 @@ segments:
       - { type: .bss, vram: 0x80127CF0, name: game2 }
       - { type: bss, vram: 0x8013FAB0, name: game_bss_b }
       - { type: .bss, vram: 0x80161580, name: libultra/io/vimgr }
-      - { type: bss, vram: 0x801627A0, name: os_bss_a }
+      - { type: .bss, vram: 0x801627A0, name: libultra/os/seteventmesg }
       - { type: .bss, vram: 0x80162820, name: libultra/io/sptask }
       - { type: .bss, vram: 0x80162860, name: libultra/os/initialize }
       - { type: .bss, vram: 0x80162870, name: libultra/io/pimgr }

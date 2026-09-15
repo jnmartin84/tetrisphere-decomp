@@ -603,7 +603,6 @@ SECTIONS
         build/src/libultra/io/vimgr.o(.bss);
         build/src/libultra/io/visetmode.o(.bss);
         build/src/libultra/io/viblack.o(.bss);
-        build/src/libultra/os/seteventmesg.o(.bss);
         build/src/libultra/io/visetevent.o(.bss);
         build/src/libultra/os/createthread.o(.bss);
         build/src/libultra/os/startthread.o(.bss);
@@ -615,7 +614,7 @@ SECTIONS
         build/src/libultra/io/vigetnextframebuf.o(.bss);
         build/src/libultra/io/viswapbuf.o(.bss);
         build/asm/libultra/os/writebackdcacheall.o(.bss);
-        build/asm/data/os_bss_a.bss.o(.bss);
+        build/src/libultra/os/seteventmesg.o(.bss);
         build/src/libultra/io/sptask.o(.bss);
         build/src/libultra/io/dpsetnextbuf.o(.bss);
         build/src/libultra/io/sptaskyield.o(.bss);

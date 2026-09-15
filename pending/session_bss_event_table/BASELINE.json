@@ -1,0 +1,161 @@
+{
+  "baseline_head": "453e7efb93e15e64490aef5c3da149a4dc10a8db",
+  "layout": {
+    "allocated_sections": [
+      {
+        "name": ".header",
+        "type": 1,
+        "flags": 3,
+        "address": 0,
+        "size": 64,
+        "alignment": 16
+      },
+      {
+        "name": ".ipl3",
+        "type": 1,
+        "flags": 3,
+        "address": 64,
+        "size": 4032,
+        "alignment": 16
+      },
+      {
+        "name": ".entry",
+        "type": 1,
+        "flags": 7,
+        "address": 2147638352,
+        "size": 80,
+        "alignment": 16
+      },
+      {
+        "name": ".entry_bss",
+        "type": 8,
+        "flags": 3,
+        "address": 2147638432,
+        "size": 0,
+        "alignment": 16
+      },
+      {
+        "name": ".main",
+        "type": 1,
+        "flags": 7,
+        "address": 2147638432,
+        "size": 836512,
+        "alignment": 4
+      },
+      {
+        "name": ".main_bss",
+        "type": 8,
+        "flags": 3,
+        "address": 2148474944,
+        "size": 470560,
+        "alignment": 4
+      },
+      {
+        "name": ".CD3F0",
+        "type": 1,
+        "flags": 3,
+        "address": 2148945504,
+        "size": 7547920,
+        "alignment": 16
+      }
+    ],
+    "bss_symbol_count": 1369,
+    "bss_symbol_addresses_sha256": "205a5e29b1cd549ef6f4f461ecc71fcf2b03d85bacc720ae09e9fd824268c793",
+    "contributions": [
+      [
+        2148474944,
+        220336,
+        "build/asm/data/game_bss.bss.o"
+      ],
+      [
+        2148695280,
+        97728,
+        "build/src/game2.o"
+      ],
+      [
+        2148793008,
+        137936,
+        "build/asm/data/game_bss_b.bss.o"
+      ],
+      [
+        2148930944,
+        4640,
+        "build/src/libultra/io/vimgr.o"
+      ],
+      [
+        2148935584,
+        128,
+        "build/asm/data/os_bss_a.bss.o"
+      ],
+      [
+        2148935712,
+        64,
+        "build/src/libultra/io/sptask.o"
+      ],
+      [
+        2148935776,
+        16,
+        "build/src/libultra/os/initialize.o"
+      ],
+      [
+        2148935792,
+        4560,
+        "build/src/libultra/io/pimgr.o"
+      ],
+      [
+        2148940352,
+        208,
+        "build/asm/data/os_bss_c.bss.o"
+      ],
+      [
+        2148940560,
+        16,
+        "build/src/libultra/gu/rotate.o"
+      ],
+      [
+        2148940576,
+        16,
+        "build/src/libultra/gu/rotaterpy.o"
+      ],
+      [
+        2148940592,
+        64,
+        "build/src/libultra/os/timerintr.o"
+      ],
+      [
+        2148940656,
+        128,
+        "build/src/libultra/io/cartrominit.o"
+      ],
+      [
+        2148940784,
+        128,
+        "build/src/libultra/io/leodiskinit.o"
+      ],
+      [
+        2148940912,
+        32,
+        "build/src/libultra/io/piacs.o"
+      ],
+      [
+        2148940944,
+        32,
+        "build/src/libultra/io/siacs.o"
+      ],
+      [
+        2148940976,
+        432,
+        "build/asm/data/os_bss_e.bss.o"
+      ],
+      [
+        2148941408,
+        4096,
+        "build/src/libultra/io/leointerrupt.o"
+      ]
+    ]
+  },
+  "object_text_sha256": "fba39f539944782f0d5abea48a2f758c0fa9e6f2270a3e30dae42ac5d1b89b85",
+  "entry_sha256": "28103ca8cffe2b9f540989111711a7439f2feb609bbb7198188bc112cd2815d6",
+  "rom_sha256": "f7cbc93ac273488bfb89955ab6ae9b60c730907872107a67a56b945e8579ef87",
+  "baseline_elf_sha256": "73b5f05716837b2cc9710a32678b6a6294ead540a45446116d25bf4d2227352a"
+}
