@@ -715,7 +715,7 @@ SECTIONS
         build/src/libultra/audio/reverb.o(.bss);
         build/src/libultra/audio/load.o(.bss);
         build/asm/libultra/os/setcompare.o(.bss);
-        build/asm/data/os_bss_e.bss.o(.bss);
+        build/src/libultra/debug/kdebugserver.o(.bss);
         build/src/libultra/io/leointerrupt.o(.bss);
         build/src/libultra/os/destroythread.o(.bss);
         build/src/libultra/io/si.o(.bss);

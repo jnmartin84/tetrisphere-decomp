@@ -303,7 +303,7 @@ segments:
       - { type: .bss, vram: 0x80163BF0, name: libultra/io/leodiskinit }
       - { type: .bss, vram: 0x80163C70, name: libultra/io/piacs }
       - { type: .bss, vram: 0x80163C90, name: libultra/io/siacs }
-      - { type: bss, vram: 0x80163CB0, name: os_bss_e }
+      - { type: .bss, vram: 0x80163CB0, name: libultra/debug/kdebugserver }
       - { type: .bss, vram: 0x80163E60, name: libultra/io/leointerrupt }
       - { type: bss, vram: 0x80164E60, name: os_bss_f }
 

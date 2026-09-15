@@ -66,9 +66,12 @@ def main():
     baseline = json.loads((HERE / "BASELINE.json").read_text())
     actual = layout(ROOT)
     expected = baseline["layout"]
+    migrated_owners = {
+        "build/asm/data/os_bss_a.bss.o": "build/src/libultra/os/seteventmesg.o",
+        "build/asm/data/os_bss_e.bss.o": "build/src/libultra/debug/kdebugserver.o",
+    }
     expected["contributions"] = [
-        [addr, size, "build/src/libultra/os/seteventmesg.o" if owner ==
-         "build/asm/data/os_bss_a.bss.o" else owner]
+        [addr, size, migrated_owners.get(owner, owner)]
         for addr, size, owner in expected["contributions"]]
     assert actual == expected, "Allocated section, BSS symbol address, or ownership drift"
 
